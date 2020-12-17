@@ -1,0 +1,19 @@
+# Environment
+.DS_Store
+
+# IDE
+.idea
+
+# Dependencies
+node_modules/
+.bundle/
+vendor/
+
+# Jekyll build
+build/
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+
+# Heroku
+.env
