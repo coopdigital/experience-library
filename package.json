@@ -25,6 +25,7 @@
     "@coopdigital/shared-component--editorialcard": "^2.3.3",
     "@coopdigital/shared-component--featurecard": "^2.2.0",
     "@coopdigital/shared-component--hero": "^3.1.1",
+    "@coopdigital/shared-component--linklist": "^2.3.1",
     "@coopdigital/shared-component--membership": "^3.0.7",
     "@coopdigital/shared-component--offers": "^2.1.19",
     "@coopdigital/shared-component--signpost": "^2.1.19",

@@ -18,7 +18,7 @@ id: index
         </div>
     </div>
 </div>
-<div class="coop-l-wrap">
+<div class="coop-l-container">
     <div class="coop-u-margin-b-64">
         <h2>Logo</h2>
         <a class="coop-logo" aria-label="Homepage" href="/">
@@ -116,7 +116,7 @@ id: index
         <div class="ds-demo-block coop-u-padding-resp-64-32">Padding: 64px medium breakpoint > 32px small breakpoint</div>
     </div>
     <div class="coop-u-margin-b-64">
-        <h3>Hero</h3>        
+        <h3>Hero</h3>
         {% include components/component-hero/hero.html %}
     </div>
     <div class="coop-u-margin-b-64">
@@ -127,7 +127,7 @@ id: index
             </div>
         </div>
     </div>
-    <div class="coop-u-margin-b-64"> 
+    <div class="coop-u-margin-b-64">
             <h3>Signpost</h3>
             <div class="coop-l-row">
                 <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
@@ -205,17 +205,17 @@ id: index
             <h3>Product card</h3>
             <div class="coop-l-row">
                 <div class="coop-l-column coop-l-large-3 coop-l-medium-6 coop-l-small-12">
-                        
-                    <article class="coop-c-card coop-c-card--product coop-c-card--alcohol coop-l-flex__item">                           
+
+                    <article class="coop-c-card coop-c-card--product coop-c-card--alcohol coop-l-flex__item">
                         <a href="/products/gordons-pink-gin-817029" class="coop-c-card__link coop-l-flex__item" data-contenttype="Card|Product" data-linktext="Gordon's&nbsp;Premium Pink Gin 70cl">
                             <div class="coop-c-card__image">
                                 <picture>
-                                    <source 
+                                    <source
                                         srcset="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=webp&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad 1x,
                                                 //images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=webp&amp;q=60&amp;w=600&amp;h=600&amp;fit=pad 2x" type="image/webp">
-                                    <img 
+                                    <img
                                         srcset="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad 1x,
-                                                //images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=600&amp;h=600&amp;fit=pad 2x" 
+                                                //images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=600&amp;h=600&amp;fit=pad 2x"
                                         src="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad" alt="Gordon's&nbsp;Premium Pink Gin 70cl" title="Gordon's&nbsp;Premium Pink Gin 70cl" type="image/jpeg">
                                 </picture>
                             </div>
@@ -234,12 +234,12 @@ id: index
             <h3>Notification</h3>
             <div class="coop-l-row">
                 <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
-                        
-                    <div class="coop-c-notification" role="status"> 
-                        <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+
+                    <div class="coop-c-notification" role="status">
+                        <h3 class="coop-c-notification__heading">Coronavirus</h3>
                         <p class="coop-c-notification__p">
                             <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
-                        </p> 
+                        </p>
                     </div>
 
                 </div>
@@ -247,12 +247,12 @@ id: index
             <h3>Notification - Alert</h3>
             <div class="coop-l-row">
                 <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
-                        
-                    <div class="coop-c-notification coop-c-notification--alert" role="alert"> 
-                        <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+
+                    <div class="coop-c-notification coop-c-notification--alert" role="alert">
+                        <h3 class="coop-c-notification__heading">Coronavirus</h3>
                         <p class="coop-c-notification__p">
                             <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
-                        </p> 
+                        </p>
                     </div>
 
                 </div>
@@ -297,6 +297,11 @@ id: index
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="coop-u-margin-b-64">
+            <h2>Link list</h2>
+            {% include components/component-linklist/linklist.html %}
         </div>
 
     </div>
