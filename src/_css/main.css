@@ -17,6 +17,26 @@
 
 /* a few demo styles */
 
+a,
+.coop-t-link {
+  color: var(--color-text);
+  text-decoration: none;
+
+
+  &:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+
+  &:active,
+  &:focus {
+    transition: none;
+    outline: 2px solid var(--color-link--focus);
+    outline-offset: 3px;
+  }
+}
+
 img {
   display: block;
 }
@@ -77,4 +97,9 @@ img {
 .coop-c-hero__inner {
   padding-left: var(--spacing-16);
   padding-right: var(--spacing-16);
+}
+
+.side-nav-border {
+  border-right: 1px solid #c4c4c4 100%;
+  margin-right: 32px;
 }
