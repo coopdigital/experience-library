@@ -103,3 +103,37 @@ img {
   border-right: 1px solid #c4c4c4 100%;
   margin-right: 32px;
 }
+
+.external-link-container {
+  background-color: var(--color-white);
+  margin-bottom: var(--spacing-64);
+  border-radius: var(--ui-border-radius);
+  box-shadow: var(--ui-shadow);
+  transition: box-shadow 0.2s ease-in;
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--ui-border-radius);
+  padding: 24px 24px 16px 24px;
+}
+
+.external-link {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.side-nav {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.external-link-icon {
+  margin-right: var(--spacing-8);
+}
+
+.inline-link:hover {
+  text-decoration: none;
+}
+
+.inline-link:hover span:nth-child(2) {
+  text-decoration: underline;
+}
