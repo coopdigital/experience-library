@@ -128,6 +128,7 @@ img {
 
 .external-link-icon {
   margin-right: var(--spacing-8);
+  vertical-align: middle;
 }
 
 .inline-link:hover {
