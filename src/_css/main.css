@@ -138,3 +138,40 @@ img {
 .inline-link:hover span:nth-child(2) {
   text-decoration: underline;
 }
+
+ul.inline-nav {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-grey-neutral-cool-light);
+}
+
+li.inline-nav {
+  float: left;
+}
+
+li a.inline-nav {
+  display: block;
+  color: var(--color-text);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li a.inline-nav:hover {
+  background-color: var(--color-text);
+  color: var(--color-white);
+}
+
+.active {
+  border-bottom: 4px solid var(--color-blue-mid-4);
+  color: var(--color-blue-mid-4);
+}
+
+.link-blue {
+  color: var(--color-blue-mid-4);
+}
