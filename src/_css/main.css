@@ -16,11 +16,15 @@
 @import "@coopdigital/shared-component--linklist";
 
 /* a few demo styles */
-
+ 
 .coop-l-container {
   max-width: 100%; 
   padding-left: 0;
   padding-right: 0;
+}
+
+.coop-l-grid {
+  width: 100%;
 }
 
 a,
@@ -174,8 +178,8 @@ li a.inline-nav:hover {
 }
 
 .active {
-  border-bottom: 4px solid var(--color-blue-mid-4);
-  color: var(--color-blue-mid-4);
+  border-bottom: 4px solid var(--color-text);
+  color: var(--color-text);
 }
 
 .link-blue {
