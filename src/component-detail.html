@@ -2,141 +2,91 @@
 layout: default
 id: index
 ---
-<div class="coop-l-container">
-    <div class="coop-u-margin-resp-b-64-32 coop-u-margin-resp-t-64-32">
-        <div class="coop-l-grid">
 
-            <div class="coop-l-grid__item coop-l-grid__item--large-2 side-nav-border">
-                <p class="side-nav">Designing</p>
-                <p class="side-nav">Developing</p>
-                <p class="side-nav">Publishing in CMS</p>
-                <p class="side-nav">Contributing</p>
-                <p class="side-nav">Principles</p>
-                <p class="side-nav">Meet ups</p>
+<div class="coop-l-container">
+    <div class="coop-l-grid">
+
+        {% include side-nav.html %}
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-9 coop-u-margin-b-32">
+
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8 coop-u-margin-b-32 coop-u-margin-t-32">
+                    <h1>Signpost</h1>
+                    <p>Signpost navigation is used in pages to link to permanent content.</p>
+                </div>
+
+                <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                    <ul class="external-link-container coop-u-list-bare coop-u-margin-t-64">
+                        <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
+                            <svg width="16" height="22" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M3.00018 17.647C4.65615 17.647 6.00036 16.3291 6.00036 14.7056V11.7642H3.00018C1.34421 11.7642 0 13.082 0 14.7056C0 16.3291 1.34421 17.647 3.00018 17.647Z" fill="#0ACF83"/>
+                            <path d="M0 8.82373C0 7.20021 1.34421 5.88232 3.00018 5.88232H6.00036V11.7644H3.00018C1.34421 11.7651 0 10.4473 0 8.82373Z" fill="#A259FF"/>
+                            <path d="M0 2.94141C0 1.31788 1.34421 0 3.00018 0H6.00036V5.88212H3.00018C1.34421 5.88212 0 4.56494 0 2.94141Z" fill="#F24E1E"/>
+                            <path d="M6 0H9.00019C10.6562 0 12.0004 1.31788 12.0004 2.94141C12.0004 4.56494 10.6562 5.88212 9.00019 5.88212H6V0Z" fill="#FF7262"/>
+                            <path d="M12.0004 8.82373C12.0004 10.4473 10.6562 11.7651 9.00019 11.7651C7.34422 11.7651 6 10.4473 6 8.82373C6 7.20021 7.34422 5.88232 9.00019 5.88232C10.6562 5.88232 12.0004 7.20021 12.0004 8.82373Z" fill="#1ABCFE"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="16" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </span><span>View in Figma</span></a>
+                        </li>
+
+                        <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
+                            <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.68712 0 0 2.75472 0 6.15094C0 8.86792 1.73006 11.1698 4.08589 12C4.38037 12.0377 4.4908 11.8491 4.4908 11.6981C4.4908 11.5472 4.4908 11.1698 4.4908 10.6415C2.83436 11.0189 2.46626 9.81132 2.46626 9.81132C2.20859 9.09434 1.80368 8.90566 1.80368 8.90566C1.25153 8.5283 1.84049 8.5283 1.84049 8.5283C2.42945 8.56604 2.76074 9.16981 2.76074 9.16981C3.31288 10.1132 4.15951 9.84906 4.4908 9.69811C4.52761 9.28302 4.71166 9.01887 4.8589 8.86793C3.53374 8.71698 2.13497 8.18868 2.13497 5.81132C2.13497 5.13208 2.35583 4.60377 2.76074 4.15094C2.72393 4.03774 2.50307 3.39623 2.83436 2.56604C2.83436 2.56604 3.34969 2.41509 4.4908 3.20755C4.96933 3.0566 5.48466 3.01887 6 3.01887C6.51534 3.01887 7.03068 3.09434 7.5092 3.20755C8.65031 2.41509 9.16564 2.56604 9.16564 2.56604C9.49693 3.39623 9.27607 4.03774 9.23926 4.18868C9.60736 4.60377 9.86503 5.16981 9.86503 5.84906C9.86503 8.22642 8.46626 8.71698 7.1411 8.86793C7.36196 9.0566 7.54601 9.43396 7.54601 10C7.54601 10.8302 7.54601 11.4717 7.54601 11.6981C7.54601 11.8491 7.65644 12.0377 7.95092 12C10.3436 11.1698 12.0368 8.86792 12.0368 6.15094C12 2.75472 9.31288 0 6 0Z" fill="#231E1B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </span><span>View in Github</span></a>
+                        </li>
+
+                        <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
+                            <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H12V12H0V0Z" fill="#CB3837"/>
+                            <path d="M2.00586 9.99385H5.96211V4.03135H7.96836V9.99385H9.97461V2.00635H2.00586V9.99385Z" fill="white"/>
+                            </svg>
+                            </span><span>View in npm</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="coop-l-grid__item coop-l-grid__item--large-9 coop-u-margin-b-32">
 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8 coop-u-margin-b-32">
-                        <h1>Signpost</h1>
-                        <p>Signpost navigation is used in pages to link to permanent content.</p>
-                    </div>
 
-                    <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                        <ul class="external-link-container coop-u-list-bare">
-                            <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
-                                <svg width="16" height="22" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                <path d="M3.00018 17.647C4.65615 17.647 6.00036 16.3291 6.00036 14.7056V11.7642H3.00018C1.34421 11.7642 0 13.082 0 14.7056C0 16.3291 1.34421 17.647 3.00018 17.647Z" fill="#0ACF83"/>
-                                <path d="M0 8.82373C0 7.20021 1.34421 5.88232 3.00018 5.88232H6.00036V11.7644H3.00018C1.34421 11.7651 0 10.4473 0 8.82373Z" fill="#A259FF"/>
-                                <path d="M0 2.94141C0 1.31788 1.34421 0 3.00018 0H6.00036V5.88212H3.00018C1.34421 5.88212 0 4.56494 0 2.94141Z" fill="#F24E1E"/>
-                                <path d="M6 0H9.00019C10.6562 0 12.0004 1.31788 12.0004 2.94141C12.0004 4.56494 10.6562 5.88212 9.00019 5.88212H6V0Z" fill="#FF7262"/>
-                                <path d="M12.0004 8.82373C12.0004 10.4473 10.6562 11.7651 9.00019 11.7651C7.34422 11.7651 6 10.4473 6 8.82373C6 7.20021 7.34422 5.88232 9.00019 5.88232C10.6562 5.88232 12.0004 7.20021 12.0004 8.82373Z" fill="#1ABCFE"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect width="16" height="22" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                </span><span>View in Figma</span></a>
-                            </li>
-
-                            <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
-                                <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0C2.68712 0 0 2.75472 0 6.15094C0 8.86792 1.73006 11.1698 4.08589 12C4.38037 12.0377 4.4908 11.8491 4.4908 11.6981C4.4908 11.5472 4.4908 11.1698 4.4908 10.6415C2.83436 11.0189 2.46626 9.81132 2.46626 9.81132C2.20859 9.09434 1.80368 8.90566 1.80368 8.90566C1.25153 8.5283 1.84049 8.5283 1.84049 8.5283C2.42945 8.56604 2.76074 9.16981 2.76074 9.16981C3.31288 10.1132 4.15951 9.84906 4.4908 9.69811C4.52761 9.28302 4.71166 9.01887 4.8589 8.86793C3.53374 8.71698 2.13497 8.18868 2.13497 5.81132C2.13497 5.13208 2.35583 4.60377 2.76074 4.15094C2.72393 4.03774 2.50307 3.39623 2.83436 2.56604C2.83436 2.56604 3.34969 2.41509 4.4908 3.20755C4.96933 3.0566 5.48466 3.01887 6 3.01887C6.51534 3.01887 7.03068 3.09434 7.5092 3.20755C8.65031 2.41509 9.16564 2.56604 9.16564 2.56604C9.49693 3.39623 9.27607 4.03774 9.23926 4.18868C9.60736 4.60377 9.86503 5.16981 9.86503 5.84906C9.86503 8.22642 8.46626 8.71698 7.1411 8.86793C7.36196 9.0566 7.54601 9.43396 7.54601 10C7.54601 10.8302 7.54601 11.4717 7.54601 11.6981C7.54601 11.8491 7.65644 12.0377 7.95092 12C10.3436 11.1698 12.0368 8.86792 12.0368 6.15094C12 2.75472 9.31288 0 6 0Z" fill="#231E1B"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect width="16" height="16" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                </span><span>View in Github</span></a>
-                            </li>
-
-                            <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
-                                <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0H12V12H0V0Z" fill="#CB3837"/>
-                                <path d="M2.00586 9.99385H5.96211V4.03135H7.96836V9.99385H9.97461V2.00635H2.00586V9.99385Z" fill="white"/>
-                                </svg>
-                                </span><span>View in npm</span></a>
-                            </li>
+            <div class="coop-l-grid">
+                <div class="coop-u-margin-resp-b-64-32">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <ul class="inline-nav">
+                            <li class="inline-nav"><a class="inline-nav active" href="#home">Example</a></li>
+                            <li class="inline-nav"><a class="inline-nav" href="#news">Guidance</a></li>
+                            <li class="inline-nav"><a class="inline-nav" href="#contact">HTML</a></li>
+                            <li class="inline-nav"><a class="inline-nav" href="#about">CSS</a></li>
                         </ul>
                     </div>
                 </div>
 
 
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <h2>Example</h2>
+                    <p>Signpost navigation is used in pages to link to permanent content.</p>
 
-                <div class="coop-l-grid">
-                    <div class="coop-u-margin-resp-b-64-32">
-                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                            <ul class="inline-nav">
-                              <li class="inline-nav"><a class="inline-nav active" href="#home">Example</a></li>
-                              <li class="inline-nav"><a class="inline-nav" href="#news">Guidance</a></li>
-                              <li class="inline-nav"><a class="inline-nav" href="#contact">HTML</a></li>
-                              <li class="inline-nav"><a class="inline-nav" href="#about">CSS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <h2>Example</h2>
-                        <p>Signpost navigation is used in pages to link to permanent content.</p>
-
-                        <div class="coop-l-grid">
-                            <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                                <div class="coop-c-signpost">
-                                    <a href="#" class="coop-c-signpost__link" data-contenttype="" data-contentparent="" data-linktext="">
-                                        <div class="coop-c-signpost__content">
-                                           <h3 class="coop-c-signpost__title">
-                                               See all recipes
-                                           </h3>
-                                           <span class="coop-c-signpost__icon" aria-hidden="true">
-                                               <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                                   <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
-                                               </svg>
-                                           </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                                <div class="coop-c-signpost">
-                                    <a href="#" class="coop-c-signpost__link" data-contenttype="Signpost" data-contentparent="Signposts" data-linktext="Sign in to Membership">
-                                    <figure class="coop-c-signpost__media">
-                                        <picture class="coop-c-signpost__image">
-                                            <!-- max image size 360w 203h -->
-                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
-                                            <!-- max image size 751w 423h -->
-                                            <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
-                                            <!-- 25.9375em / max image size 583w 329h -->
-                                            <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
-
-                                            <!-- if no webp supported then default to serve progressive jpeg -->
-                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
-                                            <!-- max image size 751w 423h -->
-                                            <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
-                                            <!-- 25.9375em / max image size 583w 329h -->
-                                            <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
-                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
-                                            <!-- fallback -->
-                                            <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
-                                        </picture>
-                                    </figure>
-
+                    <div class="coop-l-grid">
+                        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                            <div class="coop-c-signpost">
+                                <a href="#" class="coop-c-signpost__link" data-contenttype="" data-contentparent="" data-linktext="">
                                     <div class="coop-c-signpost__content">
                                         <h3 class="coop-c-signpost__title">
-                                            Sign in to Membership
+                                            See all recipes
                                         </h3>
                                         <span class="coop-c-signpost__icon" aria-hidden="true">
                                             <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
@@ -144,41 +94,84 @@ id: index
                                             </svg>
                                         </span>
                                     </div>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                         </div>
-                        <hr>
+
+                        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                            <div class="coop-c-signpost">
+                                <a href="#" class="coop-c-signpost__link" data-contenttype="Signpost" data-contentparent="Signposts" data-linktext="Sign in to Membership">
+                                <figure class="coop-c-signpost__media">
+                                    <picture class="coop-c-signpost__image">
+                                        <!-- max image size 360w 203h -->
+                                        <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
+                                        <!-- max image size 751w 423h -->
+                                        <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
+                                        <!-- 25.9375em / max image size 583w 329h -->
+                                        <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
+
+                                        <!-- if no webp supported then default to serve progressive jpeg -->
+                                        <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
+                                        <!-- max image size 751w 423h -->
+                                        <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
+                                        <!-- 25.9375em / max image size 583w 329h -->
+                                        <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
+                                        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
+                                        <!-- fallback -->
+                                        <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
+                                    </picture>
+                                </figure>
+
+                                <div class="coop-c-signpost__content">
+                                    <h3 class="coop-c-signpost__title">
+                                        Sign in to Membership
+                                    </h3>
+                                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    <hr>
                 </div>
-
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <h2>Guidance</h2>
-                        <p>Content.</p>
-                    </div>
-                </div>
-                <hr>
-
-
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <h2>HTML</h2>
-                        <p><a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/component-signpost/src/signpost.html" class="link-blue">View the HTML in GitHub</a></p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <h2>CSS/Utilities</h2>
-                        <p><a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/component-signpost/src/signpost.pcss" class="link-blue">View the CSS in GitHub</a></p>
-                    </div>
-                </div>
-
-
             </div>
 
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <h2>Guidance</h2>
+                    <p>Content.</p>
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <h2>HTML</h2>
+                    <p><a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/component-signpost/src/signpost.html" class="link-blue">View the HTML in GitHub</a></p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <h2>CSS/Utilities</h2>
+                    <p><a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/component-signpost/src/signpost.pcss" class="link-blue">View the CSS in GitHub</a></p>
+                </div>
+            </div>
+
+
         </div>
+
     </div>
 </div>
+
