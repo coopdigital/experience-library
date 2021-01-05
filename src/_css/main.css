@@ -55,7 +55,7 @@ img {
 
 @media (--mq-large) {
   .ds-header-example {
-    padding: 32px 0 28px 0;
+    padding: 32px 16px 28px 16px;
   }
 }
 
@@ -99,9 +99,10 @@ img {
   padding-right: var(--spacing-16);
 }
 
-.side-nav-border {
-  border-right: 1px solid #c4c4c4 100%;
-  margin-right: 32px;
+.side-nav {
+  height: 100%;
+  background: var(--color-grey-neutral-cool-light);
+  padding: var(--spacing-16);
 }
 
 .external-link-container {
@@ -174,4 +175,14 @@ li a.inline-nav:hover {
 
 .link-blue {
   color: var(--color-blue-mid-4);
+}
+
+.coop-l-container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.coop-l-grid {
+  width: 100%;
 }
