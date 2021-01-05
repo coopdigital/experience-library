@@ -17,6 +17,16 @@
 
 /* a few demo styles */
 
+.coop-l-container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.coop-l-grid {
+  width: 100%;
+}
+
 a,
 .coop-t-link {
   color: var(--color-text);
@@ -55,7 +65,7 @@ img {
 
 @media (--mq-large) {
   .ds-header-example {
-    padding: 32px 16px 28px 16px;
+    padding: 32px var(--spacing-16) 28px var(--spacing-16);
   }
 }
 
@@ -122,8 +132,7 @@ img {
   margin-bottom: 8px;
 }
 
-.side-nav {
-  font-weight: 500;
+.side-nav__link {
   font-size: 18px;
 }
 
@@ -175,14 +184,4 @@ li a.inline-nav:hover {
 
 .link-blue {
   color: var(--color-blue-mid-4);
-}
-
-.coop-l-container {
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.coop-l-grid {
-  width: 100%;
 }
