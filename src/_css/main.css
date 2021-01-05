@@ -168,8 +168,8 @@ li a.inline-nav:hover {
 }
 
 .active {
-  border-bottom: 4px solid var(--color-blue-mid-4);
-  color: var(--color-blue-mid-4);
+  border-bottom: 4px solid var(--color-text);
+  color: var(--color-text);
 }
 
 .link-blue {
