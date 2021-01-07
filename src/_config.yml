@@ -1,8 +1,8 @@
 # Jekyll config
 
 # Site settings
-title: Co-op Prototyping Kit
-description: Co-op Prototyping Kit
+title: Co-op Design System
+description: Co-op Design System
 baseurl: ""
 url: "http://coop-prototyping-kit.heroku.com"
 
