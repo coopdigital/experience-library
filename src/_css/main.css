@@ -15,6 +15,9 @@
 @import "@coopdigital/shared-component--hero";
 @import "@coopdigital/shared-component--linklist";
 
+@import "theme/layout.pcss";
+
+
 /* a few demo styles */
 
 .coop-c-signpost {
