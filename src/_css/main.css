@@ -14,11 +14,19 @@
 @import "@coopdigital/shared-component--featurecard";
 @import "@coopdigital/shared-component--hero";
 @import "@coopdigital/shared-component--linklist";
-
 @import "theme/layout.pcss";
 
 
 /* a few demo styles */
+.coop-u-flex__sidebar {
+  display: flex;
+  flex: 0 0 280px;
+  padding: var(--spacing-32) var(--spacing-16) var(--spacing-64) var(--spacing-16);
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: var(--color-grey-neutral-cool-light);
+}
 
 .coop-c-signpost {
   flex-grow: 1;
@@ -191,7 +199,6 @@ img {
   transition: box-shadow 0.2s ease-in;
   color: var(--color-text);
   text-decoration: none;
-  border-radius: var(--ui-border-radius);
   padding: 24px 24px 16px 24px;
 }
 
@@ -199,8 +206,6 @@ img {
   font-size: 16px;
   margin-bottom: 8px;
 }
-
-
 
 .external-link-icon {
   margin-right: var(--spacing-8);

@@ -1,8 +1,8 @@
 # Jekyll config
 
 # Site settings
-title: Co-op Design System
-description: Co-op Design System
+title: Co-op Experience library
+description: Tools and resources to help ensure Co-op creates coherent, efficient customer experiences to the highest standard.
 baseurl: ""
 url: "http://coop-prototyping-kit.heroku.com"
 
