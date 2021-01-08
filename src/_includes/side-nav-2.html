@@ -12,7 +12,7 @@
         {% if page.id == 'index' %}
         <li class="side-nav__link"><a href="#">Designing at Co-op</a></li>
         <li class="side-nav__link"><a href="#">Get started with:</a></li>
-        <li class="side-nav__link"><a href="/ui/">UI library</a></li>
+        <li class="side-nav__link"><a href="/ui-library/">UI library</a></li>
         <li class="side-nav__link"><a href="#">Visual language</a></li>
         <li class="side-nav__link"><a href="/accessibility/">Accessibility</a></li>
         <li class="side-nav__link"><a href="#">Content</a></li>
@@ -36,6 +36,49 @@
             <li class="side-nav__link"><a href="#">Accessibility groups at Co-op</a></li>
             <li class="side-nav__link"><a href="#">Meet ups</a></li>
             <li class="side-nav__link"><a href="#">Support</a></li>
+        {% endif %}
+
+
+        {% if page.id == 'ui' %}
+            <li class="side-nav__title">UI library</li>
+            <li class="side-nav__link"><a href="#">How to use</a></li>
+            <li class="side-nav__link"><a href="#">Design tokens</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Elements</a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Components</a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Page Layouts</a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">User Journeys</a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </li>
+            <li class="side-nav__link"><a href="#">Prototyping</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Community</a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </li>
         {% endif %}
     </ul>
 </nav>

@@ -7,7 +7,17 @@
     </a>
     <nav>
         <ul class="c-coop-breadcrumb">
+        {% if page.id == 'index' %}
+            <li>Experience</li>
+        {% endif %}
+        {% if page.id == 'accessibility' %}
             <li><a href="/">Experience</a></li>
-            <li>Accessibility</li></ul>
+            <li>Accessibility</li>
+        {% endif %}
+        {% if page.id == 'ui' %}
+            <li><a href="/">Experience</a></li>
+            <li>UI library</li>
+        {% endif %}
+        </ul>
     </nav>
 </header>
