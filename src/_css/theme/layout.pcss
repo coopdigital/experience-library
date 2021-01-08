@@ -1,39 +1,40 @@
-
-
 .ds-header-slim {
   position: relative;
   z-index: 2;
   padding: var(--spacing-8) var(--spacing-8) var(--spacing-2) var(--spacing-8);
   box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
 }
 
 @media (--mq-medium) {
   .ds-header-slim {
-    padding: var(--spacing-16) var(--spacing-16) var(--spacing-8) var(--spacing-16);
+    padding: var(--spacing-16) var(--spacing-16) var(--spacing-8)
+      var(--spacing-16);
   }
 }
 
 .coop-u-flex__sidebar {
-   display: flex;
-   flex: 0 0 280px;
-   height: 100%;
-   padding: var(--spacing-32) var(--spacing-16);
-   flex-flow: column nowrap;
-   justify-content: left;
-   align-items: center;
-   background: var(--color-grey-neutral-cool-light);
+  display: flex;
+  flex: 0 0 280px;
+  height: 100%;
+  padding: var(--spacing-32) var(--spacing-16);
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: var(--color-grey-neutral-cool-light);
 }
 
 .coop-u-flex__main {
-   display: flex;
-   width: 100%;
-   height: 100vh;
-   justify-content: left;
-   flex-flow: column nowrap;
-   justify-content: left;
-   align-items: center;
-   background: var(--color-white);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: left;
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: var(--color-white);
 }
 
 .coop-l-page,
@@ -42,15 +43,15 @@
 }
 
 .coop-l-page {
-    width: 50rem;
-    padding: var(--spacing-16);
-    margin: 0 auto;
+  width: 50rem;
+  padding: var(--spacing-16);
+  margin: 0 auto;
 }
 
 .coop-l-full {
-    width: 100%;
-    padding: var(--spacing-32) var(--spacing-64);
-    background: var(--color-grey-neutral-cool);
+  width: 100%;
+  padding: var(--spacing-32) var(--spacing-64);
+  background: var(--color-grey-neutral-cool);
 }
 
 .coop-c-search {
@@ -59,4 +60,20 @@
 
 .coop-side-nav {
   width: 100%;
+}
+
+.c-coop-breadcrumb {
+  margin-left: 200px;
+  list-style-type: none;
+}
+
+.c-coop-breadcrumb li {
+  display: inline-block;
+}
+
+.c-coop-breadcrumb li + li::before {
+  content: '>';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }

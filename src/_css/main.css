@@ -1,27 +1,26 @@
-
-@import "@coopdigital/css-foundations";
+@import '@coopdigital/css-foundations';
 
 /* Components */
-@import "@coopdigital/component-skipnav";
-@import "@coopdigital/component-card--product";
-@import "@coopdigital/component-notification";
-@import "@coopdigital/component-notification--alert";
-@import "@coopdigital/component-search";
-@import "@coopdigital/component-squircles";
-@import "@coopdigital/component-tags";
-@import "@coopdigital/shared-component--signpost";
-@import "@coopdigital/shared-component--editorialcard";
-@import "@coopdigital/shared-component--featurecard";
-@import "@coopdigital/shared-component--hero";
-@import "@coopdigital/shared-component--linklist";
-@import "theme/layout.pcss";
-
+@import '@coopdigital/component-skipnav';
+@import '@coopdigital/component-card--product';
+@import '@coopdigital/component-notification';
+@import '@coopdigital/component-notification--alert';
+@import '@coopdigital/component-search';
+@import '@coopdigital/component-squircles';
+@import '@coopdigital/component-tags';
+@import '@coopdigital/shared-component--signpost';
+@import '@coopdigital/shared-component--editorialcard';
+@import '@coopdigital/shared-component--featurecard';
+@import '@coopdigital/shared-component--hero';
+@import '@coopdigital/shared-component--linklist';
+@import 'theme/layout.pcss';
 
 /* a few demo styles */
 .coop-u-flex__sidebar {
   display: flex;
   flex: 0 0 280px;
-  padding: var(--spacing-32) var(--spacing-16) var(--spacing-64) var(--spacing-16);
+  padding: var(--spacing-32) var(--spacing-16) var(--spacing-64)
+    var(--spacing-16);
   flex-flow: column nowrap;
   justify-content: left;
   align-items: center;
@@ -91,7 +90,6 @@ a,
 .coop-t-link {
   color: var(--color-text);
   text-decoration: none;
-
 
   &:hover {
     color: var(--color-text);
