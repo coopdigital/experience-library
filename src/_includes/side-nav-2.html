@@ -9,47 +9,33 @@
           </button>
       </form>
     <ul class="coop-side-nav coop-u-list-bare">
-        <li class="side-nav__title">Designing at Co-op</li>
-        <li class="side-nav__link"><a href="#">Principles</a></li>
-        <li class="side-nav__link"><a href="#">Customer experience</a></li>
-
-        <li class="side-nav__title">Get started with:</li>
-        <li class="side-nav__link"><a href="#">Design</a></li>
-        <li class="side-nav__link"><a href="#">Code</a></li>
+        {% if page.id == 'index' %}
+        <li class="side-nav__link"><a href="#">Designing at Co-op</a></li>
+        <li class="side-nav__link"><a href="#">Get started with:</a></li>
+        <li class="side-nav__link"><a href="/ui/">UI library</a></li>
+        <li class="side-nav__link"><a href="#">Visual language</a></li>
+        <li class="side-nav__link"><a href="/accessibility/">Accessibility</a></li>
         <li class="side-nav__link"><a href="#">Content</a></li>
-        <li class="side-nav__link"><a href="#">Accessibility</a></li>
-        <li class="side-nav__link"><a href="#">Using the CMS</a></li>
-        <li class="side-nav__link"><a href="#">Prototyping kit</a></li>
-
-        <li class="side-nav__title">UI library</li>
-        <li class="side-nav__link"><a href="/component-overview.html">Components</a></li>
-        <li class="side-nav__link"><a href="#">Patterns</a></li>
-        <li class="side-nav__link"><a href="#">Journeys</a></li>
-
-        <li class="side-nav__title">Visual language</li>
-        <li class="side-nav__link"><a href="#">Colour</a></li>
-        <li class="side-nav__link"><a href="#">Typography</a></li>
-        <li class="side-nav__link"><a href="#">Layouts</a></li>
-        <li class="side-nav__link"><a href="#">Design tokens</a></li>
-
-        <li class="side-nav__title">Accessibility</li>
-        <li class="side-nav__link"><a href="#">Policy</a></li>
-        <li class="side-nav__link"><a href="#">Standards</a></li>
-        <li class="side-nav__link"><a href="#">Testing and research</a></li>
-        <li class="side-nav__link"><a href="#">Tools and resources</a></li>
         <li class="side-nav__link"><a href="#">Community</a></li>
+        {% endif %}
 
-        <li class="side-nav__title">Content</li>
-        <li class="side-nav__link"><a href="#">Foundations</a></li>
-        <li class="side-nav__link"><a href="#">Elements</a></li>
-        <li class="side-nav__link"><a href="#">Patterns</a></li>
-        <li class="side-nav__link"><a href="#">Style and guidelines</a></li>
-        <li class="side-nav__link"><a href="#">Writing for Co-op products</a></li>
-        <li class="side-nav__link"><a href="#">Community</a></li>
-
-        <li class="side-nav__title">Community</li>
-        <li class="side-nav__link"><a href="#">Contributing</a></li>
-        <li class="side-nav__link"><a href="/meet-ups.html">Meet ups</a></li>
-        <li class="side-nav__link"><a href="#">Support</a></li>
+        {% if page.id == 'accessibility' %}
+            <li class="side-nav__title"><a href="#">Accessibility policy</a></li>
+            <li class="side-nav__title"><a href="#">Standards</a></li>
+            <li class="side-nav__link"><a href="#">Using these standards</a></li>
+            <li class="side-nav__link"><a href="#">Make it understandable</a></li>
+            <li class="side-nav__link"><a href="#">Make it readable and usable</a></li>
+            <li class="side-nav__link"><a href="#">Put the user in control</a></li>
+            <li class="side-nav__link"><a href="#">Forms</a></li>
+            <li class="side-nav__title"><a href="#">Testing and research</a></li>
+            <li class="side-nav__link"><a href="#">Accessibility testing framework</a></li>
+            <li class="side-nav__link"><a href="#">Researching with users</a></li>
+            <li class="side-nav__title"><a href="#">Tools and resources</a></li>
+            <li class="side-nav__title"><a href="#">Community</a></li>
+            <li class="side-nav__link"><a href="#">Accessibility champions network</a></li>
+            <li class="side-nav__link"><a href="#">Accessibility groups at Co-op</a></li>
+            <li class="side-nav__link"><a href="#">Meet ups</a></li>
+            <li class="side-nav__link"><a href="#">Support</a></li>
+        {% endif %}
     </ul>
 </nav>
