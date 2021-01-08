@@ -40,9 +40,25 @@
 
 
         {% if page.id == 'ui' %}
-            <li class="side-nav__title">UI library</li>
             <li class="side-nav__link"><a href="#">How to use</a></li>
-            <li class="side-nav__link"><a href="#">Design tokens</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Design tokens
+                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <path
+                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li><a href="#">Colours</a></li>
+                    <li><a href="#">Font</a></li>
+                    <li><a href="#">Font sizes</a></li>
+                    <li><a href="#">Spacing</a></li>
+                    <li><a href="#">Borders</a></li>
+                    <li><a href="#">Shadow</a></li>
+                    <li><a href="#">Radius</a></li>
+                </ul>
+            </li>
             <li class="side-nav__link side-nav__link-toggle">
                 <a href="#" class="toggle-link">Elements
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
@@ -52,8 +68,17 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>One</li>
-                    <li>Two</li>
+                    <li><a href="#">Headings</a></li>
+                    <li><a href="#">Bullet list</a></li>
+                    <li><a href="#">Numbered list</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Input</a></li>
+                    <li><a href="#">Textarea</a></li>
+                    <li><a href="#">Select dropdown</a></li>
+                    <li><a href="#">Checkboxes and radios</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Grid</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -65,8 +90,23 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>One</li>
-                    <li>Two</li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Quotation</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Date input</a></li>
+                    <li><a href="#">Validation</a></li>
+                    <li><a href="/ui-library/components/signpost.html">Signposts</a></li>
+                    <li><a href="#">Skip navigation</a></li>
+                    <li><a href="#">Hero banner</a></li>
+                    <li><a href="#">Editorial card</a></li>
+                    <li><a href="#">Feature card</a></li>
+                    <li><a href="#">Product card</a></li>
+                    <li><a href="#">Membersship banner</a></li>
+                    <li><a href="#">Squircles</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Country flags</a></li>
+                    <li><a href="#">Notification banner</a></li>
+                    <li><a href="#">Alert banner</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -78,8 +118,7 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>One</li>
-                    <li>Two</li>
+                    <li>Nothing here yet</li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -91,8 +130,7 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>One</li>
-                    <li>Two</li>
+                    <li>Nothing here yet</li>
                 </ul>
             </li>
             <li class="side-nav__link"><a href="#">Prototyping</a></li>
@@ -105,8 +143,9 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>One</li>
-                    <li>Two</li>
+                    <li><a href="https://github.com/coopdigital/coop-frontend">Co-op front-end on Github</a></li>
+                    <li><a href="https://github.com/coopdigital/coop-frontend/issues">Open an issue on Github</a></li>
+                    <li><a href="#">Contact the team</a></li>
                 </ul>
             </li>
         {% endif %}
