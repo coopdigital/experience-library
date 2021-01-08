@@ -192,6 +192,12 @@ img {
   padding: 4px 0 4px 0;
 }
 
+.coop-side-nav--nested {
+  list-style: none;
+  margin-top: var(--spacing-4);
+  padding-left: var(--spacing-8);
+}
+
 .external-link-container {
   background-color: var(--color-white);
   margin-bottom: var(--spacing-64);
