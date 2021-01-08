@@ -1,294 +1,275 @@
 ---
-layout: default
-id: index
+layout: coop-experience
+id: ui
 ---
 
-<div class="coop-l-container">
+<section class="coop-l-full">
     <div class="coop-l-grid">
-        <div class="coop-l-grid__item coop-l-grid__item--large-3">
-            {% include side-nav.html %}
+        <div class="coop-l-grid__item coop-l-grid__item--large-8 coop-u-margin-resp-t-32-16">
+            <h1>Components</h1>
+            <p>A link card that can be displayed with or without an image.</p>
+            <p>Signpost navigation is used in pages to link to permanent content.</p>
         </div>
-        <div class="coop-l-grid__item coop-l-grid__item--large-9 coop-u-margin-b-32">
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-8 coop-u-margin-resp-t-32-16">
-                    <h1>Components</h1>
-                    <p>Reusable parts of the user interface that can be used to build something.</p>
-                    <p>For example, a text input field that could be used for a name or a phone number. </p>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-margin-resp-t-32-16">
-                    <ul class="external-link-container coop-u-list-bare">
-                        <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
-                            <svg width="16" height="22" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                            <path d="M3.00018 17.647C4.65615 17.647 6.00036 16.3291 6.00036 14.7056V11.7642H3.00018C1.34421 11.7642 0 13.082 0 14.7056C0 16.3291 1.34421 17.647 3.00018 17.647Z" fill="#0ACF83"/>
-                            <path d="M0 8.82373C0 7.20021 1.34421 5.88232 3.00018 5.88232H6.00036V11.7644H3.00018C1.34421 11.7651 0 10.4473 0 8.82373Z" fill="#A259FF"/>
-                            <path d="M0 2.94141C0 1.31788 1.34421 0 3.00018 0H6.00036V5.88212H3.00018C1.34421 5.88212 0 4.56494 0 2.94141Z" fill="#F24E1E"/>
-                            <path d="M6 0H9.00019C10.6562 0 12.0004 1.31788 12.0004 2.94141C12.0004 4.56494 10.6562 5.88212 9.00019 5.88212H6V0Z" fill="#FF7262"/>
-                            <path d="M12.0004 8.82373C12.0004 10.4473 10.6562 11.7651 9.00019 11.7651C7.34422 11.7651 6 10.4473 6 8.82373C6 7.20021 7.34422 5.88232 9.00019 5.88232C10.6562 5.88232 12.0004 7.20021 12.0004 8.82373Z" fill="#1ABCFE"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0">
-                            <rect width="16" height="22" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            </span><span>View in Figma</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="coop-l-grid coop-u-margin-resp-b-32-16 coop-u-margin-resp-t-32-16">
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/banner-alert.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Banner - Alert</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/banner-hero.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Banner - Hero</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/banner-information.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Banner - Information</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/card-editorial.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Card - Editorial</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/card-feature.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Card - Feature</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/card-product.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Card - Product</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="/component-detail-signpost."
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/signpost.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Signpost</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/tags.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Tags</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a
-                        href="#"
-                        class="coop-c-signpost__link"
-                        data-contenttype=""
-                        data-contentparent=""
-                        data-linktext=""
-                        >
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <img src="images/card-feature.jpg" alt="">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <p class="coop-c-signpost__title">Card - Feature</p>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-            </div>
+        <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-margin-resp-t-32-16">
+            <ul class="external-link-container coop-u-list-bare">
+                <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
+                    <svg width="16" height="22" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M3.00018 17.647C4.65615 17.647 6.00036 16.3291 6.00036 14.7056V11.7642H3.00018C1.34421 11.7642 0 13.082 0 14.7056C0 16.3291 1.34421 17.647 3.00018 17.647Z" fill="#0ACF83"/>
+                    <path d="M0 8.82373C0 7.20021 1.34421 5.88232 3.00018 5.88232H6.00036V11.7644H3.00018C1.34421 11.7651 0 10.4473 0 8.82373Z" fill="#A259FF"/>
+                    <path d="M0 2.94141C0 1.31788 1.34421 0 3.00018 0H6.00036V5.88212H3.00018C1.34421 5.88212 0 4.56494 0 2.94141Z" fill="#F24E1E"/>
+                    <path d="M6 0H9.00019C10.6562 0 12.0004 1.31788 12.0004 2.94141C12.0004 4.56494 10.6562 5.88212 9.00019 5.88212H6V0Z" fill="#FF7262"/>
+                    <path d="M12.0004 8.82373C12.0004 10.4473 10.6562 11.7651 9.00019 11.7651C7.34422 11.7651 6 10.4473 6 8.82373C6 7.20021 7.34422 5.88232 9.00019 5.88232C10.6562 5.88232 12.0004 7.20021 12.0004 8.82373Z" fill="#1ABCFE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="16" height="22" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </span><span>View in Figma</span></a>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+</section>
+
+<section class="coop-l-full">
+    <div class="coop-l-grid coop-u-margin-resp-b-32-16 ">
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/banner-alert.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Banner - Alert</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div> 
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/banner-hero.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Banner - Hero</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/banner-information.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Banner - Information</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/card-editorial.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Card - Editorial</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/card-feature.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Card - Feature</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/card-product.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Card - Product</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="/ui-library/components/signpost.html"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/signpost.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Signpost</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/tags.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Tags</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-c-signpost">
+                <a
+                href="#"
+                class="coop-c-signpost__link"
+                data-contenttype=""
+                data-contentparent=""
+                data-linktext=""
+                >
+                <figure class="coop-c-signpost__media">
+                    <picture class="coop-c-signpost__image">
+                        <img src="images/card-feature.jpg" alt="">
+                    </picture>
+                </figure>
+                <div class="coop-c-signpost__content">
+                    <p class="coop-c-signpost__title">Card - Feature</p>
+                    <span class="coop-c-signpost__icon" aria-hidden="true">
+                        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                            <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                        </svg>
+                    </span>
+                </div>
+                </a>
+            </div>
+        </div>   
+    </div>
+</section>
+                

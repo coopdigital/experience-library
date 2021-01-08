@@ -40,7 +40,7 @@
 
 
         {% if page.id == 'ui' %}
-            <li class="side-nav__link"><a href="#">How to use</a></li>
+            <li class="side-nav__link"><a href="#">UI library</a></li>
             <li class="side-nav__link side-nav__link-toggle">
                 <a href="#" class="toggle-link">Design tokens
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
@@ -50,13 +50,13 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li><a href="#">Colours</a></li>
-                    <li><a href="#">Font</a></li>
-                    <li><a href="#">Font sizes</a></li>
-                    <li><a href="#">Spacing</a></li>
-                    <li><a href="#">Borders</a></li>
-                    <li><a href="#">Shadow</a></li>
-                    <li><a href="#">Radius</a></li>
+                    <li class="nested-link"><a href="#">Colours</a></li>
+                    <li class="nested-link"><a href="#">Font</a></li>
+                    <li class="nested-link"><a href="#">Font sizes</a></li>
+                    <li class="nested-link"><a href="#">Spacing</a></li>
+                    <li class="nested-link"><a href="#">Borders</a></li>
+                    <li class="nested-link"><a href="#">Shadow</a></li>
+                    <li class="nested-link"><a href="#">Radius</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -68,17 +68,17 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li><a href="#">Headings</a></li>
-                    <li><a href="#">Bullet list</a></li>
-                    <li><a href="#">Numbered list</a></li>
-                    <li><a href="#">Links</a></li>
-                    <li><a href="#">Buttons</a></li>
-                    <li><a href="#">Input</a></li>
-                    <li><a href="#">Textarea</a></li>
-                    <li><a href="#">Select dropdown</a></li>
-                    <li><a href="#">Checkboxes and radios</a></li>
-                    <li><a href="#">Tables</a></li>
-                    <li><a href="#">Grid</a></li>
+                    <li class="nested-link"><a href="#" >Headings</a></li>
+                    <li class="nested-link"><a href="#" >Bullet list</a></li>
+                    <li class="nested-link"><a href="#" >Numbered list</a></li>
+                    <li class="nested-link"><a href="#" >Links</a></li>
+                    <li class="nested-link"><a href="#" >Buttons</a></li>
+                    <li class="nested-link"><a href="#" >Input</a></li>
+                    <li class="nested-link"><a href="#" >Textarea</a></li>
+                    <li class="nested-link"><a href="#" >Select dropdown</a></li>
+                    <li class="nested-link"><a href="#" >Checkboxes and radios</a></li>
+                    <li class="nested-link"><a href="#" >Tables</a></li>
+                    <li class="nested-link"><a href="#" >Grid</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -90,23 +90,24 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li><a href="#">Logo</a></li>
-                    <li><a href="#">Quotation</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Date input</a></li>
-                    <li><a href="#">Validation</a></li>
-                    <li><a href="/ui-library/components/signpost.html">Signposts</a></li>
-                    <li><a href="#">Skip navigation</a></li>
-                    <li><a href="#">Hero banner</a></li>
-                    <li><a href="#">Editorial card</a></li>
-                    <li><a href="#">Feature card</a></li>
-                    <li><a href="#">Product card</a></li>
-                    <li><a href="#">Membersship banner</a></li>
-                    <li><a href="#">Squircles</a></li>
-                    <li><a href="#">Tags</a></li>
-                    <li><a href="#">Country flags</a></li>
-                    <li><a href="#">Notification banner</a></li>
-                    <li><a href="#">Alert banner</a></li>
+                    <li class="nested-link"><a href="/component-overview.html">All components</a></li>
+                    <li class="nested-link"><a href="#">Logo</a></li>
+                    <li class="nested-link"><a href="#">Quotation</a></li>
+                    <li class="nested-link"><a href="#">Search</a></li>
+                    <li class="nested-link"><a href="#">Date input</a></li>
+                    <li class="nested-link"><a href="#">Validation</a></li>
+                    <li class="nested-link"><a href="/ui-library/components/signpost.html">Signposts</a></li>
+                    <li class="nested-link"><a href="#">Skip navigation</a></li>
+                    <li class="nested-link"><a href="#">Hero banner</a></li>
+                    <li class="nested-link"><a href="#">Editorial card</a></li>
+                    <li class="nested-link"><a href="#">Feature card</a></li>
+                    <li class="nested-link"><a href="#">Product card</a></li>
+                    <li class="nested-link"><a href="#">Membersship banner</a></li>
+                    <li class="nested-link"><a href="#">Squircles</a></li>
+                    <li class="nested-link"><a href="#">Tags</a></li>
+                    <li class="nested-link"><a href="#">Country flags</a></li>
+                    <li class="nested-link"><a href="#">Notification banner</a></li>
+                    <li class="nested-link"><a href="#">Alert banner</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -118,7 +119,7 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>Nothing here yet</li>
+                    <li class="nested-link">Nothing here yet</li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -130,10 +131,21 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li>Nothing here yet</li>
+                    <li class="nested-link">Nothing here yet</li>
                 </ul>
             </li>
-            <li class="side-nav__link"><a href="#">Prototyping</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Prototyping
+                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <path
+                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li class="nested-link">Nothing here yet</li>
+                </ul>
+            </li>
             <li class="side-nav__link side-nav__link-toggle">
                 <a href="#" class="toggle-link">Community
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
@@ -143,9 +155,9 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li><a href="https://github.com/coopdigital/coop-frontend">Co-op front-end on Github</a></li>
-                    <li><a href="https://github.com/coopdigital/coop-frontend/issues">Open an issue on Github</a></li>
-                    <li><a href="#">Contact the team</a></li>
+                    <li class="nested-link"><a href="https://github.com/coopdigital/coop-frontend">Co-op front-end on Github</a></li>
+                    <li class="nested-link"><a href="https://github.com/coopdigital/coop-frontend/issues">Open an issue on Github</a></li>
+                    <li class="nested-link"><a href="#">Contact the team</a></li>
                 </ul>
             </li>
         {% endif %}
