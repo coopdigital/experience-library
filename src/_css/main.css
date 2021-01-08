@@ -200,7 +200,7 @@ img {
   transition: box-shadow 0.2s ease-in;
   color: var(--color-text);
   text-decoration: none;
-  padding: 24px 24px 16px 24px;
+  padding: 24px 20px 16px 20px;
 }
 
 .external-link {
@@ -264,4 +264,8 @@ li a.inline-nav:hover {
 .footer-dark {
   background: var(--color-text);
   padding-top: var(--spacing-64);
+}
+
+html {
+  scroll-behavior: smooth;
 }
