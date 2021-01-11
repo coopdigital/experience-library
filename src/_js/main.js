@@ -6,10 +6,11 @@ $('.toggle-link').click(function () {
     $(this).next('.coop-side-nav--nested').toggle();
   } else {
     $(this).removeClass('is-open');
+    $(this).next('.coop-side-nav--nested').toggle();
   }
 });
 
 if ($('.toggle-link').hasClass('is-open')) {
-  console.log('has class!');
+  console.log('?');
   $('.toggle-link.is-open').next('.coop-side-nav--nested').show();
 }
