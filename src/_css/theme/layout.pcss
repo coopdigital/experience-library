@@ -10,8 +10,7 @@
 
 @media (--mq-medium) {
   .ds-header-slim {
-    padding: var(--spacing-16) 
-      var(--spacing-16);
+    padding: var(--spacing-16) var(--spacing-16);
   }
 }
 
@@ -93,11 +92,15 @@
   transition: all 0.3s ease-in-out;
 }
 
-.coopssn-c-nav__link__icon__svg.is-open {
-  transform: rotate(180deg);
-}
-
 .toggle-link {
   display: block;
   font-weight: 500;
+}
+
+.toggle-link.is-open .coopssn-c-nav__link__icon__svg {
+  transform: rotate(180deg);
+}
+
+.coop-side-nav--nested .is-active {
+  text-decoration: underline;
 }
