@@ -283,3 +283,21 @@ html {
   margin-bottom: var(--spacing-8);
   font-weight: 400;
 }
+
+.coop-t-hr-slim {
+  display: block;
+  border-style: solid;
+  border-color: var(--color-grey-mid);
+  border-width: 0 0 1px;
+  height: 0;
+  color: var(--color-grey-mid);
+  margin-top: var(--spacing-0);
+  margin-bottom: var(--spacing-8);
+}
+
+.section-background{
+  background-color: var(--color-grey-neutral-cool-light);
+  margin-left: 48px;
+  padding-left: 32px;
+  margin-top: 32px;
+}
