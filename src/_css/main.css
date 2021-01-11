@@ -15,6 +15,14 @@
 @import '@coopdigital/shared-component--linklist';
 @import 'theme/layout.pcss';
 
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
 /* a few demo styles */
 .coop-u-flex__sidebar {
   display: flex;
