@@ -15,12 +15,13 @@
 }
 
 .coop-l-content {
-  height: 100%;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
 .coop-u-flex__sidebar {
   display: flex;
-  flex: 0 0 280px;
+  flex: 1 1 280px;
   padding: var(--spacing-32) var(--spacing-16);
   flex-flow: column nowrap;
   justify-content: left;
@@ -29,13 +30,22 @@
 }
 
 .coop-u-flex__main {
-  display: flex;
+  /* display: flex;
   width: 100%;
   justify-content: left;
   flex-flow: column nowrap;
   justify-content: left;
   align-items: center;
   background: var(--color-white);
+  flex: 1 1 auto; */
+  display: flex;
+  /* width: 100%; */
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: #fff;
+  background: var(--color-white);
+  flex: 1;
 }
 
 .coop-l-page,
