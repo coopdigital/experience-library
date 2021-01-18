@@ -97,19 +97,22 @@ a,
 .coop-t-link {
   color: var(--color-text);
   text-decoration: none;
+}
 
-  &:hover {
-    color: var(--color-text);
-    text-decoration: underline;
-    text-decoration-skip-ink: auto;
-  }
+a:hover,
+.coop-t-link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
 
-  &:active,
-  &:focus {
-    transition: none;
-    outline: 2px solid var(--color-link--focus);
-    outline-offset: 3px;
-  }
+a:active,
+.coop-t-link:active,
+a:focus,
+.coop-t-link:focus {
+  transition: none;
+  outline: 2px solid var(--color-link--focus);
+  outline-offset: 3px;
 }
 
 img {
