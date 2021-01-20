@@ -310,3 +310,75 @@ html {
   padding-left: 32px;
   margin-top: 32px;
 }
+
+.ds-header-slim .coop-c-search__button {
+  background: none;
+  position: relative;
+  margin-left: var(--spacing-16);
+  border-radius: 5px;
+}
+
+.ds-header-slim .coop-c-search__button:focus svg path {
+  fill: var(--color-white);
+}
+
+.coop-c-search__modal-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  top: 0;
+  display: none;
+}
+
+.coop-c-search__form {
+  background: var(--color-grey-neutral-cool-light);
+  width: 50vw;
+  margin: 15vh auto;
+  padding: var(--spacing-8) var(--spacing-16);
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  top: 15vh;
+  position: absolute;
+  left: 25vw;
+  display: none;
+  z-index: 11;
+}
+
+.coop-search-results {
+  margin: var(--spacing-16) 0 0;
+  padding: 0;
+}
+
+.coop-search-results li + li {
+  border-top: 1px solid var(--color-grey-dark);
+}
+
+.coop-search-results a {
+  display: block;
+  text-decoration: none;
+  padding: var(--spacing-8) 0 var(--spacing-8) var(--spacing-4);
+  cursor: pointer;
+}
+
+.coop-search-results a:hover {
+  background: var(--color-grey-mid);
+}
+
+.coop-search-results span {
+  display: block;
+}
+
+.coop-search-results .title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coop-search-results .meta {
+  font-size: 0.75rem;
+}
+
+.modal-open {
+  overflow: hidden;
+}

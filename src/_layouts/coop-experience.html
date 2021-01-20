@@ -18,9 +18,43 @@
             {{ content }}
         </main>
     </div>
-        <script src="//code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I="
+
+    <div class="coop-c-search__modal-bg">
+
+    </div>
+          <div class="coop-c-search__form">
+            <form class="coop-c-search">
+                <label for="search-small-input" class="coop-u-visuallyhidden">Search the experience library</label>
+                <input type="search" name="search" id="search-small-input" placeholder="Search"
+                    class="coop-form__input coop-c-search__input coop-c-search__input--small">
+                <button class="coop-c-search__button coop-c-search__button--small coop-btn">
+                    <span class="coop-u-visuallyhidden">Search</span>
+                    <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z"
+                            fill="#FFFFFF" fill-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+            <ul id="results-container" class="coop-u-list-bare coop-search-results"></ul>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I="
             crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+    <script>
+        window.simpleJekyllSearch = new SimpleJekyllSearch({
+            searchInput: document.getElementById('search-small-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<li><a href="{url}" title="{description}"><span class="title">{title}</span><span class="meta">{description}</span><span class="meta">{url}</span></a></li>',
+            noResultsText: 'No results found',
+            limit: 10,
+            fuzzy: true,
+            exclude: ['Welcome']
+        })
+    </script>
 
     <script src="/assets/js/main.js"></script>
 </body>
