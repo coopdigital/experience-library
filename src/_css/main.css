@@ -346,6 +346,10 @@ html {
   z-index: 11;
 }
 
+.coop-c-search__form .coop-c-search {
+  width: 100%;
+}
+
 .coop-search-results {
   margin: var(--spacing-16) 0 0;
   padding: 0;
