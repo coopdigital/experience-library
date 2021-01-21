@@ -37,10 +37,4 @@ $(function () {
       $('body').removeClass('modal-open');
     }
   });
-
-  if ($('.coop-search-results:empty')) {
-    console.log(':(');
-  } else {
-    console.log(':)');
-  }
 });
