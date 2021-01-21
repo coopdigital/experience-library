@@ -5,32 +5,39 @@
             <path class="st0" d="M-197.1 259.4c0-2.7-.4-5.4-1.1-8.1-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.7 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .7-2.7 1.1-5.4 1.1-8.1zm-10.5 0c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.7.6 4m-27.9 43.9c1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 6.3 2.2 13.1 2.2 19.4 0 3.1-1.1 5.6-3.7 6.5-7m-9.4-8c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.6.6 4m0-36h10.5c0-2.7-.4-5.4-1.1-8-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.6 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .1-.4.2-.9.4-1.4l-9.9-4.6c-.1.6-.2 1.2-.4 1.8-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.3 1.3.5 2.6.5 3.9m14.1 27.9c-.7 2.6-1.1 5.3-1.1 8.1V319h10.5v-23.7c0-1.3.2-2.7.6-3.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.8 2.6.8 5.3 0 7.9-.5 1.7-2 3-3.7 3.4-1.7.3-3.4.3-5 0-.3-.1-.7-.2-1-.3l3.6 9.8c3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.4 1-5.8 3.6-6.8 6.8"/>
         </svg>
     </a>
-    <nav>
-        <form class="coop-c-search">
+    <form class="coop-c-search">
+        <div class="coop-form__wrapper">
             <label for="search-small" class="coop-u-visuallyhidden">Search the experience library</label>
-            <button id="search-small" class="coop-c-search__button coop-c-search__button--small coop-btn">
-                <span class="coop-u-visuallyhidden">Search</span>
-                <svg width="40" height="40" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z"
-                        fill="#00394e" fill-rule="evenodd" />
-                </svg>
-            </button>
+            <input type="search" name="search" id="search-small-input" placeholder="Try cards, forms or colours"
+                    class="coop-form__input coop-c-search__input coop-c-search__input--small" />
+        </div>
+        <ul id="results-container" class="coop-u-list-bare coop-search-results"></ul>
+    </form>
+    <div class="coop-c-search__results-bg">
+    </div>
+    <!-- <div class="coop-c-search__form">
+        <form class="coop-c-search">
+            <label for="search-small-input">Search the experience library</label>
+            <p class="coop-form__hint">Try cards, forms or colours</p>
+            <div class="coop-form__wrapper">
+                <input type="search" name="search" id="search-small-input" placeholder="Search"
+                    class="coop-form__input coop-c-search__input coop-c-search__input--small">
+                <button class="coop-c-search__button coop-c-search__button--small coop-btn">
+                    <span class="coop-u-visuallyhidden">Search</span>
+                    <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z"
+                            fill="#FFFFFF" fill-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
         </form>
-        <ul class="c-coop-breadcrumb">
-            <!--
-        {% if page.id == 'index' %}
-            <li>Experience</li>
-        {% endif %}
-        -->
-        {% if page.id == 'accessibility' %}
-            <li><a href="/">Experience</a></li>
-            <li>Accessibility</li>
-        {% endif %}
-        {% if page.id == 'ui' %}
-            <li><a href="/">Experience</a></li>
-            <li><a href="/ui-library/">UI library</a></li>
-        {% endif %}
-        </ul>
-    </nav>
+        <ul id="results-container" class="coop-u-list-bare coop-search-results"></ul>
+    </div> -->
+
+
+
+
+
 </header>

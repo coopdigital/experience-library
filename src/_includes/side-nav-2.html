@@ -1,5 +1,20 @@
 
-    <nav class="coop-u-flex__sidebar">
+<nav class="coop-u-flex__sidebar">
+    <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+        <!--
+        {% if page.id == 'index' %}
+            <li>Experience</li>
+        {% endif %}
+        -->
+        {% if page.id == 'accessibility' %}
+        <li><a href="/">Experience</a></li>
+        <li>Accessibility</li>
+        {% endif %}
+        {% if page.id == 'ui' %}
+        <li><a href="/">Experience</a></li>
+        <li><a href="/ui-library/">UI library</a></li>
+        {% endif %}
+    </ul>
     <ul class="coop-side-nav coop-u-list-bare">
         {% if page.id == 'index' %}
         <li class="side-nav__link"><a href="#">Principles</a></li>

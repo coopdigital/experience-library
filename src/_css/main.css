@@ -26,7 +26,7 @@ body {
 .coop-u-flex__sidebar {
   display: flex;
   flex: 0 0 280px;
-  padding: var(--spacing-32) var(--spacing-16) var(--spacing-64)
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-64)
     var(--spacing-16);
   flex-flow: column nowrap;
   justify-content: left;
@@ -322,13 +322,14 @@ html {
   fill: var(--color-white);
 }
 
-.coop-c-search__modal-bg {
+.coop-c-search__results-bg {
   height: 100vh;
   width: 100vw;
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
   z-index: 10;
   top: 0;
+  left: 0;
   display: none;
 }
 
@@ -353,6 +354,11 @@ html {
 .coop-search-results {
   margin: var(--spacing-16) 0 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  background: var(--color-grey-neutral-cool-light);
 }
 
 .coop-search-results li + li {
