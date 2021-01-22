@@ -30,24 +30,54 @@
         {% endif %}
 
         {% if page.id == 'accessibility' %}
-            <li class="side-nav__title"><a href="#">Accessibility policy</a></li>
-            <li class="side-nav__title"><a href="#">Standards</a></li>
-            <li class="side-nav__link"><a href="#">Using these standards</a></li>
-            <li class="side-nav__link"><a href="#">Make it understandable</a></li>
-            <li class="side-nav__link"><a href="#">Make it readable and usable</a></li>
-            <li class="side-nav__link"><a href="#">Put the user in control</a></li>
+            <li class="side-nav__item title"><span>Accessibility</span></li>
+            <li class="side-nav__link"><a href="#">Accessibility policy</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Standards
+                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <path
+                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li class="side-nav__link"><a href="#">Using these standards</a></li>
+                    <li class="side-nav__link"><a href="#">Make it understandable</a></li>
+                    <li class="side-nav__link"><a href="#">Make it readable and usable</a></li>
+                    <li class="side-nav__link"><a href="#">Put the user in control</a></li>
+               </ul>
+            </li>
             <li class="side-nav__link"><a href="#">Forms</a></li>
-            <li class="side-nav__title"><a href="#">Testing and research</a></li>
-            <li class="side-nav__link"><a href="#">Accessibility testing framework</a></li>
-            <li class="side-nav__link"><a href="#">Researching with users</a></li>
-            <li class="side-nav__title"><a href="#">Tools and resources</a></li>
-            <li class="side-nav__title"><a href="#">Community</a></li>
-            <li class="side-nav__link"><a href="#">Accessibility champions network</a></li>
-            <li class="side-nav__link"><a href="#">Accessibility groups at Co-op</a></li>
-            <li class="side-nav__link"><a href="#">Meet ups</a></li>
-            <li class="side-nav__link"><a href="#">Support</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Testing and research
+                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <path
+                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li class="side-nav__link"><a href="#">Accessibility testing framework</a></li>
+                    <li class="side-nav__link"><a href="#">Researching with users</a></li>
+                </ul>
+            </li>
+            <li class="side-nav__link"><a href="#">Tools and resources</a></li>
+            <li class="side-nav__link side-nav__link-toggle">
+                <a href="#" class="toggle-link">Community
+                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <path
+                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                        </path>
+                    </svg>
+                </a>
+                <ul class="coop-side-nav coop-side-nav--nested">
+                    <li class="side-nav__link"><a href="#">Accessibility champions network</a></li>
+                    <li class="side-nav__link"><a href="#">Accessibility groups at Co-op</a></li>
+                    <li class="side-nav__link"><a href="#">Meet ups</a></li>
+                    <li class="side-nav__link"><a href="#">Support</a></li>
+               </ul>
+            </li>
         {% endif %}
-
 
         {% if page.id == 'ui' %}
             <li class="side-nav__link"><a href="#">UI library</a></li>

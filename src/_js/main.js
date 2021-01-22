@@ -1,7 +1,8 @@
 var storeForms = new storeForms();
 
 $(function () {
-  $('.toggle-link').click(function () {
+  $('.toggle-link').click(function (e) {
+    e.preventDefault();
     if (!$(this).hasClass('is-open')) {
       $(this).addClass('is-open');
       $(this).next('.coop-side-nav--nested').toggle();
