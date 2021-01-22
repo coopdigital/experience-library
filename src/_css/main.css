@@ -189,7 +189,9 @@ img {
 .coop-side-nav {
   margin-top: var(--spacing-16);
 }
-
+.coop-side-nav + .coop-side-nav {
+  margin-top: var(--spacing-8);
+}
 .side-nav__title {
   font-size: 16px;
   font-weight: bold;
