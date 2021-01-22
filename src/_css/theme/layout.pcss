@@ -129,8 +129,22 @@
   font-weight: 500;
 }
 
+.toggle-link.is-open {
+  background: var(--color-white);
+}
+
 .toggle-link.is-open .coopssn-c-nav__link__icon__svg {
   transform: rotate(180deg);
+}
+
+.toggle-link.is-open + .coop-side-nav--nested {
+  background: var(--color-white);
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.coop-side-nav--nested .nested-link a {
+  font-weight: 400;
 }
 
 .coop-side-nav--nested .is-active {
