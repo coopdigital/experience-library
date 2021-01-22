@@ -63,6 +63,25 @@
 
 .coop-side-nav {
   width: 100%;
+  padding: 0 calc(var(--spacing-8) / 4);
+}
+
+.coop-side-nav .side-nav__link a,
+.coop-side-nav .side-nav__item.title {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-16);
+}
+
+.coop-side-nav .side-nav__item.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.coop-side-nav .side-nav__item.title span {
+  border-bottom: 1px solid var(--color-grey-mid);
+  width: 100%;
+  display: block;
 }
 
 .c-coop-breadcrumb {

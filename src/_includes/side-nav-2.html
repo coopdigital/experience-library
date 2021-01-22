@@ -5,20 +5,22 @@
             <li>Experience</li>
         {% endif %}
         -->
-        {% if page.id == 'accessibility' %}
+    {% if page.id == 'accessibility' %}
         <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
             <li><a href="/">Home</a></li>
             <li>Accessibility</li>
         </ul>
-        {% endif %}
-        {% if page.id == 'ui' %}
+    {% endif %}
+    {% if page.id == 'ui' %}
         <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
             <li><a href="/">Home</a></li>
             <li><a href="/ui-library/">UI library</a></li>
         </ul>
         {% endif %}
+
     <ul class="coop-side-nav coop-u-list-bare">
         {% if page.id == 'index' %}
+        <li class="side-nav__item title"><span>Co-op Experience library</span></li>
         <li class="side-nav__link"><a href="#">Principles</a></li>
         <li class="side-nav__link"><a href="#">Visual language</a></li>
         <li class="side-nav__link"><a href="/ui-library/">UI library</a></li>
