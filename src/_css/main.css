@@ -351,18 +351,36 @@ html {
   width: 100%;
 }
 
-.coop-search-results {
+.coop-search-results.is-open {
   margin: var(--spacing-16) 0 0;
-  padding: 0;
+  padding: var(--spacing-8);
   position: absolute;
-  left: 0;
-  top: 30px;
-  width: 100%;
+  top: -24px;
+  width: calc(100% + var(--spacing-16));
+  left: -8px;
+  padding-top: calc(var(--spacing-8) * 7);
+  border: 2px solid var(--color-grey-dark);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.25);
   background: var(--color-grey-neutral-cool-light);
+  padding-bottom: 0;
+}
+
+.results-wrapper {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--color-grey-neutral-cool-light);
+  opacity: 0.2;
 }
 
 .coop-search-results li + li {
   border-top: 1px solid var(--color-grey-dark);
+}
+
+.coop-search-results li:last-of-type {
+  margin-bottom: var(--spacing-8);
 }
 
 .coop-search-results .result-text {

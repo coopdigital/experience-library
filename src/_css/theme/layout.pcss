@@ -143,7 +143,7 @@
   flex: 0 0 50vw;
   display: flex;
   position: relative;
-
+  z-index: 11;
   /* comment out below line if not wanting search centered */
   margin: 0 auto;
 
@@ -153,9 +153,10 @@
 .ds-header-slim .coop-c-search .coop-form__wrapper {
   height: auto;
   width: 100%;
+  z-index: 11;
 }
 
-.ds-header-slim .coop-c-search .coop-form__wrapper::after {
+.ds-header-slim .coop-c-search .coop-form__wrapper::before {
   content: '';
   background: url('/images/search.svg');
   color: var(--color-grey-dark);
@@ -163,7 +164,7 @@
   width: 28px;
   display: block;
   position: absolute;
-  right: 8px;
+  left: 8px;
   top: 7px;
   z-index: 100;
 }
@@ -173,4 +174,5 @@
   border-right: 2px solid var(--color-grey-dark);
   width: 100%;
   margin: 0;
+  padding-left: calc(var(--spacing-8) * 5);
 }
