@@ -1,4 +1,4 @@
-@import '@coopdigital/css-foundations';
+@import '@coopdigital/css-foundations/dist/foundations.css';
 
 /* Components */
 @import '@coopdigital/component-skipnav';
@@ -22,13 +22,11 @@ body {
   margin: 0;
 }
 
-
 /* a few demo styles */
 .coop-u-flex__sidebar {
   display: flex;
   flex: 0 0 280px;
-  padding: var(--spacing-32) var(--spacing-16) var(--spacing-64)
-    var(--spacing-16);
+  padding: var(--spacing-8) 0 var(--spacing-64);
   flex-flow: column nowrap;
   justify-content: left;
   align-items: center;
@@ -98,19 +96,22 @@ a,
 .coop-t-link {
   color: var(--color-text);
   text-decoration: none;
+}
 
-  &:hover {
-    color: var(--color-text);
-    text-decoration: underline;
-    text-decoration-skip-ink: auto;
-  }
+a:hover,
+.coop-t-link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
 
-  &:active,
-  &:focus {
-    transition: none;
-    outline: 2px solid var(--color-link--focus);
-    outline-offset: 3px;
-  }
+a:active,
+.coop-t-link:active,
+a:focus,
+.coop-t-link:focus {
+  transition: none;
+  outline: 2px solid var(--color-link--focus);
+  outline-offset: 3px;
 }
 
 img {
@@ -188,17 +189,23 @@ img {
 .coop-side-nav {
   margin-top: var(--spacing-16);
 }
-
+.coop-side-nav + .coop-side-nav {
+  margin-top: var(--spacing-8);
+}
 .side-nav__title {
   font-size: 16px;
   font-weight: bold;
   padding: 8px 0 4px 0;
 }
 
-.side-nav__link {
+.side-nav__link a {
   font-size: 16px;
   padding: 8px 0 8px 0;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.side-nav__link a:hover {
+  background: #fff;
 }
 
 .coop-side-nav--nested {
@@ -286,7 +293,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.nested-link{
+.nested-link {
   margin-top: var(--spacing-8);
   margin-bottom: var(--spacing-8);
   font-weight: 400;
@@ -303,10 +310,110 @@ html {
   margin-bottom: var(--spacing-8);
 }
 
-.section-background{
+.section-background {
   background-color: var(--color-grey-neutral-cool-light);
-  margin-left: 48px;
   padding-left: 32px;
   margin-top: 32px;
 }
 
+.ds-header-slim .coop-c-search__button {
+  background: none;
+  position: relative;
+  margin-left: var(--spacing-16);
+  border-radius: 5px;
+}
+
+.ds-header-slim .coop-c-search__button:focus svg path {
+  fill: var(--color-white);
+}
+
+.coop-c-search__results-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.coop-c-search__form {
+  background: var(--color-grey-neutral-cool-light);
+  width: 50vw;
+  margin: 15vh auto;
+  padding: var(--spacing-8) var(--spacing-16);
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  top: 15vh;
+  position: absolute;
+  left: 25vw;
+  display: none;
+  z-index: 11;
+}
+
+.coop-c-search__form .coop-c-search {
+  width: 100%;
+}
+
+.coop-search-results.is-open {
+  margin: var(--spacing-16) 0 0;
+  padding: var(--spacing-8);
+  position: absolute;
+  top: -24px;
+  width: calc(100% + var(--spacing-16));
+  left: -8px;
+  padding-top: calc(var(--spacing-8) * 7);
+  border: 2px solid var(--color-grey-dark);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.25);
+  background: var(--color-grey-neutral-cool-light);
+  padding-bottom: 0;
+}
+
+.results-wrapper {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--color-grey-neutral-cool-light);
+  opacity: 0.2;
+}
+
+.coop-search-results li + li {
+  border-top: 1px solid var(--color-grey-dark);
+}
+
+.coop-search-results li:last-of-type {
+  margin-bottom: var(--spacing-8);
+}
+
+.coop-search-results .result-text {
+  display: block;
+  text-decoration: none;
+  padding: var(--spacing-8) 0 var(--spacing-8) var(--spacing-4);
+}
+
+.coop-search-results a {
+  cursor: pointer;
+}
+.coop-search-results a:hover {
+  background: var(--color-grey-mid);
+}
+
+.coop-search-results span {
+  display: block;
+}
+
+.coop-search-results .title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coop-search-results .meta {
+  font-size: 0.75rem;
+}
+
+.modal-open {
+  overflow: hidden;
+}

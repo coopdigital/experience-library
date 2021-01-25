@@ -52,7 +52,9 @@
     "postcss-nesting": "^7.0.1",
     "postcss-url": "^8.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "simple-jekyll-search": "^1.9.1"
+  },
   "scripts": {
     "postinstall": "gulp build",
     "build": "gulp build",

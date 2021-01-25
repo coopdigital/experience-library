@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+  {% for page in site.pages %}
+    {
+      "title"    : "{{ page.title | escape }}",
+      "description" : "{{ page.description }}",
+      "category" : "{{ page.category }}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "url"      : "{{ page.item-url }}",
+      "date"     : "{{ page.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
