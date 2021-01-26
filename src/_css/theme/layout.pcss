@@ -63,14 +63,14 @@
 
 .coop-side-nav {
   width: 100%;
-  padding: 0 var(--spacing-4);
+  padding: 0 var(--spacing-8);
 }
 
 .coop-side-nav .side-nav__link a,
 .coop-side-nav .side-nav__item.title {
   display: block;
   width: 100%;
-  padding: var(--spacing-8) var(--spacing-16);
+  padding: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
 }
 
 .coop-side-nav .side-nav__item.title {
@@ -85,7 +85,7 @@
 }
 
 .c-coop-breadcrumb {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -95,15 +95,16 @@
 }
 
 .c-coop-breadcrumb li:first-child {
-  margin-left: var(--spacing-16);
+  margin-left: var(--spacing-8);
 }
 .c-coop-breadcrumb li:last-child {
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: regular;
+  text-decoration: none;
+
 }
 
 .c-coop-breadcrumb li + li::before {
-  content: '>';
+  content: '\2794';
   display: inline-block;
   font-weight: normal;
   width: 12px;
@@ -130,7 +131,6 @@
 }
 
 .toggle-link.is-open {
-  background: var(--color-white);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -141,7 +141,6 @@
 
 .toggle-link.is-open + .coop-side-nav--nested {
   margin-top: 0;
-  background: var(--color-white);
   font-weight: 400;
   border-bottom-left-radius: 4px; 
   border-bottom-right-radius: 4px;
@@ -154,9 +153,9 @@
 
 .coop-side-nav--nested .is-active {
   padding-left: 28px !important;
-  font-weight: bold;
-  border-left: 4px solid var(--color-teal-mid-6);
-  text-decoration: underline;
+  border-left: 4px solid var(--color-blue-mid-6);
+  text-decoration: none;
+  background-color:#ffffff;
 }
 
 .coop-form__wrapper {
