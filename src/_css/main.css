@@ -238,11 +238,11 @@ img {
 .inline-link:hover {
   text-decoration: none;
 }
-
+   
 .inline-link:hover span:nth-child(2) {
   text-decoration: underline;
 }
-
+ 
 ul.inline-nav {
   width: 100%;
   list-style-type: none;
@@ -357,16 +357,18 @@ html {
 }
 
 .coop-search-results.is-open {
-  margin: var(--spacing-16) 0 0;
-  padding: var(--spacing-8);
   position: absolute;
-  top: -24px;
-  width: calc(100% + var(--spacing-16));
-  left: -8px;
-  padding-top: calc(var(--spacing-8) * 7);
-  border: 2px solid var(--color-grey-dark);
-  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.25);
-  background: var(--color-grey-neutral-cool-light);
+  top: -32px;
+  left: -16px;
+  min-height: 76px;
+  width: calc(100% + var(--spacing-32));
+  margin: var(--spacing-16) 0 0;
+  padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);;
+  border-radius: var(--ui-border-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: var(--ui-shadow);
+  background: var(--color-white);
   padding-bottom: 0;
 }
 
@@ -376,12 +378,12 @@ html {
   left: 0;
   top: 0;
   height: 100vh;
-  background: var(--color-grey-neutral-cool-light);
+  background: var(--color-white);
   opacity: 0.2;
 }
 
 .coop-search-results li + li {
-  border-top: 1px solid var(--color-grey-dark);
+  border-top: 1px solid var(--color-grey-mid);
 }
 
 .coop-search-results li:last-of-type {
@@ -391,15 +393,13 @@ html {
 .coop-search-results .result-text {
   display: block;
   text-decoration: none;
-  padding: var(--spacing-8) 0 var(--spacing-8) var(--spacing-4);
+  padding: var(--spacing-8) var(--spacing-8) var(--spacing-12) var(--spacing-8);
 }
 
 .coop-search-results a {
   cursor: pointer;
 }
-.coop-search-results a:hover {
-  background: var(--color-grey-mid);
-}
+
 
 .coop-search-results span {
   display: block;
@@ -407,11 +407,15 @@ html {
 
 .coop-search-results .title {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.25rem;
+}
+
+.coop-search-results a:hover .title {
+  text-decoration: underline;
 }
 
 .coop-search-results .meta {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .modal-open {
