@@ -189,11 +189,13 @@ img {
 .coop-side-nav {
   margin-top: var(--spacing-16);
 }
+
 .coop-side-nav + .coop-side-nav {
   margin-top: var(--spacing-8);
 }
+
 .side-nav__title {
-  font-size: 16px;
+  font-size: 16px; 
   font-weight: bold;
   padding: 8px 0 4px 0;
 }
@@ -206,12 +208,13 @@ img {
 
 .side-nav__link a:hover {
   background: #fff;
+  transition: background-color 0.2s ease;
 }
-
+ 
 .coop-side-nav--nested {
   list-style: none;
-  margin-top: var(--spacing-4);
-  padding: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-16);
+  margin-top: 0;
+  padding: 0 var(--spacing-8) var(--spacing-8) 0;
 }
 
 .external-link-container {
@@ -294,8 +297,6 @@ html {
 }
 
 .nested-link {
-  margin-top: var(--spacing-8);
-  margin-bottom: var(--spacing-8);
   font-weight: 400;
 }
 
@@ -363,7 +364,7 @@ html {
   min-height: 76px;
   width: calc(100% + var(--spacing-32));
   margin: var(--spacing-16) 0 0;
-  padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);;
+  padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
   border-radius: var(--ui-border-radius);
   border-top-left-radius: 0;
   border-top-right-radius: 0;

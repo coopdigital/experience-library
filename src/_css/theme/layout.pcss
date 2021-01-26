@@ -63,7 +63,7 @@
 
 .coop-side-nav {
   width: 100%;
-  padding: 0 calc(var(--spacing-8) / 4);
+  padding: 0 var(--spacing-4);
 }
 
 .coop-side-nav .side-nav__link a,
@@ -120,7 +120,7 @@
   margin-left: 6px;
   position: relative;
   float: right;
-  top: 5px;
+  top: 2px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -131,6 +131,8 @@
 
 .toggle-link.is-open {
   background: var(--color-white);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .toggle-link.is-open .coopssn-c-nav__link__icon__svg {
@@ -138,19 +140,23 @@
 }
 
 .toggle-link.is-open + .coop-side-nav--nested {
-  background: var(--color-white);
   margin-top: 0;
+  background: var(--color-white);
   font-weight: 400;
+  border-bottom-left-radius: 4px; 
+  border-bottom-right-radius: 4px;
 }
 
 .coop-side-nav--nested .nested-link a {
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-32);
   font-weight: 400;
 }
 
 .coop-side-nav--nested .is-active {
+  padding-left: 28px !important;
   font-weight: bold;
   border-left: 4px solid var(--color-teal-mid-6);
-  padding-left: 8px;
+  text-decoration: underline;
 }
 
 .coop-form__wrapper {
