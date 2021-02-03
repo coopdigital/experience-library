@@ -26,11 +26,15 @@ body {
 .coop-u-flex__sidebar {
   display: flex;
   flex: 0 0 280px;
-  padding: var(--spacing-8) 0 var(--spacing-64);
+  padding: 24px var(--spacing-8) var(--spacing-64) var(--spacing-8);
   flex-flow: column nowrap;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
   background: var(--color-grey-neutral-cool-light);
+}
+
+.coop-side-nav-wrapper {
+  width: 100%;
 }
 
 .coop-c-signpost {
@@ -176,22 +180,25 @@ img {
   padding-right: var(--spacing-16);
 }
 
-.side-nav {
-  height: 100%;
-  background: var(--color-grey-neutral-cool-light);
-  padding: var(--spacing-16);
+.coop-nav__logo {
+  margin: 0 0 var(--spacing-16) var(--spacing-8);
 }
 
-.side-nav ul {
-  margin-top: var(--spacing-32);
+.coop-title {
+  display: block;
+  margin: 0 0 var(--spacing-32) var(--spacing-8);
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.coop-side-nav {
-  margin-top: var(--spacing-16);
+.coop-c-search {
+  width: 100%;
+  margin-bottom: var(--spacing-24);
+  padding: 0 var(--spacing-8) 0 var(--spacing-8);
 }
 
-.coop-side-nav + .coop-side-nav {
-  margin-top: var(--spacing-8);
+.coop-search-results {
+  margin: 0;
 }
 
 .side-nav__title {
@@ -334,7 +341,7 @@ html {
   width: 100vw;
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 9;
   top: 0;
   left: 0;
   display: none;
@@ -360,16 +367,14 @@ html {
 
 .coop-search-results.is-open {
   position: absolute;
-  top: -32px;
-  left: -16px;
+  z-index: 10;
+  top: 112px;
   min-height: 76px;
-  width: calc(100% + var(--spacing-32));
+  width: 40%;
   margin: var(--spacing-16) 0 0;
   padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
-  border-radius: var(--ui-border-radius);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   box-shadow: var(--ui-shadow);
+  border-radius: var(--ui-border-radius);
   background: var(--color-white);
   padding-bottom: 0;
 }
