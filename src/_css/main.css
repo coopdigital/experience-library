@@ -181,12 +181,19 @@ img {
 }
 
 .coop-nav__logo {
-  margin: 0 0 var(--spacing-16) var(--spacing-8);
+  width: 100%;
+  height: 80px;
+  padding: 0 0 0 var(--spacing-8);
+  margin-bottom: var(--spacing-32);
+}
+
+.coop-nav__logo svg {
+  margin-bottom: 5px;
 }
 
 .coop-title {
   display: block;
-  margin: 0 0 var(--spacing-32) var(--spacing-8);
+  margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
