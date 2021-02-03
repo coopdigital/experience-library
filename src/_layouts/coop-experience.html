@@ -11,9 +11,8 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body>
-    {% include header-slim.html %}
     <div class="coop-u-flex coop-l-content">
-        {% include side-nav-2.html %}
+        {% include side-bar.html %}
         <main class="coop-u-flex__main">
             {{ content }}
         </main>

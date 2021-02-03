@@ -15,19 +15,9 @@
 }
 
 .coop-l-content {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   min-height: 100vh;
-}
-
-.coop-u-flex__sidebar {
-  display: flex;
-  flex: 1 1 280px;
-  padding: var(--spacing-32) var(--spacing-16);
-  flex-flow: column nowrap;
-  justify-content: left;
-  align-items: center;
-  background: var(--color-grey-neutral-cool-light);
 }
 
 .coop-u-flex__main {
@@ -38,7 +28,7 @@
   background: #fff;
   background: var(--color-white);
   flex: 1;
-  margin-left: var(--spacing-32);
+  margin: 36px var(--spacing-64);
 }
 
 .coop-l-page,
@@ -47,23 +37,22 @@
 }
 
 .coop-l-page {
-  width: 55rem;
-  padding: var(--spacing-16);
-  margin: 0 auto;
+  width: 50rem;
 }
 
 .coop-l-full {
   width: 100%;
-  padding: var(--spacing-32) var(--spacing-64);
+  padding: var(--spacing-16);
+  margin: 0 auto;
 }
-
+ 
 .coop-c-search {
   display: inline-block;
 }
 
 .coop-side-nav {
   width: 100%;
-  padding: 0 var(--spacing-8);
+  padding: 0; 
 }
 
 .coop-side-nav .side-nav__link a,
@@ -79,7 +68,6 @@
 }
 
 .coop-side-nav .side-nav__item.title span {
-  border-bottom: 1px solid var(--color-grey-mid);
   width: 100%;
   display: block;
 }
@@ -87,7 +75,7 @@
 .c-coop-breadcrumb {
   font-size: 1rem;
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-8);
 }
 
 .c-coop-breadcrumb li {
@@ -98,7 +86,7 @@
   margin-left: var(--spacing-8);
 }
 .c-coop-breadcrumb li:last-child {
-  font-weight: regular;
+  font-weight: 500;
   text-decoration: none;
 
 }
@@ -177,24 +165,19 @@
   flex: 0 0 auto;
 }
 
-.ds-header-slim .coop-c-search {
-  flex: 0 0 50vw;
-  display: flex;
+.coop-c-search {
+
   position: relative;
   z-index: 11;
-  /* comment out below line if not wanting search centered */
   margin: 0 auto;
-
-  /* uncomment lines to align search more in line with sidebar */
-  /* margin-left: 224px; */
 }
-.ds-header-slim .coop-c-search .coop-form__wrapper {
+.coop-c-search .coop-form__wrapper {
   height: auto;
   width: 100%;
   z-index: 11;
 }
 
-.ds-header-slim .coop-c-search .coop-form__wrapper::before {
+.coop-c-search .coop-form__wrapper::before {
   content: '';
   background: url('/images/search.svg');
   color: var(--color-grey-dark);
@@ -207,7 +190,8 @@
   z-index: 100;
 }
 
-.ds-header-slim .coop-c-search .coop-form__input {
+.coop-c-search .coop-form__input {
+  font-size: 16px;
   border-radius: 5px;
   border-right: 2px solid var(--color-grey-dark);
   width: 100%;
