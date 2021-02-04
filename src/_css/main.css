@@ -292,16 +292,17 @@ img {
 }
 
 .external-link-icon {
+  display: inline-block;
   margin-right: var(--spacing-8);
   vertical-align: middle;
 }
 
-.inline-link:hover {
-  text-decoration: none;
+.inline-link {
+  color: var(--color-text);
 }
-   
-.inline-link:hover span:nth-child(2) {
-  text-decoration: underline;
+
+.inline-link:hover {
+  color: var(--color-text);
 }
  
 ul.inline-nav {
