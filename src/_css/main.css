@@ -63,6 +63,7 @@ body {
 
 .coop-header {
   position: fixed;
+  z-index: 4;
   width: 280px;
   padding: 24px var(--spacing-16) 0 var(--spacing-16);
 }
@@ -403,7 +404,7 @@ html {
   width: 100vw;
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 9;
+  z-index: 3;
   top: 0;
   left: 0;
   display: none;
