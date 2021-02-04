@@ -22,11 +22,32 @@ body {
   margin: 0;
 }
 
-/* a few demo styles */
-.coop-u-flex__sidebar {
+.coop-l-content {
   display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.coop-u-flex__main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: #fff;
+  background: var(--color-white);
+  flex: 1;
+  margin: 32px var(--spacing-64) var(--spacing-64) 320px;
+}
+
+.coop-u-flex__sidebar {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  width: 280px; 
   flex: 0 0 280px;
-  padding: 24px var(--spacing-8) var(--spacing-64) var(--spacing-8);
+  /* padding: 24px var(--spacing-8) var(--spacing-64) var(--spacing-8); */
   flex-flow: column nowrap;
   justify-content: left;
   align-items: flex-start;
@@ -43,7 +64,17 @@ body {
   text-decoration: underline;
 }
 
+.coop-header {
+  width: 100%;
+  padding: 24px var(--spacing-16) 0 var(--spacing-16);
+}
+
 .coop-side-nav-wrapper {
+  width: 100%;
+  padding: 0 var(--spacing-8);
+}
+
+.coop-nav-scroll {
   width: 100%;
 }
 
@@ -155,10 +186,10 @@ img {
   border: 1px solid var(--color-grey-dark);
   background: var(--color-grey-mid);
   display: block;
-}
+}  
 
 .dm-colour__swatch--wide {
-  padding: 10px 16px;
+  padding: 10px 16px; 
 }
 
 .dm-colour__swatch {
@@ -189,9 +220,10 @@ img {
 }
 
 .coop-nav__logo {
+  display: block;
   width: 100%;
   height: 80px;
-  padding: 0 0 0 var(--spacing-8);
+  padding: 0;
   margin-bottom: var(--spacing-32);
 }
 
@@ -209,7 +241,7 @@ img {
 .coop-c-search {
   width: 100%;
   margin-bottom: var(--spacing-24);
-  padding: 0 var(--spacing-8) 0 var(--spacing-8);
+  padding: 0;
 }
 
 .coop-search-results {
@@ -396,6 +428,7 @@ html {
   position: absolute;
   z-index: 10;
   top: 112px;
+  left: 8px;
   min-height: 76px;
   width: 40%;
   margin: var(--spacing-16) 0 0;
