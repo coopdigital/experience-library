@@ -301,9 +301,21 @@ li a.inline-nav:hover {
   text-decoration: underline;
 }
 
-.footer-dark {
-  background: var(--color-text);
-  padding-top: var(--spacing-64);
+.top-task-container {
+  background-color: var(--color-white);
+  margin-bottom: var(--spacing-4);
+  border-radius: var(--ui-border-radius);
+  box-shadow: var(--ui-shadow);
+  transition: box-shadow 0.2s ease-in;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 24px 20px 16px 20px;
+  min-height: 225px;
+}
+
+.top-task-link {
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 html {
