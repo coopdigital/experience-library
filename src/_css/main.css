@@ -33,6 +33,16 @@ body {
   background: var(--color-grey-neutral-cool-light);
 }
 
+.coop-u-flex__sidebar a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.coop-u-flex__sidebar a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 .coop-side-nav-wrapper {
   width: 100%;
 }
@@ -96,16 +106,14 @@ a:focus .coop-c-signpost__title {
   width: 100%;
 }
 
-a,
+/* a,
 .coop-t-link {
   color: var(--color-text);
-  text-decoration: underline;
 }
 
 a:hover,
 .coop-t-link:hover {
   color: var(--color-text);
-  text-decoration: underline;
   text-decoration-skip-ink: auto;
 }
 
@@ -116,7 +124,7 @@ a:focus,
   transition: none;
   outline: 2px solid var(--color-link--focus);
   outline-offset: 3px;
-}
+} */
 
 img {
   display: block;

@@ -72,7 +72,7 @@
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.url == page.item-url %}is-open{% endif %}">Elements
+                <a href="#" class="toggle-link {% if page.section == 'elements' %}is-open{% endif %}">Elements
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                         <path
                             d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -95,7 +95,7 @@
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.url == page.item-url %}is-open{% endif %}">Components
+                <a href="#" class="toggle-link {% if page.section == 'components' %}is-open{% endif %}">Components
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                         <path
                             d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -150,7 +150,7 @@
             {% if page.id == 'content' %}
                 <li class="side-nav__link"><a href="#">Principles</a></li>
                 <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Content foundations
+                    <a href="#" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -167,7 +167,7 @@
                     </ul>
                 </li>
                 <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Content elements
+                    <a href="#" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -185,7 +185,7 @@
                     </ul>
                 </li>
                 <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Content patterns
+                    <a href="#" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
