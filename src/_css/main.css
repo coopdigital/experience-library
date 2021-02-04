@@ -22,6 +22,10 @@ body {
   margin: 0;
 }
 
+.li-space{
+  margin-bottom: 10px;
+}
+
 .coop-l-content {
   display: flex;
   flex-direction: row;
