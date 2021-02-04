@@ -40,8 +40,8 @@ body {
 }
 
 .coop-u-flex__sidebar {
-  position: fixed;
-  overflow-y: scroll;
+  
+  
   top: 0;
   bottom: 0;
   display: flex;
@@ -76,6 +76,11 @@ body {
 
 .coop-nav-scroll {
   width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  top: 212px;
+  bottom: 0;
+  width: 280px; 
 }
 
 .coop-c-signpost {
@@ -430,7 +435,7 @@ html {
   top: 112px;
   left: 8px;
   min-height: 76px;
-  width: 40%;
+  width: 600px;
   margin: var(--spacing-16) 0 0;
   padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
   box-shadow: var(--ui-shadow);
