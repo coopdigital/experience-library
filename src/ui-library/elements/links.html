@@ -1,7 +1,7 @@
 ---
 layout: coop-experience
 id: index
-title: Signpost
+title: Links
 description: A link card that can be displayed with or without an image. Signpost navigation is used in pages to link to permanent content.
 item-url: /ui-library/elements/links.html
 ---
@@ -9,9 +9,8 @@ item-url: /ui-library/elements/links.html
 <section class="coop-l-full">
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                    <h1>Signpost</h1>
-                    <p>A link card that can be displayed with or without an image.</p>
-                    <p>Signpost navigation is used in pages to link to permanent content.</p>
+                    <h1>Links</h1>
+                    <p>A link (short for hyperlink) is an HTML object that allows the user to go to a new location when they click or tap it. It should be descriptive of the place it’s taking the user.</p>
                 </div>
                 <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-margin-resp-t-32-16">
                     <ul class="external-link-container coop-u-list-bare">
@@ -48,7 +47,7 @@ item-url: /ui-library/elements/links.html
                                 <span class="external-link-icon">
                                     <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.2 215.5"><path d="M65.1 150.4c-10.9-11-17.7-26-17.7-42.7S54.2 76 65.1 65c9.3-9.3 9.3-24.3 0-33.5-9.3-9.3-24.3-9.3-33.6 0C12 51.1 0 78 0 107.8s12.1 56.7 31.6 76.2c9.3 9.3 24.3 9.3 33.6 0 9.2-9.3 9.2-24.3-.1-33.6z" fill="#ffd75f"/><path d="M65.1 65.1c11-10.9 26.1-17.7 42.7-17.7 16.7 0 31.8 6.8 42.7 17.7 9.3 9.3 24.3 9.3 33.6 0s9.3-24.3 0-33.5C164.6 12.1 137.6 0 107.8 0S51 12.1 31.5 31.6c-9.3 9.3-9.3 24.3 0 33.5 9.3 9.3 24.4 9.3 33.6 0z" fill="#4fb5e1"/><path d="M150.6 150.4c-11 10.9-26.1 17.7-42.7 17.7-16.7 0-31.8-6.8-42.7-17.7-9.3-9.3-24.3-9.3-33.6 0s-9.3 24.3 0 33.5c19.5 19.5 46.5 31.6 76.3 31.6s56.8-12.1 76.3-31.6c9.3-9.3 9.3-24.3 0-33.5s-24.3-9.2-33.6 0z" fill="#f05751"/></svg>
                                 </span>
-                                <span>Use this component in the CMS</span>
+                                <span>Use in Contentful</span>
                             </a>
                         </li>
                         <li class="external-link">
@@ -58,104 +57,67 @@ item-url: /ui-library/elements/links.html
                             </span>
                             <span>How to use this in a page</span>
                         </a>
-                    </li>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
+        
         <section class="coop-l-full">
-            <div class="coop-u-margin-b-32">
-                <ul class="inline-nav">
-                    <li class="inline-nav"><a class="inline-nav" href="#example">Example</a></li>
-                    <li class="inline-nav"><a class="inline-nav" href="#guidance">Guidance</a></li>
-                    <li class="inline-nav"><a class="inline-nav" href="#changelog">Changelog</a></li>
-                </ul>
+            <hr class="coop-t-hr-slim">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                    <section id="guidance">
+                        <h2>Guidance</h2>
+                        <p>A link should always be displayed as in the example here unless it’s used on a background colour, in which case it can be black or white.</p>
+                        <p>Links that are in context, for example within a header or footer — can be styled differently.</p>
+                        <p>Links should:</p>
+                        <ul>
+                            <li>be checked for correct colour contrast</li>
+                            <li>be underlined regardless of what colour they are</li>
+                            <li>use the hand/pointer to indicate that the link is clickable</li>
+                        </ul>
+                        <a href="https://coop-design-system.herokuapp.com/pattern-library/foundations/colour.html">See link colours.</a>
+                    </section>
+                </div>
             </div>
+
+            <hr class="coop-t-hr-slim">
             <div class="coop-u-margin-resp-b-32-16">
                 <section id="example">
                 <h2>Example</h2>
                 </section>
             </div>
             <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a href="#" class="coop-c-signpost__link" data-contenttype="" data-contentparent="" data-linktext="">
-                            <div class="coop-c-signpost__content">
-                                <h3 class="coop-c-signpost__title">
-                                    See all recipes
-                                </h3>
-                                <span class="coop-c-signpost__icon" aria-hidden="true">
-                                    <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                        <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
-                                    </svg>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                    <div class="coop-c-signpost">
-                        <a href="#" class="coop-c-signpost__link" data-contenttype="Signpost" data-contentparent="Signposts" data-linktext="Sign in to Membership">
-                        <figure class="coop-c-signpost__media">
-                            <picture class="coop-c-signpost__image">
-                                <!-- max image size 360w 203h -->
-                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
-                                <!-- max image size 751w 423h -->
-                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
-                                <!-- 25.9375em / max image size 583w 329h -->
-                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
-                                <!-- if no webp supported then default to serve progressive jpeg -->
-                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
-                                <!-- max image size 751w 423h -->
-                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
-                                <!-- 25.9375em / max image size 583w 329h -->
-                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
-                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
-                                <!-- fallback -->
-                                <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
-                            </picture>
-                        </figure>
-                        <div class="coop-c-signpost__content">
-                            <h3 class="coop-c-signpost__title">
-                                Sign in to Membership
-                            </h3>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                    <p><a class="coop-t-link" href="#">Start making your will</a></p>
+                    <h3 class="coop-t-font-size-22">Links with icons</h3>
+                    <!-- Text link with arrow SVG (pink) -->
+                    <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-pink-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>
+                    <!-- Text link with arrow SVG (orange) -->
+                    <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-orange-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>
+                    <!-- Text link with arrow SVG (yellow) -->
+                    <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-yellow-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>
+                    <!-- Text link with arrow SVG (green) -->
+                    <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-green-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>              
                 </div>
             </div>
-            <hr>
+
+            <hr class="coop-t-hr-slim">
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-8">
                     <section id="guidance">
-                        <h2>Guidance</h2>
-                        <p>Signpost links allow you to create direct links to content you know people are looking for.</p>
-                        <p>They can be used with or without an image.</p>
-                        <p>Grouped together they can be used to build a simple list of links or sub navigation. This may be useful if you have several links around a particular area or theme.</p>
-                        <h3 class="coop-t-font-size-22">Accessibility</h3>
-                        <p>This component passes the [Co-op accessibility framework].</p>
-                        <p>[Co-op accessibility standards] </p>
-                        <h3 class="coop-t-font-size-22">Content design</h3>
-                        <p>The link text should be concise and actionable. Tell the user where the link is taking them.</p>
-                        <p>[Co-op accessibility standards]</p>
-                        <p>Line length should be kept short. This means people can find what they want quickly and the size of the card/button does not become excessive.</p>
-                        <p>[Links page in the content design guidelines]</p>
-                        <p>[Buttons page in the content design guidelines] </p>
-                     </section>
+                        <h2>Accessibility</h2>
+                        <p>Link text can be read out of context and should always tell the user where it’s taking them — never use ‘click here’. </p>
+                        
+                        <p>Find out <a href="https://coop-design-system.herokuapp.com/pattern-library/foundations/colour.html">how to write link content.</a></p>
+                        <a href="https://coop-design-system.herokuapp.com/pattern-library/foundations/colour.html">For more information see our general guide on accessibility</a>
+                    </section>
                 </div>
             </div>
-            <hr>
-            <div class="coop-l-grid coop-u-margin-resp-b-64-32">
+           
+            <hr class="coop-t-hr-slim">
+            <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
                     <section id="changelog">
                         <h2>Changelog</h2>
@@ -190,8 +152,5 @@ item-url: /ui-library/elements/links.html
                     </section>
                 </div>
             </div>
-
         </div>
-
-
     </section>
