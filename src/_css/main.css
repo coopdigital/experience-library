@@ -334,7 +334,7 @@ html {
   border-width: 0 0 1px;
   height: 0;
   color: var(--color-grey-mid);
-  margin-top: var(--spacing-0);
+  margin-top: var(--spacing-64);
   margin-bottom: var(--spacing-8);
 }
 
