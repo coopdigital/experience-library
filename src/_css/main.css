@@ -81,7 +81,7 @@ body {
   width: 100%;
   position: fixed;
   overflow-y: scroll;
-  top: 212px;
+  top: 200px;
   bottom: 0;
   width: 280px; 
 }
@@ -232,7 +232,7 @@ img {
   width: 100%;
   height: 80px;
   padding: 0;
-  margin-bottom: var(--spacing-32);
+  margin-bottom: var(--spacing-24);
 }
 
 .coop-nav__logo svg {
