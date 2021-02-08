@@ -387,6 +387,19 @@ html {
   margin-bottom: var(--spacing-8);
 }
 
+.coop-t-hr-side-nav{
+  display: block;
+  border-style: solid;
+  border-color: var(--color-grey-mid);
+  border-width: 0 0 1px;
+  height: 0;
+  color: var(--color-grey-mid);
+  margin-left: var(--spacing-8);
+  margin-right: var(--spacing-8);
+  margin-top: var(--spacing-0);
+  margin-bottom: var(--spacing-16);
+}
+
 .section-background {
   background-color: var(--color-grey-neutral-cool-light);
   padding-left: 32px;
