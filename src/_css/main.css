@@ -40,7 +40,11 @@ body {
   background: #fff;
   background: var(--color-white);
   flex: 1;
-  margin: 32px var(--spacing-64) var(--spacing-64) var(--spacing-64);
+  padding: 32px var(--spacing-64) var(--spacing-64) var(--spacing-64);
+}
+
+.coop-u-flex__main--padded {
+  padding: 32px var(--spacing-64) var(--spacing-64) var(--spacing-64);
 }
 
 .coop-u-flex__sidebar {
