@@ -448,7 +448,7 @@ html {
 .coop-search-results.is-open {
   position: absolute;
   z-index: 10;
-  top: 112px;
+  top: 103px;
   left: 8px;
   min-height: 76px;
   width: 600px;
