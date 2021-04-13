@@ -1,17 +1,40 @@
-.ds-header-slim {
-  position: relative;
-  z-index: 2;
-  padding: var(--spacing-8) var(--spacing-8) var(--spacing-2) var(--spacing-8);
-  box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.1);
-  background-color: var(--color-white);
+
+.coop-l-content {
   display: flex;
   flex-direction: row;
+  min-height: 100vh;
 }
 
-@media (--mq-medium) {
-  .ds-header-slim {
-    padding: var(--spacing-16) var(--spacing-16);
-  }
+.coop-l-container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.coop-u-flex__main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+  align-items: center;
+  background: var(--color-white);
+  flex: 1;
+}           
+
+.coop-u-flex__main--padded {
+  padding: 32px var(--spacing-64) var(--spacing-64) var(--spacing-64);
+}
+
+.coop-u-flex__sidebar {
+  top: 0; 
+  bottom: 0;
+  display: flex;
+  width: 280px;    
+  flex: 0 0 280px;
+  flex-flow: column nowrap;
+  justify-content: left; 
+  align-items: flex-start;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-grey-mid);
 }
 
 .coop-l-page,
@@ -20,163 +43,16 @@
 }
 
 .coop-l-page {
-  width: 50rem;
+  width: 100%;
+  padding: 0 var(--spacing-64);
 }
 
 .coop-l-full {
   width: 100%;
-  padding: var(--spacing-16);
 }
+
+
  
-.coop-c-search {
-  display: inline-block;
-}
 
-.coop-side-nav {
-  width: 100%;
-  padding: 0; 
-}
 
-.coop-side-nav .side-nav__link a,
-.coop-side-nav .side-nav__item.title {
-  display: block;
-  width: 100%;
-  padding: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
-}
 
-.coop-side-nav .side-nav__item.title {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.coop-side-nav .side-nav__item.title span {
-  width: 100%;
-  display: block;
-}
-
-.c-coop-breadcrumb {
-  font-size: 0.9rem;
-  display: inline-block;
-  margin-bottom: var(--spacing-16);
-}
-
-.c-coop-breadcrumb li {
-  display: inline-block;
-}
-
-.c-coop-breadcrumb li:first-child {
-  margin-left: var(--spacing-8);
-}
-.c-coop-breadcrumb li:last-child {
-  font-weight: 500;
-  text-decoration: none;
-
-}
-
-.c-coop-breadcrumb li + li::before {
-  content: '\279D';
-  display: inline-block;
-}
-
-.side-nav__link-toggle .coop-side-nav {
-  display: none;
-}
-
-.coopssn-c-nav__link__icon__svg {
-  height: 20px;
-  width: 20px;
-  margin-left: 6px;
-  position: relative;
-  float: right;
-  top: 2px;
-  transition: all 0.3s ease-in-out;
-}
-
-.toggle-link {
-  display: block;
-  font-weight: 500;
-}
-
-.toggle-link.is-open {
-  margin-bottom: var(--spacing-4);
-}
-
-.toggle-link.is-open .coopssn-c-nav__link__icon__svg {
-  transform: rotate(180deg);
-}
-
-.toggle-link.is-open + .coop-side-nav--nested {
-  margin-top: 0;
-  font-weight: 400;
-  border-bottom-left-radius: 4px; 
-  border-bottom-right-radius: 4px;
-}
-
-.coop-side-nav--nested .nested-link a {
-  padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-32);
-  font-weight: 400;
-}
-
-.coop-side-nav--nested .is-active {
-  padding-left: 28px !important;
-  border-left: 4px solid var(--color-blue-mid-6);
-  text-decoration: none;
-  background-color:#ffffff;
-}
-
-.coop-form__wrapper {
-  position: relative;
-}
-
-.coop-c-search__form .coop-form__hint {
-  font-size: 1rem;
-  color: #000;
-  padding: 0;
-  margin-bottom: var(--spacing-16);
-}
-
-.coop-c-search__form label {
-  margin-bottom: 0;
-}
-
-.ds-header-slim .coop-logo {
-  flex: 0 0 auto;
-}
-
-.ds-header-slim .c-coop-breadcrumb__wrapper {
-  flex: 0 0 auto;
-}
-
-.coop-c-search {
-
-  position: relative;
-  z-index: 11;
-  margin: 0 auto;
-}
-.coop-c-search .coop-form__wrapper {
-  height: auto;
-  width: 100%;
-  z-index: 11;
-}
-
-.coop-c-search .coop-form__wrapper::before {
-  content: '';
-  background: url('/images/search.svg');
-  color: var(--color-grey-dark);
-  height: 20px;
-  width: 20px;  
-  display: block;
-  position: absolute;
-  left: 12px;
-  top: 11px;
-  z-index: 100;
-}
-
-.coop-c-search .coop-form__input {
-  font-size: 16px;
-  border-radius: 5px;
-  border-right: 2px solid var(--color-grey-dark);
-  width: 100%;
-  margin: 0;
-  padding-left: calc(var(--spacing-8) * 5);
-}

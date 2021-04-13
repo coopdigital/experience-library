@@ -1,0 +1,137 @@
+
+.coop-c-search {
+  position: relative;
+  z-index: 11;
+  display: inline-block;
+  width: 100%;  
+  margin: 0 auto var(--spacing-24) auto;
+  padding: 0;
+}
+
+
+.coop-c-search .coop-form__wrapper {
+  height: auto;
+  width: 100%;
+  z-index: 11;
+}
+
+.coop-c-search .coop-form__wrapper::before {
+  content: '';
+  background: url('/images/search.svg');
+  color: var(--color-grey-dark);
+  height: 20px;
+  width: 20px;  
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  z-index: 100;
+}
+
+.coop-c-search .coop-form__input {
+  font-size: 16px;
+  border-radius: 5px;
+  border-right: 2px solid var(--color-grey-dark);
+  width: 100%;
+  margin: 0;
+  padding-left: calc(var(--spacing-8) * 5);
+}
+
+.coop-search-results {
+  margin: 0;
+}
+
+.coop-c-search__results-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.coop-c-search__form {
+  background: var(--color-grey-neutral-cool-light);
+  width: 50vw;
+  margin: 15vh auto;
+  padding: var(--spacing-8) var(--spacing-16);
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  top: 15vh;
+  position: absolute;
+  left: 25vw;
+  display: none;
+  z-index: 11;
+}
+
+.coop-c-search__form .coop-c-search {
+  width: 100%;
+}
+
+.coop-search-results.is-open {
+  position: absolute;
+  z-index: 10;
+  top: 94px; 
+  left: 8px;
+  min-height: 76px;
+  width: 600px;
+  margin: var(--spacing-16) 0 0;
+  padding: calc(var(--spacing-8) * 8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
+  box-shadow: var(--ui-shadow);
+  border-radius: var(--ui-border-radius);
+  background: var(--color-white);
+  padding-bottom: 0;
+}
+
+.results-wrapper {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--color-white);
+  opacity: 0.2;
+}
+
+.coop-search-results li + li {
+  border-top: 1px solid var(--color-grey-mid);
+}
+
+.coop-search-results li:last-of-type {
+  margin-bottom: var(--spacing-8);
+}
+
+.coop-search-results .result-text {
+  display: block;
+  text-decoration: none;
+  padding: var(--spacing-8) var(--spacing-8) var(--spacing-12) var(--spacing-8);
+}
+
+.coop-search-results a {
+  cursor: pointer;
+}
+
+
+.coop-search-results span {
+  display: block;
+}
+
+.coop-search-results .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.coop-search-results a:hover .title {
+  text-decoration: underline;
+}
+
+.coop-search-results .meta {
+  font-size: 1rem;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+

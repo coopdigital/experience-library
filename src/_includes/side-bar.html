@@ -5,7 +5,7 @@
                 <title id="logotitle">The Co-op logo</title>
                 <path class="st0" d="M-197.1 259.4c0-2.7-.4-5.4-1.1-8.1-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.7 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .7-2.7 1.1-5.4 1.1-8.1zm-10.5 0c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.7.6 4m-27.9 43.9c1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 6.3 2.2 13.1 2.2 19.4 0 3.1-1.1 5.6-3.7 6.5-7m-9.4-8c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.6.6 4m0-36h10.5c0-2.7-.4-5.4-1.1-8-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.6 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .1-.4.2-.9.4-1.4l-9.9-4.6c-.1.6-.2 1.2-.4 1.8-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.3 1.3.5 2.6.5 3.9m14.1 27.9c-.7 2.6-1.1 5.3-1.1 8.1V319h10.5v-23.7c0-1.3.2-2.7.6-3.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.8 2.6.8 5.3 0 7.9-.5 1.7-2 3-3.7 3.4-1.7.3-3.4.3-5 0-.3-.1-.7-.2-1-.3l3.6 9.8c3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.4 1-5.8 3.6-6.8 6.8"/>
             </svg>
-            <p class="coop-title">[Name of thing]</p>
+            <p class="coop-title">Experience Library</p>
         </a>
         
         <form class="coop-c-search" autocomplete="off">
@@ -56,7 +56,7 @@
         <hr class="coop-t-hr-side-nav">
         <ul class="coop-side-nav  coop-u-list-bare">
             <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link">Foundations
+                <a href="#" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                         <path
                             d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -64,15 +64,14 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="#">All foundations</a></li>
+                    <li class="nested-link"><a href="/foundations/"  class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
+                    <li class="nested-link"><a href="/foundations/borders.html" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
                     <li class="nested-link"><a href="#">Colours</a></li>
+                    <li class="nested-link"><a href="#">Drop shadow</a></li>
                     <li class="nested-link"><a href="#">Font</a></li>
                     <li class="nested-link"><a href="#">Font sizes</a></li>
-                    <li class="nested-link"><a href="#">Spacing</a></li>
-                    <li class="nested-link"><a href="#">Borders</a></li>
-                    <li class="nested-link"><a href="#">Shadow</a></li>
                     <li class="nested-link"><a href="#">Radius</a></li>
-                    <li class="nested-link"><a href="#">Icons</a></li>
+                    <li class="nested-link"><a href="#">Spacing</a></li>
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
@@ -84,10 +83,10 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="/ui-library/elements/index.html" class="{% if page.item-url == '/ui-library/elements/' %}is-active{% endif %}">All elements</a></li>
+                    <li class="nested-link"><a href="/elements/index.html" class="{% if page.item-url == '/elements/' %}is-active{% endif %}">All elements</a></li>
                     <li class="nested-link"><a href="#" >Headings and paragraphs</a></li>
                     <li class="nested-link"><a href="#" >Lists</a></li>
-                    <li class="nested-link"><a href="/ui-library/elements/links.html" class="{% if page.item-url == '/ui-library/elements/links.html' %}is-active{% endif %}">Links</a></li>
+                    <li class="nested-link"><a href="/elements/links.html" class="{% if page.item-url == '/elements/links.html' %}is-active{% endif %}">Links</a></li>
                     <li class="nested-link"><a href="#" >Buttons</a></li> 
                     <li class="nested-link"><a href="#" >Input</a></li>
                     <li class="nested-link"><a href="#" >Textarea</a></li>
@@ -97,7 +96,7 @@
                 </ul>
             </li>
             <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.section == 'elements' %}is-open{% endif %}">Layout
+                <a href="#" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
                     <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                         <path
                             d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -117,14 +116,14 @@
                     </svg>
                 </a>
                 <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="/ui-library/components/index.html" class="{% if page.item-url == '/ui-library/components/' %}is-active{% endif %}">All components</a></li>
+                    <li class="nested-link"><a href="/components/index.html" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
                     <li class="nested-link"><a href="#">Banner - Alert</a></li>
                     <li class="nested-link"><a href="#">Banner - Hero</a></li>
                     <li class="nested-link"><a href="#">Banner - Information</a></li>
                     <li class="nested-link"><a href="#">Card - Editorial</a></li>
                     <li class="nested-link"><a href="#">Card - Feature</a></li>
                     <li class="nested-link"><a href="#">Card - Product</a></li>
-                    <li class="nested-link"><a href="/ui-library/components/signpost.html" class="{% if page.url == '/ui-library/components/signpost.html' %}is-active{% endif %}">Signpost</a></li>
+                    <li class="nested-link"><a href="/components/signpost.html" class="{% if page.url == '/components/signpost.html' %}is-active{% endif %}">Signpost</a></li>
                     <li class="nested-link"><a href="#">Tags</a></li>
                 </ul>
             </li>

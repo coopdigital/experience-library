@@ -1,0 +1,170 @@
+
+.coop-logo path {
+  fill: var(--color-brand);
+}
+
+.coop-nav__logo {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.coop-nav__logo svg {
+  margin-bottom: 5px;
+}
+
+.coop-title {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.coop-u-flex__sidebar a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.coop-u-flex__sidebar a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.coop-header {
+  position: fixed;
+  z-index: 4;
+  width: 280px;
+  padding: 24px var(--spacing-16) 0 var(--spacing-16);
+}
+
+.coop-side-nav-wrapper {
+  width: 100%;
+  padding: 0 var(--spacing-8);
+}
+
+.coop-nav-scroll {
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  top: 200px;
+  bottom: 0;
+  width: 280px; 
+}
+
+.side-nav__title {
+  font-size: 1rem; 
+  font-weight: bold;
+  padding: 8px 0 4px 0;
+}
+
+.side-nav__link a {
+  font-size: 1rem;
+  padding: 8px 0 8px 0;
+  font-weight: 500;
+}
+
+.side-nav__link a:hover {
+  background: #fff;
+  transition: background-color 0.2s ease;
+}
+ 
+.coop-side-nav--nested {
+  list-style: none;
+  margin-top: 0;
+  padding: 0 0 var(--spacing-8) 0;
+}
+
+.side-nav__link-toggle .coop-side-nav {
+  display: none;
+}
+
+.coopssn-c-nav__link__icon__svg {
+  height: 20px;
+  width: 20px;
+  margin-left: 6px;
+  position: relative;
+  float: right;
+  top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-link {
+  display: block;
+  font-weight: 500;
+}
+
+.toggle-link.is-open {
+  margin-bottom: var(--spacing-4);
+}
+
+.toggle-link.is-open .coopssn-c-nav__link__icon__svg {
+  transform: rotate(180deg);
+}
+
+.toggle-link.is-open + .coop-side-nav--nested {
+  margin-top: 0;
+  font-weight: 400;
+  border-bottom-left-radius: 4px; 
+  border-bottom-right-radius: 4px;
+}
+
+.coop-side-nav--nested .nested-link a {
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-32);
+  font-weight: 400;
+}
+
+.coop-side-nav--nested .is-active {
+  padding-left: 28px !important;
+  border-left: 4px solid var(--color-yellow-mid-5);
+  text-decoration: none;
+  background: var(--color-grey-neutral-warm);
+}
+
+.coop-side-nav {
+  width: 100%;
+  padding: 0; 
+}
+
+.coop-side-nav .side-nav__link a,
+.coop-side-nav .side-nav__item.title {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
+}
+
+.coop-side-nav .side-nav__item.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.coop-side-nav .side-nav__item.title span {
+  width: 100%;
+  display: block;
+}
+
+.c-coop-breadcrumb {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: var(--spacing-16);
+}
+
+.c-coop-breadcrumb li {
+  display: inline-block;
+}
+
+.c-coop-breadcrumb li:first-child {
+  margin-left: var(--spacing-8);
+}
+.c-coop-breadcrumb li:last-child {
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+.c-coop-breadcrumb li + li::before {
+  content: '\279D';
+  display: inline-block;
+}
+
