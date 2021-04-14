@@ -3,12 +3,21 @@
         <img src="/images/decorative/borders-hero.svg" alt="" />
     </div>
     <div class="el-c-hero__content">
-        <p class="el-c-hero__section">{{ page.section }}</p>
-        <h1 class="el-c-hero__title">{{ page.title }}</h1>
-        <p class="el-c-hero__meta">{{ page.last-reviewed }}</p>
-        <p class="coop-t-lead-p">You can use borders to create separation between components or boxes of content.</p>
-        <div class="el-c-info-card">
-            test
+        <div class="coop-l-grid">
+            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                <p class="el-c-hero__section">{{ page.section }}</p>
+                <h1 class="el-c-hero__title">{{ page.title }}</h1>
+                <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
+                <p class="coop-t-lead-p">You can use borders to create separation between components or boxes of content.</p>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                <div class="el-c-info-card el-c-info-card--small">
+                    <ul class="el-c-info-card__link-list coop-u-list-bare">
+                        <li><a href="" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>View borders in Figma</span></a></li>
+                        <li><a href="" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>Go to Storybook to learn more about and install borders</span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>

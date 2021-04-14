@@ -24,7 +24,7 @@
 @import 'theme/el-c-info-card.pcss';
 @import 'theme/el-c-footer.pcss';
 @import 'theme/el-c-pullout.pcss';
-
+@import 'theme/notification.pcss';
 
 
 .external-link-container {

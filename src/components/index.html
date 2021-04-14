@@ -7,42 +7,27 @@ section: components
 description: Components are reusable parts of the user interface. Each one has been designed and built to meet our code and accessibility standards.
 ---
 <main class="coop-u-flex__main">
-    <section class="coop-l-full">
-        <div class="coop-l-grid">
-            <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                <h1>Components</h1>
-                <p>Components are reusable parts of the user interface.</p>
-                <p>Each one has been designed and built to meet our code and accessibility standards.</p>
-                <p>If you would like to put forward an improvement to an existing component or a propse a new component, <a href="https://miro.com/app/board/o9J_lc18Sno=/" class="link-blue">submit your ideas in our component lounge.</a></p>
-
+    <div class="coop-l-full">
+        {% include notification.html %}
+        <section class="el-c-hero">
+            <div class="el-c-hero__image">
+                <img src="/images/decorative/foundations.svg" alt="" />
             </div>
-            <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-margin-resp-t-32-16">
-                <ul class="external-link-container coop-u-list-bare">
-                    <li class="external-link"><a class="inline-link" href="#"><span class="external-link-icon">
-                        <svg width="16" height="22" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                        <path d="M3.00018 17.647C4.65615 17.647 6.00036 16.3291 6.00036 14.7056V11.7642H3.00018C1.34421 11.7642 0 13.082 0 14.7056C0 16.3291 1.34421 17.647 3.00018 17.647Z" fill="#0ACF83"/>
-                        <path d="M0 8.82373C0 7.20021 1.34421 5.88232 3.00018 5.88232H6.00036V11.7644H3.00018C1.34421 11.7651 0 10.4473 0 8.82373Z" fill="#A259FF"/>
-                        <path d="M0 2.94141C0 1.31788 1.34421 0 3.00018 0H6.00036V5.88212H3.00018C1.34421 5.88212 0 4.56494 0 2.94141Z" fill="#F24E1E"/>
-                        <path d="M6 0H9.00019C10.6562 0 12.0004 1.31788 12.0004 2.94141C12.0004 4.56494 10.6562 5.88212 9.00019 5.88212H6V0Z" fill="#FF7262"/>
-                        <path d="M12.0004 8.82373C12.0004 10.4473 10.6562 11.7651 9.00019 11.7651C7.34422 11.7651 6 10.4473 6 8.82373C6 7.20021 7.34422 5.88232 9.00019 5.88232C10.6562 5.88232 12.0004 7.20021 12.0004 8.82373Z" fill="#1ABCFE"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0">
-                        <rect width="16" height="22" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg>
-                        </span><span>View in Figma</span></a>
-                    </li>
-                </ul>
+            <div class="el-c-hero__content">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h1 class="el-c-hero__title">{{ page.title }}</h1>
+                        <p class="coop-t-lead-p">Components are blocks of content and code you can use in your designs.</p>
+                        <p>Components are made up of the foundations and elements and are combined to build webpages. The components give you a starting point when designing Co-op products. </p>
+                        <a href="">Go to the guidelines on how to theme the components.</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section class="coop-l-full">
+    <section class="coop-l-page">
         <div class="coop-l-grid coop-u-margin-resp-b-32-16 ">
-
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                 <div class="coop-c-signpost">
                     <a
@@ -68,7 +53,6 @@ description: Components are reusable parts of the user interface. Each one has b
                     </a>
                 </div>
             </div>
-
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                 <div class="coop-c-signpost">
                     <a

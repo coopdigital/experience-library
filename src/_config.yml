@@ -4,7 +4,7 @@
 title: Co-op Experience library
 description: Tools and resources to help ensure Co-op creates coherent, efficient customer experiences to the highest standard.
 baseurl: ""
-url: "http://coop-prototyping-kit.heroku.com"
+url: "http://pioneer-design-system.heroku.com"
 
 # Build settings
 source: ./

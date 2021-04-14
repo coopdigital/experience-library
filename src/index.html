@@ -1,14 +1,14 @@
 ---
 layout: coop-experience
 id: index
-title: Co-op Experience Library
-description: Co-op Experience Homepage.
-item-url: /home-populated.html
+title: Home - Co-op Experience Library
+description: Co-op Experience Library.
+item-url: /index.html
 ---
 
 <main class="coop-u-flex__main">
-    
-    <section class="coop-l-full"> 
+    <div class="coop-l-full"> 
+        {% include notification.html %}
         <section class="el-c-hero">
             <div class="el-c-hero__image">
                 <img src="/images/decorative/foundations.svg" alt="" />
@@ -16,82 +16,55 @@ item-url: /home-populated.html
             <div class="el-c-hero__content">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h1 class="el-c-hero__title">{{ page.title }}</h1>
-                        <p class="coop-t-lead-p">Guidelines, tools and resources to help us create better digital experiences for our customers.</p>
+                        <h1 class="el-c-hero__title">Experience Library</h1>
+                        <p class="coop-t-h2">Guidelines, tools and resources to help us create better digital experiences for our customers.</p>
                         <p class="coop-t-lead-p">The Experience Library is for anyone working on products, services and communication at Co-op.</p>
                     </div>
                 </div>
             </div>
         </section>
-    </section>
+    </div>
     <section class="coop-l-page">
         <div class="coop-l-grid coop-u-list-bare">
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                 <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Design</h2>
-                    <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="">Using Figma</a></li>
-                        <li><a class="top-task-link" href="">See the design foundations</a></li>
-                        <li><a class="top-task-link" href="/ui-library/components/">See the components</a></li>
-                        <li><a class="top-task-link" href="/content-guidelines/">See the content style guidance</a></li>
-                    </ul>
+                    <h2 class="coop-t-font-size-24">Foundations</h2>
+                    <p>The design basics that we build our products on.</p>
+                    <a class="top-task-link" href="/foundations/">View the design foundations</a>
                 </div>
             </div>
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                 <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Code</h2>
-                    <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="https://coop-design-system-storybook.herokuapp.com/?path=/story/coop-ui-intro--page">See the components in Storybook</a></li>
-                        <li><a class="top-task-link" href="https://github.com/coopdigital/coop-frontend/blob/master/README.md">Using the Co-op front-end</a></li>
-                        <li><a class="top-task-link" href="https://github.com/coopdigital/coop-prototyping-kit/blob/master/README.md">Using the prototyping kit</a></li>
-                    </ul>
+                    <h2 class="coop-t-font-size-24">Components</h2>
+                    <p>Blocks of content and code you can use in your designs.</p>
+                    <a class="top-task-link" href="/components/">View the components</a>
                 </div>
             </div>
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                 <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Standards</h2>
-                    <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="">Meeting the product standard</a></li>
-                        <li><a href="/accessibility-guidelines/">Accessibility guidelines</a></li>
-                        <li><a href="">Coding standards</a></li>
-                    </ul> 
+                    <h2 class="coop-t-font-size-24">Accessibility</h2>
+                    <p>How we do digital accessibility and inclusion at Co-op.</p>
+                    <a href="/accessibility-guidelines/">Go to the Accessibility guidelines</a>
                 </div>
             </div>
-            <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-l-grid__item coop-l-grid__item--large-6">
                 <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Next meet-up</h2>
-                    <p class="coop-u-margin-b-2">Collating tab patterns and deciding a component direction.</p>
-                    <p class="coop-t-font-size-16">Thu, 11 Feb 2pm</p>
+                    <h2 class="coop-t-font-size-24">Get support</h2>
                     <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="">Get an invite</a></li>
-                        <li><a class="top-task-link" href="">Previous meet-ups</a></li>
+                        <li><a class="top-task-link" href="mailto:designsystem@coop.co.uk">Email the Experience Library team</a></li>
+                        <li><a class="top-task-link" href="">Post in the Slack channel</a> (Co-op Digital colleagues only)</li>
                     </ul>
                 </div>
             </div>
-            <div class="coop-l-grid__item coop-l-grid__item--large-4">
+            <div class="coop-l-grid__item coop-l-grid__item--large-6">
                 <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Contribute</h2>
-                    <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="">Design changes</a></li>
-                        <li><a class="top-task-link" href="">Content changes</a></li>
-                        <li><a class="top-task-link" href="">Code changes</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                <div class="top-task-container">
-                    <h2 class="coop-t-font-size-24">Updates and plans</h2>
-                    <ul class="coop-u-list-bare">
-                        <li><a class="top-task-link" href="">Latest updates</a></li>
-                        <li><a class="top-task-link" href="">What we're working on now</a></li>
-                        <li><a class="top-task-link" href="">Our roadmap</a></li>
-                    </ul>
+                    <h2 class="coop-t-font-size-24">Sign up for email updates</h2>
+                    <p>We'll keep you informed about changes and developments.</p>
+                    <a class="coop-btn coop-btn--primary" href="https://coop-design-system.herokuapp.com/sign-up.html">Sign up</a>
                 </div>
             </div>
         </div>
     </section>
-    
-
 </main>
 <!-- 
     <section class="coop-l-full coop-l-grid coop-u-margin-b-64">
