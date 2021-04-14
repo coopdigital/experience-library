@@ -25,16 +25,27 @@
 }
 
 .coop-u-flex__sidebar {
+  position: relative;
   top: 0; 
   bottom: 0;
   display: flex;
   width: 280px;    
-  flex: 0 0 280px;
+  flex: 0 0 0px;
   flex-flow: column nowrap;
   justify-content: left; 
   align-items: flex-start;
   background: var(--color-white);
   border-right: 1px solid var(--color-grey-mid);
+  /* translateX doesn't work with position: fixed */
+  left: -280px;
+}
+
+@media (--mq-medium) {
+  .coop-u-flex__sidebar {
+    width: 280px;
+    flex: 0 0 280px;
+    left: 0;
+  }
 }
 
 .coop-l-page,
@@ -44,8 +55,14 @@
 
 .coop-l-page {
   width: 100%;
-  padding: 0 var(--spacing-64);
+  padding: 0 var(--spacing-32) var(--spacing-32) var(--spacing-32);
 }
+
+@media (--mq-medium) {
+    .coop-l-page {
+      padding: 0 var(--spacing-64) var(--spacing-64) var(--spacing-64);
+    }
+} 
 
 .coop-l-full {
   width: 100%;

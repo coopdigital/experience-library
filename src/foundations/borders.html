@@ -4,21 +4,109 @@ id: index
 item-url: /foundations/borders.html
 title: Borders
 section: Foundations
-description: Our foundations are the design basics that we build our products on.
+description: Use borders to create separation between components or boxes of content.
+last-reviewed: Last reviewed 14 April 2021
 ---
 <main class="coop-u-flex__main">
     <div class="coop-l-full">
         <section class="el-c-hero">
             <div class="el-c-hero__image">
-                <img src="/images/decorative/foundations.svg" alt="" />
+                <img src="/images/decorative/borders-hero.svg" alt="" />
             </div>
-            <div class="el-c-hero__text">
-                <h1 class="el-c-hero__title">Borders</h1>
-                <p class="coop-t-lead-p">You can use borders to create separation between components or boxes of content.</p>
+            <div class="el-c-hero__content">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <p class="el-c-hero__section">{{ page.section }}</p>
+                        <h1 class="el-c-hero__title">{{ page.title }}</h1>
+                        <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
+                        <p class="coop-t-lead-p">You can use borders to create separation between components or boxes of content.</p>
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                        <div class="el-c-info-card el-c-info-card--small">
+                            <ul class="el-c-info-card__link-list coop-u-list-bare">
+                                <li><a href="" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>View borders in Figma</span></a></li>
+                                <li><a href="" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>Go to Storybook to learn more about and install borders</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
     <section class="coop-l-page">
-        
+        <div class="coop-l-grid">
+            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                <h2>Guidelines</h2>
+                <p>Borders should be between 1 and 4px wide.</p>
+                <p>Use dark grey (#6E6E6E) if:</p>
+                <ul>
+                    <li>the border is there to help a user find what they need</li>
+                    <li>the component it surrounds is clickable</li>
+                </ul>
+                <p>Use medium grey (#C4C4C4) in all other cases.</p>
+                <p>Use a solid line for borders as these are easy for people to scan along.</p>
+                <p>The colour contrast of the dark grey passes the minimum requirements for graphical objects.</p>
+                <p>Do not overuse borders. If you use lots of borders on a page, it can start to look crowded and may be harder for people to navigate.</p> 
+                <p>Try using headings and spacing to break up pages instead.</p>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                <div class="el-c-pullout">
+                    <h3>Example</h3>
+                    <div class="el-c-pullout__example">
+                        <div class="coop-table-wrapper">
+                            <table class="coop-table">
+                                <caption class="coop-table__caption">
+                                    This table shows compares points earnings in 2018 and 2019
+                                </caption>
+                                <thead>
+                                    <tr class="coop-table__row">
+                                        <th class="coop-table__header" scope="col">Partner</th>
+                                        <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2018</th>
+                                        <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2019</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="coop-table__row">
+                                        <th class="coop-table__cell" scope="row">Co-op Food</th>
+                                        <td class="coop-table__cell coop-table__cell--numeric">709.09</td>
+                                        <td class="coop-table__cell coop-table__cell--numeric">654.45</td>
+                                    </tr>
+                                    <tr class="coop-table__row">
+                                        <th class="coop-table__cell" scope="row">Co-op Insurance</th>
+                                        <td class="coop-table__cell coop-table__cell--numeric">49.99</td>
+                                        <td class="coop-table__cell coop-table__cell--numeric">52.35</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="coop-table__row">
+                                        <th class="coop-table__footer" scope="row">Points total</th>
+                                        <td class="coop-table__footer coop-table__footer--numeric">759.08</td>
+                                        <td class="coop-table__footer coop-table__footer--numeric">706.80</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                <div class="el-c-pullout">
+                    <h3>Changelog</h3>
+                    <table class="coop-table">
+                        <thead>
+                            <tr class="coop-table__row">
+                                <th class="coop-table__header" scope="col" width="20%">Date</th>
+                                <th class="coop-table__header" scope="col">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                            <tr class="coop-table__row">
+                                <th class="coop-table__cell" scope="row">14 April 2021</th>
+                                <td class="coop-table__cell">First version of page published</td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
     </section>
 </main>
