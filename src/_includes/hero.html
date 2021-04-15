@@ -43,9 +43,9 @@
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-7">
                     <h2>{{ page.info-card-title }}</h2>
-                    <p>{{ page.info-card-p1 }}</p>
-                    <p>{{ page.info-card-p2 }}</p>
-                    <p>{{ page.info-card-p3 }}</p>
+                    {% for item in page.info-card-p %}
+                    <p>{{ item }}</p>
+                    {% endfor %}
                 </div>
                 <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
                     <img src="{{ page.info-card-image }}" alt="" class="el-c-info-card__image" />
