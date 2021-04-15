@@ -3,29 +3,21 @@ layout: coop-experience
 id: index
 item-url: /components/
 title: Components
+description: Components are blocks of content and code you can use in your designs.
 section: components
-description: Components are reusable parts of the user interface. Each one has been designed and built to meet our code and accessibility standards.
+col-width: 6
+intro-text-lead: Components are blocks of content and code you can use in your designs.
+intro-text: Components are made up of the foundations and elements and are combined to build webpages. The components give you a starting point when designing Co-op products.
+intro-text-link: Go to the guidelines on how to theme the components
+intro-text-link-url: #
+link-box: false
+decorative-image-url: /images/decorative/foundations.svg
 ---
 <main class="coop-u-flex__main">
     <div class="coop-l-full">
         {% include notification.html %}
-        <section class="el-c-hero">
-            <div class="el-c-hero__image">
-                <img src="/images/decorative/foundations.svg" alt="" />
-            </div>
-            <div class="el-c-hero__content">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
-                        <h1 class="el-c-hero__title">{{ page.title }}</h1>
-                        <p class="coop-t-lead-p">Components are blocks of content and code you can use in your designs.</p>
-                        <p>Components are made up of the foundations and elements and are combined to build webpages. The components give you a starting point when designing Co-op products. </p>
-                        <a href="">Go to the guidelines on how to theme the components.</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {% include hero.html %}
     </div>
-
     <section class="coop-l-page">
         <div class="coop-l-grid coop-u-margin-resp-b-32-16 ">
             <div class="coop-l-grid__item coop-l-grid__item--large-4">
