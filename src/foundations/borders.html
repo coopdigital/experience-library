@@ -2,19 +2,35 @@
 layout: coop-experience
 id: index
 item-url: /foundations/borders.html
-title: Borders
 section: Foundations
-section-title: Foundations
 description: Use borders to create separation between components or boxes of content.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
-last-reviewed: Last reviewed 14 April 2021
+section-title: Foundations
+title: Borders
+last-reviewed: Last reviewed 20 April 2021
 intro-text-lead: You can use borders to create separation between components or boxes of content.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
 link-box: true
 link-box-text-design: View borders in Figma
 link-box-link-design: #
 link-box-text-dev: Go to Storybook to learn more about and install borders
 link-box-link-dev: #
-decorative-image-url: /images/decorative/borders-hero.svg
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: 	First version of page published
 ---
 <main class="coop-u-flex__main" id="main">
     <div class="coop-l-full">
@@ -23,13 +39,13 @@ decorative-image-url: /images/decorative/borders-hero.svg
     </div>
     <section class="coop-l-page">
         <div class="coop-l-grid">
-            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <div class="coop-l-grid__item coop-l-grid__item--large-8">                
                 <h2>Guidelines</h2>
                 <p>Borders should be between 1 and 4px wide.</p>
                 <p>Use dark grey (#6E6E6E) if:</p>
                 <ul>
                     <li>the border is there to help a user find what they need</li>
-                    <li>the component it surrounds is clickable</li>
+                    <li>the component it surrounds is clickable</li> 
                 </ul>
                 <p>Use medium grey (#C4C4C4) in all other cases.</p>
                 <p>Use a solid line for borders as these are easy for people to scan along.</p>
@@ -41,60 +57,12 @@ decorative-image-url: /images/decorative/borders-hero.svg
                 <div class="el-c-pullout">
                     <h3>Example</h3>
                     <div class="el-c-pullout__example">
-                        <div class="coop-table-wrapper">
-                            <table class="coop-table">
-                                <caption class="coop-table__caption">
-                                    This table shows compares points earnings in 2018 and 2019
-                                </caption>
-                                <thead>
-                                    <tr class="coop-table__row">
-                                        <th class="coop-table__header" scope="col">Partner</th>
-                                        <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2018</th>
-                                        <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2019</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="coop-table__row">
-                                        <th class="coop-table__cell" scope="row">Co-op Food</th>
-                                        <td class="coop-table__cell coop-table__cell--numeric">709.09</td>
-                                        <td class="coop-table__cell coop-table__cell--numeric">654.45</td>
-                                    </tr>
-                                    <tr class="coop-table__row">
-                                        <th class="coop-table__cell" scope="row">Co-op Insurance</th>
-                                        <td class="coop-table__cell coop-table__cell--numeric">49.99</td>
-                                        <td class="coop-table__cell coop-table__cell--numeric">52.35</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr class="coop-table__row">
-                                        <th class="coop-table__footer" scope="row">Points total</th>
-                                        <td class="coop-table__footer coop-table__footer--numeric">759.08</td>
-                                        <td class="coop-table__footer coop-table__footer--numeric">706.80</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
+                        {% include example.html %}
                     </div>
                 </div>
             </div>
             <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                <div class="el-c-pullout">
-                    <h3>Changelog</h3>
-                    <table class="coop-table">
-                        <thead>
-                            <tr class="coop-table__row">
-                                <th class="coop-table__header" scope="col" width="20%">Date</th>
-                                <th class="coop-table__header" scope="col">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody> 
-                            <tr class="coop-table__row">
-                                <th class="coop-table__cell" scope="row">14 April 2021</th>
-                                <td class="coop-table__cell">First version of page published</td>
-                            </tr>
-                        </tbody>
-                    </table>  
-                </div>
+                {% include changelog.html %}
             </div>
     </section>
 </main>

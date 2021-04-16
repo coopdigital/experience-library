@@ -1,21 +1,37 @@
 ---
 layout: coop-experience
 id: index
-title: Signpost
 description: A link card that can be displayed with or without an image. Signpost navigation is used in pages to link to permanent content.
 section: Components
-section-title: Components
 item-url: /components/signpost.html
-description: A link card that can be displayed with or without an image.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
+section-title: Components
+title: Signpost
 last-reviewed: Last reviewed 14 April 2021
 intro-text: A link card that can be displayed with or without an image.
+
+# Image at the top of the hero
+decorative-image-url: /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
 link-box: true
 link-box-text-design: View signposts in Figma
 link-box-link-design: #
 link-box-text-dev: Go to Storybook to learn more about and install signposts
 link-box-link-dev: #
-decorative-image-url: /images/decorative/borders-hero.svg
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
 ---
 <main class="coop-u-flex__main" id="main">
     <div class="coop-l-full">
@@ -105,23 +121,7 @@ decorative-image-url: /images/decorative/borders-hero.svg
                 </div>
             </div>
             <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                <div class="el-c-pullout">
-                    <h3>Changelog</h3>
-                    <table class="coop-table">
-                        <thead>
-                            <tr class="coop-table__row">
-                                <th class="coop-table__header" scope="col" width="20%">Date</th>
-                                <th class="coop-table__header" scope="col">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody> 
-                            <tr class="coop-table__row">
-                                <th class="coop-table__cell" scope="row">14 April 2021</th>
-                                <td class="coop-table__cell">First version of page published</td>
-                            </tr>
-                        </tbody>
-                    </table>  
-                </div>
+                {% include changelog.html %}
             </div>
     </section>
 </main>

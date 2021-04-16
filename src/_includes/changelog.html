@@ -1,0 +1,19 @@
+<div class="el-c-pullout">
+    <h3>Changelog</h3>
+    <table class="coop-table">
+        <thead>
+            <tr class="coop-table__row">
+                <th class="coop-table__header" scope="col" width="20%">Date</th>
+                <th class="coop-table__header" scope="col">Notes</th>
+            </tr>
+        </thead>
+        <tbody> 
+            {% for changelog in page.changelog %}
+            <tr class="coop-table__row">        
+                <th class="coop-table__cell" scope="row">{{ changelog.date }}</th>
+                <td class="coop-table__cell">{{ changelog.notes }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>  
+</div>
