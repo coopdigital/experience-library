@@ -3,20 +3,23 @@ layout: coop-experience
 id: index
 item-url: /about-this-prototype/
 title: About this prototype
-col-width: 8
+col-width: 9
 intro-text-lead: Intro text.
 decorative-image-url: /images/decorative/foundations.svg
 ---
-<main class="coop-u-flex__main" id="main">
-    <div class="coop-l-full">
-        {% include notification.html %}
-        {% include hero.html %}
-    </div>
-    <section class="coop-l-page">
-        <div class="coop-l-grid">
-            <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                <h2>Heading 2</h2>
-                <p>Content.</p>
-            </div>
-    </section>
-</main>
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                    <h2>Heading 2</h2>
+                    <p>Content.</p>
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>

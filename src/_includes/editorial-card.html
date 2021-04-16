@@ -1,0 +1,25 @@
+<article class="coop-c-editorialcard">
+    <a href="{{ editorialcard.link-url }}" class="coop-c-editorialcard__link">
+        <div class="coop-c-editorialcard__inner">
+            <figure class="coop-c-editorialcard__media">
+                <picture class="coop-c-editorialcard__image">
+                    <source media="(min-width: 64em)" srcset="{{ editorialcard.image }}?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                    <source srcset="{{ editorialcard.image }}?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                    <source media="(min-width: 64em)" srcset="{{ editorialcard.image }}fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                    <source srcset="{{ editorialcard.image }}?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                    <img src="{{ editorialcard.image }}?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                 </picture>
+            </figure>
+            <div class="coop-c-editorialcard__content">
+                <header class="coop-c-editorialcard__header">
+                    <p class="coop-c-editorialcard__subtitle">{{ editorialcard.section }}</p>
+                    <h3 class="coop-c-editorialcard__title">
+                        <span>
+                            {{ editorialcard.title }}
+                        </span>
+                    </h3>
+                </header>
+            </div>
+        </div>
+    </a>
+</article>

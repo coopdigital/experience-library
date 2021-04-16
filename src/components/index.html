@@ -24,18 +24,21 @@ signpost:
     image: /images/signpost.jpg
 
 ---
-<main class="coop-u-flex__main" id="main">
-    <div class="coop-l-full">
-        {% include notification.html %}
-        {% include hero.html %}
-    </div>
-    <section class="coop-l-page">
-        <ul class="coop-l-grid coop-u-list-bare">
-            {% for signpost in page.signpost %}
-            <li class="coop-l-grid__item coop-l-grid__item--large-4">
-                {% include signpost.html %}
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-</main>
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <ul class="coop-l-grid coop-u-list-bare">
+                {% for signpost in page.signpost %}
+                <li class="coop-l-grid__item coop-l-grid__item--large-4">
+                    {% include signpost.html %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>

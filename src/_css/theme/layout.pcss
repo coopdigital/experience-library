@@ -55,18 +55,33 @@
 
 .coop-l-page {
   width: 100%;
-  padding: 0 var(--spacing-32) var(--spacing-32) var(--spacing-32);
+  padding: var(--spacing-32);
 }
 
 @media (--mq-medium) {
     .coop-l-page {
-      padding: 0 var(--spacing-64) var(--spacing-64) var(--spacing-64);
+      padding: var(--spacing-64);
     }
 } 
+
+.coop-l-page--neutral {
+  padding-top: 0;
+  background: var(--color-grey-neutral-warm);
+}
 
 .coop-l-full {
   width: 100%;
 }
+
+.coop-l-footer {
+  padding-top: var(--spacing-32);
+}
+
+@media (--mq-medium) {
+    .coop-l-footer {
+        padding-top: var(--spacing-64);
+    }
+} 
 
 
  
