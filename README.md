@@ -1,6 +1,6 @@
 # Co-op Experience library
 
-MVP of the new Co-op experience library. The experience library currently uses the prototyping kit for rapid developemnt and research.
+MVP of the new Co-op experience library. The experience library currently uses the prototyping kit for rapid development and research.
 
 The Co-op Prototyping Kit helps quickly create prototypes and showcase them on Heroku.
 
