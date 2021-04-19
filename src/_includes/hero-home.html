@@ -1,0 +1,57 @@
+<section class="el-c-hero-home">
+    {% if page.decorative-image-url %}
+    <div class="el-c-hero__image">
+        <img src="{{ page.decorative-image-url }}" alt="" />
+    </div>
+    {% endif %}
+    <div class="el-c-hero-home__content">
+        <div class="coop-l-grid  el-c-hero__centered">
+            <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
+                {% if page.section-title %}
+                <p class="el-c-hero-home__section">{{ page.section-title }}</p>
+                {% endif %}
+                <h1 class="el-c-hero-home__title">{{ page.title }}</h1>
+                {% if page.last-reviewed %}
+                <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
+                {% endif %}
+                {% if page.home-lead %}
+                <p class="coop-t-h2">{{ page.home-lead }}</p>
+                {% endif %}
+                <p class="coop-t-lead-p">{{ page.intro-text-lead }}</p>
+                {% if page.intro-text %}
+                <p>{{ page.intro-text }}</p>
+                {% endif %}
+                {% if page.intro-text-link %}
+                <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
+                {% endif %}
+            </div>
+            {% if page.link-box %}
+            <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
+                <div class="el-c-info-card el-c-info-card--small">
+                    <ul class="el-c-info-card__link-list coop-u-list-bare">
+                        <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
+                        <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div> 
+    </div>
+    {% if page.info-card %}
+    <div class="el-c-hero-home__inner">
+        <div class="el-c-info-card">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <h2>{{ page.info-card-title }}</h2>
+                    {% for item in page.info-card-p %}
+                    <p>{{ item }}</p>
+                    {% endfor %}
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
+                    <img src="{{ page.info-card-image }}" alt="" class="el-c-info-card__image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</section>
