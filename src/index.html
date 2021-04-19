@@ -11,16 +11,16 @@ col-width: 8
 home-lead: Guidelines, tools and resources to help us create better digital experiences for our customers.
 intro-text-lead: The Experience Library is for anyone working on products, services and communication at Co-op.
 # Image at the top of the hero
-decorative-image-url: /images/decorative/homepage-hero.svg
+decorative-image-url: /images/decorative/homepage-hero.png
 
 # Editorial cards
 editorialcard:
   - section: Foundations
-    title: The design basics that we build our products on
+    title: View the design basics that we build our products on
     link-url: /foundations/
     image: /images/decorative/homepage-foundations.svg
   - section: Components
-    title: Blocks of content and code you can use in your designs
+    title: Find blocks of content and code you can use in your designs
     link-url: /components/
     image: /images/decorative/homepage-components.svg
   - section: Accessibility
@@ -38,9 +38,10 @@ editorialcard:
         <section class="coop-l-page coop-l-page--neutral">
             <ul class="coop-l-grid coop-u-list-bare">   
                 {% for editorialcard in page.editorialcard %}
-                <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
                     {% include editorial-card.html %}
                 </li>
+                
                 {% endfor %}
             </ul> 
         </section> 

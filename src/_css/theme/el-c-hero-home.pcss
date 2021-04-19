@@ -1,19 +1,21 @@
 
 .el-c-hero-home {
     padding: 0 0 var(--spacing-32) var(--spacing-32);
-    background: var(--color-red-light-7);
+    background: var(--color-grey-neutral-warm);
 } 
 
 @media (--mq-medium) {
     .el-c-hero-home { 
-        padding: 0 0 var(--spacing-32) var(--spacing-64);
+        padding: 0 0 var(--spacing-32) 0;
     } 
 }
 
 
-.el-c-hero__image {
+.el-c-hero-home__image {
     display: flex; 
     flex-direction: row-reverse;
+    padding: 0 0 var(--spacing-32) 0;
+
 }
 
 .el-c-hero-home__inner {
@@ -29,7 +31,7 @@
 }
 
 .el-c-hero-home__content { 
-    margin: var(--spacing-32) var(--spacing-32) var(--spacing-32) 0;
+    margin: var(--spacing-32) var(--spacing-32) var(--spacing-32) var(--spacing-64);
 }
 
 .el-c-hero-home__title {
