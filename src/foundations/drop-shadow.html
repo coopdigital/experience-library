@@ -1,0 +1,102 @@
+---
+layout: coop-experience
+id: index
+item-url: /foundations/drop-shadow.html
+section: Foundations
+description: Use borders to create separation between components or boxes of content.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Foundations
+title: Drop shadow
+last-reviewed: Last reviewed 20 April 2021
+intro-text-lead: A drop shadow adds a shadow effect to an element or component. This emphasises components or areas of the page by making it look like they are raised above the objects behind it.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/drop-shadow-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: true
+link-box-text-design: View drop shadow in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install drop shadow
+link-box-link-dev: #
+
+# Example (add path to html file or image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                    <h2>Guidelines</h2>
+                    <p>Elements and components in the design system come with the correct drop shadow applied. </p>
+                    <p>If you want to use drop shadow in a new component, use the values in this table:</p>
+                </div>
+
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <div class="coop-table-wrapper">
+                        <table class="coop-table coop-table--stackable">
+                            <thead>
+                            <tr>  
+                                <th scope="col">Shadow</th>
+                                <th scope="col">Offset-x</th>
+                                <th scope="col">Offset-y</th>
+                                <th scope="col">Blur</th>
+                                <th scope="col">Spread</th>
+                                <th scope="col">Colour</th>
+                                <th scope="col">Opacity</th>
+                                <th scope="col">Example</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row" role="rowheader">Default</th>
+                                <td role="cell" data-heading="Classic">0px</td>
+                                <td role="cell" data-heading="Select Plus">2px</td>
+                                <td role="cell" data-heading="Select Plus">10px</td>
+                                <td role="cell" data-heading="Select Plus">0px</td>
+                                <td role="cell" data-heading="Select Plus">#000000</td>
+                                <td role="cell" data-heading="Select Plus">0.15%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" role="rowheader">Hover</th>
+                                <td role="cell" data-heading="Classic">0px</td>
+                                <td role="cell" data-heading="Select Plus">2px</td>
+                                <td role="cell" data-heading="Select Plus">10px</td>
+                                <td role="cell" data-heading="Select Plus">0px</td>
+                                <td role="cell" data-heading="Select Plus">#000000</td>
+                                <td role="cell" data-heading="Select Plus">0.25%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p>If an element or component with drop shadow applied links to somewhere else, use the hover values to emphasise that it is clickable. You should also apply other visual cues such as text underline on hover.</p>
+                    </div>
+                </div>    
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <div class="el-c-pullout">
+                        <h3>Example</h3>
+                        <div class="">
+                            {% include signpost.html %}
+                        </div>
+                    </div>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
