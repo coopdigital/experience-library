@@ -1,0 +1,129 @@
+---
+layout: coop-experience
+id: index
+description: A link card that can be displayed with or without an image. Signpost navigation is used in pages to link to permanent content.
+section: Components
+item-url: /components/card-editorial.html
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Components
+title: Editorial card
+last-reviewed: Last reviewed 14 April 2021
+intro-text: An editorial card contains a small piece of information on one subject that people can get more information about by tapping or clicking on the card.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/card-editorial-hero.png
+
+# Hero link box - set to false or remove the code below to remove
+link-box: true
+link-box-text-design: View editorial cards in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install editorial cards
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                    <h2>Guidance</h2>
+                    <p>Signpost links allow you to create direct links to content you know people are looking for.</p>
+                    <p>They can be used with or without an image.</p>
+                    <p>Grouped together they can be used to build a simple list of links or sub navigation. This may be useful if you have several links around a particular area or theme.</p>
+                    <h3>Accessibility</h3>
+                    <p>This component passes the [Co-op accessibility framework].</p>
+                    <p>[Co-op accessibility standards] </p>
+                    <h3>Content design</h3>
+                    <p>The link text should be concise and actionable. Tell the user where the link is taking them.</p>
+                    <p>[Co-op accessibility standards]</p>
+                    <p>Line length should be kept short. This means people can find what they want quickly and the size of the card/button does not become excessive.</p>
+                    <p>[Links page in the content design guidelines]</p>
+                    <p>[Buttons page in the content design guidelines] </p>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <div class="el-c-pullout">
+                        <h3>Example</h3>
+                        <div class="el-c-pullout__example">
+                            <div class="coop-l-grid">
+                                <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                                    <div class="coop-c-signpost">
+                                        <a href="#" class="coop-c-signpost__link" data-contenttype="" data-contentparent="" data-linktext="">
+                                            <div class="coop-c-signpost__content">
+                                                <h3 class="coop-c-signpost__title">
+                                                    See all recipes
+                                                </h3>
+                                                <span class="coop-c-signpost__icon" aria-hidden="true">
+                                                    <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                                                        <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                                    <div class="coop-c-signpost">
+                                        <a href="#" class="coop-c-signpost__link" data-contenttype="Signpost" data-contentparent="Signposts" data-linktext="Sign in to Membership">
+                                        <figure class="coop-c-signpost__media">
+                                            <picture class="coop-c-signpost__image">
+                                                <!-- max image size 360w 203h -->
+                                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
+                                                <!-- max image size 751w 423h -->
+                                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
+                                                <!-- 25.9375em / max image size 583w 329h -->
+                                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
+                                                <!-- if no webp supported then default to serve progressive jpeg -->
+                                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
+                                                <!-- max image size 751w 423h -->
+                                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
+                                                <!-- 25.9375em / max image size 583w 329h -->
+                                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
+                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
+                                                <!-- fallback -->
+                                                <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
+                                            </picture>
+                                        </figure>
+                                        <div class="coop-c-signpost__content">
+                                            <h3 class="coop-c-signpost__title">
+                                                Sign in to Membership
+                                            </h3>
+                                            <span class="coop-c-signpost__icon" aria-hidden="true">
+                                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
