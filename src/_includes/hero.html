@@ -17,7 +17,9 @@
                 {% if page.home-lead %}
                 <p class="coop-t-h2">{{ page.home-lead }}</p>
                 {% endif %}
-                <p class="coop-t-lead-p">{{ page.intro-text-lead }}</p>
+                {% for item in page.intro-text-lead %}
+                <p class="coop-t-lead-p">{{ item }}</p>
+                {% endfor %}
                 {% if page.intro-text %}
                 <p>{{ page.intro-text }}</p>
                 {% endif %}
