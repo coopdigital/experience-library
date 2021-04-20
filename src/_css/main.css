@@ -155,3 +155,20 @@ li a.inline-nav:hover {
   border: 1px solid var(--color-grey-mid);
   padding: var(--spacing-32);
 }
+
+hr,
+.coop-t-hr-el {
+  display: block;
+  border-style: solid;
+  border-color: var(--color-grey-mid);
+  border-width: 0 0 1px;
+  height: 0;
+  color: var(--color-grey-mid);
+  margin-top: var(--spacing-32);
+  margin-bottom: var(--spacing-8);
+
+  @media (--mq-medium) {
+    margin-top: var(--spacing-64);
+    margin-bottom: var(--spacing-8);
+  }
+}
