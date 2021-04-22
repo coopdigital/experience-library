@@ -172,3 +172,9 @@ hr,
     margin-bottom: var(--spacing-8);
   }
 }
+
+.coop-t-caption {
+  font-size: 16px;
+  padding: var(--spacing-0) var(--spacing-16) var(--spacing-16) 0;
+
+}
