@@ -94,7 +94,9 @@ changelog:
 
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="el-c-pullout">    
+                    <div class="el-c-primary-section"> 
+                        <div class="coop-l-grid">
+   
                         <div class="coop-l-grid__item coop-l-grid__item--large-8">
                             <h2>Guidance</h2>
                             <p>An editorial card gives people enough information to make a considered decision whether to click or tap. It is a good way of presenting content consistently without overloading a page with information.</p>
@@ -103,141 +105,153 @@ changelog:
                             <p>The entirety of a card should be active, to create a large, easily clickable area.</p>
                             <p>For more information see our general guide on accessibility.</p>
                         </div>
-                    </div>
-                    <div class="el-c-pullout">    
-                        <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                            <h2>Required elements</h2>
-                            <p>These are parts of the component that must be included:</p>
-                            <h3>Title</h3>
-                            <p>The short title should quickly tell the user what they will find on the linked page.</p>
-                            <h3>Image</h3>
-                            <p>The supporting image must relate to the content by helping a user understand the content more quickly. It must have an alt tag that is descriptive of the image content. Go to the accessibility standard for alternative text.</p>
-                            <p>If the editorial card is being used in Contentful the editor can upload a large 4:3 ratio image and the CMS (Content management system) will automatically generate and add the correct sizes.</p>
-                            <p>If using the code, 2 image sizes should be supplied as the component contains code that will serve the correct image depending on the capability of the browser and size of the device.</p>
-                            <p>Image sizes to supply are::</p>
-                            <ul>
-                                <li>780 × 438 px</li>
-                                <li>400 × 225 px</li> 
-                            </ul>
-                            <h3>Link</h3>
-                            <p> The whole card clickable and and links to a single destination. If you need to display text below an image in a column that is not clickable use an image and text laid out using the grid.</p>
-                            <p>Go to the content guidelines on links.</p>
                         </div>
                     </div>
-                    <div class="el-c-pullout">    
-                        <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                            <h2>Optional elements</h2>
-                            <p>These are parts of the component that can be included if needed:</p>
-                            <h3>Paragraph</h3>
-                            <p>The paragraph can be used to contain supporting information on the topic of the card.</p>
-                            <h3>Label</h3>
-                            <p>The editorial card can have an optional label to show a category or tag associated with the content or a paragraph if the title alone does not describe the content accurately.</p>
-                            <h4>Example</h4>
-                            <div class=coop-l-grid--collapse>
-                                <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                                    <article class="coop-c-editorialcard">
-                                        <a
-                                            href="https://www.coop.co.uk"
-                                            class="coop-c-editorialcard__link"
-                                            data-contenttype="Card|Editorial"
-                                            data-contentparent=""
-                                            data-linktext=""
-                                        >
-                                            <div class="coop-c-editorialcard__inner">
-                                                <figure class="coop-c-editorialcard__media">
-                                                    <picture class="coop-c-editorialcard__image">
-                                                        <!-- if browser supports webp image format, serve the webp format-->
-                                                        <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                        <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                        <!-- if no webp supported then default to serve progressive jpeg -->
-                                                        <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                        <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                        <!-- fallback -->
-                                                        <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
-                                                    </picture>
-                                                </figure>
-                                                <div class="coop-c-editorialcard__content">
-                                                    <header class="coop-c-editorialcard__header">
-                                                        <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
-                                                        <h3 class="coop-c-editorialcard__title">
-                                                            <span>
-                                                                Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade
-                                                            </span>
-                                                        </h3>
-                                                    </header>
-                                                    <div class="coop-c-editorialcard__body">
-                                                        <p>Join us in celebrating 25 years of Fairtrade by enjoying products that carry the Fairtrade Mark, or holding your own Fairtrade party.</p>
+                    <div class="el-c-primary-section"> 
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                <h2>Required elements</h2>
+                                <p>These are parts of the component that must be included:</p>
+                                <h3>Title</h3>
+                                <p>The short title should quickly tell the user what they will find on the linked page.</p>
+                                <h3>Image</h3>
+                                <p>The supporting image must relate to the content by helping a user understand the content more quickly. It must have an alt tag that is descriptive of the image content. Go to the accessibility standard for alternative text.</p>
+                                <p>If the editorial card is being used in Contentful the editor can upload a large 4:3 ratio image and the CMS (Content management system) will automatically generate and add the correct sizes.</p>
+                                <p>If using the code, 2 image sizes should be supplied as the component contains code that will serve the correct image depending on the capability of the browser and size of the device.</p>
+                                <p>Image sizes to supply are::</p>
+                                <ul>
+                                    <li>780 × 438 px</li>
+                                    <li>400 × 225 px</li> 
+                                </ul>
+                                <h3>Link</h3>
+                                <p> The whole card clickable and and links to a single destination. If you need to display text below an image in a column that is not clickable use an image and text laid out using the grid.</p>
+                                <p>Go to the content guidelines on links.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-c-primary-section"> 
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                <h2>Optional elements</h2>
+                                <p>These are parts of the component that can be included if needed:</p>
+                                <h3>Paragraph</h3>
+                                <p>The paragraph can be used to contain supporting information on the topic of the card.</p>
+                                <h3>Label</h3>
+                                <p>The editorial card can have an optional label to show a category or tag associated with the content or a paragraph if the title alone does not describe the content accurately.</p>
+                                <h4>Example</h4>
+                                <div class="coop-l-grid--collapse">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                        <article class="coop-c-editorialcard">
+                                            <a
+                                                href="https://www.coop.co.uk"
+                                                class="coop-c-editorialcard__link"
+                                                data-contenttype="Card|Editorial"
+                                                data-contentparent=""
+                                                data-linktext=""
+                                            >
+                                                <div class="coop-c-editorialcard__inner">
+                                                    <figure class="coop-c-editorialcard__media">
+                                                        <picture class="coop-c-editorialcard__image">
+                                                            <!-- if browser supports webp image format, serve the webp format-->
+                                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                                            <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                                            <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                                            <!-- fallback -->
+                                                            <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                                                        </picture>
+                                                    </figure>
+                                                    <div class="coop-c-editorialcard__content">
+                                                        <header class="coop-c-editorialcard__header">
+                                                            <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
+                                                            <h3 class="coop-c-editorialcard__title">
+                                                                <span>
+                                                                    Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade
+                                                                </span>
+                                                            </h3>
+                                                        </header>
+                                                        <div class="coop-c-editorialcard__body">
+                                                            <p>Join us in celebrating 25 years of Fairtrade by enjoying products that carry the Fairtrade Mark, or holding your own Fairtrade party.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <p class="coop-t-caption">An editorial card with a paragraph and a label displaying the ‘Fairtrade’ category.</p>
+                                            </a>
+                                        </article>
+                                        <p class="coop-t-caption">An editorial card with a paragraph and a label displaying the ‘Fairtrade’ category.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>       
+                            </div> 
+                        </div>      
                     </div>
-                    <div class="el-c-pullout">    
-                        <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                            <h2>Using an editorial card or cards on a page</h2>
-                            <h3>Using up to 3 cards in a row
-                            </h3>
-                            <p>Cards should be used in horizontal columns no more than 3 using the grid. The grid helps you to adapt the number of columns the editorial card is displayed at over different screen sizes.</p>
-                            <h4>Example</h4>
-                            <img src=/images/decorative/editorial-card-using-multiple-cards.png alt="" class="coop-u-margin-b-32">
-                            <p class="coop-t-caption">3 editorial cards used to highlight content from Co-op Food.</p>
-                            <h3>Using one card in a row</h3>
-                            <p>Editorial cards adapt well, whether displaying 3 cards in a row or 1. For example if one card is placed in a row it will adapt to a horizontal format and fill the whole row.</p>
-                            <h4>Example</h4>
-                            <article class="coop-c-editorialcard coop-c-editorialcard--horizontal">
-                                <a
-                                    href="https://www.coop.co.uk"
-                                    class="coop-c-editorialcard__link"
-                                    data-contenttype="Card|Editorial"
-                                    data-contentparent=""
-                                    data-linktext=""
-                                >
-                                    <div class="coop-c-editorialcard__inner">
-                                        <figure class="coop-c-editorialcard__media">
-                                            <picture class="coop-c-editorialcard__image">
-                                                <!-- if browser supports webp image format, serve the webp format-->
-                                                <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                <!-- if no webp supported then default to serve progressive jpeg -->
-                                                <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                <!-- fallback -->
-                                                <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
-                                             </picture>
-                                        </figure>
-                                        <div class="coop-c-editorialcard__content">
-                                            <header class="coop-c-editorialcard__header">
-                                                <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
-                                                <h3 class="coop-c-editorialcard__title">
-                                                    <span>
-                                                        Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade
-                                                    </span>
-                                                </h3>
-                                            </header>
-                                            <div class="coop-c-editorialcard__body">
-                                                <p>Join us in celebrating 25 years of Fairtrade by enjoying products that carry the Fairtrade Mark, or holding your own Fairtrade party.</p>
+                    <div class="el-c-primary-section">
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                <h2>Using an editorial card or cards on a page</h2>
+                                <h3>Using up to 3 cards in a row
+                                </h3>
+                                <p>Cards should be used in horizontal columns no more than 3 using the grid. The grid helps you to adapt the number of columns the editorial card is displayed at over different screen sizes.</p>
+                                <h4>Example</h4>
+                                <img src=/images/decorative/editorial-card-using-multiple-cards.png alt="" class="coop-u-margin-b-32">
+                                <p class="coop-t-caption">3 editorial cards used to highlight content from Co-op Food.</p>
+                                <h3>Using one card in a row</h3>
+                                <p>Editorial cards adapt well, whether displaying 3 cards in a row or 1. For example if one card is placed in a row it will adapt to a horizontal format and fill the whole row.</p>
+                                <h4>Example</h4>
+                            </div>
+                        </div>
+
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                <article class="coop-c-editorialcard coop-c-editorialcard--horizontal">
+                                    <a
+                                        href="https://www.coop.co.uk"
+                                        class="coop-c-editorialcard__link"
+                                        data-contenttype="Card|Editorial"
+                                        data-contentparent=""
+                                        data-linktext=""
+                                    >
+                                        <div class="coop-c-editorialcard__inner">
+                                            <figure class="coop-c-editorialcard__media">
+                                                <picture class="coop-c-editorialcard__image">
+                                                    <!-- if browser supports webp image format, serve the webp format-->
+                                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                                    <!-- if no webp supported then default to serve progressive jpeg -->
+                                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                                    <!-- fallback -->
+                                                    <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                                                </picture>
+                                            </figure>
+                                            <div class="coop-c-editorialcard__content">
+                                                <header class="coop-c-editorialcard__header">
+                                                    <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
+                                                    <h3 class="coop-c-editorialcard__title">
+                                                        <span>
+                                                            Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade
+                                                        </span>
+                                                    </h3>
+                                                </header>
+                                                <div class="coop-c-editorialcard__body">
+                                                    <p>Join us in celebrating 25 years of Fairtrade by enjoying products that carry the Fairtrade Mark, or holding your own Fairtrade party.</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </article>
-                            <p class="coop-t-caption">Used on their own, editorial cards will reformat automatically to fill the available space.</p>
+                                    </a>
+                                </article>
+                            </div>
                         </div>
+                            <p class="coop-t-caption">Used on their own, editorial cards will reformat automatically to fill the available space.</p>
                     </div>
                 </div>
             </div>
-
-            <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                {% include changelog.html %}
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
             </div>
-        </section>
-    </main>
-        {% include footer.html %}
+    </section>
+</main>
+{% include footer.html %}
 </div>
-
 

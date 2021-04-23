@@ -24,6 +24,7 @@
 @import 'theme/el-c-hero-home.pcss';
 @import 'theme/el-c-info-card.pcss';
 @import 'theme/el-c-pullout.pcss';
+@import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/notification.pcss';
 
@@ -178,3 +179,4 @@ hr,
   padding: var(--spacing-0) var(--spacing-16) var(--spacing-16) 0;
 
 }
+
