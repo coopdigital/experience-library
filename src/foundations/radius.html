@@ -1,0 +1,97 @@
+---
+layout: coop-experience
+id: index
+item-url: /foundations/radius.html
+section: Foundations
+description: 
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Foundations
+title: Radius
+last-reviewed: Last reviewed 20 April 2021
+intro-text-lead: 
+  - We use border radius in our designs to give elements or components rounded corners.
+  - This makes the edges of cards or buttons easier to see. 
+# Image at the top of the hero
+decorative-image-url: /images/decorative/radius-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View font in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install font
+link-box-link-dev: #
+
+# Example (add path to html file or image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2>Guidelines</h2>
+                        <p>Elements and components in the design system have the correct border radius applied.</p>
+                        <p>If you are building something new, this table shows what each radius should be used for:</p>
+                    </div>
+                    <div class="coop-l-grid">
+                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-64 coop-u-margin-t-32">
+                                <div class="coop-table-wrapper">
+                                    <table class="coop-table">
+                                            <thead>
+                                            <tr>  
+                                                <th scope="col">Radius</th>
+                                                <th scope="col">Example</th>
+                                                <th scope="col">Usage</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td role="cell">5px</td>
+                                                <td role="cell"><img src=/images/decorative/input.svg></td>
+                                                <td role="cell">Form inputs</td>
+                                            </tr>
+                                            <tr>
+                                                <td role="cell">8px</td>
+                                                <td role="cell"><img src=/images/decorative/button-primary.svg></td>
+                                                <td role="cell">Buttons, cards and signposts</td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                <div class="el-c-pullout">
+                                    <h3>Example</h3>
+                                    {% include signpost.html %}
+                                    <p class="coop-t-caption">Example of a signpost link card with border radius applied.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
