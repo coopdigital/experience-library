@@ -1,0 +1,13 @@
+<svg width="468" height="160" viewBox="0 0 468 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="71" x2="480" y2="71" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="110" x2="480" y2="110" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<line x1="273" y1="234" x2="273" y2="-95" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<line x1="48.5" y1="234" x2="48.5" y2="-95" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<path d="M232.5 234.5L232.5 -95.5" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<path d="M8 234.5L8.00001 -95.5" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<path d="M456.5 234.5L456.5 -95.5" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round"/>
+<rect x="455.5" y="-112.5" width="182" height="181" rx="19.5" transform="rotate(90 455.5 -112.5)" fill="white" stroke="#282828"/>
+<rect x="231.5" y="-112.5" width="182" height="182" rx="19.5" transform="rotate(90 231.5 -112.5)" fill="white" stroke="#282828"/>
+<path d="M231.5 202.5C231.5 252.76 190.979 293.5 141 293.5C91.0208 293.5 50.5 252.76 50.5 202.5C50.5 152.24 91.0208 111.5 141 111.5C190.979 111.5 231.5 152.24 231.5 202.5Z" fill="white" stroke="#282828"/>
+<rect x="455.5" y="111.5" width="182" height="181" rx="19.5" transform="rotate(90 455.5 111.5)" fill="white" stroke="#282828"/>
+</svg>
