@@ -1,0 +1,92 @@
+---
+layout: coop-experience
+id: index
+item-url: /foundations/font.html
+section: Foundations
+description: Use borders to create separation between components or boxes of content.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Foundations
+title: Font
+last-reviewed: Last reviewed 20 April 2021
+intro-text-lead: 
+  - We use the same font across all our products so that everything looks consistent. 
+# Image at the top of the hero
+decorative-image-url: /images/decorative/font-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View font in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install font
+link-box-link-dev: #
+
+# Example (add path to html file or image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                    <h2>Guidelines</h2>
+                    <p>We use the Avenir Next font in regular, medium and demi bold weights.</p>
+                    <p>Use:</p>
+                    <ul>
+                        <li>regular for large bodies of text</li>
+                        <li>medium for buttons and form labels</li>
+                        <li>demi bold for headings</li> 
+                    </ul>
+                    <p>The visual contrast between regular and medium or demi bold makes it easy for people to scan content for the information they want. This is why you should never use medium or demi bold for large bodies of text. </p>
+                    <p>Avenir Next has clear, open letterforms and letter spacing. It also complements our logo.</p>
+                    <p>This is what the regular, medium and demi bold font weights look like:</p>
+                    <p class='font-example-regular'>Avenir Next Regular</p>
+                    <p class='font-example-medium'>Avenir Next Medium</p>
+                    <p class='font-example-demi'>Avenir Next Demi-bold</p>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <div class="el-c-pullout">
+                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                            <h2>Example</h2>
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-9">
+                                        <h1>Funding clean water projects</h1>
+                                        <p class='coop-t-lead-p'>We donate 3p per litre to water projects across the globe for every Co-op branded still, sparkling and flavoured water sold. We donate 1p per litre for all other water bottles sold. Mixers (including tonic and soda water) are excluded.</p>
+                                        <p>Working in partnership with The One Foundation, Co-op has spent the last 12 years investing in clean water, sanitation and hygiene projects around the world. We also are pioneering partners for Water Unite, and now, every bottle of water bought in a Co-op helps to support clean water projects and changes lives.</p>
+
+                                        <h2>How buying Co-op Water can help to change millions of lives</h2>
+                                        <p>By buying our water, you've helped The One Foundation to fund water, sanitation and hygiene programmes across the world.</p>
+                                        <ul>
+                                            <li>Raising over £10 milion to date for clean water projects</li>
+                                            <li>Supporting water, hygiene and sanitation programmes in our Fairtrade cocoa, sugar, tea and flower growing communities</li>
+                                            <li>Supporting water, hygiene and sanitation programmes in our Fairtrade cocoa, sugar, tea and flower growing communities</li> 
+                                            <li>Providing water access for 3 humanitarian crises in 2018 alone</li> 
+                                            <li>Building rainwater harvesting systems and safe toilets in schools for over 8,000 children</li> 
+                                        </ul>
+                                        <p class="coop-t-caption">An example that shows how the demi bold and regular font weights can be used to create hierachy.</p>
+                                    </div>
+                                </div>  
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
+                    {% include changelog.html %}
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>

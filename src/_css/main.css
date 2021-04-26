@@ -176,7 +176,23 @@ hr,
 
 .coop-t-caption {
   font-size: 16px;
+  font-style: italic;
   padding: var(--spacing-0) var(--spacing-16) var(--spacing-16) 0;
 
+}
+
+.font-example-regular{
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.font-example-medium{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.font-example-demi{
+  font-size: 2em;
+  font-weight: bold;
 }
 
