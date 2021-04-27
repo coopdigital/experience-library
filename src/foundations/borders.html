@@ -40,32 +40,41 @@ changelog:
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                    <h2>Guidelines</h2>
-                    <p>Borders should be between 1 and 4px wide.</p>
-                    <p>Use dark grey (#6E6E6E) if:</p>
-                    <ul>
-                        <li>the border is there to help a user find what they need</li>
-                        <li>the component it surrounds is clickable</li> 
-                    </ul>
-                    <p>Use medium grey (#C4C4C4) in all other cases.</p>
-                    <p>Use a solid line for borders as these are easy for people to scan along.</p>
-                    <p>The colour contrast of the dark grey passes the minimum requirements for graphical objects.</p>
-                    <p>Do not overuse borders. If you use lots of borders on a page, it can start to look crowded and may be harder for people to navigate.</p> 
-                    <p>Try using headings and spacing to break up pages instead.</p>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2>Guidelines</h2>
+                        <p>Borders should be between 1 and 4px wide.</p>
+                        <p>Use dark grey (#6E6E6E) if:</p>
+                        <ul>
+                            <li>the border is there to help a user find what they need</li>
+                            <li>the component it surrounds is clickable</li> 
+                        </ul>
+                        <p>Use medium grey (#C4C4C4) in all other cases.</p>
+                        <p>Use a solid line for borders as these are easy for people to scan along.</p>
+                        <p>The colour contrast of the dark grey passes the minimum requirements for graphical objects.</p>
+                        <p>Do not overuse borders. If you use lots of borders on a page, it can start to look crowded and may be harder for people to navigate.</p> 
+                        <p>Try using headings and spacing to break up pages instead.</p>
+                    </div>
                 </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="el-c-pullout">
-                        <h3>Example</h3>
-                        <div class="el-c-pullout__example">
-                            {% include example.html %}
+            </div>
+
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <h2>Example</h2>
+                            <img src=/images/decorative/border-example.jpg alt="" class="coop-u-margin-b-32">
+                            <p class="coop-t-caption">Example showing a change in border colour to convey information to users.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
                     {% include changelog.html %}
                 </div>
+            </div>
         </section>
     </main>
     {% include footer.html %}

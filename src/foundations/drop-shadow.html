@@ -34,6 +34,7 @@ changelog:
   - date: 14 April 2021
     notes: First version of page published
 ---
+
 <div class="coop-u-flex__main">
     <main id="main">
         <div class="coop-l-full">
@@ -41,64 +42,72 @@ changelog:
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                    <h2>Guidelines</h2>
-                    <p>Elements and components in the design system come with the correct drop shadow applied. </p>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="coop-table-wrapper">
-                        <table class="coop-table">
-                            <p>If you want to use drop shadow in a new component, use the values in this table:</p>
-                            <thead>
-                                <tr>  
-                                    <th scope="col">Shadow</th>
-                                    <th scope="col">Offset-x</th>
-                                    <th scope="col">Offset-y</th>
-                                    <th scope="col">Blur</th>
-                                    <th scope="col">Spread</th>
-                                    <th scope="col">Colour</th>
-                                    <th scope="col">Opacity</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row" role="rowheader">Default</th>
-                                    <td role="cell">0px</td>
-                                    <td role="cell">2px</td>
-                                    <td role="cell">10px</td>
-                                    <td role="cell">0px</td>
-                                    <td role="cell">#000000</td>
-                                    <td role="cell">0.15%</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" role="rowheader">Hover</th>
-                                    <td role="cell">0px</td>
-                                    <td role="cell">2px</td>
-                                    <td role="cell">10px</td>
-                                    <td role="cell">0px</td>
-                                    <td role="cell">#000000</td>
-                                    <td role="cell">0.25%</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2>Guidelines</h2>
+                        <p>Elements and components in the design system come with the correct drop shadow applied.</p>
                     </div>
-                </div>   
-                <div class="coop-l-grid__item coop-l-grid__item--large-8"> 
-                    <p>If an element or component with drop shadow applied links to somewhere else, use the hover values to emphasise that it is clickable. You should also apply other visual cues such as text underline on hover.</p>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="coop-table-wrapper">
+                            <table class="coop-table">
+                                <p>If you want to use drop shadow in a new component, use the values in this table:</p>
+                                <thead>
+                                    <tr>  
+                                        <th scope="col">Shadow</th>
+                                        <th scope="col">Offset-x</th>
+                                        <th scope="col">Offset-y</th>
+                                        <th scope="col">Blur</th>
+                                        <th scope="col">Spread</th>
+                                        <th scope="col">Colour</th>
+                                        <th scope="col">Opacity</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" role="rowheader">Default</th>
+                                        <td role="cell">0px</td>
+                                        <td role="cell">2px</td>
+                                        <td role="cell">10px</td>
+                                        <td role="cell">0px</td>
+                                        <td role="cell">#000000</td>
+                                        <td role="cell">0.15%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" role="rowheader">Hover</th>
+                                        <td role="cell">0px</td>
+                                        <td role="cell">2px</td>
+                                        <td role="cell">10px</td>
+                                        <td role="cell">0px</td>
+                                        <td role="cell">#000000</td>
+                                        <td role="cell">0.25%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8"> 
+                        <p>If an element or component with drop shadow applied links to somewhere else, use the hover values to emphasise that it is clickable. You should also apply other visual cues such as text underline on hover.</p>
+                    </div>
                 </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="el-c-pullout">
-                        <h3>Example</h3>
-                        <div class="">
+            </div>
+
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <h2>Example</h2>
                             {% include signpost.html %}
+                            <p class="coop-t-caption">A signpost with the default drop shadow applied.</p>
                         </div>
                     </div>
                 </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
-        </section>
-    </main>
-    {% include footer.html %}
+            </div>
+            
+            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                {% include changelog.html %}
+            </div>
+    </section>
+</main>
+{% include footer.html %}
 </div>

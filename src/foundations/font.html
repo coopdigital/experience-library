@@ -40,6 +40,7 @@ changelog:
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
+            <div class="el-c-primary-section">
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-8">                
                     <h2>Guidelines</h2>
@@ -57,9 +58,14 @@ changelog:
                     <p class='font-example-medium'>Avenir Next Medium</p>
                     <p class='font-example-demi'>Avenir Next Demi-bold</p>
                 </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="el-c-pullout">
-                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                </div>
+            </div>
+
+
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
                             <h2>Example</h2>
                                 <div class="coop-l-grid">
                                     <div class="coop-l-grid__item coop-l-grid__item--large-9">
@@ -81,11 +87,12 @@ changelog:
                                 </div>  
                         </div>
                     </div>
-                </div>   
+                </div>  
+            </div> 
                 
-                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
-                    {% include changelog.html %}
-                </div>
+            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                {% include changelog.html %}
+            </div>
         </section>
     </main>
     {% include footer.html %}
