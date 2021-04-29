@@ -27,8 +27,8 @@
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/notification.pcss';
-
-
+  
+         
 .external-link-container {
   background-color: var(--color-white);
   margin-bottom: var(--spacing-4);
@@ -178,7 +178,7 @@ hr,
   font-size: 2em;
   font-weight: normal;
 }
-
+ 
 .font-example-medium{
   font-size: 2em;
   font-weight: 500;
