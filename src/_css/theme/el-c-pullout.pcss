@@ -8,11 +8,25 @@
 
 @media (--mq-medium) {
     .el-c-pullout  {
-       padding: var(--spacing-32) var(--spacing-32) var(--spacing-16) var(--spacing-32);
+       padding: var(--spacing-16) var(--spacing-32) var(--spacing-16) var(--spacing-32);
     }
 } 
 
 .el-c-pullout__example {
     padding: var(--spacing-16) var(--spacing-16) var(--spacing-16) 0;
-    
+}
+
+.el-c-pullout--nested {
+    margin-bottom: var(--spacing-32);
+}
+
+@media (--mq-medium) {
+    .el-c-pullout--nested {
+        margin-bottom: var(--spacing-64);
+    }
+} 
+
+.coop-t-caption {
+padding-top: var(--spacing-16);
+  font-size: 1rem;
 }
