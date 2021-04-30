@@ -3,7 +3,16 @@
 .el-c-hero__home-montage {
     position: relative;
     background: var(--color-grey-neutral-warm);
-    
+} 
+
+.el-c-hero__home-montage:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 20%;
+    width: 100%;
+    background: var(--color-white);
 } 
 
 .el-c-hero__montage-image {
@@ -24,27 +33,29 @@
     top: 0;
     right: 25%;
     z-index: 0;
+    width: 50%;
 }
 
 .el-c-hero__montage-image-star-2 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 0;
     z-index: 0;
+    width: 10%;
 }
 
 .el-c-hero__montage-image-star-image {
     position: absolute;
-    top: 40%;
-    right: 0;
+    top: 35%;
+    right: 0; 
     z-index: 0;
-    width: 20%;
+    width: 25%;
 }
 
 .el-c-hero__montage-image-stack {
     position: absolute;
-    top: 75%;
-    right: 20%;
+    top: 68%;
+    right: 22%;
     z-index: 3;
     width: 18%;
 }
