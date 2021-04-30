@@ -1,29 +1,29 @@
 @import '@coopdigital/css-foundations/dist/foundations.css';
 
-/* Components */ 
+/* Components */    
 @import '@coopdigital/component-skipnav';
 @import '@coopdigital/component-card--product';
 @import '@coopdigital/component-notification';
 @import '@coopdigital/component-notification--alert';
-@import '@coopdigital/component-search';
+@import '@coopdigital/component-search';   
 @import '@coopdigital/component-squircles';
 @import '@coopdigital/component-tags';
 @import '@coopdigital/shared-component--signpost';
-@import '@coopdigital/shared-component--editorialcard';
-@import '@coopdigital/shared-component--featurecard';
+@import '@coopdigital/shared-component--editorialcard'; 
+@import '@coopdigital/shared-component--featurecard'; 
 @import '@coopdigital/shared-component--hero';
 @import '@coopdigital/shared-component--linklist';
-      
-/* Experience Library theme */
-@import 'theme/global.pcss';
-@import 'theme/layout.pcss'; 
+                               
+/* Experience Library theme */ 
+@import 'theme/global.pcss'; 
+@import 'theme/layout.pcss';  
 @import 'theme/side-bar.pcss'; 
 @import 'theme/search.pcss';
 @import 'theme/signpost.pcss';
 @import 'theme/el-c-hero.pcss';
-@import 'theme/el-c-hero-home.pcss';
+@import 'theme/el-c-hero-home.pcss'; 
 @import 'theme/el-c-info-card.pcss'; 
-@import 'theme/el-c-pullout.pcss';
+@import 'theme/el-c-pullout.pcss'; 
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/notification.pcss';

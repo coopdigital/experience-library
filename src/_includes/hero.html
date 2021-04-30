@@ -1,15 +1,16 @@
 {% if page.decorative-image-home %}
     <div class="el-c-hero__home-montage"> 
-        <img src="/images/decorative/hero/warehouse-touchscreen.jpg" alt="" class="el-c-hero__montage-image" />
-        <img src="/images/decorative/hero/image-surround.svg" alt="" class="el-c-hero__montage-image-surround" />
-        <img src="/images/decorative/hero/star-1.svg" alt="" class="el-c-hero__montage-image-star-1" />
-        <img src="/images/decorative/hero/star-2.svg" alt="" class="el-c-hero__montage-image-star-2" />
-        <img src="/images/decorative/hero/star-image.png" alt="" class="el-c-hero__montage-image-star-image" />
-        <img src="/images/decorative/hero/stack.svg" alt="" class="el-c-hero__montage-image-stack" />
+        <div class="el-c-hero__home-montage-inner"> 
+            <img src="/images/decorative/hero/warehouse-touchscreen.jpg" alt="" class="el-c-hero__montage-image" />
+            <img src="/images/decorative/hero/image-surround.svg" alt="" class="el-c-hero__montage-image-surround" />
+            <img src="/images/decorative/hero/star-1.svg" alt="" class="el-c-hero__montage-image-star-1" />
+            <img src="/images/decorative/hero/star-2.svg" alt="" class="el-c-hero__montage-image-star-2" />
+            <img src="/images/decorative/hero/star-image.png" alt="" class="el-c-hero__montage-image-star-image" />
+            <img src="/images/decorative/hero/stack.svg" alt="" class="el-c-hero__montage-image-stack" />
+        </div>
     </div>
-    {% endif %}
-<section class="el-c-hero">
-    
+{% endif %}
+<section class="el-c-hero">  
     {% if page.decorative-image-url %}
     <div class="el-c-hero__image">
         <img src="{{ page.decorative-image-url }}" alt="" />
