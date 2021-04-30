@@ -26,6 +26,7 @@
 @import 'theme/el-c-pullout.pcss'; 
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
+@import 'theme/el-c-colour-swatch.pcss';
 @import 'theme/notification.pcss';
   
              
@@ -159,7 +160,7 @@ li a.inline-nav:hover {
 
 hr,
 .coop-t-hr-el {
-  display: block;
+  display: block; 
   border-style: solid;
   border-color: var(--color-grey-mid);
   border-width: 0 0 1px;
@@ -169,9 +170,9 @@ hr,
   margin-bottom: var(--spacing-8);
 
   @media (--mq-medium) {
-    margin-top: var(--spacing-64);
+    margin-top: var(--spacing-64); 
     margin-bottom: var(--spacing-8);
-  }
+  } 
 }
 
 .font-example-regular{
@@ -187,34 +188,4 @@ hr,
 .font-example-demi{
   font-size: 2em;
   font-weight: bold;
-}
-
-table,
-.coop-table {
-  width: 100%;
-  table-layout: fixed;
-  font-size: 16px;
-  margin-bottom: var(--spacing-base--1-2);
-
-  @media (--mq-medium) {
-    font-size: 18px;
-    margin-bottom: var(--spacing-medium--1-2);
-  }
-}
-
-table tbody td,
-.coop-table thead td,
-table tbody th,
-.coop-table thead th {
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 1px;
-    width: 95%;
-    border-bottom: 1px solid var(--color-grey-neutral-light);
-  }
 }
