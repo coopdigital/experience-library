@@ -1,5 +1,72 @@
 
-.el-c-hero-home {
+
+.el-c-hero__home-montage {
+    position: relative;
+    background: var(--color-grey-neutral-warm);
+} 
+
+.el-c-hero__home-montage:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 20%;
+    width: 100%;
+    background: var(--color-white);
+} 
+
+.el-c-hero__montage-image {
+    position: relative;
+    z-index: 1;
+    width: 45%;
+}
+
+.el-c-hero__montage-image-surround {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 45%;
+}
+
+.el-c-hero__montage-image-star-1 {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    z-index: 0;
+    width: 50%;
+}
+
+.el-c-hero__montage-image-star-2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 0;
+    width: 10%;
+}
+
+.el-c-hero__montage-image-star-image {
+    position: absolute;
+    top: 35%;
+    right: 0; 
+    z-index: 0;
+    width: 25%;
+}
+
+.el-c-hero__montage-image-stack {
+    position: absolute;
+    top: 68%;
+    right: 22%;
+    z-index: 3;
+    width: 18%;
+}
+
+
+
+
+
+
+
+.el-c-hero--home {
     padding: 0 0 var(--spacing-32) var(--spacing-32);
     background: var(--color-grey-neutral-warm);
 } 

@@ -1,6 +1,6 @@
 @import '@coopdigital/css-foundations/dist/foundations.css';
 
-/* Components */
+/* Components */ 
 @import '@coopdigital/component-skipnav';
 @import '@coopdigital/component-card--product';
 @import '@coopdigital/component-notification';
@@ -13,27 +13,27 @@
 @import '@coopdigital/shared-component--featurecard';
 @import '@coopdigital/shared-component--hero';
 @import '@coopdigital/shared-component--linklist';
-
+      
 /* Experience Library theme */
 @import 'theme/global.pcss';
-@import 'theme/layout.pcss';
-@import 'theme/side-bar.pcss';
+@import 'theme/layout.pcss'; 
+@import 'theme/side-bar.pcss'; 
 @import 'theme/search.pcss';
 @import 'theme/signpost.pcss';
 @import 'theme/el-c-hero.pcss';
 @import 'theme/el-c-hero-home.pcss';
-@import 'theme/el-c-info-card.pcss';
+@import 'theme/el-c-info-card.pcss'; 
 @import 'theme/el-c-pullout.pcss';
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/notification.pcss';
-
-
-.external-link-container {
-  background-color: var(--color-white);
+  
+             
+.external-link-container { 
+  background-color: var(--color-white); 
   margin-bottom: var(--spacing-4);
   border-radius: var(--ui-border-radius);
-  box-shadow: var(--ui-shadow);
+  box-shadow: var(--ui-shadow); 
   transition: box-shadow 0.2s ease-in;
   color: var(--color-text);
   text-decoration: none;
@@ -82,7 +82,7 @@ li a.inline-nav {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-}
+} 
 
 li a.inline-nav:hover {
   color: var(--color-text);
@@ -178,7 +178,7 @@ hr,
   font-size: 2em;
   font-weight: normal;
 }
-
+ 
 .font-example-medium{
   font-size: 2em;
   font-weight: 500;
