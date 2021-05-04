@@ -63,12 +63,25 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-12">
                         <div class="el-c-pullout">
                             <div class="el-c-pullout-header">
-                                <h2>Example</h2>
+                                <h2>Examples</h2>
                             </div>
                             <div class="el-c-pullout-content">
-                                {% include notification--alert.html %}
-                                <img src=/images/decorative/border-example.jpg alt="" class="coop-u-margin-b-32">
-                                <p class="coop-t-caption">Example showing a change in border colour to convey information to users.</p>
+                                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                    <div class="coop-form__row">
+                                        <p id="full-name-1-error" class="coop-form__error" hidden></p>
+                                        <input id="full-name-1" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="full-name-1">
+                                    </div>
+                                    <div class="coop-form__row">
+                                        <input id="full-name-3" class="coop-form__field coop-form__input coop-form__invalid" type="text" autocomplete="name" name="full-name-3" aria-describedby="full-name-3-error">
+                                    </div>
+                                    <div class="coop-c-notification coop-c-notification--alert " role="alert">
+                                        <p class="coop-c-notification__p"></p>
+                                    </div>
+                                    <div class="coop-c-notification coop-c-notification--success" role="status">
+                                        <p class="coop-c-notification__p"></p>
+                                    </div>         
+                                    <p class="coop-t-caption coop-u-margin-t-32">Examples of some of our borders in use.</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
