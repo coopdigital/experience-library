@@ -1,5 +1,15 @@
-@import '@coopdigital/css-foundations/dist/foundations.css';
 
+/* Foundations */
+@import "normalize.css";
+@import "@coopdigital/foundations-vars";
+@import "@coopdigital/foundations-global";
+@import "@coopdigital/foundations-typography";
+@import "@coopdigital/foundations-grid";
+@import "@coopdigital/foundations-colors";
+@import "@coopdigital/foundations-buttons";
+@import "@coopdigital/foundations-forms";
+@import "@coopdigital/foundations-tables";
+ 
 /* Components */    
 @import '@coopdigital/component-skipnav';
 @import '@coopdigital/component-card--product';
@@ -29,6 +39,9 @@
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/el-c-colour-swatch.pcss';
 @import 'theme/notification.pcss';
+
+/* Utility overrides */
+@import "@coopdigital/foundations-layout";
   
              
 .external-link-container { 
