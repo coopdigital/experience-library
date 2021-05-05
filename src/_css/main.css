@@ -190,3 +190,8 @@ hr,
   font-size: 2em;
   font-weight: bold;
 }
+
+.coop-t-caption-multiple {
+  padding: 0 var(--spacing-16) var(--spacing-32) 0;
+  font-size: 1rem;
+}
