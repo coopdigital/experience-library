@@ -58,8 +58,10 @@ changelog:
                 </div>
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
                     <div class="el-c-pullout">
-                        <h3>Example</h3>
-                        <div class="el-c-pullout__example">
+                        <div class="el-c-pullout-header">
+                            <h3>Examples</h3> 
+                        </div>
+                        <div class="el-c-pullout-content">
                             <div class="coop-l-grid">
                                 <div class="coop-l-grid__item coop-l-grid__item--large-4">
                                     <div class="coop-c-signpost">
@@ -121,9 +123,7 @@ changelog:
                         </div>
                     </div>
                 </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
+                {% include changelog.html %}           
         </section>
     </main>
     {% include footer.html %}
