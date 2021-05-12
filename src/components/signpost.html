@@ -1,7 +1,7 @@
 ---
 layout: coop-experience
 id: index
-description: A link card that can be displayed with or without an image. Signpost navigation is used in pages to link to permanent content.
+description: Signpost links allow you to create links to content you know people are looking for. Get more information on signpost navigation.
 section: Components
 item-url: /components/signpost.html
 
@@ -9,15 +9,17 @@ item-url: /components/signpost.html
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
 section-title: Components
-title: Signpost
+title: Signpost navigation
 last-reviewed: Last reviewed 14 April 2021
 intro-text-lead: 
-  - A link card that can be displayed with or without an image.
+  - Use signpost navigation to link to permanent content. 
+  - Signpost links allow you to create links to content you know people are looking for.
+
 # Image at the top of the hero
-decorative-image-url: /images/decorative/borders-hero.svg
+decorative-image-url: /images/decorative/components.svg
 
 # Hero link box - set to false or remove the code below to remove
-link-box: true
+link-box: false
 link-box-text-design: View signposts in Figma
 link-box-link-design: #
 link-box-text-dev: Go to Storybook to learn more about and install signposts
@@ -40,91 +42,104 @@ changelog:
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                    <h2>Guidance</h2>
-                    <p>Signpost links allow you to create direct links to content you know people are looking for.</p>
-                    <p>They can be used with or without an image.</p>
-                    <p>Grouped together they can be used to build a simple list of links or sub navigation. This may be useful if you have several links around a particular area or theme.</p>
-                    <h3>Accessibility</h3>
-                    <p>This component passes the [Co-op accessibility framework].</p>
-                    <p>[Co-op accessibility standards] </p>
-                    <h3>Content design</h3>
-                    <p>The link text should be concise and actionable. Tell the user where the link is taking them.</p>
-                    <p>[Co-op accessibility standards]</p>
-                    <p>Line length should be kept short. This means people can find what they want quickly and the size of the card/button does not become excessive.</p>
-                    <p>[Links page in the content design guidelines]</p>
-                    <p>[Buttons page in the content design guidelines] </p>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    <div class="el-c-pullout">
-                        <div class="el-c-pullout-header">
-                            <h3>Examples</h3> 
-                        </div>
-                        <div class="el-c-pullout-content">
-                            <div class="coop-l-grid">
-                                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                                    <div class="coop-c-signpost">
-                                        <a href="#" class="coop-c-signpost__link" data-contenttype="" data-contentparent="" data-linktext="">
-                                            <div class="coop-c-signpost__content">
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-4">
+                                        <div class="coop-c-signpost">
+                                            <a
+                                            href="#"
+                                            class="coop-c-signpost__link"
+                                            data-contenttype=""
+                                            data-contentparent=""
+                                            data-linktext=""
+                                            >
+                                                <div class="coop-c-signpost__content">
                                                 <h3 class="coop-c-signpost__title">
                                                     See all recipes
                                                 </h3>
                                                 <span class="coop-c-signpost__icon" aria-hidden="true">
                                                     <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                                        <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
+                                                        <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
                                                     </svg>
                                                 </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                                    <div class="coop-c-signpost">
-                                        <a href="#" class="coop-c-signpost__link" data-contenttype="Signpost" data-contentparent="Signposts" data-linktext="Sign in to Membership">
-                                        <figure class="coop-c-signpost__media">
-                                            <picture class="coop-c-signpost__image">
-                                                <!-- max image size 360w 203h -->
-                                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
-                                                <!-- max image size 751w 423h -->
-                                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
-                                                <!-- 25.9375em / max image size 583w 329h -->
-                                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
-                                                <!-- if no webp supported then default to serve progressive jpeg -->
-                                                <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
-                                                <!-- max image size 751w 423h -->
-                                                <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
-                                                <!-- 25.9375em / max image size 583w 329h -->
-                                                <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
-                                                //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
-                                                <!-- fallback -->
-                                                <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
-                                            </picture>
-                                        </figure>
-                                        <div class="coop-c-signpost__content">
-                                            <h3 class="coop-c-signpost__title">
-                                                Sign in to Membership
-                                            </h3>
-                                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"></path>
-                                                </svg>
-                                            </span>
+                                                </div>
+                                            </a>
                                         </div>
-                                        </a>
                                     </div>
                                 </div>
+                                <p class="coop-t-caption">A basic signpost.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                {% include changelog.html %}           
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Required elements</h2>
+                        <h3>Link</h3>
+                        <p>Link text should:</p>
+                        <ul>
+                            <li>be between one and 4 words in length</li>
+                            <li>be actionable</li>
+                            <li>make it clear where the link will take the user</li>
+                        </ul>
+                        <p>Keeping the line length short helps people to find what they want and stops the size of the card/button becoming too big.</p>
+                        <h3>Text</h3>
+                        <p>Use a brief line of text, preferably a single sentence, to provide more information.</p>
+                        <p>This could be the length of time the service will be affected or a link.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Optional elements</h2>
+                        <h3>Image</h3>
+                        <p>The image must relate to the content.</p>
+                        <p>It must have an alt tag that describes the image content. For more information, <a href="https://www.coop.co.uk/accessibility/standards#text-alternatives">go to the accessibility standard for alternative text.</p></a>
+                        <p>If you are creating a signpost in our content management system Contentful, you should upload a 780px (width) × 438 (height) image. Contentful will then generate and add the required image sizes.</p>
+                        <p>If you are creating a signpost using the code rather than in the CMS, you should supply 2 image sizes:</p>
+                        <ul>
+                            <li>780px (width) × 438px (height)</li>
+                            <li>400px (width) × 225px (height)</li> 
+                        </ul> 
+                        <p>The component contains code that will serve the correct image size depending on the capability of the browser and size of the device.</p>                   
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Using signpost navigation on a page</h2>
+                        <p>You can build a simple list of links or sub navigation by grouping signposts together. This can be useful if you need to provide several links on a particular theme.</p>
+                        <p>Group signposts in horizontal columns of 2 to 4 using the grid. The grid helps to adapt the number of columns displayed over different screen sizes.</p>
+                        <p>Do not use more than 2 rows of signposts in a group.</p>
+                    </div>
+                </div>
+                <div class="el-c-pullout">
+                    <div class="el-c-pullout-header">
+                        <h4>Example</h4>
+                    </div>
+                    <div class="el-c-pullout-content">
+                        <img src=/images/decorative/signpost-example.png alt="Editorial cards used in a row of 3" class="coop-u-margin-b-32">
+                        <p class="coop-t-caption">6 signposts displayed over 3 columns and 2 rows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
         </section>
     </main>
-    {% include footer.html %}
+{% include footer.html %}
 </div>
