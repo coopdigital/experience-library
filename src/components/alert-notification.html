@@ -1,23 +1,23 @@
 ---
 layout: coop-experience
 id: index
-description: An editorial card lets you highlight and link to editorial content on another page. Get more information on how to use editorial cards.
+description: Use the alert notification to tell people about something that might affect the service they receive. Get more information about the alert notification.
 section: Components
-item-url: /components/card-editorial.html
+item-url: /components/alert-notification.html
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
 section-title: Components
-title: Editorial card
+title: Alert notification
 last-reviewed: Last reviewed 14 April 2021
 intro-text-lead: 
-  - An editorial card lets you highlight and link to editorial content on another page. Users can go to the editorial page by tapping or clicking on the card.
+  - Use the alert notification to tell people about something that might affect the service they receive.
 # Image at the top of the hero
-decorative-image-url: /images/decorative/card-editorial-hero.svg
+decorative-image-url: /images/decorative/components.svg
 
 # Hero link box - set to false or remove the code below to remove
-link-box: true
+link-box: false
 link-box-text-design: View editorial cards in Figma
 link-box-link-design: #
 link-box-text-dev: Go to Storybook to learn more about and install editorial cards
@@ -46,44 +46,30 @@ changelog:
                 </div>
                 <div class="el-c-pullout-content">
                     <div class="coop-l-grid">
-                        <div class="coop-l-grid__item coop-l-grid__item--large-4">
-                            <article class="coop-c-editorialcard">
-                                <a href="#" class="coop-c-editorialcard__link">
-                                    <div class="coop-c-editorialcard__inner">
-                                        <figure class="coop-c-editorialcard__media">
-                                            <picture class="coop-c-editorialcard__image"> 
-                                                <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
-                                            </picture>
-                                        </figure>
-                                        <div class="coop-c-editorialcard__content">
-                                            <header class="coop-c-editorialcard__header">
-                                                <h3 class="coop-c-editorialcard__title">
-                                                    <span>
-                                                        Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade
-                                                    </span>
-                                                </h3>
-                                            </header>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
+                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                            <div class="coop-c-notification coop-c-notification--alert" role="alert"> 
+                                <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+                                <p class="coop-c-notification__p">
+                                    <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
+                                </p> 
+                            </div>
                         </div>
                     </div>
-                    <p class="coop-t-caption">An editorial card with all the required elements.</p>
+                    <p class="coop-t-caption">Alert notification used during the coronavirus pandemic to tell people about changing service updates.</p>
                 </div>
             </div>
             <div class="el-c-primary-section"> 
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-7">
                         <h2>Guidelines</h2>
-                        <p>You can use editorial cards to present links to content about different subjects in a consistent way.</p>
-                        <p>An editorial card should give people enough information to make an informed decision about whether to click or tap on the card.</p>
-                        <p>You should make the whole card active to create a large clickable area.</p>
-                        <p>An editorial card should only link to one other destination. Do not use buttons or links to any other destinations within an editorial card.</p>
+                        <p>Use alert notifications to highlight events that might limit availability of a service we provide. For example if:</p>
+                        <ul>
+                            <li>the service the user is trying to access is experiencing problems</li>
+                            <li>planned system maintenance is coming soon</li>
+                            <li>the user’s login session is about to expire</li>
+                        </ul>
+                        <p>Only use alert notifications when absolutely necessary. Using them too often could make the problem worse. </p>
+                        <p>We know that people often miss or ignore banners. <a href="https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/"></a>Go to Nielsen Norman Group research on banners.</a></p>
                     </div>
                 </div>
             </div>
