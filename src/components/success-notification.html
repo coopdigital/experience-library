@@ -1,26 +1,26 @@
 ---
 layout: coop-experience
 id: index
-description: Use the alert notification to tell people about something that might affect the service they receive. Get more information about the alert notification.
+description: Use the success notification to inform the user that an action they have taken within a service is complete. Get more information on the success notification.
 section: Components
-item-url: /components/alert-notification.html
+item-url: /components/success-notification.html
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
 section-title: Components
-title: Alert notification
+title: Success notification
 last-reviewed: Last reviewed 14 April 2021
 intro-text-lead: 
-  - Use the alert notification to tell people about something that might affect the service they receive.
+  - Use the success notification to inform the user that an action they have taken within a service is complete.
 # Image at the top of the hero
 decorative-image-url: /images/decorative/components.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: false
-link-box-text-design: View the alert notification in Figma
+link-box-text-design: View the success notification in Figma
 link-box-link-design: #
-link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-text-dev: Go to Storybook to learn more about and install the success notification
 link-box-link-dev: #
 
 # Example (add path to html include or path to image)
@@ -47,29 +47,21 @@ changelog:
                 <div class="el-c-pullout-content">
                     <div class="coop-l-grid">
                         <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                            <div class="coop-c-notification coop-c-notification--alert" role="alert"> 
-                                <h3 class="coop-c-notification__heading">Coronavirus</h3> 
-                                <p class="coop-c-notification__p">
-                                    <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
-                                </p> 
+                            <div class="coop-c-notification coop-c-notification--success" role="success"> 
+                                <h3 class="coop-c-notification__heading">You are signed up. Now confirm your email address</h3> 
+                                <p class="coop-c-notification__p">To complete the subscription we need to know you are the owner of the email address. Click the link in the email we just sent you.</p> 
                             </div>
                         </div>
                     </div>
-                    <p class="coop-t-caption">Alert notification used during the coronavirus pandemic to tell people about changing service updates.</p>
+                    <p class="coop-t-caption">Success notification used to inform a user that they have signed up and that a second step is required to confirm their subscription.</p>
                 </div>
             </div>
             <div class="el-c-primary-section"> 
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-7">
                         <h2>Guidelines</h2>
-                        <p>Use alert notifications to highlight events that might limit availability of a service we provide. For example if:</p>
-                        <ul>
-                            <li>the service the user is trying to access is experiencing problems</li>
-                            <li>planned system maintenance is coming soon</li>
-                            <li>the user’s login session is about to expire</li>
-                        </ul>
-                        <p>Only use alert notifications when absolutely necessary. Using them too often could make the problem worse. </p>
-                        <p>We know that people often miss or ignore banners. <a href="https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/">Go to Nielsen Norman Group research on banners.</p></a>
+                        <p>Success notifications tell a user that they have completed a step in a process but that there is something else they need to do.</p>
+                        <p>If the user has reached the end of a process you should provide a success page.</p></a>
                     </div>
                 </div>
             </div>
@@ -78,10 +70,10 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Required elements</h2>
                         <h3>Title</h3>
-                        <p>The alert title should clearly state the problem or potential problem.</p>
+                        <p>The title should clearly state that the action was successful and what the next step is.</p>
                         <h3>Text</h3>
                         <p>Use a brief line of text, preferably a single sentence, to provide more information.</p>
-                        <p>This could be the length of time the service will be affected or a link.</p>
+                        <p>This could be asking them to check their emails for a confirmation link.</p>
                     </div>
                 </div>
             </div>
@@ -90,9 +82,8 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Optional elements</h2>
                         <h3>Link</h3>
-                        <p>If a link is used it should direct the user to more information or an action they can take to solve the problem.</p>
-                        <p>You can also make the whole notification into a clickable link.</p>
-                        <p>Make sure that any text link you include and this link go to the same place.</p>        
+                        <p>If you use a link it should direct the user to an action they need to take to complete the process.</p>
+                        <p>If you are using a link you can also make the whole notification into a clickable link. Make sure that any text link you include and this link go to the same place.</p>
                     </div>
                 </div>
             </div>
