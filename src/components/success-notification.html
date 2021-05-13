@@ -1,0 +1,104 @@
+---
+layout: coop-experience
+id: index
+description: Use the success notification to inform the user that an action they have taken within a service is complete. Get more information on the success notification.
+section: Components
+item-url: /components/success-notification.html
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Components
+title: Success notification
+last-reviewed: Last reviewed 14 April 2021
+intro-text-lead: 
+  - Use the success notification to inform the user that an action they have taken within a service is complete.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the success notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the success notification
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                        <div class="coop-c-notification coop-c-notification--success" role="success"> 
+                                            <h3 class="coop-c-notification__heading">You are signed up. Now confirm your email address</h3> 
+                                            <p class="coop-c-notification__p">To complete the subscription we need to know you are the owner of the email address. Click the link in the email we just sent you.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="coop-t-caption">Success notification used to inform a user that they have signed up and that a second step is required to confirm their subscription.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h2>Guidelines</h2>
+                        <p>Success notifications tell a user that they have completed a step in a process but that there is something else they need to do.</p>
+                        <p>If the user has reached the end of a process you should provide a success page.</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Required elements</h2>
+                        <h3>Title</h3>
+                        <p>The title should clearly state that the action was successful and what the next step is.</p>
+                        <h3>Text</h3>
+                        <p>Use a brief line of text, preferably a single sentence, to provide more information.</p>
+                        <p>This could be asking them to check their emails for a confirmation link.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Optional elements</h2>
+                        <h3>Link</h3>
+                        <p>If you use a link it should direct the user to an action they need to take to complete the process.</p>
+                        <p>If you are using a link you can also make the whole notification into a clickable link. Make sure that any text link you include and this link go to the same place.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% include footer.html %}
+</div>

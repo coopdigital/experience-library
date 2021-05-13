@@ -1,0 +1,113 @@
+---
+layout: coop-experience
+id: index
+description: Use the alert notification to tell people about something that might affect the service they receive. Get more information about the alert notification.
+section: Components
+item-url: /components/alert-notification.html
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Components
+title: Alert notification
+last-reviewed: Last reviewed 14 April 2021
+intro-text-lead: 
+  - Use the alert notification to tell people about something that might affect the service they receive.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the alert notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                        <div class="coop-c-notification coop-c-notification--alert" role="alert"> 
+                                            <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+                                            <p class="coop-c-notification__p">
+                                                <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
+                                            </p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="coop-t-caption">Alert notification used during the coronavirus pandemic to tell people about changing service updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h2>Guidelines</h2>
+                        <p>Use alert notifications to highlight events that might limit availability of a service we provide. For example if:</p>
+                        <ul>
+                            <li>the service the user is trying to access is experiencing problems</li>
+                            <li>planned system maintenance is coming soon</li>
+                            <li>the user’s login session is about to expire</li>
+                        </ul>
+                        <p>Only use alert notifications when absolutely necessary. Using them too often could make the problem worse. </p>
+                        <p>We know that people often miss or ignore banners. <a href="https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/">Go to Nielsen Norman Group research on banners.</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Required elements</h2>
+                        <h3>Title</h3>
+                        <p>The alert title should clearly state the problem or potential problem.</p>
+                        <h3>Text</h3>
+                        <p>Use a brief line of text, preferably a single sentence, to provide more information.</p>
+                        <p>This could be the length of time the service will be affected or a link.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Optional elements</h2>
+                        <h3>Link</h3>
+                        <p>If a link is used it should direct the user to more information or an action they can take to solve the problem.</p>
+                        <p>You can also make the whole notification into a clickable link.</p>
+                        <p>Make sure that any text link you include and this link go to the same place.</p>        
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% include footer.html %}
+</div>

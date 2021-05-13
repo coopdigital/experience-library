@@ -1,0 +1,95 @@
+---
+layout: coop-experience
+id: index
+description: Skip navigation allows screen reader and keyboard users to go directly to the main content. Get more information on skip navigation.
+section: Components
+item-url: /components/skip-navigation.html
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Components
+title: Skip navigation
+last-reviewed: Last reviewed 14 April 2021
+intro-text-lead: 
+  - Skip navigation allows screen reader and keyboard users to go directly to the main content.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View skip navigation in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install skip navigation
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                        <img src=/images/decorative/skip-navigation-example.png alt="Skip navigation in use on a Co-op website" class="coop-u-margin-b-32">
+                                    </div>
+                                </div>
+                                <p class="coop-t-caption">Skip to content link focused after the tab key has been pressed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Required elements</h2>
+                        <h3>Links</h3>
+                        <p>Links within the skip navigation component should take the user directly to the main areas of the page. These are usually the:</p>
+                        <ul>
+                            <li>navigation</li>
+                            <li>main content</li>
+                            <li>footer</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Using skip navigation on a page</h2>
+                        <p>The skip navigation function should be the first thing that appears on a page when it has loaded and a user presses the tab key.</p>
+                        <p>Pressing the tab key again should then cycle through ‘skip to content’, ‘skip to navigation’ and ‘skip to footer’ links.</p>
+                        <p>Pressing enter will take the user to the correct part of the page and apply the focus ring to the first interactive element in that section.</p>
+                        <p>If the user tabs through the skip navigation without selecting an option the Co-op logo should be the next element that has the focus ring applied.</p>       
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% include footer.html %}
+</div>
