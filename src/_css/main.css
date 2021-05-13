@@ -5,7 +5,7 @@
 @import "@coopdigital/foundations-global";
 @import "@coopdigital/foundations-typography";
 @import "@coopdigital/foundations-grid";
-@import "@coopdigital/foundations-colors";
+@import "@coopdigital/foundations-colors"; 
 @import "@coopdigital/foundations-buttons";
 @import "@coopdigital/foundations-forms";
 @import "@coopdigital/foundations-tables";
@@ -24,7 +24,7 @@
 @import '@coopdigital/shared-component--hero';
 @import '@coopdigital/shared-component--linklist';
 @import '@coopdigital/foundations-vars';
-                                
+                                 
 /* Experience Library theme */ 
 @import 'theme/global.pcss'; 
 @import 'theme/layout.pcss';  
@@ -39,7 +39,7 @@
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/el-c-colour-swatch.pcss';
 @import 'theme/notification.pcss';
-
+ 
 /* Utility overrides */
 @import "@coopdigital/foundations-layout";
           
