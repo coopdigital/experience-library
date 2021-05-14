@@ -35,12 +35,14 @@
 .el-c-hero__title {
     font-size: 3.5rem;
     line-height: 1.1;
+    margin-left: -2px;
 }
 
 @media (--mq-medium) {
     .el-c-hero__title {
         font-size: 5rem;
         line-height: 1.1;
+        margin-left: -4px;
     }
 }
 
@@ -50,8 +52,16 @@
 }
 
 .el-c-hero__meta {
-    margin-top: -8px; 
+    display: inline-block;
+    margin-top: 0px; 
     margin-bottom: var(--spacing-32); 
+    font-size: 1rem;
+}
+
+@media (--mq-medium) {
+    .el-c-hero__meta {
+        margin-top: 0px; 
+    }
 }
 
 .el-c-hero__centered {

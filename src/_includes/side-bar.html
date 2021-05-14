@@ -1,5 +1,5 @@
-<header class="coop-u-flex__sidebar" id="header">
-    <div class="coop-header"> 
+<div class="coop-u-flex__sidebar" id="header">
+    <header class="coop-header"> 
         <a class="coop-nav__logo coop-logo" aria-label="Go to the design system homepage" href="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="40" viewBox="-269.1 242.6 72 76.3" aria-labelledby="logotitle">
                 <title id="logotitle">The Co-op logo</title>
@@ -7,300 +7,292 @@
             </svg>
             <p class="coop-title">Experience Library</p>
         </a>
-        <form class="el-c-search" autocomplete="off">
-            <div class="coop-form__wrapper">
-                <label for="search-small-input" class="coop-u-visuallyhidden">Search the Experience Library</label>
-                <input type="search" name="search" id="search-small-input" placeholder="Search"
-                        class="coop-form__input el-c-search__input coop-c-search__input--small" />
-            </div>  
-        </form>
-        <ul id="results-container" class="coop-u-list-bare coop-search-results"></ul>
-        <div class="el-c-search__results-bg"></div>
-    </div> 
-<div class="coop-nav-scroll">
-    <nav class="coop-side-nav-wrapper" id="navigation">
-        {% if page.id == 'get-started' %}
-        <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li><a href="/get-started/"> Get started</a></li>
-        </ul>
-        {% endif %}
-        {% if page.id == 'design' %}
-        <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li><a href="/design-guidelines/"> Design guidelines</a></li>
-        </ul>
-        {% endif %}
-        {% if page.id == 'content' %}
-            <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/content-guidelines/"> Content guidelines</a></li>
-            </ul>
-        {% endif %}
-        {% if page.id == 'accessibility' %}
-            <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li> Accessibility guidelines</li>
-            </ul>
-        {% endif %}
-    
-        <ul class="coop-side-nav coop-u-list-bare">
-        {% if page.id == 'index' %}
-        <li class="side-nav__link"><a href="/about-this-prototype/" class="{% if page.item-url == '/about-this-prototype/' %}is-active{% endif %}">About this prototype</a></li>
-            <!--<li class="side-nav__link"><a href="/get-started/">Get started</a></li>
-            <li class="side-nav__link"><a href="/design-guidelines/">Design guidelines</a></li>
-            <li class="side-nav__link"><a href="/content-guidelines/">Content guidelines</a></li>
-            <li class="side-nav__link"><a href="/accessibility-guidelines/">Accessibility guidelines</a></li>
-            <li class="side-nav__link"><a href="/community/" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Community</a></li> -->
-        </ul>
-        <hr class="coop-t-hr-side-nav">
-        <ul class="coop-side-nav  coop-u-list-bare">
-            <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
-                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                        <path
-                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                        </path>
-                    </svg>
-                </a>
-                <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="/foundations/"  class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
-                    <li class="nested-link"><a href="/foundations/borders.html" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
-                    <li class="nested-link"><a href="/foundations/colours.html" class="{% if page.item-url == '/foundations/colours.html' %}is-active{% endif %}">Colours</a></li>
-                    <li class="nested-link"><a href="/foundations/drop-shadow.html" class="{% if page.item-url == '/foundations/drop-shadow.html' %}is-active{% endif %}">Drop shadow</a></li>
-                    <li class="nested-link"><a href="/foundations/font.html" class="{% if page.item-url == '/foundations/font.html' %}is-active{% endif %}">Font</a></li>
-                    <li class="nested-link"><a href="/foundations/font-sizes.html" class="{% if page.item-url == '/foundations/font-sizes.html' %}is-active{% endif %}">Font sizes</a></li>
-                    <li class="nested-link"><a href="/foundations/radius.html" class="{% if page.item-url == '/foundations/radius.html' %}is-active{% endif %}">Radius</a></li>
-                    <li class="nested-link"><a href="/foundations/spacing.html" class="{% if page.item-url == '/foundations/spacing.html' %}is-active{% endif %}">Spacing</a></li>
-                </ul>
-            </li>
-            <!-- <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.section == 'elements' %}is-open{% endif %}">Elements
-                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                        <path
-                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                        </path>
-                    </svg>
-                </a>
-                <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="/elements/" class="{% if page.item-url == '/elements/' %}is-active{% endif %}">All elements</a></li>
-                    <li class="nested-link"><a href="#" >Headings and paragraphs</a></li>
-                    <li class="nested-link"><a href="#" >Lists</a></li>
-                    <li class="nested-link"><a href="/elements/links.html" class="{% if page.item-url == '/elements/links.html' %}is-active{% endif %}">Links</a></li>
-                    <li class="nested-link"><a href="#" >Buttons</a></li> 
-                    <li class="nested-link"><a href="#" >Input</a></li>
-                    <li class="nested-link"><a href="#" >Textarea</a></li>
-                    <li class="nested-link"><a href="#" >Select dropdown</a></li>
-                    <li class="nested-link"><a href="#" >Checkboxes and radios</a></li>
-                    <li class="nested-link"><a href="#" >Tables</a></li>
-                </ul>
-            </li> -->
-            <!-- <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
-                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                        <path
-                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                        </path>
-                    </svg>
-                </a>
-                <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="#" >Grid</a></li>
-                </ul>
-            </li> -->
-            <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}">Components
-                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                        <path
-                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                        </path>
-                    </svg>
-                </a>
-                <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="/components/index.html" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
-                    <li class="nested-link"><a href="/components/alert-notification.html" class="{% if page.url == '/components/alert-notification.html' %}is-active{% endif %}">Alert notification</a></li>
-                    <li class="nested-link"><a href="/components/editorial-card.html" class="{% if page.url == '/components/editorial-card.html' %}is-active{% endif %}">Editorial card</a></li>
-                    <li class="nested-link"><a href="/components/feature-card.html" class="{% if page.url == '/components/feature-card.html' %}is-active{% endif %}">Feature card</a></li>
-                    <li class="nested-link"><a href="/components/hero-banner.html" class="{% if page.url == '/components/hero-banner.html' %}is-active{% endif %}">Hero banner</a></li>
-                    <li class="nested-link"><a href="/components/list-of-links.html" class="{% if page.url == '/components/list-of-links.html' %}is-active{% endif %}">List of links</a></li>
-                    <li class="nested-link"><a href="/components/search.html" class="{% if page.url == '/components/search.html' %}is-active{% endif %}">Search</a></li>
-                    <li class="nested-link"><a href="/components/signpost-navigation.html" class="{% if page.url == '/components/signpost-navigation.html' %}is-active{% endif %}">Signpost navigation</a></li>
-                    <li class="nested-link"><a href="/components/skip-navigation.html" class="{% if page.url == '/components/skip-navigation.html' %}is-active{% endif %}">Skip navigation</a></li>
-                    <li class="nested-link"><a href="/components/statement.html" class="{% if page.url == '/components/statement.html' %}is-active{% endif %}">Statement</a></li>
-                    <li class="nested-link"><a href="/components/success-notification.html" class="{% if page.url == '/components/success-notification.html' %}is-active{% endif %}">Success notification</a></li>
-                </ul>
-            </li>
-            <!-- <li class="side-nav__link side-nav__link-toggle">
-                <a href="#" class="toggle-link">Patterns
-                    <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                        <path
-                            d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                        </path>
-                    </svg>
-                </a>
-                <ul class="coop-side-nav coop-side-nav--nested">
-                    <li class="nested-link"><a href="#" >Date input</a></li>
-                    <li class="nested-link"><a href="#" >Form validation</a></li>
-                </ul>
-            </li> -->
-            {% endif %}
-
+        {% include search.html %}
+    </header> 
+    <div class="coop-nav-scroll">
+        <nav class="coop-side-nav-wrapper" id="navigation">
             {% if page.id == 'get-started' %}
-                <li class="side-nav__link"><a href="#">Designing</a></li>
-                <li class="side-nav__link"><a href="#">Building</a></li>
-                <li class="side-nav__link"><a href="#">Creating content</a></li>
-                <li class="side-nav__link"><a href="#">Meeting the product standard</a></li>
-                <li class="side-nav__link"><a href="#">Using a third party for design</a></li>
-                <li class="side-nav__link"><a href="#">Using components in contentful</a></li>
+            <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/get-started/"> Get started</a></li>
+            </ul>
             {% endif %}
-
             {% if page.id == 'design' %}
-                <li class="side-nav__link"><a href="#">Principles</a></li>
-                <li class="side-nav__link"><a href="#">Customising products</a></li>
-                <li class="side-nav__link"><a href="#">Using the Figma library</a></li>
-                <li class="side-nav__link"><a href="#">How to use components</a></li>
-                <li class="side-nav__link"><a href="#">Prototyping</a></li>
-                <li class="side-nav__link"><a href="#">Brand guidelines and assets</a></li>
+            <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/design-guidelines/"> Design guidelines</a></li>
+            </ul>
             {% endif %}
-
             {% if page.id == 'content' %}
-                <li class="side-nav__link"><a href="#">Principles</a></li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">How people read online</a></li>
-                        <li class="nested-link"><a href="#">Describing Co-op</a></li>
-                        <li class="nested-link"><a href="#">Voice and tone/active voice</a></li>
-                        <li class="nested-link"><a href="#">Inclusivity</a></li>
-                        <li class="nested-link"><a href="#">Accessibility</a></li>
-                        <li class="nested-link"><a href="#">Tools and resources</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">Heading content</a></li>
-                        <li class="nested-link"><a href="#">Images</a></li>
-                        <li class="nested-link"><a href="/content-guidelines/content-elements/link-content.html" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
-                        <li class="nested-link"><a href="#">List content</a></li>
-                        <li class="nested-link"><a href="#">Button content</a></li>
-                        <li class="nested-link"><a href="#">Table content</a></li>
-                        <li class="nested-link"><a href="#">Videos</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">Attachments (PDFs)</a></li>
-                        <li class="nested-link"><a href="#">Create an account text</a></li>
-                        <li class="nested-link"><a href="#">Email addresses</a></li>
-                        <li class="nested-link"><a href="#">Error messages</a></li>
-                        <li class="nested-link"><a href="#">Form content</a></li>
-                        <li class="nested-link"><a href="#">Frequently asked questions</a></li>
-                        <li class="nested-link"><a href="#">Logging in text</a></li>
-                        <li class="nested-link"><a href="#">Password field</a></li>
-                        <li class="nested-link"><a href="#">Password reset text</a></li>
-                        <li class="nested-link"><a href="#">Phone numbers</a></li>
-                        <li class="nested-link"><a href="#">Product information</a></li>
-                        <li class="nested-link"><a href="#">Surveys</a></li>
-                        <li class="nested-link"><a href="#">Terms and conditions</a></li>
-                        <li class="nested-link"><a href="#">Validation (or confirmation) messages</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Style
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">Acronyms and abbreviations</a></li>
-                        <li class="nested-link"><a href="#">Latin</a></li>
-                        <li class="nested-link"><a href="#">Alcohol</a></li>
-                        <li class="nested-link"><a href="#">Addresses</a></li>
-                        <li class="nested-link"><a href="#">Areas</a></li>
-                        <li class="nested-link"><a href="#">Bold and italics</a></li>
-                        <li class="nested-link"><a href="#">Brackets</a></li>
-                        <li class="nested-link"><a href="#">Capitalisation</a></li>
-                        <li class="nested-link"><a href="#">Colons and semicolons</a></li>
-                        <li class="nested-link"><a href="#">Contractions</a></li>
-                        <li class="nested-link"><a href="#">Dates, decades and seasons</a></li>
-                        <li class="nested-link"><a href="#">Ellipsis</a></li>
-                        <li class="nested-link"><a href="#">Emojis</a></li>
-                        <li class="nested-link"><a href="#">Exclamation marks</a></li>
-                        <li class="nested-link"><a href="#">Fairtrade</a></li>
-                        <li class="nested-link"><a href="#">Hyphens</a></li>
-                        <li class="nested-link"><a href="#">Jargon and specialist terms</a></li>
-                        <li class="nested-link"><a href="#">Job titles</a></li>
-                        <li class="nested-link"><a href="#">Measurements</a></li>
-                        <li class="nested-link"><a href="#">Money</a></li>
-                        <li class="nested-link"><a href="#">Numbers</a></li>
-                        <li class="nested-link"><a href="#">Pronouns</a></li>
-                        <li class="nested-link"><a href="#">Slashes</a></li>
-                        <li class="nested-link"><a href="#">Times</a></li>
-                        <li class="nested-link"><a href="#">Website addresses</a></li>
-                        <li class="nested-link"><a href="#">Words list</a></li>
-                        <li class="nested-link"><a href="#">Words to avoid</a></li>
-                    </ul>
-                </li>
+                <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/content-guidelines/"> Content guidelines</a></li>
+                </ul>
             {% endif %}
-
             {% if page.id == 'accessibility' %}
-                <li class="side-nav__link"><a href="#">Accessibility policy</a></li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Standards
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">Using these standards</a></li>
-                        <li class="nested-link"><a href="#">Make it understandable</a></li>
-                        <li class="nested-link"><a href="#">Make it readable and usable</a></li>
-                        <li class="nested-link"><a href="#">Put the user in control</a></li>
-                        <li class="nested-link"><a href="#">Forms</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link">Testing and research
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-                            <path
-                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#">Accessibility testing</a></li>
-                        <li class="nested-link"><a href="#">Framework</a></li>
-                        <li class="nested-link"><a href="#">Researching with users</a></li>
-                    </ul>
-                </li>
-                <li class="side-nav__link"><a href="#">Tools and resources</a></li>
+                <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li> Accessibility guidelines</li>
+                </ul>
             {% endif %}
-        </ul>
+        
+            <ul class="coop-side-nav coop-u-list-bare">
+            {% if page.id == 'index' %}
+            <li class="side-nav__link"><a href="/about-this-prototype/" class="{% if page.item-url == '/about-this-prototype/' %}is-active{% endif %}">About this prototype</a></li>
+                <!--<li class="side-nav__link"><a href="/get-started/">Get started</a></li>
+                <li class="side-nav__link"><a href="/design-guidelines/">Design guidelines</a></li>
+                <li class="side-nav__link"><a href="/content-guidelines/">Content guidelines</a></li>
+                <li class="side-nav__link"><a href="/accessibility-guidelines/">Accessibility guidelines</a></li>
+                <li class="side-nav__link"><a href="/community/" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Community</a></li> -->
+            </ul>
+            <hr class="coop-t-hr-side-nav">
+            <ul class="coop-side-nav  coop-u-list-bare">
+                <li class="side-nav__link side-nav__link-toggle">
+                    <a href="#" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="coop-side-nav coop-side-nav--nested">
+                        <li class="nested-link"><a href="/foundations/"  class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
+                        <li class="nested-link"><a href="/foundations/borders.html" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
+                        <li class="nested-link"><a href="/foundations/colours.html" class="{% if page.item-url == '/foundations/colours.html' %}is-active{% endif %}">Colours</a></li>
+                        <li class="nested-link"><a href="/foundations/drop-shadow.html" class="{% if page.item-url == '/foundations/drop-shadow.html' %}is-active{% endif %}">Drop shadow</a></li>
+                        <li class="nested-link"><a href="/foundations/font.html" class="{% if page.item-url == '/foundations/font.html' %}is-active{% endif %}">Font</a></li>
+                        <li class="nested-link"><a href="/foundations/font-sizes.html" class="{% if page.item-url == '/foundations/font-sizes.html' %}is-active{% endif %}">Font sizes</a></li>
+                        <li class="nested-link"><a href="/foundations/radius.html" class="{% if page.item-url == '/foundations/radius.html' %}is-active{% endif %}">Radius</a></li>
+                        <li class="nested-link"><a href="/foundations/spacing.html" class="{% if page.item-url == '/foundations/spacing.html' %}is-active{% endif %}">Spacing</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="side-nav__link side-nav__link-toggle">
+                    <a href="#" class="toggle-link {% if page.section == 'elements' %}is-open{% endif %}">Elements
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="coop-side-nav coop-side-nav--nested">
+                        <li class="nested-link"><a href="/elements/" class="{% if page.item-url == '/elements/' %}is-active{% endif %}">All elements</a></li>
+                        <li class="nested-link"><a href="#" >Headings and paragraphs</a></li>
+                        <li class="nested-link"><a href="#" >Lists</a></li>
+                        <li class="nested-link"><a href="/elements/links.html" class="{% if page.item-url == '/elements/links.html' %}is-active{% endif %}">Links</a></li>
+                        <li class="nested-link"><a href="#" >Buttons</a></li> 
+                        <li class="nested-link"><a href="#" >Input</a></li>
+                        <li class="nested-link"><a href="#" >Textarea</a></li>
+                        <li class="nested-link"><a href="#" >Select dropdown</a></li>
+                        <li class="nested-link"><a href="#" >Checkboxes and radios</a></li>
+                        <li class="nested-link"><a href="#" >Tables</a></li>
+                    </ul>
+                </li> -->
+                <!-- <li class="side-nav__link side-nav__link-toggle">
+                    <a href="#" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="coop-side-nav coop-side-nav--nested">
+                        <li class="nested-link"><a href="#" >Grid</a></li>
+                    </ul>
+                </li> -->
+                <li class="side-nav__link side-nav__link-toggle">
+                    <a href="#" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}">Components
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="coop-side-nav coop-side-nav--nested">
+                        <li class="nested-link"><a href="/components/index.html" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
+                        <li class="nested-link"><a href="/components/alert-notification.html" class="{% if page.url == '/components/alert-notification.html' %}is-active{% endif %}">Alert notification</a></li>
+                        <li class="nested-link"><a href="/components/editorial-card.html" class="{% if page.url == '/components/editorial-card.html' %}is-active{% endif %}">Editorial card</a></li>
+                        <li class="nested-link"><a href="/components/feature-card.html" class="{% if page.url == '/components/feature-card.html' %}is-active{% endif %}">Feature card</a></li>
+                        <li class="nested-link"><a href="/components/hero-banner.html" class="{% if page.url == '/components/hero-banner.html' %}is-active{% endif %}">Hero banner</a></li>
+                        <li class="nested-link"><a href="/components/list-of-links.html" class="{% if page.url == '/components/list-of-links.html' %}is-active{% endif %}">List of links</a></li>
+                        <li class="nested-link"><a href="/components/search.html" class="{% if page.url == '/components/search.html' %}is-active{% endif %}">Search</a></li>
+                        <li class="nested-link"><a href="/components/signpost-navigation.html" class="{% if page.url == '/components/signpost-navigation.html' %}is-active{% endif %}">Signpost navigation</a></li>
+                        <li class="nested-link"><a href="/components/skip-navigation.html" class="{% if page.url == '/components/skip-navigation.html' %}is-active{% endif %}">Skip navigation</a></li>
+                        <li class="nested-link"><a href="/components/statement.html" class="{% if page.url == '/components/statement.html' %}is-active{% endif %}">Statement</a></li>
+                        <li class="nested-link"><a href="/components/success-notification.html" class="{% if page.url == '/components/success-notification.html' %}is-active{% endif %}">Success notification</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="side-nav__link side-nav__link-toggle">
+                    <a href="#" class="toggle-link">Patterns
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="coop-side-nav coop-side-nav--nested">
+                        <li class="nested-link"><a href="#" >Date input</a></li>
+                        <li class="nested-link"><a href="#" >Form validation</a></li>
+                    </ul>
+                </li> -->
+                {% endif %}
+
+                {% if page.id == 'get-started' %}
+                    <li class="side-nav__link"><a href="#">Designing</a></li>
+                    <li class="side-nav__link"><a href="#">Building</a></li>
+                    <li class="side-nav__link"><a href="#">Creating content</a></li>
+                    <li class="side-nav__link"><a href="#">Meeting the product standard</a></li>
+                    <li class="side-nav__link"><a href="#">Using a third party for design</a></li>
+                    <li class="side-nav__link"><a href="#">Using components in contentful</a></li>
+                {% endif %}
+
+                {% if page.id == 'design' %}
+                    <li class="side-nav__link"><a href="#">Principles</a></li>
+                    <li class="side-nav__link"><a href="#">Customising products</a></li>
+                    <li class="side-nav__link"><a href="#">Using the Figma library</a></li>
+                    <li class="side-nav__link"><a href="#">How to use components</a></li>
+                    <li class="side-nav__link"><a href="#">Prototyping</a></li>
+                    <li class="side-nav__link"><a href="#">Brand guidelines and assets</a></li>
+                {% endif %}
+
+                {% if page.id == 'content' %}
+                    <li class="side-nav__link"><a href="#">Principles</a></li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">How people read online</a></li>
+                            <li class="nested-link"><a href="#">Describing Co-op</a></li>
+                            <li class="nested-link"><a href="#">Voice and tone/active voice</a></li>
+                            <li class="nested-link"><a href="#">Inclusivity</a></li>
+                            <li class="nested-link"><a href="#">Accessibility</a></li>
+                            <li class="nested-link"><a href="#">Tools and resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">Heading content</a></li>
+                            <li class="nested-link"><a href="#">Images</a></li>
+                            <li class="nested-link"><a href="/content-guidelines/content-elements/link-content.html" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
+                            <li class="nested-link"><a href="#">List content</a></li>
+                            <li class="nested-link"><a href="#">Button content</a></li>
+                            <li class="nested-link"><a href="#">Table content</a></li>
+                            <li class="nested-link"><a href="#">Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">Attachments (PDFs)</a></li>
+                            <li class="nested-link"><a href="#">Create an account text</a></li>
+                            <li class="nested-link"><a href="#">Email addresses</a></li>
+                            <li class="nested-link"><a href="#">Error messages</a></li>
+                            <li class="nested-link"><a href="#">Form content</a></li>
+                            <li class="nested-link"><a href="#">Frequently asked questions</a></li>
+                            <li class="nested-link"><a href="#">Logging in text</a></li>
+                            <li class="nested-link"><a href="#">Password field</a></li>
+                            <li class="nested-link"><a href="#">Password reset text</a></li>
+                            <li class="nested-link"><a href="#">Phone numbers</a></li>
+                            <li class="nested-link"><a href="#">Product information</a></li>
+                            <li class="nested-link"><a href="#">Surveys</a></li>
+                            <li class="nested-link"><a href="#">Terms and conditions</a></li>
+                            <li class="nested-link"><a href="#">Validation (or confirmation) messages</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link">Style
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">Acronyms and abbreviations</a></li>
+                            <li class="nested-link"><a href="#">Latin</a></li>
+                            <li class="nested-link"><a href="#">Alcohol</a></li>
+                            <li class="nested-link"><a href="#">Addresses</a></li>
+                            <li class="nested-link"><a href="#">Areas</a></li>
+                            <li class="nested-link"><a href="#">Bold and italics</a></li>
+                            <li class="nested-link"><a href="#">Brackets</a></li>
+                            <li class="nested-link"><a href="#">Capitalisation</a></li>
+                            <li class="nested-link"><a href="#">Colons and semicolons</a></li>
+                            <li class="nested-link"><a href="#">Contractions</a></li>
+                            <li class="nested-link"><a href="#">Dates, decades and seasons</a></li>
+                            <li class="nested-link"><a href="#">Ellipsis</a></li>
+                            <li class="nested-link"><a href="#">Emojis</a></li>
+                            <li class="nested-link"><a href="#">Exclamation marks</a></li>
+                            <li class="nested-link"><a href="#">Fairtrade</a></li>
+                            <li class="nested-link"><a href="#">Hyphens</a></li>
+                            <li class="nested-link"><a href="#">Jargon and specialist terms</a></li>
+                            <li class="nested-link"><a href="#">Job titles</a></li>
+                            <li class="nested-link"><a href="#">Measurements</a></li>
+                            <li class="nested-link"><a href="#">Money</a></li>
+                            <li class="nested-link"><a href="#">Numbers</a></li>
+                            <li class="nested-link"><a href="#">Pronouns</a></li>
+                            <li class="nested-link"><a href="#">Slashes</a></li>
+                            <li class="nested-link"><a href="#">Times</a></li>
+                            <li class="nested-link"><a href="#">Website addresses</a></li>
+                            <li class="nested-link"><a href="#">Words list</a></li>
+                            <li class="nested-link"><a href="#">Words to avoid</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+
+                {% if page.id == 'accessibility' %}
+                    <li class="side-nav__link"><a href="#">Accessibility policy</a></li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link">Standards
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">Using these standards</a></li>
+                            <li class="nested-link"><a href="#">Make it understandable</a></li>
+                            <li class="nested-link"><a href="#">Make it readable and usable</a></li>
+                            <li class="nested-link"><a href="#">Put the user in control</a></li>
+                            <li class="nested-link"><a href="#">Forms</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <a href="#" class="toggle-link">Testing and research
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="coop-side-nav coop-side-nav--nested">
+                            <li class="nested-link"><a href="#">Accessibility testing</a></li>
+                            <li class="nested-link"><a href="#">Framework</a></li>
+                            <li class="nested-link"><a href="#">Researching with users</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link"><a href="#">Tools and resources</a></li>
+                {% endif %}
+            </ul>
         </nav>
     </div>
-</header>
+</div>
 
 
