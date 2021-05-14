@@ -1,3 +1,61 @@
+.coop-u-flex__sidebar {
+  position: relative;
+  z-index: 10;
+  top: -76px;
+  bottom: 0;
+  display: flex;
+  width: 280px;    
+  flex: 0 0 0px;
+  flex-flow: column nowrap;
+  justify-content: left; 
+  align-items: flex-start;
+  background: var(--color-white);
+  /* border-right: 1px solid var(--color-grey-mid); */
+  /* translateX doesn't work with position: fixed */
+  left: -280px;
+  transition: left .3s ease-in-out;
+  box-shadow: 0 0.125rem 0.625rem 0 rgb(0 0 0 / 10%);
+}
+
+@media (--mq-medium) {
+  .coop-u-flex__sidebar {
+    top: 0;
+    width: 280px;
+    flex: 0 0 280px;
+    left: 0;
+  }
+}
+
+.coop-u-flex__sidebar--is-open {
+  left: 0px;
+}
+
+.menu--is-open {
+  overflow: hidden;
+}
+
+@media (--mq-medium) {
+  .menu--is-open {
+    overflow: scroll;
+  }
+}
+
+.menu-bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+@media (--mq-medium) {
+  .menu-bg {
+    display: none !important;
+  }
+}
 
 .coop-logo path {
   fill: var(--color-brand);
@@ -37,6 +95,7 @@
   z-index: 4;
   width: 280px;
   padding: 24px var(--spacing-16) 0 var(--spacing-16);
+  background: var(--color-white);
 }
 
 .coop-side-nav-wrapper {
@@ -48,9 +107,16 @@
   width: 100%;
   position: fixed;
   overflow-y: scroll;
-  top: 200px;
+  top: 173px;
   bottom: 0;
   width: 280px; 
+  background: var(--color-white);
+}
+
+@media (--mq-medium) {
+  .coop-nav-scroll {
+    top: 200px;
+  }
 }
 
 .side-nav__title {

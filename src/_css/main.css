@@ -24,10 +24,11 @@
 @import '@coopdigital/shared-component--hero';
 @import '@coopdigital/shared-component--linklist';
 @import '@coopdigital/foundations-vars';
-                                 
+                                        
 /* Experience Library theme */ 
 @import 'theme/global.pcss'; 
-@import 'theme/layout.pcss';  
+@import 'theme/layout.pcss'; 
+@import 'theme/el-c-mobile-header.pcss'; 
 @import 'theme/side-bar.pcss'; 
 @import 'theme/search.pcss';
 @import 'theme/signpost.pcss';
@@ -38,8 +39,8 @@
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/el-c-colour-swatch.pcss';
-@import 'theme/notification.pcss';
- 
+@import 'theme/notification.pcss'; 
+     
 /* Utility overrides */
 @import "@coopdigital/foundations-layout";
           
@@ -49,9 +50,9 @@
   border-radius: var(--ui-border-radius);
   box-shadow: var(--ui-shadow); 
   transition: box-shadow 0.2s ease-in;
-  color: var(--color-text);
+  color: var(--color-text);  
   text-decoration: none;
-  padding: 24px 20px 16px 20px;
+  padding: 24px 20px 16px 20px;  
 }
 
 .external-link {
