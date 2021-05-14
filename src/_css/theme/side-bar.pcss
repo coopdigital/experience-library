@@ -108,15 +108,23 @@
   position: fixed;
   overflow-y: scroll;
   top: 170px;
+  left: -280px;
   bottom: 0;
   width: 280px; 
   background: var(--color-white);
+  transition: left .3s ease-in-out;
 }
 
 @media (--mq-medium) {
   .coop-nav-scroll {
+    position: fixed;
     top: 200px;
+    left: 0px;
   }
+}
+
+.coop-nav-scroll--is-open {
+  left: 0px;
 }
 
 .side-nav__title {
