@@ -19,13 +19,13 @@
     <div class="el-c-hero__content">
         <div class="coop-l-grid  el-c-hero__centered">
             <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
-                {% if page.section-title %}
-                <p class="el-c-hero__section">{{ page.section-title }}</p>
-                {% endif %}
-                <h1 class="el-c-hero__title">{{ page.title }}</h1>
                 {% if page.last-reviewed %}
                 <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
                 {% endif %}
+                {% if page.section-title %}
+                <p class="el-c-hero__section">{{ page.section-title }}</p>
+                {% endif %}
+                <h1 class="el-c-hero__title">{{ page.title }}</h1>   
                 {% if page.home-lead %}
                 <p class="coop-t-h2">{{ page.home-lead }}</p>
                 {% endif %}
