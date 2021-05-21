@@ -16,29 +16,46 @@ $(function () {
   }
   $('#search-small-input').click(function (e) {
     $('.el-c-search__results-bg').show();
-    $('.coop-search-results').addClass('is-open');
+    $('.coop-search-results').addClass('is-open').attr('aria-hidden', 'false');
+    $('.coop-search-results a').attr('tabindex', '0');
     $('body').addClass('modal-open');
   });
   $('.el-c-search__results-bg').click(function (e) {
     if ($('.coop-search-results').hasClass('is-open')) {
       $('.el-c-search__results-bg').hide();
-      $('.coop-search-results').removeClass('is-open');
+      $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
+      $('.coop-search-results a').attr('tabindex', '-1');
       $('body').removeClass('modal-open');
       $('.coop-search-results').empty();
     }
   });
-  // $('#search-small-input').focusout(function (e) {
-  //   if ($('.coop-search-results').hasClass('is-open')) {
-  //     $('.el-c-search__results-bg').hide();
-  //     $('.coop-search-results').removeClass('is-open');
-  //     $('body').removeClass('modal-open');
-  //   }
-  // });
   $('#search-small-input').focus(function (e) {
     $('.el-c-search__results-bg').show();
     $('.coop-search-results').addClass('is-open');
+    $('.coop-search-results a').attr('tabindex', '0');
     $('body').addClass('modal-open');
+  }); 
+  $('#search-small-input').focusout(function (e) {
+    if ($('.result-text').hasClass('result-text')) {
+      $('.el-c-search__results-bg').show();
+      $('.coop-search-results').addClass('is-open').attr('aria-hidden', 'false');
+      $('.coop-search-results a').attr('tabindex', '0');
+      $('body').addClass('modal-open');
+    } else {
+      $('.el-c-search__results-bg').hide();
+      $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
+      $('.coop-search-results a').attr('tabindex', '-1');
+      $('body').removeClass('modal-open');
+      $('.coop-search-results').empty();
+    }
   });
+  // $('.coop-search-results:last').find('.result-list-item .result-text').focusout(function (e) {
+  //   $('.el-c-search__results-bg').hide();
+  //   $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
+  //   $('.coop-search-results a').attr('tabindex', '-1');
+  //   $('body').removeClass('modal-open');
+  //   $('.coop-search-results').empty();
+  // });
   function checkWidth() {
     var windowSize = $(window).width();
     if (windowSize < 768) {
@@ -85,11 +102,23 @@ $(function () {
       $('.menu-bg').hide();
     }
   });
+  $('.menu-bg').click(function (e) {
+    if ($('.coop-u-flex__sidebar').hasClass('coop-u-flex__sidebar--is-open')) {
+      $('#js-menu-toggle').removeClass('is-open').text('Menu').attr('aria-expanded', 'false');
+      $('body').removeClass('menu--is-open');
+      $('.coop-u-flex__sidebar').removeClass('coop-u-flex__sidebar--is-open').attr('aria-hidden', 'true');
+      $('.coop-u-flex__sidebar a').attr('tabindex', '-1');
+      $('.el-c-search__input').attr('tabindex', '-1');
+      $('.coop-nav-scroll').removeClass('coop-nav-scroll--is-open');
+      $('.menu-bg').hide();
+    }
+  });
 });
 $(document).keyup(function (e) {
   if (e.which == 27 && $('.coop-search-results').hasClass('is-open')) {
     $('.el-c-search__results-bg').hide();
-    $('.coop-search-results').removeClass('is-open');
+    $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
+    $('.coop-search-results a').attr('tabindex', '-1');
     $('body').removeClass('modal-open');
     $('.coop-search-results').empty();
   }
