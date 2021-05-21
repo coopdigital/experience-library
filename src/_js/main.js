@@ -27,14 +27,13 @@ $(function () {
       $('.coop-search-results').empty();
     }
   });
-  $('#search-small-input').focusout(function (e) {
-    if ($('.coop-search-results').hasClass('is-open')) {
-      $('.el-c-search__results-bg').hide();
-      $('.coop-search-results').removeClass('is-open');
-      $('body').removeClass('modal-open');
-      $('.coop-search-results').empty();
-    }
-  });
+  // $('#search-small-input').focusout(function (e) {
+  //   if ($('.coop-search-results').hasClass('is-open')) {
+  //     $('.el-c-search__results-bg').hide();
+  //     $('.coop-search-results').removeClass('is-open');
+  //     $('body').removeClass('modal-open');
+  //   }
+  // });
   $('#search-small-input').focus(function (e) {
     $('.el-c-search__results-bg').show();
     $('.coop-search-results').addClass('is-open');
