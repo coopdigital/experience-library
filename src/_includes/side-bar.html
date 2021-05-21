@@ -1,6 +1,6 @@
-<div class="coop-u-flex__sidebar" id="header">
+<div class="coop-u-flex__sidebar" id="header" aria-labelledby="js-menu-toggle">
     <header class="coop-header"> 
-        <a class="coop-nav__logo coop-logo" id="desktop-logo" aria-label="Go to the design system homepage" href="/">
+        <a class="coop-nav__logo coop-logo" id="desktop-logo" aria-label="Go to the design system homepage" role="menuitem" href="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="40" viewBox="-269.1 242.6 72 76.3" aria-labelledby="logotitle">
                 <title id="logotitle">The Co-op logo</title>
                 <path class="st0" d="M-197.1 259.4c0-2.7-.4-5.4-1.1-8.1-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.7 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .7-2.7 1.1-5.4 1.1-8.1zm-10.5 0c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.7.6 4m-27.9 43.9c1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 6.3 2.2 13.1 2.2 19.4 0 3.1-1.1 5.6-3.7 6.5-7m-9.4-8c0 1.3-.2 2.7-.6 3.9-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.4 1.3.6 2.6.6 4m0-36h10.5c0-2.7-.4-5.4-1.1-8-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.2 1.2-5.6 3.8-6.5 7-1.5 5.3-1.5 10.9 0 16.2 1 3.2 3.4 5.8 6.5 7 3.1 1.1 6.4 1.6 9.7 1.6 3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 .1-.4.2-.9.4-1.4l-9.9-4.6c-.1.6-.2 1.2-.4 1.8-.5 1.7-2 3-3.8 3.4-1.7.3-3.4.3-5 0-1.8-.3-3.2-1.6-3.8-3.4-.8-2.6-.8-5.3 0-7.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.3 1.3.5 2.6.5 3.9m14.1 27.9c-.7 2.6-1.1 5.3-1.1 8.1V319h10.5v-23.7c0-1.3.2-2.7.6-3.9.5-1.7 2-3 3.8-3.4 1.7-.3 3.4-.3 5 0 1.8.3 3.2 1.6 3.8 3.4.8 2.6.8 5.3 0 7.9-.5 1.7-2 3-3.7 3.4-1.7.3-3.4.3-5 0-.3-.1-.7-.2-1-.3l3.6 9.8c3.3 0 6.6-.6 9.7-1.6 3.2-1.2 5.6-3.8 6.5-7 1.5-5.3 1.5-10.9 0-16.2-1-3.2-3.4-5.8-6.5-7-6.3-2.2-13.1-2.2-19.4 0-3.4 1-5.8 3.6-6.8 6.8"/>
@@ -13,42 +13,42 @@
         <nav class="coop-side-nav-wrapper" id="navigation">
             {% if page.id == 'get-started' %}
             <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/get-started/"> Get started</a></li>
+                <li role="none"><a href="/" role="menuitem">Home</a></li>
+                <li role="none"><a href="/get-started/" role="menuitem"> Get started</a></li>
             </ul>
             {% endif %}
             {% if page.id == 'design' %}
             <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li><a href="/design-guidelines/"> Design guidelines</a></li>
+                <li role="none"><a href="/" role="menuitem">Home</a></li>
+                <li role="none"><a href="/design-guidelines/" role="menuitem"> Design guidelines</a></li>
             </ul>
             {% endif %}
             {% if page.id == 'content' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/content-guidelines/"> Content guidelines</a></li>
+                    <li role="none"><a href="/" role="menuitem">Home</a></li>
+                    <li role="none"><a href="/content-guidelines/" role="menuitem"> Content guidelines</a></li>
                 </ul>
             {% endif %}
             {% if page.id == 'accessibility' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
-                    <li><a href="/">Home</a></li>
-                    <li> Accessibility guidelines</li>
+                    <li role="none"><a href="/" role="menuitem">Home</a></li>
+                    <li role="none"> Accessibility guidelines</li>
                 </ul>
             {% endif %}
         
             <ul class="coop-side-nav coop-u-list-bare">
             {% if page.id == 'index' %}
-            <li class="side-nav__link"><a href="/about-this-prototype/" class="{% if page.item-url == '/about-this-prototype/' %}is-active{% endif %}">About this prototype</a></li>
-                <!--<li class="side-nav__link"><a href="/get-started/">Get started</a></li>
-                <li class="side-nav__link"><a href="/design-guidelines/">Design guidelines</a></li>
-                <li class="side-nav__link"><a href="/content-guidelines/">Content guidelines</a></li>
-                <li class="side-nav__link"><a href="/accessibility-guidelines/">Accessibility guidelines</a></li>
-                <li class="side-nav__link"><a href="/community/" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Community</a></li> -->
+            <li class="side-nav__link" role="none"><a href="/about-this-prototype/" role="menuitem" class="{% if page.item-url == '/about-this-prototype/' %}is-active{% endif %}">About this prototype</a></li>
+                <!--<li class="side-nav__link" role="none"><a href="/get-started/" role="menuitem">Get started</a></li>
+                <li class="side-nav__link" role="none"><a href="/design-guidelines/" role="menuitem">Design guidelines</a></li>
+                <li class="side-nav__link" role="none"><a href="/content-guidelines/" role="menuitem">Content guidelines</a></li>
+                <li class="side-nav__link" role="none"><a href="/accessibility-guidelines/" role="menuitem">Accessibility guidelines</a></li>
+                <li class="side-nav__link" role="none"><a href="/community/" role="menuitem" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Community</a></li> -->
             </ul>
             <hr class="coop-t-hr-side-nav">
             <ul class="coop-side-nav  coop-u-list-bare">
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -56,18 +56,18 @@
                         </svg>
                     </a>
                     <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="/foundations/"  class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
-                        <li class="nested-link"><a href="/foundations/borders.html" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
-                        <li class="nested-link"><a href="/foundations/colours.html" class="{% if page.item-url == '/foundations/colours.html' %}is-active{% endif %}">Colours</a></li>
-                        <li class="nested-link"><a href="/foundations/drop-shadow.html" class="{% if page.item-url == '/foundations/drop-shadow.html' %}is-active{% endif %}">Drop shadow</a></li>
-                        <li class="nested-link"><a href="/foundations/font.html" class="{% if page.item-url == '/foundations/font.html' %}is-active{% endif %}">Font</a></li>
-                        <li class="nested-link"><a href="/foundations/font-sizes.html" class="{% if page.item-url == '/foundations/font-sizes.html' %}is-active{% endif %}">Font sizes</a></li>
-                        <li class="nested-link"><a href="/foundations/radius.html" class="{% if page.item-url == '/foundations/radius.html' %}is-active{% endif %}">Radius</a></li>
-                        <li class="nested-link"><a href="/foundations/spacing.html" class="{% if page.item-url == '/foundations/spacing.html' %}is-active{% endif %}">Spacing</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/" role="menuitem" class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/borders.html" role="menuitem" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/colours.html" role="menuitem" class="{% if page.item-url == '/foundations/colours.html' %}is-active{% endif %}">Colours</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/drop-shadow.html" role="menuitem" class="{% if page.item-url == '/foundations/drop-shadow.html' %}is-active{% endif %}">Drop shadow</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/font.html" role="menuitem" class="{% if page.item-url == '/foundations/font.html' %}is-active{% endif %}">Font</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/font-sizes.html" role="menuitem" class="{% if page.item-url == '/foundations/font-sizes.html' %}is-active{% endif %}">Font sizes</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/radius.html" role="menuitem" class="{% if page.item-url == '/foundations/radius.html' %}is-active{% endif %}">Radius</a></li>
+                        <li class="nested-link" role="none"><a href="/foundations/spacing.html" role="menuitem" class="{% if page.item-url == '/foundations/spacing.html' %}is-active{% endif %}">Spacing</a></li>
                     </ul>
                 </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'Elements' %}is-open{% endif %}">Elements
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Elements' %}is-open{% endif %}">Elements
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -75,22 +75,22 @@
                         </svg>
                     </a>
                     <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#" >All elements</a></li> 
-                        <li class="nested-link"><a href="#" >Buttons</a></li> 
-                        <li class="nested-link"><a href="#" >Checkboxes</a></li>
-                        <li class="nested-link"><a href="#" >Co-op logo</a></li>
-                        <li class="nested-link"><a href="#" >Headings, paragraphs and lists</a></li>
-                        <li class="nested-link"><a href="#" >Inputs</a></li>
-                        <li class="nested-link"><a href="/elements/links.html" class="{% if page.item-url == '/elements/links.html' %}is-active{% endif %}">Links</a></li>
-                        <li class="nested-link"><a href="#" >Quotes</a></li>
-                        <li class="nested-link"><a href="#" >Radio buttons</a></li>
-                        <li class="nested-link"><a href="#" >Select dropdowns</a></li>
-                        <li class="nested-link"><a href="#" >Tables</a></li>
-                        <li class="nested-link"><a href="#" >Text areas</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">All elements</a></li> 
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Buttons</a></li> 
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Checkboxes</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Co-op logo</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Headings, paragraphs and lists</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Inputs</a></li>
+                        <li class="nested-link" role="none"><a href="/elements/links.html" role="menuitem" class="{% if page.item-url == '/elements/links.html' %}is-active{% endif %}">Links</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Quotes</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Radio buttons</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Select dropdowns</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Tables</a></li>
+                        <li class="nested-link" role="none"><a href="#" role="menuitem">Text areas</a></li>
                     </ul>
                 </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -98,11 +98,11 @@
                         </svg>
                     </a>
                     <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="/layout/grid.html" class="{% if page.url == '/layout/grid.html' %}is-active{% endif %}">Grid</a></li>
+                        <li class="nested-link" role="none"><a href="/layout/grid.html" class="{% if page.url == '/layout/grid.html' %}is-active{% endif %}">Grid</a></li>
                     </ul>
                 </li>
-                <li class="side-nav__link side-nav__link-toggle">
-                    <a href="#" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}">Components
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}">Components
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -110,17 +110,17 @@
                         </svg>
                     </a>
                     <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="/components/index.html" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
-                        <li class="nested-link"><a href="/components/alert-notification.html" class="{% if page.url == '/components/alert-notification.html' %}is-active{% endif %}">Alert notification</a></li>
-                        <li class="nested-link"><a href="/components/editorial-card.html" class="{% if page.url == '/components/editorial-card.html' %}is-active{% endif %}">Editorial card</a></li>
-                        <li class="nested-link"><a href="/components/feature-card.html" class="{% if page.url == '/components/feature-card.html' %}is-active{% endif %}">Feature card</a></li>
-                        <li class="nested-link"><a href="/components/hero-banner.html" class="{% if page.url == '/components/hero-banner.html' %}is-active{% endif %}">Hero banner</a></li>
-                        <li class="nested-link"><a href="/components/list-of-links.html" class="{% if page.url == '/components/list-of-links.html' %}is-active{% endif %}">List of links</a></li>
-                        <li class="nested-link"><a href="/components/search.html" class="{% if page.url == '/components/search.html' %}is-active{% endif %}">Search</a></li>
-                        <li class="nested-link"><a href="/components/signpost-navigation.html" class="{% if page.url == '/components/signpost-navigation.html' %}is-active{% endif %}">Signpost navigation</a></li>
-                        <li class="nested-link"><a href="/components/skip-navigation.html" class="{% if page.url == '/components/skip-navigation.html' %}is-active{% endif %}">Skip navigation</a></li>
-                        <li class="nested-link"><a href="/components/statement.html" class="{% if page.url == '/components/statement.html' %}is-active{% endif %}">Statement</a></li>
-                        <li class="nested-link"><a href="/components/success-notification.html" class="{% if page.url == '/components/success-notification.html' %}is-active{% endif %}">Success notification</a></li>
+                        <li class="nested-link" role="none"><a href="/components/index.html" role="menuitem" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
+                        <li class="nested-link" role="none"><a href="/components/alert-notification.html" role="menuitem" class="{% if page.url == '/components/alert-notification.html' %}is-active{% endif %}">Alert notification</a></li>
+                        <li class="nested-link" role="none"><a href="/components/editorial-card.html" role="menuitem" class="{% if page.url == '/components/editorial-card.html' %}is-active{% endif %}">Editorial card</a></li>
+                        <li class="nested-link" role="none"><a href="/components/feature-card.html" role="menuitem" class="{% if page.url == '/components/feature-card.html' %}is-active{% endif %}">Feature card</a></li>
+                        <li class="nested-link" role="none"><a href="/components/hero-banner.html" role="menuitem" class="{% if page.url == '/components/hero-banner.html' %}is-active{% endif %}">Hero banner</a></li>
+                        <li class="nested-link" role="none"><a href="/components/list-of-links.html" role="menuitem" class="{% if page.url == '/components/list-of-links.html' %}is-active{% endif %}">List of links</a></li>
+                        <li class="nested-link" role="none"><a href="/components/search.html" role="menuitem" class="{% if page.url == '/components/search.html' %}is-active{% endif %}">Search</a></li>
+                        <li class="nested-link" role="none"><a href="/components/signpost-navigation.html" role="menuitem" class="{% if page.url == '/components/signpost-navigation.html' %}is-active{% endif %}">Signpost navigation</a></li>
+                        <li class="nested-link" role="none"><a href="/components/skip-navigation.html" role="menuitem" class="{% if page.url == '/components/skip-navigation.html' %}is-active{% endif %}">Skip navigation</a></li>
+                        <li class="nested-link" role="none"><a href="/components/statement.html" role="menuitem" class="{% if page.url == '/components/statement.html' %}is-active{% endif %}">Statement</a></li>
+                        <li class="nested-link" role="none"><a href="/components/success-notification.html" role="menuitem" class="{% if page.url == '/components/success-notification.html' %}is-active{% endif %}">Success notification</a></li>
                     </ul>
                 </li>
                 <!-- <li class="side-nav__link side-nav__link-toggle">
@@ -132,34 +132,34 @@
                         </svg>
                     </a>
                     <ul class="coop-side-nav coop-side-nav--nested">
-                        <li class="nested-link"><a href="#" >Date input</a></li>
-                        <li class="nested-link"><a href="#" >Form validation</a></li>
+                        <li class="nested-link"><a href="#" role="menuitem">Date input</a></li>
+                        <li class="nested-link"><a href="#" role="menuitem">Form validation</a></li>
                     </ul>
                 </li> -->
                 {% endif %}
 
                 {% if page.id == 'get-started' %}
-                    <li class="side-nav__link"><a href="#">Designing</a></li>
-                    <li class="side-nav__link"><a href="#">Building</a></li>
-                    <li class="side-nav__link"><a href="#">Creating content</a></li>
-                    <li class="side-nav__link"><a href="#">Meeting the product standard</a></li>
-                    <li class="side-nav__link"><a href="#">Using a third party for design</a></li>
-                    <li class="side-nav__link"><a href="#">Using components in contentful</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Designing</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Building</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Creating content</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Meeting the product standard</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Using a third party for design</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Using components in contentful</a></li>
                 {% endif %}
 
                 {% if page.id == 'design' %}
-                    <li class="side-nav__link"><a href="#">Principles</a></li>
-                    <li class="side-nav__link"><a href="#">Customising products</a></li>
-                    <li class="side-nav__link"><a href="#">Using the Figma library</a></li>
-                    <li class="side-nav__link"><a href="#">How to use components</a></li>
-                    <li class="side-nav__link"><a href="#">Prototyping</a></li>
-                    <li class="side-nav__link"><a href="#">Brand guidelines and assets</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Principles</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Customising products</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Using the Figma library</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">How to use components</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Prototyping</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Brand guidelines and assets</a></li>
                 {% endif %}
 
                 {% if page.id == 'content' %}
-                    <li class="side-nav__link"><a href="#">Principles</a></li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
+                    <li class="side-nav__link" role="none"><a href="#">Principles</a></li>
+                    <li class="side-nav__link side-nav__link-toggle" role="none">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -167,16 +167,16 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">How people read online</a></li>
-                            <li class="nested-link"><a href="#">Describing Co-op</a></li>
-                            <li class="nested-link"><a href="#">Voice and tone/active voice</a></li>
-                            <li class="nested-link"><a href="#">Inclusivity</a></li>
-                            <li class="nested-link"><a href="#">Accessibility</a></li>
-                            <li class="nested-link"><a href="#">Tools and resources</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">How people read online</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Describing Co-op</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Voice and tone/active voice</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Inclusivity</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Accessibility</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Tools and resources</a></li>
                         </ul>
                     </li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
+                    <li class="side-nav__link side-nav__link-toggle" role="none">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -184,17 +184,17 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">Heading content</a></li>
-                            <li class="nested-link"><a href="#">Images</a></li>
-                            <li class="nested-link"><a href="/content-guidelines/content-elements/link-content.html" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
-                            <li class="nested-link"><a href="#">List content</a></li>
-                            <li class="nested-link"><a href="#">Button content</a></li>
-                            <li class="nested-link"><a href="#">Table content</a></li>
-                            <li class="nested-link"><a href="#">Videos</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Heading content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Images</a></li>
+                            <li class="nested-link" role="none"><a href="/content-guidelines/content-elements/link-content.html" role="menuitem" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">List content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Button content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Table content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Videos</a></li>
                         </ul>
                     </li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
+                    <li class="side-nav__link side-nav__link-toggle" role="none">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -202,24 +202,24 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">Attachments (PDFs)</a></li>
-                            <li class="nested-link"><a href="#">Create an account text</a></li>
-                            <li class="nested-link"><a href="#">Email addresses</a></li>
-                            <li class="nested-link"><a href="#">Error messages</a></li>
-                            <li class="nested-link"><a href="#">Form content</a></li>
-                            <li class="nested-link"><a href="#">Frequently asked questions</a></li>
-                            <li class="nested-link"><a href="#">Logging in text</a></li>
-                            <li class="nested-link"><a href="#">Password field</a></li>
-                            <li class="nested-link"><a href="#">Password reset text</a></li>
-                            <li class="nested-link"><a href="#">Phone numbers</a></li>
-                            <li class="nested-link"><a href="#">Product information</a></li>
-                            <li class="nested-link"><a href="#">Surveys</a></li>
-                            <li class="nested-link"><a href="#">Terms and conditions</a></li>
-                            <li class="nested-link"><a href="#">Validation (or confirmation) messages</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Attachments (PDFs)</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Create an account text</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Email addresses</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Error messages</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Form content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Frequently asked questions</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Logging in text</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Password field</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Password reset text</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Phone numbers</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Product information</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Surveys</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Terms and conditions</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Validation (or confirmation) messages</a></li>
                         </ul>
                     </li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link">Style
+                    <li class="side-nav__link side-nav__link-toggle" role="none">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Style
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -227,41 +227,41 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">Acronyms and abbreviations</a></li>
-                            <li class="nested-link"><a href="#">Latin</a></li>
-                            <li class="nested-link"><a href="#">Alcohol</a></li>
-                            <li class="nested-link"><a href="#">Addresses</a></li>
-                            <li class="nested-link"><a href="#">Areas</a></li>
-                            <li class="nested-link"><a href="#">Bold and italics</a></li>
-                            <li class="nested-link"><a href="#">Brackets</a></li>
-                            <li class="nested-link"><a href="#">Capitalisation</a></li>
-                            <li class="nested-link"><a href="#">Colons and semicolons</a></li>
-                            <li class="nested-link"><a href="#">Contractions</a></li>
-                            <li class="nested-link"><a href="#">Dates, decades and seasons</a></li>
-                            <li class="nested-link"><a href="#">Ellipsis</a></li>
-                            <li class="nested-link"><a href="#">Emojis</a></li>
-                            <li class="nested-link"><a href="#">Exclamation marks</a></li>
-                            <li class="nested-link"><a href="#">Fairtrade</a></li>
-                            <li class="nested-link"><a href="#">Hyphens</a></li>
-                            <li class="nested-link"><a href="#">Jargon and specialist terms</a></li>
-                            <li class="nested-link"><a href="#">Job titles</a></li>
-                            <li class="nested-link"><a href="#">Measurements</a></li>
-                            <li class="nested-link"><a href="#">Money</a></li>
-                            <li class="nested-link"><a href="#">Numbers</a></li>
-                            <li class="nested-link"><a href="#">Pronouns</a></li>
-                            <li class="nested-link"><a href="#">Slashes</a></li>
-                            <li class="nested-link"><a href="#">Times</a></li>
-                            <li class="nested-link"><a href="#">Website addresses</a></li>
-                            <li class="nested-link"><a href="#">Words list</a></li>
-                            <li class="nested-link"><a href="#">Words to avoid</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Acronyms and abbreviations</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Latin</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Alcohol</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Addresses</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Areas</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Bold and italics</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Brackets</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Capitalisation</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Colons and semicolons</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Contractions</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Dates, decades and seasons</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Ellipsis</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Emojis</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Exclamation marks</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Fairtrade</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Hyphens</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Jargon and specialist terms</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Job titles</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Measurements</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Money</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Numbers</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Pronouns</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Slashes</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Times</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Website addresses</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Words list</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Words to avoid</a></li>
                         </ul>
                     </li>
                 {% endif %}
 
                 {% if page.id == 'accessibility' %}
-                    <li class="side-nav__link"><a href="#">Accessibility policy</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Accessibility policy</a></li>
                     <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link">Standards
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Standards
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -269,15 +269,15 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">Using these standards</a></li>
-                            <li class="nested-link"><a href="#">Make it understandable</a></li>
-                            <li class="nested-link"><a href="#">Make it readable and usable</a></li>
-                            <li class="nested-link"><a href="#">Put the user in control</a></li>
-                            <li class="nested-link"><a href="#">Forms</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Using these standards</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Make it understandable</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Make it readable and usable</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Put the user in control</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Forms</a></li>
                         </ul>
                     </li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" class="toggle-link">Testing and research
+                    <li class="side-nav__link side-nav__link-toggle" role="none">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Testing and research
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -285,12 +285,12 @@
                             </svg>
                         </a>
                         <ul class="coop-side-nav coop-side-nav--nested">
-                            <li class="nested-link"><a href="#">Accessibility testing</a></li>
-                            <li class="nested-link"><a href="#">Framework</a></li>
-                            <li class="nested-link"><a href="#">Researching with users</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Accessibility testing</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Framework</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Researching with users</a></li>
                         </ul>
                     </li>
-                    <li class="side-nav__link"><a href="#">Tools and resources</a></li>
+                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Tools and resources</a></li>
                 {% endif %}
             </ul>
         </nav>
