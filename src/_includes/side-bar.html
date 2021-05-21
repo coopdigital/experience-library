@@ -48,14 +48,14 @@
             <hr class="coop-t-hr-side-nav">
             <ul class="coop-side-nav  coop-u-list-bare">
                 <li class="side-nav__link side-nav__link-toggle" role="none">
-                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}">Foundations
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}" id="foundations-list">Foundations
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                             </path>
                         </svg>
                     </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="foundations-list">
                         <li class="nested-link" role="none"><a href="/foundations/" role="menuitem" class="{% if page.item-url == '/foundations/' %}is-active{% endif %}">All foundations</a></li>
                         <li class="nested-link" role="none"><a href="/foundations/borders.html" role="menuitem" class="{% if page.item-url == '/foundations/borders.html' %}is-active{% endif %}">Borders</a></li>
                         <li class="nested-link" role="none"><a href="/foundations/colours.html" role="menuitem" class="{% if page.item-url == '/foundations/colours.html' %}is-active{% endif %}">Colours</a></li>
@@ -67,14 +67,14 @@
                     </ul>
                 </li>
                 <li class="side-nav__link side-nav__link-toggle" role="none">
-                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Elements' %}is-open{% endif %}">Elements
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Elements' %}is-open{% endif %}" id="elements-list">Elements
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                             </path>
                         </svg>
                     </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="elements-list">
                         <li class="nested-link" role="none"><a href="#" role="menuitem">All elements</a></li> 
                         <li class="nested-link" role="none"><a href="#" role="menuitem">Buttons</a></li> 
                         <li class="nested-link" role="none"><a href="#" role="menuitem">Checkboxes</a></li>
@@ -90,26 +90,26 @@
                     </ul>
                 </li>
                 <li class="side-nav__link side-nav__link-toggle" role="none">
-                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}">Layout
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'layout' %}is-open{% endif %}" id="layout-list">Layout
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                             </path>
                         </svg>
                     </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="layout-list">
                         <li class="nested-link" role="none"><a href="/layout/grid.html" class="{% if page.url == '/layout/grid.html' %}is-active{% endif %}">Grid</a></li>
                     </ul>
                 </li>
                 <li class="side-nav__link side-nav__link-toggle" role="none">
-                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}">Components
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'Components' %}is-open{% endif %}" id="components-list">Components
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                             </path>
                         </svg>
                     </a>
-                    <ul class="coop-side-nav coop-side-nav--nested">
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="components-list">
                         <li class="nested-link" role="none"><a href="/components/index.html" role="menuitem" class="{% if page.item-url == '/components/' %}is-active{% endif %}">All components</a></li>
                         <li class="nested-link" role="none"><a href="/components/alert-notification.html" role="menuitem" class="{% if page.url == '/components/alert-notification.html' %}is-active{% endif %}">Alert notification</a></li>
                         <li class="nested-link" role="none"><a href="/components/editorial-card.html" role="menuitem" class="{% if page.url == '/components/editorial-card.html' %}is-active{% endif %}">Editorial card</a></li>
@@ -125,7 +125,7 @@
                 </li>
                 <!-- <li class="side-nav__link side-nav__link-toggle">
                     <a href="#" class="toggle-link">Patterns
-                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"  aria-hidden="true">
                             <path
                                 d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                             </path>
@@ -159,14 +159,14 @@
                 {% if page.id == 'content' %}
                     <li class="side-nav__link" role="none"><a href="#">Principles</a></li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <a href="#" aria-expanded="false" role="button" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}">Content foundations
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}" id="content-foundations-list">Content foundations
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-foundations-list">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">How people read online</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Describing Co-op</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Voice and tone/active voice</a></li>
@@ -177,13 +177,13 @@
                     </li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
                         <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-elements-list">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Heading content</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Images</a></li>
                             <li class="nested-link" role="none"><a href="/content-guidelines/content-elements/link-content.html" role="menuitem" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
@@ -194,14 +194,14 @@
                         </ul>
                     </li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}">Content patterns
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}" id="content-patterns-list">Content patterns
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-patterns-list">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Attachments (PDFs)</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Create an account text</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Email addresses</a></li>
@@ -219,14 +219,14 @@
                         </ul>
                     </li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Style
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link" id="style-list">Style
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="style-list">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Acronyms and abbreviations</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Latin</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Alcohol</a></li>
@@ -261,14 +261,14 @@
                 {% if page.id == 'accessibility' %}
                     <li class="side-nav__link" role="none"><a href="#" role="menuitem">Accessibility policy</a></li>
                     <li class="side-nav__link side-nav__link-toggle">
-                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Standards
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link" id="accessibility-standards">Standards
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="accessibility-standards">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Using these standards</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Make it understandable</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Make it readable and usable</a></li>
@@ -277,14 +277,14 @@
                         </ul>
                     </li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <a href="#" aria-expanded="false" role="button" class="toggle-link">Testing and research
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                        <a href="#" aria-expanded="false" role="button" class="toggle-link" id="testing-and-research">Testing and research
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </a>
-                        <ul class="coop-side-nav coop-side-nav--nested">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="testing-and-research">
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Accessibility testing</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Framework</a></li>
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Researching with users</a></li>
