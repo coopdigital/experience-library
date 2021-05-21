@@ -41,14 +41,25 @@
 
 .el-c-pullout-header {
     color: var(--color-text);
-    padding: var(--spacing-16) var(--spacing-32) var(--spacing-2) var(--spacing-32);
+    padding: var(--spacing-16) var(--spacing-16) var(--spacing-4) 22px;
     border-radius: var(--ui-border-radius) var(--ui-border-radius) 0 0;
     border-bottom: 1px solid var(--color-grey-mid-light);
+}
 
+@media (--mq-medium) {
+    .el-c-pullout-header {
+        padding: var(--spacing-16) var(--spacing-32) var(--spacing-2) 46px;
     }
+} 
 
 .el-c-pullout-content {
     background-color: var(--color-white);
-    padding: var(--spacing-64) var(--spacing-32) var(--spacing-32) var(--spacing-32);
+    padding: var(--spacing-32) var(--spacing-16) var(--spacing-32) var(--spacing-16);
     border-radius: 0 0 var(--ui-border-radius) var(--ui-border-radius);
 }
+
+@media (--mq-medium) {
+    .el-c-pullout-content {
+        padding: var(--spacing-64) var(--spacing-32) var(--spacing-32) var(--spacing-32);
+    }
+} 
