@@ -1,0 +1,20 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="150" height="150" fill="#F5F5F0"/>
+<rect x="119.511" y="28" width="92.9258" height="92.9258" rx="10" transform="rotate(90 119.511 28)" fill="#FF4044"/>
+<circle cx="49.8166" cy="97.6943" r="22.2314" fill="#FFD309" stroke="white" stroke-width="2"/>
+<circle cx="63.2577" cy="93.546" r="1.32533" fill="#282828" stroke="#282828"/>
+<circle cx="118.017" cy="29.8253" r="1.32533" fill="#282828" stroke="#282828"/>
+<circle cx="49.9826" cy="53.3878" r="1.32533" fill="#282828" stroke="#282828"/>
+<circle cx="39.0307" cy="117.773" r="1.32533" fill="#282828" stroke="#282828"/>
+<line x1="181.24" y1="93.8799" x2="64.7512" y2="93.8799" stroke="#282828"/>
+<line x1="236" y1="30.1592" x2="119.511" y2="30.1592" stroke="#282828"/>
+<line x1="39.3646" y1="118.271" x2="39.3646" y2="234.76" stroke="#282828"/>
+<line x1="48.4891" y1="53.7227" x2="-67.9999" y2="53.7226" stroke="#282828"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="150" height="150" fill="white"/>
+</clipPath>
+</defs>
+</svg>
