@@ -43,8 +43,12 @@
             <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
                 <div class="el-c-info-card el-c-info-card--small">
                     <ul class="el-c-info-card__link-list coop-u-list-bare">
+                        {% if page.link-box-text-design %}
                         <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
+                        {% endif %}
+                        {% if page.link-box-text-dev %}
                         <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>

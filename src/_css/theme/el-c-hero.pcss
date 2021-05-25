@@ -19,7 +19,7 @@
 
 .el-c-hero__inner {
     margin-top: var(--spacing-32); 
-    margin-right: var(--spacing-32);
+    margin-right: var(--spacing-16);
 }
 
 @media (--mq-medium) {
@@ -31,7 +31,13 @@
 
 
 .el-c-hero__content { 
-    padding: var(--spacing-32) var(--spacing-32) var(--spacing-32) 0;
+    padding: var(--spacing-32) var(--spacing-16) var(--spacing-32) 0;
+}
+
+@media (--mq-medium) {
+    .el-c-hero__content { 
+        padding: var(--spacing-32) var(--spacing-64) var(--spacing-32) 0;
+    }
 }
 
 
