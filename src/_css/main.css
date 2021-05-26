@@ -173,7 +173,7 @@ li a.inline-nav:hover {
   padding: var(--spacing-32);
 }
 
-hr,
+hr, 
 .coop-t-hr-el {
   display: block; 
   border-style: solid;
