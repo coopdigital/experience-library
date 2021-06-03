@@ -31,9 +31,9 @@
                 {% for item in page.intro-text-lead %}
                 <p class="coop-t-lead-p">{{ item }}</p>
                 {% endfor %}
-                {% if page.intro-text %}
-                <p>{{ page.intro-text }}</p>
-                {% endif %}
+                {% for item in page.intro-text %}
+                <p>{{ item }}</p>
+                {% endfor %}
                 {% if page.intro-text-link %}
                 <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
                 {% endif %}
