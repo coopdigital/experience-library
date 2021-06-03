@@ -1,0 +1,54 @@
+---
+layout: coop-experience
+id: index
+item-url: /community/feedback.html
+title: Feedback
+col-width: 9
+intro-text-lead: Test feedback form
+decorative-image-url: /images/decorative/foundations.svg
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                    <h2>Feedback</h2>
+                    <form action="https://formspree.io/matt.tyas@coop.co.uk" method="POST">
+                        <input type="hidden" name="_next" value="https://pioneer-design-system.herokuapp.com/community/thank-you.html" />
+                        <input type="hidden" name="_subject" value="New feedback for the Experience Library" />
+                        <input type="hidden" name="_cc" value="designsystem@coop.co.uk" />
+                        <input type="hidden" name="_format" value="plain" />
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item">
+                                <div class="coop-u-margin-resp-b-32-16">
+                                    <label for="name" class="label">Name</label>
+                                    <input type="text" id="name" name="Name" class="coop-form__input" />
+                                </div>
+                                <div class="coop-u-margin-resp-b-32-16">
+                                    <label for="email" class="label">Email</label>
+                                    <input type="email" id="email" name="Email" autocomplete="email" class="coop-form__input" />
+                                </div>
+                                <div class="coop-u-margin-resp-b-32-16">
+                                    <label for="which-page" class="label">Which page is this about?</label>
+                                    <input type="text" id="which-page" name="Which page is this about?" class="coop-form__input" />
+                                </div>
+                                <div class="coop-u-margin-resp-b-32-16">
+                                    <label id="feedback-comment" for="id_comments" class="label">What's wrong with the page?</label>
+                                    <textarea cols="40" id="id_comments" name="What's wrong with the page?" rows="5"></textarea>
+                                </div>
+                                <div class="coop-u-margin-resp-b-32-16">
+                                    <button class="coop-btn coop-btn--primary" type="submit">Send feedback</button>
+                                </div>
+                            </div>
+                        </div>  
+                    </form>
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
