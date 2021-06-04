@@ -161,13 +161,33 @@
   margin-left: 6px;
   position: relative;
   float: right;
-  top: 2px;
+  top: 0;
   transition: all 0.3s ease-in-out;
 }
 
 .toggle-link {
   display: block;
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-8) var(--spacing-8) var(--spacing-8);
   font-weight: 500;
+  font-size: 1rem;
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: inherit;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+.toggle-link:active,
+.toggle-link:focus {
+  transition: none;
+  outline: 2px solid var(--color-link--focus);
+  outline-offset: 3px;
 }
 
 .toggle-link.is-open {
