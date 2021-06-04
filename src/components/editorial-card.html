@@ -1,36 +1,32 @@
 ---
 layout: coop-experience
 id: index
-description: An editorial card lets you highlight and link to editorial content on another page. Get more information on how to use editorial cards.
-section: Components
-item-url: /components/editorial-card.html
+item-url: /elements/select-dropdowns.html
+section: Elements
+meta-title:	Editorial card
+meta-description: An editorial card lets you highlight and link to editorial content on another page. Get more information on how to use editorial cards.
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
-col-width: 7
-section-title: Components
-title: Editorial card
-last-reviewed: Last reviewed&#58; 14 April 2021
+col-width: 8
+section-title: Elements
+title: Editorial card 
+last-reviewed: Last reviewed&#58; 4 June 2021
 intro-text-lead: 
-  - An editorial card lets you highlight and link to editorial content on another page. Users can go to the editorial page by tapping or clicking on the card.
+  - An editorial card lets you highlight and link to editorial content on another page. Users can go to the editorial page by tapping or clicking on the card..
 # Image at the top of the hero
 decorative-image-url: /images/decorative/card-editorial-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: false
-link-box-text-design: View editorial cards in Figma
-link-box-link-design: #
-link-box-text-dev: Go to Storybook to learn more about and install editorial cards
-link-box-link-dev: #
-
-# Example (add path to html include or path to image)
-example-html: foundations/foundations-tables/tables.html
-example-image: 
-example-image-alt: 
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
 
 # Changelog
 changelog:
-  - date: 14 April 2021
+  - date: 4 June 2021
     notes: First version of page published
 ---
 <div class="coop-u-flex__main">
@@ -84,7 +80,7 @@ changelog:
             </div>
             <div class="el-c-primary-section"> 
                 <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
                         <p>You can use editorial cards to present links to content about different subjects in a consistent way.</p>
                         <p>An editorial card should give people enough information to make an informed decision about whether to click or tap on the card.</p>
@@ -105,7 +101,7 @@ changelog:
                         </ul>
                         <h3>Image</h3>
                         <p>The image must relate to the content.</p>
-                        <p>It must have an alt tag that describes the image content. For more information, go to the accessibility standard for alternative text.</p>
+                        <p>It must have an alt tag that describes the image content.</p>
                         <p>If you are creating an editorial card in our content management system Contentful, you should upload a 780px (width) × 438 (height) image. Contentful will then generate and add the required image sizes.</p>
                         <p>If you are creating an editorial card using the code rather than in the CMS, you should supply 2 image sizes:</p>
                         <ul>
@@ -115,7 +111,7 @@ changelog:
                         <p>The component contains code that will serve the correct image size depending on the capability of the browser and size of the device.</p>
                         <h3>Link</h3>
                         <p>The whole card should be clickable and link to one destination.</p>
-                        <p>If you need to display text below an image in a column but you do not want it to be clickable, use the grid to lay out the image and text.</p>
+                        <p>If you need to display text below an image in a column but you do not want it to be clickable, use the <a href="/layout/grd.html">grid</a> to lay out the image and text.</p>
                     </div>
                 </div>
             </div>
@@ -141,23 +137,14 @@ changelog:
                         <div class="coop-l-grid">
                             <div class="coop-l-grid__item coop-l-grid__item--large-4">
                                 <article class="coop-c-editorialcard">
-                                    <a
-                                        href="https://www.coop.co.uk"
-                                        class="coop-c-editorialcard__link"
-                                        data-contenttype="Card|Editorial"
-                                        data-contentparent=""
-                                        data-linktext=""
-                                    >
+                                    <a href="https://www.coop.co.uk" class="coop-c-editorialcard__link">
                                         <div class="coop-c-editorialcard__inner">
                                             <figure class="coop-c-editorialcard__media">
                                                 <picture class="coop-c-editorialcard__image">
-                                                    
                                                     <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
                                                     <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
-                                                    
                                                     <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
                                                     <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
-                                                
                                                     <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
                                                 </picture>
                                             </figure>
@@ -188,7 +175,7 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Using an editorial card or cards on a page</h2>
                         <h3>Using up to 3 cards in a row</h3>
-                        <p>You should not use more than 3 editorial cards in a row. You should lay these out using the grid.</p>
+                        <p>You should not use more than 3 editorial cards in a row. You should lay these out using the <a href="/layout/grd.html">grid</a>.</p>
                         <p>The grid will help you to set the number of columns the editorial card is displayed over for different screen sizes.</p>
                     </div>
                 </div>
@@ -197,8 +184,10 @@ changelog:
                         <h4>Example</h4>
                     </div>
                     <div class="el-c-pullout-content">
-                    <img src=/images/decorative/editorial-card-using-multiple-cards.png alt="Editorial cards used in a row of 3" class="coop-u-margin-b-32">
-                    <p class="coop-t-caption">3 editorial cards used to highlight content from Co-op Food.</p>
+                        <figure class="el-c-pullout__figure">
+                            <img src=/images/decorative/editorial-card-using-multiple-cards.png alt="Editorial cards used in a row of 3">
+                            <figcaption class="coop-t-caption">3 editorial cards used to highlight content from Co-op Food.</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <div class="coop-l-grid">
