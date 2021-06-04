@@ -10,7 +10,7 @@
 @import "@coopdigital/foundations-forms";
 @import "@coopdigital/foundations-tables";
   
-/* Components */    
+/* Components */     
 @import '@coopdigital/component-skipnav';
 @import '@coopdigital/component-card--product';
 @import '@coopdigital/component-notification'; 
