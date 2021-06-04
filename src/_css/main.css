@@ -9,7 +9,7 @@
 @import "@coopdigital/foundations-buttons";
 @import "@coopdigital/foundations-forms";
 @import "@coopdigital/foundations-tables";
-  
+     
 /* Components */     
 @import '@coopdigital/component-skipnav';
 @import '@coopdigital/component-card--product';
@@ -27,7 +27,7 @@
                                                
 /* Experience Library theme */ 
 @import 'theme/global.pcss';  
-@import 'theme/layout.pcss'; 
+@import 'theme/layout.pcss';  
 @import 'theme/el-c-mobile-header.pcss'; 
 @import 'theme/side-bar.pcss'; 
 @import 'theme/skip-nav.pcss'; 
