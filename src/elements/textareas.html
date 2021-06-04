@@ -1,0 +1,125 @@
+---
+layout: coop-experience
+id: index
+item-url: /elements/textareas.html
+section: Elements
+meta-title:	Textareas
+meta-description: Find out how to use textareas when designing online content for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Elements
+title: Textareas
+last-reviewed: Last reviewed&#58; 4 June 2021
+intro-text-lead: 
+  - Use textareas to let people enter longer responses.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
+# Changelog
+changelog:
+  - date: 4 June 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Guidelines</h2>
+                        <p>Use large textareas with caution. Some people find them intimidating or difficult to use.</p>
+                        <p>Provide a textarea that is appropriate for the amount of information someone needs to enter. Do not make it too large or too small.</p>
+                        <p>Do testing and research of your textareas using mobile devices. Entering information using touch devices can be time-consuming.</p>
+                        <p>All attributes of the textareas are designed using values from the foundations. Do not change the styling of the textareas or the associated styles.</p>
+                        <p><a href="/foundations/">Go to the foundations</a>.</p>
+                        <h3>Textarea field</h3>
+                        <p>Do not change the styling of the textarea.</p>
+                        <p>We’ve designed the textareas using values from the foundations. By default, the form elements have no margin on the bottom.</p>
+                        <p><a href="/foundations/">Go to the foundations</a>.</p>
+                        <h3>Labels</h3>
+                        <p>Textareas must have a label that tells people what information to enter. The label must be short and make it clear what information you’re asking for.</p>
+                        <h3>Hint text</h3>
+                        <p>You can add optional hint text to help people understand the format of the information they need to enter. For example, you may wish to include a character limit.</p>
+                        <h3>Placeholder text</h3>
+                        <p>Placeholder text is text inside a textarea that disappears when someone selects that textarea.</p>
+                        <p>Only use placeholder text if it is not essential to the person’s understanding of the information they need to enter.</p>
+                        <p>Do not use placeholder text in place of labels.</p>
+                        <h3>Error messages</h3>
+                        <p>Use error messages with the validation component.</p>
+                        <p>Give error messages after the user submits the form. Do not give them as someone is entering information into each textarea. This can cause stress and frustration.</p>
+                        <p>Error messages should appear above the relevant textarea. This means it is read out by assistive technology in an order that makes sense.</p>
+                        <h3>Focus ring</h3>
+                        <p>The focus ring appears as a purple outline around any object, including textareas, when someone selects it.</p>
+                        <p>Do not remove the focus ring. People who navigate with a keyboard cannot know where they are on the screen without it. The focus ring lets them know which textarea they have selected.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="el-c-pullout">
+                    <div class="el-c-pullout-header">
+                        <h3>Examples</h3> 
+                    </div>
+                    <div class="el-c-pullout-content">
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-6">
+                                <form class="coop-form" novalidate>
+                                    <div class="coop-form__row">
+                                        <label for="feedback-1" class="coop-form__label">Tell us what you liked or what we can improve</label>
+                                        <p id="feedback-1-error" class="coop-form__error" hidden></p>
+                                        <textarea id="feedback-1" cols="30" rows="4" class="coop-form__field coop-form__textarea"></textarea>
+                                    </div>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Textarea.</p>
+                                <form class="coop-form" novalidate>                                 
+                                    <div class="coop-form__row">
+                                        <label for="feedback-2" class="coop-form__label">Tell us what you liked or what we can improve</label>
+                                        <p id="feedback-2-hint" class="coop-form__hint">This is an example hint</p>
+                                        <p id="feedback-2-error" class="coop-form__error" hidden></p>
+                                        <textarea id="feedback-2" cols="30" rows="4" class="coop-form__field coop-form__textarea" aria-describedby="feedback-2-hint"></textarea>
+                                    </div>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Textarea with hint text.</p>
+                                <form class="coop-form" novalidate>                                 
+                                    <div class="coop-form__row">
+                                        <label for="feedback-3" class="coop-form__label">Tell us what you liked or what we can improve</label>
+                                        <p id="feedback-3-error" class="coop-form__error">Enter your feedback</p>
+                                        <textarea id="feedback-3" cols="30" rows="4" class="coop-form__field coop-form__textarea coop-form__invalid" aria-describedby="feedback-3-error"></textarea>
+                                    </div>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Textarea with error message.</p>
+                                <form class="coop-form" novalidate>
+                                    <div class="coop-form__row">
+                                        <label for="feedback-4" class="coop-form__label">Tell us what you liked or what we can improve</label>
+                                        <p id="feedback-4-hint" class="coop-form__hint">This is an example hint</p>
+                                        <p id="feedback-4-error" class="coop-form__error">Enter your feedback</p>
+                                        <textarea id="feedback-4" cols="30" rows="4" class="coop-form__field coop-form__textarea coop-form__invalid" aria-describedby="feedback-4-hint feedback-4-error"></textarea>
+                                    </div>
+                                </form>
+                                <p class="coop-t-caption">Textarea with hint text and error message</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
