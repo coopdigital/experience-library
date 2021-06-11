@@ -1,0 +1,81 @@
+---
+layout: coop-experience
+id: SEO
+item-url: /search-engine-optimisation/
+section: SEO
+meta-title:	Search engine optimisation (SEO)
+meta-description: Guidance, tools and resources on search engine optimisation. Get started with SEO at Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: SEO
+title: Search engine optimisation (SEO)
+last-reviewed: Last reviewed&#58; 11 June 2021
+intro-text-lead: 
+  - Search engine optimisation (SEO) is the process of making sure your website appears in search engine results when people search using certain words or phrases.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
+# Signposts
+signpost:
+  - link: #
+    text: About SEO and search
+    image: /images/decorative/placeholder-image.svg 
+  - link: #
+    text: Using keywords for SEO
+    image: /images/decorative/placeholder-image.svg
+  - link: #
+    text: SEO for meta titles, meta descriptions and headings
+    image: /images/decorative/placeholder-image.svg
+  - link: #
+    text: SEO content checklist
+    image: /images/decorative/placeholder-image.svg
+  - link: #
+    text: SEO for images and PDFs
+    image: /images/decorative/placeholder-image.svg
+  - link: #
+    text: SEO for links
+    image: /images/decorative/placeholder-image.svg
+  
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <p>Applying SEO best practice to your work:</p>
+                        <ul>
+                            <li>helps people find the content they need</li>
+                            <li>makes sure that the people who arrive at your site through search see relevant content</li>
+                        </ul>
+                        <p>It involves making it as simple as possible for a search engine to establish what each of your webpages is about.</p>
+                        <p>The more relevant the search engine finds the content on your webpage to be, the higher up it will appear on the search engine results page.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <ul class="coop-l-grid coop-u-list-bare">
+                    {% for signpost in page.signpost %}
+                    <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                        {% include signpost.html %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>

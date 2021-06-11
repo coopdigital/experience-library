@@ -1,36 +1,32 @@
 ---
 layout: coop-experience
 id: index
-item-url: /elements/links.html
+item-url: /elements/tables.html
 section: Elements
-description: 
+meta-title:	Tables
+meta-description: Find out how to use tables when designing online content for Co-op.
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
-col-width: 7
+col-width: 8
 section-title: Elements
-title: Links
-last-reviewed: Last reviewed&#58; 20 April 2021
+title: Tables
+last-reviewed: Last reviewed&#58; 11 June 2021
 intro-text-lead: 
-  - A link (short for hyperlink) is an HTML object that allows the user to go to a new location when they click or tap it. It should be descriptive of the place it’s taking the user.
+  - Tables can help people compare and understand data.
 # Image at the top of the hero
 decorative-image-url: /images/decorative/borders-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
-link-box: true
-link-box-text-design: View links in Figma
+link-box: false
+link-box-text-design: View the logo in Figma
 link-box-link-design: /about-this-prototype/
-link-box-text-dev: Go to Storybook to learn more about and install links
+link-box-text-dev: Go to Storybook to learn more about and install the logo
 link-box-link-dev: /about-this-prototype/
-
-# Example (add path to html file or image)
-example-html: foundations/foundations-tables/tables.html
-example-image: 
-example-image-alt: 
 
 # Changelog
 changelog:
-  - date: 14 April 2021
+  - date: 11 June 2021
     notes: First version of page published
 ---
 <div class="coop-u-flex__main">
@@ -42,46 +38,181 @@ changelog:
         <section class="coop-l-page">
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2>Guidance</h2>
-                        <p>A link should always be displayed as in the example here unless it’s used on a background colour, in which case it can be black or white.</p>
-                        <p>In general, a link should be underlined. The underline should be removed on hover.</p>
-                        <p>You do not need to underline a link if:</p>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Guidelines</h2>
+                        <p>You should aim to have more rows than columns in your table.</p>
+                        <p>This is because:</p>
                         <ul>
-                            <li>it’s presented with another visual cue that indicates that it’s a link, for example an arrow icon</li>
-                            <li>if it’s in context, for example within a header or footer</li>
+                            <li>wide tables can be difficult for people to read and understand</li>
+                            <li>the fewer columns your table has, the more likely it is that the table will fit onto the screen of a smaller device</li>
                         </ul>
-                        <p>Links should:</p>
+                        <p>If your table needs to be wider than the smallest device that is supported:</p>
                         <ul>
-                            <li>be checked for correct colour contrast</li>
-                            <li>use the hand/pointer to indicate that the link is clickable</li>
-                            <li>always have the purple focus ring as this is essential for keyboard users</li>
+                            <li>allow the user the scroll the table left and right</li>
+                            <li>provide cues that there is more content that people can scroll to, for example the table could be formatted so the table looks cut off on the screen</li>
+                            <li>research the implementation with real people to make sure it’s as accessible as possible</li>
                         </ul>
-                        <p><a href="/foundations/colours.html">Go to the colours we use for links and associated states.</a></p>
-                        <h2>Accessibility</h2>
-                        <p>Link text can be read out of context and should always tell the user where it’s taking them — never use ‘click here’.</p>
-                        <p>Find out <a href="#">how to write link content.</a></p>
-                        <p>Never remove the purple focus ring for any reason. Keyboard users need the focus ring as it is the only way they can navigate the page.</p>
-                        <a href="#">For more information see our general guide on accessibility</a>
+                        <p>You should use tables to present data only.</p>
+                        <p>You should not use images in tables.</p>
+                        <p>The heading for a table is called a caption. Your caption should be clear and descriptive of what users will find in the table.</p>
+                    </div>
                 </div>
             </div>
             <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <div class="el-c-pullout">
-                            <div class="el-c-pullout-header">
-                                <h2>Examples</h2>
-                            </div>
-                            <div class="el-c-pullout-content">
-                                <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                                    <p><a class="coop-t-link" href="#">Start making your will</a></p>
-                                    <h3 class="coop-t-font-size-22">Links with icons</h3>
-                                    <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-pink-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>
+                <div class="el-c-pullout">
+                    <div class="el-c-pullout-header">
+                        <h3>Examples</h3> 
+                    </div>
+                    <div class="el-c-pullout-content">
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                <div class="coop-table-wrapper">
+                                    <table class="coop-table">
+                                        <caption>
+                                            This table compares our Classic and Select Plus pet insurance
+                                        </caption>
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Compare Pet Insurance</th>
+                                            <th scope="col">Classic</th>
+                                            <th scope="col">Select Plus</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Vet fees cover</th>
+                                            <td>£2000</td>
+                                            <td>£5000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Extra treatments</th>
+                                            <td>Not included</td>
+                                            <td>£750</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">A basic table comparing pet insurance products.</p>
+                                <div class="coop-table-wrapper">
+                                    <table class="coop-table">
+                                        <caption class="coop-table__caption">
+                                        This table shows compares points earnings in 2018 and 2019
+                                        </caption>
+                                        <thead>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__header" scope="col">Partner</th>
+                                            <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2018</th>
+                                            <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2019</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">Co-op Food</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric">709.09</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric">654.45</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">Co-op Insurance</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric">49.99</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric">52.35</td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__footer" scope="row">Points total</th>
+                                            <td class="coop-table__footer coop-table__footer--numeric">759.08</td>
+                                            <td class="coop-table__footer coop-table__footer--numeric">706.80</td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div> 
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">A table with a header and a footer.</p>
+                                <div class="coop-table-wrapper">
+                                    <table class="coop-table">
+                                        <caption class="coop-table__caption">
+                                        This table lists the 10 most recent times that you’ve earned Co‑op rewards
+                                        </caption>
+                                        <thead>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__header coop-t-nowrap" scope="col">Date and time</th>
+                                            <th class="coop-table__header coop-table__footer--numeric coop-t-nowrap" scope="col" align="right" width="15%">For you</th>
+                                            <th class="coop-table__header coop-table__footer--numeric coop-t-nowrap" scope="col" align="right" width="25%">Dividend points</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">8 February 2021, 9:00pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap"></td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">3.75</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">7 February 2021, 7:28pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap"></td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">12.10</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">7 February 2021, 7:28pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">-£0.09</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap"></td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">1 February 2021, 1:40pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">£0.05</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">8.50</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">3 January 2021, 4:45pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">£0.04</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">12.65</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">3 January 2021, 4:45pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">-£0.29</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap"></td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">27 January 2021, 9:10pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">£0.29</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">45.28</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">27 January 2021, 9:10pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">-£0.37</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap"></td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">24 January 2021, 2:50pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">£0.12</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">12.70</td>
+                                        </tr>
+                                        <tr class="coop-table__row">
+                                            <th class="coop-table__cell" scope="row">23 January 2021, 5:13pm</th>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">£0.05</td>
+                                            <td class="coop-table__cell coop-table__cell--numeric coop-t-nowrap">2.98</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="coop-t-caption">A complex table with left and right scroll on smaller devices.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="el-c-primary-section">
+                <h2>Table markup for accessibility</h2>
+                <p>Tables must be made accessible by using appropriate markup.</p>
+                <h3>Captions</h3>
+                <p>A caption is the heading for a table. It appears above the table as a heading.</p>
+                <p>Most screen readers announce the content of captions.</p>
+                <h3>Headers and footers</h3>
+                <p>Both columns and rows of a table can have headings these indicate the groups of data within the table.</p>
+                <p>If there are a lot of rows in your table, you can use table footers which appear as headers but at the bottom of the table to help people remember the data that the table contains if they have scrolled down the page a long way.</p>
+                <h3>Row headings</h3>
+                <p>Headings can be used to indicate grouped data along a row.</p>
+                <h3>Top left cell</h3>
+                <p>The top-left cell of a table is often blank as there is no overarching header for the row headings and the content of the table has been described by the caption.</p>
+                <p>This cell can be left blank.</p>
             </div>
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
