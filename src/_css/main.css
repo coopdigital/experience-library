@@ -40,7 +40,8 @@
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/el-c-colour-swatch.pcss';
-@import 'theme/notification.pcss'; 
+@import 'theme/notification.pcss';
+
      
 /* Utility overrides */
 @import "@coopdigital/foundations-layout";
