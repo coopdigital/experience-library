@@ -4,7 +4,7 @@ id: index
 item-url: /elements/select-dropdowns.html
 section: Elements
 meta-title:	Editorial card
-meta-description: An editorial card lets you highlight and link to editorial content on another page. Get more information on how to use editorial cards.
+meta-description: An editorial card lets you highlight and link to more in-depth content on another page. Get more information on how to use editorial cards.
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -13,7 +13,7 @@ section-title: Elements
 title: Editorial card 
 last-reviewed: Last reviewed&#58; 4 June 2021
 intro-text-lead: 
-  - An editorial card lets you highlight and link to editorial content on another page. Users can go to the editorial page by tapping or clicking on the card..
+  - An editorial card lets you highlight and link to more in-depth content on another page.
 # Image at the top of the hero
 decorative-image-url: /images/decorative/card-editorial-hero.svg
 
@@ -82,10 +82,8 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>You can use editorial cards to present links to content about different subjects in a consistent way.</p>
-                        <p>An editorial card should give people enough information to make an informed decision about whether to click or tap on the card.</p>
-                        <p>You should make the whole card active to create a large clickable area.</p>
-                        <p>An editorial card should only link to one other destination. Do not use buttons or links to any other destinations within an editorial card.</p>
+                        <p>An editorial card should give people enough information to make an informed decision about whether or not to select it.</p>
+                        <p>The whole card should link to one destination. Do not use buttons or links to any other destinations within an editorial card.</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +92,7 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Required elements</h2>
                         <h3>Title</h3>
-                        <p>The short title should:</p>
+                        <p>The title should:</p>
                         <ul>
                             <li>be no more than 90 characters in length</li>
                             <li>make it clear what the user will find on the page that the card links to</li> 
@@ -102,16 +100,8 @@ changelog:
                         <h3>Image</h3>
                         <p>The image must relate to the content.</p>
                         <p>It must have an alt tag that describes the image content.</p>
-                        <p>If you are creating an editorial card in our content management system Contentful, you should upload a 780px (width) × 438 (height) image. Contentful will then generate and add the required image sizes.</p>
-                        <p>If you are creating an editorial card using the code rather than in the CMS, you should supply 2 image sizes:</p>
-                        <ul>
-                            <li>780px (width) × 438px (height)</li>
-                            <li>400px (width) × 225px (height)</li> 
-                        </ul>
-                        <p>The component contains code that will serve the correct image size depending on the capability of the browser and size of the device.</p>
-                        <h3>Link</h3>
-                        <p>The whole card should be clickable and link to one destination.</p>
-                        <p>If you need to display text below an image in a column but you do not want it to be clickable, use the <a href="/layout/grd.html">grid</a> to lay out the image and text.</p>
+                        <p>If you are creating an editorial card in our content management system Contentful, you should upload a 780px (width) × 438px (height) image. Contentful will then generate and add the required image sizes.</p>
+                        <p>If you are creating an editorial card using the code, consider image quality across both retina and non-retina devices.</p>
                     </div>
                 </div>
             </div>
@@ -119,14 +109,14 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Optional elements</h2>
-                        <h3>Paragraph</h3>
-                        <p>If you need to include supporting information in your editorial card, you can use a paragraph.</p>
-                        <p>Paragraphs should be no more than 170 characters in length.</p>
-                        <p>The paragraph sits below the title.</p>
                         <h3>Label</h3>
                         <p>You can add a label to show a category or tag associated with the content.</p>
                         <p>This could help people to identify content that interests them.</p>
-                        <p>The label sits above the title.</p>        
+                        <p>The label sits above the title.</p>
+                        <h3>Paragraph</h3>
+                        <p>If you need to include supporting information in your editorial card, you can use a paragraph.</p>
+                        <p>Paragraphs should be no more than 170 characters in length.</p>
+                        <p>The paragraph sits below the title.</p>    
                     </div>
                 </div>
                 <div class="el-c-pullout">
@@ -166,17 +156,17 @@ changelog:
                                 </article>
                             </div>
                         </div>
-                        <p class="coop-t-caption">An editorial card with a paragraph and a label displaying the ‘Fairtrade’ category.</p>
+                        <p class="coop-t-caption">An editorial card with a ‘Fairtrade’ label and a paragraph.</p>
                     </div>
                 </div>
             </div>
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Using an editorial card or cards on a page</h2>
+                        <h2>Using an editorial card, or cards, on a page</h2>
                         <h3>Using up to 3 cards in a row</h3>
-                        <p>You should not use more than 3 editorial cards in a row. You should lay these out using the <a href="/layout/grd.html">grid</a>.</p>
-                        <p>The grid will help you to set the number of columns the editorial card is displayed over for different screen sizes.</p>
+                        <p>Do not use more than 3 editorial cards in a row. Lay these out using the <a href="/layout/grid.html">grid</a>.</p>
+                        <p>Use the grid to help you to set the number of columns for different screen sizes.</p>
                     </div>
                 </div>
                 <div class="el-c-pullout el-c-pullout--nested">
@@ -186,15 +176,15 @@ changelog:
                     <div class="el-c-pullout-content">
                         <figure class="el-c-pullout__figure">
                             <img src=/images/decorative/editorial-card-using-multiple-cards.png alt="Editorial cards used in a row of 3">
-                            <figcaption class="coop-t-caption">3 editorial cards used to highlight content from Co-op Food.</figcaption>
+                            <figcaption class="coop-t-caption">3 editorial cards in a row linking to content from Co-op Food.</figcaption>
                         </figure>
                     </div>
                 </div>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h3>Using one card in a row</h3>
-                        <p>Editorial cards will adapt to fill the available space.</p>
-                        <p>If you place one card in a row, it will change to a horizontal format and fill the whole row.</p>
+                        <p>You can adapt the editorial card so that it fills the whole row horizontally.</p>
+                        <p>The CSS class that supports the horizontal format already exists. If you’re unsure, ask the engineers on your team to talk you through it.</p>
                     </div>
                 </div>
                 <div class="el-c-pullout">
@@ -230,7 +220,7 @@ changelog:
                                 </div>
                             </a>
                         </article>
-                        <p class="coop-t-caption">A standalone editorial card that has adapted to fill the whole row.</p>
+                        <p class="coop-t-caption">An editorial card that has been adapted to fill the whole row.</p>
                     </div>
                 </div>
             </div>
