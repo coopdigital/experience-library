@@ -1,5 +1,13 @@
-<svg width="354" height="160" viewBox="0 0 354 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="1" y1="34" x2="350" y2="34" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 20"/>
-<line x1="79" y1="-5" x2="79" y2="193" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 20"/>
-<circle cx="220" cy="175" r="139" fill="white" stroke="#282828" stroke-width="2"/>
+<svg width="1119" height="160" viewBox="0 0 1119 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="1119" height="160" fill="#F5F5F0"/>
+<line x1="605" y1="29" x2="1174" y2="29" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round" stroke-dasharray="30 30"/>
+<line x1="740" y1="-45" x2="740" y2="314" stroke="#FF6A6D" stroke-width="2" stroke-linecap="round" stroke-dasharray="30 30"/>
+<circle cx="952.5" cy="241.5" r="210.5" fill="white" stroke="#282828" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1119" height="160" fill="white"/>
+</clipPath>
+</defs>
 </svg>

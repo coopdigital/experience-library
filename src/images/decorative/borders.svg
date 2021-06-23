@@ -5,7 +5,7 @@
 <rect x="184.333" y="87" width="278" height="278" rx="19" transform="rotate(90 184.333 87)" fill="#F5F5F0" stroke="#282828" stroke-width="2"/>
 <rect x="462.333" y="87" width="278" height="278" rx="19" transform="rotate(90 462.333 87)" fill="#F5F5F0" stroke="#282828" stroke-width="2"/>
 <rect x="-93.6665" y="-191" width="278" height="278" rx="19" fill="white" stroke="#282828" stroke-width="2"/>
-<circle cx="112.333" cy="159" r="67" fill="white" stroke="#519AF5" stroke-width="6"/>
+<circle cx="112.333" cy="159" r="67" fill="white" stroke="#FF6A6D" stroke-width="6"/>
 <mask id="path-7-inside-1" fill="white">
 <path d="M-94.6665 69C-94.6665 80.0457 -85.6667 89.1468 -74.7335 87.5743C-44.9724 83.2937 -17.1824 69.5058 4.32843 47.9949C30.5835 21.7399 45.3335 -13.8697 45.3335 -51C45.3335 -88.1303 30.5835 -123.74 4.32846 -149.995C-17.1824 -171.506 -44.9724 -185.294 -74.7335 -189.574C-85.6666 -191.147 -94.6665 -182.046 -94.6665 -171L-94.6665 -51L-94.6665 69Z"/>
 </mask>
