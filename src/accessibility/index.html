@@ -1,0 +1,116 @@
+---
+layout: coop-experience
+id: accessibility
+item-url: /accessibility/
+section: Accessibility
+meta-title:	Accessibility
+meta-description: Guidance, tools and resources on digital accessibility. Get started with accessibility at Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: 
+title: Accessibility
+last-reviewed: Last reviewed&#58; 24 June 2021
+intro-text-lead:  
+  - Make it work for everybody
+# Image at the top of the hero
+decorative-image-url: /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
+# Signposts
+signpost:
+  - link: /accessibility/policy-and-standards.html
+    text: Policy and standards
+    image: /images/decorative/placeholder-image.svg 
+  - link: /accessibility/business-case-for-accessibility.html
+    text: Business case for accessibility
+    image: /images/decorative/placeholder-image.svg
+  - link: /accessibility/accessibility-awareness-training.html
+    text: Accessibility awareness training
+    image: /images/decorative/placeholder-image.svg
+  - link: /accessibility/communities.html
+    text: Communities
+    image: /images/decorative/placeholder-image.svg
+
+signpost2:
+    - link: #
+      text: Build accessible websites
+      image: /images/decorative/placeholder-image.svg 
+    - link: #
+      text: Write accessible content
+      image: /images/decorative/placeholder-image.svg
+    - link: #
+      text: Find out if something is accessible
+      image: /images/decorative/placeholder-image.svg
+    - link: #
+      text: Research with people with access needs
+      image: /images/decorative/placeholder-image.svg
+    - link: #
+      text: Tools and resources
+      image: /images/decorative/placeholder-image.svg
+  
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                        <blockquote>
+                            <p>“Having accessible services should not be a question for Co-op, it’s what we should and must do.”</p>
+                            <cite>Adam Warburton, Chief Product Officer, Co-op.</cite>
+                        </blockquote>
+                        <p>If we create products, services or communications that people cannot use or understand, we stop them choosing Co-op.</p>
+                        <p>This can not only cause stress, anxiety and frustration for people, but it can alienate them.</p>
+                        <p>Accessibility means removing these barriers, or not creating barriers in the first place.</p>            
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid coop-u-margin-resp-b-32-16">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                        <h2>Get started with accessibility</h2>
+                        <p>There’s a lot of information available about accessibility and it can be hard to know where to start. These resources give some context on accessibility and Co-op's approach.</p>
+                        <p>If you're looking for a general introduction to accessibility you could:</p>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=pHUk54NU5gc">watch this video from Hassell Inclusion</a></li>
+                            <li><a href="https://abookapart.com/products/accessibility-for-everyone">read the book ‘Accessibility for everyone’ by Laura Kalbag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="coop-l-grid coop-u-list-bare">
+                    {% for signpost in page.signpost %}
+                    <li class="coop-l-grid__item coop-l-grid__item--large-3 coop-u-flex">
+                        {% include signpost.html %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="coop-l-grid coop-u-margin-resp-b-32-16">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                        <h2>Doing accessibility</h2>
+                        <p>Practical guidance about how you can build, write and test to create accessible products and services.</p>
+                    </div>
+                </div>
+                <ul class="coop-l-grid coop-u-list-bare">
+                    {% for signpost in page.signpost2 %}
+                    <li class="coop-l-grid__item coop-l-grid__item--large-3 coop-u-flex">
+                        {% include signpost.html %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
