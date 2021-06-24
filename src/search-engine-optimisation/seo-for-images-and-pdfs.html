@@ -1,0 +1,91 @@
+---
+layout: coop-experience
+id: SEO
+description: You should apply search engine optimisation best practice whenever you’re creating online content. Find out more about why SEO is important.
+section: SEO
+meta-title:	About SEO and search - Co-op Experience Library
+item-url: /search-engine-optimisation/seo-for-images-and-pdfs.html
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: 
+title: SEO for images and PDFs
+last-reviewed: Last reviewed&#58; 14 April 2021
+intro-text-lead: 
+  - You should optimise images and PDFs for search. This can also help to improve accessibility.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the alert notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Avoid using text on images</h2>
+                        <p>This is because search engines and screen readers cannot read text that’s on an image.</p>
+                        <p>Any text that appears on a webpage should be written in HTML.</p>
+                        <p>Sometimes you might have to use an image that contains text, for example if you’re publishing an infographic.</p>
+                        <p>If you have to use an image that contains text, you should write the text in HTML below the image.</p>
+                        <h2>Use alternative (alt) text on images</h2>
+                        <p>Alt text describes the appearance and function of an image.</p>
+                        <p>Alt text:</p>
+                        <ul>
+                            <li>helps search engines understand what an image is</li>
+                            <li>makes your webpage more accessible for people using screen readers</li>
+                            <li>is displayed on the page if the image can’t be</li>
+                        </ul>
+                        <p>If the image you’re using does not do anything to set context or improve understanding of the page content, you do not need to add alt text.</p>
+                        <p>When writing alt text:</p>
+                        <ul>
+                            <li>use keywords in a natural-sounding way</li>
+                            <li>keep it short and precise – it should be less than 125 characters long</li>
+                            <li>be descriptive</li>
+                            <li>there’s no need to include the words “picture of” or “image of”</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                    <img src=/images/alt-text-example.png alt="jack russell terrier puppy and silver tabby kitten wearing cape illustrations">      
+                                </div>
+                                <p class="coop-t-caption coop-u-margin-t-16">An image of a cat and dog wearing capes taken from the Co-op Pet Insurance website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
