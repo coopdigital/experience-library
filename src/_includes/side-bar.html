@@ -14,7 +14,7 @@
             {% if page.id == 'SEO' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                     <li role="none"><a href="/" role="menuitem">Home</a></li>
-                    <li role="none"> Search engine optimisation</li>
+                    <li role="none"> <a href="/search-engine-optimisation/" role="menuitem">Search engine optimisation</a> </li>
                 </ul>
             {% endif %}
             {% if page.id == 'get-started' %}
@@ -38,13 +38,14 @@
             {% if page.id == 'accessibility' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                     <li role="none"><a href="/" role="menuitem">Home</a></li>
-                    <li role="none"> Accessibility guidelines</li>
+                    <li role="none"><a href="/accessibility/" role="menuitem"> Accessibility</a></li>
                 </ul>
             {% endif %}
         
             <ul class="coop-side-nav coop-u-list-bare">
             {% if page.id == 'index' %}
                 <li class="side-nav__link" role="none"><a href="/about-this-prototype/" role="menuitem" class="{% if page.item-url == '/about-this-prototype/' %}is-active{% endif %}">About this prototype</a></li>
+                <li class="side-nav__link" role="none"><a href="/accessibility/" role="menuitem">Accessibility</a></li>
                 <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/" role="menuitem" class="{% if page.item-url == '/search-engine-optimisation/' %}is-active{% endif %}">Search engine optimisation (SEO)</a></li>
                 <!--<li class="side-nav__link" role="none"><a href="/get-started/" role="menuitem">Get started</a></li>
                 <li class="side-nav__link" role="none"><a href="/design-guidelines/" role="menuitem">Design guidelines</a></li>
@@ -146,13 +147,13 @@
                 {% endif %}
 
                 {% if page.id == 'SEO' %}
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/about-seo.html" role="menuitem">About SEO and search</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/using-keywords-for-seo.html" role="menuitem">Using keywords for SEO</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/how-to-do-keyword-research.html" role="menuitem">How to do keyword research</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/meta-titles-and-descriptions.html" role="menuitem">SEO for meta titles, meta descriptions and headings</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-content-checklist.html" role="menuitem">SEO content checklist</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-for-images-and-pdfs.html" role="menuitem">SEO for images and PDFs</a></li>
-                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-for-links.html" role="menuitem">SEO for links</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/about-seo.html" role="menuitem" class="{% if page.url == '/search-engine-optimisation/about-seo.html' %}is-active{% endif %}">About SEO and search</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/using-keywords-for-seo.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/using-keywords-for-seo.html' %}is-active{% endif %}">Using keywords for SEO</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/how-to-do-keyword-research.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/how-to-do-keyword-research.html' %}is-active{% endif %}">How to do keyword research</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/meta-titles-and-descriptions.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/meta-titles-and-descriptions.html' %}is-active{% endif %}">SEO for meta titles, meta descriptions and headings</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-content-checklist.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-content-checklist.html' %}is-active{% endif %}">SEO content checklist</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-for-images-and-pdfs.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-images-and-pdfs.html' %}is-active{% endif %}">SEO for images and PDFs</a></li>
+                    <li class="side-nav__link" role="none"><a href="/search-engine-optimisation/seo-for-links.html" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-links.html' %}is-active{% endif %}">SEO for links</a></li>
                 {% endif %}
 
                 {% if page.id == 'get-started' %}
@@ -276,9 +277,8 @@
                 {% endif %}
 
                 {% if page.id == 'accessibility' %}
-                    <li class="side-nav__link" role="none"><a href="#" role="menuitem">Accessibility policy</a></li>
                     <li class="side-nav__link side-nav__link-toggle">
-                        <button aria-expanded="false" class="toggle-link" id="accessibility-standards">Standards
+                        <button aria-expanded="false" class="toggle-link {% if page.section == 'get-started-with-accessibility' %}is-open{% endif %}" id="components-list" id="get-started-with-accessibility">Get started
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -286,15 +286,14 @@
                             </svg>
                         </button>
                         <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="accessibility-standards">
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Using these standards</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Make it understandable</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Make it readable and usable</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Put the user in control</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Forms</a></li>
+                            <li class="nested-link" role="none"><a href="/accessibility/policy-and-standards.html" role="menuitem" class="{% if page.url == '/accessibility/policy-and-standards.html' %}is-active{% endif %}">Policy and standards</a></li>
+                            <li class="nested-link" role="none"><a href="/accessibility/business-case-for-accessibility.html" role="menuitem" class="{% if page.url == '/accessibility/business-case-for-accessibility.html' %}is-active{% endif %}">Business case for accessibility</a></li>
+                            <li class="nested-link" role="none"><a href="/accessibility/accessibility-awareness-training.html" role="menuitem" class="{% if page.url == '/accessibility/accessibility-awareness-training.html' %}is-active{% endif %}">Accessibility awareness training</a></li>
+                            <li class="nested-link" role="none"><a href="/accessibility/communities.html" role="menuitem" class="{% if page.url == '/accessibility/communities.html' %}is-active{% endif %}">Communities</a></li>
                         </ul>
                     </li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link" id="testing-and-research">Testing and research
+                        <button aria-expanded="false" class="toggle-link" id="doing-accessibility">Doing accessibility
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -302,9 +301,10 @@
                             </svg>
                         </button>
                         <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="testing-and-research">
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Accessibility testing</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Framework</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Researching with users</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Build accessible websites</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Write accessible content</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Find out if something is accessible</a></li>
+                            <li class="nested-link" role="none"><a href="#" role="menuitem">Research with people with access needs</a></li>
                         </ul>
                     </li>
                     <li class="side-nav__link" role="none"><a href="#" role="menuitem">Tools and resources</a></li>
