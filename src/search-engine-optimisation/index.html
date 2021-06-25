@@ -31,10 +31,7 @@ signpost:
     image: 
   - link: /search-engine-optimisation/using-keywords-for-seo.html
     text: Using keywords for SEO
-    image: 
-  - link: /search-engine-optimisation/keyword-research.html
-    text: How to do keyword research
-    image: 
+    image:  
   - link: /search-engine-optimisation/meta-titles-and-descriptions.html
     text: Meta titles, meta descriptions and headings
     image: 
@@ -44,9 +41,7 @@ signpost:
   - link: /search-engine-optimisation/seo-for-images-and-pdfs.html
     text: SEO for images and PDFs
     image: 
-  - link: #
-    text: SEO for links
-    image: 
+   
   
 ---
 <div class="coop-u-flex__main">
@@ -72,7 +67,7 @@ signpost:
             <div class="el-c-primary-section">
                 <ul class="coop-l-grid coop-u-list-bare">
                     {% for signpost in page.signpost %}
-                    <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                    <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
                         {% include signpost.html %}
                     </li>
                     {% endfor %}
