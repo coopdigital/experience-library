@@ -28,33 +28,33 @@ link-box-link-dev: /about-this-prototype/
 signpost:
   - link: /accessibility/policy-and-standards.html
     text: Policy and standards
-    image: /images/decorative/placeholder-image.svg 
+    image: 
   - link: /accessibility/business-case-for-accessibility.html
     text: Business case for accessibility
-    image: /images/decorative/placeholder-image.svg
+    image: 
   - link: /accessibility/accessibility-awareness-training.html
     text: Accessibility awareness training
-    image: /images/decorative/placeholder-image.svg
+    image: 
   - link: /accessibility/communities.html
     text: Communities
-    image: /images/decorative/placeholder-image.svg
+    image: 
 
 signpost2:
     - link: #
       text: Build accessible websites
-      image: /images/decorative/placeholder-image.svg 
+      image: 
     - link: #
       text: Write accessible content
-      image: /images/decorative/placeholder-image.svg
+      image: 
     - link: #
       text: Find out if something is accessible
-      image: /images/decorative/placeholder-image.svg
+      image: 
     - link: #
       text: Research with people with access needs
-      image: /images/decorative/placeholder-image.svg
+      image: 
     - link: #
       text: Tools and resources
-      image: /images/decorative/placeholder-image.svg
+      image: 
   
 ---
 <div class="coop-u-flex__main">
@@ -79,36 +79,40 @@ signpost2:
             </div>
             <div class="el-c-primary-section">
                 <div class="coop-l-grid coop-u-margin-resp-b-32-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-resp-b-64-32">     
                         <h2>Get started with accessibility</h2>
                         <p>There’s a lot of information available about accessibility and it can be hard to know where to start. These resources give some context on accessibility and Co-op's approach.</p>
                         <p>If you're looking for a general introduction to accessibility you could:</p>
                         <ul>
                             <li><a href="https://www.youtube.com/watch?v=pHUk54NU5gc">watch this video from Hassell Inclusion</a></li>
                             <li><a href="https://abookapart.com/products/accessibility-for-everyone">read the book ‘Accessibility for everyone’ by Laura Kalbag</a></li>
+                        </ul> 
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <ul class="coop-l-grid coop-u-list-bare">
+                            {% for signpost in page.signpost %}
+                            <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                                {% include signpost.html %}
+                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
-                <ul class="coop-l-grid coop-u-list-bare">
-                    {% for signpost in page.signpost %}
-                    <li class="coop-l-grid__item coop-l-grid__item--large-3 coop-u-flex">
-                        {% include signpost.html %}
-                    </li>
-                    {% endfor %}
-                </ul>
                 <div class="coop-l-grid coop-u-margin-resp-b-32-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-resp-b-64-32">     
                         <h2>Doing accessibility</h2>
-                        <p>Practical guidance about how you can build, write and test to create accessible products and services.</p>
+                        <p>Practical guidance about how you can build, write and test to create accessible products and services.</p>     
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <ul class="coop-l-grid coop-u-list-bare">
+                            {% for signpost in page.signpost2 %}
+                            <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                                {% include signpost.html %}
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
-                <ul class="coop-l-grid coop-u-list-bare">
-                    {% for signpost in page.signpost2 %}
-                    <li class="coop-l-grid__item coop-l-grid__item--large-3 coop-u-flex">
-                        {% include signpost.html %}
-                    </li>
-                    {% endfor %}
-                </ul>
             </div>
         </section>
     </main>

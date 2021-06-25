@@ -45,6 +45,12 @@
      
 /* Utility overrides */
 @import "@coopdigital/foundations-layout";
+
+@media (--mq-medium) {
+  .coop-c-signpost {
+    margin-bottom: var(--spacing-32);
+  }
+}
           
 .external-link-container { 
   background-color: var(--color-white); 
