@@ -121,10 +121,7 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="user-interface-colours">User interface colours</h2>
-                        <p>User interface colours are the colours we use for interactive items like links and buttons. They are important for maintaining consistency.</p>
-                        <p>Use the same basic style and colours for links and buttons across all products and services. This helps people to identify them more easily.</p>
-                        <h3>Link colours</h3>
+                        <h2 id="link-colours">Link colours</h2>
                         <p>For most links, use the colours shown here.</p>
                         <p>If you’re using a link on a background colour, then the link text and underline must be black or white. This is to maintain the correct colour contrast.</p>
                         <p>Links inside an area of navigation, like the main header on a website, may also appear in a different colour (normally the same colour as the text). This is because these links are in context to something that a user can recognise as navigation.</p>
@@ -426,12 +423,11 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
                         <h2 id="text-colours">Text colours</h2>
-                        <p>The main text colours are text grey, alternative text grey and white.</p>
-                        <p>Use text grey for content on a page except when:</p>
-                        <ul>
-                            <li>secondary information follows the main text - for example, use alternative text grey for hint text on forms</li>
-                            <li>text is used on a coloured background that needs white or black text to meet minimum colour contrast standards</li>
-                        </ul>
+                        <p>The main text colours are 'text' and 'alternative text'.</p>
+                        <p>Use text as the colour for content on a page except for secondary information. For example, use alternative text for hint text on forms.</p>
+                        <p>Use black or white text on coloured backgrounds where it is needed to meet minimum colour contrast standards.</p>
+
+                        
                     </div>
                 </div>
                 <div class="coop-l-grid">
@@ -442,7 +438,7 @@ changelog:
                                 <h4 class="el-c-colour__content-heading">Text</h4>
                                 <span>#282828</span>
                                 <span>var(--color-text)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
+                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF">Passes WCAG AAA</a></span>
                             </div>
                         </div>
                     </div>
@@ -453,10 +449,32 @@ changelog:
                                 <h4 class="el-c-colour__content-heading">Alternative text</h4>
                                 <span>#595959</span>
                                 <span>var(--color-text-alt)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=595959">Passes WCAG AAA</a></span>
+                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=595959&bcolor=FFFFFF">Passes WCAG AAA</a></span>
                             </div>
                         </div>
                     </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
+                        <div class="el-c-colour">
+                            <div class="el-c-colour__swatch coop-u-black-bg"></div>
+                            <div class="el-c-colour__content">
+                                <h4 class="el-c-colour__content-heading">Black</h4>
+                                <span>#000000</span>
+                                <span>var(--color-black)</span>
+                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFFFFF">Passes WCAG AAA</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
+                        <div class="el-c-colour">
+                            <div class="el-c-colour__swatch coop-u-white-bg"></div>
+                            <div class="el-c-colour__content">
+                                <h4 class="el-c-colour__content-heading">White</h4>
+                                <span>#FFFFFF</span>
+                                <span>var(--color-white)</span>
+                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
             <div class="el-c-primary-section">
@@ -464,6 +482,8 @@ changelog:
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
                         <h2 id="colour-palette">Colour palette</h2>
                         <p>The colour palette helps us give personality to our products, but also serves a functional purpose in the way we design.</p>
+                        <p>Large background areas should be white or use one of the neutral colours from the palette.</p>
+                        <p>Use warm or cool colours to make a product seem more friendly or muted colours to give a more functional feel.</p>
                         <p>Use the colour palette to:</p>
                         <ul>
                             <li>draw users’ focus to particular content areas</li>
