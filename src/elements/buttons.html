@@ -47,8 +47,6 @@ changelog:
                             <li>send a message</li>
                             <li>download an app</li>
                         </ul>
-                        <p>Do not use buttons as navigation. They should only take the user to another page if it is to take an action. For example a button with text ‘Sign up’ might take a user to a sign up form. </p>
-                        <p>To provide navigation to content pages, use a link.</p>
                         <h3>Accessibility</h3>
                         <p>We’ve designed the buttons to include:</p>
                         <ul>
@@ -57,8 +55,8 @@ changelog:
                             <li>a minimum target size of 45px by 45px</li>
                             <li>a focus ring to let keyboard users to know where they are</li>
                         </ul>
-                        <p>Use buttons at the default size provided. When buttons are full-width, users who zoom in might miss the text content of the button.</p>
-                        <p>All attributes of the buttons are designed using values from the foundations. Do not change the styling of the buttons or the associated styles.</p>
+                        <p>The content within the button will determine the width of the button.</p>
+                        <p>All attributes of a button are set to meet accessibility standards. Do not change the styling of the buttons.</p>
                         <p><a href="/foundations/">Go to the foundations</a>.</p>
                         <p><a href="/foundations/colours.html">Go to the design guidelines on colours</a>.</p>
                         <p><a href="https://www.coop.co.uk/accessibility/standards">Go to the accessibility standards</a>.</p>
@@ -67,10 +65,9 @@ changelog:
             </div>
             <div class="el-c-primary-section">
                 <h2 class="coop-u-margin-resp-b-64-32">Button types</h2>
+                <h3>Primary green button</h3>
                 <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-64-32">
-                        <button class="coop-btn coop-btn--primary coop-u-margin-resp-b-32-16">Join Co-op for £1</button>
-                        <h3>Primary green button</h3>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
                         <p>Use this button for the main action on the page.</p>
                         <p>For example, you could use it to give users a way to:</p>
                         <ul>
@@ -79,30 +76,56 @@ changelog:
                             <li>submit a form</li>
                         </ul>
                     </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-64-32">
-                        <button class="coop-btn coop-u-margin-resp-b-32-16">Find this product</button>
-                        <h3>Secondary blue button</h3>
-                        <p>Use this button for less important calls to action on a page.</p>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-64-32">
-                        <button class="coop-btn coop-btn--grey coop-u-margin-resp-b-32-16">Save</button>
-                        <h3>Tertiary grey button</h3>
-                        <p>Use this button for secondary actions on forms such as saving progress.</p>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-64-32">
-                        <div class="coop-u-padding-resp-16-8 coop-u-margin-resp-b-32-16 coop-u-magenta-dark-3-bg">
-                            <button class="coop-btn coop-btn--white">Button</button>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
+                        <div class="coop-u-margin-resp-b-64-32">
+                            <button class="coop-btn coop-btn--primary coop-u-margin-resp-b-32-16">Join Co-op for £1</button>
                         </div>
-                        <h3>White button</h3>
+                    </div>   
+                </div>  
+                <hr class="coop-t-hr-el">
+                <h3>Primary white button</h3>
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
                         <p>You can use this button in place of the primary green button when using a background colour.</p>
                         <p><a href="/foundations/colours.html">Go to the design guidelines on colours</a>.</p>
                     </div>
-                </div> 
+                    <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
+                        <div class="coop-u-padding-resp-16-8 coop-u-margin-resp-b-64-32 coop-u-magenta-dark-3-bg">
+                            <button class="coop-btn coop-btn--white">Button</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="coop-t-hr-el">
+                <h3>Secondary blue button</h3>
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
+                        <p>Use this button for less important calls to action on a page.</p>
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
+                        <div class="coop-u-margin-resp-b-64-32">
+                            <button class="coop-btn coop-u-margin-resp-b-32-16">Find this product</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="coop-t-hr-el">
+                <h3>Secondary grey button</h3>
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
+                        <p>You can use this button in place of the secondary blue button when using a background colour.</p>
+                    </div>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
+                        <div class="coop-u-margin-resp-b-64-32">
+                            <button class="coop-btn coop-btn--grey coop-u-margin-resp-b-32-16">Button</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="coop-t-hr-el">
                 <h3>Small buttons</h3>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
-                        <p>All buttons must meet our accessibility standards on minimum target size (at least 45px x 45px with at least a 45px gap).</p>
-                        <p>As long as they meet this minimum size, buttons can be made smaller where necessary.</p>
+                        <p>You can use a smaller button for your product or service if you need to. </p>
+                        <p>All attributes of the small button are set to meet accessibility standards.</p>
+                        <p>The CSS classes that support our small buttons already exist. If you’re unsure, ask the engineers on your team to talk you through them.</p>
                     </div>
                     <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
                         <div class="coop-u-margin-resp-b-64-32">
@@ -113,11 +136,12 @@ changelog:
                         </div>
                     </div>
                 </div>
+                <hr class="coop-t-hr-el">
                 <h3>Loading buttons</h3>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
                         <p>Use this button when information has been submitted and the page will update.</p>
-                        <p>This gives people an indication that the information is being processed.</p>
+                        <p>The loading button gives people an indication that the information is being processed.</p>
                         <p>The page should then update to show either confirmation or any relevant error messages.</p>
                     </div>
                     <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
@@ -129,6 +153,7 @@ changelog:
                         </div>
                     </div>
                 </div>
+                <hr class="coop-t-hr-el">
                 <h3>Link buttons</h3>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
@@ -141,13 +166,14 @@ changelog:
                         </div>   
                     </div>
                 </div>
+                <hr class="coop-t-hr-el">
                 <h3>App store buttons</h3>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-margin-resp-b-32-16">
-                        <p>Use these buttons to link to specific app pages on the relevant store.</p>
+                        <p>If you're working on a native Apple or Android app, use these buttons to help users find the relevant app and then download it.</p>
                     </div>
                     <div class="coop-l-grid__item coop-l-grid__item--large-5 coop-l-grid__item--large-offset-1 coop-u-margin-resp-b-32-16">
-                        <div class="coop-u-margin-resp-b-64-32">
+                        <div class="coop-u-margin-resp-b-32-16">
                             <a href="https://coop.uk/2mmWKDG" class="coop-btn coop-btn--app coop-btn--app-apple">
                                 <span class="coop-u-visuallyhidden">Download on the App Store</span>
                                 <svg class="coop-btn__graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 60" aria-hidden="true" focusable="false">

@@ -188,12 +188,12 @@ hr,
   border-width: 0 0 1px;
   height: 0;
   color: var(--color-grey-mid);
-  margin-top: var(--spacing-32);
-  margin-bottom: var(--spacing-8);
+  margin-top: 0;
+  margin-bottom: var(--spacing-64);
 
   @media (--mq-medium) {
-    margin-top: var(--spacing-64); 
-    margin-bottom: var(--spacing-8);
+    margin-top: 0; 
+    margin-bottom: var(--spacing-64);
   } 
 }
 
