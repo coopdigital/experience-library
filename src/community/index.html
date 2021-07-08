@@ -1,16 +1,83 @@
 ---
 layout: coop-experience
 id: index
-title: Community
-description: Central place for all community guidelines.
-item-url: /community/index.html
+item-url: /community/
+section: Community
+meta-title:	Add to, or update, the Co-op Experience Library
+meta-description: Find out what the process is to add something to, or update something already in the Co-op Experience Library.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Community
+title: Add to, or update, the Experience Library
+last-reviewed: 
+intro-text-lead:  
+  - We need your help to make sure that everything in the Experience Library is up to date, correct and useful. Because it’s only as good as we make it together.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/accessibility-index-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
 ---
 <div class="coop-u-flex__main">
     <main id="main">
-        <section class="coop-l-full">
-            <div class="coop-l-page">
-                <h1>Community</h1>
-                <p class="coop-t-lead-p">Lead in text.</p>
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h2>Add to the Experience Library</h2>
+                        <p>If you want to add something to the Experience Library, or you think current guidelines need to be completely changed, add your suggestion to the <a href="https://miro.com/app/board/o9J_lc18Sno=/">Component Lounge Miro board</a>.</p>
+                        <h2>Suggest an update to the Experience Library</h2>
+                        <p>If you want to suggest an update to existing guidelines – like making something clearer, changing the examples or correcting inaccuracies – <a href="/community/feedback.html">fill in our feedback form</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h2>How contributing to the Experience Library works</h2>
+                        <p>At the moment, only Co-op colleagues can suggest an addition or update to the Experience Library.</p>
+                        <h3>You can check whether it’s already on our to-do list</h3>
+                        <p>Our to-do list is the first column of our <a href="https://trello.com/b/udqbUcON/design-delivery">design delivery Trello board</a>.</p>
+                        <h4>If it is on our to-do list</h4>
+                        <p>Add any additional evidence, research or examples to the Trello card.</p>
+                        <h4>If it’s not on our to-do list</h4>
+                        <p>If it’s a new addition to the Experience Library, add your suggestion to the <a href="https://miro.com/app/board/o9J_lc18Sno=/">Component Lounge Miro board</a>.</p>
+                        <p>If you’re suggesting an update, fill in our <a href="/community/feedback.html">feedback form</a>.</p>
+                        <h2>If you want to work on an addition or update</h2>
+                        <p>If you want to be involved in adding or updating something in the Experience Library, add:</p>
+                        <ul>
+                            <li>yourself to the relevant ticket in the <a href="https://trello.com/b/udqbUcON/design-delivery">design delivery Trello board</a></li>
+                            <li>your name, on a post-it, to the relevant component card in the <a href="https://miro.com/app/board/o9J_lc18Sno=/">Component Lounge Miro board</a></li>
+                        </ul>
+
+                        <h2>What happens next</h2>
+                        <p>When we’re ready to review your suggestion, we’ll:</p>
+                        <ol>
+                            <li>Arrange an informal chat, along with with anyone who's said they’d be interested in working on the suggestion.</li>
+                            <li>If agreed, prioritise it in our to-do list and involve you as much or as little as you want.</li>
+                            <li>Because of the amount of things already on our to-do list at the moment, our initial chat may take a while to arrange. </li>
+                        </ol>
+                        <h2>Thank you</h2>
+                        <p>The Experience Library exists because of the experience, knowledge and skills of lots of people from around the Co-op. It would not exist without your contribution. </p>
+                        <p>Your contribution will help:</p>
+                        <ul>
+                            <li>our colleagues and communities work more efficiently</li>
+                            <li>our products and services be more inclusive</li>
+                            <li>save Co-op money</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
