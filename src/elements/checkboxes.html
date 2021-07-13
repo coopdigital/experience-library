@@ -13,7 +13,7 @@ section-title: Elements
 title: Checkboxes
 last-reviewed: Last reviewed&#58; 4 June 2021
 intro-text-lead: 
-  - Checkboxes allow people to select multiple options from a list or set a single option to on or off.
+  - Checkboxes allow people to select one or more options from a list, or toggle a single option on or off.
 # Image at the top of the hero
 decorative-image-url: /images/decorative/checkboxes-hero.svg
 
@@ -40,19 +40,15 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>When using checkboxes you should:</p>
+                        <p>When using checkboxes, allow people to select anywhere in the checkbox or label to select that option.</p>
+                        
+                        <p>Display the options from top to bottom, not left to right. This means that people:</p>
                         <ul>
-                            <li>make clear which checkboxes are selected and which are not</li>
-                            <li>allow people to click or tap anywhere in the checkbox or label to select that option</li>
+                            <li>can scan the options</li>
+                            <li>who have zoomed in to the content will not have to scroll side to side to work out which checkbox they need to select</li>
                         </ul>
-                        <p>You should also display the options a person can choose from top to bottom, not left to right. This means that:</p>
-                        <ul>
-                            <li>people can scan the options</li>
-                            <li>people who have zoomed in to the content will not have to scroll side to side to work out which checkbox they need to select</li>
-                        </ul>
-                        <p>Let people tell you that the available options do not apply to them. For example, by providing a ‘None of these’ option. Some people need this to be a clearly stated option, so that they can move on to the next question or task.</p>
-                        <p>All attributes of the checkboxes are designed using values from the foundations. Do not change the styling of the checkboxes or the associated styles.</p>
-                        <p><a href="/foundations/">Go to the foundations</a>.</p>
+                        <p>Consider letting people select a 'None of these' option. Some people might need this so that they can move on to the next question or task.</p>
+                        <p>We've used our <a href="/foundations/index.html">foundations</a> to design checkboxes. For consistency across Co-op products and services, do not change the styling of the checkboxes.</p>
                     </div>
                 </div>
             </div>
@@ -174,11 +170,11 @@ changelog:
                                         <div class="coop-form__choice">
                                             <input type="checkbox" name="checkbox-6" id="checkbox-6-1" value="1" class="coop-form__field coop-form__checkbox" aria-describedby="checkbox-6-hint">
                                             <label for="checkbox-6-1" class="coop-form__label">I agree to the terms and conditions</label>
-                                            <p id="checkbox-6-hint" class="coop-form__hint">Descriptive hint goes here</p>
+                                            <p id="checkbox-6-hint" class="coop-form__hint">Descriptive hint text goes here</p>
                                         </div>
                                     </div>
                                 </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Single checkbox with hint.</p>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Single checkbox with hint text.</p>
                                 <form id="checkboxes-single-error" class="coop-form" novalidate>
                                     <div class="coop-form__row">
                                         <p id="checkbox-7-error" class="coop-form__error">Please accept the terms and conditions</p>
@@ -195,11 +191,11 @@ changelog:
                                         <div class="coop-form__choice">
                                             <input type="checkbox" name="checkbox-8" id="checkbox-8-1" value="1" class="coop-form__field coop-form__checkbox" aria-describedby="checkbox-8-hint checkbox-8-error">
                                             <label for="checkbox-8-1" class="coop-form__label">I agree to the terms and conditions</label>
-                                            <p id="checkbox-8-hint" class="coop-form__hint">Descriptive hint goes here</p>
+                                            <p id="checkbox-8-hint" class="coop-form__hint">Descriptive hint text goes here</p>
                                         </div>
                                     </div>
                                 </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Single checkbox with hint and error message.</p>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Single checkbox with hint text and error message.</p>
                             </div>
                         </div>
                     </div>  
