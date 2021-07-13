@@ -213,3 +213,6 @@ hr,
   font-weight: bold;
 }
  
+.white-text{
+  color: var(--color-white);
+}
