@@ -1,0 +1,122 @@
+ 
+.el-c-contribute-card {
+    margin: 0 0 var(--spacing-32) 0;
+    padding: var(--spacing-24);
+    background: var(--color-text);
+    border-radius: var(--ui-border-radius);
+    box-shadow: var(--ui-shadow);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.el-c-contribute-card__media,
+.el-c-contribute-card__content {
+    width: 100%;
+}
+
+.el-c-contribute-card__image {
+    margin-bottom: -50px;
+    margin-top: 25px;
+    margin-left: 20px;
+    transform: scale(1.2);
+}
+
+.el-c-contribute-card__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-white)
+}
+
+
+@media (--mq-small) {
+    .el-c-contribute-card {
+        padding: var(--spacing-32);
+    }
+}
+
+
+
+@media (--mq-small) {
+    .el-c-contribute-card {
+        flex-direction: row;
+    }
+    .el-c-contribute-card__media,
+    .el-c-contribute-card__content {
+        width: 50%;
+    }
+    .el-c-contribute-card__image {
+        transform: scale(1.5);
+    }
+}
+
+@media (--mq-medium) {
+    .el-c-contribute-card {
+    }
+    .el-c-contribute-card__media,
+    .el-c-contribute-card__content {
+        width: 50%;
+    }
+    
+    .el-c-contribute-card__image {
+    }
+}
+
+@media (--mq-large) {
+    .el-c-contribute-card {
+    }
+    .el-c-contribute-card__media,
+    .el-c-contribute-card__content {
+        width: 50%;
+    }
+    .el-c-contribute-card__image {
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+
+@media (--mq-small) {
+    .el-c-contribute-card__image { 
+        margin-bottom: -140px;
+        margin-top: -35px;
+        margin-left: 95px;
+        transform: scale(.9);
+    }
+}
+
+@media (--mq-medium) {
+    .el-c-contribute-card__image { 
+        margin-bottom: -140px;
+        margin-top: -35px;
+        margin-left: 95px;
+    }
+}
+
+
+
+
+
+
+
+@media (--mq-medium) {
+    .el-c-contribute-card__title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+@media (--mq-large) {
+    .el-c-contribute-card__title {
+        font-size: 2.75rem;
+        line-height: 1.2;
+    }
+}
+
+
+.el-c-contribute-card__media{
+    
+}
