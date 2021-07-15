@@ -34,6 +34,7 @@
 @import 'theme/search.pcss';
 @import 'theme/signpost.pcss'; 
 @import 'theme/el-c-hero.pcss';
+@import 'theme/el-c-hero-dark.pcss';
 @import 'theme/el-c-hero-home.pcss'; 
 @import 'theme/el-c-info-card.pcss'; 
 @import 'theme/el-c-pullout.pcss'; 
@@ -137,7 +138,6 @@ li a.inline-nav:hover {
 .top-task-container li {
   margin-bottom: var(--spacing-8);
 }
-
 
 
 .nested-link {

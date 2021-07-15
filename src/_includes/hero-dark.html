@@ -1,0 +1,74 @@
+{% if page.decorative-image-home %}
+    <div class="el-c-hero__home-montage"> 
+        <div class="el-c-hero__home-montage-inner"> 
+            <img src="/images/decorative/hero/warehouse-touchscreen.jpg" alt="" class="el-c-hero__montage-image" />
+            <img src="/images/decorative/hero/building-layers.svg" alt="" class="el-c-hero__montage-image-surround" />
+            <img src="/images/decorative/hero/star-1.svg" alt="" class="el-c-hero__montage-image-star-1" />
+            <img src="/images/decorative/hero/star-image.svg" alt="" class="el-c-hero__montage-image-star-image" />
+            <img src="/images/decorative/hero/stack.svg" alt="" class="el-c-hero__montage-image-stack" />
+        </div>
+    </div>
+{% endif %}
+<section class="el-c-hero-dark">  
+    {% if page.decorative-image-url %}
+    <div class="el-c-hero-dark__image">
+        <img src="{{ page.decorative-image-url }}" alt="" />
+    </div>
+    {% endif %}
+    <div class="el-c-hero-dark__content">
+        <div class="coop-l-grid  el-c-hero-dark__centered">
+            <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
+                {% if page.last-reviewed %}
+                <p class="el-c-hero-dark__meta">{{ page.last-reviewed }}</p> 
+                {% endif %}
+                {% if page.section-title %}
+                <p class="el-c-hero-dark__section">{{ page.section-title }}</p>
+                {% endif %}
+                <h1 class="el-c-hero-dark__title">{{ page.title }}</h1>   
+                {% if page.home-lead %}
+                <p class="coop-t-h2 white-text">{{ page.home-lead }}</p>
+                {% endif %}
+                {% for item in page.intro-text-lead %}
+                <p class="coop-t-lead-p white-text">{{ item }}</p>
+                {% endfor %}
+                {% for item in page.intro-text %}
+                <p>{{ item }}</p>
+                {% endfor %}
+                {% if page.intro-text-link %}
+                <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
+                {% endif %}
+            </div>
+            {% if page.link-box %}
+            <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
+                <div class="el-c-info-card el-c-info-card--small">
+                    <ul class="el-c-info-card__link-list coop-u-list-bare">
+                        {% if page.link-box-text-design %}
+                        <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
+                        {% endif %}
+                        {% if page.link-box-text-dev %}
+                        <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div> 
+    </div>
+    {% if page.info-card %}
+    <div class="el-c-hero-dark__inner">
+        <div class="el-c-info-card">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <h2>{{ page.info-card-title }}</h2>
+                    {% for item in page.info-card-p %}
+                    <p>{{ item }}</p>
+                    {% endfor %}
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
+                    <img src="{{ page.info-card-image }}" alt="" class="el-c-info-card__image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</section>
