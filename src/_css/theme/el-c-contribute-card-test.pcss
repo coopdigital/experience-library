@@ -18,10 +18,10 @@
 
 .el-c-contribute-card-test__image--masked {
     mask-image: url('../../images/test-mask/cog-large.svg');
-    mask-position: center center;
+    mask-position: center right;
     mask-size: 70%;
     mask-repeat: no-repeat;
-    transform: scale(1.25) translate(25%, 15%);
+    transform: scale(1.25) translate(10%, 20%);
 }
 
 .el-c-contribute-card-test__image--absolute {
@@ -38,7 +38,7 @@
 
 @media (--mq-small) {
     .el-c-contribute-card-test__image--masked {
-        transform: scale(1.25) translate(20%, 15%);
+        transform: scale(1.25) translate(5%, 15%);
     }
 }
 
@@ -53,7 +53,7 @@
     }
 
     .el-c-contribute-card-test__image--masked {
-        transform: scale(1.75) translate(20%, 0%) ;
+        transform: scale(1.75) translate(5%, 0%) ;
     }
 
     .el-c-contribute-card-test__image--absolute {
@@ -64,5 +64,11 @@
 @media (--mq-xlarge) {
     .el-c-contribute-card-test__image--absolute {
         left: 44%;
+    }
+ }
+
+ @media (--mq-xxlarge) {
+    .el-c-contribute-card-test__image--absolute {
+        left: 48%;
     }
  }
