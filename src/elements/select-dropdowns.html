@@ -13,7 +13,7 @@ section-title: Elements
 title: Select dropdowns
 last-reviewed: Last reviewed&#58; 4 June 2021
 intro-text-lead: 
-  - Use select dropdowns to let people choose an option from a long list.
+  - Select dropdowns let people choose an option from a list.
 # Image at the top of the hero
 decorative-image-url: /images/decorative/select-dropdown-hero.svg
 
@@ -40,26 +40,22 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>We do not advise using select dropdowns because research shows that some users find them difficult to use. <a href="https://design-system.service.gov.uk/components/select/">We follow the same guidelines as gov.uk</a>.</p>
-                        <p>Whenever possible try to ask questions with fewer options and use radio buttons instead.</p>
+                        <p>Research shows that select dropdowns can be difficult to use. <a href="https://www.youtube.com/watch?v=CUkMCQR4TpY&ab_channel=Front-endLondon">Watch Alice Bartlett's video about the difficulties of select dropdowns</a>.</p>
+                        <p>Whenever possible, ask questions with fewer options and use radio buttons.</p>
                         <p><a href="/elements/radio-buttons.html">Go to the guidelines for radio buttons</a>.</p>
-                        <p>Watch a video about how some users struggle with select dropdowns.</p>
                         <p>Sometimes due to technical constraints, you may need to use a select dropdown.</p>
-                        <p>All attributes of the select dropdown are designed using values from the foundations. Do not change the styling of the select dropdown or the associated styles.</p>
-                        <p><a href="/foundations/">Go to the foundations</a>.</p>
-                        <h3>Select field</h3>
-                        <p>Do not change the styling of the select field.</p>
-                        <p>We’ve designed the select dropdown using values from the foundations. By default, the form elements have no margin on the bottom. When using more than one form element, add a margin-bottom of 24px. This will space form fields and labels evenly down the page.</p>
-                        <p><a href="/foundations/">Go to the foundations</a>.</p>
+                        <p>We’ve used our foundations to design select dropdowns. For consistency across Co-op products and services, do not change the styling of select dropdowns.</p>
                         <h3>Labels</h3>
-                        <p>Select dropdowns must have a label associated with them. The label must be short and make it clear what information you’re asking for.</p>
+                        <p>Select dropdowns must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
+                        <P>The label must be short and make it clear what information you’re asking for.</p>
+                        <h3>Hint text</h3>
+                        <p>You can add optional hint text to help people understand the information they need to enter.</p> 
                         <h3>Error messages</h3>
-                        <p>Use error messages with the validation component.</p>
-                        <p>Give error messages after the user submits the form. Do not give them as someone is entering information into each input. This can cause stress and frustration.</p>
-                        <p>Error messages should appear above the relevant input. This means it is read out by assistive technology in an order that makes sense.</p>
+                        <p>Give error messages after the user submits the form.</p>
+                        <p>Error messages should appear above the relevant select dropdown. This means they are read out by assistive technology in an order that makes sense.</p>
                         <h3>Focus ring</h3>
                         <p>The focus ring appears as a purple outline around any object, including select dropdowns, when someone selects it.</p>
-                        <p>Do not remove the focus ring. People who navigate with a keyboard cannot know where they are on the screen without it. The focus ring lets them know which input they have selected.</p>
+                        <p>Do not remove the focus ring. It can be essential to help people who use assistive technology navigate our products and services.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +72,7 @@ changelog:
                                         <label class="coop-form__label" for="sort-by-1">Sort by:</label>       
                                         <p id="sort-by-1-error" class="coop-form__error" hidden></p>
                                         <select id="sort-by-1" class="coop-form__field coop-form__select">
-                                            <option value="">Please select</option>
+                                            <option value="">Select option</option>
                                             <option value="relevancy" selected>Relevancy</option>
                                             <option value="price-asc">Price: Low to high</option>
                                             <option value="price-desc">Price: High to low</option>
@@ -90,7 +86,7 @@ changelog:
                                         <p id="sort-by-2-hint" class="coop-form__hint">This is an example hint</p>
                                         <p id="sort-by-2-error" class="coop-form__error" hidden></p>
                                         <select id="sort-by-2" class="coop-form__field coop-form__select" aria-describedby="sort-by-2-hint">
-                                            <option value="">Please select</option>
+                                            <option value="">Select option</option>
                                             <option value="relevancy" selected>Relevancy</option>
                                             <option value="price-asc">Price: Low to high</option>
                                             <option value="price-desc">Price: High to low</option>
@@ -103,7 +99,7 @@ changelog:
                                         <label class="coop-form__label" for="sort-by-3">Sort by:</label>
                                         <p id="sort-by-3-error" class="coop-form__error">Select a sort by option</p>
                                         <select id="sort-by-3" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-3-error">
-                                            <option value="">Please select</option>
+                                            <option value="">Select option</option>
                                             <option value="relevancy">Relevancy</option>
                                             <option value="price-asc">Price: Low to high</option>
                                             <option value="price-desc">Price: High to low</option>
@@ -117,7 +113,7 @@ changelog:
                                         <p id="sort-by-4-hint" class="coop-form__hint">This is an example hint</p>
                                         <p id="sort-by-4-error" class="coop-form__error">Select a sort by option</p>
                                         <select id="sort-by-4" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-4-hint sort-by-4-error">
-                                            <option value="">Please select</option>
+                                            <option value="">Select option</option>
                                             <option value="relevancy">Relevancy</option>
                                             <option value="price-asc">Price: Low to high</option>
                                             <option value="price-desc">Price: High to low</option>
