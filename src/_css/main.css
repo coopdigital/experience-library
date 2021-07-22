@@ -216,3 +216,9 @@ hr,
 .white-text{
   color: var(--color-white);
 }
+
+.coop-t-link-active {
+  transition: none;
+  outline: 2px solid var(--color-link--focus);
+  outline-offset: 3px;
+}
