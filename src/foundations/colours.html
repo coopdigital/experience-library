@@ -23,6 +23,21 @@ link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Ex
 link-box-text-dev: 
 link-box-link-dev: /about-this-prototype/
 
+# In page nav
+in-page-nav:
+  - link-id: anchor-accessibility
+    link-text: Accessibility
+  - link-id: anchor-brand-colours
+    link-text: Brand colours
+  - link-id: anchor-user-interface-colours
+    link-text: User interface colours
+  - link-id: anchor-text-colours
+    link-text: Text colours
+  - link-id: anchor-colour-palette
+    link-text: Colour palette
+  - link-id: anchor-changelog
+    link-text: Changelog
+
 # Changelog
 changelog:
   - date: 14 April 2021
@@ -38,7 +53,7 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2>Accessibility</h2>
+                        <h2 id="anchor-accessibility">Accessibility</h2>
                         <p>All colours and colour combinations must pass a colour contrast ratio of 4.5:1.</p>
                         <p>All colours in our palette have been tested for accessibility. Each colour on this page has a link to the contrast test for that colour.</p>
                     </div>
@@ -47,7 +62,7 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2 id="brand-colours">Brand colours</h2>
+                        <h2 id="anchor-brand-colours">Brand colours</h2>
                         <h3>Co-op blue</h3>
                         <p>Only use Co-op blue with the brand logo. Co-op blue does not meet <a href="https://www.coop.co.uk/accessibility/standards#form-contrast">colour contrast standards</a> for text, graphical objects or user interactions. For example, you should not use it as an underline to highlight the page a user is currently on.</p>
                         <p>Co-op blue can be used as a background colour for the Co-op logo when the logo you’re using is white, for example, on our app icons.</p>
@@ -120,8 +135,9 @@ changelog:
             </div>
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="link-colours">Link colours</h2>
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8"> 
+                        <h2 id="anchor-user-interface-colours">User interface colours</h2> 
+                        <h3>Link colours</h3>
                         <p>For most links, use the colours shown here.</p>
                         <p>If you’re using a link on a background colour, then the link text and underline must be black or white. This is to maintain the correct colour contrast.</p>
                         <p>Links inside an area of navigation, like the main header on a website, may also appear in a different colour (normally the same colour as the text). This is because these links are in context to something that a user can recognise as navigation.</p>
@@ -179,7 +195,7 @@ changelog:
                 </div>
                 <div class="el-c-pullout el-c-pullout--nested">
                     <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
+                        <h4>Examples</h4> 
                     </div>
                     <div class="el-c-pullout-content">
                         <figure class="el-c-pullout__figure">
@@ -198,7 +214,7 @@ changelog:
                 </div>
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="button-and-form-colours">Button and form colours</h2>
+                        <h3>Button and form colours</h3>
                         <p>There are 4 button colour combinations available:</p>
                         <ul>
                             <li>primary green</li>
@@ -211,13 +227,13 @@ changelog:
                         <p>Do not put a form on a brightly coloured or very dark background.</p>
                     </div>
                 </div>
-                <h3>Primary green button colours</h3>
+                <h4>Primary green button colours</h4>
                 <div class="coop-l-grid  coop-u-margin-b-16">
                     <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-primary-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Primary green button</h4>
+                                <h5 class="el-c-colour__content-heading">Primary green button</h5>
                                 <span>#0F8482</span>
                                 <span>var(--color-button-green-primary)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=0F8482&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -228,7 +244,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-primary-hover-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Primary green button hover</h4>
+                                <h5 class="el-c-colour__content-heading">Primary green button hover</h5>
                                 <span>#1C6B6A</span>
                                 <span>var(--color-button-green-primary-hover)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=1C6B6A&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -239,7 +255,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-primary-active-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Primary green button active</h4>
+                                <h5 class="el-c-colour__content-heading">Primary green button active</h5>
                                 <span>#124948</span>
                                 <span>var(--color-button-green-primary-active)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=124948&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -250,7 +266,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Button focus</h4>
+                                <h5 class="el-c-colour__content-heading">Button focus</h5>
                                 <span>#8D44D8</span>
                                 <span>var(--color-link-focus)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -258,13 +274,13 @@ changelog:
                         </div>  
                     </div>
                 </div>
-                <h3>Primary white button colours</h3>
+                <h4>Primary white button colours</h4>
                 <div class="coop-l-grid coop-u-margin-b-16">
                     <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-white-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Primary white button</h4>
+                                <h5 class="el-c-colour__content-heading">Primary white button</h5>
                                 <span>#FFFFFF</span>
                                 <span>var(--color-white)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
@@ -275,7 +291,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-white-hover-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">White button hover</h4>
+                                <h5 class="el-c-colour__content-heading">White button hover</h5>
                                 <span>#EFEFEF</span>
                                 <span>var(--color-white-hover)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF&bcolor=282828">Passes WCAG AAA</a></span>
@@ -286,7 +302,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">White button active</h4>
+                                <h5 class="el-c-colour__content-heading">White button active</h5>
                                 <span>#D8D8D8</span>
                                 <span>var(--color-button-white-active)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828">Passes WCAG AAA</a></span>
@@ -297,7 +313,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Button focus</h4>
+                                <h5 class="el-c-colour__content-heading">Button focus</h5>
                                 <span>#8D44D8</span>
                                 <span>var(--color-link-focus)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -305,13 +321,13 @@ changelog:
                         </div>  
                     </div>
                 </div>
-                <h3>Secondary blue button colours</h3>
+                <h4>Secondary blue button colours</h4>
                 <div class="coop-l-grid coop-u-margin-b-16">
                     <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-blue-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Blue button</h4>
+                                <h5 class="el-c-colour__content-heading">Blue button</h5>
                                 <span>#005878</span>
                                 <span>var(--color-button-blue)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=005878&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -322,7 +338,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-blue-hover-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Blue button hover</h4>
+                                <h5 class="el-c-colour__content-heading">Blue button hover</h5>
                                 <span>#003E55</span>
                                 <span>var(--color-button-blue-hover)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=003E55&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -333,7 +349,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-blue-active-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Blue button active</h4>
+                                <h5 class="el-c-colour__content-heading">Blue button active</h5>
                                 <span>#001F2B</span>
                                 <span>var(--color-button-blue-active)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=001F2B&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -344,7 +360,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Button focus</h4>
+                                <h5 class="el-c-colour__content-heading">Button focus</h5>
                                 <span>#8D44D8</span>
                                 <span>var(--color-link-focus)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -352,13 +368,13 @@ changelog:
                         </div>  
                     </div>
                 </div>
-                <h3>Secondary grey button colours</h3>
+                <h4>Secondary grey button colours</h4>
                 <div class="coop-l-grid coop-u-margin-b-16">
                     <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-button-grey-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Grey button</h4>
+                                <h5 class="el-c-colour__content-heading">Grey button</h5>
                                 <span>#EFEFEF</span>
                                 <span>var(--color-button-grey)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF8&bcolor=282828">Passes WCAG AAA</a></span>
@@ -369,7 +385,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Grey button hover</h4>
+                                <h5 class="el-c-colour__content-heading">Grey button hover</h5>
                                 <span>#D8D8D8</span>
                                 <span>var(--color-button-grey-hover)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828">Passes WCAG AAA</a></span>
@@ -380,7 +396,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-grey-mid-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Grey button active</h4>
+                                <h5 class="el-c-colour__content-heading">Grey button active</h5>
                                 <span>#C4C4C4</span>
                                 <span>var(--color-button-grey-active)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=C4C4C4&bcolor=282828">Passes WCAG AAA</a></span>
@@ -391,7 +407,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Button focus</h4>
+                                <h5 class="el-c-colour__content-heading">Button focus</h5>
                                 <span>#8D44D8</span>
                                 <span>var(--color-link-focus)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
@@ -401,7 +417,7 @@ changelog:
                 </div>
                 <div class="el-c-pullout">
                     <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
+                        <h4>Examples</h4> 
                     </div>
                     <div class="el-c-pullout-content">
                         <figure class="el-c-pullout__figure">
@@ -422,12 +438,10 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="text-colours">Text colours</h2>
+                        <h2 id="anchor-text-colours">Text colours</h2>
                         <p>The main text colours are 'text' and 'alternative text'.</p>
                         <p>Use text as the colour for content on a page except for secondary information. For example, use alternative text for hint text on forms.</p>
                         <p>Use black or white text on coloured backgrounds where it is needed to meet minimum colour contrast standards.</p>
-
-                        
                     </div>
                 </div>
                 <div class="coop-l-grid">
@@ -435,7 +449,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-text-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Text</h4>
+                                <h2 class="el-c-colour__content-heading">Text</h2>
                                 <span>#282828</span>
                                 <span>var(--color-text)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -446,7 +460,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-text-alt-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Alternative text</h4>
+                                <h2 class="el-c-colour__content-heading">Alternative text</h2>
                                 <span>#595959</span>
                                 <span>var(--color-text-alt)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=595959&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -457,7 +471,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-black-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Black</h4>
+                                <h2 class="el-c-colour__content-heading">Black</h2>
                                 <span>#000000</span>
                                 <span>var(--color-black)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFFFFF">Passes WCAG AAA</a></span>
@@ -468,7 +482,7 @@ changelog:
                         <div class="el-c-colour">
                             <div class="el-c-colour__swatch coop-u-white-bg"></div>
                             <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">White</h4>
+                                <h2 class="el-c-colour__content-heading">White</h2>
                                 <span>#FFFFFF</span>
                                 <span>var(--color-white)</span>
                                 <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
@@ -480,7 +494,7 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="colour-palette">Colour palette</h2>
+                        <h2 id="anchor-colour-palette">Colour palette</h2>
                         <p>The colour palette helps us give personality to our products, but also serves a functional purpose in the way we design.</p>
                         <p>Large background areas should be white or use one of the neutral colours from the palette.</p>
                         <p>Use warm or cool colours to make a product seem more friendly or muted colours to give a more functional feel.</p>

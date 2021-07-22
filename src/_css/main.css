@@ -43,6 +43,7 @@
 @import 'theme/el-c-colour-swatch.pcss';
 @import 'theme/notification.pcss';
 @import 'theme/el-c-contribute-card.pcss';
+@import 'theme/el-c-in-page-nav.pcss';
 
      
 /* Utility overrides */
@@ -57,7 +58,7 @@
 .external-link-container { 
   background-color: var(--color-white); 
   margin-bottom: var(--spacing-4);
-  border-radius: var(--ui-border-radius);
+  border-radius: var(--ui-border-radius); 
   box-shadow: var(--ui-shadow); 
   transition: box-shadow 0.2s ease-in;
   color: var(--color-text);  
