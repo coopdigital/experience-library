@@ -41,7 +41,7 @@
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';
 @import 'theme/el-c-colour-swatch.pcss';
-@import 'theme/notification.pcss';
+@import 'theme/notification.pcss'; 
 @import 'theme/el-c-contribute-card.pcss';
 @import 'theme/el-c-in-page-nav.pcss';
 @import 'theme/el-c-activity-meta.pcss'; 

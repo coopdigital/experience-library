@@ -34,6 +34,13 @@
                 {% for item in page.intro-text %}
                 <p>{{ item }}</p>
                 {% endfor %}
+                {% if page.intro-text-list %}
+                <ul class="el-c-hero__list">
+                    {% for item in page.intro-text-list %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
                 {% if page.intro-text-link %}
                 <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
                 {% endif %}
