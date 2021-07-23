@@ -1,0 +1,8 @@
+<ul class="el-c-activity-meta coop-l-grid coop-u-list-bare">
+    {% for wow-activity-meta in page.wow-activity-meta %}
+    <li class="coop-l-grid__item coop-l-grid__item--large-6">
+        <img src="{{ wow-activity-meta.img }}" alt="" class="el-c-activity-meta__image" width="32">
+        {{ wow-activity-meta.text }}
+    </li> 
+    {% endfor %}
+</ul>

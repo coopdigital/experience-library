@@ -1,0 +1,42 @@
+
+.el-c-activity-meta {
+    margin-bottom: var(--spacing-32);
+}
+
+.el-c-activity-meta__image {
+    position: relative;
+    top: 9px;
+    display: inline;
+    margin-right: var(--spacing-8);
+}
+
+.el-c-activity-steps {
+    counter-reset: item;
+    padding-left: 0;
+}
+
+.el-c-activity-steps h3 {
+    display: inline;
+}
+
+.el-c-activity-steps h3 + p,
+.el-c-activity-steps h3 + ul {
+    margin-top: var(--spacing-16);
+}
+
+.el-c-activity-steps ul {
+    list-style-type: disc;
+}
+
+.el-c-activity-steps > li {
+    list-style-type: none;
+    counter-increment: item;
+    padding-bottom: var(--spacing-32);
+}
+
+.el-c-activity-steps > li:before {
+    display: inline;
+    font-size: var(--type-h3-l);
+    font-weight: 600;
+    content: counter(item) ".";
+}

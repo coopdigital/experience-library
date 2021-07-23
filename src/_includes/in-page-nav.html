@@ -1,0 +1,8 @@
+{% if page.id == 'ways-of-working' %}
+<p>Browse by letter:</p>
+{% endif %}
+<ul class="el-c-in-page-nav coop-u-list-bare">
+    {% for in-page-nav in page.in-page-nav %}
+    <li><a href="#{{ in-page-nav.link-id }}" class="el-c-in-page-nav__link">{{ in-page-nav.link-text }}</a></li> 
+    {% endfor %}
+</ul>

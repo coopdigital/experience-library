@@ -1,0 +1,75 @@
+---
+layout: coop-experience
+id: ways-of-working
+item-url: /ways-of-working/
+section: ways-of-working
+meta-title:	Ways of working
+meta-description: Ways of working.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: 
+title: Ways of working
+last-reviewed: Last reviewed&#58; 24 June 2021
+intro-text-lead:  
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
+# Signposts
+signpost:
+  - link: /ways-of-working/activities/
+    text: Activities
+    image: /images/ways-of-working/activities/kick-off.jpg
+  - link: /ways-of-working/glossary.html
+    text: Glossary
+    image: /images/decorative/placeholder-image.svg 
+  - link: /ways-of-working/feedback.html
+    text: Feedback
+    image: /images/decorative/placeholder-image.svg 
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">     
+                        <p>Help your team work together to:</p> 
+                        <ul>
+                            <li>find value for Co-op by working on the right thing</li>
+                            <li>generate ideas and achieve goals</li>
+                            <li>develop solutions that meet your colleagues and customer needs</li>
+                            <li>share how you deliver results and what you learn</li>
+                            <li>maintain team wellbeing</li>
+                        </ul>           
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid coop-u-margin-resp-b-32-16">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <ul class="coop-l-grid coop-u-list-bare">
+                            {% for signpost in page.signpost %}
+                            <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                                {% include signpost.html %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
