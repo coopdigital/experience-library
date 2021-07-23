@@ -30,11 +30,11 @@
 @import 'theme/layout.pcss';  
 @import 'theme/el-c-mobile-header.pcss'; 
 @import 'theme/side-bar.pcss'; 
-@import 'theme/skip-nav.pcss'; 
-@import 'theme/search.pcss';
-@import 'theme/signpost.pcss'; 
+@import 'theme/skip-nav.pcss';  
+@import 'theme/search.pcss'; 
+@import 'theme/signpost.pcss';  
 @import 'theme/el-c-hero.pcss';
-@import 'theme/el-c-hero-dark.pcss';
+@import 'theme/el-c-hero-dark.pcss'; 
 @import 'theme/el-c-hero-home.pcss'; 
 @import 'theme/el-c-info-card.pcss'; 
 @import 'theme/el-c-pullout.pcss'; 
@@ -44,6 +44,7 @@
 @import 'theme/notification.pcss';
 @import 'theme/el-c-contribute-card.pcss';
 @import 'theme/el-c-in-page-nav.pcss';
+@import 'theme/el-c-activity-meta.pcss'; 
 
      
 /* Utility overrides */

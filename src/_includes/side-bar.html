@@ -41,6 +41,12 @@
                     <li role="none"><a href="/accessibility/" role="menuitem"> Accessibility</a></li>
                 </ul>
             {% endif %}
+            {% if page.id == 'ways-of-working' %}
+                <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
+                    <li role="none"><a href="/" role="menuitem">Home</a></li>
+                    <li role="none"><a href="/ways-of-working/" role="menuitem"> Ways of working</a></li>
+                </ul>
+            {% endif %}
         
             <ul class="coop-side-nav coop-u-list-bare">
             {% if page.id == 'index' %}
@@ -281,14 +287,14 @@
                 {% if page.id == 'accessibility' %}
                     <li class="side-nav__link" role="none"><a href="/accessibility/" role="menuitem" class="{% if page.url == '/accessibility/' %}is-active{% endif %}">Accessibility</a></li>
                     <li class="side-nav__link side-nav__link-toggle">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'get-started-with-accessibility' %}is-open{% endif %}" id="components-list" id="get-started-with-accessibility">Get started
+                        <button aria-expanded="false" class="toggle-link {% if page.section == 'get-started-with-accessibility' %}is-open{% endif %}" id="get-started-with-accessibility">Get started
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="accessibility-standards">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="get-started-with-accessibility">
                             <li class="nested-link" role="none"><a href="/accessibility/policy-and-standards.html" role="menuitem" class="{% if page.url == '/accessibility/policy-and-standards.html' %}is-active{% endif %}">Policy and standards</a></li>
                             <li class="nested-link" role="none"><a href="/accessibility/business-case-for-accessibility.html" role="menuitem" class="{% if page.url == '/accessibility/business-case-for-accessibility.html' %}is-active{% endif %}">Business case for accessibility</a></li>
                             <li class="nested-link" role="none"><a href="/accessibility/accessibility-awareness-training.html" role="menuitem" class="{% if page.url == '/accessibility/accessibility-awareness-training.html' %}is-active{% endif %}">Accessibility awareness training</a></li>
@@ -303,7 +309,7 @@
                                 </path>
                             </svg>
                         </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="testing-and-research">
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="doing-accessibility">
                             <li class="nested-link" role="none"><a href="/accessibility/build-accessible-websites.html" role="menuitem" class="{% if page.url == '/accessibility/build-accessible-websites.html' %}is-active{% endif %}">Build accessible websites</a></li>
                             <li class="nested-link" role="none"><a href="/accessibility/write-accessible-content.html" role="menuitem" class="{% if page.url == '/accessibility/write-accessible-content.html' %}is-active{% endif %}">Write accessible content</a></li>
                             <li class="nested-link" role="none"><a href="/accessibility/find-out-if-something-is-accessible.html" role="menuitem" class="{% if page.url == '/accessibility/find-out-if-something-is-accessible.html' %}is-active{% endif %}">Find out if something is accessible</a></li>
@@ -312,6 +318,26 @@
                     </li>
                     <li class="side-nav__link" role="none"><a href="/accessibility/tools-and-resources.html" role="menuitem" class="{% if page.url == '/accessibility/tools-and-resources.html'%}is-active{% endif %}">Tools and resources</a></li>
                 {% endif %}
+
+                {% if page.id == 'ways-of-working' %}
+                    <li class="side-nav__link" role="none"><a href="/ways-of-working/" role="menuitem" class="{% if page.url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
+                    <li class="side-nav__link side-nav__link-toggle">
+                        <button aria-expanded="false" class="toggle-link {% if page.section == 'ways-of-working-activities' %}is-open{% endif %}" id="ways-of-working-activities">Activities
+                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
+                                <path
+                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="ways-of-working-activities">
+                            <li class="nested-link" role="none"><a href="/ways-of-working/activities/" role="menuitem" class="{% if page.url == '/ways-of-working/activities/' %}is-active{% endif %}">All activities</a></li>
+                            <li class="nested-link" role="none"><a href="/ways-of-working/activities/kick-off.html" role="menuitem" class="{% if page.url == '/ways-of-working/activities/kick-off.html' %}is-active{% endif %}">Kick-off</a></li>
+                            <li class="nested-link" role="none"><a href="/ways-of-working/activities/service-mapping.html" role="menuitem" class="{% if page.url == '/ways-of-working/activities/service-mapping.html' %}is-active{% endif %}">Service mapping</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-nav__link" role="none"><a href="/ways-of-working/glossary.html" role="menuitem" class="{% if page.url == '/ways-of-working/glossary.html'%}is-active{% endif %}">Glossary</a></li>
+                    <li class="side-nav__link" role="none"><a href="/ways-of-working/feedback.html" role="menuitem" class="{% if page.url == '/ways-of-working/feedback.html'%}is-active{% endif %}">Feedback</a></li>
+                {% endif %} 
             </ul>
         </nav>
     </div>

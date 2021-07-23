@@ -37,45 +37,24 @@
                 {% if page.intro-text-link %}
                 <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
                 {% endif %}
+                {% if page.wow-activity-meta %}
+                    {% include wow-activity-meta.html %}
+                {% endif %}
             </div>
             {% if page.link-box %}
-            <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
-                <div class="el-c-info-card el-c-info-card--small">
-                    <ul class="el-c-info-card__link-list coop-u-list-bare">
-                        {% if page.link-box-text-design %}
-                        <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
-                        {% endif %}
-                        {% if page.link-box-text-dev %}
-                        <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
-                        {% endif %}
-                    </ul>
+                {% include link-box.html %}
+            {% endif %}
+            {% if page.supporting-image-url %}
+                <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.supporting-col-width }}">
+                    <img src="{{ page.supporting-image-url }}" alt="{{ page.supporting-image-alt }}">
                 </div>
-            </div>
             {% endif %}
         </div> 
     </div>
     {% if page.info-card %}
-    <div class="el-c-hero__inner">
-        <div class="el-c-info-card">
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-7">
-                    <h2>{{ page.info-card-title }}</h2>
-                    {% for item in page.info-card-p %}
-                    <p>{{ item }}</p>
-                    {% endfor %}
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
-                    <img src="{{ page.info-card-image }}" alt="" class="el-c-info-card__image" />
-                </div>
-            </div>
-        </div>
-    </div>
+        {% include info-card.html %}
     {% endif %}
     {% if page.in-page-nav %}
-        <ul class="el-c-in-page-nav coop-u-list-bare">
-            {% for in-page-nav in page.in-page-nav %}
-            <li><a href="#{{ in-page-nav.link-id }}" class="el-c-in-page-nav__link">{{ in-page-nav.link-text }}</a></li> 
-            {% endfor %}
-        </ul>
+        {% include in-page-nav.html %}
     {% endif %}
 </section>
