@@ -9,7 +9,7 @@ layout: null
       "category" : "{{ page.section }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
       "url"      : "{{ page.item-url }}",
-      "content"  : {{ page.content | strip_html | strip_newlines | slugify: 'ascii' | replace: '-',' ' }},
+      "content"  : {{ page.content | strip_html | replace_regex: '['\s/\n]+',' ' | strip | jsonify  }},
       "date"     : "{{ page.date }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
