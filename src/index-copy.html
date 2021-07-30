@@ -7,7 +7,7 @@ id: index
         <h1 class="coop-c-hero__title">Co-op Prototyping Kit</h1>
         <div class="coop-c-hero__body">
             <p>This is every foundation and component on one page. You can use these to build prototypes to test your ideas.</p>
-            <p>The Prototyping Kit also provides a simple mechanism for saving and displaying simple form data. <a href="form.html">See the example form</a>.</p>
+            <p>The Prototyping Kit also provides a simple mechanism for saving and displaying simple form data. <a href="{{ form.html' | prepend: site.baseurl }}">See the example form</a>.</p>
         </div>
         <div class="coop-c-hero__squircle" aria-hidden="true">
             <div class="coop-c-hero__squircle__inner">
@@ -21,7 +21,7 @@ id: index
 <div class="coop-l-container">
     <div class="coop-u-margin-b-64">
         <h2>Logo</h2>
-        <a class="coop-logo" aria-label="Homepage" href="/">
+        <a class="coop-logo" aria-label="Homepage" href="{{ '/' | prepend: site.baseurl }}">
             {% include foundations/foundations-logo/logo.html %}
         </a>
     </div>

@@ -8,7 +8,7 @@ layout: null
       "description" : "{{ page.intro-text-lead }}",
       "category" : "{{ page.section }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
-      "url"      : "{{ page.item-url }}",
+      "url"      : "{{ page.item-url | prepred: site.baseurl }}",
       "content"  : {{ page.content | strip_html | replace_regex: '['\s/\n]+',' ' | strip | jsonify  }},
       "date"     : "{{ page.date }}"
     } {% unless forloop.last %},{% endunless %}

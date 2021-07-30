@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.meta-title %}{{ site.title | escape }} - {{ page.meta-title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}"/>
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="/assets/css/main.css"><!--<![endif]-->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}"><!--<![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html',''' | prepend: site.baseurl | prepend: site.url }}">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MMZ05X66Z"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -32,7 +32,7 @@
         window.simpleJekyllSearch = new SimpleJekyllSearch({
             searchInput: document.getElementById('search-small-input'),
             resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
+            json: `{{ '/search.json' | prepend: site.baseurl }}`,
             searchResultTemplate: '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
             noResultsText: '<li class="result-list-item"><span class="title">No results found</span></li>   ',
             limit: 10,
@@ -40,6 +40,6 @@
             exclude: ['Welcome']
         })
     </script>
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>
