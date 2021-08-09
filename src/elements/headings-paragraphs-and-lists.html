@@ -11,7 +11,7 @@ meta-description: Find out how to use headings, paragraphs and lists when design
 col-width: 7
 section-title: Elements
 title: Headings, paragraphs and&nbsp;lists
-last-reviewed: Last reviewed&#58; 3 June 2021
+last-reviewed: Last reviewed&#58; 10 August 2021
 intro-text-lead: 
   - Headings, paragraphs and lists give your content structure and can make it more readable.
 # Image at the top of the hero
@@ -23,6 +23,17 @@ link-box-text-design: View headings, paragraphs and lists in Figma
 link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3992%3A1107
 link-box-text-dev: 
 link-box-link-dev: /about-this-prototype/
+
+# In page nav
+in-page-nav:
+  - link-id: content-guidelines
+    link-text: Content guidelines
+  - link-id: design-guidelines
+    link-text: Design guidelines
+  - link-id: examples
+    link-text: Examples
+  - link-id: anchor-changelog
+    link-text: Changelog
 
 # Changelog
 changelog:
@@ -39,28 +50,68 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Guidelines</h2>
+                        <h2 id="anchor-content-guidelines">Content guidelines</h2>
+                        <h3>Headings</h3>
+                        <p>You should use headings and subheadings to break your content up. This makes your content:</p>
+                        <ul>
+                            <li>easier for people to read</li>
+                            <li>more accessible for those using assistive technology like screen readers</li>
+                        </ul>
+                        <p>Headings should be short, clear and descriptive because this helps people to understand what content is there and find the content they need.</p>
+                        <p>Front-load your headings where possible. Statements work better than questions and they let you put the keyword first.</p>
+                        <p>Good example: £5 Freezer Fillers</p>
+                        <p>Bad example: Looking to stock up on brands you love? Browse our £5 Freezer Filler</p>
+                        <h3>Paragraphs</h3>
+                        <p>Write paragraphs using short simple sentences. As a general rule, use 25 words or less. Longer lines can be difficult to read.</p>
+                        <h3>Lists</h3>
+                        <h4>Bullet lists</h4>
+                        <p>Use bullet points to break up a list of items. It makes your content easier to read and understand.</p>
+                        <p>Bullets must:</p>
+                        <ul>
+                            <li>use a lead-in line</li>
+                            <li>make sense running on from the lead-in line</li>
+                            <li>use lower case at the start of the bullet</li>
+                            <li>have only one sentence per bullet point - use commas, dashes or semicolons to expand on an item</li>
+                        </ul>
+                        <p>Bullets should not:</p>
+                        <ul>
+                            <li>be paragraphs using the list format for visual effect</li>
+                            <li>use a full stop after the last bullet point</li>
+                            <li>include ‘or’ or an ‘and’ after the bullets</li>
+                        </ul>
+                        <h4>Numbered lists</h4>
+                        <p>Use a numbered list for a logical sequence of things, like a series of tasks that must be done in a certain order.</p>
+                        <p>Unlike bullet lists, they do not need a lead-in line and should be complete sentences that start with a capital letter and end with a full stop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2 id="anchor-design-guidelines">Design guidelines</h2>
                         <p>Our headings, paragraphs and lists have set font sizes.</p>
                         <p><a href="/foundations/font-sizes.html">Go to the guidelines on font sizes</a>.</p>
-                        <p>All attributes of the headings, paragraphs and lists have been designed using values from the <a href="/foundations/">foundations</a>.</p>
-                        <p>Only change the styling of the headings, paragraphs and lists if these guidelines allow it.</p>
+                        <p>We’ve used our foundations to design headings, paragraphs and lists.</p>
                         <h3>Headings</h3>
-                        <p>You can style headings to look different to fit your design, for example you can  make a H2 look smaller. There is code to help engineers do this. </p>
-                        <p>But if you change the styling of the heading, you must keep the heading attributes so your content still has a logical heading structure. </p>
-                        <p>This is because assistive technology users use the headings as a way to navigate around the page.</p>
+                        <p>Headings should be structured logically. A:</p>
+                        <ul>
+                            <li>Heading 1 (H1) is your main page heading (you should only have one of these)</li>
+                            <li>Heading 2 (H2) is your subheading (you can have several of these)</li>
+                            <li>Heading 3 (H3) is your subheading within a H2 section (you can have several of these)</li>
+                        </ul>
+                        <p>You can adjust the size of headings to fit your design, for example you can make a H2 look smaller.</p>
+                        <p>If you change the styling of the heading, keep the heading attributes in the code so your content still has a logical heading structure.</p>
+                        <p>This is because assistive technology users can use the headings as a way to navigate around the page.</p>
                         <h3>Paragraphs</h3>
-                        <p>Paragraphs are set at a size to make content readable.</p>
-                        <p>We also have an ‘intro paragraph’ font size that you can use to highlight introductory content at the top of the page.</p>
-                        <h3>Lists</h3>
-                        <p>Use bullet points to break up a list of items.</p>
-                        <p>Use a numbered list for a logical sequence of things, like a series of tasks that must be done in a certain order. </p>
+                        <p>Paragraphs and lead paragraphs are set at a size to make content readable.</p>
+                        <p>Do not change the paragraph font sizes, or the line spacing. These have been set to meet our <a href="https://www.coop.co.uk/accessibility/standards#line-spacing"></a>accessibility standards.</p>
                     </div>
                 </div>
             </div>
             <div class="el-c-primary-section">
                 <div class="el-c-pullout el-c-pullout--nested">
                     <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
+                        <h2 id="anchor-examples">Examples</h2>
                     </div>
                     <div class="el-c-pullout-content">
                         <div class="coop-u-margin-resp-b-64-32">
