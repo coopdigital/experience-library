@@ -11,7 +11,7 @@ meta-description: Find out how to use links when designing digital products and 
 col-width: 7
 section-title: Elements
 title: Links
-last-reviewed: Last reviewed&#58; 3 June 2021
+last-reviewed: Last reviewed&#58; 9 August 2021
 intro-text-lead: 
   - A link (short for hyperlink) is an HTML object that allows the user to go to a new location when they select it. 
 # Image at the top of the hero
@@ -23,6 +23,21 @@ link-box-text-design: View links in Figma
 link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3915%3A608
 link-box-text-dev: 
 link-box-link-dev: /about-this-prototype/
+
+# In page nav
+in-page-nav:
+  - link-id: content-guidelines
+    link-text: Content guidelines
+  - link-id: content-examples
+    link-text: Content examples
+  - link-id: design-guidelines
+    link-text: Design guidelines
+  - link-id: design-examples
+    link-text: Design examples
+  - link-id: seo-guidelines
+    link-text: SEO guidelines
+  - link-id: anchor-changelog
+    link-text: Changelog
 
 # Changelog
 changelog:
@@ -39,10 +54,79 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2>Guidelines</h2>
-                        <p>Links should have the correct colour contrast. To see the colours we use for links, <a href="/foundations/colours.html">go to the guidelines on colours.</a></p>
-                        <h3>Link text</h3>
-                        <p>A link should be descriptive of the place it’s taking the user. Do not use ‘click here’.</p>
+                        <h2 id="content-guidelines">Content guidelines</h2>
+                        <p>A link is an invitation to select. This can mean the user is distracted from their core task and may never return. If you add a link, consider the users onward journey. Use links to:</p>
+                        <ul>
+                            <li>help users get to where they need to go</li>
+                            <li>avoid duplicating information that exists elsewhere </li>
+                            <li>link to an authority on a subject</li>
+                        </ul>
+                        <p>Link text must:</p>
+                        <ul>
+                            <li>describe the page it goes to, for example <a href="https://www.coop.co.uk/accessibility/standards">‘Co-op digital accessibility standards’</a>, not 'click here'</li>
+                            <li>make sense when read out of context – screen readers can read link text in isolation without the surrounding content</li>
+                            <li>reflect what the user will see when they get to the page</li>
+                            <li>be at the end, not the middle of a sentence – this makes it easier for people to scan</li>
+                        </ul>
+                        <p>If the link is to an action, include the action (verb) at the start of the link text, for example, ‘Book an appointment’. Make the text between 2 and 4 words where possible – this can make the action quicker to understand. If the action is the main thing you want someone to do on a page, consider using a <a href="/components/buttons.html">button</a></p>
+                        <p>Regularly review the links you use and remove or update any that are out-of-date or no longer work.</p>
+                        <h3>Linking to other websites</h3>
+                        <p>You might need, or want, to link to other websites that are not owned by Co-op (external websites). Any external websites you link to must be:</p>
+                        <ul>
+                            <li>high quality</li>
+                            <li>relevant</li>
+                            <li>trustworthy</li>
+                        </ul>
+                        <p>If they're not, it could damage Co-op's reputation.</p>
+                        <p>If you're linking to an external site tell the user that they’re leaving our site, for example, <a href="https://www.citizensadvice.org.uk/">‘For more information visit citizensadvice.org.uk'</a></p>
+                        <p>If it’s a short url – that is it contains no symbols and has a maximum of one ‘/' –use a full url (web address), for example 'For more information, go to ￼’. This means that people could remember it, or write it down, if they wanted to visit the site later.</p>
+                        <p>If it’s a complex url – that is it contains symbols or more than one ‘/' – use words as the link text, for example, ‘See the [Content Design London Readability guidelines on links]’.</p>
+                        <h3>Opening links</h3>
+                        <p>Links should usually be set to open in the same tab, so that people can use the 'back' button to navigate.</p>
+                        <p>If you think the link should open in a new tab, include ‘(opens in a new tab)' as part of the link. For example, if the link opens in a different tab so that someone does not lose their progress in a form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2 id="content-examples">Content examples</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                                    <div class="coop-u-margin-resp-b-64-32">
+                                        <p><a class="coop-t-link" href="#">Book an appointment</a>.</p>	
+                                        <p class="coop-t-caption">An example of a link to an action.</p>
+                                    </div>
+                                    <div class="coop-u-margin-resp-b-64-32">
+                                        <p>You can find out more in <a class="coop-t-link" href="https://www.coop.co.uk/accessibility/standards">Co-op's digital accessibility standards</a>.</p>	
+                                        <p class="coop-t-caption">An example of a link to a policy.</p>
+                                    </div>
+                                    <div class="coop-u-margin-resp-b-64-32">
+                                        <p>For more information, go to <a class="coop-t-link" href="https://www.bbc.co.uk/sport">bbc.co.uk/sport</a></p>	
+                                        <p class="coop-t-caption">An example of a link to a short external url.</p>
+                                    </div>
+                                    <div class="coop-u-margin-resp-b-64-32">
+                                        <p>See the <a class="coop-t-link" href="https://readabilityguidelines.co.uk/content-design/links/">Content Design London Readability guidelines on links</a>.</p>	
+                                        <p class="coop-t-caption">An example of a link to a complex external url.</p>
+                                    </div>
+                                    <div class="coop-u-margin-resp-b-64-32">
+                                        <p>Find out more about <a class="coop-t-link" href="https://www.coop.co.uk/membership" target="_blank"> Co-op Membership (opens in a new tab)</a>.</p>	
+                                        <p class="coop-t-caption">An example of a link that opens in a new tab.</p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2 id="design-guidelines">Design guidelines</h2>
+                        <p>Links should have the correct colour contrast. To see the colours we use for links, <a href="/foundations/colours.html">go to the guidelines on colours</a>.</p>
                         <h3>Underline</h3>
                         <p>In general, links should be underlined. The underline should disappear when the user hovers their cursor over it.</p>
                         <p>You do not need to underline a link if:</p>
@@ -54,21 +138,21 @@ changelog:
                         <p>The focus ring appears as a purple outline around any object, including links, when someone selects it.</p>
                         <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
                     </div>
-                </div>
+                </div> 
             </div>
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-12">
                         <div class="el-c-pullout">
                             <div class="el-c-pullout-header">
-                                <h2>Examples</h2>
+                                <h2 id="design-examples">Design examples</h2>
                             </div>
                             <div class="el-c-pullout-content">
                                 <div class="coop-l-grid__item coop-l-grid__item--large-8">
                                     <div class="coop-u-margin-resp-b-64-32">
                                         <p><a class="coop-t-link" href="#">Start making your will</a></p>	
                                         <p class="coop-t-caption">A standard link.</p>
-                                    </div>
+                                    </div>  
                                     <div class="coop-u-margin-resp-b-64-32">
                                         <p><a class="coop-t-link coop-t-link--arrow" href="#">More about <span class="coop-t-nowrap">offers<svg class="coop-t-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" aria-hidden="true" focusable="false"><path class="coop-u-brand-membership-pink-bright-fill" d="M13.89 0L11.4 2.46l5.87 5.8H0v3.48h17.28l-5.88 5.8L13.89 20 24 10z" stroke="none"/></svg></span></a></p>
                                         <p class="coop-t-caption">Link with the arrow icon.</p>
@@ -83,6 +167,15 @@ changelog:
                     </div>
                 </div>
             </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2 id="seo-guidelines">SEO guidelines</h2>
+                        <p>Using relevant links in your content can help it to appear higher up in search results (known as search engine optimisation or SEO).</p>
+                        <p>See how you can <a href="/search-engine-optimisation/seo-for-links.html">use links to help SEO</a>.</p>
+                    </div>
+                </div> 
+            </div>    
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
                     {% include changelog.html %}
