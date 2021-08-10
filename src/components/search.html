@@ -14,7 +14,7 @@ last-reviewed: Last reviewed&#58; 28 July 2021
 intro-text-lead: 
   - Search allows a person to enter a word or a phrase to find relevant content.
 # Image at the top of the hero
-decorative-image-url: /images/decorative/components.svg
+decorative-image-url: /images/decorative/search-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: true
@@ -49,6 +49,26 @@ changelog:
                             </div>
                             <div class="el-c-pullout-content">
                                 <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-l-grid__item--xlarge-5">
+                                        <form class="coop-c-search coop-form">
+                                            <label for="search-large" class="coop-u-visuallyhidden">Search [website name]</label>
+                                            <input type="search" name="search" id="search-large" placeholder="Search [website name]" class="coop-form__input coop-c-search__input">
+                                            <button class="coop-c-search__button coop-btn coop-btn--primary">
+                                                <span class="coop-u-visuallyhidden">Search</span>
+                                                <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+                                            </button>
+                                        </form>
+                                        <form class="coop-c-search">
+                                            <label for="search-small" class="coop-u-visuallyhidden">Search [website name]</label>
+                                            <input type="search" name="search" id="search-small" placeholder="Search [website name]" class="coop-form__input coop-c-search__input coop-c-search__input--small">
+                                            <button class="coop-c-search__button coop-c-search__button--small coop-btn coop-btn--primary">
+                                                <span class="coop-u-visuallyhidden">Search</span>
+                                                <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="coop-l-grid coop-u-margin-resp-t-64-32">
                                     <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-l-grid__item--xlarge-5">
                                         <form class="coop-c-search coop-form">
                                             <label for="search-large" class="coop-u-visuallyhidden">Search [website name]</label>
@@ -92,11 +112,19 @@ changelog:
                             <li>too small – as people may find it hard to find and enter words into</li>
                         </ul>
                         <h3>Label</h3>
-                        <p>Although labels on input fields should usually be visible, the search component is an exception.</p>
+                        <p>Form labels on input fields should usually be visible, but the search component is an exception.</p>
+                        <p>If you do not show the label, you must describe it in the code so that it’s read out to screen reader users.</p>
                         <h3>Placeholder text</h3>
-                        <p>Placeholder content is the content that sits within the search box, and disappears when someone starts to enter a search term. Use placeholder content to describe where the person is searching, for example, ‘Search Co-op’ or 'Search Recipes'.</p>
+                        <p>Placeholder text is the content that sits within the input field, and disappears when someone starts to enter a search term. You can use placeholder text to describe where the person is searching, for example, ‘Search Co-op’, or ‘Search recipes’.</p>
                         <p>Check that the placeholder content is not cut off on smaller screen sizes.</p>
                         <h3>Button</h3>
+                        <p>Search has a button with a magnifying glass icon.</p>
+                        <p>The button can either be a:</p>
+                        <ul>
+                            <li>primary green button</li>
+                            <li>secondary blue button </li>
+                        </ul>
+                        <p>If search is the main action someone will make on your page, make it a primary button.</p>
                     </div>
                 </div>
             </div>
