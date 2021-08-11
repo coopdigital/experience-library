@@ -8,7 +8,7 @@
 @import "@coopdigital/foundations-colors"; 
 @import "@coopdigital/foundations-buttons";
 @import "@coopdigital/foundations-forms";
-@import "@coopdigital/foundations-tables";
+@import "@coopdigital/foundations-tables"; 
      
 /* Components */     
 @import '@coopdigital/component-skipnav';
@@ -45,7 +45,6 @@
 @import 'theme/el-c-contribute-card.pcss';
 @import 'theme/el-c-in-page-nav.pcss';
 @import 'theme/el-c-activity-meta.pcss'; 
-
      
 /* Utility overrides */
 @import "@coopdigital/foundations-layout";

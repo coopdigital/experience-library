@@ -1,0 +1,53 @@
+---
+layout: coop-experience
+id: index
+item-url: /patterns/
+section: Patterns
+meta-title:	Patterns
+meta-description: Patterns are...
+description: Patterns are...
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+title: Patterns
+intro-text-lead: Patterns are...
+intro-text: 
+intro-text-link: 
+intro-text-link-url: #
+
+# Hero link box - set to false or remove the code below to remove
+link-box: true
+link-box-text-design: View our components in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/?node-id=3873%3A312
+link-box-text-dev: 
+link-box-link-dev:
+
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Signposts
+signpost:
+  - link: /patterns/form-validation.html
+    text: Form validation
+    image: /images/decorative/placeholder.svg 
+
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <ul class="coop-l-grid coop-u-list-bare">
+                {% for signpost in page.signpost %}
+                <li class="coop-l-grid__item coop-l-grid__item--large-4  coop-u-flex">
+                    {% include signpost.html %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
