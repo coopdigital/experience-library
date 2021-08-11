@@ -1,9 +1,9 @@
 <div class="coop-c-signpost">
-    <a href="{{ signpost.link }}" class="coop-c-signpost__link">
+    <a href="{{ signpost.link | prepend: site.baseurl }}" class="coop-c-signpost__link">
         {% if signpost.image %}
         <figure class="coop-c-signpost__media">
             <picture class="coop-c-signpost__image">
-                <img src="{{ signpost.image }}" alt="">
+                <img src="{{ signpost.image | prepend: site.baseurl }}" alt="">
             </picture>
         </figure>
         {% endif %}
