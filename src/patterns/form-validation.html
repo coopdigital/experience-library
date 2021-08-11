@@ -1,0 +1,191 @@
+---
+layout: coop-experience
+id: index
+item-url: /patterns/form-validation.html
+section: Patterns
+meta-title:	Form validation
+meta-description: Form validation lets a user know that they need to add or change information in a form. It's an error message that helps them to fix the problem.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Patterns
+title: Form validation
+last-reviewed: Last reviewed&#58; 11 Aug 2021
+intro-text-lead: 
+  - Form validation helps a person move on from an error by telling them the action they need to take to fix it.
+  - Form validation pattern is made up of an error&#58; 
+intro-text-list:
+  - summary at the top of the page
+  - message above the field 
+
+# Image at the top of the hero
+decorative-image-url: /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: true
+link-box-text-design: View form validation in Figma
+link-box-link-design: 
+link-box-text-dev: 
+link-box-link-dev: /about-this-prototype/
+
+# Changelog
+changelog:
+  - date: 11 Aug 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include notification.html %}
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="el-c-pullout">
+                    <div class="el-c-pullout-header">
+                        <h3>Examples</h3> 
+                    </div>
+                    <div class="el-c-pullout-content">
+                        <!-- Validation -->
+                        <form id="validation-demo" class="coop-form" novalidate>
+                        <!-- Validation summary (empty) -->
+                        <div id="validation-demo-box" class="coop-c-message coop-c-message--error" tabindex="-1" role="alert" hidden></div>
+                        <h3>Example form</h3>
+                        <div class="coop-form__row">
+                            <label class="coop-form__label" for="validation-demo-name">Your full name</label>
+                            <p id="validation-demo-name-error" class="coop-form__error" hidden></p>
+                            <input id="validation-demo-name" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="validation-demo-name">
+                        </div>
+                        <div class="coop-form__row">
+                            <label class="coop-form__label" for="validation-demo-email">Your email address</label>
+                            <p id="validation-demo-email-hint" class="coop-form__hint">We’ll only use this to contact you about your will</p>
+                            <p id="validation-demo-email-error" class="coop-form__error" hidden></p>
+                            <input id="validation-demo-email" class="coop-form__field coop-form__input" type="email" autocomplete="email" name="validation-demo-email" aria-describedby="validation-demo-email-hint">
+                        </div>
+                        <div class="coop-form__row">
+                            <button class="coop-btn coop-btn--primary" aria-live="assertive" aria-relevant="additions text" aria-atomic="true">
+                                <span class="coop-btn__text" role="status" hidden>Updating details…</span>
+                                <span class="coop-btn__text">Update details</span>
+                            </button>
+                        </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+
+
+
+
+
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Guidelines</h2>
+                        <p>When using radio buttons, allow people to select anywhere in the radio button or label to select that option.</p>
+                        <p>Display the options from top to bottom, not left to right. This means that people:</p>
+                        <ul>
+                            <li>can scan the options</li>
+                            <li>who have zoomed in will not have to scroll side to side to work out which radio button they need to select</li>
+                        </ul>
+                        <p>Consider letting people select a ‘None of these’ option. Some people might need this so that they can move on to the next question or task.</p>
+                        <p>We’ve used our foundations to design radio buttons. For consistency across Co-op products and services, do not change the styling of the radio buttons.</p>
+                        <h3>Label</h3>
+                        <p>Radio buttons must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
+                        <p>The label must be short and make it clear what information you’re asking for.</p>
+                        <h3>Hint text</h3>
+                        <p>You can add optional hint text to help people understand the information they need to enter.</p>
+                        <p>For example, you might want to make it clear to a user that they only need to select one option. For this you could add hint text ‘Select only one option’.</p>
+                        <h3>Error messages</h3>
+                        <p>Give error messages after the user submits the form.</p>
+                        <p>Error messages should appear above the relevant radio buttons. This means they are read out by assistive technology in an order that makes sense.</p>
+                        <h3>Focus ring</h3>
+                        <p>The focus ring appears as a purple outline around any object, including radio buttons, when someone selects it.</p>
+                        <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="el-c-pullout">
+                    <div class="el-c-pullout-header">
+                        <h3>Examples</h3> 
+                    </div>
+                    <div class="el-c-pullout-content">
+                        <div class="coop-l-grid">
+                            <div class="coop-l-grid__item coop-l-grid__item--large-6">
+                                <form id="radios" class="coop-form" novalidate>
+                                    <fieldset id="radio-1" class="coop-form__row">
+                                        <legend class="coop-form__label">Type of delivery</legend>
+                                        <p id="radio-1-error" class="coop-form__error" hidden></p>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-1" id="radio-1-1" value="1" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-1-1">Free delivery</label>
+                                        </div>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-1" id="radio-1-2" value="2" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-1-2">Next day delivery — £4.99</label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Radio buttons.</p>
+                                <form id="radios-hint" class="coop-form" novalidate>
+                                    <fieldset id="radio-2" class="coop-form__row" aria-describedby="radio-2-hint">
+                                        <legend class="coop-form__label">Type of delivery</legend>
+                                        <p id="radio-2-hint" class="coop-form__hint">Select only one option</p>
+                                        <p id="radio-2-error" class="coop-form__error" hidden></p>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-2" id="radio-2-1" value="1" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-2-1">Free delivery</label>
+                                        </div>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-2" id="radio-2-2" value="2" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-2-2">Next day delivery — £4.99</label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Radio buttons with hint text.</p>
+                                <form id="radios-error" class="coop-form" novalidate>
+                                    <fieldset id="radio-3" class="coop-form__row" aria-describedby="radio-3-error">
+                                        <legend class="coop-form__label">Type of delivery</legend>
+                                        <p id="radio-3-error" class="coop-form__error">Select type of delivery</p>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-3" id="radio-3-1" value="1" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-3-1">Free delivery</label>
+                                        </div>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-3" id="radio-3-2" value="2" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-3-2">Next day delivery — £4.99</label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Radio buttons with error message.</p>
+                                <form id="radios-hint-error" class="coop-form" novalidate>
+                                    <fieldset id="radio-4" class="coop-form__row" aria-describedby="radio-4-hint radio-4-error">
+                                        <legend class="coop-form__label">Type of delivery</legend>
+                                        <p id="radio-4-hint" class="coop-form__hint">Select only one option</p>
+                                        <p id="radio-4-error" class="coop-form__error">Select type of delivery</p>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-4" id="radio-4-1" value="1" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-4-1">Free delivery</label>
+                                        </div>
+                                        <div class="coop-form__choice">
+                                            <input type="radio" name="radio-4" id="radio-4-2" value="2" class="coop-form__field coop-form__radio">
+                                            <label class="coop-form__label" for="radio-4-2">Next day delivery — £4.99</label>
+                                        </div>
+                                    </fieldset>
+                                  </form>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Radio buttons with hint text and error message.</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
