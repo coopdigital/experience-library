@@ -1,18 +1,18 @@
 {% if page.decorative-image-home %}
     <div class="el-c-hero__home-montage"> 
         <div class="el-c-hero__home-montage-inner"> 
-            <img src="/images/decorative/hero/warehouse-touchscreen.jpg" alt="" class="el-c-hero__montage-image" />
-            <img src="/images/decorative/hero/building-layers.svg" alt="" class="el-c-hero__montage-image-surround" />
-            <img src="/images/decorative/hero/star-1.svg" alt="" class="el-c-hero__montage-image-star-1" />
-            <img src="/images/decorative/hero/star-image.svg" alt="" class="el-c-hero__montage-image-star-image" />
-            <img src="/images/decorative/hero/stack.svg" alt="" class="el-c-hero__montage-image-stack" />
+            <img src="{{ 'images/decorative/hero/warehouse-touchscreen.jpg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image" />
+            <img src="{{ 'images/decorative/hero/building-layers.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-surround" />
+            <img src="{{ 'images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-1" />
+            <img src="{{ 'images/decorative/hero/star-image.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-image" />
+            <img src="{{ 'images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-stack" />
         </div>
     </div>
 {% endif %}
 <section class="el-c-hero-dark">  
     {% if page.decorative-image-url %}
     <div class="el-c-hero-dark__image">
-        <img src="{{ page.decorative-image-url }}" alt="" />
+        <img src="{{ page.decorative-image-url | prepend: site.baseurl }}" alt="" />
     </div>
     {% endif %}
     <div class="el-c-hero-dark__content">
@@ -35,7 +35,7 @@
                 <p>{{ item }}</p>
                 {% endfor %}
                 {% if page.intro-text-link %}
-                <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
+                <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link | prepend: site.baseurl }} }}</a>
                 {% endif %}
             </div>
             {% if page.link-box %}
@@ -43,10 +43,10 @@
                 <div class="el-c-info-card el-c-info-card--small">
                     <ul class="el-c-info-card__link-list coop-u-list-bare">
                         {% if page.link-box-text-design %}
-                        <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
+                        <li><a href="{{ page.link-box-link-design | prepend: site.baseurl }} }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/figma-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
                         {% endif %}
                         {% if page.link-box-text-dev %}
-                        <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
+                        <li><a href="{{ page.link-box-link-dev | prepend: site.baseurl }} }}" class="el-c-info-card__link coop-t-link-black"><img src="/images/decorative/storybook-icon.svg" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
                         {% endif %}
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
                     {% endfor %}
                 </div>
                 <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--large-offset-1">
-                    <img src="{{ page.info-card-image }}" alt="" class="el-c-info-card__image" />
+                    <img src="{{ page.info-card-image | prepend: site.baseurl }} }}" alt="" class="el-c-info-card__image" />
                 </div>
             </div>
         </div>

@@ -1,18 +1,19 @@
 {% if page.decorative-image-home %}
     <div class="el-c-hero__home-montage"> 
         <div class="el-c-hero__home-montage-inner"> 
-            <img src="/images/decorative/hero/warehouse-touchscreen.jpg" alt="" class="el-c-hero__montage-image" />
-            <img src="/images/decorative/hero/building-layers.svg" alt="" class="el-c-hero__montage-image-surround" />
-            <img src="/images/decorative/hero/star-1.svg" alt="" class="el-c-hero__montage-image-star-1" />
-            <img src="/images/decorative/hero/star-image.svg" alt="" class="el-c-hero__montage-image-star-image" />
-            <img src="/images/decorative/hero/stack.svg" alt="" class="el-c-hero__montage-image-stack" />
+        {{ 'components/index.html' | prepend: site.baseurl }}
+            <img src="{{ 'images/decorative/hero/warehouse-touchscreen.jpg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image" />
+            <img src="{{ 'images/decorative/hero/building-layers.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-surround" />
+            <img src="{{ 'images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-1" />
+            <img src="{{ 'images/decorative/hero/star-image.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-image" />
+            <img src="{{ 'images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-stack" />
         </div>
     </div>
 {% endif %}
 <section class="el-c-hero">  
     {% if page.decorative-image-url %}
     <div class="el-c-hero__image">
-        <img src="{{ page.decorative-image-url }}" alt="" />
+        <img src="{{ page.decorative-image-url | prepend: site.baseurl }}" alt="" />
     </div>
     {% endif %}
     <div class="el-c-hero__content">
@@ -42,7 +43,7 @@
                 </ul>
                 {% endif %}
                 {% if page.intro-text-link %}
-                <a href="{{ page.intro-text-link-url }}">{{ page.intro-text-link }}</a>
+                <a href="{{ page.intro-text-link-url | prepend: site.baseurl }}">{{ page.intro-text-link }}</a>
                 {% endif %}
                 {% if page.wow-activity-meta %}
                     {% include wow-activity-meta.html %}
@@ -53,7 +54,7 @@
             {% endif %}
             {% if page.supporting-image-url %}
                 <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.supporting-col-width }}">
-                    <img src="{{ page.supporting-image-url }}" alt="{{ page.supporting-image-alt }}">
+                    <img src="{{ page.supporting-image-url | prepend: site.baseurl }}" alt="{{ page.supporting-image-alt }}">
                 </div>
             {% endif %}
         </div> 
