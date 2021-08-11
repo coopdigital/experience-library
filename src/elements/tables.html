@@ -3,7 +3,7 @@ layout: coop-experience
 id: index
 item-url: /elements/tables.html
 section: Elements
-meta-title:	Tables - Co-op Experience Library
+meta-title:	Tables
 meta-description: Find out how to use tables when designing digital products and services for Co-op.
 
 # Hero content
@@ -11,7 +11,7 @@ meta-description: Find out how to use tables when designing digital products and
 col-width: 7
 section-title: Elements
 title: Tables
-last-reviewed: Last reviewed&#58; 11 June 2021
+last-reviewed: Last reviewed&#58; 11 Aug 2021
 intro-text-lead: 
   - Tables can help people compare and understand data.
 # Image at the top of the hero
@@ -26,7 +26,7 @@ link-box-link-dev: /about-this-prototype/
 
 # Changelog
 changelog:
-  - date: 11 June 2021
+  - date: 11 Aug 2021
     notes: First version of page published
 ---
 <div class="coop-u-flex__main">
@@ -40,21 +40,31 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>You should aim to have more rows than columns in your table.</p>
-                        <p>This is because:</p>
+                        <p>Consider whether a table is really needed. A table can often be replaced by:</p>
                         <ul>
-                            <li>wide tables can be difficult for people to read and understand</li>
-                            <li>the fewer columns your table has, the more likely it is that the table will fit onto the screen of a smaller device</li>
+                            <li>a list of bullet points with appropriate subheadings</li>
+                            <li>a row of cards</li>
+                            <li>a csv spreadsheet for large amounts of data</li>
                         </ul>
-                        <p>If your table needs to be wider than the smallest device that is supported:</p>
+                        <p>Only use tables to present data. For example, prices or dates.</p>
+                        <p>Do not use images in tables.</p>
+                        <h3>Size</h3>
+                        <p>Large tables can be overwhelming for some people and can be confusing for users of assistive technology.</p>
+                        <p>Use a maximum of 4 columns. This is the amount that can be comfortably displayed on a smartphone.</p>
+                        <p>Have more rows than columns wherever possible to make your table longer, rather than wider. This makes it easier for people to read and understand.</p>
                         <ul>
                             <li>allow the user the scroll the table left and right</li>
                             <li>provide cues that there is more content that people can scroll to, for example the table could be formatted so the table looks cut off on the screen</li>
                             <li>research the implementation with real people to make sure it’s as accessible as possible</li>
                         </ul>
-                        <p>You should use tables to present data only.</p>
-                        <p>You should not use images in tables.</p>
-                        <p>The heading for a table is called a caption. Your caption should be clear and descriptive of what users will find in the table.</p>
+                        <h3>Captions</h3>
+                        <p>A caption is the heading for a table. It appears above the table as a heading.</p>
+                        <p>Most screen readers announce the captions.</p>
+                        <h3>Headers and footers</h3>
+                        <p>Both columns and rows of a table can have headings these indicate the groups of data within the table.</p>
+                        <p>If there are a lot of rows in your table, you can use table footers which appear at the bottom of the table to help people remember the data that the table contains if they have scrolled down the page a long way.</p>
+                        <h3>Top left cell</h3>
+                        <p>The top left cell of a table is often blank as there is no overarching header for the row headings. Use the caption to describe the content of the table.</p>
                     </div>
                 </div>
             </div>
@@ -198,21 +208,6 @@ changelog:
                         </div>
                     </div>  
                 </div> 
-            </div>
-            <div class="el-c-primary-section">
-                <h2>Table markup for accessibility</h2>
-                <p>Tables must be made accessible by using appropriate markup.</p>
-                <h3>Captions</h3>
-                <p>A caption is the heading for a table. It appears above the table as a heading.</p>
-                <p>Most screen readers announce the content of captions.</p>
-                <h3>Headers and footers</h3>
-                <p>Both columns and rows of a table can have headings these indicate the groups of data within the table.</p>
-                <p>If there are a lot of rows in your table, you can use table footers which appear as headers but at the bottom of the table to help people remember the data that the table contains if they have scrolled down the page a long way.</p>
-                <h3>Row headings</h3>
-                <p>Headings can be used to indicate grouped data along a row.</p>
-                <h3>Top left cell</h3>
-                <p>The top-left cell of a table is often blank as there is no overarching header for the row headings and the content of the table has been described by the caption.</p>
-                <p>This cell can be left blank.</p>
             </div>
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12">
