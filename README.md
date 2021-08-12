@@ -4,7 +4,7 @@ Guidelines, tools and resources to help us create better digital experiences.
 
 The Experience Library is for anyone working on products, services and communications at Co-op.
 
-### Prerequisites
+## Prerequisites
 You'll need [Node.js](https://nodejs.org/), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Ruby](https://www.ruby-lang.org/en/) with the gem dependencies installed. When you run the next step these will be installed autoamtically, however on Co-op Macs you may not have permissions to do this. 
 
 If you get an error:
@@ -18,7 +18,7 @@ If you get an error:
 7. Log out of the admin account.
 8. Log back in with your standard account.
 
-### Local development
+## Local development
 
 This project uses [Jekyll](http://jekyllrb.com/) to generate pages, and various NPM packages with [Gulp](http://gulpjs.com/) to compile the assets into the `build` directory. To install all the necessary dependencies:
 
