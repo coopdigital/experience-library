@@ -7,8 +7,9 @@
     <title>{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <link rel="shortcut icon" type="image/jpg" href="{{ 'images/favicon.ico' | prepend: site.baseurl }}" />
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ 'assets/css/main.css' | prepend: site.baseurl }}"><!--<![endif]-->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% assign versionDateCSS = site.time | date: '%s' %}
+    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ 'assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
     <script>
@@ -41,6 +42,7 @@
             exclude: ['Welcome']
         })
     </script>
-    <script src="/assets/js/main.js?v={{ site.time | date: '%s' }}"></script>
+    {% assign versionDateJS = site.time | date: '%s' %}
+    <script src="{{ 'assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
 </body>
 </html>
