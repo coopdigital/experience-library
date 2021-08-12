@@ -1,4 +1,4 @@
-# Co-op Experience library
+# Co-op Experience Library
 
 Guidelines, tools and resources to help us create better digital experiences.
 
