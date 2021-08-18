@@ -21,7 +21,7 @@
     "@coopdigital/foundations-global": "^3.1.18",
     "@coopdigital/foundations-grid": "^2.0.10",
     "@coopdigital/foundations-layout": "^3.2.4",
-    "@coopdigital/foundations-tables": "^2.1.18",
+    "@coopdigital/foundations-tables": "^3.0.2",
     "@coopdigital/foundations-typography": "^4.1.21",
     "@coopdigital/shared-component--editorialcard": "^2.3.3",
     "@coopdigital/shared-component--featurecard": "^2.2.0",
@@ -36,7 +36,6 @@
     "prismjs": "^1.23.0"
   },
   "devDependencies": {
-    "simple-jekyll-search": "^1.9.1",
     "@babel/core": "^7.14.3",
     "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
@@ -62,7 +61,8 @@
     "postcss-custom-media": "^8.0.0",
     "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.2",
-    "postcss-nesting": "^8.0.1"
+    "postcss-nesting": "^8.0.1",
+    "simple-jekyll-search": "^1.9.1"
   },
   "scripts": {
     "prebuild": "bundle install --gemfile=Gemfile --path vendor/bundle",
