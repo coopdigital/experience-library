@@ -36,7 +36,8 @@
 @import 'theme/el-c-hero.pcss';
 @import 'theme/el-c-hero-dark.pcss'; 
 @import 'theme/el-c-hero-home.pcss'; 
-@import 'theme/el-c-info-card.pcss'; 
+@import 'theme/el-c-info-card.pcss';
+@import 'theme/el-c-interact-banner.pcss'; 
 @import 'theme/el-c-pullout.pcss'; 
 @import 'theme/el-c-primary-section.pcss';
 @import 'theme/el-c-changelog.pcss';

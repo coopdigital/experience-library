@@ -1,16 +1,21 @@
 
 .interact-banner {
   position: relative;
-  background-color: var(--color-link-focus);
+  background-color: var(--color-text);
   color: var(--color-white);
-  margin: 0px;
-  padding: var(--spacing-16);
+  margin-bottom: var(--spacing-32);
+  padding: 10px 16px 10px 16px;
+  border-radius: 4px;
 }
-
-
 
 @media (--mq-medium) {
-    .interact-banner__p {
-        width: 60%;
+    .interact-banner {
+        margin-top: -32px;
     }
 }
+
+.interact-banner__p {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
