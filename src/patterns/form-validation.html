@@ -13,7 +13,7 @@ section-title: Patterns
 title: Form validation
 last-reviewed: Last reviewed&#58; 11 Aug 2021
 intro-text-lead: 
-  - Form validation helps a person move on from an error by telling them the action they need to take to fix it. 
+  - Validation can stop the submission of data. This pattern tells a person that this has happened, and the action they need to take to fix it.  
 intro-text-list:
 
 
@@ -88,16 +88,16 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2 id="anchor-design-guidelines">Design guidelines</h2>
-                        <p>Only activate form validation when the user submits the page or  form – not as they are still typing. Validating before the user has submitted can frustrate people, for example, if they type slowly.</p>
-                        <p>When you activate form validation:</p>
+                        <p>Validation happens when the user submits the page or  form – not as they are still typing. Validating before the user has submitted can frustrate people, for example, if they type slowly.</p>
+                        <p>When you use validation it means that:</p>
                         <ul>
-                            <li>reload the page after it’s been submitted with the error summary at the top of the page</li>
-                            <li>add ‘Error: ’ to the beginning of the page title in the code – this means it will be read out by screen readers when the page reloads</li>
-                            <li>move the keyboard focus to the error summary</li>
-                            <li>list the errors in bullet points in the error summary</li>
-                            <li>make each bullet point an anchor link that, when selected, takes the user to the relevant field</li>
-                            <li>keep the information that was submitted in the form fields so the user can see their error</li>
-                            <li>repeat the error messages above the relevant fields</li>
+                            <li>the page reloads after it’s been submitted, with the error summary at the top of the page</li>
+                            <li>‘Error: ’ is added to the beginning of the page title in the code – this means it will be read out by screen readers when the page reloads</li>
+                            <li>the keyboard focus moves to the error summary</li>
+                            <li>the errors are listed in bullet points in the error summary</li>
+                            <li>each bullet point goes to an anchor link that, when selected, takes the user to the relevant field</li>
+                            <li>the incorrect information that was submitted stays within the field so the user can see their error</li>
+                            <li>the error messages are repeated above the relevant fields</li>
                         </ul>
                     </div>
                 </div>
