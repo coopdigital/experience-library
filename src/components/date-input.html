@@ -5,17 +5,16 @@ description: Use the alert notification to tell people about something that migh
 section: Components
 item-url: /components/date-input.html
 meta-title:	Date input 
-meta-description: Use the alert notification to tell people about something that might affect the service they receive.
+meta-description: Find out how to use the validation when designing digital products and services for Co-op.
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
 section-title: Components
 title: Date input
-last-reviewed: Last reviewed&#58; 18 August 2021
+last-reviewed: Last reviewed&#58; 23 August 2021
 intro-text-lead: 
-  - The date input component helps people to enter a memorable date or one they can easily look up.
-  - It consists of 3 fields to let users enter a day, month and year.
+  - The date input component is 3 input fields that allow people to enter a date.
 
 # Image at the top of the hero
 decorative-image-url: images/decorative/date-input-hero.svg
@@ -48,8 +47,14 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-7">
                         <h2>Guidelines</h2>
-                        <p>Use the date input component when you’re asking people for a date they’ll already know, or can look up without using a calendar.</p>
-                        <p>Do not use the date input component if people are unlikely to know the exact date of the event you’re asking about (consider using a form to ask for an approximate date instead).</p>
+                        <p>Use the date input when you're asking people for a date.</p>
+                        <p>You could use the date input to:</p>
+                        <ul>
+                            <li>check identity</li>
+                            <li>check eligibility</li>
+                            <li>process a holiday request</li>
+                        </ul>
+                        <p>Only ask for a date when a product or service requires it.</p>
                         <p>We’ve used our foundations to design the date input component. For consistency across Co-op products and services, do not change the styling of the date input.</p>
                         <p><a href="/foundations/index.html">Go to our foundations</a>.</p>
                         
@@ -120,7 +125,7 @@ changelog:
                                               </fieldset>
                                             </div>
                                         </form>
-                                        <p class="coop-t-caption">Date input.</p>
+                                        <p class="coop-t-caption">Date input with legend, hint text and 3 input labels.</p>
                                     </div>
                                     <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
                                         <form id="date-inputs-error" class="coop-form" novalidate>                                          
@@ -247,7 +252,9 @@ changelog:
             <div class="el-c-primary-section"> 
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Required elements</h2>
+                        <h3>Legend</h3>
+                        <p>When using the date input, clearly ask the user what date is required. For example, ‘What is your date of birth’ or ‘Enter the first date of your holiday request’.</p>
+                        <p>The label must be short and make it clear what information you’re asking for.</p>
                         <h3>Label</h3>
                         <p>Each field in a date input must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
                         <p>The label must be short and make it clear what information you’re asking for.</p>
