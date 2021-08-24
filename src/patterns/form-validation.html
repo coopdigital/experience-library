@@ -29,6 +29,8 @@ link-box-link-dev: /about-this-prototype/
 
 # In page nav
 in-page-nav:
+  - link-id: anchor-overview
+    link-text: Overview
   - link-id: anchor-content-guidelines
     link-text: Content guidelines
   - link-id: anchor-design-guidelines
@@ -53,9 +55,9 @@ changelog:
             <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2 id="anchor-content-guidelines">Content guidelines</h2>
-                        <p>Use form validation when a person has given information that you cannot use. Then show them an error message that helps them to fix the problem.</p>
-                        <p>Activate form validation when information:</p>
+                        <h2 id="anchor-overview">Overview</h2>
+                        <p>Use validation when a person has given information that the service cannot use. Then show them an error message that helps them to fix the problem.</p>
+                        <p>Activate validation when information:</p>
                         <ul>
                             <li>is missing</li>
                             <li class="coop-u-margin-b-32">does not match the expected format</li>
@@ -65,18 +67,19 @@ changelog:
                             <li>a postcode in upper or lower case, with or without a space</li>
                             <li>their full name in one field, to allow for names that do not fit into a first name and surname structure</li>
                         </ul>
-                        <h3>Writing validation messages</h3>
+                        <h2 id="anchor-content-guidelines">Content guidelines</h2>
                         <p>Validation messages must:</p>
                         <ul>
-                            <li>be specific about what the user needs to do fix the error, for example, ‘enter the amount of hours worked in whole numbers’, not ‘hours entered invalid’ </li>
+                            <li>be specific about what the user needs to do fix the error, for example, ‘enter the amount of hours worked in whole numbers’, not ‘hours entered invalid’</li>
                             <li>start with an action, for example, ‘enter’ or ‘select’</li>
                             <li>be written in plain English</li>
-                            <li class="coop-u-margin-b-32">make sense when read out of context, for example, ‘enter your full name’, not ‘fill in the field’</li>
+                            <li>make sense when read out of context, for example, ‘enter your full name’, not ‘fill in the field’</li>
+                            <li class="coop-u-margin-b-32">does not match the expected format</li>
                         </ul>
-                        <p class="coop-u-margin-resp-t-32">The form validation pattern is made up of an:</p>
+                        <p class="coop-u-margin-resp-t-32">The validation pattern is made up of an:</p>
                         <ul>
                             <li>error summary at the top of the page</li>
-                            <li>error message above the field</li>
+                            <li>error message above the field </li>
                         </ul>
                         <p>The errors listed in bullet points in the error summary start with a lower case letter.</p>
                         <p>The error message above the field start with a capital letter.</p>
