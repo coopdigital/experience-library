@@ -64,8 +64,6 @@ changelog:
                         <h3>Headers and footers</h3>
                         <p>Columns and rows of a table should have headings. These indicate the groups of data within the table.</p>
                         <p>If there are a lot of rows in your table, you can use table footers which appear at the bottom of the table to help people remember the data that the table contains if they have scrolled down the page a long way.</p>
-                        <h3>Top left cell</h3>
-                        <p>The top left cell of a table is often blank as there is no overarching header for the row headings. Use the caption to describe the content of the table.</p>
                     </div>
                 </div>
             </div>
@@ -85,18 +83,18 @@ changelog:
                                         <thead>
                                             <tr>
                                                 <th scope="col"></th>
-                                                <th scope="col">Classic</th>
-                                                <th scope="col">Select Plus</th>
+                                                <th scope="col" class="coop-table__header">Classic</th>
+                                                <th scope="col" class="coop-table__header">Select Plus</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Vet fees cover</th>
+                                                <th class="coop-table__header" scope="row">Vet fees cover</th>
                                                 <td>£2000</td>
                                                 <td>£5000</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Extra treatments</th>
+                                                <th class="coop-table__header" scope="row">Extra treatments</th>
                                                 <td>Not included</td>
                                                 <td>£750</td>
                                             </tr>
@@ -109,7 +107,7 @@ changelog:
                                         <caption class="coop-table__caption">
                                         This table shows compares points earnings in 2018 and 2019
                                         </caption>
-                                        <thead>
+                                        <thead> 
                                             <tr class="coop-table__row">
                                                 <th class="coop-table__header" scope="col"></th>
                                                 <th class="coop-table__header coop-table__header--numeric" scope="col" align="right" width="15%">2018</th>
@@ -118,12 +116,12 @@ changelog:
                                         </thead>
                                         <tbody>
                                             <tr class="coop-table__row">
-                                                <th class="coop-table__cell" scope="row">Co-op Food</th>
+                                                <th class="coop-table__header" scope="row">Co-op Food</th>
                                                 <td class="coop-table__cell coop-table__cell--numeric">709.09</td>
                                                 <td class="coop-table__cell coop-table__cell--numeric">654.45</td>
                                             </tr>
                                             <tr class="coop-table__row">
-                                                <th class="coop-table__cell" scope="row">Co-op Insurance</th>
+                                                <th class="coop-table__header" scope="row">Co-op Insurance</th>
                                                 <td class="coop-table__cell coop-table__cell--numeric">49.99</td>
                                                 <td class="coop-table__cell coop-table__cell--numeric">52.35</td>
                                             </tr>
@@ -185,60 +183,7 @@ changelog:
                                     </table>
                                 </div>
                                 <p class="coop-t-caption">A table with caption and column headings.</p>
-                                <div class="coop-table-wrapper">
-                                    <table class="coop-table">
-                                        <caption class="coop-table__caption">
-                                            Compare the differences between the two types of Co-op Life Insurance.
-                                        </caption>
-                                        <thead>
-                                            <tr class="coop-table__row">
-                                                <th class="coop-table__header" scope="col"></th>
-                                                <th class="coop-table__header" scope="col">
-                                                    Level cover
-                                                </th>
-                                                <th class="coop-table__header" scope="col">
-                                                    Decreasing cover
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="coop-table__row">
-                                                <th class="coop-table__header" scope="row">
-                                                    Payout amount
-                                                </th>
-                                                <td class="coop-table__cell">
-                                                    Fixed for term of policy
-                                                </td>
-                                                <td class="coop-table__cell">
-                                                    Decreases over time
-                                                </td>
-                                            </tr>
-                                            <tr class="coop-table__row">
-                                                <th class="coop-table__header" scope="row">
-                                                    Monthly payments
-                                                </th>
-                                                <td class="coop-table__cell">
-                                                    Fixed for term of policy
-                                                </td>
-                                                <td class="coop-table__cell">
-                                                    Fixed for term of policy
-                                                </td>
-                                            </tr>
-                                            <tr class="coop-table__row">
-                                                <th class="coop-table__header" scope="row">
-                                                    Length of policy
-                                                </th>
-                                                <td class="coop-table__cell">
-                                                    You choose
-                                                </td>
-                                                <td class="coop-table__cell">
-                                                    You choose
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <p class="coop-t-caption">A table with a blank top left cell, column and row headers.</p>
+                                
                             </div>
                         </div>
                     </div>
