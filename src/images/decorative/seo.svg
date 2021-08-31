@@ -1,0 +1,48 @@
+<svg width="1119" height="160" viewBox="0 0 1119 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="1119" height="160" fill="#F5F5F0"/>
+<rect x="1162.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 1162.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="974.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 974.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="1068.5" y="220.5" width="93" height="93" rx="19.5" transform="rotate(-180 1068.5 220.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="880.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 880.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="692.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 692.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="1162.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 1162.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="974.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 974.5 33.5)" fill="#FF6A6D" stroke="#282828"/>
+<rect x="1068.5" y="126.5" width="93" height="93" rx="19.5" transform="rotate(-180 1068.5 126.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="880.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 880.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="692.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 692.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="1162.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 1162.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="786.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 786.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="786.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 786.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="786.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 786.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="974.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 974.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="1068.5" y="32.5" width="93" height="93" rx="19.5" transform="rotate(-180 1068.5 32.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="880.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 880.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="692.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 692.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="598.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 598.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="598.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 598.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="598.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 598.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="504.5" y="127.5" width="93" height="93" rx="19.5" transform="rotate(90 504.5 127.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="504.5" y="33.5" width="93" height="93" rx="19.5" transform="rotate(90 504.5 33.5)" fill="#F5F5F0" stroke="#282828"/>
+<rect x="504.5" y="-60.5" width="93" height="93" rx="19.5" transform="rotate(90 504.5 -60.5)" fill="#F5F5F0" stroke="#282828"/>
+<circle cx="951.5" cy="103.5" r="23" fill="#FFD309" stroke="#282828"/>
+<circle cx="857.5" cy="103.5" r="23" stroke="#282828"/>
+<circle cx="763.5" cy="103.5" r="23" stroke="#282828"/>
+<circle cx="669.5" cy="103.5" r="23" stroke="#282828"/>
+<circle cx="1045.5" cy="103.5" r="23" stroke="#282828"/>
+<circle cx="1045.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="951.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="857.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="763.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="669.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="575.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="481.5" cy="9.5" r="23" stroke="#282828"/>
+<circle cx="575.5" cy="103.5" r="23" stroke="#282828"/>
+<circle cx="481.5" cy="103.5" r="23" stroke="#282828"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1119" height="160" fill="white"/>
+</clipPath>
+</defs>
+</svg>
