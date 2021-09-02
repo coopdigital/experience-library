@@ -2,7 +2,7 @@
 <g clip-path="url(#clip0)">
 <rect width="1119" height="160" fill="#F5F5F0"/>
 <rect x="1166" y="122" width="218" height="218" rx="20" transform="rotate(90 1166 122)" fill="#519AF5"/>
-<rect x="948" y="-96" width="218" height="218" rx="20" transform="rotate(90 948 -96)" fill="#114D94"/>
+<rect x="948" y="-96" width="218" height="218" rx="20" transform="rotate(90 948 -96)" fill="#79DCE3"/>
 <rect x="1166" y="-96" width="218" height="218" rx="20" transform="rotate(90 1166 -96)" fill="white"/>
 <rect x="1166" y="-96" width="218" height="218" rx="20" transform="rotate(90 1166 -96)" fill="white"/>
 <ellipse cx="839" cy="230.709" rx="109" ry="108.709" fill="#FF6A6D"/>
@@ -10,7 +10,7 @@
 <path d="M1146 13C1157.05 13 1166.19 3.97135 1164.17 -6.8889C1160.18 -28.403 1149.76 -48.3843 1134.07 -64.0746C1113.63 -84.5161 1085.91 -96 1057 -96C1028.09 -96 1000.37 -84.5161 979.925 -64.0746C964.235 -48.3843 953.822 -28.403 949.829 -6.88891C947.814 3.97133 956.954 13 968 13L1057 13L1146 13Z" fill="#FF6A6D"/>
 <path d="M1146 122C1157.05 122 1166.19 112.971 1164.17 102.111C1160.18 80.597 1149.76 60.6157 1134.07 44.9254C1113.63 24.4839 1085.91 13 1057 13C1028.09 13 1000.37 24.4839 979.925 44.9254C964.235 60.6157 953.822 80.597 949.829 102.111C947.814 112.971 956.954 122 968 122L1057 122L1146 122Z" fill="#FFD309"/>
 <rect x="730" y="122" width="218" height="218" rx="20" transform="rotate(90 730 122)" fill="#519AF5"/>
-<rect x="512" y="-96" width="218" height="218" rx="20" transform="rotate(90 512 -96)" fill="#114D94"/>
+<rect x="512" y="-96" width="218" height="218" rx="20" transform="rotate(90 512 -96)" fill="#79DCE3"/>
 <rect x="730" y="-96" width="218" height="218" rx="20" transform="rotate(90 730 -96)" fill="white"/>
 <rect x="730" y="-96" width="218" height="218" rx="20" transform="rotate(90 730 -96)" fill="white"/>
 <ellipse cx="403" cy="230.709" rx="109" ry="108.709" fill="#FF6A6D"/>
