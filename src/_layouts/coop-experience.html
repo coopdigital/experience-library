@@ -5,11 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="shortcut icon" type="image/jpg" href="{{ 'images/favicon.ico' | prepend: site.baseurl }}" />
+    <link rel="shortcut icon" type="image/jpg" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% assign versionDateCSS = site.time | date: '%s' %}
-    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ 'assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url  }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
     <script>
@@ -20,7 +20,7 @@
     </script>
     <style>
         .el-c-search .coop-form__wrapper::before {
-            background: url('{{ "images/search.svg" | prepend: site.baseurl }}');
+            background: url('{{ "/images/search.svg" | prepend: site.baseurl }}');
         }
     </style>
     </head>
@@ -39,7 +39,7 @@
         window.simpleJekyllSearch = new SimpleJekyllSearch({
             searchInput: document.getElementById('search-small-input'),
             resultsContainer: document.getElementById('results-container'),
-            json: '{{ "search.json" | prepend: site.baseurl }}',
+            json: '{{ "/search.json" | prepend: site.baseurl }}',
             searchResultTemplate: '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
             noResultsText: '<li class="result-list-item"><span class="title">No results found</span></li>   ',
             limit: 10,
@@ -48,6 +48,6 @@
         })
     </script>
     {% assign versionDateJS = site.time | date: '%s' %}
-    <script src="{{ 'assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
 </body>
 </html>
