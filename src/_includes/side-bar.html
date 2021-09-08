@@ -20,31 +20,31 @@
             {% if page.id == 'get-started' %}
             <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                 <li role="none"><a href="{{ site.baseurl }}" role="menuitem">Home</a></li>
-                <li role="none"><a href="{{ 'get-started/' | prepend: site.baseurl }}" role="menuitem"> Get started</a></li>
+                <li role="none"><a href="{{ 'get-started/' | prepend: site.baseurl }}" role="menuitem">Get started</a></li>
             </ul>
             {% endif %}
             {% if page.id == 'design' %}
             <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                 <li role="none"><a href="{{ site.baseurl }}" role="menuitem">Home</a></li>
-                <li role="none"><a href="{{ 'design-guidelines/' | prepend: site.baseurl }}" role="menuitem"> Design guidelines</a></li>
+                <li role="none"><a href="{{ 'design-guidelines/' | prepend: site.baseurl }}" role="menuitem">Design guidelines</a></li>
             </ul>
             {% endif %}
             {% if page.id == 'content' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                     <li role="none"><a href="{{ site.baseurl }}" role="menuitem">Home</a></li>
-                    <li role="none"><a href="{{ 'content-guidelines/ | prepend: site.baseurl }}" role="menuitem"> Content guidelines</a></li>
+                    <li role="none"><a href="{{ 'content-guidelines/' | prepend: site.baseurl }}" role="menuitem">Content guidelines</a></li>
                 </ul>
             {% endif %}
             {% if page.id == 'accessibility' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                     <li role="none"><a href="{{ site.baseurl }}" role="menuitem">Home</a></li>
-                    <li role="none"><a href="{{ 'accessibility/ | prepend: site.baseurl }}" role="menuitem"> Accessibility</a></li>
+                    <li role="none"><a href="{{ 'accessibility/' | prepend: site.baseurl }}" role="menuitem">Accessibility</a></li>
                 </ul>
             {% endif %}
             {% if page.id == 'ways-of-working' %}
                 <ul class="coop-side-nav coop-u-list-bare c-coop-breadcrumb">
                     <li role="none"><a href="{{ site.baseurl }}" role="menuitem">Home</a></li>
-                    <li role="none"><a href="{{ 'ways-of-working/ | prepend: site.baseurl }}' | prepend: site.baseurl }}" role="menuitem"> Ways of working</a></li>
+                    <li role="none"><a href="{{ 'ways-of-working/' | prepend: site.baseurl }}' | prepend: site.baseurl }}" role="menuitem">Ways of working</a></li>
                 </ul>
             {% endif %}
         
@@ -186,26 +186,10 @@
                 {% endif %}
 
                 {% if page.id == 'content' %}
-                    <li class="side-nav__link" role="none"><a href="#">Principles</a></li>
+                    <li class="side-nav__link" role="none"><a href="{{ 'content-guidelines/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/' %}is-active{% endif %}">Content guidelines</a></li>
+                    <!-- <li class="side-nav__link" role="none"><a href="{{ '#' | prepend: site.baseurl }}">How we write</a></li>
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link  {% if page.section == 'content-foundations' %}is-open{% endif %}" id="content-foundations-list">Content foundations
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
-                                <path
-                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                                </path>
-                            </svg>
-                        </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-foundations-list">
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">How people read online</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Describing Co-op</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Voice and tone/active voice</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Inclusivity</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Accessibility</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Tools and resources</a></li>
-                        </ul>
-                    </li>
-                    <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'content-elements' %}is-open{% endif %}">Content elements
+                        <button aria-expanded="false" class="toggle-link  {% if page.section == 'content-elements' %}is-open{% endif %}" id="content-elements-list">Content elements
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
@@ -213,40 +197,31 @@
                             </svg>
                         </button>
                         <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-elements-list">
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Heading content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Images</a></li>
-                            <li class="nested-link" role="none"><a href="/content-guidelines/content-elements/link-content.html" role="menuitem" class="{% if page.item-url == '/content-guidelines/content-elements/link-content.html' %}is-active{% endif %}">Link content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">List content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Button content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Table content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Videos</a></li>
+                            <li class="nested-link" role="none"><a href="{{ '#' | prepend: site.baseurl }}" role="menuitem">Link content</a></li>
+                            <li class="nested-link" role="none"><a href="{{ '#' | prepend: site.baseurl }}" role="menuitem">Button content</a></li>
+                            <li class="nested-link" role="none"><a href="{{ '#' | prepend: site.baseurl }}" role="menuitem">Table content</a></li>
                         </ul>
-                    </li>
+                    </li> -->
+                    <!-- <li class="side-nav__link" role="none"><a href="{{ '#' | prepend: site.baseurl }}" role="menuitem" class="">Word list</a></li> -->
                     <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'content-patterns' %}is-open{% endif %}" id="content-patterns-list">Content patterns
+                        <button aria-expanded="false" class="toggle-link {% if page.section == 'style-and-patterns' %}is-open{% endif %}" id="style-and-patterns">Style and patterns
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
                                 <path
                                     d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
                                 </path>
                             </svg>
                         </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="content-patterns-list">
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Attachments (PDFs)</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Create an account text</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Email addresses</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Error messages</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Form content</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Frequently asked questions</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Logging in text</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Password field</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Password reset text</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Phone numbers</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Product information</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Surveys</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Terms and conditions</a></li>
-                            <li class="nested-link" role="none"><a href="#" role="menuitem">Validation (or confirmation) messages</a></li>
+                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="style-and-patterns">
+                            <li class="nested-link" role="none">
+                                <a href="{{ 'content-guidelines/style-and-patterns/index.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/index.html' %}is-active{% endif %}">All style and patterns</a>
+                            </li>
+                            <li class="nested-link" role="none">
+                                <a href="{{ 'content-guidelines/style-and-patterns/punctuation-and-formatting.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/punctuation-and-formatting.html' %}is-active{% endif %}">Punctuation and formatting</a>
+                            </li>         
                         </ul>
                     </li>
+                    <!-- <li class="side-nav__link" role="none"><a href="{{ '#' | prepend: site.baseurl }}">Content tools and resources</a></li> -->
+                    <!--
                     <li class="side-nav__link side-nav__link-toggle" role="none">
                         <button aria-expanded="false" class="toggle-link" id="style-list">Style
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
@@ -285,6 +260,7 @@
                             <li class="nested-link" role="none"><a href="#" role="menuitem">Words to avoid</a></li>
                         </ul>
                     </li>
+                    -->
                 {% endif %}
 
                 {% if page.id == 'accessibility' %}
