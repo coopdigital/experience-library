@@ -34,6 +34,7 @@
 @import 'theme/search.pcss'; 
 @import 'theme/signpost.pcss';  
 @import 'theme/el-c-hero.pcss';
+@import 'theme/el-c-hero-home-flex.pcss'; 
 @import 'theme/el-c-hero-dark.pcss'; 
 @import 'theme/el-c-hero-home.pcss'; 
 @import 'theme/el-c-info-card.pcss';
@@ -46,6 +47,7 @@
 @import 'theme/el-c-contribute-card.pcss';
 @import 'theme/el-c-in-page-nav.pcss';
 @import 'theme/el-c-activity-meta.pcss'; 
+@import 'theme/el-c-horizontal-card-home.pcss';
      
 /* Utility overrides */
 @import "theme/grid.pcss";

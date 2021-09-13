@@ -1,0 +1,65 @@
+{% if page.decorative-image-home %}
+    <div class="el-c-hero__home-montage"> 
+        <div class="el-c-hero__home-montage-inner"> 
+            <img src="{{ '/images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-1" />
+            <img src="{{ '/images/decorative/hero/star-image.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-image" />
+            <img src="{{ '/images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-stack" />
+        </div>
+    </div>
+{% endif %}
+<section class="el-c-hero">  
+    {% if page.decorative-image-url %}
+    <div class="el-c-hero__image">
+        <img src="{{ page.decorative-image-url | prepend: site.baseurl }}" alt="" />
+    </div>
+    {% endif %}
+    <div class="el-c-hero__content">
+        <div class="coop-l-grid  el-c-hero__centered">
+            <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
+                {% if page.last-reviewed %}
+                <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
+                {% endif %}
+                {% if page.section-title %}
+                <p class="el-c-hero__section">{{ page.section-title }}</p>
+                {% endif %}
+                <h1 class="el-c-hero__title">{{ page.title }}</h1>   
+                {% if page.home-lead %}
+                <p class="coop-t-h2">{{ page.home-lead }}</p>
+                {% endif %}
+                {% for item in page.intro-text-lead %}
+                <p class="coop-t-lead-p">{{ item }}</p>
+                {% endfor %}
+                {% for item in page.intro-text %}
+                <p>{{ item }}</p>
+                {% endfor %}
+                {% if page.intro-text-list %}
+                <ul class="el-c-hero__list">
+                    {% for item in page.intro-text-list %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if page.intro-text-link %}
+                <a href="{{ page.intro-text-link-url | prepend: site.baseurl }}">{{ page.intro-text-link }}</a>
+                {% endif %}
+                {% if page.wow-activity-meta %}
+                    {% include wow-activity-meta.html %}
+                {% endif %}
+            </div>
+            {% if page.link-box %}
+                {% include link-box.html %}  
+            {% endif %}
+            {% if page.supporting-image-url %}
+                <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.supporting-col-width }}">
+                    <img src="{{ page.supporting-image-url | prepend: site.baseurl }}" alt="{{ page.supporting-image-alt }}">
+                </div>
+            {% endif %}
+        </div> 
+    </div>
+    {% if page.info-card %}
+        {% include info-card.html %}
+    {% endif %}
+    {% if page.in-page-nav %}
+        {% include in-page-nav.html %}
+    {% endif %}
+</section>
