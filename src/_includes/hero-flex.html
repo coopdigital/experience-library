@@ -1,28 +1,28 @@
 {% if page.decorative-image-home %}
-    <div class="el-c-hero__home-montage"> 
-        <div class="el-c-hero__home-montage-inner"> 
-            <img src="{{ '/images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-1" />
-            <img src="{{ '/images/decorative/hero/star-image.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-star-image" />
-            <img src="{{ '/images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__montage-image-stack" />
+    <div class="el-c-hero__home-flex-montage"> 
+        <div class="el-c-hero__home-flex-montage-inner"> 
+            <img src="{{ '/images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-star-1" />
+            <img src="{{ '/images/decorative/hero/people-principles.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-people-principles" />
+            <img src="{{ '/images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-stack" />
         </div>
     </div>
 {% endif %}
-<section class="el-c-hero">  
+<section class="el-c-hero-home-flex">  
     {% if page.decorative-image-url %}
-    <div class="el-c-hero__image">
+    <div class="el-c-hero-home-flex__image">
         <img src="{{ page.decorative-image-url | prepend: site.baseurl }}" alt="" />
     </div>
     {% endif %}
-    <div class="el-c-hero__content">
-        <div class="coop-l-grid  el-c-hero__centered">
+    <div class="el-c-hero-home-flex__content">
+        <div class="coop-l-grid  el-c-hero-home-flex__centered">
             <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
                 {% if page.last-reviewed %}
-                <p class="el-c-hero__meta">{{ page.last-reviewed }}</p> 
+                <p class="el-c-hero-home-flex__meta">{{ page.last-reviewed }}</p> 
                 {% endif %}
                 {% if page.section-title %}
-                <p class="el-c-hero__section">{{ page.section-title }}</p>
+                <p class="el-c-hero-home-flex__section">{{ page.section-title }}</p>
                 {% endif %}
-                <h1 class="el-c-hero__title">{{ page.title }}</h1>   
+                <h1 class="el-c-hero-home-flex__title">{{ page.title }}</h1>   
                 {% if page.home-lead %}
                 <p class="coop-t-h2">{{ page.home-lead }}</p>
                 {% endif %}
@@ -33,7 +33,7 @@
                 <p>{{ item }}</p>
                 {% endfor %}
                 {% if page.intro-text-list %}
-                <ul class="el-c-hero__list">
+                <ul class="el-c-hero-home-flex__list">
                     {% for item in page.intro-text-list %}
                     <li>{{ item }}</li>
                     {% endfor %}
