@@ -203,22 +203,22 @@ hr,
   } 
 }
 
-.font-example-regular{
+.font-example-regular {
   font-size: 2em;
   font-weight: normal;
 }
  
-.font-example-medium{
+.font-example-medium {
   font-size: 2em;
   font-weight: 500;
 }
 
-.font-example-demi{
+.font-example-demi {
   font-size: 2em;
   font-weight: bold;
 }
  
-.white-text{
+.white-text {
   color: var(--color-white);
 }
 

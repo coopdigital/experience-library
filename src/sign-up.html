@@ -1,0 +1,68 @@
+---
+layout: coop-experience
+id: index
+item-url: /sign-up.html
+section: 
+meta-title:	Sign up for email updates
+meta-description: Sign up for email updates about changes to the Experience Library
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Community
+title: Sign up for email updates
+last-reviewed: 
+intro-text-lead: 
+  - We’re creating a place where anyone working on Co-op products, services or communications can go to get help making more inclusive customer experiences.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/design-principles-hero.svg
+
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-6">
+                    <p>We’ll keep you informed about changes and developments to the Experience Library.</p>
+                    <div id="mc_embed_signup">
+                        <form action="https://us1.list-manage.com/subscribe/post?u=7a20f8e74e97d00c680ae9ae6&amp;id=af3f0a9fec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="coop-form validate" target="_blank" novalidate>      
+                            <style type="text/css">
+                                #mc_embed_signup div.mce_inline_error {
+                                margin: 0.5rem 0 0 0;
+                                padding: 0;
+                                background-color: #fff;
+                                font-weight: normal;
+                                color: #e20f14;  
+                            }
+                                #mc_embed_signup input.mce_inline_error {
+                                    border-color: #e20f14;
+                                }
+                            </style>
+                            <div id="mc_embed_signup_scroll">
+                                <div class="coop-form__row mc-field-group">
+                                    <label for="mce-EMAIL" class="coop-form__label">Email address </label>
+                                    <div id="mce-responses">
+                                        <div class="response coop-form__error" id="mce-error-response" style="display:none"></div>
+                                        <div class="response coop-c-notification coop-c-notification--success" id="mce-success-response" style="display:none"></div>
+                                    </div> 
+                                    <input type="email" value="" name="EMAIL" class="coop-form__input required email" id="mce-EMAIL">
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_7a20f8e74e97d00c680ae9ae6_af3f0a9fec" tabindex="-1" value="">
+                                </div>
+                                <div class="coop-form__row">
+                                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="coop-btn coop-btn--primary">Sign-up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
