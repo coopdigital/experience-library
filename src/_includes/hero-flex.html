@@ -1,13 +1,12 @@
-{% if page.decorative-image-home %}
+<section class="el-c-hero-home-flex"> 
+    {% if page.decorative-image-home %}
     <div class="el-c-hero__home-flex-montage"> 
         <div class="el-c-hero__home-flex-montage-inner"> 
-            <img src="{{ '/images/decorative/hero/star-1.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-star-1" />
-            <img src="{{ '/images/decorative/hero/people-principles.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-people-principles" />
+            <img src="{{ '/images/decorative/hero/people-principles.png' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-people-principles" />
             <img src="{{ '/images/decorative/hero/stack.svg' | prepend: site.baseurl }}" alt="" class="el-c-hero__home-flex-montage-image-stack" />
         </div>
     </div>
-{% endif %}
-<section class="el-c-hero-home-flex">  
+    {% endif %}
     {% if page.decorative-image-url %}
     <div class="el-c-hero-home-flex__image">
         <img src="{{ page.decorative-image-url | prepend: site.baseurl }}" alt="" />
