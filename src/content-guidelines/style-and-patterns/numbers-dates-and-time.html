@@ -1,0 +1,95 @@
+---
+layout: coop-experience
+id: content
+item-url: /content-guidelines/style-and-patterns/numbers-dates-and-time.html
+section: style-and-patterns
+meta-title:	Numbers, dates and time
+meta-description: Find out how to use numbers, dates and time when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Content guidelines
+title: Numbers, dates and time
+last-reviewed: Last reviewed&#58; 9 Sept 2021
+intro-text-lead: 
+  - Using consistent numbers, dates and time helps people understand numeric information.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/components.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: 
+link-box-link-design: 
+link-box-text-dev: 
+link-box-link-dev: 
+
+# Changelog
+changelog:
+  - date: 17 Sept 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Numbers</h2>
+                        <p>Write out ‘one’ in full, then use numerals for all other numbers. <a href="https://www.nngroup.com/articles/web-writing-show-numbers-as-numerals/">Research shows</a> that using digits makes web content easier to scan.</p>
+                        <p>However, if a sentence starts with a number, you should spell it out. For example, ‘Thirty-four colleagues volunteered their time’.</p>
+                        <p>Write out first, second and so on. Spell out ‘first’ to ‘ninth’. After that use 10th, 11th and so on. But, write dates as 10 January 2017 (see dates below).</p>
+                        <p>Write fractions out in full, so ‘half’ or ‘three quarters’, except in recipes where you should use numbers such as ‘½ tsp’.</p>
+                        <h3>Commas and apostrophes</h3>
+                        <p>Use commas for numbers over 999. For example, 1,000 or 5,000,000.</p>
+                        <p>Plurals do not need apostrophes, so write ‘1,000s’ not ‘1,000’s’.</p>
+                        <h3>Millions and billions</h3>
+                        <p>Abbreviate millions and billions when you’re writing about money, so ‘£23m’ or ‘£4bn’.</p>
+                        <p>A billion is a thousand million.</p>
+                        <p>When you’re not talking about money, spell out millions and billions, so ‘2 billion people’.</p>
+                        <h3>Money</h3>
+                        <p>For pound sterling, use the £ symbol. For example, £75.</p>
+                        <p>Write out pence in full where possible. For example, ‘calls will cost 4 pence per minute from a landline’.</p>
+                        <p>Do not use decimals unless pence are included, so £75.50 but not £75.00.</p>
+                        <p>Where something interacts with a backend system, for example on an ecommerce website or in a Co-op store, using decimals is acceptable. In marketing materials though, you should use 99p or £1.</p>
+                        <p>Write currencies in lower case.</p>
+                        <p>Check the advice about numbers (commas and apostrophes) for amounts over 1,000.</p>
+                        <h3>Phone numbers</h3>
+                        <p>Split phone numbers into three chunks (the area code, where possible, followed by a split of the other numbers). This makes them easier to read and remember.</p>
+                        <p>For example:</p>
+                        <ul>
+                            <li>0161 123 4567</li>
+                            <li>020 7123 4567</li>
+                            <li>01204 123 456</li>
+                            <li>07765 123 456</li>
+                        </ul>
+                        <p>Include:</p>
+                        <ul>
+                            <li>the area code for landlines</li>
+                            <li>information about call charges and opening times</li>
+                        </ul>
+                        <h2>Dates</h2>
+                        <p>Follow the date format 'Monday 14 June 2021'. Use only as much description as needed - you do not need to include the day or year every time if it’s obvious from context.</p>
+                        <p>If you’re referring to date ranges, then use ‘to’ rather than hyphens or dashes. For example, January to March.</p>
+                        <p>Avoid all references to annual quarters. Instead, write the dates in full: ‘This offer is valid between 1 October and 31 December 2018.’</p>
+                        <p>Use numerals and write out decades in full, so 1970s not ‘70s.</p>
+                        <h2>Time</h2>
+                        <p>Use the 12 hour clock, so ‘9am to 5pm’. If you need to include the minutes, write ‘9.15am’.</p>
+                        <p>Use ‘midday’ rather than noon, 12noon or 12pm. Use ‘midnight’ and not ‘12am’.</p>
+                        <p>Do not use midday or midnight where it could be confusing. For example, if there is a deadline to submit an application form, consider using '6 July 2018, 11.59pm' rather than 'midnight'.</p>
+                        <p>It’s not necessary to specify time zones, such as ‘1pm GMT’.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
