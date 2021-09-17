@@ -227,3 +227,7 @@ hr,
   outline: 2px solid var(--color-link--focus);
   outline-offset: 3px;
 }
+
+.medium-weight-text{
+  font-weight: 500;
+}
