@@ -2,10 +2,6 @@ name: Build and Deploy to One Web Static Hosting
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
 
 jobs:
   build:
@@ -32,7 +28,9 @@ jobs:
       run: |
         bundle install
         npm ci
+        npm run build
 
     - name: Show Directory 
       run: |
+        cd build
         ls -lah
