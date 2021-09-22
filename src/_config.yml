@@ -3,8 +3,8 @@
 # Site settings
 title: Co-op Experience Library
 description: Guidelines, tools and resources to help us create better digital experiences for our customers.
-baseurl: ""
-url: "https://pioneer-design-system.heroku.com"
+baseurl: "/experience-library"
+url: "https://development.static.coop.co.uk"
 
 # Build settings
 source: ./
