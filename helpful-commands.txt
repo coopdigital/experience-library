@@ -1,0 +1,23 @@
+# To get started type:
+
+cd (then drag the experience-library folder into terminal) and press enter
+
+
+# Always pull the latest changes before starting work by typing
+
+git pull origin main
+
+# Then press enter
+
+
+# To start the website locally type:
+
+npm run server
+
+# Then press enter
+
+
+# To stop the website type
+
+ctrl + c
+
