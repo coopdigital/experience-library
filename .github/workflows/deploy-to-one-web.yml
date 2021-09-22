@@ -1,6 +1,7 @@
 name: Build and Deploy to One Web Static Hosting
 
 on:
+  workflow_dispatch:
   push:
     branches: [ $default-branch ]
   pull_request:
