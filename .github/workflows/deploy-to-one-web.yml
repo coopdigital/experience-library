@@ -10,27 +10,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-    
+   
     steps:
     - uses: actions/checkout@v2
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12.x
 
     - name: Set up Ruby 2.6
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.6.x
+        ruby-version: 2.6.3
 
-#     - name: Install one-web-hosting-tool
-#       run: |
-#         curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+    # - name: Install one-web-hosting-tool
+    #   run: |
+    #     curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
 
     - name: Build
       run: |
