@@ -27,6 +27,10 @@ jobs:
       with:
         ruby-version: 2.6.x
 
+    - name: Install one-web-hosting-tool
+      run: |
+        curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+
     - name: Build
       run: |
         bundle install
