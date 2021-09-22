@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [12.x]
     
     steps:
     - uses: actions/checkout@v2
@@ -28,9 +28,9 @@ jobs:
       with:
         ruby-version: 2.6.x
 
-    - name: Install one-web-hosting-tool
-      run: |
-        curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+#     - name: Install one-web-hosting-tool
+#       run: |
+#         curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
 
     - name: Build
       run: |
