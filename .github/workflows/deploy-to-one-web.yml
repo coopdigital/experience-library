@@ -1,0 +1,44 @@
+name: Build and Deploy to One Web Static Hosting
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+   
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.3
+    
+    # TODO: This URL requires the runner to be on the allowlist for development.static.coop.co.uk
+    # - name: Install one-web-hosting-tool
+    #   run: |
+    #     curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+
+    - name: Build
+      run: |
+        bundle install
+        npm ci
+        npm run build
+
+    - name: Show Directory 
+      run: |
+        cd build
+        ls -lah
+        echo "At this point we would run 'one-web-hosting deploy --env=dev --yes' but the hosting tool isn't installed"
