@@ -188,7 +188,7 @@
 
                 {% if page.id == 'content' %}
                     <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/' %}is-active{% endif %}">Content guidelines</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/how-we-write.html' | prepend: site.baseurl }}">How we write</a></li>
+                    <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/how-we-write.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/how-we-write.html' %}is-active{% endif %}">How we write</a></li> 
                     <!-- <li class="side-nav__link side-nav__link-toggle" role="none">
                         <button aria-expanded="false" class="toggle-link  {% if page.section == 'content-elements' %}is-open{% endif %}" id="content-elements-list">Content elements
                             <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
