@@ -1,10 +1,11 @@
 ---
 layout: coop-experience
 id: index
+conditional: home
 item-url: /community/feedback.html
 meta-title: Feedback
 meta-description: Submit your feedback to the Experience Library team
-title: Suggest an update to the Experience Library
+title: Give feedback or suggest an update
 description: Submit your feedback to the Experience Library team
 col-width: 9
 intro-text-lead: 
@@ -13,7 +14,6 @@ decorative-image-url:  /images/decorative/foundations.svg
 <div class="coop-u-flex__main">
     <main id="main">
         <div class="coop-l-full">
-            
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
@@ -33,11 +33,12 @@ decorative-image-url:  /images/decorative/foundations.svg
                                 </div>
                                 <div class="coop-u-margin-resp-b-32-16">
                                     <label for="which-page" class="label">Which page is this about?</label>
+                                    <p id="email-hint" class="coop-form__hint">Enter a page title or URL.</p>
                                     <input type="text" id="which-page" name="Which page is this about?" class="coop-form__input" />
                                 </div>
                                 <div class="coop-u-margin-resp-b-32-16">
-                                    <label id="feedback-comment" for="id_comments" class="label">What update do you want to suggest to this page?</label>
-                                    <textarea cols="40" id="id_comments" name="What update do you want to suggest to this page?" rows="5"></textarea>
+                                    <label id="feedback-comment" for="id_comments" class="label">Your feedback or update</label>
+                                    <textarea cols="40" id="id_comments" name="Your feedback or update" rows="5"></textarea>
                                 </div>
                                 <div class="coop-u-margin-resp-b-32-16">
                                     <button class="coop-btn coop-btn--primary" type="submit">Send feedback</button>
