@@ -18,6 +18,14 @@
     gtag('js', new Date());
     gtag('config', 'UA-204246589-1');
     </script>
+    <script>
+        var captureOutboundLink = function(url) {
+           ga('send', 'event', 'outbound', 'click', url, {
+             'transport': 'beacon',
+             'hitCallback': function(){document.location = url;}
+           });
+        }
+    </script> 
     <style>
         .el-c-search .coop-form__wrapper::before {
             background: url('{{ "/images/search.svg" | prepend: site.baseurl }}');
