@@ -1,10 +1,10 @@
 ---
 layout: coop-experience
 id: index
-conditional: home
 title: Co-op Experience Library
 description: Co-op Experience Library.
 item-url: /index.html
+conditional: home
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -47,10 +47,101 @@ signpost:
         <div class="coop-l-full">  
             {% include hero-flex.html %}
         </div>
-        <section class="coop-l-page coop-l-page--home" style="background-image: url('{{ '/images/decorative/layers-10.svg' | prepend: site.baseurl }}')">
+        <div class="coop-l-page coop-l-page--home">
             <div class="coop-l-grid">
                 <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                    <h2>Layering design</h2>
+                    <h2>Get started</h2>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
+                        <a href="{{ '/content-guidelines/' | prepend: site.baseurl }}" class="el-c-horizontal-card-home__link">
+                            <div class="el-c-horizontal-card-home__inner">
+                                <figure class="el-c-horizontal-card-home__media">
+                                    <picture class="el-c-horizontal-card-home__image">
+                                        <img src="{{ '/images/decorative/homepage-foundations.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
+                                     </picture>
+                                </figure>
+                                <div class="el-c-horizontal-card-home__content">
+                                    <header class="el-c-horizontal-card-home__header">
+                                        <p class="el-c-horizontal-card-home__subtitle">Content guidelines</p>
+                                        <h2 class="el-c-horizontal-card-home__title">
+                                            <span>Our approach, style and patterns to help you create clear content.</span>
+                                        </h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
+                        <a href="https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=4437%3A153" class="el-c-horizontal-card-home__link">
+                            <div class="el-c-horizontal-card-home__inner">
+                                <figure class="el-c-horizontal-card-home__media">
+                                    <picture class="el-c-horizontal-card-home__image">
+                                        <img src="{{ '/images/decorative/figma-signpost.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
+                                     </picture>
+                                </figure>
+                                <div class="el-c-horizontal-card-home__content">
+                                    <header class="el-c-horizontal-card-home__header">
+                                        <p class="el-c-horizontal-card-home__subtitle">Figma</p>
+                                        <h2 class="el-c-horizontal-card-home__title">
+                                            <span>Create your own designs using our Figma library of foundations, elements, components and patterns.</span>
+                                        </h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
+                        <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
+                            <div class="el-c-horizontal-card-home__inner">
+                                <figure class="el-c-horizontal-card-home__media">
+                                    <picture class="el-c-horizontal-card-home__image">
+                                        <img src="{{ '/images/decorative/accessibility-signpost-home.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
+                                     </picture>
+                                </figure>
+                                <div class="el-c-horizontal-card-home__content">
+                                    <header class="el-c-horizontal-card-home__header">
+                                        <p class="el-c-horizontal-card-home__subtitle">Accessibility</p>
+                                        <h2 class="el-c-horizontal-card-home__title">
+                                            <span>Everything you need to start creating accessible products and services.</span>
+                                        </h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
+                        <a href="{{ '/search-engine-optimisation/' | prepend: site.baseurl }}" class="coop-c-signpost__link">
+                            <div class="el-c-horizontal-card-home__inner">
+                                <figure class="el-c-horizontal-card-home__media">
+                                    <picture class="el-c-horizontal-card-home__image">
+                                        <img src="{{ '/images/decorative/seo-signpost-home.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
+                                     </picture>
+                                </figure>
+                                <div class="el-c-horizontal-card-home__content">
+                                    <header class="el-c-horizontal-card-home__header">
+                                        <p class="el-c-horizontal-card-home__subtitle">Search Engine Optimisation (SEO)</p>
+                                        <h2 class="el-c-horizontal-card-home__title">
+                                            <span>How to make sure people find your webpages in search engine results.</span>
+                                        </h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            </div>
+        <section class="coop-l-page coop-l-page--home" style="background-image: url('{{ 'images/decorative/layers-10.svg' | prepend: site.baseurl }}')">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
+                    <h2>Apply our design</h2>
                 </div>
                 <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
                     <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
@@ -79,7 +170,7 @@ signpost:
                             <div class="el-c-horizontal-card-home__inner">
                                 <figure class="el-c-horizontal-card-home__media">
                                     <picture class="el-c-horizontal-card-home__image">
-                                        <img src="{{ '/images/decorative/homepage-elements.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
+                                        <img src="{{ '/images/decorative/elements-signpost-home.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
                                      </picture>
                                 </figure>
                                 <div class="el-c-horizontal-card-home__content">
@@ -137,213 +228,6 @@ signpost:
                     </article>
                 </div>
             </div>
-
-            <div class="coop-l-grid coop-u-margin-t-64">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                    <h2>Accessibility</h2>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
-                        <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                            <div class="el-c-horizontal-card-home__inner">
-                                <figure class="el-c-horizontal-card-home__media">
-                                    <picture class="el-c-horizontal-card-home__image">
-                                        <img src="{{ '/images/decorative/homepage-accessibility.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                     </picture>
-                                </figure>
-                                <div class="el-c-horizontal-card-home__content">
-                                    <header class="el-c-horizontal-card-home__header">
-                                        <p class="el-c-horizontal-card-home__subtitle">Get started</p>
-                                        <h2 class="el-c-horizontal-card-home__title">
-                                            <span>Everything you need to start creating accessible products and services.</span>
-                                        </h2>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
-                        <a href="{{ '/accessibility/tools-and-resources.html' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                            <div class="el-c-horizontal-card-home__inner">
-                                <figure class="el-c-horizontal-card-home__media">
-                                    <picture class="el-c-horizontal-card-home__image">
-                                        <img src="{{ '/images/decorative/doing-accessibility.png' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                    </picture>
-                                </figure>
-                                <div class="el-c-horizontal-card-home__content">
-                                    <header class="el-c-horizontal-card-home__header">
-                                        <p class="el-c-horizontal-card-home__subtitle">Tools and resources</p>
-                                        <h2 class="el-c-horizontal-card-home__title">
-                                            <span>Applications, videos and articles to help you do accessible and inclusive design.</span>
-                                        </h2>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </div>
-            <div class="coop-l-grid coop-u-margin-t-64">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                    <h2>Search engine optimisation</h2>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
-                    <div class="coop-c-signpost">
-                        <a href="{{ '/search-engine-optimisation/' | prepend: site.baseurl }}" class="coop-c-signpost__link">
-                            <div class="coop-c-signpost__content">
-                            <h3 class="coop-c-signpost__title">What is SEO?</h3>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
-                    <div class="coop-c-signpost">
-                        <a href="{{ '/search-engine-optimisation/about-seo.html' | prepend: site.baseurl }}" class="coop-c-signpost__link">
-                            <div class="coop-c-signpost__content">
-                            <h3 class="coop-c-signpost__title">About SEO</h3>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
-                    <div class="coop-c-signpost">
-                        <a href="{{ '/search-engine-optimisation/seo-content-checklist.html' | prepend: site.baseurl }}" class="coop-c-signpost__link">
-                            <div class="coop-c-signpost__content">
-                            <h3 class="coop-c-signpost__title">SEO content checklist</h3>
-                            <span class="coop-c-signpost__icon" aria-hidden="true">
-                                <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
-                                    <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
-                                </svg>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!--
-            <div class="coop-l-grid coop-u-margin-t-64">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                    <h2>Accessibility</h2>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-                    <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
-                        <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                            <div class="el-c-horizontal-card-home__inner">
-                                <figure class="el-c-horizontal-card-home__media">
-                                    <picture class="el-c-horizontal-card-home__image">
-                                        <img src="{{ '/images/decorative/homepage-accessibility.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                     </picture>
-                                </figure>
-                                <div class="el-c-horizontal-card-home__content">
-                                    <header class="el-c-horizontal-card-home__header">
-                                        <p class="el-c-horizontal-card-home__subtitle">Get started</p>
-                                        <h2 class="el-c-horizontal-card-home__title">
-                                            <span>It can be hard to know where to start. We've collated resources to help give context on accessibility and Co-op's approach.</span>
-                                        </h2>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-                    <div class="coop-l-grid">     
-                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                            <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
-                                <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                                    <div class="el-c-horizontal-card-home__inner">
-                                        <figure class="el-c-horizontal-card-home__media">
-                                            <picture class="el-c-horizontal-card-home__image">
-                                                <img src="{{ '/images/decorative/doing-accessibility.png' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                            </picture>
-                                        </figure>
-                                        <div class="el-c-horizontal-card-home__content">
-                                            <header class="el-c-horizontal-card-home__header">
-                                                <p class="el-c-horizontal-card-home__subtitle">Doing accessibility</p>
-                                                <h2 class="el-c-horizontal-card-home__title">
-                                                    <span>Practical guidance about how you can build, write and test to create accessible products and services.</span>
-                                                </h2>
-                                            </header>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                        <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                            <article class="el-c-horizontal-card-home el-c-horizontal-card-home--horizontal">
-                                <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                                    <div class="el-c-horizontal-card-home__inner">
-                                        <figure class="el-c-horizontal-card-home__media">
-                                            <picture class="el-c-horizontal-card-home__image">
-                                                <img src="{{ '/images/decorative/homepage-accessibility.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                            </picture>
-                                        </figure>
-                                        <div class="el-c-horizontal-card-home__content">
-                                            <header class="el-c-horizontal-card-home__header">
-                                                <p class="el-c-horizontal-card-home__subtitle">Tools and resources</p>
-                                                <h2 class="el-c-horizontal-card-home__title">
-                                                    <span>A collection applications, browser plugins, videos, articles.</span>
-                                                </h2>
-                                            </header>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->     
-            <!--
-            <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-b-16">
-                    <article class="coop-c-editorialcard coop-c-editorialcard--horizontal">
-                        <a href="{{ '/accessibility/' | prepend: site.baseurl }}" class="coop-c-editorialcard__link">
-                            <div class="coop-c-editorialcard__inner">
-                                <figure class="coop-c-editorialcard__media">
-                                    <picture class="coop-c-editorialcard__image">
-                                        <img src="{{ '/images/decorative/homepage-accessibility.svg' | prepend: site.baseurl }}" width="618" height="346" alt="">
-                                    </picture>
-                                </figure>
-                                <div class="coop-c-editorialcard__content">
-                                    <header class="coop-c-editorialcard__header">
-                                        <p class="coop-c-editorialcard__subtitle">Accessibility</p>
-                                        <h2 class="coop-c-editorialcard__title">
-                                            <span>How we do digital accessibility and inclusion at Co-op.</span>
-                                        </h2>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </div>
-            -->
-            <!--
-            <div class="el-c-contribute-card">
-                <div class="el-c-contribute-card__content ">
-                    <h2 class="el-c-contribute-card__title">Contribute to the Experience Library</h2>
-                    <p class="white-text">Because it's only as good as we make it together.</p>
-                    <a class="coop-btn coop-btn--white coop-btn--small coop-u-margin-t-32-16" href="{{ '/community/index.html' | prepend: site.baseurl }}">Contribute</a>
-                </div>
-                <div class="el-c-contribute-card__media">
-                    <img src="{{ '/images/decorative/contribute-image.svg' | prepend: site.baseurl }}" alt="" class="el-c-contribute-card__image">
-                </div>
-            </div>
-            -->
         </section> 
     </main>
     {% include footer.html %}

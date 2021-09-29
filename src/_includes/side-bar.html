@@ -47,16 +47,18 @@
                     <li role="none"><a href="{{ '/ways-of-working/' | prepend: site.baseurl }}' | prepend: site.baseurl }}" role="menuitem">Ways of working</a></li>
                 </ul>
             {% endif %}
+            
+            {% if page.id == 'index' %}
             <p class="coop-side-nav-title">Guidelines</p>
             <ul class="coop-side-nav coop-u-list-bare">
-            {% if page.id == 'index' %}
                 <li class="side-nav__link" role="none"><a href="{{ '/design-principles.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/design-principles.html' %}is-active{% endif %}">Design principles</a></li>
                 <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/' | prepend: site.baseurl }}" role="menuitem">Content guidelines</a></li>
                 <li class="side-nav__link" role="none"><a href="{{ '/accessibility/' | prepend: site.baseurl }}" role="menuitem">Accessibility</a></li>
                 <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/search-engine-optimisation/' %}is-active{% endif %}">Search engine optimisation (SEO)</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
                 <li class="side-nav__link" role="none"><a href="{{ '/browser-and-device-support.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/browser-and-device-support.html' %}is-active{% endif %}">Browser and device support</a></li>
             </ul>
-            <p class="coop-side-nav-title">Applying design</p>
+            <p class="coop-side-nav-title">Apply our design</p>
             <ul class="coop-side-nav  coop-u-list-bare">
                 <li class="side-nav__link side-nav__link-toggle" role="none">
                     <button aria-expanded="false" class="toggle-link {% if page.section == 'Foundations' %}is-open{% endif %}" id="foundations-list">Foundations
@@ -148,152 +150,164 @@
                         <li class="nested-link"><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/patterns/form-validation.html' %}is-active{% endif %}">Form validation</a></li>
                     </ul>
                 </li>
-                <p class="coop-side-nav-title">Community</p>
-                <ul class="coop-side-nav coop-u-list-bare">
-                    <li class="side-nav__link" role="none"><a href="{{ '/about-the-experience-library/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/about-the-experience-library/' %}is-active{% endif %}">About the Experience Library</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/community/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Contribute</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/community/feedback.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/community/feedback.html' %}is-active{% endif %}">Feedback</a></li>
-                </ul>
-                {% endif %}
-
-                {% if page.id == 'SEO' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/search-engine-optimisation/' %}is-active{% endif %}">Search engine optimisation</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/about-seo.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/search-engine-optimisation/about-seo.html' %}is-active{% endif %}">About SEO and search</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/using-keywords-for-seo.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/using-keywords-for-seo.html' %}is-active{% endif %}">Using keywords for SEO</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/how-to-do-keyword-research.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/how-to-do-keyword-research.html' %}is-active{% endif %}">How to do keyword research</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/meta-titles-and-descriptions.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/meta-titles-and-descriptions.html' %}is-active{% endif %}">Meta titles, meta descriptions and headings</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-content-checklist.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-content-checklist.html' %}is-active{% endif %}">SEO content checklist</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-for-images-and-pdfs.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-images-and-pdfs.html' %}is-active{% endif %}">SEO for images and PDFs</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-for-links.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-links.html' %}is-active{% endif %}">SEO for links</a></li>     
-                {% endif %}
-
-                {% if page.id == 'get-started' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Designing</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Building</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Creating content</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Meeting the product standard</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using a third party for design</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using components in contentful</a></li>
-                {% endif %}
-
-                {% if page.id == 'design' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Principles</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Customising products</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using the Figma library</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">How to use components</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Prototyping</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Brand guidelines and assets</a></li>
-                {% endif %}
-
-                {% if page.id == 'content' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/' %}is-active{% endif %}">Content guidelines</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/how-we-write.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/how-we-write.html' %}is-active{% endif %}">How we write</a></li> 
-                    <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'style-and-patterns' %}is-open{% endif %}" id="style-and-patterns">Style and patterns
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
-                                <path
-                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                                </path>
-                            </svg>
-                        </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="style-and-patterns">
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/' %}is-active{% endif %}">All style and patterns</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/abbreviations-acronyms-and-initialisms.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/abbreviations-acronyms-and-initialisms.html' %}is-active{% endif %}">Abbreviations, acronyms and initialisms</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/alcohol.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/alcohol.html' %}is-active{% endif %}">Alcohol</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/alternative-text.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/alternative-text.html' %}is-active{% endif %}">Alternative text</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/buttons.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/buttons.html' %}is-active{% endif %}">Buttons</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/frequently-asked-questions.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/frequently-asked-questions.html' %}is-active{% endif %}">Frequently asked questions</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/links.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/links.html' %}is-active{% endif %}">Links</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/numbers-dates-and-time.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/numbers-dates-and-time.html' %}is-active{% endif %}">Numbers, dates and time</a>
-                            </li>
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/punctuation-and-formatting.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/punctuation-and-formatting.html' %}is-active{% endif %}">Punctuation and formatting</a>
-                            </li>   
-                            <li class="nested-link" role="none">
-                                <a href="{{ '/content-guidelines/style-and-patterns/sensory-directions.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/sensory-directions.html' %}is-active{% endif %}">Sensory directions</a>
-                            </li>      
-                        </ul>
-                    </li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/content-tools-and-resources.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/content-tools-and-resources.html' %}is-active{% endif %}">Content tools and resources</a></li>
-                {% endif %}
-                {% if page.id == 'accessibility' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/accessibility/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/' %}is-active{% endif %}">Accessibility</a></li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'get-started-with-accessibility' %}is-open{% endif %}" id="get-started-with-accessibility">Get started
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
-                                <path
-                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                                </path>
-                            </svg>
-                        </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="get-started-with-accessibility">
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/policy-and-standards.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/policy-and-standards.html' %}is-active{% endif %}">Policy and standards</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/business-case-for-accessibility.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/business-case-for-accessibility.html' %}is-active{% endif %}">Business case for accessibility</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/accessibility-awareness-training.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/accessibility-awareness-training.html' %}is-active{% endif %}">Accessibility awareness training</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/communities.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/communities.html' %}is-active{% endif %}">Communities</a></li>
-                        </ul>
-                    </li>
-                    <li class="side-nav__link side-nav__link-toggle" role="none">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'doing-accessibility' %}is-open{% endif %}" id="doing-accessibility">Doing accessibility
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
-                                <path
-                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                                </path>
-                            </svg>
-                        </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="doing-accessibility">
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/build-accessible-websites.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/build-accessible-websites.html' %}is-active{% endif %}">Build accessible websites</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/write-accessible-content.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/write-accessible-content.html' %}is-active{% endif %}">Write accessible content</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/find-out-if-something-is-accessible.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/find-out-if-something-is-accessible.html' %}is-active{% endif %}">Find out if something is accessible</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/accessibility/research-with-people-with-access-needs.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/research-with-people-with-access-needs.html'%}is-active{% endif %}">Research with people with access needs</a></li>
-                        </ul>
-                    </li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/accessibility/tools-and-resources.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/tools-and-resources.html'%}is-active{% endif %}">Tools and resources</a></li>
-                {% endif %}
-                {% if page.id == 'ways-of-working' %}
-                    <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/ | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
-                    <li class="side-nav__link side-nav__link-toggle">
-                        <button aria-expanded="false" class="toggle-link {% if page.section == 'ways-of-working-activities' %}is-open{% endif %}" id="ways-of-working-activities">Activities
-                            <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
-                                <path
-                                    d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
-                                </path>
-                            </svg>
-                        </button>
-                        <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="ways-of-working-activities">
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/' %}is-active{% endif %}">All activities</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/check-in.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/check-in.html' %}is-active{% endif %}">Check-in</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/dot-voting.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/dot-voting.html' %}is-active{% endif %}">Dot voting</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/how-might-we.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/how-might-we.html' %}is-active{% endif %}">How might we</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/kick-off.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/kick-off.html' %}is-active{% endif %}">Kick-off</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/mind-mapping.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/mind-mapping.html' %}is-active{% endif %}">Mind mapping</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/rapid-eights.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/rapid-eights.html' %}is-active{% endif %}">Rapid eights</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/service-mapping.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/service-mapping.html' %}is-active{% endif %}">Service mapping</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/show-and-tell.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/show-and-tell.html' %}is-active{% endif %}">Show and tell</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/stand-up.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/stand-up.html' %}is-active{% endif %}">Stand-up</a></li>
-                            <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/storyboards.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/storyboards.html' %}is-active{% endif %}">Storyboards</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/glossary.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/glossary.html'%}is-active{% endif %}">Glossary</a></li>
-                    <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/feedback.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/feedback.html'%}is-active{% endif %}">Feedback</a></li>
-                {% endif %} 
             </ul>
+            <p class="coop-side-nav-title">Community</p>
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/about-the-experience-library/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/about-the-experience-library/' %}is-active{% endif %}">About the Experience Library</a></li>
+                <!-- <li class="side-nav__link" role="none"><a href="{{ '/community/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/community/' %}is-active{% endif %}">Contribute</a></li> -->
+                <li class="side-nav__link" role="none"><a href="{{ '/community/feedback.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.item-url == '/community/feedback.html' %}is-active{% endif %}">Feedback</a></li>
+            </ul>
+            {% endif %}
+
+            {% if page.id == 'SEO' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/search-engine-optimisation/' %}is-active{% endif %}">Search engine optimisation</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/about-seo.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/search-engine-optimisation/about-seo.html' %}is-active{% endif %}">About SEO and search</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/using-keywords-for-seo.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/using-keywords-for-seo.html' %}is-active{% endif %}">Using keywords for SEO</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/how-to-do-keyword-research.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/how-to-do-keyword-research.html' %}is-active{% endif %}">How to do keyword research</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/meta-titles-and-descriptions.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/meta-titles-and-descriptions.html' %}is-active{% endif %}">Meta titles, meta descriptions and headings</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-content-checklist.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-content-checklist.html' %}is-active{% endif %}">SEO content checklist</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-for-images-and-pdfs.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-images-and-pdfs.html' %}is-active{% endif %}">SEO for images and PDFs</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/search-engine-optimisation/seo-for-links.html' | prepend: site.baseurl }}" role="menuitem"  class="{% if page.url == '/search-engine-optimisation/seo-for-links.html' %}is-active{% endif %}">SEO for links</a></li>  
+            </ul>   
+            {% endif %}
+
+            {% if page.id == 'get-started' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Designing</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Building</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Creating content</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Meeting the product standard</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using a third party for design</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using components in contentful</a></li>
+            </ul>
+            {% endif %}
+
+            {% if page.id == 'design' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Principles</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Customising products</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Using the Figma library</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">How to use components</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Prototyping</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/#' | prepend: site.baseurl }}" role="menuitem">Brand guidelines and assets</a></li>
+            </ul>
+            {% endif %}
+
+            {% if page.id == 'content' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/' %}is-active{% endif %}">Content guidelines</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/how-we-write.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/how-we-write.html' %}is-active{% endif %}">How we write</a></li> 
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <button aria-expanded="false" class="toggle-link {% if page.section == 'style-and-patterns' %}is-open{% endif %}" id="style-and-patterns">Style and patterns
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="style-and-patterns">
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/' %}is-active{% endif %}">All style and patterns</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/abbreviations-acronyms-and-initialisms.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/abbreviations-acronyms-and-initialisms.html' %}is-active{% endif %}">Abbreviations, acronyms and initialisms</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/alcohol.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/alcohol.html' %}is-active{% endif %}">Alcohol</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/alternative-text.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/alternative-text.html' %}is-active{% endif %}">Alternative text</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/buttons.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/buttons.html' %}is-active{% endif %}">Buttons</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/frequently-asked-questions.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/frequently-asked-questions.html' %}is-active{% endif %}">Frequently asked questions</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/links.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/links.html' %}is-active{% endif %}">Links</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/numbers-dates-and-time.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/numbers-dates-and-time.html' %}is-active{% endif %}">Numbers, dates and time</a>
+                        </li>
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/punctuation-and-formatting.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/punctuation-and-formatting.html' %}is-active{% endif %}">Punctuation and formatting</a>
+                        </li>   
+                        <li class="nested-link" role="none">
+                            <a href="{{ '/content-guidelines/style-and-patterns/sensory-directions.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/style-and-patterns/sensory-directions.html' %}is-active{% endif %}">Sensory directions</a>
+                        </li>      
+                    </ul>
+                </li>
+                <li class="side-nav__link" role="none"><a href="{{ '/content-guidelines/content-tools-and-resources.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/content-guidelines/content-tools-and-resources.html' %}is-active{% endif %}">Content tools and resources</a></li>
+            </ul>
+            {% endif %}
+            {% if page.id == 'accessibility' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/accessibility/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/' %}is-active{% endif %}">Accessibility</a></li>
+                <li class="side-nav__link side-nav__link-toggle">
+                    <button aria-expanded="false" class="toggle-link {% if page.section == 'get-started-with-accessibility' %}is-open{% endif %}" id="get-started-with-accessibility">Get started
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="get-started-with-accessibility">
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/policy-and-standards.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/policy-and-standards.html' %}is-active{% endif %}">Policy and standards</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/business-case-for-accessibility.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/business-case-for-accessibility.html' %}is-active{% endif %}">Business case for accessibility</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/accessibility-awareness-training.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/accessibility-awareness-training.html' %}is-active{% endif %}">Accessibility awareness training</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/communities.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/communities.html' %}is-active{% endif %}">Communities</a></li>
+                    </ul>
+                </li>
+                <li class="side-nav__link side-nav__link-toggle" role="none">
+                    <button aria-expanded="false" class="toggle-link {% if page.section == 'doing-accessibility' %}is-open{% endif %}" id="doing-accessibility">Doing accessibility
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="doing-accessibility">
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/build-accessible-websites.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/build-accessible-websites.html' %}is-active{% endif %}">Build accessible websites</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/write-accessible-content.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/write-accessible-content.html' %}is-active{% endif %}">Write accessible content</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/find-out-if-something-is-accessible.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/find-out-if-something-is-accessible.html' %}is-active{% endif %}">Find out if something is accessible</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/accessibility/research-with-people-with-access-needs.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/research-with-people-with-access-needs.html'%}is-active{% endif %}">Research with people with access needs</a></li>
+                    </ul>
+                </li>
+                <li class="side-nav__link" role="none"><a href="{{ '/accessibility/tools-and-resources.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/accessibility/tools-and-resources.html'%}is-active{% endif %}">Tools and resources</a></li>
+            </ul>
+            {% endif %}
+            {% if page.id == 'ways-of-working' %}
+            <ul class="coop-side-nav coop-u-list-bare">
+                <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/ | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
+                <li class="side-nav__link side-nav__link-toggle">
+                    <button aria-expanded="false" class="toggle-link {% if page.section == 'ways-of-working-activities' %}is-open{% endif %}" id="ways-of-working-activities">Activities
+                        <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
+                            <path
+                                d="M23.6 8.8c-.3 0-.6.1-.8.3l-8 8-.4.4-.4-.4-8-8c-.2-.1-.4-.3-.7-.3-.6 0-1.1.5-1.1 1.1 0 .3.1.6.3.8l9.2 9.1c.2.2.5.3.8.3.3 0 .6-.1.8-.3l9.2-9.1c.2-.2.3-.5.3-.8 0-.3-.1-.6-.3-.8-.3-.1-.6-.3-.9-.3z">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="coop-side-nav coop-side-nav--nested" aria-labelledby="ways-of-working-activities">
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/' %}is-active{% endif %}">All activities</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/check-in.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/check-in.html' %}is-active{% endif %}">Check-in</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/dot-voting.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/dot-voting.html' %}is-active{% endif %}">Dot voting</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/how-might-we.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/how-might-we.html' %}is-active{% endif %}">How might we</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/kick-off.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/kick-off.html' %}is-active{% endif %}">Kick-off</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/mind-mapping.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/mind-mapping.html' %}is-active{% endif %}">Mind mapping</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/rapid-eights.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/rapid-eights.html' %}is-active{% endif %}">Rapid eights</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/service-mapping.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/service-mapping.html' %}is-active{% endif %}">Service mapping</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/show-and-tell.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/show-and-tell.html' %}is-active{% endif %}">Show and tell</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/stand-up.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/stand-up.html' %}is-active{% endif %}">Stand-up</a></li>
+                        <li class="nested-link" role="none"><a href="{{ '/ways-of-working/activities/storyboards.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/activities/storyboards.html' %}is-active{% endif %}">Storyboards</a></li>
+
+                    </ul>
+                </li>
+                <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/glossary.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/glossary.html'%}is-active{% endif %}">Glossary</a></li>
+                <!--<li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/feedback.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/feedback.html'%}is-active{% endif %}">Feedback</a></li>-->
+            </ul>
+            {% endif %} 
         </nav>
     </div>
 </div>
