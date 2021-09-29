@@ -280,7 +280,7 @@
             {% endif %}
             {% if page.id == 'ways-of-working' %}
             <ul class="coop-side-nav coop-u-list-bare">
-                <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/ | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
+                <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/' %}is-active{% endif %}">Ways of working</a></li>
                 <li class="side-nav__link side-nav__link-toggle">
                     <button aria-expanded="false" class="toggle-link {% if page.section == 'ways-of-working-activities' %}is-open{% endif %}" id="ways-of-working-activities">Activities
                         <svg class="coopssn-c-nav__link__icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true">
@@ -306,6 +306,7 @@
                 </li>
                 <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/glossary.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/glossary.html'%}is-active{% endif %}">Glossary</a></li>
                 <li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/inclusive-meeting-guidelines.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/inclusive-meeting-guidelines.html'%}is-active{% endif %}">Inclusive meeting guidelines</a></li>
+
                 <!--<li class="side-nav__link" role="none"><a href="{{ '/ways-of-working/feedback.html' | prepend: site.baseurl }}" role="menuitem" class="{% if page.url == '/ways-of-working/feedback.html'%}is-active{% endif %}">Feedback</a></li>-->
             </ul>
             {% endif %} 
