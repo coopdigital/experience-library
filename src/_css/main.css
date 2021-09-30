@@ -232,3 +232,15 @@ hr,
 .medium-weight-text{
   font-weight: 500;
 }
+
+.word-list__title {
+  margin-top: var(--spacing-16);
+  margin-bottom: var(--spacing-4);
+  padding-top: var(--spacing-16);
+}
+ 
+
+.word-list__p {
+  margin-bottom: var(--spacing-8);
+  
+}
