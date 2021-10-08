@@ -23,9 +23,9 @@ jobs:
       with:
         ruby-version: 2.6.3
 
-    - name: Debug curl of one-web-hosting-tool
-      run: |
-        curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
+    # - name: Debug curl of one-web-hosting-tool
+    #   run: |
+    #     curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
     
     - name: Install one-web-hosting-tool
       run: |
@@ -37,9 +37,9 @@ jobs:
         npm ci
         npm run build
 
-    - name: Show Directory 
+    - name: Show Build Directory 
       run: |
-        cd build
-        ls -lah
-        echo "At this point we would run 'one-web-hosting deploy --env=dev --yes' but the hosting tool isn't installed"
-        one-web-hosting help
+        ls -lah build
+        
+    - name: Deploy to Development
+        one-web-hosting deploy --env=dev --yes
