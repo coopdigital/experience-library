@@ -25,6 +25,10 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6.3
+
+    - name: Debug curl of one-web-hosting-tool
+      run: |
+        curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
     
     - name: Install one-web-hosting-tool
       run: |
