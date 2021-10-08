@@ -42,4 +42,5 @@ jobs:
         ls -lah build
         
     - name: Deploy to Development
+      run: |
         one-web-hosting deploy --env=dev --yes
