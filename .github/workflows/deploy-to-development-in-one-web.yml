@@ -1,0 +1,46 @@
+name: Build and Deploy to Development One Web Static Hosting
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+   
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.3
+
+    # - name: Debug curl of one-web-hosting-tool
+    #   run: |
+    #     curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
+    
+    - name: Install one-web-hosting-tool
+      run: |
+        curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+
+    - name: Build
+      run: |
+        bundle install
+        npm ci
+        npm run build
+
+    - name: Show Build Directory 
+      run: |
+        ls -lah build
+        
+    - name: Deploy to Development
+      run: |
+        one-web-hosting deploy --env=dev --yes
