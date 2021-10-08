@@ -41,3 +41,4 @@ jobs:
         cd build
         ls -lah
         echo "At this point we would run 'one-web-hosting deploy --env=dev --yes' but the hosting tool isn't installed"
+        one-web-hosting help
