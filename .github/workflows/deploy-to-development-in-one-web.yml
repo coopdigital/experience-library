@@ -1,4 +1,4 @@
-name: Build and Deploy to One Web Static Hosting
+name: Build and Deploy to Development One Web Static Hosting
 
 on:
   workflow_dispatch:
@@ -26,10 +26,9 @@ jobs:
       with:
         ruby-version: 2.6.3
     
-    # TODO: This URL requires the runner to be on the allowlist for development.static.coop.co.uk
-    # - name: Install one-web-hosting-tool
-    #   run: |
-    #     curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+    - name: Install one-web-hosting-tool
+      run: |
+        curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
 
     - name: Build
       run: |
@@ -42,3 +41,4 @@ jobs:
         cd build
         ls -lah
         echo "At this point we would run 'one-web-hosting deploy --env=dev --yes' but the hosting tool isn't installed"
+        one-web-hosting help
