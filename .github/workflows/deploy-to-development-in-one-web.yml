@@ -31,10 +31,6 @@ jobs:
         baseurl: "/experience-library"
         url: "https://static.coop.co.uk"
 
-    - name: Deploy to Development
-      run: |
-        cat src/_config.yml
-
     # - name: Debug curl of one-web-hosting-tool
     #   run: |
     #     curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
