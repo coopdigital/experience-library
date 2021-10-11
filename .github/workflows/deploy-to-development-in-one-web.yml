@@ -23,6 +23,18 @@ jobs:
       with:
         ruby-version: 2.6.3
 
+    - name: Replace baseurl and url in Config (Only required while heroku still in use)
+      uses: microsoft/variable-substitution@v1 
+      with:
+        files: 'src/_config.yml'
+      env:
+        baseurl: "/experience-library"
+        url: "https://static.coop.co.uk"
+
+    - name: Deploy to Development
+      run: |
+        cat src/_config.yml
+
     # - name: Debug curl of one-web-hosting-tool
     #   run: |
     #     curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
