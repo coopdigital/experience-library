@@ -33,11 +33,11 @@ jobs:
 
     # - name: Debug curl of one-web-hosting-tool
     #   run: |
-    #     curl -v https://development.static.coop.co.uk/one-web-hosting-tool/install.sh
+    #     curl -v https://static.coop.co.uk/one-web-hosting-tool/install.sh
     
     - name: Install one-web-hosting-tool
       run: |
-        curl https://development.static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+        curl https://static.coop.co.uk/one-web-hosting-tool/install.sh | sh
 
     - name: Build
       run: |
