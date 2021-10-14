@@ -50,5 +50,8 @@ jobs:
         ls -lah build
         
     - name: Deploy to Development
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
       run: |
         one-web-hosting deploy --env=dev --yes
