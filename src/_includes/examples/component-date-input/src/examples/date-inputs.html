@@ -1,0 +1,58 @@
+
+<!-- Date input -->
+<form id="date-inputs" class="coop-form" novalidate>
+  <h3>Date input</h3>
+
+  <div class="coop-form__row">
+    <fieldset id="dob-1" aria-describedby="dob-1-hint">
+      <legend class="coop-form__label">What is your date of birth?</legend>
+
+      <p id="dob-1-hint" class="coop-form__hint">For example 21 12 2020</p>
+      <p id="dob-1-error" class="coop-form__error" hidden></p>
+
+      <div class="coop-form__columns">
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-1-day">Day</label>
+          <input
+            id="dob-1-day"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="2"
+            minlength="2"
+            autocomplete="bday-day"
+            class="coop-form__field coop-form__input coop-form__input--width-2"
+          >
+        </div>
+
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-1-month">Month</label>
+          <input
+            id="dob-1-month"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="2"
+            minlength="2"
+            autocomplete="bday-month"
+            class="coop-form__field coop-form__input coop-form__input--width-2"
+          >
+        </div>
+
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-1-year">Year</label>
+          <input
+            id="dob-1-year"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="4"
+            minlength="4"
+            autocomplete="bday-year"
+            class="coop-form__field coop-form__input coop-form__input--width-4"
+          >
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</form>

@@ -1,0 +1,80 @@
+/* ===================================
+ * Fonts - Co-op Front-end Foundations
+ * =================================== */
+
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: normal;
+  font-display: swap;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix")
+      format("eot"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2")
+      format("woff2"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff")
+      format("woff"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix")
+      format("eot"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2")
+      format("woff2"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff")
+      format("woff"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix")
+      format("eot"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2")
+      format("woff2"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/f26faddb-86cc-4477-a253-1e1287684336.woff")
+      format("woff"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix")
+      format("eot"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2")
+      format("woff2"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff")
+      format("woff"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix")
+      format("eot"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/687932cb-145b-4690-a21d-ed1243db9e36.woff2")
+      format("woff2"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/bc350df4-3100-4ce1-84ce-4a5363dbccfa.woff")
+      format("woff"),
+    url("https://assets.digital.coop.co.uk/finder/static/fonts/bc13ae80-cd05-42b4-b2a9-c123259cb166.ttf")
+      format("truetype");
+}

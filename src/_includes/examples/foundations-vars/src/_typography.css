@@ -1,0 +1,30 @@
+:root {
+  --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font-size: 1.2499999rem uses thinner text decoration on links rather than 1.25rem */
+
+  /* Typography */
+  --type-body-l: 1.2499999rem; /* 20px */
+  --type-body-s: 1.125rem; /* 18px */
+
+  --type-line-height: 1.5; /* 32px */
+
+  --type-h1-mega-l: 3.5rem; /* 56px */
+  --type-h1-mega-s: 3rem; /* 48px */
+  --type-h1-l: 2.875rem; /* 46px */
+  --type-h1-s: 1.875rem; /* 30px */
+  --type-h2-l: 2rem; /* 32px */
+  --type-h2-s: 1.625rem; /* 26px */
+  --type-h3-l: 1.625rem; /* 26px */
+  --type-h3-s: 1.375rem; /* 22px */
+  --type-h456-l: 1.375rem; /* 22px */
+  --type-h456-s: 1.125rem; /* 18px */
+
+  --type-blockquote: 1.2499999rem; /* 18px */
+
+  --type-lp-l: 1.625rem; /* 26px */
+  --type-lp-s: 1.375rem; /* 22px */
+
+  --type-sp-l: 1.2499999rem; /* 18px */
+  --type-sp-s: 1rem; /* 16px */
+}

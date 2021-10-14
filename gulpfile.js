@@ -39,6 +39,16 @@ const destPaths = {
  * Build tasks
  */
 
+ function copy() {
+  return gulp.src([
+    'node_modules/@coopdigital/**/*.{pcss,css,html,jpg,jpeg,gif,png,webp,svg}',
+    '!node_modules/@coopdigital/**/node_modules/**',
+  ], { follow: true })
+    .pipe(changed('src/_includes/examples'))
+    .pipe(gulp.dest('src/_includes/examples'))
+    .pipe(gulp.dest('build/examples'));
+}
+
 function jekyll() {
   return run('bundle exec jekyll build', {
     cwd: `${process.cwd()}/src/`,
@@ -101,7 +111,7 @@ function js() {
 function watch(done) {
   gulp.watch(['src/_css/**/*.{pcss,css}', '../packages/**/*.{pcss,css}'], css);
   gulp.watch(['src/_js/**/*.{cjs,js,mjs}'], js);
-  gulp.watch(['../packages/**/*.{pcss,css,html,jpg,jpeg,gif,png,webp,svg}', '!../packages/**/node_modules/**']);
+  gulp.watch(['../packages/**/*.{pcss,css,html,jpg,jpeg,gif,png,webp,svg}', '!../packages/**/node_modules/**'], copy);
   gulp.watch(sourcePaths.html, gulp.series(jekyll, html));
   done();
 }
@@ -122,13 +132,14 @@ function serve(done) {
 /**
  * Run tasks
  */
-const build = gulp.parallel(gulp.series(jekyll), css, js);
+const build = gulp.parallel(gulp.series(copy, jekyll), css, js);
 const server = gulp.series(build, serve, watch);
 
 // Use Design System gems
 process.env.BUNDLE_GEMFILE = `${base}Gemfile`;
 
 module.exports = {
+  copy,
   jekyll,
   css,
   js,

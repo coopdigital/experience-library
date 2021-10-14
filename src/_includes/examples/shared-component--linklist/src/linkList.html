@@ -1,0 +1,32 @@
+{% macro render(content, cms, config) -%}
+<div class="coop-c-list-container">
+  <h3 class="coop-c-list-container__title coop-t-h3">{{content.heading|safe}}</h3>
+  <ul class="coop-c-list-container__list">
+		{% for link in content.links %}
+			{% set linkDetails = {} %}
+			{% with p = cms.get_entry(link.sys.id) %}
+				{%- if p.type == 'internalLink' -%}
+					{% if p.fields.page.data %}
+						{% with internalLink = cms.get_entry(p.fields.page.data.sys.id) %}
+							{%- set _ = linkDetails.update({
+								"title" : p.fields.title.data,
+								"url"   : internalLink.full_url_path
+							})-%}
+						{%- endwith -%}
+					{%- endif -%}
+				{%- else -%}
+					{%- set _ = linkDetails.update({
+						"title" : p.fields.title.data,
+						"url"   : p.fields.url.data
+					})-%}
+				{%- endif -%}
+			<li>
+				<a class="coop-c-list-container__list-list-link" href="{% if p.type != 'externalLink' %}{{tenant_url_path}}{% endif %}{{linkDetails.url}}" data-contenttype="Link list" data-contentparent="{{content.heading}}" data-linktext="{{ linkDetails.title }}" >
+					{{linkDetails.title}}
+				</a>
+			</li>	
+			{% endwith %}
+		{% endfor %}
+  </ul>
+</div>
+{%- endmacro %}

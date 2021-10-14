@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>Co-op Grid Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css-foundations/dist/foundations.css" />
+  </head>
+  <body>
+    <style>
+      /* Grid demo specific styles. */
+      main {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .grid-example .coop-l-grid {
+        padding: .5rem 0;
+        background: repeating-linear-gradient(
+          90deg,
+          #fff 0,
+          #fff .5rem,
+          #BAD30366 calc(var(--gutter) / 2),
+          #BAD30366 calc(8.3333% - (var(--gutter) / 2)),
+          #fff calc(8.3333% - (var(--gutter) / 2)),
+          #fff 8.3333%
+        );
+      }
+
+      .grid-content {
+        width: 100%;
+        padding: 1.5rem;
+        margin: .5rem 0;
+        background-color: #00b1e7;
+      }
+    </style>
+    <main>
+      <div class="coop-l-container">
+        <h1>Co-op Grid Demo</h1>
+
+        <div class="grid-example">
+          <h3>Grid - 2 columns</h3>
+          <div class="coop-l-grid">
+            <div class="coop-l-grid__item coop-l-grid__item--6">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--6">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--6">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--6">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - 3 columns from medium breakpoint</h3>
+          <div class="coop-l-grid">
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--medium-4">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - 2 columns from small breakpoint, 4 columns from large breakpoint</h3>
+          <div class="coop-l-grid">
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--small-6 coop-l-grid__item--large-4">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - items left aligned</h3>
+          <div class="coop-l-grid coop-u-flex-start">
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - items center aligned</h3>
+          <div class="coop-l-grid coop-u-flex-center">
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - items right aligned</h3>
+          <div class="coop-l-grid coop-u-flex-end">
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+            <div class="coop-l-grid__item coop-l-grid__item--4">
+              <div class="grid-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-example">
+          <h3>Grid - items centered vertically in a container</h3>
+          <div class="my-container">
+            <div class="coop-l-grid coop-u-flex-centered">
+              <div class="coop-l-grid__item coop-l-grid__item--6">
+                <div class="grid-content" style="height: 100px;"></div>
+              </div>
+              <div class="coop-l-grid__item coop-l-grid__item--6">
+                <div class="grid-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

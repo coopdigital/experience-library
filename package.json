@@ -8,6 +8,7 @@
   "dependencies": {
     "@coopdigital/component-card": "^3.2.2",
     "@coopdigital/component-card--product": "^2.1.19",
+    "@coopdigital/component-date-input": "^1.2.17",
     "@coopdigital/component-notification": "^1.2.0",
     "@coopdigital/component-notification--alert": "^1.0.30",
     "@coopdigital/component-search": "^2.3.18",

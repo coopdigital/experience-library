@@ -1,0 +1,60 @@
+
+<!-- Date input with error message (empty year) -->
+<form id="date-inputs-error-year" class="coop-form" novalidate>
+  <h3>Date input with error message (empty year)</h3>
+
+  <div class="coop-form__row">
+    <fieldset id="dob-3" aria-describedby="dob-3-hint dob-3-error">
+      <legend class="coop-form__label">What is your date of birth?</legend>
+
+      <p id="dob-3-hint" class="coop-form__hint">For example 21 12 2020</p>
+      <p id="dob-3-error" class="coop-form__error">Enter your year of birth</p>
+
+      <div class="coop-form__columns">
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-3-day">Day</label>
+          <input
+            id="dob-3-day"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="2"
+            minlength="2"
+            autocomplete="bday-day"
+            class="coop-form__field coop-form__input coop-form__input--width-2"
+            value="21"
+          >
+        </div>
+
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-3-month">Month</label>
+          <input
+            id="dob-3-month"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="2"
+            minlength="2"
+            autocomplete="bday-month"
+            class="coop-form__field coop-form__input coop-form__input--width-2"
+            value="12"
+          >
+        </div>
+
+        <div class="coop-form__column">
+          <label class="coop-form__label" for="dob-3-year">Year</label>
+          <input
+            id="dob-3-year"
+            type="text"
+            pattern="[0-9]*"
+            inputmode="numeric"
+            maxlength="4"
+            minlength="4"
+            autocomplete="bday-year"
+            class="coop-form__field coop-form__input coop-form__input--width-4 coop-form__invalid"
+          >
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</form>

@@ -1,0 +1,88 @@
+/* Tags */
+
+@import "@coopdigital/foundations-vars";
+
+.coop-c-list-tags {
+  margin-top: 0;
+  margin-bottom: var(--spacing-4);
+  padding-left: 0;
+
+  @media (--mq-medium) {
+    margin-bottom: var(--spacing-8);
+  }
+}
+
+.coop-c-list-tags .coop-c-icon,
+.coop-c-list-tags .coop-c-tag {
+  font-size: 0.875rem;
+}
+
+.coop-c-tag {
+  background: var(--color-grey-light);
+  color: var(--color-text);
+  display: inline-block;
+  padding: 3px 12px;
+  margin-right: var(--spacing-4);
+  margin-bottom: 5px;
+  border-radius: 16.5px;
+}
+
+.coop-c-tag__link {
+  border-bottom: 0;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.coop-c-tag__link:hover {
+  text-decoration: underline;
+}
+
+.coop-c-tag--gluten-free {
+  background: #f8890d;
+  border-color: #f8890d;
+}
+
+.coop-c-tag--gluten-free .coop-c-tag__link {
+  color: var(--color-text);
+}
+
+.coop-c-tag--vegetarian {
+  background: var(--color-green-light);
+  border-color: var(--color-green-light);
+}
+
+.coop-c-tag--vegan {
+  background: var(--color-green-mid);
+  border-color: var(--color-green-mid);
+  color: var(--color-white);
+}
+
+.coop-c-tag--vegan .coop-c-tag__link {
+  color: var(--color-white);
+}
+
+.coop-c-tag--co-op-irresistible {
+  background: var(--color-black);
+  border-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.coop-c-tag--co-op-irresistible .coop-c-tag__link {
+  color: var(--color-white);
+}
+
+.coop-c-list-tags__icon {
+  display: inline-block;
+  margin-right: var(--spacing-16);
+}
+
+.coop-c-list-tags__icon__left {
+  position: relative;
+  top: 8px;
+  width: 24px;
+
+  @media (--mq-medium) {
+    top: 9px;
+    width: 28px;
+  }
+}

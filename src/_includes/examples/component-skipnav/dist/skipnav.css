@@ -1,0 +1,2 @@
+.coop-c-skip-nav{position:absolute;top:0;left:0;z-index:999}.coop-c-skip-nav__list{list-style:none;margin:0}.coop-c-skip-nav__link{position:absolute;left:-9999px;top:0;font-size:1.125rem;padding:1rem;color:#000;background:#ffd309;white-space:nowrap}@media (min-width:48em){.coop-c-skip-nav__link{font-size:1.2499999rem}}.coop-c-skip-nav__link:hover{color:#000}.coop-c-skip-nav__link:active,.coop-c-skip-nav__link:focus{left:1rem}
+/*# sourceMappingURL=skipnav.css.map */
