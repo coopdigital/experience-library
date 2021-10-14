@@ -2,11 +2,29 @@
 layout: blank
 id: examples
 ---
-<div class="coop-l-grid">
-    <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--medium-6 coop-u-margin-t-64">
-       
+<section class="coop-l-page">
+    <div class="coop-u-margin-resp-b-32-16">
+        <p class="coop-t-h1">Editorial card</p>
+        <a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/shared-component--editorialCard/readme.md">Go to the installation documentation</a>
     </div>
-    <div class="coop-l-grid__item">
-        
+    <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--medium-6 coop-u-margin-t-64">
+            {% include examples/shared-component--editorialcard/dist/editorialCard.html %}
+        </div>
+    </div>  
+    <div class="coop-u-margin-b-32">
+        {% highlight html %}
+        {% include examples/shared-component--editorialcard/dist/editorialCard.html %}
+        {% endhighlight %}
     </div>
-</div>
+    <div class="coop-l-grid">
+        <div class="coop-l-grid__item">
+            {% include examples/shared-component--editorialcard/dist/editorialCard-horizontal.html %}
+        </div>
+    </div>
+    <div class="coop-u-margin-b-32">
+        {% highlight html %}
+        {% include examples/shared-component--editorialcard/dist/editorialCard-horizontal.html %}
+        {% endhighlight %}
+    </div>
+</section>
