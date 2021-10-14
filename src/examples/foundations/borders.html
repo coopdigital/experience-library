@@ -1,0 +1,48 @@
+---
+layout: blank
+id: examples
+---
+<section class="coop-l-page">
+    <div class="coop-u-margin-resp-b-32-16">
+        <p class="coop-t-h1">Borders</p>
+        <a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/foundations-vars/readme.md">Go to the installation documentation</a>
+    </div>
+    <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-4 coop-l-grid__item--medium-6 coop-u-margin-t-64">
+            <div class="coop-form__row">
+                <p id="full-name-1-error" class="coop-form__error" hidden=""></p>
+                <input id="full-name-1" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="full-name-1">
+            </div>
+            <div class="coop-u-margin-b-32">
+                {% highlight CSS %}
+                border: 2px solid var(--color-grey-dark);
+                {% endhighlight %}
+            </div>
+            <div class="coop-form__row">
+                <input id="full-name-3" class="coop-form__field coop-form__input coop-form__invalid" type="text" autocomplete="name" name="full-name-3" aria-describedby="full-name-3-error">
+            </div>
+            <div class="coop-u-margin-b-32">
+                {% highlight CSS %}
+                border: 2px solid var(--color-red-mid);
+                {% endhighlight %}
+            </div>
+            <div class="coop-c-notification coop-c-notification--alert coop-u-margin-b-24" role="alert">
+                <p class="coop-c-notification__p coop-u-padding-b-32"></p>
+            </div>
+            <div class="coop-u-margin-b-32">
+                {% highlight CSS %}
+                border-left: 4px solid var(--color-orange-alert);
+                {% endhighlight %}
+            </div>
+            <div class="coop-c-notification coop-c-notification--success coop-u-margin-b-8" role="status">
+                <p class="coop-c-notification__p coop-u-padding-b-32"></p>
+            </div>   
+            <div class="coop-u-margin-b-32"> 
+                {% highlight CSS %}
+                border-left: 4px solid var(--color-green-success);
+                {% endhighlight %}     
+            </div>
+        </div>
+    </div>  
+    
+</section>
