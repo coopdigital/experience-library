@@ -48,10 +48,14 @@ jobs:
     - name: Show Build Directory 
       run: |
         ls -lah build
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
+        role-to-assume: ${{ secrets.DEV_AWS_ROLE_ID }}
         
-    - name: Deploy to Development
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
+    - name: Deploy to Development 
       run: |
         one-web-hosting deploy --env=dev --yes
