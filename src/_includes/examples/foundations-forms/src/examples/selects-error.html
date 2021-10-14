@@ -1,0 +1,18 @@
+
+<!-- Select with error message -->
+<form id="selects-error" class="coop-form" novalidate>
+  <h3>Select with error message</h3>
+
+  <div class="coop-form__row">
+    <label class="coop-form__label" for="sort-by-3">Sort by:</label>
+
+    <p id="sort-by-3-error" class="coop-form__error">Select a sort by option</p>
+
+    <select id="sort-by-3" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-3-error">
+      <option value="">Please select</option>
+      <option value="relevancy">Relevancy</option>
+      <option value="price-asc">Price: Low to high</option>
+      <option value="price-desc">Price: High to low</option>
+    </select>
+  </div>
+</form>

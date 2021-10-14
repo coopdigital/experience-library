@@ -1,0 +1,57 @@
+@import "@coopdigital/foundations-vars";
+
+/* Globals */
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--type-body-s);
+  line-height: var(--type-line-height);
+
+  @media (--mq-medium) {
+    font-size: var(--type-body-l);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.coop-logo-link {
+  display: inline-block;
+  border: 0;
+
+  & svg {
+    display: block;
+  }
+}
+
+.coop-logo-link--tappable {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.coop-logo {
+  height: 40px;
+  width: 38px;
+}

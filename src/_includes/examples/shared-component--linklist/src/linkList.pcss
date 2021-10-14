@@ -1,0 +1,33 @@
+@import "@coopdigital/foundations-vars";
+
+.coop-c-list-container {
+  margin-bottom: var(--spacing-32);
+
+  @media (--mq-large) {
+    margin-bottom: var(--spacing-64);
+  }
+}
+
+.coop-c-list-container__title {
+  border-bottom: 1px solid var(--color-grey-mid);
+}
+
+.coop-c-list-container__list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+
+  & li {
+    margin-bottom: var(--spacing-8);
+  }
+}
+
+.coop-c-list-container__list-link {
+  color: var(--color-text);
+}
+
+.coop-c-list-container__list-link:hover,
+.coop-c-list-container__list-link:focus,
+.coop-c-list-container__list-link:active {
+  color: var(--color-text);
+}
