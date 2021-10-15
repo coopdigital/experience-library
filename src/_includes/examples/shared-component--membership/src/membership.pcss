@@ -1,0 +1,217 @@
+/* Membership component */
+
+@import "@coopdigital/foundations-vars";
+
+.coop-c-membershipmodule {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.coop-c-membershipmodule__inner {
+  position: relative;
+  max-width: 81rem;
+  margin: 0 auto;
+  padding: var(--spacing-24) var(--spacing-16) var(--spacing-32);
+
+  @media (--mq-small) {
+    padding: var(--spacing-32) var(--spacing-16);
+  }
+
+  @media (--mq-large) {
+    padding: var(--spacing-32) var(--spacing-24) var(--spacing-48);
+  }
+
+  @media (--mq-xlarge) {
+    padding: var(--spacing-48) var(--spacing-16) var(--spacing-64);
+  }
+}
+
+.coop-c-membershipmodule__content {
+  @media (--mq-small) {
+    width: 62%;
+    float: right;
+    padding-bottom: var(--spacing-32);
+  }
+
+  @media (--mq-medium) {
+    max-width: 38.75rem; /* 620px */
+    padding-right: var(--spacing-32);
+  }
+
+  @media (--mq-xlarge) {
+    max-width: 43.75rem; /* 700px */
+    width: 50%;
+  }
+}
+
+.coop-c-membershipmodule__title {
+  font-size: var(--type-h2-s);
+
+  @media (--mq-medium) {
+    font-size: var(--type-h2-l);
+  }
+}
+
+.coop-c-membershipmodule__btns {
+  margin-top: var(--spacing-16);
+
+  @media (--mq-medium) {
+    margin-top: var(--spacing-24);
+  }
+}
+
+.coop-c-membershipmodule__links {
+  margin: var(--spacing-16) 0 0;
+
+  @media (--mq-medium) {
+    margin-top: var(--spacing-24);
+  }
+}
+
+.coop-c-membershipmodule__list {
+  margin: var(--spacing-16) 0;
+  padding: 0;
+  list-style: none;
+
+  @media (--mq-medium) {
+    margin-top: var(--spacing-24);
+  }
+}
+
+.coop-c-membershipmodule__media {
+  position: relative;
+
+  height: 304px;
+  margin: var(--spacing-48) 0 var(--spacing-16);
+  text-align: center;
+
+  @media (--mq-small) {
+    position: absolute;
+    bottom: var(--spacing-32);
+    left: 0;
+    width: 38%;
+    margin: 0;
+  }
+
+  @media (--mq-large) {
+    height: 433px;
+  }
+
+  @media (--mq-xlarge) {
+    width: 50%;
+  }
+}
+
+.coop-c-membershipmodule__graphic {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+  width: 150px;
+  height: 224px;
+  margin-top: calc((304px - 224px) / 2);
+
+  transform: rotate(-8deg);
+  box-shadow: 0 4px 16px rgba(40, 40, 40, 0.24);
+
+  @media (--mq-large) {
+    margin-top: calc((433px - 224px) / 2);
+  }
+}
+
+.coop-c-membershipmodule__card {
+  fill: var(--color-brand-coop);
+}
+
+.coop-c-membershipmodule__logo {
+  fill: var(--color-white);
+}
+
+.coop-c-membershipmodule__connector,
+.coop-c-membershipmodule__svg {
+  display: block;
+  width: 288px;
+  height: 100%;
+
+  @media (--mq-large) {
+    width: 392px;
+  }
+}
+
+.coop-c-membershipmodule__connector {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  margin-left: calc(288px / -2);
+
+  @media (--mq-large) {
+    margin-left: calc(392px / -2);
+  }
+}
+
+.coop-c-membershipmodule__path {
+  fill: none;
+  stroke: var(--color-brand-membership-blue-light-9);
+}
+
+/* Fake connector repeating lines */
+.coop-c-membershipmodule__content:before,
+.coop-c-membershipmodule__content:after {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  width: 50%;
+
+  border-top: 8px solid var(--color-brand-membership-blue-light-9);
+  content: "";
+}
+
+/* Fake connector repeating lines (left) */
+.coop-c-membershipmodule__content:before {
+  bottom: 344px;
+  left: 0;
+  margin-left: -76px;
+
+  @media (--mq-small) {
+    bottom: 328px;
+    display: block;
+    width: calc(38% / 2);
+  }
+
+  @media (--mq-large) {
+    bottom: 446px;
+    margin-left: -104px;
+  }
+
+  @media (--mq-xlarge) {
+    width: 100%;
+    right: 50%;
+    left: auto;
+    margin-right: calc((50% / 2) + 104px);
+  }
+}
+
+/* Fake connector repeating lines (right) */
+.coop-c-membershipmodule__content:after {
+  bottom: 48px;
+  left: 50%;
+  margin-left: 76px;
+
+  @media (--mq-small) {
+    bottom: 32px;
+    left: calc(38% / 2);
+    width: calc(62% + (38% / 2));
+  }
+
+  @media (--mq-large) {
+    bottom: 43px;
+    margin-left: 104px;
+  }
+
+  @media (--mq-xlarge) {
+    left: calc(50% / 2);
+    width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+{% macro render(content, cms, config) %}
+  <div class="coop-c-signpost-list__item coop-c-signpost">
+    {% if content.fields.link and content.fields.link.sys.id %}
+      {% with entryLink = cms.get_entry(content.fields.link.sys.id) %}
+
+        {% if entryLink.type == 'internalLink' %}
+          {% if entryLink.data.fields.page %}
+            {% with internalLink = cms.get_entry(entryLink.data.fields.page.sys.id) %}
+              <a
+                href="{{tenant_url_path}}{{ internalLink.full_url_path }}"
+                class="coop-c-signpost__link"
+                data-contenttype="Signpost"
+                data-contentparent="{{ config.contentParent|safe }}"
+                data-linktext="{{ content.fields.title|safe }}"
+              >
+            {% endwith %}
+          {% endif %}
+        {% elif entryLink.fields.url.data %}
+          <a
+            href="{{ entryLink.fields.url.data }}"
+            class="coop-c-signpost__link"
+            data-contenttype="Signpost"
+            data-contentparent="{{ config.contentParent|safe }}"
+            data-linktext="{{ content.fields.title|safe }}"
+          >
+        {% endif %}
+      {% endwith %}
+    {% endif %}
+
+    {% if content.fields.image %}
+      {% with imageEntry = cms.get_asset(content.fields.image.sys.id) %}
+        <figure class="coop-c-signpost__media">
+          <picture class="coop-c-signpost__image">
+            
+            <source media="(min-width: 48em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
+                              {{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w={{ 360 * 2 }}&amp;h={{ 203 * 2 }} 2x"
+                    type="image/webp" />
+            
+            <source media="(min-width: 37.5em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
+                              {{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w={{ 751 * 2 }}&amp;h={{ 423 * 2 }} 2x"
+                    type="image/webp" />
+            
+            <source media="(min-width: 25.9375em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
+                              {{ imageEntry.fields.file.url }}?fm=webp&amp;fit=thumb&amp;q=60&amp;w={{ 583 * 2 }}&amp;h={{ 329 * 2 }} 2x"
+                    type="image/webp" />
+
+            
+            <source media="(min-width: 48em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
+                              {{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w={{ 360 * 2 }}&amp;h={{ 203 * 2 }} 2x"
+                    type="image/jpeg" />
+            
+            <source media="(min-width: 37.5em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
+                              {{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w={{ 751 * 2 }}&amp;h={{ 423 * 2 }} 2x"
+                    type="image/jpeg" />
+            
+            <source media="(min-width: 25.9375em)"
+                    srcset="{{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
+                              {{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w={{ 583 * 2 }}&amp;h={{ 329 * 2 }} 2x"
+                    type="image/jpeg"/>
+            
+            <img src="{{ imageEntry.fields.file.url }}?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423"
+                  alt="{% if imageEntry.fields.description %}{{ imageEntry.fields.description }}{% else %}{{ imageEntry.fields.title }}{% endif %}">
+          </picture>
+
+        </figure>
+      {% endwith %}
+    {% endif %}
+
+    <div class="coop-c-signpost__content">
+
+      {# --------------------------------------
+        # Render an icon if provided
+      -------------------------------------- #}
+      {% if content.fields.icon %}
+
+        {% import '/shared-component--icon/src/icon.html' as icon %}
+
+        <span class="coop-c-signpost__icon coop-c-signpost__icon--prefix" aria-hidden="true">
+          {%- set iconName = content.fields.icon | lower | replace(" ","-") -%}
+          {%- set svgClass = "coop-c-signpost__icon__svg" -%}
+
+          {{ icon.render(iconName, svgClass) }}
+        </span>
+      {% endif %}
+
+      <h3 class="coop-c-signpost__title">
+        {{ content.fields.title }}
+      </h3>
+      <span class="coop-c-signpost__icon" aria-hidden="true">
+        <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+          <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+        </svg>
+      </span>
+    </div>
+
+    {% if content.fields.link and content.fields.link.sys.id %}
+      </a>
+    {% endif %}
+
+  </div>
+
+{% endmacro %}

@@ -1,0 +1,73 @@
+@import "@coopdigital/foundations-vars";
+
+.coop-c-search {
+  position: relative;
+}
+
+.coop-c-search__input {
+  position: relative;
+  width: calc(100% - 60px);
+  margin-right: 5px;
+  border-right: 0;
+  border-right-color: transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.coop-c-search__input:focus,
+.coop-c-search__button:focus {
+  z-index: 1;
+}
+
+.coop-c-search__input--small {
+  width: calc(100% - 44px);
+  height: 2.76rem;
+  padding: var(--spacing-4) calc(var(--spacing-4) * 2.5);
+}
+
+.coop-c-search__button {
+  position: absolute;
+  width: 60px;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 15px;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.coop-c-search__button svg {
+  position: relative;
+  top: 1px;
+}
+
+.coop-c-search__button--small {
+  width: 44px;
+  min-height: 100%;
+  padding: 0 10px;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+.coop-c-search__input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.coop-c-search__input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+.coop-c-search__input::-webkit-search-decoration,
+.coop-c-search__input::-webkit-search-cancel-button,
+.coop-c-search__input::-webkit-search-results-button,
+.coop-c-search__input::-webkit-search-results-decoration {
+  display: none;
+}

@@ -1,0 +1,136 @@
+@import "@coopdigital/foundations-vars";
+
+.coop-c-squircle {
+  color: var(--color-white);
+  padding: var(--spacing-base--1-2);
+  position: absolute;
+  top: -30px;
+  right: -28px;
+  height: 114px;
+  width: 118px;
+  z-index: 10;
+  transform: scale(0.66);
+
+  @media (--mq-large) {
+    transform: none;
+    top: -21px;
+    right: -8px;
+  }
+}
+
+.coop-c-squircle__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.coop-c-squircle__svg {
+  width: 100%;
+  fill: #d3212a;
+}
+
+.coop-c-squircle__label {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.coop-c-squircle__small-text {
+  max-width: 100px;
+  color: var(--color-white);
+  display: block;
+  font-weight: 600;
+  font-size: var(--type-body-s);
+  line-height: 1.4em;
+  padding: var(--spacing-16) var(--spacing-8) 0;
+  text-align: center;
+  width: 100px;
+}
+
+.coop-c-squircle__large-text {
+  max-width: 100px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: var(--type-h1-l);
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.coop-c-squircle__large-text + .coop-c-squircle__small-text {
+  margin-top: -24px;
+}
+
+.coop-c-squircle--text-pull {
+  margin-top: -7px;
+}
+
+.coop-c-squircle--fresh_3 .coop-c-squircle__uppercase {
+  margin-top: 32px;
+}
+
+.coop-c-squircle__uppercase {
+  max-width: 100px;
+  font-size: 1.55rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.coop-c-squircle__uppercase--new {
+  font-size: 1.75rem;
+}
+
+.coop-c-squircle__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 48px var(--spacing-32) var(--spacing-64);
+  background-color: var(--color-white);
+}
+
+.coop-c-squircle__title {
+  color: var(--color-text);
+  font-weight: 300;
+  font-size: 1.375rem;
+  padding: 0;
+  text-decoration: none;
+  width: 100%;
+
+  @media (--mq-large) {
+    font-size: 1.5rem;
+  }
+}
+.coop-c-squircle--fresh_3 {
+  padding: 0.875rem 0 0;
+  top: -38px;
+  right: -32px;
+  transform: scale(0.7);
+
+  @media (--mq-large) {
+    transform: none;
+    top: -31px;
+    right: -8px;
+  }
+}
+
+.coop-c-squircle--super_saver_squircle {
+  top: -42px;
+  right: -38px;
+  height: 140px;
+  width: 147px;
+
+  @media (--mq-large) {
+    transform: none;
+    top: -31px;
+    right: -20px;
+  }
+}

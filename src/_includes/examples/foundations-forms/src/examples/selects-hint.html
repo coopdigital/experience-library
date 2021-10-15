@@ -1,0 +1,19 @@
+
+<!-- Select with hint -->
+<form id="selects-hint" class="coop-form" novalidate>
+  <h3>Select with hint</h3>
+
+  <div class="coop-form__row">
+    <label class="coop-form__label" for="sort-by-2">Sort by:</label>
+
+    <p id="sort-by-2-hint" class="coop-form__hint">This is an example hint</p>
+    <p id="sort-by-2-error" class="coop-form__error" hidden></p>
+
+    <select id="sort-by-2" class="coop-form__field coop-form__select" aria-describedby="sort-by-2-hint">
+      <option value="">Please select</option>
+      <option value="relevancy" selected>Relevancy</option>
+      <option value="price-asc">Price: Low to high</option>
+      <option value="price-desc">Price: High to low</option>
+    </select>
+  </div>
+</form>

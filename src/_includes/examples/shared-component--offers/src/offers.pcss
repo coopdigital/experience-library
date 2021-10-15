@@ -1,0 +1,198 @@
+@import "@coopdigital/foundations-vars";
+
+.coop-offers-module-container {
+  position: relative;
+}
+
+.coop-double-squircles-bg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  & svg {
+    transform: translate(-3%, -8%);
+
+    @media (--mq-small) {
+      transform: translate(-4%, -10%);
+    }
+    @media (--mq-large) {
+      transform: translate(-10%, -10%);
+    }
+  }
+}
+
+.coop-c-offersmodule {
+  padding: 1.5rem;
+  background-color: #fff;
+  margin-bottom: var(--spacing-base);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+
+  @media (--mq-medium) {
+    padding: 2rem;
+  }
+}
+
+.coop-c-offersmodule__header {
+  margin-bottom: 1rem;
+
+  @media (--mq-medium) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.coop-c-offersmodule__title {
+  padding-top: 0;
+
+  @media (--mq-small) {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+
+  @media (--mq-medium) {
+    margin: 0;
+  }
+}
+
+.coop-c-offersmodule__cta {
+  margin: 0 0 1rem 0;
+
+  @media (--mq-medium) {
+    margin: 0 0 1rem 1rem;
+  }
+
+  @media (--mq-medium) {
+    display: flex;
+  }
+
+  @media (--mq-xlarge) {
+    display: inline-block;
+  }
+}
+
+.coop-c-offersmodule__cta__link {
+  padding: calc(var(--spacing-base--1-4) * 1.75)
+    calc(var(--spacing-base--1-2) * 1.5);
+  color: var(--color-white);
+  background: var(--color-button-primary);
+  font-size: 1.125rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  border-radius: 0.4375rem;
+  transition: all 0.15s linear;
+  outline: none;
+  text-decoration: none;
+  line-height: normal;
+  margin: 0 auto;
+  display: block;
+
+  @media (--mq-medium) {
+    padding: var(--spacing-base--1-2) calc(var(--spacing-base--1-2) * 1.5);
+    line-height: 1.125rem;
+  }
+
+  @media (--mq-small) {
+    margin: 0;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--color-button-primary--hover);
+    color: var(--color-white);
+  }
+
+  &:active {
+    background: var(--color-button-primary--active);
+    color: var(--color-white);
+    outline: 0;
+  }
+}
+
+.coop-c-offersmodule__sign-in {
+  display: block;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  text-align: center;
+
+  /* required to overwrite foundation CSS */
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--mq-xlarge) {
+    line-height: 2rem;
+  }
+
+  @media (--mq-medium) {
+    margin-left: 1rem;
+  }
+
+  @media (--mq-small) {
+    text-align: left;
+  }
+}
+
+.coop-c-offersmodule__sign-in__link {
+  font-weight: 500;
+}
+
+.coop-c-offersmodule__media-container {
+  display: none;
+
+  @media (--mq-large) {
+    display: inherit;
+  }
+}
+
+.coop-c-offersmodule__media {
+  margin: 0;
+  padding: 0;
+
+  @media (--mq-medium) {
+    position: relative;
+    left: 20px;
+  }
+}
+
+.coop-c-offersmodule__links {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  padding: 0.27rem 0 0 2rem;
+  display: none;
+
+  @media (--mq-medium) {
+    display: block;
+  }
+
+  @media (--mq-large) {
+    align-self: center;
+  }
+
+  @media (--mq-xlarge) {
+    line-height: 2rem;
+  }
+}
+
+.coop-c-offersmodule__links__link {
+  color: #2f66af;
+  border-color: #2f66af;
+}
+
+.coop-c-offersmodule__actions,
+.coop-c-offersmodule__links {
+  @media (--mq-medium) {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+  }
+}

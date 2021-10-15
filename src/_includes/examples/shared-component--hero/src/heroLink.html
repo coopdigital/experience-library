@@ -1,0 +1,22 @@
+{% macro render(cms, link, content) %}
+  {% if link.type == 'signpost' %}
+      
+    {% import '/shared-component--signpost/src/signpost.html' as signpost %}
+    {% set signpostConfig = {'contentParent': 'Hero'} %}
+
+    {{ signpost.render(link.data, cms, signpostConfig) }}
+
+  {% elif link.type == 'internalLink' or link.type == 'externalLink' %}
+
+    {% import '/shared-component--link/src/link.html' as linkComponent %}
+
+    {%- set config = {
+      'contentType': 'Hero',
+      'contentParent': content.heading
+    } -%}
+
+    <div class="coop-c-hero__link">
+      {{ linkComponent.render(link, cms, config) }}
+    </div>
+  {% endif %}
+{% endmacro %}

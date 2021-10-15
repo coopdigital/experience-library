@@ -1,0 +1,68 @@
+---
+layout: blank
+id: examples
+---
+<section class="coop-l-page">
+    <div class="coop-u-margin-b-32">
+        <h1>Form validation</h1>
+        <a href="https://github.com/coopdigital/coop-frontend/blob/master/packages/foundations-forms/readme.md">Go to the installation documentation</a>
+    </div>
+    <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <div class="coop-u-margin-t-32">
+            {% include interact-banner.html %}
+            </div>
+            <!-- Validation -->
+            <form id="validation-demo" class="coop-form" novalidate>
+                <!-- Validation summary (empty) -->
+                <div id="validation-demo-box" class="coop-c-message coop-c-message--error" tabindex="-1" role="alert" hidden></div>
+                <h3>Your details</h3>
+                <div class="coop-form__row">
+                    <label class="coop-form__label" for="validation-demo-name">Your full name</label>
+                    <p id="validation-demo-name-error" class="coop-form__error" hidden></p>
+                    <input id="validation-demo-name" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="validation-demo-name">
+                </div>
+                <div class="coop-form__row">
+                    <label class="coop-form__label" for="validation-demo-email">Your email address</label>
+                    <p id="validation-demo-email-hint" class="coop-form__hint">We’ll only use this to contact you about your will</p>
+                    <p id="validation-demo-email-error" class="coop-form__error" hidden></p>
+                    <input id="validation-demo-email" class="coop-form__field coop-form__input" type="email" autocomplete="email" name="validation-demo-email" aria-describedby="validation-demo-email-hint">
+                </div>
+                <div class="coop-form__row">
+                    <button class="coop-btn coop-btn--primary" aria-live="assertive" aria-relevant="additions text" aria-atomic="true">
+                        <span class="coop-btn__text" role="status" hidden>Updating details…</span>
+                        <span class="coop-btn__text">Update details</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="coop-u-margin-b-32">
+        {% highlight html %}
+        <!-- Validation -->
+        <form id="validation-demo" class="coop-form" novalidate>
+            <!-- Validation summary (empty) -->
+            <div id="validation-demo-box" class="coop-c-message coop-c-message--error" tabindex="-1" role="alert" hidden></div>
+            <h3>Your details</h3>
+            <div class="coop-form__row">
+                <label class="coop-form__label" for="validation-demo-name">Your full name</label>
+                <p id="validation-demo-name-error" class="coop-form__error" hidden></p>
+                <input id="validation-demo-name" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="validation-demo-name">
+            </div>
+            <div class="coop-form__row">
+                <label class="coop-form__label" for="validation-demo-email">Your email address</label>
+                <p id="validation-demo-email-hint" class="coop-form__hint">We’ll only use this to contact you about your will</p>
+                <p id="validation-demo-email-error" class="coop-form__error" hidden></p>
+                <input id="validation-demo-email" class="coop-form__field coop-form__input" type="email" autocomplete="email" name="validation-demo-email" aria-describedby="validation-demo-email-hint">
+            </div>
+            <div class="coop-form__row">
+                <button class="coop-btn coop-btn--primary" aria-live="assertive" aria-relevant="additions text" aria-atomic="true">
+                    <span class="coop-btn__text" role="status" hidden>Updating details…</span>
+                    <span class="coop-btn__text">Update details</span>
+                </button>
+            </div>
+        </form>
+        {% endhighlight %}
+    </div>
+
+</section>

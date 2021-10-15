@@ -1,0 +1,27 @@
+:root {
+  /* Spacing */
+  --spacing-64: 4rem;
+  --spacing-48: 3rem;
+  --spacing-32: 2rem;
+  --spacing-24: 1.5rem;
+  --spacing-16: 1rem;
+  --spacing-12: 0.75rem;
+  --spacing-8: 0.5rem;
+  --spacing-4: 0.25rem;
+  --spacing-2: 0.125rem;
+
+  /* Legacy spacing */
+  /* Spacing: Base */
+  --spacing-base: var(--spacing-32);
+  --spacing-base--3-4: var(--spacing-24);
+  --spacing-base--1-2: var(--spacing-16);
+  --spacing-base--1-4: var(--spacing-8);
+  --spacing-base--1-8: var(--spacing-2);
+
+  /* Spacing: Medium */
+  --spacing-medium: var(--spacing-64);
+  --spacing-medium--3-4: var(--spacing-48);
+  --spacing-medium--1-2: var(--spacing-32);
+  --spacing-medium--1-4: var(--spacing-16);
+  --spacing-medium--1-8: var(--spacing-8);
+}

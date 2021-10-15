@@ -1,0 +1,91 @@
+
+{% macro render(content, cms, config) %}
+{% import 'macros/elements/images.html' as images %}
+
+{# Set default classes and configuration #}
+{% set orientationClass = '' %}
+{%
+  set imageDimensions = {
+    'width': 390,
+    'height': 219
+  }
+%}
+{% if config %}
+  {# Sets the card into its horizontal layout #}
+  {% if config.isHorizontal %}
+    {% set orientationClass = ' coop-c-editorialcard--horizontal' %}
+  {% endif %}
+
+  {# move image to right #}
+	{% set flipImage = '' %}
+  {% if content.imagePositionRight %}
+    {% set flipImage = ' coop-c-editorialcard--flip' %}
+  {% endif %}
+
+  {# If a two column layout we want to render a better sized image #}
+  {% if config.twoColumns %}
+    {%
+      set imageDimensions = {
+        'width': 618,
+        'height': 348
+      }
+    %}
+  {% endif %}
+{% endif %}
+    <article class="coop-c-editorialcard coop-c-editorialcard--auto-height {{ orientationClass }}{{ flipImage }}">
+        {% if content.link and content.link.sys.id %}
+            {% with link = cms.get_entry(content.link.sys.id) %}
+                {% if link.type == 'internalLink' %}
+                    {% if link.fields.page.data %}
+                        {% with internalLink = cms.get_entry(link.fields.page.data.sys.id) %}
+                            <a
+                                href="{{tenant_url_path}}{{ internalLink.full_url_path }}"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype="Card|Editorial"
+                                data-contentparent="{{ config.contentParent|safe }}"
+                                data-linktext="{{ content.heading|safe }}"
+                            >
+                        {% endwith %}
+                    {% endif %}
+                {% elif link.type == 'externalLink' %}
+                    {% if link.fields.url.data %}
+                        <a
+                            href="{{ link.fields.url.data }}"
+                            class="coop-c-editorialcard__link"
+                            data-contenttype="Card|Editorial"
+                            data-contentparent="{{ config.contentParent|safe }}"
+                            data-linktext="{{ content.heading|safe }}"
+                        >
+                    {% endif %}
+                {% endif %}
+            {% endwith %}
+        {% endif %}
+
+        <div class="coop-c-editorialcard__inner">
+            {% if content.image and content.image.sys.id %}
+								{% with image = cms.get_asset(content.image.sys.id) %}
+										<figure class="coop-c-editorialcard__media">
+                        <picture class="coop-c-editorialcard__image">
+													 {{ images.render(image, imageDimensions) }}
+                        </picture>
+                    </figure>
+                {% endwith %}
+            {% endif %}
+
+            <div class="coop-c-editorialcard__content">
+                <header class="coop-c-editorialcard__header">
+                    {%- if content.label -%}<p class="coop-c-editorialcard__subtitle">{{ content.label }}</p>{%- endif -%}
+                    <h3 class="coop-c-editorialcard__title"><span>{{ content.heading }}</span></h3>
+                </header>
+                {% if content.bodyText %}
+                    <div class="coop-c-editorialcard__body">
+                        {{ content.bodyText|markdown }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        {% if content.link and content.link.sys.id %}
+            </a>
+        {% endif %}
+    </article>
+{% endmacro %}

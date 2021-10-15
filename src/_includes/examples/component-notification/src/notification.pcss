@@ -1,0 +1,98 @@
+/* Card - notification (info) */
+
+@import "@coopdigital/foundations-vars";
+
+.coop-c-notification {
+  position: relative;
+  padding: var(--spacing-16);
+  margin-bottom: var(--spacing-16);
+  background-color: var(--color-blue-inform-light);
+  border-left: 4px solid var(--color-blue-inform);
+}
+
+@media (--mq-medium) {
+  .coop-c-notification {
+    margin-bottom: var(--spacing-32);
+  }
+}
+
+.coop-c-notification__link {
+  color: var(--color-text);
+  border: none;
+  text-decoration: underline;
+}
+
+.coop-c-notification__link:active,
+.coop-c-notification__link:focus {
+  outline: none;
+}
+
+/* Full banner clickable area */
+.coop-c-notification__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Full banner clickable area (focus outline) */
+.coop-c-notification__link:active::after,
+.coop-c-notification__link:focus::after {
+  outline: 2px solid var(--color-link--focus);
+  outline-offset: 3px;
+}
+
+.coop-c-notification__heading {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.coop-c-notification:hover .coop-c-notification__link,
+.coop-c-notification:focus-within .coop-c-notification__link,
+.coop-c-notification:focus .coop-c-notification__link {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.coop-c-notification__p {
+  width: 100%;
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.coop-c-notification__p:last-child {
+  margin-bottom: 0;
+}
+
+@media (--mq-medium) {
+  .coop-c-notification__p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (--mq-large) {
+  .coop-c-notification__p {
+    width: 65%;
+  }
+}
+
+/* Notification variant modifiers */
+.coop-c-notification--alert {
+  background-color: var(--color-orange-alert-light);
+  border-left-color: var(--color-orange-alert);
+}
+
+.coop-c-notification--success {
+  background-color: var(--color-green-success-light);
+  border-left-color: var(--color-green-success);
+}
+
+.coop-c-notification--error {
+  background-color: var(--color-red-error-light);
+  border-left-color: var(--color-red-error);
+}

@@ -1,0 +1,240 @@
+/* Buttons  */
+
+@import "@coopdigital/foundations-vars";
+
+@keyframes coop-btn-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --app-button: #000000;
+  --app-button-hover: #595959;
+}
+
+.coop-btn {
+  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem; /* 52px / 16 */
+  padding: var(--spacing-16) calc(var(--spacing-16) * 1.25);
+  color: var(--color-white);
+  background: var(--color-button-blue);
+  font-size: var(--type-body-s);
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  border: 0;
+  border-radius: var(--ui-border-radius);
+  transition: var(--ui-transition-hover);
+  transition-property: var(--ui-transition-hover-property);
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (--mq-medium) {
+    min-height: 3.75rem; /* 60px / 16 */
+    padding: var(--spacing-16) calc(var(--spacing-32) * 1.25);
+    font-size: var(--type-body-l);
+  }
+}
+
+.coop-btn:hover,
+.coop-btn:focus {
+  background: var(--color-button-blue-hover);
+  color: var(--color-white);
+  border: 0;
+  text-decoration: underline;
+}
+
+.coop-btn:focus {
+  transition: none;
+  outline: 2px solid var(--color-link-focus);
+  outline-offset: 3px;
+}
+
+.coop-btn:active {
+  background: var(--color-button-blue-active);
+  color: var(--color-white);
+  outline: 0;
+}
+
+.coop-btn--full-width {
+  width: 100%;
+}
+
+.coop-btn--primary {
+  background: var(--color-button-green-primary);
+  color: var(--color-white);
+}
+
+.coop-btn--primary:hover,
+.coop-btn--primary:focus {
+  background: var(--color-button-green-primary-hover);
+  color: var(--color-white);
+}
+
+.coop-btn--primary:active {
+  background: var(--color-button-green-primary-active);
+  color: var(--color-white);
+}
+
+.coop-btn--white {
+  background: var(--color-button-white);
+  color: var(--color-black);
+}
+
+.coop-btn--white:hover,
+.coop-btn--white:focus {
+  background: var(--color-button-white-hover);
+  color: var(--color-black);
+}
+
+.coop-btn--white:active {
+  background: var(--color-button-white-active);
+  color: var(--color-black);
+}
+
+.coop-btn--grey {
+  background: var(--color-button-grey);
+  color: var(--color-black);
+}
+
+.coop-btn--grey:hover,
+.coop-btn--grey:focus {
+  background: var(--color-button-grey-hover);
+  color: var(--color-black);
+}
+
+.coop-btn--grey:active {
+  background: var(--color-button-grey-active);
+  color: var(--color-black);
+}
+
+.coop-btn--full {
+  width: 100%;
+}
+
+.coop-btn--small {
+  min-height: 2.75rem; /* 44px / 16 */
+  padding: var(--spacing-8) calc(var(--spacing-16) * 1.25);
+
+  @media (--mq-medium) {
+    min-height: 3.125rem; /* 50px / 16 */
+  }
+}
+
+/* Button (variable) with reserved space for spinner */
+.coop-btn--loading {
+  position: relative;
+  padding-right: calc((var(--spacing-16) * 1.25) + 38px);
+
+  @media (--mq-medium) {
+    padding-right: calc((var(--spacing-32) * 1.25) + 38px);
+  }
+}
+
+/* Button (small) with reserved space for spinner */
+.coop-btn--loading.coop-btn--small {
+  padding-right: calc((var(--spacing-16) * 1.25) + 38px);
+
+  @media (--mq-medium) {
+    padding-right: calc((var(--spacing-16) * 1.25) + 38px);
+  }
+}
+
+/* Button (full width) with reserved space for spinner */
+.coop-btn--loading.coop-btn--full-width {
+  padding-left: calc((var(--spacing-16) * 1.25) + 20px);
+  padding-right: calc((var(--spacing-16) * 1.25) + 20px);
+
+  @media (--mq-medium) {
+    padding-left: calc((var(--spacing-32) * 1.25) + 20px);
+    padding-right: calc((var(--spacing-32) * 1.25) + 20px);
+  }
+}
+
+/* Loading spinner */
+.coop-btn--loading:after {
+  position: absolute;
+  top: 1rem;
+  right: 20px;
+  content: "";
+  animation: coop-btn-spinner 1250ms infinite linear;
+  border: 2px solid;
+  border-right-color: transparent !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: color 0s;
+
+  @media (--mq-medium) {
+    top: 1.25rem;
+    right: 40px;
+  }
+}
+
+/* Loading spinner (small button) */
+.coop-btn--loading.coop-btn--small:after {
+  top: 0.75rem;
+
+  @media (--mq-medium) {
+    top: 0.9375rem;
+    right: 20px;
+  }
+}
+
+/* Loading spinner (small button, full width ) */
+.coop-btn--loading.coop-btn--full-width.coop-btn--small:after {
+  @media (--mq-medium) {
+    right: 40px;
+  }
+}
+
+/* App download buttons */
+.coop-btn--app {
+  position: relative;
+  padding: 0;
+  background: var(--app-button);
+
+  &:hover,
+  &:focus {
+    background: var(--app-button-hover);
+  }
+
+  & .coop-btn__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (--mq-medium) {
+    padding: 0;
+  }
+}
+
+.coop-btn--app-google {
+  width: 10.5625rem; /* 169px / 16 */
+
+  @media (--mq-medium) {
+    width: 12.1875rem; /* 195px / 16 */
+  }
+}
+
+.coop-btn--app-apple {
+  width: 9.75rem; /* 156px / 16 */
+
+  @media (--mq-medium) {
+    width: 11.25rem; /* 180px / 16 */
+  }
+}

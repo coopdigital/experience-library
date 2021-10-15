@@ -1,0 +1,203 @@
+/* Signpost */
+
+@import "@coopdigital/foundations-vars";
+
+.coop-c-signpost {
+  flex-grow: 1;
+  display: flex;
+  background-color: var(--color-white);
+  width: 100%;
+  margin-bottom: var(--spacing-64);
+  border-radius: var(--ui-border-radius);
+}
+
+.coop-c-signpost__link {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: none;
+  width: 100%;
+  box-shadow: var(--ui-shadow);
+  transition: box-shadow 0.2s ease-in;
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--ui-border-radius);
+  overflow: hidden;
+
+  @media (--mq-medium) {
+    flex-direction: column;
+  }
+
+  /* IE 10/11 */
+  @media all and (-ms-high-contrast: none) {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--ui-shadow--hover);
+  }
+}
+
+.coop-c-signpost__deal {
+  color: var(--color-white);
+  text-align: center;
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  width: 3.625rem;
+  height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  @media (--mq-medium) {
+    top: -1rem;
+    right: -0.5rem;
+    width: 3.8125rem;
+    height: 3.625rem;
+  }
+}
+
+.coop-c-signpost__deal__label {
+  flex: 1;
+  display: block;
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+
+  @media (--mq-medium) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.coop-c-signpost__deal__squircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    fill: #d3212a;
+  }
+}
+
+.coop-c-signpost__media {
+  margin: 0;
+  position: relative;
+  height: 5rem;
+  flex-basis: 8.875rem;
+  width: 8.875rem;
+
+  @media (--mq-medium) {
+    height: auto;
+    flex-basis: auto;
+    width: auto;
+  }
+}
+
+.coop-c-signpost__image {
+  display: block;
+  width: auto;
+  height: 100%;
+
+  @media (--mq-medium) {
+    width: 100%;
+    height: auto;
+  }
+
+  & img {
+    display: block;
+    width: auto;
+    height: 100%;
+    border: 0;
+
+    @media (--mq-medium) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.coop-c-signpost__content {
+  display: flex;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  min-height: 5rem;
+  align-items: center;
+  flex: 1;
+
+  @media (--mq-medium) {
+    min-height: none;
+    padding: 1rem 1.5rem;
+  }
+
+  @media (--mq-large) {
+    padding: 1.25rem 2rem;
+  }
+}
+
+.coop-c-signpost__title {
+  flex: 1;
+  margin: 0;
+  padding: 0 0.5rem 0 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+
+  @media (--mq-medium) {
+    padding-right: 1rem;
+  }
+
+  @media (--mq-large) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+a:hover .coop-c-signpost__title,
+a:focus .coop-c-signpost__title {
+  text-decoration: underline;
+}
+
+.coop-c-signpost__icon {
+  display: block;
+  flex-basis: 0.75rem;
+  max-width: 0.75rem;
+  transition: transform 0.2s ease-in-out;
+  width: 0.75rem;
+  height: 1.375rem;
+  overflow: hidden;
+}
+
+/* Option icon that prefixes signpost text */
+.coop-c-signpost__icon--prefix {
+  max-width: 2rem;
+  max-height: 2rem;
+  flex-basis: 2rem;
+  margin-right: 0.4rem;
+}
+
+a:hover .coop-c-signpost__icon,
+a:focus .coop-c-signpost__icon {
+  transform: translateX(0.25rem);
+}
+
+/* Do not translate prefix icons on hover */
+a:hover .coop-c-signpost__icon--prefix,
+a:focus .coop-c-signpost__icon--prefix {
+  transform: none;
+}
+
+.coop-c-signpost__icon__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
