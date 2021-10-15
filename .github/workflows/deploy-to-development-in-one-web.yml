@@ -56,6 +56,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
         role-to-assume: ${{ secrets.DEV_AWS_ROLE_ID }}
         aws-region: eu-west-1
+        role-skip-session-tagging: true
         
     - name: Deploy to Development 
       run: |
