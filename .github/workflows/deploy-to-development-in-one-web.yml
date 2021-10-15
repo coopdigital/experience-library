@@ -57,6 +57,7 @@ jobs:
         role-to-assume: ${{ secrets.DEV_AWS_ROLE_ID }}
         aws-region: eu-west-1
         role-skip-session-tagging: true
+        role-duration-seconds: 3600
         
     - name: Deploy to Development 
       run: |
