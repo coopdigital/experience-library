@@ -30,10 +30,6 @@ jobs:
       env:
         baseurl: "/experience-library"
         url: "https://static.coop.co.uk"
-
-    # - name: Debug curl of one-web-hosting-tool
-    #   run: |
-    #     curl -v https://static.coop.co.uk/one-web-hosting-tool/install.sh
     
     - name: Install one-web-hosting-tool
       run: |
