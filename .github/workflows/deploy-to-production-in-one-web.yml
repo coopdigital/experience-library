@@ -1,0 +1,57 @@
+name: Build and Deploy to Production One Web Static Hosting
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+   
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.3
+
+    - name: Replace baseurl and url in Config (Only required while heroku still in use)
+      uses: microsoft/variable-substitution@v1 
+      with:
+        files: 'src/_config.yml'
+      env:
+        baseurl: "/experience-library"
+        url: "https://static.coop.co.uk"
+    
+    - name: Install one-web-hosting-tool
+      run: |
+        curl https://static.coop.co.uk/one-web-hosting-tool/install.sh | sh
+
+    - name: Build
+      run: |
+        bundle install
+        npm ci
+        npm run build
+
+    - name: Show Build Directory 
+      run: |
+        ls -lah build
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+        role-to-assume: ${{ secrets.PROD_AWS_ROLE_ID }}
+        aws-region: eu-west-1
+        role-skip-session-tagging: true
+        role-duration-seconds: 3600
+        
+    - name: Deploy to Production 
+      run: |
+        one-web-hosting deploy --env=prod --yes
