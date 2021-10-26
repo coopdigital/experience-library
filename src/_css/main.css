@@ -50,6 +50,7 @@
 @import 'theme/el-c-activity-meta.pcss'; 
 @import 'theme/el-c-horizontal-card-home.pcss';
 @import 'theme/el-c-demo.pcss';
+@import 'theme/el-c-download.pcss';
 @import 'theme/code.pcss';
      
 /* Utility overrides */
