@@ -10,6 +10,9 @@
     {% assign versionDateCSS = site.time | date: '%s' %}
     <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url  }}">
+
+    {% remote_include https://static.coop.co.uk/cookie-consent-banner/coop/production.html %}
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
     <script>

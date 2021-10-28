@@ -17,3 +17,5 @@ source: ./
 destination: ../build
 keep_files: ['css', 'js', 'assets']
 markdown: kramdown
+gems:
+  - jekyll-remote-include
