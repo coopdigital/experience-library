@@ -1,8 +1,9 @@
 ---
 layout: null
 ---
+{% assign searchable-pages = site.pages | where:"excluded-from-search","" %}
 [
-  {% for page in site.pages %}
+  {% for page in searchable-pages %}
     {
       "title"    : "{{ page.title | escape }}",
       "description" : "{{ page.intro-text-lead }}",
