@@ -6,7 +6,7 @@ description: Guidelines, tools and resources to help us create better digital ex
 
 # Deploying to Heroku
 baseurl: ""
-url: "https://coop.co.uk"
+url: ""
 
 # Deploying to Co-op infrastructure
 # baseurl: "/experience-library"
