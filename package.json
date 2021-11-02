@@ -67,7 +67,7 @@
   },
   "scripts": {
     "prebuild": "bundle install --gemfile=Gemfile --path vendor/bundle",
-    "build": "gulp build",
+    "build": "JEKYLL_ENV=production gulp build",
     "server": "gulp server"
   }
 }
