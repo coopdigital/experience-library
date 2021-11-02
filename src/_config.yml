@@ -6,7 +6,7 @@ description: Guidelines, tools and resources to help us create better digital ex
 
 # Deploying to Heroku
 baseurl: ""
-url: "https://pioneer-design-system.heroku.com"
+url: ""
 
 # Deploying to Co-op infrastructure
 # baseurl: "/experience-library"
