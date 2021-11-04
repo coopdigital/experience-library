@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
-
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-    <!--[if lte IE 8]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" type="text/css" href="/assets/css/ie.css">
-    <![endif]-->
-
-    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="/assets/css/main.css"><!--<![endif]-->
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-</head>
+    <title>{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="shortcut icon" type="image/jpg" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
+    <meta name="description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% assign versionDateCSS = site.time | date: '%s' %}
+    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url  }}">
+    {% if jekyll.environment == "production" %}
+    {% remote_include https://static.coop.co.uk/cookie-consent-banner/coop/production.html %}
+    {% endif %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-204246589-1', { cookie_flags: 'SameSite=None;Secure' });
+    </script>
+    </head>
 <body>
-
     {{ content }}
-
-    <script src="//code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
-
-    <script src="/assets/js/main.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | prepend: site.baseurl }}"><\/script>')</script>
+    {% assign versionDateJS = site.time | date: '%s' %}
+    <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
 </body>
-
 </html>
 
