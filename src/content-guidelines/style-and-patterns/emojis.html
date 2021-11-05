@@ -1,0 +1,68 @@
+---
+layout: coop-experience
+id: content
+item-url: /content-guidelines/style-and-patterns/emojis.html
+section: style-and-patterns
+meta-title: Emojis
+meta-description: Find out how to use emojis when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Content guidelines
+title: Emojis
+last-reviewed: Last reviewed&#58; 5 Nov 2021
+intro-text-lead: 
+  - Emojis are small digital images or icons that you can use to represent emotions, ideas or actions.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/design-principles-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: 
+link-box-link-design: 
+link-box-text-dev: 
+link-box-link-dev: 
+
+# Changelog
+changelog:
+  - date: 5 Nov 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Guidelines</h2>
+                        <p>Do not use emojis to replace words. Doing this will:</p>
+                        <ul>
+                            <li>cause confusion</li>
+                            <li>stop people scanning content</li>
+                        </ul>
+                        <p>Emojis have an alt text description in them that will be read out by some assistive technologies. Avoid using too many or repeated emojis as this could lead to the same alt text being read out several times.</p>
+                        <p>Use emojis:</p>
+                        <ul>
+                            <li>with caution, sometimes they can come across as annoying or forced</li>
+                            <li>at the end of sentences or statements rather than breaking up lines of text with them</li>
+                            <li>that are more popular and therefore more likely to be understood</li>
+                            <li>that can be seen clearly in both light and dark mode</li>
+                            <li>that work well across devices, you can <a href="https://unicode.org/emoji/charts/full-emoji-list.html">use the unicode.org emoji chart to check</a></li>
+                        </ul>
+                        <p>For more information <a href="https://readabilityguidelines.co.uk/images/emojis/">go to the Content Design London Readability Guidelines section on emojis</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
