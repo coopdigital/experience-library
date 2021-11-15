@@ -1,0 +1,35 @@
+{% macro render(content, cms, config) -%}
+  <div class="coop-c-postcode">
+    <div class="coop-c-postcode__inner">
+      <h2>{{content.heading}}</h2>
+
+    <form class="coop-c-postcode__form">
+      <label for="coop-c-postcode__search" class="coop-c-postcode__label coop-t-regular">{{content.bodyText}}</label>
+      <div class="coop-c-postcode__searchbox">
+        <span class="coop-c-postcode__searchbox-input">
+          <input name="coop-c-postcode__search"
+                  id="coop-c-postcode__search"
+                  type="search"
+                  placeholder="{{content.formPlaceholder}}"
+                  data-utm-source="{% if 'utmSource' in content %}{{content.utmSource }}{% endif %}"
+                  data-utm-medium="{% if 'utmMedium' in content %}{{content.utmMedium}}{% endif %}"
+                  data-utm-campaign="{% if 'utmCampaign' in content %}{{content.utmCampaign}}{% endif %}" />
+        </span>
+        <button class="coop-c-postcode__submit coop-btn">
+          <span class="coop-u-visuallyhidden">Search</span>
+          <svg width="20" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28.66,15H3a1,1,0,0,0,0,2H28.66a1,1,0,0,0,0-2Z"/><path d="M17,3a1,1,0,0,0-.71.29,1,1,0,0,0,0,1.42l10.6,10.58a1,1,0,0,1,0,1.42L16.29,27.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l12-12a1,1,0,0,0,0-1.42l-12-12A1,1,0,0,0,17,3Z"/></svg>
+      </button>
+      </div>
+    </form>
+
+      <div class="coop-c-postcode__alt">
+        <p>Shop online and get delivery in as little as 2 hours.</p>
+        <p>Available in selected areas around the UK.</p>
+        <p>Please switch to another browser to <a href="{{options.SHOP_URL}}">Order online</a></p>
+      </div>
+    </div>
+  </div>
+  <script>
+      window.SHOP_URL = "{{options.SHOP_URL}}"
+  </script>
+{%- endmacro -%}
