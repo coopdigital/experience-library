@@ -1,0 +1,117 @@
+@import "@coopdigital/foundations-vars";
+
+.coop-c-postcode {
+  background: url("https://images.ctfassets.net/6jpeaipefazr/5XKCMyduATrYj5jHNU6e31/0fc41bb899ad1dc2ebeb68d2097fcf18/food-instore-3.jpg?fm=jpg&fl=progressive&q=100&h=300&fit=crop")
+    no-repeat 0 -10px;
+  background-color: var(--color-grey-neutral-warm);
+  background-size: contain;
+  padding: 10px;
+
+  @media (--mq-large) {
+    background-size: cover;
+    background-position: 0 -24px;
+  }
+}
+
+.coop-c-postcode.error .coop-c-postcode__searchbox {
+  border: 1px solid var(--color-red-mid);
+}
+
+.coop-c-postcode__inner {
+  background: var(--color-white);
+  margin: 36px 10px 10px;
+  padding: var(--spacing-16);
+  border-radius: 6px;
+  max-width: 100%;
+
+  & h2 {
+    font-size: var(--type-h2-s);
+    margin-bottom: 0;
+  }
+
+  @media (--mq-medium) {
+    max-width: 45%;
+  }
+
+  @media (--mq-large) {
+    margin: 10px;
+  }
+}
+
+.coop-c-postcode__label {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+.coop-c-postcode__submit {
+  border: none;
+  padding: 0 3px;
+
+  & svg {
+    fill: var(--color-white);
+    vertical-align: bottom;
+
+    & path {
+      fill: var(--color-white);
+    }
+
+    & circle {
+      fill: var(--color-turquoise-mid);
+    }
+  }
+}
+
+.coop-c-postcode__error:last-child {
+  margin: 6px 0 0;
+  font-size: 1.125rem;
+}
+
+.coop-c-postcode__error:last-child .coop-u-red-mid {
+  font-weight: 500;
+}
+
+.coop-c-postcode__alt {
+  display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .coop-c-postcode__form {
+    display: none;
+  }
+
+  .coop-c-postcode__alt {
+    display: block;
+
+    & p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.coop-c-postcode__form {
+  position: relative;
+}
+
+.coop-c-postcode__submit {
+  position: absolute;
+  width: 60px;
+  bottom: 0;
+  right: 0;
+  padding: 0 15px;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.coop-c-postcode__submit svg {
+  position: relative;
+  top: 1px;
+}
+
+.coop-c-postcode__submit svg path {
+  stroke: #ffffff; /* Background color against your svg */
+  stroke-width: 1px; /*Between 1px and 2px*/
+}
