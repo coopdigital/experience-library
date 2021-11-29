@@ -5,7 +5,7 @@
             <li><a href="{{ page.link-box-link-design }}" class="el-c-info-card__link coop-t-link-black"><img src="{{ '/images/decorative/figma-icon.svg' | prepend: site.baseurl }}" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-design }}</span></a></li>
             {% endif %}
             {% if page.link-box-text-dev %}
-            <li><a href="{{ page.link-box-link-dev }}" class="el-c-info-card__link coop-t-link-black"><img src="{{ '/images/icon-code-snippet.svg' | prepend: site.baseurl }}" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
+            <li><a href="{{ page.link-box-link-dev | prepend: site.baseurl }}" class="el-c-info-card__link coop-t-link-black"><img src="{{ '/images/icon-code-snippet.svg' | prepend: site.baseurl }}" alt="" class="el-c-info-card__link-icon" /><span>{{ page.link-box-text-dev }}</span></a></li>
             {% endif %}
         </ul>
     </div>
