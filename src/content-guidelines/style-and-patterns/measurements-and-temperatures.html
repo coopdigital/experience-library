@@ -1,0 +1,68 @@
+---
+layout: coop-experience
+id: content
+item-url: /content-guidelines/style-and-patterns/measurements-and-temperatures.html
+section: style-and-patterns
+meta-title:	Measurements and temperatures
+meta-description: Find out how to use measurements and temperatures when designing digital products and services for Co-op.
+excluded-from-search: false
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Content guidelines
+title: Measurements and temperatures
+last-reviewed: Last reviewed&#58; 9 Dec 2021
+intro-text-lead: 
+  - Using consistent units for measurements and temperatures helps people to understand information.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/design-principles-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: 
+link-box-link-design: 
+link-box-text-dev: 
+link-box-link-dev: 
+
+# Changelog
+changelog:
+  - date: 9 Dec 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Measurements</h2>
+                        <p>Use metric measurements where possible. Include the full word for the measurement the first time you use it and then abbreviate after.</p>
+                        <p>For example:</p>
+                        <ul>
+                            <li>square metre ('sq m' after)</li>
+                            <li>square foot ('sq ft' after)</li>
+                            <li>centimetre ('cm' after)</li>
+                            <li>metre ('m' after)</li>
+                            <li>kilometre ('km' after)</li>
+                        </ul>
+                        <p>Do not use a space between the numeral and the abbreviated measurement, for example use 20cm, not 20 cm. This avoids misinterpretation.</p>
+                        <p>If you have to use them, do not abbreviate imperial measurements. Instead use the full word, for example ‘miles’ or ‘inches'.</p>
+                        <h2>Temperatures</h2>
+                        <p>Use Celsius for temperature, for example 160°C.</p>
+                        <p>If you’re listing an oven temperature include the Celsius, fan Celsius and the gas mark, for example 180°C/fan 160°C/Gas 4. You do not need to include the Fahrenheit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
