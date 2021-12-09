@@ -42,5 +42,11 @@ _Note: for the browser to reload automatically when a file changes, you will nee
 
 ## Deploying the website
 
-Changes to the main branch are automatically deplyed to Heroku at:
-[https://pioneer-design-system.herokuapp.com](https://pioneer-design-system.herokuapp.com)
+Changes to the main branch are automatically deplyed to [development.static.coop.co.uk](https://development.static.coop.co.uk/) using Github actions. To go to development you need to be on the Co-op VPN.
+
+To trigger a deploy to production. Go to: 
+1. 'Actions'
+2. Select 'Build and Deploy to production'
+3. Select the 'run workflow' dropdown
+4. Make sure 'Branch: Main' is select
+5. Press 'Run workflow' 
