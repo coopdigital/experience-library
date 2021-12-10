@@ -1,0 +1,557 @@
+---
+layout: coop-experience
+id: accessibility
+item-url: /accessibility/standards.html
+section: get-started-with-accessibility
+meta-title:	Standards
+meta-description: Find out about Co-op’s digital accessibility standards.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Accessibility
+title: Co-op digital accessibility standards
+last-reviewed: Last reviewed&#58; 24 June 2021
+intro-text-lead: 
+  - We've created an accessibility policy and some plain English accessibility standards. This is to help us make our products and services as accessible as possible and to give us criteria to test our work against.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/accessibility-index-hero.jpg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the alert notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt:
+
+# In page nav
+in-page-nav:
+  - link-id: anchor-understandable
+    link-text: Make it understandable
+  - link-id: anchor-readable-and-usable
+    link-text: Make it readable and usable
+  - link-id: anchor-put-the-user-in-control
+    link-text: Put the user in control
+  - link-id: anchor-design-and-build-forms-accessibly
+    link-text: Design and build forms accessibly
+  
+# Changelog
+changelog:
+  - date: 14 April 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <h2>Standards</h2>
+                    <p>No one should be prevented from interacting with us or using our services. We believe in removing barriers. To help us do this, we must meet these standards.</p>
+                    <p>If you do experience an accessibility issue using a <span class="coop-u-nowrap">Co-op</span> service, report it to <a href="mailto:accessibility@coop.co.uk">accessibility@coop.co.uk</a></p>
+                    <h2 id="anchor-understandable">Make it understandable</h2>
+                    <p>1.1 <a href="#descriptive-links">Use links that describe the page they go to</a></p>
+                    <p>1.2 <a href="#titles-and-headings">Use page titles and section headings to explain what the content is about</a></p> 
+                    <p>1.3 <a href="#images-of-text">Do not use images of text, except for logos and product shots</a></p> 
+                    <p>1.4 <a href="#unusual-words">Do not use unusual words and phrases</a></p> 
+                    <p>1.5 <a href="#abbreviations">Do not use abbreviations</a></p>
+                    <p>1.6 <a href="#literacy">Write to a low literacy level</a></p>
+                    <p>1.7 <a href="#help">Give help at the point it's needed</a></p>
+                    <p>1.8 <a href="#text-alternatives">Provide text alternatives for non-text content</a></p>
+                    <p>1.9 <a href="#structure">Structure content clearly</a></p>
+                    <p>1.10 <a href="#language">Set the language in the code</a></p>
+                    <p>1.11 <a href="#status-messages">Provide status messages to users of assistive technology</a></p>
+                    <p>1.12 <a href="#different-ways">Give different ways to find web pages</a></p>
+                    <p>1.13 <a href="#consistency">Use menus, buttons and icons consistently</a></p>
+                    <p>1.14 <a href="#sensory-directions">Do not rely on sensory directions</a></p>
+                    <h2 id="anchor-readable-and-usable">Make it readable and usable</h2>
+                    <p>2.1 <a href="#line-length">Keep lines of text under 80 characters</a></p>
+                    <p>2.2 <a href="#justified-text">Do not justify text</a></p> 
+                    <p>2.3 <a href="#line-spacing">Use enough line spacing</a></p> 
+                    <p>2.4 <a href="#target-size">Make touch target areas large enough</a></p> 
+                    <p>2.5 <a href="#resizing">Allow people to resize text without breaking the page</a></p>
+                    <p>2.6 <a href="#keyboard-access">Allow people to access content using a keyboard</a></p>
+                    <p>2.7 <a href="#focus">Make the focus visible</a></p>
+                    <h2 id="anchor-put-the-user-in-control">Put the user in control</h2>
+                    <p>3.1 <a href="#alerts">Allow users to turn off alerts</a> </p>
+                    <p>3.2 <a href="#reconfirm-details">Allow people to re-confirm details and continue</a></p>
+                    <p>3.3 <a href="#timeouts">Warn of time-outs</a></p>
+                    <p>3.4 <a href="#audio-visual-alternatives">Give alternatives to audio and visual content</a></p> 
+                    <p>3.5 <a href="#control">Let users control audio, animation and video</a></p> 
+                    <p>3.6 <a href="#be-objective">Be objective, not subjective</a></p>
+                    <p>3.7 <a href="#mistakes">Allow users to fix mistakes</a></p>
+                    <h2 id="anchor-design-and-build-forms-accessibly">Design and build forms accessibly</h2>
+                    <p>4.1 <a href="#consider-forms">Consider forms carefully</a></p>
+                    <p>4.2 <a href="#colour-only">Do not give information using colour only</a></p> 
+                    <p>4.3 <a href="#form-contrast">Check the colour contrast</a></p>
+                    <hr class="coop-u-margin-t-64">      
+                </div>
+                
+                <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <h2 class="coop-u-margin-b-32">1. Make it understandable</h2>
+                    <h3>1.1 Use links that describe the page they go to</h3>
+                    <p><strong>Problem:</strong> Screen readers read out the text on a page, usually for people who cannot see the page. People using screen readers often browse only the links on a web page. This means link text can be read out of context. If a link says ‘read more’ or ‘click here’ it will not be clear what the link does or where it takes the user.</p>
+                    <p><strong>Works well:</strong> Link text that describes where the link is taking the user. Ideally this will be using the same words as the destination page title, so users know they're in the right place when they get there.</p>
+                    <p>If the link is to an action, for example ‘Book an appointment’, use this as the link text. If it’s to something else, for example a policy or external website then use the title as the link text.</p>
+                    <p><strong>Good example:</strong> Accessibility policy</p>
+                    <p><strong>Bad example:</strong> Read more </p>
+                    <p><strong>Our interpretation of WCAG:</strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">2.4.4 Link purpose (in context)</a> (Level A)</p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">2.4.9 Link purpose (link only)</a> (Level AAA) </p>
+                    <p><a id="titles-and-headings"></a></p>
+                    <h3>1.2 Use page titles and section headings to explain what the content is about</h3>
+                    <p><strong>Problem:</strong> People use the headings on a page to determine what content is there and to decide which content will help them achieve what they came to do. Pages with generic headings make it hard to find information.</p>
+                    <p><strong>Works well:</strong> Clear and descriptive headings that describe what content is in that section. People can scan the headings to find the information they need. </p>
+                    <p><strong>Good example:</strong> Contact details </p>
+                    <p><strong>Bad example:</strong> More information </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#page-titled">2.4.2 Page titled</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 Headings and labels</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#section-headings">2.4.10 Section headings</a> (Level AAA)</p>
+                    <p><a id="images-of-text"></a></p>
+                    <h3>1.3 Do not use images of text, except for logos and product shots</h3>
+                    <p><strong>Problem:</strong> People sometimes zoom in or make the text bigger on a web page so they can read it. If text is within an image it will become blurry and unreadable when enlarged. This can affect people who have forgotten their glasses or have other visual impairments. </p>
+                    <p>Do not use images with text in them. The exception to this is text contained within logos or product shots.</p>
+                    <p><strong>Works well:</strong> Text entered using a content management system or in the HTML of the website. </p>
+                    <p><strong>Good example:</strong> Only using text on logo or product shots.</p>
+                    <p><strong>Bad example:</strong> Images with text in them. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#images-of-text">1.4.5 Images of text</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception">1.4.9 Images of text</a> (No exceptions) (Level AAA) </p>
+                    <p><a id="unusual-words"></a></p>
+                    <h3>1.4 Do not use unusual words and phrases</h3>
+                    <p><strong>Problem:</strong> English is a wonderful language, but it can be complicated, especially if you’re learning it. Translations are often literal so can be confusing if people have not heard specific terms or phrases before.</p>
+                    <p><strong>Works well:</strong> Using plain English. Not using idioms, metaphors, specialist terms or unusual words and phrases.</p>
+                    <p>This helps people who might get confused by metaphors and colloquialisms or take them literally. </p>
+                    <p><strong>Good example:</strong> We’ll contact you within 2 days. </p>
+                    <p><strong>Bad example:</strong> We’ll be with you in two shakes of a lamb’s tail. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#unusual-words">3.1.3 Unusual words</a> (Level AAA) </p>
+                    <p><a id="abbreviations"></a></p>
+                    <h3>1.5 Do not use abbreviations</h3>
+                    <p><strong>Problem:</strong> Abbreviations or acronyms, and Latin terms (for example “etc..”) are all generally bad for readability.  </p>
+                    <p>They usually give the reader more work to do to understand the information. Using them can make people feel alienated or confused.</p>
+                    <p><strong>Works well:</strong> Only using abbreviations or acronyms where you must or where they are widely recognised, such as NHS or BBC.  </p>
+                    <p>If an acronym is used multiple times, you could spell it out on the first usage and then use the short version. If there are several sections of content, people may not have read all of it and therefore might not have seen the first usage. Use your judgment depending on how much content you have and how many uses of an abbreviation there might be. If in doubt, spell it out. </p>
+                    <p>This helps people with English as a second language or cognitive conditions.</p>
+                    <p><strong>Good example:</strong> Enter a postcode, for example M4 4BF, to show stores near you.</p>
+                    <p><strong>Bad example:</strong> Enter a postcode, e.g. M4 4BF, to show stores approx near your addr. </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#abbreviations">3.1.4 Abbreviations</a> (Level AAA) </p>
+                    <p><a id="literacy"></a></p>
+                    <h3>1.6 Write to a low literacy level</h3>
+                    <p><strong>Problem:</strong> Lots of people have difficulty reading. <a href="https://literacytrust.org.uk/parents-and-families/adult-literacy/">The National Literacy Trust found that 16.4% of adults in England have very low literacy skills</a>.  </p>
+                    <p><strong>Works well:</strong> Using plain English with short words and sentences. This will help to make the content clear for people with low literacy and help everyone to find what they are looking for.</p>
+                    <p><strong>Good example:</strong> Change your address. </p>
+                    <p><strong>Bad example:</strong> Update with an adjustment to core primary residence information in the location database. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#reading-level">3.1.5 Reading level</a> (Level AAA) </p>
+                    <p><a id="help"></a></p>
+                    <h3>1.7 Give help at the point it’s needed</h3>
+                    <p><strong>Problem:</strong> Sometimes people have difficulty understanding information, completing a task or knowing what they need to do online. This is especially true for forms or other interactions where people have to enter information. </p>
+                    <p><strong>Works well:</strong> Giving clear instructions for a task at the point of need. Make questions clear and self-explanatory. Providing examples and guidance on text input fields.</p>
+                    <p>If an error occurs, giving a clear reason why and instructions on what the user must do to resolve the problem. </p>
+                    <p>Providing ways to get further help and support where it's needed. </p>
+                    <p>This helps people with cognitive conditions and people who do not have a lot of time or are distracted. </p>
+                    <p><strong>Good example:</strong> What is your date of birth? </p>
+                    <p>For example, 29 10 2020 </p>
+                    <p><strong>Bad example:</strong> Enter DOB </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#help">3.3.5 Help</a> (Level AAA) </p>
+                    <p><a id="text-alternatives"></a></p>
+                    <h3>1.8 Provide text alternatives for non-text content</h3>
+                    <p><strong>Problem:</strong> Sometimes content is presented in non-text formats that cannot be read by assistive technology such as a screen reader. This means people can  miss essential information. </p>
+                    <p><strong>Works well:</strong> Providing text alternatives that describe the non-text content. Providing any essential information in text that can be read by assistive technology. </p>
+                    <p><strong>Good example:</strong> Essential information that is contained in an image is also provided as alternative text. </p>
+                    <p><strong>Bad example:</strong> Essential information is contained only in an image, with no text alternative provided. </p>
+                    <p><strong>Our interpretation of: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#non-text-content">1.1.1 Non-text content</a> (Level A) </p>
+                    <p><a id="structure"></a></p>
+                    <h3>1.9 Structure content clearly</h3>
+                    <p><strong>Problem:</strong> Content needs to follow a logical order and make clear its relationship to other content in order to be understood.  </p>
+                    <p>If it does not then people have a harder time working out where they need to go or what they need to do. </p>
+                    <p><strong>Works well:</strong> Content structured in a relevant order with clear headings that have been identified as headings in the code. </p>
+                    <p>Things like required fields are indicated in text descriptions and not only identified by colour. </p>
+                    <p><strong>Good example:</strong> Pages with a clear structure and headings that are identified in the code.</p>
+                    <p><strong>Bad example:</strong> Pages that do not follow a logical order and have either no headings or headings that are only identified visually.</p>
+                    <p><strong>Our interpretation of WCAG:</strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 Info and relationships</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#meaningful-sequence">1.3.2 Meaningful sequence</a> (Level A)</p>
+                    <p><a id="language"></a></p>
+                    <h3>1.10 Set the language in the code</h3>
+                    <p><strong>Problem:</strong> The way screen readers read text and pronounce words is determined by the the language setting in the HTML. If the correct language is not set in the HTML then things may be pronounced in unusual and confusing ways. </p>
+                    <p>If the language is not set then it will be harder for translation software to interpret and translate the content. </p>
+                    <p><strong>Works well:</strong> Set the language of each page in the HTML using the language attribute. </p>
+                    <p><strong>Good example:</strong>  </p>
+                    <p><strong>Bad example:</strong> No language set. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#language-of-page">3.1.1 Language of page</a> (Level A) </p>
+                    <p><a id="status-messages"></a>  </p>
+                    <h3>1.11 Provide status messages to users of assistive technology</h3>
+                    <p><strong>Problem:</strong> When the content on a page changes, this change may not be seen by users of assistive technology such as screen readers.  </p>
+                    <p>For example, a results page might show ‘5 results’ but this text will not be focused on by the screen reader. But, if you include a status message in the HTML it  will announce it the message to the user.</p>
+                    <p><strong>Works well:</strong> Accompanying all status changes such as searches, errors or updates with clear, relevant status messages. </p>
+                    <p><strong>Good example:</strong> If a user enters an incorrect postcode, a message appears above the input reading "Enter a correct postcode". The screen reader announces that there has been an error and reads this message. </p>
+                    <p><strong>Bad example:</strong> If a user enters an incorrect postcode, a message appears above the input reading "Enter a correct postcode". There is no status message so the screen reader does not know to announce there has been an error. </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3 Status messages</a> (Level AA) </p>
+                    <p><a id="different-ways"></a></p>
+                    <h3>1.12 Give different ways to find web pages</h3>
+                    <p><strong>Problem:</strong> People with different circumstances need different ways to navigate and find web pages.  </p>
+                    <p>A screen reader uses might find it easier to use a search than go through a menu. Someone with a cognitive condition might prefer to look at a sitemap that gives an overview of the website. </p>
+                    <p><strong>Works well:</strong> Providing a range of ways to find web pages. </p>
+                    <p><strong>Good example:</strong> Providing search, sitemap, navigation and lists of links. </p>
+                    <p><strong>Bad example:</strong> Only providing a navigation menu with the main pages. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#multiple-ways">2.4.5 Multiple ways</a> (Level AA) </p>
+                    <p><a id="consistency"></a></p>
+                    <h3>1.13 Use menus, buttons and icons consistently</h3>
+                    <p><strong>Problem:</strong> If menus, navigation, buttons or icons change from page to page, it is harder for people to find what they're looking for and complete tasks. </p>
+                    <p><strong>Works well:</strong> Making sure the order of menus and the function of particular buttons and icons remains the same across the website or app. </p>
+                    <p><strong>Good example:</strong> Items on a navigation menu are in the same order on all pages. </p>
+                    <p><strong>Bad example:</strong> Items on a navigation menu are in a different order on several pages. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#consistent-navigation">3.2.3 Consistent navigation</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#consistent-identification">3.2.4 Consistent identification</a> (Level AA) </p>
+                    <p><a id="sensory-directions"></a>  </p>
+                    <h3>1.14 Do not rely on sensory directions</h3>
+                    <p><strong>Problem:</strong> People with different needs may not be able to find things or follow the content if only sensory directions are given. </p>
+                    <p>For example, a blind or partially sighted person will find it difficult if content is indicated as above or below other content. Someone who is colour blind may find it hard to “click the red button”. </p>
+                    <p><strong>Works well:</strong> Not relying upon sensory directions. </p>
+                    <p><strong>Good example:</strong> Fill in the application form. </p>
+                    <p><strong>Bad example:</strong> Fill in the form below. Click the orange arrows to move to the next page and the red button to submit your application. </p>
+                    <p><strong>Our interpretation of: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#sensory-characteristics">1.3.3 Sensory characteristics</a> (Level A) </p>
+                </div>
+
+                <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-t-64">
+                    <h2 class="coop-u-margin-b-32">2. Make it readable and usable</h2>
+                    <h3>2.1 Keep lines of text under 80 characters</h3>
+                    <p><strong>Problem:</strong> Lines of words containing 80 or more characters can be difficult to read. This is because the eye has a longer distance to skip from the end of one line to the start of the next. Reading on the move, from a distance or when tired can result in people re-reading lines. This can result in people losing motivation and focus. Dyslexia is also often cited as affecting people’s ability to read longer lines of text. </p>
+                    <p><strong>Works well:</strong> To help prevent the re-reading of lines of words, use under 80 characters in a line and use short sentences. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734020/">Doing this has been known to increase reading speed by up to 27%</a>. </p>
+                    <p><strong>Good example:</strong> Short lines of words with less than 80 characters. </p>
+                    <p><strong>Bad example:</strong> Long lines of words with over 80 characters. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#visual-presentation">1.4.8 Visual presentation</a> (Level AAA) </p>
+                    <p><a id="justified-text"></a></p>
+                    <h3>2.2 Do not justify text</h3>
+                    <p><strong>Problem:</strong> Justified text is when the left and right sides of a word block both have a straight edge. This results in some words that are close together and others that have big gaps. We know people do not fixate on every word but tend to skip words (their eyes take little leaps, called “saccades”) and fill in the rest. </p>
+                    <p>The gaps make it tricky to read naturally. People cannot easily skip from word to word as the differing widths of gaps means the eye has to assess the size of the gap constantly.  </p>
+                    <p><strong>Works well:</strong> Left align your text for even spacing and an easier reading experience. This way the eye does not need to assess the size of gaps within justified text. </p>
+                    <p><strong>Good example:</strong> Left aligned text with even spacing. </p>
+                    <p><strong>Bad example:</strong> Justified text with random spacing. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#visual-presentation">1.4.8 Visual presentation</a> (Level AAA) </p>
+                    <p><a id="line-spacing"></a></p>
+                    <h3>2.3 Use enough line spacing</h3>
+                    <p><strong>Problem:</strong> Line spacing is the gap between one line of words and the next. 
+                    People can find it difficult to read paragraphs of words where the lines are close together. When reading, the longest distance the eye must travel is from the end of one line to the start of the next. Reading on the move, from a distance or when tired can cause people to re-read lines. This can result in people losing motivation and focus. Dyslexia is often cited as affecting people’s ability to read words with poor line spacing. </p>
+                    <p><strong>Works well:</strong> To help prevent people re-reading lines of words, provide extra space between lines and paragraphs to so people can better track the next line. </p>
+                    <p><strong>Good example:</strong> Words with 1.5 to 2 times the font size for line spacing. Letter spacing (tracking) to at least 0.12 times the font size. Word spacing to at least 0.16 times the font size. </p>
+                    <p><strong>Bad example:</strong> Line spacing, letter spacing and word spacing below the recommend size. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#text-spacing">1.4.12 Text spacing</a> (Level AA)</p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#visual-presentation">1.4.8 Visual presentation</a> (Level AAA) </p>
+                    <p><a id="target-size"></a></p>
+                    <h3>2.4 Touch target area is large enough</h3>
+                    <p><strong>Problem:</strong> The touch target area is the size of the thing that people can click, touch or interact with. For example, a button’s touch target area is usually the size of that button. If the touch target area is too small people can struggle to press the button. This can affect people travelling on a wobbly train or who have dexterity conditions. </p>
+                    <p><strong>Works well:</strong>  To help people click on the thing they want to, make sure the button is sized to the average width of the index finger which is 1.6 to 2 cm for most adults. This converts to 45 to 57 pixels, which is wider than what most mobile guidelines suggest. </p>
+                    <p><strong>Good example:</strong> Both the height and the width are between 45 to 57 pixels. </p>
+                    <p><strong>Bad example:</strong> Either the height or the width is below 45px. </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#target-size">2.5.5 Target Size</a> (Level AAA) </p>
+                    <p><a id="resizing"></a></p>
+                    <h3>2.5 Allow people to resize text without breaking the page</h3>
+                    <p><strong>Problem:</strong> People cannot always read the standard sizes of text.  They may need to make the text bigger if, for example, they’ve forgotten their glasses. Changing the text size can sometimes make it unreadable as it’s hidden behind something or it overlaps the next line.</p>
+                    <p><strong>Works well:</strong>  Allow people to: </p>
+                    <ul>
+                    <li>resize the text to at least 200%  </li>
+                    <li>change their window size or orientation of their mobile screen  </li>
+                    <li>view the content without having to scroll both horizontally and vertically </li>
+                    </ul>
+                    <p><strong>Good example:</strong> Content that proportionally expands to be legible at different screen sizes. </p>
+                    <p><strong>Bad example:</strong> Content that is not viewable or overlaps if the orientation or text size changes.</p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#reflow">1.4.10 Reflow</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#resize-text">1.4.4 Resize text</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#orientation">1.3.4 Orientation</a> (Level AA) </p>
+                    <p><a id="keyboard-access"></a></p>
+                    <h3>2.6 Allow people to access content using a keyboard</h3>
+                    <p><strong>Problem:</strong> Lots of people cannot use a mouse or a trackpad. They rely on the keyboard to access web pages. Using a mouse, you can move the cursor around a page without having to engage with it. A keyboard user often must go through a page one thing at a time. When pages have lots of links it can cause physical pain to access the content they need. </p>
+                    <p><strong>Works well:</strong> Allow people to: </p>
+                    <ul>
+                    <li>access all the content on the screen in the order its displayed </li>
+                    <li>navigate around a page freely without getting stuck.  </li>
+                    <li>skip passed navigation that is replicated across a website and has over 6 links in it. </li>
+                    </ul>
+                    <p><strong>Good example:</strong> All content can be reached by keyboard users.</p>
+                    <p>Pop-up menus can be closed with the keyboard.</p>
+                    <p>There is a ‘Skip to content’ link when people access a webpage. </p>
+                    <p><strong>Bad example:</strong> Large navigation menus on every page that people must tab through every item. </p>
+                    <p>Pop ups that cannot be closed. </p>
+                    <p>Cookie banners after all the content – this means people must tab through the whole site to close them.</p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks">2.4.1 Bypass blocks</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#focus-order">2.4.3 Focus order</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#keyboard">2.1.1 Keyboard</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap">2.1.2 No keyboard trap</a> (Level AA) </p>
+                    <p><a id="focus"></a></p>
+                    <h3>2.7 Make the focus visible</h3>
+                    <p><strong>Problem:</strong> Having no focus ring (a ring around content when it’s accessed using a keyboard) is like having no mouse cursor. Some people rely on the focus ring to see where they are on the page. Most assistive technology users have sight and rely on a keyboard. A poor, or no, focus ring can make a website unusable. </p>
+                    <p><strong>Works well:</strong>  A clearly visible ring around content when accessed using a keyboard. Check it has a strong contrast against all the different background colours that we have on the website.  </p>
+                    <p><strong>Good example:</strong> A visible focus ring with good colour contrast. </p>
+                    <p><strong>Bad example:</strong> No focus ring or one with poor colour contrast. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#focus-visible">2.4.7 Focus visible</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#on-focus">3.2.1 On focus</a> (Level AA)</p>
+                </div>
+
+                <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-t-64">
+                    <h2 class="coop-u-margin-b-32">3. Put the user in control</h2>
+                    <h3>3.1 Allow users to turn off alerts</h3>
+                    <p><strong>Problem:</strong> People can find it hard to focus on the content they need to if there are updates and alerts distracting them, such as announcements or offers.  </p>
+                    <p><strong>Works well:</strong> Allowing users to turn off or postpone updates and alerts from your service, can help them focus on the content they need. This can also help some people with cognitive or attention conditions like ADHD (attention deficit hyperactivity disorder). </p>
+                    <p>You do not need to allow users to turn off or postpone emergency messages. Emergencies messages include warning of danger to health, safety, or property, including data loss, loss of connection, and so on.   </p>
+                    <p><strong>Good example:</strong> Dismiss this message.  </p>
+                    <p><strong>Bad example:</strong> No way of dismissing or postponing alerts or updates. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#interruptions">2.2.4 Interruptions</a> (Level AAA) </p>
+                    <p><a id="reconfirm-details"></a></p>
+                    <h3>3.2 Allow people to re-confirm details and continue</h3>
+                    <p><strong>Problem:</strong> For security reasons, many sites sign people out after certain periods of inactivity or if they sign in on multiple tabs or devices. This sign out can cause problems for some people who may take longer to complete a transaction or form, or who need to take breaks when they’re completing it. </p>
+                    <p><strong>Works well:</strong> When users are signed out mid-transaction, give them the chance to re-confirm their details and continue their session without losing any data already entered. Doing this can also help people who need to find information in order to complete the transaction, as well as people with memory, attention or cognitive conditions, such as dementia. </p>
+                    <p>Where this not possible, warn people in advance.  </p>
+                    <p><strong>Good example:</strong> To continue with this form, re-enter your name and password.</p>
+                    <p><strong>Bad example:</strong> We’ve signed you out and deleted the information you entered.</p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#re-authenticating">2.2.5 Re-authenticating</a> (Level AAA) </p>
+                    <p><a id="timeouts"></a></p>
+                    <h3>3.3 Warn of time-outs</h3>
+                    <p><strong>Problem:</strong> People read, understand and complete transactions at different rates. Some people may take longer to understand what’s being asked of them, or may need to take a break to complete a transaction. If we do not allow for this, some users may not be able to complete their task accurately, if at all.  </p>
+                    <p><strong>Works well:</strong> Where possible, keep the user’s data for 20 hours. This will allow people enough time to start and finish the transaction with breaks where needed. </p>
+                    <p>If this is not possible: </p>
+                    <ul>
+                        <li>let the user stop or adjust the time limit within a transaction </li>
+                        <li>warn the user how much time they have to complete before inactivity times them out </li>
+                        <li>explain what information they may need to seek to be able to successfully complete the transaction</li>
+                    </ul>
+                    <p>This allows the user to decide whether they should start the transaction and prepare any information that will be asked of them in advance. This can also help people with memory, attention or cognitive conditions, such as dementia.  </p>
+                    <p><strong>Good example:</strong> To use this service you’ll need: </p>
+                    <ul>
+                        <li>your National Insurance number  </li>
+                        <li>a device you use to upload an image of yourself. </li>
+                    </ul>
+                    <p>If you do not interact with a page for more than 2 hours (for example, if you do not enter any information) we will delete any information you’ve entered so far. We do this to keep people’s information secure. </p>
+                    <p><strong>Bad example:</strong> Within 20 hours, and without pre-warning: </p>
+                    <p>You’ve been timed out. We’ve deleted the information you’ve entered so far. </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#no-timing">2.2.3 No timing</a> (Level AAA) </p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html">2.2.1 Timing adjustable</a> (Level AA) </p>
+                    <p><a id="audio-visual-alternatives"></a></p>
+                    <h3>3.4 Give alternatives to audio and visual content</h3>
+                    <p><strong>Problem:</strong> Some people are unable to: </p>
+                    <ul>
+                        <li>see or understand visual content</li>
+                        <li>hear or understand audio information</li>
+                    </ul>
+                    <p><strong>Works well:</strong> All information, regardless of format, should be available to everyone. By giving text and audio alternatives, people can use assistive technology to read them aloud, present them visually or convert them to braille where needed. </p>
+                    <p>For example, we should provide:</p>
+                    <ul>
+                    <li>real-time captions of dialogue, who’s speaking and other significant noises, for people who are deaf or hard of hearing  </p>
+                    </li>
+                    <li>
+                    <p>text transcripts of any pre-recorded audio or video, for example speeches or any sounds within a video (for example, if there’s laughter or applause) for people who are unable to hear  or understand audio content  </p>
+                    </li>
+                    <li>
+                    <p>an audio description of what’s happening in a video, for example actions, scene changes, expressions or any on-screen text – for people who cannot see the video or understand what’s being shown </p>
+                    </li>
+                    <li>
+                    <p>captions if we’re using non-vocal music that includes the title, movement, composer, and any information that will help the user understand what’s being played</p>
+                    </li>
+                    </ul>
+                    <p><strong>Good example:</strong> <span class="coop-u-nowrap">Co-op</span> Christmas advert with audio description.</p>
+                    <p>Younger brother: “Can I come?”</p>
+                    <p>Older brother: (sighs) </p>
+                    <p>Describer: older brother looks to bannister with Santa hat on. </p>
+                    <p>Describer: scene cuts to both boys walking fast in the street, older brother is holding a guitar case, younger brother is running to keep up.</p>
+                    <p>Older brother: “Come on!” </p>
+                    <p><strong>Bad example:</strong> No subtitles or audio description available on a video clip.  </p>
+                    <p><strong>Our interpretation of WCAG:</strong> </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html">1.2.1 Audio-only and video only (pre-recorded)</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html">1.2.2 Captions (pre-recorded)</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">1.2.3 Audio description or media alternative</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html">1.2.4 Captions (Live)</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html">1.2.5 Audio description (pre-recorded)</a> (Level AA)  </p>
+                    <p><a id="control"></a></p>
+                    <h3>3.5 Let users control audio, animation and video</h3>
+                    <p><strong>Problem:</strong> Because people interact at different rates online, it can be distracting and frustrating for some people to interact, watch or listen to something that they cannot control the timing of. </p>
+                    <p>For example, a moving object, animation or a flashing video that: </p>
+                    <ul>
+                        <li>starts automatically </li>
+                        <li>cannot be paused</li>
+                        <li>cannot be stopped</li>
+                    </ul>
+                    <p>For some people, flashing images can also cause seizures. </p>
+                    <p><strong>Works well:</strong> Allow the user to:</p>
+                    <ul>
+                        <li>start audio, animation and video themselves, rather than start them automatically</li>
+                        <li>pause, stop or control the time of audio, animation and video media</li>
+                    </ul>
+                    <p>This can help people who:</p>
+                    <ul>
+                        <li>are taking notes about the content</li>
+                        <li>need to take breaks during the content</li>
+                        <li>are relaying content to people who are deaf</li>
+                        <li>are using screen readers and need to control audio to be able to navigate the page</li>
+                    </ul>
+                    <p>The only exception is if we're showing real time events – where it’s happening at the same time it’s being viewed, like a live stream.</p>
+                    <p>Never use images or animations that have repeated flashing – that’s any that flash more than 3 times in 1 second.</p>
+                    <p><strong>Good example:</strong> A video with a stop button. </p>
+                    <p><strong>Bad example:</strong> An animated banner that loops continuously and flashes three times or more in a second.  </p>
+                    <p><strong>Our interpretation of WCAG:</strong></p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html">1.4.2 Audio control</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html">2.2.2 Pause, stop, hide</a> (Level A)</p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html">2.3.1 Three flashes or below</a> (Level A)</p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#no-timing">2.2.3 No timing</a> (Level AAA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#interruptions">2.2.4 Interruptions</a> (Level AAA)</p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#three-flashes">2.3.2 Three flashes</a> (Level AAA) </p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#animation-from-interactions">2.3.3 Animation from interactions</a> (Level AAA) </p>
+                    <p><a id="be-objective"></a></p>
+                    <h3>3.6 Be objective, not subjective</h3>
+                    <p><strong>Problem:</strong> Attaching subjective terms – like easy, quick or simple – or giving a suggested completion time can be frustrating and misleading for people who:</p>
+                    <ul>
+                        <li>find interacting with digital services difficult </li>
+                        <li>are emotionally triggered by the content</li>
+                        <li>are unable to complete the transaction within the stated time</li>
+                    </ul>
+                    <p><strong>Works well:</strong> Using objective rather than subjective descriptions allows users to experience a service in a way that’s respectful to their circumstances.</p>
+                    <p><strong>Good example:</strong> This survey has 5 multiple choice questions. </p>
+                    <p><strong>Bad example:</strong> This simple survey will only take you 2 minutes to fill in. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/WCAG21/#no-timing">2.2.3 No timing</a> (Level AAA) </p>
+                    <p><a id="mistakes"></a></p>
+                    <h3>3.7 Allow users to fix mistakes</h3>
+                    <p><strong>Problem:</strong> Users may not be aware they have made an input error and may be unsure how to recover from a mistake.  </p>
+                    <p><strong>Works well:</strong> Where possible, design forms so that they allow a user to input information in the way they choose. For example, a postcode input that accepts both a space and no space in the format.  </p>
+                    <p>Allow users to review what they’ve entered and correct any mistakes. This could be by: </p>
+                    <ul>
+                    <li>
+                    <p>adding validation to form fields that clearly explains what the user needs to do to fix an error – for example if they’ve not entered information into a field, or have not entered an expected format  </p>
+                    </li>
+                    <li>
+                    <p>including hint text or content in the validation message that helps the user understand the format that’s required  </p>
+                    </li>
+                    <li>
+                    <p>allowing the user to review and edit their answers before they submit the form or complete the transaction </p>
+                    </li>
+                    <li>
+                    <p>allowing the user to change what they’ve submitted – for example, an order confirmation that includes the cancellation method </p>
+                    </li>
+                    </ul>
+                    <p>This can help anyone who has made a mistake. It can also be helpful for people with: </p>
+                    <ul>
+                    <li>
+                    <p>some conditions such as arthritis, Parkinson’s disease or other motor disabilities, that may make hitting keys by mistakes more likely </p>
+                    </li>
+                    <li>
+                    <p>dyslexia who may be more likely to swap numbers and letters around   </p>
+                    </li>
+                    </ul>
+                    <p><strong>Good example:</strong> Check your answers summary page before submission.  </p>
+                    <p><strong>Bad example:</strong> Non-specific ‘fix the error’, or no form field validation on a field that required a specific format. </p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html">3.3.1 Error identification</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">3.3.3 Error suggestion</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html">3.3.4 Error prevention (Legal, financial, data)</a> (Level AA)</p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-all.html">3.3.6 Error prevention</a> (Level AAA)  </p>
+                </div>
+
+                <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-t-64">
+                    <h2 class="coop-u-margin-b-32">4. Design and build forms accessibly</h2>
+                    <h3>4.1 Consider forms carefully</h3>
+                    <p><strong>Problem:</strong> Forms can be intimidating and frustrating. </p>
+                    <p>People can be unclear about what’s needed, unsure about how to move through the form, worried about their spelling or grammar, emotionally triggered by the information that’s being asked of them, scared about the implications of submitting incorrect information.  </p>
+                    <p>It can be especially hard if you: </p>
+                    <ul>
+                    <li>cannot see what’s on the screen </li>
+                    <li>have a certain part of the screen magnified </li>
+                    <li>are relying on text to speech software </li>
+                    <li>have English as a second language </li>
+                    <li>are dyslexic </li>
+                    <li>are in crisis </li>
+                    <li>have been recently bereaved      </li>
+                    <li>have a poor internet connection</li>
+                    </ul>
+                    <p><strong>Works well:</strong> Too much information or instruction can be just as harmful as too little. Give enough information for the user to complete what they came to do without confusion. Make it clear what information’s required from a user, why it’s required and make it easy for them to complete.</p>
+                    <p>This includes: </p>
+                    <ul>
+                    <li>
+                    <p>using labels (they tell users the purpose of the field) and instructions to help people understand what information, or format of information, is required in a form field </p>
+                    </li>
+                    <li>
+                    <p>allowing a user to autocomplete fields such as address – this can be especially useful for people with motor disabilities, memory conditions, dyslexia and English as a second language (because the autocomplete is independent of language)  </p>
+                    </li>
+                    <li>
+                    <p>making sure any standard or custom built components (in code or script), work with assistive technologies so that users know, for example, whether a control has focus, or whether a checkbox has been selected </p>
+                    </li>
+                    <li>
+                    <p>matching the visible label of a component with the accessible name (also known as a programmatic name) – doing this can help users of speech recognition and text to speech software to navigate, as what they say or hear matches what’s on the screen </p>
+                    </li>
+                    <li>
+                    <p>making any change of context clear, for example, a validation message that appears at the top of the page when a page reloads – this can lessen confusion for users who do not easily see the change, are unsure why the page has reloaded (for example, screen reader users) or are easily distracted by changes that are unexpected  </p>
+                    </li>
+                    </ul>
+                    <p><strong>Good example:</strong> <a href="https://www.coop.co.uk/experience-library/elements/">Form guidance in the Elements section of the <span class="coop-u-nowrap">Co-op</span> Experience Library</a> </p>
+                    <p><strong>Bad example:</strong> A 'Tell us more' free text box - it’s not clear what we need to know or why we need to know it.</p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html">2.5.3 Label in name</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html">3.2.2 On input</a> (Level A) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">3.3.2 Labels or instructions</a> (Level A)  </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html">4.1.2 Name, role, value</a> (Level A)  </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html#dfn-programmatically-determined">1.3.5 Identify input purpose</a> (Level AA)  </p>
+                    <p><a id="colour-only"></a></p>
+                    <h3>4.2 Do not give information using colour only</h3>
+                    <p><strong>Problem:</strong> People with low vision, or who are colour-blind, can have difficulty reading text or seeing elements of a page that give information using colour only. </p>
+                    <p><strong>Works well:</strong> If you use colour to give information, include another way for users who cannot see colour can still understand the information </p>
+                    <p><strong>Good example:</strong> An error state that uses both colour and text to indicate the problem. </p>
+                    <p><strong>Bad example:</strong> Using only colour to give information, for example a button that is red to suggest something has been entered incorrectly.</p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">1.4.1 Use of colour</a> (Level A) </p>
+                    <p><a id="form-contrast"></a></p>
+                    <h3>4.3 Check the colour contrast</h3>
+                    <p><strong>Problem:</strong> People with low vision, or who are colour-blind, can have difficulty reading text or seeing elements of a page that do not contrast with their background. Text that does not have a high colour contrast can also be hard to read when the sun is shining on a screen and on screens with low brightness. </p>
+                    <p><strong>Works well:</strong>  A high colour contrast ratio can make content easier to read. </p>
+                    <p>This means a contrast ratio of at least 4.5:1, between text (and images of text) and its adjacent colour.  </p>
+                    <p>A contrast ratio of at least 3:1 for:  </p>
+                    <ul>
+                    <li>text that’s at least 18 point or 14 point bold </li>
+                    <li>controls of an interface, for example a button </li>
+                    <li>any visual information necessary to indicate state, for example if a component’s selected or focused  </li>
+                    <li>any graphics or images that are needed to understand content. </li>
+                    </ul>
+                    <p>It is not essential to check the colour contrast for: </p>
+                    <ul>
+                    <li>text, or images of text, that are just decorative </li>
+                    <li>part of an inactive component or element  </li>
+                    <li>part of a picture that contains significant other visual content  </li>
+                    <li>text that is part of a logo or brand name    </li>
+                    </ul>
+                    <p>Check the contrast using a colour contrast checker like, <a href="https://webaim.org/resources/contrastchecker/">Web AIM’s contrast checker</a> or <a href="http://colororacle.org/">Color Oracle (free colour blindness simulator)</a>. </p>
+                    <p><strong>Good example:</strong> <a href="https://www.coop.co.uk/experience-library/foundations/colours.html">The colour palette in the <span class="coop-u-nowrap">Co-op</span> Experience Library</a>. </p>
+                    <p><strong>Bad example:</strong>  Light grey text on a white background.</p>
+                    <p><strong>Our interpretation of WCAG: </strong></p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html#dfn-user-interface-component">1.4.3 Contrast (minimum)</a> (Level AA) </p>
+                    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text contrast</a> (Level AA) </p>
+                 </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
