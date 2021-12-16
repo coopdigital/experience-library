@@ -1,0 +1,59 @@
+---
+layout: coop-experience
+id: ways-of-working
+item-url: /ways-of-working/workshops/index.html
+section: ways-of-working-workshops
+meta-title:	Ways of working - Workshops
+meta-description: Find out how to use workshops to help you to work as a team.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Ways of working
+title:  Workshops
+last-reviewed: Last reviewed&#58; 16 December 2021
+intro-text-lead:
+  - Find workshop guides and templates to help you to work as a team.
+# Image at the top of the hero
+decorative-image-url:  /images/ways-of-working/activities/kick-off-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the logo in Figma
+link-box-link-design: /about-this-prototype/
+link-box-text-dev: Go to Storybook to learn more about and install the logo
+link-box-link-dev: /about-this-prototype/
+
+# Signposts
+signpost-discover:
+  - link: /ways-of-working/workshops/vision-and-goals.html
+    text: Vision and goals
+    image: /images/ways-of-working/workshops/check-in-signpost.svg
+  - link: /ways-of-working/workshops/team-charter.html
+    text: Team charter
+    image: /images/ways-of-working/workshops/dot-voting-card.jpg
+
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid coop-u-margin-resp-b-32-16 coop-u-margin-resp-t-32-16">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <ul class="coop-l-grid coop-u-list-bare">
+                            {% for signpost in page.signpost-discover %}
+                            <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+                                {% include signpost.html %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
