@@ -35,6 +35,7 @@
 @import 'theme/search.pcss'; 
 @import 'theme/signpost.pcss';  
 @import 'theme/el-icons.pcss';
+@import 'theme/el-c-header.pcss';
 @import 'theme/el-c-hero.pcss';
 @import 'theme/el-c-hero-home-flex.pcss'; 
 @import 'theme/el-c-hero-dark.pcss'; 
