@@ -1,0 +1,175 @@
+---
+layout: coop-experience
+id: index
+item-url: /forms/form-guidelines.html
+section: Forms
+description: You can use borders to create separation between components or sections of content.
+meta-title:	Form guidelines
+meta-description: Find out how to create good forms when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Forms
+title: Form guidelines
+last-reviewed: Last reviewed&#58; 18 January 2022
+intro-text-lead: 
+  - A form allows people to enter details to get goods, services or information. It is one of the main ways people interact with our websites and apps.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: False
+link-box-text-design: View borders in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3856%3A0
+link-box-text-dev: View code snippet
+link-box-link-dev: /examples/foundations/borders.html
+
+# In page nav
+in-page-nav:
+  - link-id: anchor-understand
+    link-text: Understand if a form is needed
+  - link-id: anchor-right-questions
+    link-text: Ask the right questions
+  - link-id: anchor-help-people
+    link-text: Help people complete the form
+  - link-id: anchor-after-form
+    link-text: After the form
+  - link-id: anchor-elements
+    link-text: Form elements and patterns
+
+# Changelog
+changelog:
+  - date: 18 January 2022
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full"> 
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2 id="anchor-understand">Understand if a form is needed</h2>
+                        <p>People fill in forms because they want or need something.</p>
+                        <p>They have a task they need to complete or a service they need to get, for example paying for something online or getting a quote.</p>
+                        <p>Forms can often be difficult for people to use. Before creating a form, think carefully about whether it’s needed.</p>
+                        <h3>Consider other ways to get information</h3>
+                        <p>Sometimes people create a form without thinking about alternatives.</p>
+                        <p>There might be other ways to achieve the outcome you want. Consider whether email, a phone call or a video would be easier for your users.</p>
+                        <h2 id="anchor-right-questions">Ask the right questions</h2>
+                        <h3>Only ask for what you need</h3>
+                        <p>To know what questions are needed, understand:</p>
+                        <ul>
+                            <li>how you’ll act on the information you get</li>
+                            <li>why it’s necessary for your service</li>
+                        </ul>
+                        <p>If it’s not needed, do not ask.</p>
+                        <p>If it might be needed in the future, only ask at that point.</p>
+                        <p>This is because the more you ask of people, the more effort they must put in. The more effort that is needed, the more likely people are to drop out of the form.</p>
+                        <p>This can mean:</p>
+                        <ul>
+                            <li>people do not use us</li>
+                            <li>customers resent us</li>
+                            <li>our brand reputation is damaged</li>
+                            <li>it costs us more to maintain the data</li>
+                            <li>it costs us more to serve customers as they use more costly contact channels</li>
+                        </ul>
+                        <p>To understand what’s needed and why, you could use a ‘question assessment’ to list out and evaluate each question. This can help you decide which form fields are required and know how you’ll use the information that’s collected.</p>
+                        <p>Use this to remove any questions that are not essential, or not respectful of people’s data.</p>
+                        <h3>Ask personal questions sensitively</h3>
+                        <p>People may be reluctant to give information if:</p>
+                        <ul>
+                            <li>they do not know why we’re asking for it</li>
+                            <li>they do not know what we’ll do with it</li>
+                            <li>we do not ask in a sensitive way</li>
+                            <li>it does not allow them to answer in a way that they want</li>
+                            <li>it’s about a subject that’s hard for them</li>
+                        </ul>
+                        <p>Consider circumstances that are non-traditional, or subject matters that could be difficult for people. For example, be sensitive when asking for information about:</p>
+                        <ul>
+                            <li>children and family, consider people who have estranged family or are recently bereaved</li>
+                            <li>relationships, consider people who are in non-traditional relationships or are going through a break-up</li>
+                            <li>sex, gender and titles, consider people who do not want to tell us this information</li>
+                        </ul>
+                        <p>If you must ask for personal or sensitive information:</p>
+                        <ul>
+                            <li>explain why you’re asking</li>
+                            <li>word the question respectfully</li>
+                            <li>choose an appropriate question format, for example, a large free text box may be intimidating for people who have low literacy</li>
+                        </ul>
+                        <p>This can help people understand how to answer.</p>
+                        <p>The NHS has more information about <a href="https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/consider-the-sensitivities-around-your-questions">considering the sensitivities around your questions.</a></p>
+                        <h3>Structure questions so that they require the least effort for the user</h3>
+                        <p>Structure questions in a way that:</p>
+                        <ul>
+                            <li>gives us the information we need to provide the service</li>
+                            <li>requires the least effort from the user</li>
+                        </ul>
+                        <p>For example, if the user can choose:</p>
+                        <ul>
+                            <li>only one option from a small list, consider using <a href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}">radio buttons</a></li>
+                            <li>multiple options, consider using <a href="{{ '/elements/checkboxes.html' | prepend: site.baseurl }}">checkboxes</a></li>
+                        </ul>
+                        <p>Think about situations that might make options hard to choose from. Give people a way out, for example an ‘other’ or ‘none of these’ option.</p>
+                        <h2 id="anchor-help-people">Help people complete the form</h2>
+                        <h3>Set expectations early</h3>
+                        <p>Sometimes people get some or all the way through a form only to realise they cannot use the service or are not eligible in some way. This can cause frustration and stress for people.</p>
+                        <p>Be clear and up front about who your form is for and what they can expect.</p>
+                        <p>For example, if only people aged 18 or over can use your service, then you need to state this clearly at the start.</p>
+                        <p>Tell people what they need to know before they start entering details.</p>
+                        <p>They might need:</p>
+                        <ul>
+                            <li>documents</li>
+                            <li>an image of themselves</li>
+                            <li>their bank details</li>
+                            <li>relevant dates</li>
+                        </ul>
+                        <p>Do not set timescales for filling in a form, for example, ‘this form only takes 10 minutes’. This is insensitive and frustrating to those who may take longer. Instead, you could tell people how many questions they may need to answer. For example, ‘this form has 5 questions’.</p>
+                        <p>Where needed, set expectations upfront for how long it will take to get back to someone after they have submitted the form. For example, ‘we will respond with a quote within 3 working days’.</p>
+                        <h3>Give information at the right point</h3>
+                        <p>Understand at what point in the user journey someone would need to know information, and give it only at the point it’s needed.</p>
+                        <p>People who have short-term memory or cognitive conditions, or are distracted, may not retain information easily or for a long time. If someone may need to refer back to information, make it available to them in a way that makes that possible. This could be information given online, or through another channel, for example:</p>
+                        <ul>
+                            <li>an email confirming an order, that tells people how they can change an item</li>
+                            <li>a text message that reminds someone of an upcoming appointment</li>
+                        </ul>
+                        <h3>Give different routes depending on what’s needed</h3>
+                        <p>Try to send people down a route that makes sense for them, based on answers they give or options they choose. For example, if someone chooses certain options at the start of the form this might mean you can send them down a route with tailored content or fewer questions.</p>
+                        <h3>Put questions in a logical order</h3>
+                        <p>Research what order of questions works well for your audience.</p>
+                        <p>Make sure each question is unique and only asks for one thing at a time.</p>
+                        <p>If your form is long or complex, break it down into several pages with one question on each page. This can make them easier to answer.</p>
+                        <p>Group questions about similar subjects into sections.</p>
+                        <h3>Help people to fix mistakes</h3>
+                        <p>Build services that are flexible enough to allow users to give data in a way that they would naturally. For example, allow users to enter a postcode in upper or lower case, with or without a space.</p>
+                        <p>Validate only after someone submits the form, or section of the form. Do not validate as someone is typing or before they move beyond a section, they may still be editing their answers.</p>
+                        <p>Validation messages should be factual and help the user understand how to fix the error and move on.</p>
+                        <p><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Go to our guidelines on validation.</a></p>
+                        <h2 id="anchor-after-form">After the form</h2>
+                        <p>When a user submits the form, tell them we have received the information and what the next steps are. For example, tell them if they will get an email confirming their order, or if they will get a call from us to discuss something.</p>
+                        <p>Include when this will happen. This helps set expectations and can stop people having to ask us.</p>
+                        <p>Research what the most appropriate onward journey is for your users and include a link to that journey. This could be a related service or returning to a landing page where they can get to other services they may need.</p>
+                        <h3>Allow people to check and edit their answers</h3>
+                        <p>Where possible, allow people to review and edit their answers. It gives people an opportunity to fix any errors they’ve made and will increase the accuracy of the data we get.</p>
+                        <h3>Research and improve</h3>
+                        <p>Research your form with people throughout the development process. You should do a mix of qualitative research and usability testing. Make sure that at least 1 in 5 participants are disabled or have access needs.</p>
+                        <p>Analytics data can also help you to see where people might be struggling with your form.</p>
+                        <p>Keep improving your form based on the outcomes you get from research.</p>
+                        <h2 id="anchor-elements">Form elements and patterns</h2>
+                        <p>We have a lot of form elements and patterns available in the Experience Library.</p>
+                        <p><a href="">Go to the form elements and patterns list.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
