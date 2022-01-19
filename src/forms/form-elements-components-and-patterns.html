@@ -1,0 +1,108 @@
+---
+layout: coop-experience
+id: index
+item-url: /forms/form-elements-components-and-patterns.html
+section: Forms
+description: You can use borders to create separation between components or sections of content.
+meta-title:	Form elements, components and patterns
+meta-description: Find out which form elements, components and patterns there are and when to use them when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Forms
+title: Form elements, components and patterns
+last-reviewed: Last reviewed&#58; 18 January 2022
+intro-text-lead: 
+  - A list of Co-op form elements, components and patterns, and when to use them.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/borders-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: False
+link-box-text-design: View borders in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3856%3A0
+link-box-text-dev: View code snippet
+link-box-link-dev: /examples/foundations/borders.html
+
+# Changelog
+changelog:
+  - date: 18 January 2022
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full"> 
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
+                        <h2 class="coop-t-font-size-22">Before you design a form, go to our <a href="{{ '/forms/form-guidelines.html' | prepend: site.baseurl }}">form guidelines</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12"> 
+                        <table class="coop-table">
+                            <thead>
+                                <tr class="coop-table__row">
+                                    <th class="coop-table__header" scope="col" width="30%">Element, component  or pattern</th>
+                                    <th class="coop-table__header" scope="col">What it does</th>
+                                    <th class="coop-table__header" scope="col">Examples</th>
+                                </tr>
+                            </thead>
+                            <tbody> 
+                                <tr class="coop-table__row">        
+                                    <th class="coop-table__cell" scope="row"><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Form validation</a></th>
+                                    <td class="coop-table__cell">Tell people why data cannot be submitted and what they can do to fix it.</td>
+                                    <td class="coop-table__cell">If someone has:
+                                        <ul>
+                                            <li class=coop-u-margin-t-16>left a required field empty</li>
+                                            <li>entered information in the wrong format</li>
+                                            <li>not entered the correct amount of characters</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody> 
+                                <tr class="coop-table__row">        
+                                    <th class="coop-table__cell" scope="row"><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Form validation</a></th>
+                                    <td class="coop-table__cell">Tell people why data cannot be submitted and what they can do to fix it.</td>
+                                    <td class="coop-table__cell">If someone has:
+                                        <ul>
+                                            <li class=coop-u-margin-t-16>left a required field empty</li>
+                                            <li>entered information in the wrong format</li>
+                                            <li>not entered the correct amount of characters</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody> 
+                                <tr class="coop-table__row">        
+                                    <th class="coop-table__cell" scope="row"><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Form validation</a></th>
+                                    <td class="coop-table__cell">Tell people why data cannot be submitted and what they can do to fix it.</td>
+                                    <td class="coop-table__cell">If someone has:
+                                        <ul>
+                                            <li class=coop-u-margin-t-16>left a required field empty</li>
+                                            <li>entered information in the wrong format</li>
+                                            <li>not entered the correct amount of characters</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
