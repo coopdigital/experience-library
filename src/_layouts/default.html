@@ -20,7 +20,11 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body>
-
+  <nav class="coop-c-skip-nav coop-c-skip-nav--desktop">
+    <ul class="coop-c-skip-nav__list">
+        <li><a href="#main" title="Skip to main content" class="coop-c-skip-nav__link">Skip to content</a></li>
+    </ul>
+  </nav>
     {% include header.html %}
 
     <main id="main" class="main"></main>
