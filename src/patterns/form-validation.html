@@ -99,6 +99,12 @@ changelog:
                                             <input id="validation-demo-email" class="coop-form__field coop-form__input" type="email" autocomplete="email" name="validation-demo-email" aria-describedby="validation-demo-email-hint">
                                         </div>
                                         <div class="coop-form__row">
+                                            <label class="coop-form__label" for="validation-demo-password">Your password</label>
+                                            <p id="validation-demo-password-hint" class="coop-form__hint">Your password must be at least 8 characters and include a capital letter, a symbol and a number.</p>
+                                            <p id="validation-demo-password-error" class="coop-form__error" hidden></p>
+                                            <input id="validation-demo-password" class="coop-form__field coop-form__input" type="text" autocomplete="password" name="validation-demo-password" aria-describedby="validation-demo-password-hint">
+                                        </div>
+                                        <div class="coop-form__row">
                                             <button class="coop-btn coop-btn--primary" aria-live="assertive" aria-relevant="additions text" aria-atomic="true">
                                                 <span class="coop-btn__text" role="status" hidden>Updating details…</span>
                                                 <span class="coop-btn__text">Update details</span>
