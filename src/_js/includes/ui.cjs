@@ -1,7 +1,20 @@
 const $ = require('jquery');
 
 $(function () {
-    $('.toggle-link').click(function (e) {
+
+  $('#js-el-c-scroll-to-top').hide();
+    
+  $(window).scroll(function(){
+    if($(window).scrollTop() < 3999){
+      $('#js-el-c-scroll-to-top').hide();
+    }
+    if ($(window).scrollTop() > 4000) {
+        $('#js-el-c-scroll-to-top').show();
+    } else {
+        $('.#js-el-c-scroll-to-top').hide();
+    }
+  });
+  $('.toggle-link').click(function (e) {
       e.preventDefault();
       if (!$(this).hasClass('is-open')) {
         $(this).addClass('is-open').attr('aria-expanded', 'true');
@@ -121,3 +134,7 @@ $(function () {
       $('.coop-search-results').empty();
     }
 });
+
+
+
+     
