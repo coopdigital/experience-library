@@ -5,7 +5,7 @@ $(function () {
   $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     
   $(window).scroll(function(){
-    if($(window).scrollTop() < 3999){
+    if ($(window).scrollTop() < 3999){
       $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
     if ($(window).scrollTop() > 4000) {
