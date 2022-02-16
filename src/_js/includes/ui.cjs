@@ -1,17 +1,15 @@
 const $ = require('jquery');
 
 $(function () {
-
   $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-    
   $(window).scroll(function(){
     if ($(window).scrollTop() < 3999){
       $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
     if ($(window).scrollTop() > 4000) {
-        $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
+      $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
     } else {
-        $('.#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+      $('.#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
   });
   $('.toggle-link').click(function (e) {
