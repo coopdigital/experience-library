@@ -5,23 +5,27 @@ $(function () {
   var scrollableElement = document.body; 
   scrollableElement.addEventListener('wheel', checkScrollDirection);
   function checkScrollDirection(event) {
-    if (checkScrollDirectionIsUp(event)) {
+    if ($(document).scrollTop() == 0) {
+      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+    }
+    if ((checkScrollDirectionIsUp(event)) && ($(document).scrollTop() > 4000)) {
       $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
-    } else {
+    } 
+    else {
       $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
-    if (event.deltaY == -1) {
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-    }
-    console.log(event.deltaY)
   }
-  
+
   function checkScrollDirectionIsUp(event) {
     if (event.wheelDelta) {
       return event.wheelDelta > 0;
     }
     return event.deltaY < 0;
   }
+
+  $('#js-el-c-scroll-to-top').on( "click", function() {
+    $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+  });
 
   $('.toggle-link').click(function (e) {
       e.preventDefault();
