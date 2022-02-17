@@ -1,17 +1,28 @@
 const $ = require('jquery');
 
 $(function () {
-  $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-  $(window).scroll(function(){
-    if ($(window).scrollTop() < 3999){
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-    }
-    if ($(window).scrollTop() > 4000) {
+
+  var scrollableElement = document.body; 
+  scrollableElement.addEventListener('wheel', checkScrollDirection);
+  function checkScrollDirection(event) {
+    if (checkScrollDirectionIsUp(event)) {
       $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
     } else {
-      $('.#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
-  });
+    if (event.deltaY == -1) {
+      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+    }
+    console.log(event.deltaY)
+  }
+  
+  function checkScrollDirectionIsUp(event) {
+    if (event.wheelDelta) {
+      return event.wheelDelta > 0;
+    }
+    return event.deltaY < 0;
+  }
+
   $('.toggle-link').click(function (e) {
       e.preventDefault();
       if (!$(this).hasClass('is-open')) {
@@ -132,7 +143,3 @@ $(function () {
       $('.coop-search-results').empty();
     }
 });
-
-
-
-     

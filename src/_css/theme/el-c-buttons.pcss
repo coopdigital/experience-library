@@ -1,12 +1,11 @@
 
 .el-c-back-to-top {
-    display: none;
     position: fixed;
     top: 90%;
     right: 64px;
     z-index: 5;
-    width: 175px;
-    padding: 8px 12px; 
+    width: 160px;
+    padding: 6px 5px;   
     background: var(--color-white);
     border: 3px solid var(--color-grey-dark);
     box-shadow: var(--ui-shadow);
@@ -15,11 +14,16 @@
     color: var(--color-text);
     text-decoration: none; 
     font-weight: 500;
-}
+    font-size: var(--type-h456-s);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s ease-in-out;
+}  
 
 @media (--mq-medium) {
     .el-c-back-to-top--is-shown {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     } 
 }
 
@@ -30,7 +34,7 @@
 
 .el-c-back-to-top__icon {
     position: relative;
-    top: 3px;
+    top: 4px;
 }
 
 .el-c-back-to-top__text {
