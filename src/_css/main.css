@@ -33,7 +33,8 @@
 @import 'theme/side-bar.pcss'; 
 @import 'theme/skip-nav.pcss';  
 @import 'theme/search.pcss'; 
-@import 'theme/signpost.pcss';  
+@import 'theme/signpost.pcss'; 
+@import 'theme/el-c-buttons.pcss'; 
 @import 'theme/el-icons.pcss';
 @import 'theme/el-c-header.pcss';
 @import 'theme/el-c-hero.pcss';

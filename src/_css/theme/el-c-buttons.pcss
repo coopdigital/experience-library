@@ -1,0 +1,38 @@
+
+.el-c-back-to-top {
+    display: none;
+    position: fixed;
+    top: 90%;
+    right: 64px;
+    z-index: 5;
+    width: 175px;
+    padding: 8px 12px; 
+    background: var(--color-white);
+    border: 3px solid var(--color-grey-dark);
+    box-shadow: var(--ui-shadow);
+    border-radius: 50px;
+    text-align: center;
+    color: var(--color-text);
+    text-decoration: none; 
+    font-weight: 500;
+}
+
+@media (--mq-medium) {
+    .el-c-back-to-top--is-shown {
+        display: block;
+    } 
+}
+
+.el-c-back-to-top:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.el-c-back-to-top__icon {
+    position: relative;
+    top: 3px;
+}
+
+.el-c-back-to-top__text {
+    padding-left: 8px;
+}

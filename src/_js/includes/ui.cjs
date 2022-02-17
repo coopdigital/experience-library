@@ -1,7 +1,18 @@
 const $ = require('jquery');
 
 $(function () {
-    $('.toggle-link').click(function (e) {
+  $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+  $(window).scroll(function(){
+    if ($(window).scrollTop() < 3999){
+      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+    }
+    if ($(window).scrollTop() > 4000) {
+      $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
+    } else {
+      $('.#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+    }
+  });
+  $('.toggle-link').click(function (e) {
       e.preventDefault();
       if (!$(this).hasClass('is-open')) {
         $(this).addClass('is-open').attr('aria-expanded', 'true');
@@ -121,3 +132,7 @@ $(function () {
       $('.coop-search-results').empty();
     }
 });
+
+
+
+     
