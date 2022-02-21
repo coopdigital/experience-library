@@ -12,7 +12,9 @@ $(function () {
       $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
     } 
     else {
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+      setTimeout(function() {
+        $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+      }, 1000);  
     }
   }
 
