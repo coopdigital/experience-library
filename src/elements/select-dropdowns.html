@@ -11,7 +11,7 @@ meta-description: Find out how to use select dropdowns when designing digital pr
 col-width: 7
 section-title: Elements
 title: Select dropdowns
-last-reviewed: Last reviewed&#58; 4 June 2021
+last-reviewed: Last reviewed&#58; 22 February 2022
 intro-text-lead: 
   - Select dropdowns let people choose an option from a list.
 # Image at the top of the hero
@@ -40,14 +40,25 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>Research shows that select dropdowns can be difficult to use. <a href="https://www.youtube.com/watch?v=CUkMCQR4TpY&ab_channel=Front-endLondon">Watch Alice Bartlett's video about the difficulties of select dropdowns</a>.</p>
-                        <p>Whenever possible, ask questions with fewer options and use radio buttons.</p>
-                        <p><a href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}">Go to the guidelines for radio buttons</a>.</p>
-                        <p>Sometimes due to technical constraints, you may need to use a select dropdown.</p>
+                        <p>Long lists of options can be hard for some people to use. Consider whether people may be able to answer the question more easily if you:</p>
+                        <ul>
+                            <li>reword the question so that it has fewer options, and then use radio buttons</li>
+                            <li>use an input for example, for data which is very familiar to people like their date of birth</li>
+                        </ul>
+                        <p>Go to the guidelines on:</p>
+                        <ul>
+                            <li><a href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}">radio buttons</a></li>
+                            <li><a href="{{ '/elements/text-inputs.html' | prepend: site.baseurl }}">text inputs</a></li>
+                        </ul>
                         <p>We’ve used our foundations to design select dropdowns. For consistency across Co-op products and services, do not change the styling of select dropdowns.</p>
-                        <h3>Labels</h3>
+                        <h3>Label</h3>
                         <p>Select dropdowns must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
-                        <P>The label must be short and make it clear what information you’re asking for.</p>
+                        <p>The label should:</p>
+                        <ul>
+                            <li>be short</li>
+                            <li>make it clear what information you’re asking for</li>
+                            <li>be above the field</li>
+                        </ul>
                         <h3>Hint text</h3>
                         <p>You can add optional hint text to help people understand the information they need to enter.</p> 
                         <h3>Error messages</h3>
