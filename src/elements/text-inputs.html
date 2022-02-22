@@ -1,25 +1,25 @@
 ---
 layout: coop-experience
 id: index
-item-url: /elements/inputs.html
+item-url: /elements/text-inputs.html
 section: Elements
-meta-title:	Inputs
-meta-description: Find out how to use inputs when designing digital products and services for Co-op.
+meta-title:	Text inputs
+meta-description: Find out how to use text inputs when designing digital products and services for Co-op.
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 7
 section-title: Elements
-title: Inputs
-last-reviewed: Last reviewed&#58; 4 June 2021
+title: Text inputs
+last-reviewed: Last reviewed&#58; 22 February 2022
 intro-text-lead: 
-  - Inputs are fields that allow people to enter information.
+  - Text inputs are fields that allow people to enter information.
 # Image at the top of the hero
 decorative-image-url:  /images/decorative/inputs-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: true
-link-box-text-design: View inputs in Figma
+link-box-text-design: View Text inputs in Figma
 link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3915%3A585
 link-box-text-dev: View code snippet
 link-box-link-dev: /examples/elements/inputs.html
@@ -40,23 +40,24 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>Use an input that is appropriate for the amount of information someone needs to enter. Do not make it too long or too short. Too long and it might intimidate or confuse, too short and it might frustrate.</p>
-                        <p>We’ve used our foundations to design inputs. For consistency across Co-op products and services, do not change the styling of the input.</p>
+                        <p>Use a text input that is appropriate for the amount of information someone needs to enter. Do not make it too wide or too narrow. Too wide and it might intimidate or confuse, too narrow and it might frustrate.</p>
+                        <p>We’ve used our foundations to design text inputs. For consistency across Co-op products and services, do not change the styling of the text input.</p>
                         <p><a href="{{ '/foundations/' | prepend: site.baseurl }}">Go to our foundations</a>.</p>
                         <h3>Label</h3>
-                        <p>Inputs must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
+                        <p>Text inputs must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
                         <p>The label must be short and make it clear what information you’re asking for.</p>
                         <h3>Hint text</h3>
                         <p>You can add optional hint text to help people understand the information they need to enter.</p>
                         <p>For example, a password field might have the hint text ‘Use at least 8 characters with a mixture of uppercase, lowercase, numbers, and special characters'.</p>
                         <h3>Placeholder text</h3>
-                        <p>Placeholder text is text inside an input that disappears when someone selects that input.</p>
+                        <p>Placeholder text is text inside a text input that disappears when someone selects that input.</p>
                         <p>Do not use placeholder text. It can be hard for people to remember what it said.</p>
                         <h3>Error messages</h3>
-                        <p>Give error messages after the user submits the form. Do not give them as someone is entering information into each input. This can cause stress and frustration.</p>
-                        <p>Error messages should appear above the relevant input. This means they are read out by assistive technology in an order that makes sense.</p>
+                        <p>Give error messages after the user submits the form. Do not give them as someone is entering information into each text input. This can cause stress and frustration.</p>
+                        <p>Error messages should appear above the relevant text input. This means they are read out by assistive technology in an order that makes sense.</p>
+                        <p><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Go to the guidelines on form validation</a>.</p>
                         <h3>Focus ring</h3>
-                        <p>The focus ring appears as a purple outline around any object, including inputs, when someone selects it.</p>
+                        <p>The focus ring appears as a purple outline around any object, including text inputs, when someone selects it.</p>
                         <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
                     </div>
                 </div>
@@ -76,7 +77,7 @@ changelog:
                                         <input id="full-name-1" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="full-name-1">
                                     </div>
                                 </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Input.</p>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Text input.</p>
                                 <form id="text-hint" class="coop-form" novalidate>
                                     <div class="coop-form__row">
                                         <label for="full-name-2" class="coop-form__label">Full name</label>
@@ -85,7 +86,7 @@ changelog:
                                         <input id="full-name-2" class="coop-form__field coop-form__input" type="text" autocomplete="name" name="full-name-2" aria-describedby="full-name-2-hint">
                                     </div>
                                 </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Input with hint text.</p>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Text input with hint text.</p>
                                 <form id="text-error" class="coop-form" novalidate>
                                     <div class="coop-form__row">
                                         <label for="full-name-3" class="coop-form__label">Full name</label>
@@ -93,7 +94,7 @@ changelog:
                                         <input id="full-name-3" class="coop-form__field coop-form__input coop-form__invalid" type="text" autocomplete="name" name="full-name-3" aria-describedby="full-name-3-error">
                                     </div>
                                 </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Input with error message.</p>
+                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Text input with error message.</p>
                                 <form id="text-hint-error" class="coop-form" novalidate>
                                     <div class="coop-form__row">
                                         <label for="full-name-4" class="coop-form__label">Full name</label>
@@ -102,7 +103,7 @@ changelog:
                                         <input id="full-name-4" class="coop-form__field coop-form__input coop-form__invalid" type="text" autocomplete="name" name="full-name-4" aria-describedby="full-name-4-hint full-name-4-error">
                                     </div>
                                 </form>
-                                <p class="coop-t-caption">Input with hint text and error message.</p>
+                                <p class="coop-t-caption">Text input with hint text and error message.</p>
                             </div>
                         </div>
                     </div>  
