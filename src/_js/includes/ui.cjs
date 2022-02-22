@@ -1,17 +1,34 @@
 const $ = require('jquery');
 
 $(function () {
-  $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-  $(window).scroll(function(){
-    if ($(window).scrollTop() < 3999){
+
+  var scrollableElement = document.body; 
+  scrollableElement.addEventListener('wheel', checkScrollDirection);
+  function checkScrollDirection(event) {
+    if ($(document).scrollTop() == 0) {
       $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
-    if ($(window).scrollTop() > 4000) {
+    if ((checkScrollDirectionIsUp(event)) && ($(document).scrollTop() > 4000)) {
       $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
-    } else {
-      $('.#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+    } 
+    else {
+      setTimeout(function() {
+        $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
+      }, 1000);  
     }
+  }
+
+  function checkScrollDirectionIsUp(event) {
+    if (event.wheelDelta) {
+      return event.wheelDelta > 0;
+    }
+    return event.deltaY < 0;
+  }
+
+  $('#js-el-c-scroll-to-top').on( "click", function() {
+    $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
   });
+
   $('.toggle-link').click(function (e) {
       e.preventDefault();
       if (!$(this).hasClass('is-open')) {
@@ -132,7 +149,3 @@ $(function () {
       $('.coop-search-results').empty();
     }
 });
-
-
-
-     

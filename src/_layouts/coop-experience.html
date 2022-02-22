@@ -13,12 +13,12 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
     <meta property="og:description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ '/images/decorative/social/exp-lib-OG-meta-tag-generic-image.png' | prepend: site.baseurl }}" />
+    <meta property="og:image" content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-OG-meta-tag-generic-image.png" />
     <meta property="og:url" content="https://coop.co.uk/experience-library{{ page.url | replace:'index.html','' }}" />
     <meta property="og:site_name" content="Co-op Experience Library" />
     <meta name="twitter:title" content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta name="twitter:description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image" content="{{ '/images/decorative/social/exp-lib-twitter-meta-tag-generic-image.png' | prepend: site.baseurl }}">
+    <meta name="twitter:image" content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-twitter-meta-tag-generic-image.png">
     <meta name="twitter:site" content="@CoopDigital">
     <meta name="twitter:creator" content="@CoopDigital">
     {% if jekyll.environment == "production" %}
@@ -38,7 +38,7 @@
         }
     </style>
     </head>
-<body>
+<body id="top"> 
     {% include skip-nav.html %}
     {% include mobile-header.html %}
     <div class="coop-u-flex coop-l-content">

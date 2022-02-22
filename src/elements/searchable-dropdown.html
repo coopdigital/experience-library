@@ -13,7 +13,7 @@ section-title: Elements
 title: Searchable dropdown
 last-reviewed: Last reviewed&#58; 15 Feb 2022
 intro-text-lead: 
-  - A searchable dropdown allows people to select an option from a pre-defined list of options. It also allows them to type in the field and search and select a matching option from the pre-defined list.
+  - A searchable dropdown allows people to type in the field to filter a pre-populated list of options.
 # Image at the top of the hero
 decorative-image-url:  /images/decorative/searchable-dropdown-hero.svg
 
@@ -42,32 +42,30 @@ changelog:
                         <h2>Guidelines</h2>
                         <p>Use a searchable dropdown if:</p>
                         <ul>
-                            <li>you have 15 or more options that someone can select from</li>
-                            <li>it’s likely that someone knows how they want to answer before seeing the list</li>
-                            <li>only one option can be selected</li>
-                            <li>there's a pre-defined list of options someone can choose from, for example, country of birth</li>
+                            <li>there's a pre-populated list of options someone can choose from</li>
+                            <li>it’s likely that someone knows how they want to answer before seeing the list </li>
                         </ul>
-                        <p>If you have less than 15 options consider using:</p>
+                        <p>Long lists of options can be hard for some people to use. Consider whether people may be able to answer the question more easily if you:</p>
+                        <ul>
+                            <li>reword the question so that it has fewer options, and then use radio buttons</li>
+                            <li>use a text input, for example for data which is very familiar to people like their date of birth</li>
+                        </ul>
+                        <p>Go to the guidelines on:</p>
                         <ul>
                             <li><a href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}">radio buttons</a></li>
-                            <li>if you are unable to use any other option, <a href="{{ '/elements/select-dropdowns.html' | prepend: site.baseurl }}">a select dropdown</a> (research shows that they can be difficult for people to use)</li>
+                            <li><a href="{{ '/elements/text-inputs.html' | prepend: site.baseurl }}">text inputs</a></li>
                         </ul>
-                        <p>Research the order of the options so that it reduces the effort for people. For example, it may be easier for people to find a particular option if they are ordered alphabetically, rather than by most common. Or vice versa.</p>
+                        <p>Order the options so that it reduces effort for people. For example, you could order alphabetically or by the most common options.</p>
                         <p>For consistency across Co-op products and services, do not change the styling of a searchable dropdown.</p>
                         <h2>Size</h2>
-                        <p>The field should fill as much of the screen width as possible. This gives a larger scrollable area when the searchable dropdown is visible.</p>
-                        <p>To give someone more space for scrolling through the options, limit the height of the dropdown to only show the first:</p>
-                        <ul>
-                            <li>5 options on devices with a width greater than 768px</li>
-                            <li>6 options on devices with a width smaller than 768px</li>
-                        </ul>
+                        <p>Set the width of the dropdown so that it is appropriate for the amount of information someone needs to enter. Do not make it too wide or too narrow. Too wide and it might intimidate or confuse, too narrow and it might frustrate.</p>
                         <h2>Label</h2>
                         <p>A searchable dropdown must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
                         <p>The label should:</p>
                         <ul>
                             <li>be short</li>
                             <li>make it clear what information you’re asking for</li>
-                            <li>be outside of the field</li>
+                            <li>be above the field</li>
                         </ul>
                         <h2>Hint text</h2>
                         <p>You can add optional hint text to help people understand the information they need to select.</p>
