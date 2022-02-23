@@ -38,31 +38,33 @@
         }
     </style>
     </head>
-<body id="top"> 
-    {% include skip-nav.html %}
-    {% include mobile-header.html %}
-    <div class="coop-u-flex coop-l-content">
-        {% include side-bar.html %}
-        {{ content }}
-        <div class="menu-bg"></div>
-        {% include back-to-top.html %}
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | prepend: site.baseurl }}"><\/script>')</script>
-    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-    <script>
-        window.simpleJekyllSearch = new SimpleJekyllSearch({
-            searchInput: document.getElementById('search-small-input'),
-            resultsContainer: document.getElementById('results-container'),
-            json: '{{ "/search.json" | prepend: site.baseurl }}',
-            searchResultTemplate: '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
-            noResultsText: '<li class="result-list-item"><span class="title">No results found</span></li>   ',
-            limit: 10,
-            fuzzy: false,
-            exclude: ['Welcome']
-        })
-    </script>
-    {% assign versionDateJS = site.time | date: '%s' %}
-    <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
-</body>
+    <body id="top"> 
+        {% include skip-nav.html %}
+        {% include mobile-header.html %}
+        <div class="coop-u-flex coop-l-content">
+            {% include side-bar.html %}
+            {{ content }}
+            {% if page.back-to-top %}
+                {% include back-to-top.html %}
+            {% endif %}
+            <div class="menu-bg"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | prepend: site.baseurl }}"><\/script>')</script>
+        <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+        <script>
+            window.simpleJekyllSearch = new SimpleJekyllSearch ({
+                searchInput: document.getElementById('search-small-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '{{ "/search.json" | prepend: site.baseurl }}',
+                searchResultTemplate: '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
+                noResultsText: '<li class="result-list-item"><span class="title">No results found</span></li>   ',
+                limit: 10,
+                fuzzy: false,
+                exclude: ['Welcome']
+            })
+        </script>
+        {% assign versionDateJS = site.time | date: '%s' %}
+        <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
+    </body>
 </html>
