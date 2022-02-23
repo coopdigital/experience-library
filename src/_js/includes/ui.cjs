@@ -2,15 +2,23 @@ const $ = require('jquery');
 
 $(function () {
 
+  $(window).scroll(function (event) {
+    var height = $(window).scrollTop();
+    if (height == 0) {
+      $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-top');
+    } 
+    if (height > 1) {
+      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-top');
+    } 
+  });
+
   var scrollableElement = document.body; 
+  var minHeight = $(window).scrollTop();
   scrollableElement.addEventListener('wheel', checkScrollDirection);
   function checkScrollDirection(event) {
-    if ($(document).scrollTop() == 0) {
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-    }
     if (checkScrollDirectionIsUp(event)) {
       $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
-    } 
+    }
     else {
       $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
     }
@@ -22,6 +30,7 @@ $(function () {
     }
     return event.deltaY < 0;
   }
+  
 
   $('#js-el-c-scroll-to-top').on( "click", function() {
     $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
