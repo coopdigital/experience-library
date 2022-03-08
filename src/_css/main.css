@@ -1,11 +1,8 @@
    
 /* Foundations */ 
 @import "normalize.css";  
-@import "@coopdigital/foundations-vars";
-@import "@coopdigital/foundations-global";
-@import "@coopdigital/foundations-typography";
-@import "@coopdigital/foundations-grid";
-@import "@coopdigital/foundations-colors"; 
+@import "@coopdigital/foundations/dist/vars/vars.css";
+@import "@coopdigital/foundations/dist/foundations.css";
 @import "@coopdigital/foundations-buttons";
 @import "@coopdigital/foundations-forms";
 @import "@coopdigital/foundations-tables"; 
@@ -24,7 +21,7 @@
 @import '@coopdigital/shared-component--hero';
 @import '@coopdigital/shared-component--linklist';
 @import '@coopdigital/shared-component--postcode';
-@import '@coopdigital/foundations-vars';
+
                                                
 /* Experience Library theme */ 
 @import 'theme/global.pcss';  
@@ -58,7 +55,6 @@
      
 /* Utility overrides */
 @import "theme/grid.pcss";
-@import "@coopdigital/foundations-layout";
 
 @media (--mq-medium) {
   .coop-c-signpost {

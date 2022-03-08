@@ -1,0 +1,301 @@
+---
+layout: coop-experience
+id: index
+description: 
+section: Patterns
+item-url: /patterns/request-a-callback.html
+meta-title:	Request a callback 
+meta-description: Find out how to use the validation when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Patterns
+title: Request a callback
+last-reviewed: Last reviewed&#58; 23 August 2021
+intro-text-lead: 
+  - This pattern groups form elements to help our customers request a callback about products or services we offer.
+
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/date-input-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View date input in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=4316%3A143
+link-box-text-dev: View code snippet
+link-box-link-dev: /examples/patterns/date-input.html
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 18 August 2021
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                        <h2>Guidelines</h2>
+                        <p>We have a core group of required form elements that create the basis of this pattern. Along with the required elements, you can add optional elements if they will help your customers or objectives.</p>
+                        <p>Use this pattern when your service is able to contact customers through their chosen preference to discuss Co-op products or services.</p>
+                        <p>You could use a selection of questions such as:</p>
+                        <ul>
+                            <li>name</li>
+                            <li>phone number</li>
+                            <li>specific day to contact</li>
+                            <li>specific time to contact</li>
+                        </ul>
+                        <p>Only ask for a date when a product or service requires it.</p>
+                        <p>We’ve used our foundations to design the date input pattern. For consistency across Co-op products and services, do not change the styling of the date input.</p>
+                        <p><a href="/foundations/index.html">Go to our foundations</a>.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2>Example</h2>
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid">
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                                        <form id="date-inputs" class="coop-form" novalidate>                                          
+                                            <div class="coop-form__row">
+                                              <fieldset id="dob-1" aria-describedby="dob-1-hint">
+                                                <legend class="coop-form__label">What is your date of birth?</legend>
+                                          
+                                                <p id="dob-1-hint" class="coop-form__hint">For example 21 8 1990</p>
+                                                <p id="dob-1-error" class="coop-form__error" hidden></p>
+                                          
+                                                <div class="coop-form__columns">
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-1-day">Day</label>
+                                                    <input
+                                                      id="dob-1-day"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-day"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-1-month">Month</label>
+                                                    <input
+                                                      id="dob-1-month"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-month"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-1-year">Year</label>
+                                                    <input
+                                                      id="dob-1-year"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="4"
+                                                      minlength="4"
+                                                      autocomplete="bday-year"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-4"
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+                                            </div>
+                                        </form>
+                                        <p class="coop-t-caption">Date input with legend, hint text and 3 input labels.</p>
+                                    </div>
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
+                                        <form id="date-inputs-error" class="coop-form" novalidate>                                          
+                                            <div class="coop-form__row">
+                                              <fieldset id="dob-2" aria-describedby="dob-2-hint dob-2-error">
+                                                <legend class="coop-form__label">What is your date of birth?</legend>
+                                          
+                                                <p id="dob-2-hint" class="coop-form__hint">For example 21 8 1990</p>
+                                                <p id="dob-2-error" class="coop-form__error">Enter your date of birth</p>
+                                          
+                                                <div class="coop-form__columns">
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-2-day">Day</label>
+                                                    <input
+                                                      id="dob-2-day"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-day"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2 coop-form__invalid"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-2-month">Month</label>
+                                                    <input
+                                                      id="dob-2-month"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-month"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2 coop-form__invalid"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-2-year">Year</label>
+                                                    <input
+                                                      id="dob-2-year"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="4"
+                                                      minlength="4"
+                                                      autocomplete="bday-year"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-4 coop-form__invalid"
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+                                            </div>
+                                        </form>
+                                        <p class="coop-t-caption">Date input with error message.</p>
+                                    </div>
+                                    <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
+                                        <form id="date-inputs-error-year" class="coop-form" novalidate>                                          
+                                            <div class="coop-form__row">
+                                              <fieldset id="dob-3" aria-describedby="dob-3-hint dob-3-error">
+                                                <legend class="coop-form__label">What is your date of birth?</legend>
+                                          
+                                                <p id="dob-3-hint" class="coop-form__hint">For example 21 8 1990</p>
+                                                <p id="dob-3-error" class="coop-form__error">Enter your year of birth</p>
+                                          
+                                                <div class="coop-form__columns">
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-3-day">Day</label>
+                                                    <input
+                                                      id="dob-3-day"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-day"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
+                                                      value="21"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-3-month">Month</label>
+                                                    <input
+                                                      id="dob-3-month"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="2"
+                                                      minlength="2"
+                                                      autocomplete="bday-month"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
+                                                      value="8"
+                                                    >
+                                                  </div>
+                                          
+                                                  <div class="coop-form__column">
+                                                    <label class="coop-form__label" for="dob-3-year">Year</label>
+                                                    <input
+                                                      id="dob-3-year"
+                                                      type="text"
+                                                      pattern="[0-9]*"
+                                                      inputmode="numeric"
+                                                      maxlength="4"
+                                                      minlength="4"
+                                                      autocomplete="bday-year"
+                                                      class="coop-form__field coop-form__input coop-form__input--width-4 coop-form__invalid"
+                                                    >
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+                                            </div>
+                                        </form>
+                                        <p class="coop-t-caption">Date input with error message for specific field.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h3>Legend</h3>
+                        <p>When using the date input, clearly ask the user what date is required. For example, ‘What is your date of birth’ or ‘Enter the first date of your holiday request’.</p>
+                        <h3>Label</h3>
+                        <p>Each field in a date input must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
+                        <p>The label must be short and make it clear what information you’re asking for.</p>
+                        <h3>Hint text</h3>
+                        <p>You can add optional hint text to help people understand the information they need to enter.</p>
+                        <p>Make sure that any example dates you use in hint text are valid for the question being asked.</p>
+                        <p>For example, a date of birth field might have the hint text ‘For example 21 8 1990'.</p>
+                        <h3>Placeholder text</h3>
+                        <p>Placeholder text is text inside an input that disappears when someone selects that input.</p>
+                        <p>Do not use placeholder text. It can be hard for people to remember what it said.</p>
+                        <h3>Error messages</h3>
+                        <p>Give error messages after the user submits the form. Do not give them as someone is entering information into each input. This can cause stress and frustration.</p>
+                        <p>Error messages should appear above the relevant input fields. This means they are read out by assistive technology in an order that makes sense.</p>
+                        <p>If only one field has been entered incorrectly, only highlight the field that has an error. The error message must say which field has an error, for example ‘enter your year of birth’.</p>
+                        <p><a href="/patterns/form-validation.html">Go to our guidelines on form validation</a>.</p>
+                        <h3>Focus ring</h3>
+                        <p>The focus ring appears as a purple outline around any object, including inputs, when someone selects it.</p>
+                        <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2>Optional elements</h2>
+                        <h3>Link</h3>
+                        <p>If a link is used it should direct the user to more information or an action they can take to solve the problem.</p>
+                        <p>You can also make the whole notification into a clickable link.</p>
+                        <p>Make sure that any text link you include and this link go to the same place.</p>        
+                    </div>
+                </div>
+            </div>
+            -->
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% include footer.html %}
+</div>

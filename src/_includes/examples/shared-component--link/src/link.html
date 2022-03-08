@@ -1,0 +1,135 @@
+{%- macro render(content, cms, config) -%}
+
+	{# If data is valid, set link entry value #}
+	{%- if content.data -%}
+
+		{# Set icon name to config attribute #}
+		{%- set iconName = config.icon -%}
+
+		{%- set linkEntry = cms.get_entry(content.data.sys.id) -%}
+
+    {# Set link target, default is _self #}
+    {%- if linkEntry.data.fields.target and linkEntry.data.fields.target == 'New tab/window' -%}
+      {%- set linkTarget = '_blank' -%}
+    {%- else -%}
+      {%- set linkTarget = '_self' -%}
+    {%- endif -%}
+
+		{% if config.classNames %}
+			{%- set classNames = config.classNames -%}
+		{% else %}
+    		{%- set classNames = 'coop-t-link' -%}
+		{%- endif -%}
+
+    {# Set class names based on link style data and config
+
+	   If we pass in config.overrideContentfulClassNames from the config,
+	   this will supersede any linkEntry.data.fields.linkStyle on the link.
+	   Allows for other shared-components to pass in relevant BEM styles
+	   for it's link using the link config.className.
+	   example found here: @coopdigital/shared-component--notification
+	#}
+
+    {% if linkEntry.data.fields and linkEntry.data.fields.linkStyle and config.overrideContentfulClassNames != true %}
+      {%- set classNames = 'coop-btn' -%}
+
+      {%- if linkEntry.data.fields.linkStyle == 'Link - black'  -%}
+        {%- set classNames = 'coop-t-link-black' -%}
+      {%- elif linkEntry.data.fields.linkStyle == 'Link - white' -%}
+        {%- set classNames = 'coop-t-link-white' -%}
+      {%- elif linkEntry.data.fields.linkStyle == 'Button - primary' -%}
+        {%- set classNames = classNames ~ ' coop-btn--primary ' -%}
+      {%- elif linkEntry.data.fields.linkStyle == 'Button - secondary' -%}
+        {%- set classNames = classNames ~ ' coop-btn--blue ' -%}
+      {%- elif linkEntry.data.fields.linkStyle == 'Button - white' -%}
+        {%- set classNames = classNames ~ ' coop-btn--white ' -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {# Display full width button if section uses multiple columns #}
+    {%- if config.fullWidth -%}
+      {%- set classNames = classNames ~ ' coop-btn--full-width' -%}
+    {%- endif -%}
+
+		{# If link is internal get href from target page #}
+		{%- if linkEntry.type == 'internalLink'  -%}
+
+			{#  If link entry is valid, render link #}
+			{%- if linkEntry.fields.page.data -%}
+
+				{%- set linkField = cms.get_entry(linkEntry.fields.page.data.sys.id) -%}
+
+				{# Append full path if not home page #}
+				{%- if linkField.full_url_path == '/' -%}
+					{%- set href = tenant_url_path -%}
+				{%- else -%}
+					{%- set href = tenant_url_path + linkField.full_url_path -%}
+				{%- endif -%}
+
+				{# Strip trailing slash #}
+
+				{%- set href = href.rstrip("/") -%}
+
+				{# Append anchor if available #}
+				{%- if linkEntry.fields.anchor and linkEntry.fields.anchor.data -%}
+					{%- set href = href + "#" + linkEntry.fields.anchor.data -%}
+				{%- endif -%}
+
+			{% endif %}
+
+		{# If link is download get href from content #}
+		{%- elif linkEntry.type == 'download' -%}
+			{%- if linkEntry.fields.file.data -%}
+				{%- set asset = cms.get_asset(linkEntry.fields.file.data) -%}
+				{%- set href = asset.data.fields.file.url -%}
+			{%- elif linkEntry.fields.url and linkEntry.fields.url.data -%}
+				{%- set href = linkEntry.fields.url.data -%}
+			{% endif %}
+
+			{%- set iconName = 'download' -%}
+
+		{# If link is external get href from content #}
+		{%- elif linkEntry.type == 'externalLink' -%}
+			{% if linkEntry.fields.url.data %}
+				{%- set href = linkEntry.fields.url.data -%}
+			{% endif %}
+		{%- endif -%}
+
+		{# --------------------------------------
+		# Render the link
+		-------------------------------------- #}
+		<a
+			class="{{ classNames }}"
+			href="{{ href }}"
+      target="{{ linkTarget }}"
+			title="{{ linkEntry.fields.title.data }}"
+			data-contenttype="{{ config.contentType }}"
+			data-contentparent="{{ config.contentParent }}"
+			data-linktext="{{ linkEntry.fields.title.data }}">
+
+			{# Display icon before anchor text if required #}
+			{%- if iconName -%}
+
+				{%- import '/shared-component--icon/src/icon.html' as icon -%}
+
+				<span class="{{ config.iconClass if config.iconClass else 'coop-t-link__icon' }}" aria-hidden="true">
+					{%- set iconId = iconName | lower | replace(" ","-") -%}
+					{%- set svgClass = config.svgClass if config.svgClass else 'coop-t-link__svg' -%}
+
+					{{ icon.render(iconId, svgClass) }}
+				</span>
+			{%- endif -%}
+
+			{# Display anchor text #}
+			<span class="coop-t-link__anchor">{{ linkEntry.fields.title.data }}</span>
+
+			{# Display a chevron if required #}
+			{%- if linkEntry.fields.displayChevron and linkEntry.fields.displayChevron.data == True -%}
+				{%- import '/shared-component--icon/src/icon.html' as icon -%}
+
+				<span class="coop-t-link__icon-wrapper">{{ icon.render('arrow-right', 'coop-t-link__icon') }}</span>
+			{%- endif -%}			
+		</a>
+
+	{%- endif -%}
+{%- endmacro -%}
