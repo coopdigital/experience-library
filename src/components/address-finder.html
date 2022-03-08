@@ -15,7 +15,7 @@ last-reviewed: Last reviewed&#58; 8 March 2022
 intro-text-lead: 
   - An address finder allows people to type part of a UK address in a field to filter relevant suggestions.  
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/search-hero.svg
+decorative-image-url:  /images/decorative/address-finder-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: false
@@ -145,123 +145,7 @@ changelog:
                                             </div>
                                         </form>
                                         <p class="coop-t-caption">Date input with legend, hint text and 3 input labels.</p>
-                                    </div>
-                                    <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
-                                        <form id="date-inputs-error" class="coop-form" novalidate>                                          
-                                            <div class="coop-form__row">
-                                              <fieldset id="dob-2" aria-describedby="dob-2-hint dob-2-error">
-                                                <legend class="coop-form__label">What is your date of birth?</legend>
-                                          
-                                                <p id="dob-2-hint" class="coop-form__hint">For example 21 8 1990</p>
-                                                <p id="dob-2-error" class="coop-form__error">Enter your date of birth</p>
-                                          
-                                                <div class="coop-form__columns">
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-2-day">Day</label>
-                                                    <input
-                                                      id="dob-2-day"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-day"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2 coop-form__invalid"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-2-month">Month</label>
-                                                    <input
-                                                      id="dob-2-month"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-month"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2 coop-form__invalid"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-2-year">Year</label>
-                                                    <input
-                                                      id="dob-2-year"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="4"
-                                                      minlength="4"
-                                                      autocomplete="bday-year"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-4 coop-form__invalid"
-                                                    >
-                                                  </div>
-                                                </div>
-                                              </fieldset>
-                                            </div>
-                                        </form>
-                                        <p class="coop-t-caption">Date input with error message.</p>
-                                    </div>
-                                    <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-margin-t-64">
-                                        <form id="date-inputs-error-year" class="coop-form" novalidate>                                          
-                                            <div class="coop-form__row">
-                                              <fieldset id="dob-3" aria-describedby="dob-3-hint dob-3-error">
-                                                <legend class="coop-form__label">What is your date of birth?</legend>
-                                          
-                                                <p id="dob-3-hint" class="coop-form__hint">For example 21 8 1990</p>
-                                                <p id="dob-3-error" class="coop-form__error">Enter your year of birth</p>
-                                          
-                                                <div class="coop-form__columns">
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-3-day">Day</label>
-                                                    <input
-                                                      id="dob-3-day"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-day"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
-                                                      value="21"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-3-month">Month</label>
-                                                    <input
-                                                      id="dob-3-month"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-month"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
-                                                      value="8"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-3-year">Year</label>
-                                                    <input
-                                                      id="dob-3-year"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="4"
-                                                      minlength="4"
-                                                      autocomplete="bday-year"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-4 coop-form__invalid"
-                                                    >
-                                                  </div>
-                                                </div>
-                                              </fieldset>
-                                            </div>
-                                        </form>
-                                        <p class="coop-t-caption">Date input with error message for specific field.</p>
-                                    </div>
+                                    </div>                                
                                 </div>
                             </div>
                             </div>
