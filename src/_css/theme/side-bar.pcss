@@ -149,6 +149,7 @@
   list-style: none;
   margin-top: 0;
   padding: 0 0 var(--spacing-8) 0;
+  display:none;
 }
 
 .side-nav__link-toggle .coop-side-nav {
@@ -192,6 +193,9 @@
 
 .toggle-link.is-open {
   margin-bottom: var(--spacing-4);
+  & + .coop-side-nav--nested {
+    display:block;
+  }
 }
 
 .toggle-link.is-open .coopssn-c-nav__link__icon__svg {

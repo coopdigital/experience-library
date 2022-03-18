@@ -28,27 +28,34 @@ const observeDocumentScroll =() => {
   observer.observe(target);
 }
 
+
+const handleSidebarPanels = () => {
+  const links = document.querySelectorAll('.toggle-link')
+  links.forEach(link => {
+
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      // Now uses the + next sibling selector in css rather than relying on js
+      // This also reduces the close/reopen flicker when navigating to a link inside the panel
+      if(!link.classList.contains('is-open')) {
+        link.classList.add('is-open')
+        link.setAttribute('aria-expanded', true)
+      } else {
+        link.classList.remove('is-open')
+        link.setAttribute('aria-expanded', false)
+      }
+    })
+
+  })
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   observeDocumentScroll()
-  
+  handleSidebarPanels()
 })
 
 $(function () {
 
-
-  $('.toggle-link').click(function (e) {
-      e.preventDefault();
-      if (!$(this).hasClass('is-open')) {
-        $(this).addClass('is-open').attr('aria-expanded', 'true');
-        $(this).next('.coop-side-nav--nested').toggle();
-      } else {
-        $(this).removeClass('is-open').attr('aria-expanded', 'false');
-        $(this).next('.coop-side-nav--nested').toggle();
-      }
-    });
-    if ($('.toggle-link').hasClass('is-open')) {
-      $('.toggle-link.is-open').next('.coop-side-nav--nested').show();
-    }
     $('#search-small-input').click(function (e) {
       $('.el-c-search__results-bg').show();
       $('.coop-search-results').addClass('is-open').attr('aria-hidden', 'false');
