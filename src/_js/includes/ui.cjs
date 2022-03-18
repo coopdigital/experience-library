@@ -24,8 +24,9 @@ const observeDocumentScroll =() => {
   const observer = new IntersectionObserver(observerCallback, intersectionObserverOptions);
   const target = document.querySelector(`.${intersectorClassName}`);
   const scrollToTopAnchor = document.querySelector('#js-el-c-scroll-to-top')
-
-  observer.observe(target);
+  if(target) {
+    observer.observe(target);
+  }
 }
 
 
