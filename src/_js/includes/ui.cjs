@@ -50,53 +50,51 @@ const handleSidebarPanels = () => {
   })
 }
 
+
+
+const handleSearchInput = () => {
+  const searchSmallInput = document.querySelector('#search-small-input')
+  const searchResultsOverlay = document.querySelector('.el-c-search__results-bg')
+  const searchResults = document.querySelector('.coop-search-results')
+  //const searchResultsFirstLink = searchResults.querySelector('a')
+  const searchResultsContainer = document.querySelector('.results-bg')
+  const resultsText = document.querySelector('.results-text')
+
+  const applySearchFocus = () => {
+    searchResultsOverlay.classList.add('is-open')
+    searchResults.classList.add('is-open')
+    searchResultsContainer.classList.add('is-open')
+    searchResults.setAttribute('aria-hidden', false)
+    document.body.classList.add('modal-open')
+  }
+
+  const destroySearchFocus = () => {
+    if (searchResults.classList.contains('is-open')) {
+      searchResultsOverlay.classList.remove('is-open')
+      searchResults.classList.remove('is-open')
+      searchResultsContainer.classList.remove('is-open')
+      searchResults.setAttribute('aria-hidden', true)
+      //searchResults.innerHTML = ''
+      document.body.classList.remove('modal-open')
+    }
+  }
+
+  searchSmallInput.addEventListener('click', applySearchFocus)
+  searchSmallInput.addEventListener('focus', applySearchFocus)
+  searchSmallInput.addEventListener('blur', () => {
+    if(searchResults.childElementCount === 0) destroySearchFocus()
+  })
+  searchResultsOverlay.addEventListener('click', destroySearchFocus)
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   observeDocumentScroll()
   handleSidebarPanels()
+  handleSearchInput()
 })
 
 $(function () {
-
-    $('#search-small-input').click(function (e) {
-      $('.el-c-search__results-bg').show();
-      $('.coop-search-results').addClass('is-open').attr('aria-hidden', 'false');
-      $('.coop-search-results a').attr('tabindex', '0');
-      $('.results-bg').addClass('is--open');
-      $('body').addClass('modal-open');
-    });
-    $('.el-c-search__results-bg').click(function (e) {
-      if ($('.coop-search-results').hasClass('is-open')) {
-        $('.el-c-search__results-bg').hide();
-        $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
-        $('.coop-search-results a').attr('tabindex', '-1');
-        $('.results-bg').removeClass('is--open');
-        $('body').removeClass('modal-open');
-        $('.coop-search-results').empty();
-      }
-    });
-    $('#search-small-input').focus(function (e) {
-      $('.el-c-search__results-bg').show();
-      $('.coop-search-results').addClass('is-open');
-      $('.results-bg').addClass('is--open');
-      $('.coop-search-results a').attr('tabindex', '0');
-      $('body').addClass('modal-open');
-    }); 
-    $('#search-small-input').focusout(function (e) {
-      if ($('.result-text').hasClass('result-text')) {
-        $('.el-c-search__results-bg').show();
-        $('.coop-search-results').addClass('is-open').attr('aria-hidden', 'false');
-        $('.results-bg').addClass('is--open');
-        $('.coop-search-results a').attr('tabindex', '0');
-        $('body').addClass('modal-open');
-      } else {
-        $('.el-c-search__results-bg').hide();
-        $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
-        $('.coop-search-results a').attr('tabindex', '-1');
-        $('.results-bg').removeClass('is--open');
-        $('body').removeClass('modal-open');
-        $('.coop-search-results').empty();
-      }
-    });
+  
     function checkWidth() {
       var windowSize = $(window).width();
       if (windowSize < 768) {
