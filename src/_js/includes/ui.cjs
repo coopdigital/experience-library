@@ -1,4 +1,31 @@
 const $ = require('jquery');
+const WINDOW_SIDEBAR_BREAKPOINT = 768
+
+const debounce = (callbackFn, period) => {
+  let timer = null;
+  return (...args) => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => {
+      callbackFn.apply(null, args);
+    }, period);
+  };
+}
+
+const handleResize = () => {
+  const windowWidth = window.innerWidth
+
+  if(windowWidth < WINDOW_SIDEBAR_BREAKPOINT) {
+    document.querySelector('.el-c-search__input').setAttribute('tabindex', -1)
+    document.querySelector('.coop-u-flex__sidebar').setAttribute('aria-hidden', 'true')
+  } else {
+    document.querySelector('.el-c-search__input').setAttribute('tabindex', 0)
+    document.querySelector('.coop-u-flex__sidebar').setAttribute('aria-hidden', 'false')
+  }
+}
+
+const handleDebouncedWindowResize = () => {
+  window.addEventListener('resize', debounce(() => { handleResize() } , 250))
+}
 
 const observeDocumentScroll =() => {
   const intersectionObserverOptions = {
@@ -56,9 +83,7 @@ const handleSearchInput = () => {
   const searchSmallInput = document.querySelector('#search-small-input')
   const searchResultsOverlay = document.querySelector('.el-c-search__results-bg')
   const searchResults = document.querySelector('.coop-search-results')
-  //const searchResultsFirstLink = searchResults.querySelector('a')
   const searchResultsContainer = document.querySelector('.results-bg')
-  const resultsText = document.querySelector('.results-text')
 
   const applySearchFocus = () => {
     searchResultsOverlay.classList.add('is-open')
@@ -88,39 +113,19 @@ const handleSearchInput = () => {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
+  // Run this once before anything else
+  // Subsequent resizes are handled by the debounced fn
+  handleResize()
+
   observeDocumentScroll()
   handleSidebarPanels()
   handleSearchInput()
+  handleDebouncedWindowResize()
 })
 
 $(function () {
   
-    function checkWidth() {
-      var windowSize = $(window).width();
-      if (windowSize < 768) {
-        $('.coop-u-flex__sidebar a').attr('tabindex', '-1');
-        $('.el-c-search__input').attr('tabindex', '-1');
-        $('.coop-u-flex__sidebar').attr('aria-hidden', 'true');
-      }
-      else {
-        $('.coop-u-flex__sidebar a').attr('tabindex', '0');
-        $('.el-c-search__input').attr('tabindex', '0');
-        $('.coop-u-flex__sidebar').attr('aria-hidden', 'false');
-      }
-    }
-    checkWidth();
-    $(window).resize(function() {
-      if ($(window).width() < 768) {
-        $('.coop-u-flex__sidebar a').attr('tabindex', '-1');
-        $('.el-c-search__input').attr('tabindex', '-1');
-        $('.coop-u-flex__sidebar').attr('aria-hidden', 'true');
-      }
-      else {
-        $('.coop-u-flex__sidebar a').attr('tabindex', '0');
-        $('.el-c-search__input').attr('tabindex', '0');
-        $('.coop-u-flex__sidebar').attr('aria-hidden', 'false');
-      }
-    });
     $('#js-menu-toggle').click(function (e) {
       e.preventDefault();
       if (!$(this).hasClass('is-open')) {
