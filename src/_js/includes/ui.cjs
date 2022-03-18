@@ -1,40 +1,40 @@
 const $ = require('jquery');
 
+const observeDocumentScroll =() => {
+  const intersectionObserverOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  const intersectorClassName = 'el-c-hero'
+  const observerCallback = (entries) => {
+    entries.forEach(entry => {
+      if(entry.target.className === intersectorClassName && scrollToTopAnchor) { 
+        if(entry.isIntersecting) {
+          scrollToTopAnchor.classList.add('el-c-back-to-top--is-top')
+          scrollToTopAnchor.classList.remove('el-c-back-to-top--is-shown')
+        } else {
+          scrollToTopAnchor.classList.remove('el-c-back-to-top--is-top')
+          scrollToTopAnchor.classList.add('el-c-back-to-top--is-shown' )
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, intersectionObserverOptions);
+  const target = document.querySelector(`.${intersectorClassName}`);
+  const scrollToTopAnchor = document.querySelector('#js-el-c-scroll-to-top')
+
+  observer.observe(target);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  observeDocumentScroll()
+  
+})
+
 $(function () {
 
-  $(window).scroll(function (event) {
-    var height = $(window).scrollTop();
-    if (height == 0) {
-      $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-top');
-    } 
-    if (height > 1) {
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-top');
-    } 
-  });
-
-  var scrollableElement = document.body; 
-  var minHeight = $(window).scrollTop();
-  scrollableElement.addEventListener('wheel', checkScrollDirection);
-  function checkScrollDirection(event) {
-    if (checkScrollDirectionIsUp(event)) {
-      $('#js-el-c-scroll-to-top').addClass('el-c-back-to-top--is-shown');
-    }
-    else {
-      $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-    }
-  }
-
-  function checkScrollDirectionIsUp(event) {
-    if (event.wheelDelta) {
-      return event.wheelDelta > 0;
-    }
-    return event.deltaY < 0;
-  }
-  
-
-  $('#js-el-c-scroll-to-top').on( "click", function() {
-    $('#js-el-c-scroll-to-top').removeClass('el-c-back-to-top--is-shown');
-  });
 
   $('.toggle-link').click(function (e) {
       e.preventDefault();
