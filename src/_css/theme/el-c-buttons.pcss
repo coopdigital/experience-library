@@ -18,30 +18,32 @@
     visibility: hidden;
     opacity: 0;
     transition: all .15s ease-in-out;
-}  
-
-@media (--mq-medium) {
+  }  
+  
+  @media (--mq-medium) {
     .el-c-back-to-top--is-shown {
         visibility: visible;
         opacity: 1;
+        pointer-events:all;
     }
-}
-
-.el-c-back-to-top:hover {
+  }
+  
+  .el-c-back-to-top:hover {
     color: var(--color-text);
     text-decoration: underline;
-}
-
-.el-c-back-to-top__icon {
+  }
+  
+  .el-c-back-to-top__icon {
     position: relative;
     top: 4px;
-}
-
-.el-c-back-to-top__text {
+  }
+  
+  .el-c-back-to-top__text {
     padding-left: 8px;
-}
-
-.el-c-back-to-top--is-top {
+  }
+  
+  .el-c-back-to-top--is-top {
     visibility: hidden;
     opacity: 0;
-}
+    pointer-events:none;
+  }
