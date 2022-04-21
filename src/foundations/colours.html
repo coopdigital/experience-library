@@ -3,8 +3,8 @@ layout: coop-experience
 id: index
 item-url: /foundations/colours.html
 section: Foundations
-description: We’ve designed our colour palette so that the colours in it work together in different combinations. 
-meta-title:	Colours
+description: We’ve designed our colour palette so that the colours in it work together in different combinations.
+meta-title: Colours
 meta-description: We’ve designed our colour palette so that the colours in it work together in different combinations.
 
 # Hero content
@@ -13,10 +13,10 @@ col-width: 7
 section-title: Foundations
 title: Colours
 last-reviewed: Last reviewed&#58; 20 April 2021
-intro-text-lead: 
-  - We’ve designed our colour palette so that the colours in it work together in different combinations. 
+intro-text-lead:
+  - We’ve designed our colour palette so that the colours in it work together in different combinations.
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/colours-hero.svg
+decorative-image-url: /images/decorative/colours-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: true
@@ -48,1272 +48,2208 @@ changelog:
 # Back to top
 back-to-top: true
 ---
+
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
-            
-            {% include hero.html %}
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2 id="anchor-accessibility">Accessibility</h2>
+            <p>
+              All colours and colour combinations must pass a colour contrast
+              ratio of 4.5:1.
+            </p>
+            <p>
+              All colours in our palette have been tested for accessibility.
+              Each colour on this page has a link to the contrast test for that
+              colour.
+            </p>
+          </div>
         </div>
-        <section class="coop-l-page">
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2 id="anchor-accessibility">Accessibility</h2>
-                        <p>All colours and colour combinations must pass a colour contrast ratio of 4.5:1.</p>
-                        <p>All colours in our palette have been tested for accessibility. Each colour on this page has a link to the contrast test for that colour.</p>
-                    </div>
-                </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2 id="anchor-brand-colours">Brand colours</h2>
+            <h3>Co-op blue</h3>
+            <p>
+              Only use Co-op blue with the brand logo. Co-op blue does not meet
+              <a
+                href="https://www.coop.co.uk/accessibility/standards#form-contrast"
+                >colour contrast standards</a
+              >
+              for text, graphical objects or user interactions. For example, you
+              should not use it as an underline to highlight the page a user is
+              currently on.
+            </p>
+            <p>
+              Co-op blue can be used as a background colour for the Co-op logo
+              when the logo you’re using is white, for example, on our app
+              icons.
+            </p>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-brand-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Co-op blue</h4>
+                <span>#00B1E7</span>
+                <span>var(--color-brand)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=00B1E7&bcolor=FFFFFF"
+                    >Fails WCAG AA</a
+                  ></span
+                >
+              </div>
             </div>
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">                
-                        <h2 id="anchor-brand-colours">Brand colours</h2>
-                        <h3>Co-op blue</h3>
-                        <p>Only use Co-op blue with the brand logo. Co-op blue does not meet <a href="https://www.coop.co.uk/accessibility/standards#form-contrast">colour contrast standards</a> for text, graphical objects or user interactions. For example, you should not use it as an underline to highlight the page a user is currently on.</p>
-                        <p>Co-op blue can be used as a background colour for the Co-op logo when the logo you’re using is white, for example, on our app icons.</p>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-brand-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Co-op blue</h4>
-                                <span>#00B1E7</span>
-                                <span>var(--color-brand)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=00B1E7&bcolor=FFFFFF">Fails WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="el-c-pullout el-c-pullout--nested">
-                    <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/logo-in-header.png' | prepend: site.baseurl }}" width="500" alt="The Co-op logo in the top corner of the coop.co.uk website">
-                            <figcaption  class="coop-t-caption">The Co-op logo in Co-op blue at the top left corner of a page on the main Co-op website.</figcaption>
-                        </figure>
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/app-512x512.png' | prepend: site.baseurl }}" width="100" alt="The Co-op app icon. A white Co-op logo on the Co-op blue background">
-                            <figcaption  class="coop-t-caption">The Co-op logo in white on a Co-op blue background.</figcaption>
-                        </figure>
-                    </div>  
-                </div>  
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h3>Deal red</h3>
-                        <p>Deal red is like the red we use in Co-op stores and in advertising materials to highlight a price reduction or offer. </p>
-                        <p>Use it sparingly to draw the eye to particular offers or discounts.</p>
-                        <p>Do not use it as a block of colour.</p>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-deal-red-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Deal red</h4>
-                                <span>#D12430</span>
-                                <span>var(--color-deal-red)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=D12430&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="el-c-pullout">
-                    <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                    <figure class="el-c-pullout__figure">
-                        <img src="{{ '/images/examples/foundations/colours/deal-red-product-text.jpg' | prepend: site.baseurl }}"  width="200" alt="Deal red highlights a discounted price for a cake product.">
-                        <figcaption class="coop-t-caption">Deal red highlights a discounted price for a cake product.</figcaption>
-                    </figure>
-                    <figure class="el-c-pullout__figure">
-                        <img src="{{ '/images/examples/foundations/colours/deal-red-squircle.jpg' | prepend: site.baseurl }}" width="400" alt="Deal red with white text reading ‘half price’ highlights that products shown in the banner are half price">
-                        <figcaption class="coop-t-caption">Deal red with white text reading ‘half price’ highlights that products shown in the banner are half price.</figcaption>
-                    </figure>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="el-c-pullout el-c-pullout--nested">
+          <div class="el-c-pullout-header">
+            <h3>Examples</h3>
+          </div>
+          <div class="el-c-pullout-content">
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/logo-in-header.png' | prepend: site.baseurl }}"
+                width="500"
+                alt="The Co-op logo in the top corner of the coop.co.uk website"
+              />
+              <figcaption class="coop-t-caption">
+                The Co-op logo in Co-op blue at the top left corner of a page on
+                the main Co-op website.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/app-512x512.png' | prepend: site.baseurl }}"
+                width="100"
+                alt="The Co-op app icon. A white Co-op logo on the Co-op blue background"
+              />
+              <figcaption class="coop-t-caption">
+                The Co-op logo in white on a Co-op blue background.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h3>Deal red</h3>
+            <p>
+              Deal red is like the red we use in Co-op stores and in advertising
+              materials to highlight a price reduction or offer.
+            </p>
+            <p>
+              Use it sparingly to draw the eye to particular offers or
+              discounts.
+            </p>
+            <p>Do not use it as a block of colour.</p>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-deal-red-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Deal red</h4>
+                <span>#D12430</span>
+                <span>var(--color-deal-red)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=D12430&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
             </div>
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8"> 
-                        <h2 id="anchor-user-interface-colours">User interface colours</h2> 
-                        <h3>Link colours</h3>
-                        <p>For most links, use the colours shown here.</p>
-                        <p>If you’re using a link on a background colour, then the link text and underline must be black or white. This is to maintain the correct colour contrast.</p>
-                        <p>Links inside an area of navigation, like the main header on a website, may also appear in a different colour (normally the same colour as the text). This is because these links are in context to something that a user can recognise as navigation.</p>
-                        <p>Always apply the focus ring. The focus ring is used by keyboard users who do not have a cursor to tell them where they are on a page.</p>
-                        <p>You should usually use the purple link focus colour. Change this to white or black if the link is on a background colour where the purple would not meet colour contrast standards.</p>
-                        <p><a href="/elements/links.html">Go to the design guidelines on links.</a></p>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-blue-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Link</h4>
-                                <span>#00729A</span>
-                                <span>var(--color-link)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=00729A&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-hover-blue-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Link hover</h4>
-                                <span>#00394E</span>
-                                <span>var(--color-link-hover)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=00394E&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-active-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Link active and visited</h4>
-                                <span>#002C3D</span>
-                                <span>var(--color-link-active)</span>
-                                <span>var(--color-link-visited)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=002C3D&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Link focus</h4>
-                                <span>#8D44D8</span>
-                                <span>var(--color-link-focus)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <div class="el-c-pullout el-c-pullout--nested">
-                    <div class="el-c-pullout-header">
-                        <h4>Examples</h4> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/standard-links.jpg' | prepend: site.baseurl }}"  width="800" alt="Text links with the standard link colour applied">
-                            <figcaption class="coop-t-caption">Text links with the standard link colour applied.</figcaption>
-                        </figure>
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/header-focus-link.jpg' | prepend: site.baseurl }}"  width="800" alt="Links within a header showing unactivated, focus and hover states and how they are different from the standard link colours">
-                            <figcaption class="coop-t-caption">Links within a header showing unactivated, focus and hover states and how they are different from the standard link colours.</figcaption>
-                        </figure>
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/hero-white-focus.jpg' | prepend: site.baseurl }}"  width="600" alt="Link using white text on a dark blue background colour. Here the link focus colour has been changed to white in order to maintain colour contrast">
-                            <figcaption class="coop-t-caption">Link using white text on a dark blue background colour. Here the link focus colour has been changed to white in order to maintain colour contrast.</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h3>Button and form colours</h3>
-                        <p>There are 4 button colour combinations available:</p>
-                        <ul>
-                            <li>primary green</li>
-                            <li>primary white</li>
-                            <li>secondary blue</li>
-                            <li>secondary grey</li>
-                        </ul>
-                        <p><a href="{{ '/elements/buttons.html' | prepend: site.baseurl }}">Go to the design guidelines on buttons.</a></p>
-                        <p>If the button is on a background colour, use white as the button colour.</p>
-                        <p>Do not put a form on a brightly coloured or very dark background.</p>
-                    </div>
-                </div>
-                <h4>Primary green button colours</h4>
-                <div class="coop-l-grid  coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-primary-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Primary green button</h5>
-                                <span>#0F8482</span>
-                                <span>var(--color-button-green-primary)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=0F8482&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-primary-hover-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Primary green button hover</h5>
-                                <span>#1C6B6A</span>
-                                <span>var(--color-button-green-primary-hover)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=1C6B6A&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-primary-active-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Primary green button active</h5>
-                                <span>#124948</span>
-                                <span>var(--color-button-green-primary-active)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=124948&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Button focus</h5>
-                                <span>#8D44D8</span>
-                                <span>var(--color-link-focus)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <h4>Primary white button colours</h4>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-white-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Primary white button</h5>
-                                <span>#FFFFFF</span>
-                                <span>var(--color-white)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-white-hover-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">White button hover</h5>
-                                <span>#EFEFEF</span>
-                                <span>var(--color-white-hover)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">White button active</h5>
-                                <span>#D8D8D8</span>
-                                <span>var(--color-button-white-active)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Button focus</h5>
-                                <span>#8D44D8</span>
-                                <span>var(--color-link-focus)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <h4>Secondary blue button colours</h4>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-blue-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Blue button</h5>
-                                <span>#005878</span>
-                                <span>var(--color-button-blue)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=005878&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-blue-hover-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Blue button hover</h5>
-                                <span>#003E55</span>
-                                <span>var(--color-button-blue-hover)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=003E55&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-blue-active-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Blue button active</h5>
-                                <span>#001F2B</span>
-                                <span>var(--color-button-blue-active)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=001F2B&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Button focus</h5>
-                                <span>#8D44D8</span>
-                                <span>var(--color-link-focus)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <h4>Secondary grey button colours</h4>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-button-grey-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Grey button</h5>
-                                <span>#EFEFEF</span>
-                                <span>var(--color-button-grey)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF8&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Grey button hover</h5>
-                                <span>#D8D8D8</span>
-                                <span>var(--color-button-grey-hover)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-mid-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Grey button active</h5>
-                                <span>#C4C4C4</span>
-                                <span>var(--color-button-grey-active)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=C4C4C4&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h5 class="el-c-colour__content-heading">Button focus</h5>
-                                <span>#8D44D8</span>
-                                <span>var(--color-link-focus)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF">Passes WCAG AA</a></span>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <div class="el-c-pullout">
-                    <div class="el-c-pullout-header">
-                        <h4>Examples</h4> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/primary-button.jpg' | prepend: site.baseurl }}" width="800" alt="A heading and some text with a button using the primary green colour.">
-                            <figcaption class="coop-t-caption">A call to action button using the primary green colour.</figcaption>
-                        </figure>
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/blue-button.jpg' | prepend: site.baseurl }}" width="800" alt="A hero banner using the secondary blue button.">
-                            <figcaption class="coop-t-caption">A Membership banner using the secondary blue button.</figcaption>
-                        </figure>
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/white-button.jpg' | prepend: site.baseurl }}" width="800" alt="A hero banner using the primary white button.">
-                            <figcaption class="coop-t-caption">A hero banner using the primary white button.</figcaption>
-                        </figure>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="el-c-pullout">
+          <div class="el-c-pullout-header">
+            <h3>Examples</h3>
+          </div>
+          <div class="el-c-pullout-content">
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/deal-red-product-text.jpg' | prepend: site.baseurl }}"
+                width="200"
+                alt="Deal red highlights a discounted price for a cake product."
+              />
+              <figcaption class="coop-t-caption">
+                Deal red highlights a discounted price for a cake product.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/deal-red-squircle.jpg' | prepend: site.baseurl }}"
+                width="400"
+                alt="Deal red with white text reading ‘half price’ highlights that products shown in the banner are half price"
+              />
+              <figcaption class="coop-t-caption">
+                Deal red with white text reading ‘half price’ highlights that
+                products shown in the banner are half price.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2 id="anchor-user-interface-colours">User interface colours</h2>
+            <h3>Link colours</h3>
+            <p>For most links, use the colours shown here.</p>
+            <p>
+              If you’re using a link on a background colour, then the link text
+              and underline must be black or white. This is to maintain the
+              correct colour contrast.
+            </p>
+            <p>
+              Links inside an area of navigation, like the main header on a
+              website, may also appear in a different colour (normally the same
+              colour as the text). This is because these links are in context to
+              something that a user can recognise as navigation.
+            </p>
+            <p>
+              Always apply the focus ring. The focus ring is used by keyboard
+              users who do not have a cursor to tell them where they are on a
+              page.
+            </p>
+            <p>
+              You should usually use the purple link focus colour. Change this
+              to white or black if the link is on a background colour where the
+              purple would not meet colour contrast standards.
+            </p>
+            <p>
+              <a href="/elements/links.html"
+                >Go to the design guidelines on links.</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-blue-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Link</h4>
+                <span>#00729A</span>
+                <span>var(--color-link)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=00729A&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
             </div>
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="anchor-text-colours">Text colours</h2>
-                        <p>The main text colours are 'text' and 'alternative text'.</p>
-                        <p>Use text as the colour for content on a page except for secondary information. For example, use alternative text for hint text on forms.</p>
-                        <p>Use black or white text on coloured backgrounds where it is needed to meet minimum colour contrast standards.</p>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-text-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h2 class="el-c-colour__content-heading">Text</h2>
-                                <span>#282828</span>
-                                <span>var(--color-text)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-text-alt-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h2 class="el-c-colour__content-heading">Alternative text</h2>
-                                <span>#595959</span>
-                                <span>var(--color-text-alt)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=595959&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-black-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h2 class="el-c-colour__content-heading">Black</h2>
-                                <span>#000000</span>
-                                <span>var(--color-black)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-white-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h2 class="el-c-colour__content-heading">White</h2>
-                                <span>#FFFFFF</span>
-                                <span>var(--color-white)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-hover-blue-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Link hover</h4>
+                <span>#00394E</span>
+                <span>var(--color-link-hover)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=00394E&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
             </div>
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h2 id="anchor-colour-palette">Colour palette</h2>
-                        <p>The colour palette helps us give personality to our products, but also serves a functional purpose in the way we design.</p>
-                        <p>Large background areas should be white or use one of the neutral colours from the palette.</p>
-                        <p>Use warm or cool colours to make a product seem more friendly or muted colours to give a more functional feel.</p>
-                        <p>Use the colour palette to:</p>
-                        <ul>
-                            <li>draw users’ focus to particular content areas</li>
-                            <li>emphasise content so that it’s read in an order that makes sense to users</li>
-                            <li>give the impression of depth and layering — this can help structure content in a way that’s helpful to users</li>
-                        </ul>
-                        <h3 id="grey-background-colours">Grey scale</h3>
-                    </div>
-                </div>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-black-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Black</h4>
-                                <span>#000000</span>
-                                <span>var(--color-black)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=000000">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-dark-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark</h4>
-                                <span>#6E6E6E</span>
-                                <span>var(--color-grey-dark)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=6E6E6E">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-mid-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid</h4>
-                                <span>#C4C4C4</span>
-                                <span>var(--color-grey-mid)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=C4C4C4">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid light</h4>
-                                <span>#D8D8D8</span>
-                                <span>var(--color-grey-mid-light)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=D8D8D8">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-white-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">White</h4>
-                                <span>#FFFFFF</span>
-                                <span>var(--color-white)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h3 id="other-colours">Neutral colours</h3>
-                    </div>
-                </div> 
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-neutral-light-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light</h4>
-                                <span>#F3F3F3</span>
-                                <span>var(--color-grey-neutral-light)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F3F3F3">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-neutral-warm-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Warm</h4>
-                                <span>#F5F5F0</span>
-                                <span>var(--color-grey-neutral-warm)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F5F5F0">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-neutral-cool-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Cool</h4>
-                                <span>#DDE9ED</span>
-                                <span>var(--color-grey-neutral-cool)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=DDE9ED">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-grey-neutral-cool-light-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Cool light</h4>
-                                <span>#F2F4F7</span>
-                                <span>var(--color-grey-neutral-cool-light)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F2F4F7">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Reds</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-dark-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 4</h4>
-                                <span>#BA2327</span>
-                                <span>var(--color-red-dark-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=BA2327">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-mid-5-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 5</h4>
-                                <span>#E20F14</span>
-                                <span>var(--color-red-mid-5)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=E20F14">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-light-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 7</h4>
-                                <span>#FF6A6D</span>
-                                <span>var(--color-red-light-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FF6A6D">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#FFC1C3</span>
-                                <span>var(--color-red-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFC1C3">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#FFDBDB</span>
-                                <span>var(--color-red-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFDBDB">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-red-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#FCF1F1</span>
-                                <span>var(--color-red-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FCF1F1">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Oranges</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-dark-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 4</h4>
-                                <span>#BE4015</span>
-                                <span>var(--color-orange-dark-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=BE4015">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-mid-5-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 5</h4>
-                                <span>#FC5724</span>
-                                <span>var(--color-orange-mid-5)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FC5724">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-mid-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 6</h4>
-                                <span>#FD7838</span>
-                                <span>var(--color-orange-mid-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FD7838">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-mid-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 7</h4>
-                                <span>#FD9C59</span>
-                                <span>var(--color-orange-mid-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FD9C59">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#FDB979</span>
-                                <span>var(--color-orange-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FDB979">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#FEE7C1</span>
-                                <span>var(--color-orange-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FEE7C1">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-orange-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#FFF8E7</span>
-                                <span>var(--color-orange-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFF8E7">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Yellows</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-dark-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 4</h4>
-                                <span>#CFB214</span>
-                                <span>var(--color-yellow-dark-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFB214">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-mid-5-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 5</h4>
-                                <span>#FFD309</span>
-                                <span>var(--color-yellow-mid-5)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFD309">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-mid-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 6</h4>
-                                <span>#FFE53B</span>
-                                <span>var(--color-yellow-mid-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFE53B">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-mid-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 7</h4>
-                                <span>#FFF372</span>
-                                <span>var(--color-yellow-mid-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFF372">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#FFFCA9</span>
-                                <span>var(--color-yellow-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFCA9">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#FFFBCD</span>
-                                <span>var(--color-yellow-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFBCD">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-yellow-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#FCF9EE</span>
-                                <span>var(--color-yellow-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FCF9EE">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Greens</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-dark-2-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 2</h4>
-                                <span>#3A6002</span>
-                                <span>var(--color-green-dark-2)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=3A6002">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-mid-3-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 3</h4>
-                                <span>#4F820D</span>
-                                <span>var(--color-green-mid-3)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4F820D">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-mid-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 4</h4>
-                                <span>#72AA24</span>
-                                <span>var(--color-green-mid-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=72AA24">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-mid-5-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 5</h4>
-                                <span>#96CB48</span>
-                                <span>var(--color-green-mid-5)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=96CB48">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-light-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 6</h4>
-                                <span>#B9E277</span>
-                                <span>var(--color-green-light-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=B9E277">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#E7F7CB</span>
-                                <span>var(--color-green-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=E7F7CB">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-green-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#F6FCE9</span>
-                                <span>var(--color-green-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F6FCE9">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Teals</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-dark-2-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 2</h4>
-                                <span>#046062</span>
-                                <span>var(--color-teal-dark-2)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=046062">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-mid-3-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 3</h4>
-                                <span>#0F8482</span>
-                                <span>var(--color-teal-mid-3)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=0F8482">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-mid-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 4</h4>
-                                <span>#27AAAB</span>
-                                <span>var(--color-teal-mid-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=27AAAB">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-mid-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 6</h4>
-                                <span>#4BC7CC</span>
-                                <span>var(--color-teal-mid-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=4BC7CC">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-light-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 7</h4>
-                                <span>#79DCE3</span>
-                                <span>var(--color-teal-light-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=79DCE3">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#CCF2F7</span>
-                                <span>var(--color-teal-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CCF2F7">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-teal-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#E9FAFC</span>
-                                <span>var(--color-teal-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=E9FAFC">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Blues</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-dark-3-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 3</h4>
-                                <span>#114D94</span>
-                                <span>var(--color-blue-dark-3)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=114D94">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-mid-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 4</h4>
-                                <span>#0761C2</span>
-                                <span>var(--color-blue-mid-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=0761C2">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-mid-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 6</h4>
-                                <span>#519AF5</span>
-                                <span>var(--color-blue-mid-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=519AF5">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#80B7FF</span>
-                                <span>var(--color-blue-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=80B7FF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#CFE3FF</span>
-                                <span>var(--color-blue-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFE3FF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-blue-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#EEF3FC</span>
-                                <span>var(--color-blue-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EEF3FC">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Indigos</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-dark-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 4</h4>
-                                <span>#3B427F</span>
-                                <span>var(--color-indigo-dark-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=3B427F">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-mid-5-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 5</h4>
-                                <span>#4F52A8</span>
-                                <span>var(--color-indigo-mid-5)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4F52A8">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-mid-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 7</h4>
-                                <span>#8D9AE4</span>
-                                <span>var(--color-indigo-mid-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=8D9AE4">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#AFBDF5</span>
-                                <span>var(--color-indigo-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=AFBDF5">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#CFDBFE</span>
-                                <span>var(--color-indigo-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFDBFE">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-indigo-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#EFF3FA</span>
-                                <span>var(--color-indigo-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EFF3FA">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Purples</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-dark-3-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 3</h4>
-                                <span>#51178C</span>
-                                <span>var(--color-purple-dark-3)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=51178C">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-mid-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 4</h4>
-                                <span>#6727B9</span>
-                                <span>var(--color-purple-mid-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=6727B9">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-mid-6-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 6</h4>
-                                <span>#8D44D8</span>
-                                <span>var(--color-purple-mid-6)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=8D44D8">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#D395FE</span>
-                                <span>var(--color-purple-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=D395FE">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#EDC3FF</span>
-                                <span>var(--color-purple-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EDC3FF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-purple-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#F9EDFC</span>
-                                <span>var(--color-purple-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F9EDFC">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="coop-u-margin-t-32">Magentas</h3>
-                <div class="coop-l-grid coop-u-margin-b-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-dark-3-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Dark 3</h4>
-                                <span>#812373</span>
-                                <span>var(--color-magenta-dark-3)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=812373">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-mid-4-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 4</h4>
-                                <span>#AB278D</span>
-                                <span>var(--color-magenta-mid-4)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=AB278D">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-mid-7-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Mid 7</h4>
-                                <span>#F690F1</span>
-                                <span>var(--color-magenta-mid-7)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F690F1">Passes WCAG AA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-light-8-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 8</h4>
-                                <span>#FEB8FF</span>
-                                <span>var(--color-magenta-light-8)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FEB8FF">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-light-9-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 9</h4>
-                                <span>#FAD1FE</span>
-                                <span>var(--color-magenta-light-9)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FAD1FE">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
-                        <div class="el-c-colour">
-                            <div class="el-c-colour__swatch coop-u-magenta-light-10-bg"></div>
-                            <div class="el-c-colour__content">
-                                <h4 class="el-c-colour__content-heading">Light 10</h4>
-                                <span>#FAEAFC</span>
-                                <span>var(--color-magenta-light-10)</span>
-                                <span><a href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FAEAFC">Passes WCAG AAA</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">  
-                        <h3>Colour combinations</h3>
-                        <p>The palette can be effective when used to:</p>
-                        <ul>
-                            <li>highlight content (but make sure colour is not the only technique used to do this)</li>
-                            <li>evoke different moods and feelings, like calm or excitement</li>
-                            <li>create a greater sense of identity for a product or service</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="el-c-pullout">
-                    <div class="el-c-pullout-header">
-                        <h3>Example</h3> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                        <figure class="el-c-pullout__figure">
-                            <img src="{{ '/images/examples/foundations/colours/co-operate.jpg' | prepend: site.baseurl }}" width="800" alt="Image of the Co-operate website using colour combinations.">
-                            <figcaption class="coop-t-caption">The Co-operate website uses shape and colour to highlight key words and hand drawn, textured elements to create ideas and feelings of community.</figcaption>
-                        </figure>
-                    </div>
-                </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-active-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">
+                  Link active and visited
+                </h4>
+                <span>#002C3D</span>
+                <span>var(--color-link-active)</span>
+                <span>var(--color-link-visited)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=002C3D&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
             </div>
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Link focus</h4>
+                <span>#8D44D8</span>
+                <span>var(--color-link-focus)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
             </div>
-        </section>
-    </main>
-    {% include footer.html %}
+          </div>
+        </div>
+        <div class="el-c-pullout el-c-pullout--nested">
+          <div class="el-c-pullout-header">
+            <h4>Examples</h4>
+          </div>
+          <div class="el-c-pullout-content">
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/standard-links.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="Text links with the standard link colour applied"
+              />
+              <figcaption class="coop-t-caption">
+                Text links with the standard link colour applied.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/header-focus-link.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="Links within a header showing unactivated, focus and hover states and how they are different from the standard link colours"
+              />
+              <figcaption class="coop-t-caption">
+                Links within a header showing unactivated, focus and hover
+                states and how they are different from the standard link
+                colours.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/hero-white-focus.jpg' | prepend: site.baseurl }}"
+                width="600"
+                alt="Link using white text on a dark blue background colour. Here the link focus colour has been changed to white in order to maintain colour contrast"
+              />
+              <figcaption class="coop-t-caption">
+                Link using white text on a dark blue background colour. Here the
+                link focus colour has been changed to white in order to maintain
+                colour contrast.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h3>Button and form colours</h3>
+            <p>There are 4 button colour combinations available:</p>
+            <ul>
+              <li>primary green</li>
+              <li>primary white</li>
+              <li>secondary blue</li>
+              <li>secondary grey</li>
+            </ul>
+            <p>
+              <a href="{{ '/elements/buttons.html' | prepend: site.baseurl }}"
+                >Go to the design guidelines on buttons.</a
+              >
+            </p>
+            <p>
+              If the button is on a background colour, use white as the button
+              colour.
+            </p>
+            <p>
+              Do not put a form on a brightly coloured or very dark background.
+            </p>
+          </div>
+        </div>
+        <h4>Primary green button colours</h4>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-button-primary-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">
+                  Primary green button
+                </h5>
+                <span>#0F8482</span>
+                <span>var(--color-button-green-primary)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=0F8482&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-button-primary-hover-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">
+                  Primary green button hover
+                </h5>
+                <span>#1C6B6A</span>
+                <span>var(--color-button-green-primary-hover)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=1C6B6A&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-button-primary-active-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">
+                  Primary green button active
+                </h5>
+                <span>#124948</span>
+                <span>var(--color-button-green-primary-active)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=124948&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Button focus</h5>
+                <span>#8D44D8</span>
+                <span>var(--color-link-focus)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Primary white button colours</h4>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-white-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">
+                  Primary white button
+                </h5>
+                <span>#FFFFFF</span>
+                <span>var(--color-white)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-button-white-hover-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">White button hover</h5>
+                <span>#EFEFEF</span>
+                <span>var(--color-white-hover)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">
+                  White button active
+                </h5>
+                <span>#D8D8D8</span>
+                <span>var(--color-button-white-active)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Button focus</h5>
+                <span>#8D44D8</span>
+                <span>var(--color-link-focus)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Secondary blue button colours</h4>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-button-blue-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Blue button</h5>
+                <span>#005878</span>
+                <span>var(--color-button-blue)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=005878&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-button-blue-hover-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Blue button hover</h5>
+                <span>#003E55</span>
+                <span>var(--color-button-blue-hover)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=003E55&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-button-blue-active-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Blue button active</h5>
+                <span>#001F2B</span>
+                <span>var(--color-button-blue-active)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=001F2B&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Button focus</h5>
+                <span>#8D44D8</span>
+                <span>var(--color-link-focus)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Secondary grey button colours</h4>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-button-grey-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Grey button</h5>
+                <span>#EFEFEF</span>
+                <span>var(--color-button-grey)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF8&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Grey button hover</h5>
+                <span>#D8D8D8</span>
+                <span>var(--color-button-grey-hover)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=D8D8D8&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-mid-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Grey button active</h5>
+                <span>#C4C4C4</span>
+                <span>var(--color-button-grey-active)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=C4C4C4&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-link-focus-bg"></div>
+              <div class="el-c-colour__content">
+                <h5 class="el-c-colour__content-heading">Button focus</h5>
+                <span>#8D44D8</span>
+                <span>var(--color-link-focus)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=8D44D8&bcolor=FFFFFF"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="el-c-pullout">
+          <div class="el-c-pullout-header">
+            <h4>Examples</h4>
+          </div>
+          <div class="el-c-pullout-content">
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/primary-button.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="A heading and some text with a button using the primary green colour."
+              />
+              <figcaption class="coop-t-caption">
+                A call to action button using the primary green colour.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/blue-button.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="A hero banner using the secondary blue button."
+              />
+              <figcaption class="coop-t-caption">
+                A Membership banner using the secondary blue button.
+              </figcaption>
+            </figure>
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/white-button.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="A hero banner using the primary white button."
+              />
+              <figcaption class="coop-t-caption">
+                A hero banner using the primary white button.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <h4>Primary white button colours</h4>
+      <div class="coop-l-grid coop-u-margin-b-16">
+        <div
+          class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+        >
+          <div class="el-c-colour">
+            <div class="el-c-colour__swatch coop-u-white-bg"></div>
+            <div class="el-c-colour__content">
+              <h5 class="el-c-colour__content-heading">Primary white button</h5>
+              <span>#FFFFFF</span>
+              <span>var(--color-white)</span>
+              <span
+                ><a
+                  href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828"
+                  >Passes WCAG AAA</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+        >
+          <div class="el-c-colour">
+            <div class="el-c-colour__swatch coop-u-button-white-hover-bg"></div>
+            <div class="el-c-colour__content">
+              <h5 class="el-c-colour__content-heading">White button hover</h5>
+              <span>#EFEFEF</span>
+              <span>var(--color-white-hover)</span>
+              <span
+                ><a
+                  href="https://webaim.org/resources/contrastchecker/?fcolor=EFEFEF&bcolor=282828"
+                  >Passes WCAG AAA</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Error colours</h3>
+      <div class="coop-l-grid coop-u-margin-b-16">
+        <div
+          class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+        >
+          <div class="el-c-colour">
+            <div class="el-c-colour__swatch coop-u-error-bg"></div>
+            <div class="el-c-colour__content">
+              <h5 class="el-c-colour__content-heading">Error red</h5>
+              <span>#e20f14</span>
+              <span>var(--color-red-error)</span>
+              <span
+                ><a
+                  href="https://webaim.org/resources/contrastchecker/?fcolor=e20f14&bcolor=FFFFFF"
+                  >Passes WCAG AA</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+        >
+          <div class="el-c-colour">
+            <div class="el-c-colour__swatch coop-u-error-text-bg"></div>
+            <div class="el-c-colour__content">
+              <h5 class="el-c-colour__content-heading">Error red text</h5>
+              <span>#d12430</span>
+              <span>var(--color-red-error-text)</span>
+              <span
+                ><a
+                  href="https://webaim.org/resources/contrastchecker/?fcolor=d12430&bcolor=fcf1f1"
+                  >Passes WCAG AA</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+        >
+          <div class="el-c-colour">
+            <div class="el-c-colour__swatch coop-u-error-light-bg"></div>
+            <div class="el-c-colour__content">
+              <h5 class="el-c-colour__content-heading">Error red background</h5>
+              <span>#fcf1f1</span>
+              <span>var(--color-red-error-light)</span>
+              <span
+                ><a
+                  href="https://webaim.org/resources/contrastchecker/?fcolor=d12430&bcolor=fcf1f1"
+                  >Passes WCAG AA</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2 id="anchor-text-colours">Text colours</h2>
+            <p>The main text colours are 'text' and 'alternative text'.</p>
+            <p>
+              Use text as the colour for content on a page except for secondary
+              information. For example, use alternative text for hint text on
+              forms.
+            </p>
+            <p>
+              Use black or white text on coloured backgrounds where it is needed
+              to meet minimum colour contrast standards.
+            </p>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-text-bg"></div>
+              <div class="el-c-colour__content">
+                <h2 class="el-c-colour__content-heading">Text</h2>
+                <span>#282828</span>
+                <span>var(--color-text)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-text-alt-bg"></div>
+              <div class="el-c-colour__content">
+                <h2 class="el-c-colour__content-heading">Alternative text</h2>
+                <span>#595959</span>
+                <span>var(--color-text-alt)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=595959&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-black-bg"></div>
+              <div class="el-c-colour__content">
+                <h2 class="el-c-colour__content-heading">Black</h2>
+                <span>#000000</span>
+                <span>var(--color-black)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=000000&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-white-bg"></div>
+              <div class="el-c-colour__content">
+                <h2 class="el-c-colour__content-heading">White</h2>
+                <span>#FFFFFF</span>
+                <span>var(--color-white)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=282828"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2 id="anchor-colour-palette">Colour palette</h2>
+            <p>
+              The colour palette helps us give personality to our products, but
+              also serves a functional purpose in the way we design.
+            </p>
+            <p>
+              Large background areas should be white or use one of the neutral
+              colours from the palette.
+            </p>
+            <p>
+              Use warm or cool colours to make a product seem more friendly or
+              muted colours to give a more functional feel.
+            </p>
+            <p>Use the colour palette to:</p>
+            <ul>
+              <li>draw users’ focus to particular content areas</li>
+              <li>
+                emphasise content so that it’s read in an order that makes sense
+                to users
+              </li>
+              <li>
+                give the impression of depth and layering — this can help
+                structure content in a way that’s helpful to users
+              </li>
+            </ul>
+            <h3 id="grey-background-colours">Grey scale</h3>
+          </div>
+        </div>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-black-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Black</h4>
+                <span>#000000</span>
+                <span>var(--color-black)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=000000"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-dark-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark</h4>
+                <span>#6E6E6E</span>
+                <span>var(--color-grey-dark)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=6E6E6E"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-mid-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid</h4>
+                <span>#C4C4C4</span>
+                <span>var(--color-grey-mid)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=C4C4C4"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-grey-mid-light-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid light</h4>
+                <span>#D8D8D8</span>
+                <span>var(--color-grey-mid-light)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=D8D8D8"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-white-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">White</h4>
+                <span>#FFFFFF</span>
+                <span>var(--color-white)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFFFF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h3 id="other-colours">Neutral colours</h3>
+          </div>
+        </div>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-grey-neutral-light-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light</h4>
+                <span>#F3F3F3</span>
+                <span>var(--color-grey-neutral-light)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F3F3F3"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-grey-neutral-warm-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Warm</h4>
+                <span>#F5F5F0</span>
+                <span>var(--color-grey-neutral-warm)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F5F5F0"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-grey-neutral-cool-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Cool</h4>
+                <span>#DDE9ED</span>
+                <span>var(--color-grey-neutral-cool)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=DDE9ED"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div
+                class="el-c-colour__swatch coop-u-grey-neutral-cool-light-bg"
+              ></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Cool light</h4>
+                <span>#F2F4F7</span>
+                <span>var(--color-grey-neutral-cool-light)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F2F4F7"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Reds</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-dark-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 4</h4>
+                <span>#BA2327</span>
+                <span>var(--color-red-dark-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=BA2327"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-mid-5-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 5</h4>
+                <span>#E20F14</span>
+                <span>var(--color-red-mid-5)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=E20F14"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-light-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 7</h4>
+                <span>#FF6A6D</span>
+                <span>var(--color-red-light-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FF6A6D"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#FFC1C3</span>
+                <span>var(--color-red-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFC1C3"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#FFDBDB</span>
+                <span>var(--color-red-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFDBDB"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-red-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#FCF1F1</span>
+                <span>var(--color-red-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FCF1F1"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Oranges</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-dark-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 4</h4>
+                <span>#BE4015</span>
+                <span>var(--color-orange-dark-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=BE4015"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-mid-5-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 5</h4>
+                <span>#FC5724</span>
+                <span>var(--color-orange-mid-5)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FC5724"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-mid-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 6</h4>
+                <span>#FD7838</span>
+                <span>var(--color-orange-mid-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FD7838"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-mid-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 7</h4>
+                <span>#FD9C59</span>
+                <span>var(--color-orange-mid-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FD9C59"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#FDB979</span>
+                <span>var(--color-orange-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FDB979"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#FEE7C1</span>
+                <span>var(--color-orange-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FEE7C1"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-orange-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#FFF8E7</span>
+                <span>var(--color-orange-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFF8E7"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Yellows</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-dark-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 4</h4>
+                <span>#CFB214</span>
+                <span>var(--color-yellow-dark-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFB214"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-mid-5-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 5</h4>
+                <span>#FFD309</span>
+                <span>var(--color-yellow-mid-5)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFD309"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-mid-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 6</h4>
+                <span>#FFE53B</span>
+                <span>var(--color-yellow-mid-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFE53B"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-mid-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 7</h4>
+                <span>#FFF372</span>
+                <span>var(--color-yellow-mid-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFF372"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#FFFCA9</span>
+                <span>var(--color-yellow-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFCA9"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#FFFBCD</span>
+                <span>var(--color-yellow-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FFFBCD"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-yellow-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#FCF9EE</span>
+                <span>var(--color-yellow-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FCF9EE"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Greens</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-dark-2-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 2</h4>
+                <span>#3A6002</span>
+                <span>var(--color-green-dark-2)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=3A6002"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-mid-3-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 3</h4>
+                <span>#4F820D</span>
+                <span>var(--color-green-mid-3)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4F820D"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-mid-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 4</h4>
+                <span>#72AA24</span>
+                <span>var(--color-green-mid-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=72AA24"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-mid-5-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 5</h4>
+                <span>#96CB48</span>
+                <span>var(--color-green-mid-5)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=96CB48"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-light-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 6</h4>
+                <span>#B9E277</span>
+                <span>var(--color-green-light-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=B9E277"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#E7F7CB</span>
+                <span>var(--color-green-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=E7F7CB"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-green-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#F6FCE9</span>
+                <span>var(--color-green-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F6FCE9"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Teals</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-dark-2-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 2</h4>
+                <span>#046062</span>
+                <span>var(--color-teal-dark-2)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=046062"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-mid-3-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 3</h4>
+                <span>#0F8482</span>
+                <span>var(--color-teal-mid-3)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=0F8482"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-mid-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 4</h4>
+                <span>#27AAAB</span>
+                <span>var(--color-teal-mid-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=27AAAB"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-mid-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 6</h4>
+                <span>#4BC7CC</span>
+                <span>var(--color-teal-mid-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=4BC7CC"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-light-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 7</h4>
+                <span>#79DCE3</span>
+                <span>var(--color-teal-light-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=79DCE3"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#CCF2F7</span>
+                <span>var(--color-teal-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CCF2F7"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-teal-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#E9FAFC</span>
+                <span>var(--color-teal-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=E9FAFC"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Blues</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-dark-3-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 3</h4>
+                <span>#114D94</span>
+                <span>var(--color-blue-dark-3)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=114D94"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-mid-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 4</h4>
+                <span>#0761C2</span>
+                <span>var(--color-blue-mid-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=0761C2"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-mid-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 6</h4>
+                <span>#519AF5</span>
+                <span>var(--color-blue-mid-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=519AF5"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#80B7FF</span>
+                <span>var(--color-blue-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=80B7FF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#CFE3FF</span>
+                <span>var(--color-blue-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFE3FF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-blue-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#EEF3FC</span>
+                <span>var(--color-blue-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EEF3FC"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Indigos</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-dark-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 4</h4>
+                <span>#3B427F</span>
+                <span>var(--color-indigo-dark-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=3B427F"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-mid-5-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 5</h4>
+                <span>#4F52A8</span>
+                <span>var(--color-indigo-mid-5)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4F52A8"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-mid-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 7</h4>
+                <span>#8D9AE4</span>
+                <span>var(--color-indigo-mid-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=8D9AE4"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#AFBDF5</span>
+                <span>var(--color-indigo-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=AFBDF5"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#CFDBFE</span>
+                <span>var(--color-indigo-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=CFDBFE"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-indigo-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#EFF3FA</span>
+                <span>var(--color-indigo-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EFF3FA"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Purples</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-dark-3-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 3</h4>
+                <span>#51178C</span>
+                <span>var(--color-purple-dark-3)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=51178C"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-mid-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 4</h4>
+                <span>#6727B9</span>
+                <span>var(--color-purple-mid-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=6727B9"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-mid-6-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 6</h4>
+                <span>#8D44D8</span>
+                <span>var(--color-purple-mid-6)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=8D44D8"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#D395FE</span>
+                <span>var(--color-purple-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=D395FE"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#EDC3FF</span>
+                <span>var(--color-purple-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=EDC3FF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-purple-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#F9EDFC</span>
+                <span>var(--color-purple-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F9EDFC"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="coop-u-margin-t-32">Magentas</h3>
+        <div class="coop-l-grid coop-u-margin-b-16">
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-dark-3-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Dark 3</h4>
+                <span>#812373</span>
+                <span>var(--color-magenta-dark-3)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=812373"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-mid-4-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 4</h4>
+                <span>#AB278D</span>
+                <span>var(--color-magenta-mid-4)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=AB278D"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-mid-7-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Mid 7</h4>
+                <span>#F690F1</span>
+                <span>var(--color-magenta-mid-7)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=F690F1"
+                    >Passes WCAG AA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-light-8-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 8</h4>
+                <span>#FEB8FF</span>
+                <span>var(--color-magenta-light-8)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FEB8FF"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-light-9-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 9</h4>
+                <span>#FAD1FE</span>
+                <span>var(--color-magenta-light-9)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FAD1FE"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
+          >
+            <div class="el-c-colour">
+              <div class="el-c-colour__swatch coop-u-magenta-light-10-bg"></div>
+              <div class="el-c-colour__content">
+                <h4 class="el-c-colour__content-heading">Light 10</h4>
+                <span>#FAEAFC</span>
+                <span>var(--color-magenta-light-10)</span>
+                <span
+                  ><a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=282828&bcolor=FAEAFC"
+                    >Passes WCAG AAA</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h3>Colour combinations</h3>
+            <p>The palette can be effective when used to:</p>
+            <ul>
+              <li>
+                highlight content (but make sure colour is not the only
+                technique used to do this)
+              </li>
+              <li>
+                evoke different moods and feelings, like calm or excitement
+              </li>
+              <li>
+                create a greater sense of identity for a product or service
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="el-c-pullout">
+          <div class="el-c-pullout-header">
+            <h3>Example</h3>
+          </div>
+          <div class="el-c-pullout-content">
+            <figure class="el-c-pullout__figure">
+              <img
+                src="{{ '/images/examples/foundations/colours/co-operate.jpg' | prepend: site.baseurl }}"
+                width="800"
+                alt="Image of the Co-operate website using colour combinations."
+              />
+              <figcaption class="coop-t-caption">
+                The Co-operate website uses shape and colour to highlight key
+                words and hand drawn, textured elements to create ideas and
+                feelings of community.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+          {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
 </div>

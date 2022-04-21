@@ -1,76 +1,86 @@
-   
-/* Foundations */ 
-@import "normalize.css";  
+/* Foundations */
+@import "normalize.css";
 @import "@coopdigital/foundations/dist/vars/vars.css";
 @import "@coopdigital/foundations/dist/foundations.css";
 @import "@coopdigital/foundations-buttons";
 @import "@coopdigital/foundations-forms";
-@import "@coopdigital/foundations-tables"; 
-     
-/* Components */     
-@import '@coopdigital/component-skipnav';
-@import '@coopdigital/component-card--product';
-@import '@coopdigital/component-notification'; 
-@import '@coopdigital/component-notification--alert';
-@import '@coopdigital/component-search';   
-@import '@coopdigital/component-squircles';
-@import '@coopdigital/component-tags';
-@import '@coopdigital/shared-component--signpost';
-@import '@coopdigital/shared-component--editorialcard'; 
-@import '@coopdigital/shared-component--featurecard';  
-@import '@coopdigital/shared-component--hero';
-@import '@coopdigital/shared-component--linklist';
-@import '@coopdigital/shared-component--postcode';
+@import "@coopdigital/foundations-tables";
 
-                                               
-/* Experience Library theme */ 
-@import 'theme/global.pcss';  
-@import 'theme/layout.pcss';  
-@import 'theme/el-c-mobile-header.pcss'; 
-@import 'theme/side-bar.pcss'; 
-@import 'theme/skip-nav.pcss';  
-@import 'theme/search.pcss'; 
-@import 'theme/signpost.pcss'; 
-@import 'theme/el-c-buttons.pcss'; 
-@import 'theme/el-icons.pcss';
-@import 'theme/el-c-header.pcss';
-@import 'theme/el-c-hero.pcss';
-@import 'theme/el-c-hero-home-flex.pcss'; 
-@import 'theme/el-c-hero-dark.pcss'; 
-@import 'theme/el-c-hero-home.pcss'; 
-@import 'theme/el-c-info-card.pcss';
-@import 'theme/el-c-interact-banner.pcss'; 
-@import 'theme/el-c-pullout.pcss'; 
-@import 'theme/el-c-primary-section.pcss';
-@import 'theme/el-c-changelog.pcss';
-@import 'theme/el-c-colour-swatch.pcss';
-@import 'theme/notification.pcss'; 
-@import 'theme/el-c-contribute-card.pcss';
-@import 'theme/el-c-in-page-nav.pcss';
-@import 'theme/el-c-activity-meta.pcss'; 
-@import 'theme/el-c-horizontal-card-home.pcss';
-@import 'theme/el-c-demo.pcss';
-@import 'theme/el-c-download.pcss';
-@import 'theme/code.pcss';
-     
+/* Components */
+@import "@coopdigital/component-skipnav";
+@import "@coopdigital/component-card--product";
+@import "@coopdigital/component-notification";
+@import "@coopdigital/component-notification--alert";
+@import "@coopdigital/component-search";
+@import "@coopdigital/component-squircles";
+@import "@coopdigital/component-tags";
+@import "@coopdigital/shared-component--signpost";
+@import "@coopdigital/shared-component--editorialcard";
+@import "@coopdigital/shared-component--featurecard";
+@import "@coopdigital/shared-component--hero";
+@import "@coopdigital/shared-component--linklist";
+@import "@coopdigital/shared-component--postcode";
+
+/* Experience Library theme */
+@import "theme/global.pcss";
+@import "theme/layout.pcss";
+@import "theme/el-c-mobile-header.pcss";
+@import "theme/side-bar.pcss";
+@import "theme/skip-nav.pcss";
+@import "theme/search.pcss";
+@import "theme/signpost.pcss";
+@import "theme/el-c-buttons.pcss";
+@import "theme/el-icons.pcss";
+@import "theme/el-c-header.pcss";
+@import "theme/el-c-hero.pcss";
+@import "theme/el-c-hero-home-flex.pcss";
+@import "theme/el-c-hero-dark.pcss";
+@import "theme/el-c-hero-home.pcss";
+@import "theme/el-c-info-card.pcss";
+@import "theme/el-c-interact-banner.pcss";
+@import "theme/el-c-pullout.pcss";
+@import "theme/el-c-primary-section.pcss";
+@import "theme/el-c-changelog.pcss";
+@import "theme/el-c-colour-swatch.pcss";
+@import "theme/notification.pcss";
+@import "theme/el-c-contribute-card.pcss";
+@import "theme/el-c-in-page-nav.pcss";
+@import "theme/el-c-activity-meta.pcss";
+@import "theme/el-c-horizontal-card-home.pcss";
+@import "theme/el-c-demo.pcss";
+@import "theme/el-c-download.pcss";
+@import "theme/code.pcss";
+
 /* Utility overrides */
 @import "theme/grid.pcss";
+
+.coop-u-error-bg {
+  background: var(--color-red-error) !important;
+}
+
+.coop-u-error-text-bg {
+  background: var(--color-red-error-text) !important;
+}
+
+.coop-u-error-light-bg {
+  background: var(--color-red-error-light) !important;
+}
 
 @media (--mq-medium) {
   .coop-c-signpost {
     margin-bottom: var(--spacing-32);
   }
 }
-          
-.external-link-container { 
-  background-color: var(--color-white); 
+
+.external-link-container {
+  background-color: var(--color-white);
   margin-bottom: var(--spacing-4);
-  border-radius: var(--ui-border-radius); 
-  box-shadow: var(--ui-shadow); 
+  border-radius: var(--ui-border-radius);
+  box-shadow: var(--ui-shadow);
   transition: box-shadow 0.2s ease-in;
-  color: var(--color-text);  
+  color: var(--color-text);
   text-decoration: none;
-  padding: 24px 20px 16px 20px;  
+  padding: 24px 20px 16px 20px;
 }
 
 .external-link {
@@ -90,7 +100,7 @@
 .inline-link:hover {
   color: var(--color-text);
 }
- 
+
 ul.inline-nav {
   width: 100%;
   list-style-type: none;
@@ -115,17 +125,17 @@ li a.inline-nav {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-} 
+}
 
 li a.inline-nav:hover {
   color: var(--color-text);
   text-decoration: underline;
 }
- 
+
 .active {
   border-bottom: 4px solid var(--color-text);
   color: var(--color-text);
-} 
+}
 
 .link-blue {
   color: var(--color-blue-mid-4);
@@ -147,14 +157,13 @@ li a.inline-nav:hover {
   margin-bottom: var(--spacing-8);
 }
 
-
 .nested-link {
   font-weight: 400;
   font-size: 1rem;
 }
 
 .coop-t-hr-slim {
-  display: block; 
+  display: block;
   border-style: solid;
   border-color: var(--color-grey-mid);
   border-width: 0 0 1px;
@@ -163,8 +172,8 @@ li a.inline-nav:hover {
   margin-top: var(--spacing-64);
   margin-bottom: var(--spacing-8);
 }
- 
-.coop-t-hr-side-nav { 
+
+.coop-t-hr-side-nav {
   display: block;
   border-style: solid;
   border-color: var(--color-grey-mid);
@@ -174,24 +183,23 @@ li a.inline-nav:hover {
   width: 248px;
   margin-top: var(--spacing-0);
   margin-bottom: var(--spacing-16);
-} 
-
+}
 
 .ds-header-slim .coop-c-search__button {
   background: none;
   position: relative;
   margin-left: var(--spacing-16);
   border-radius: 5px;
-} 
+}
 
 .example-box {
   border: 1px solid var(--color-grey-mid);
   padding: var(--spacing-32);
 }
- 
-hr, 
+
+hr,
 .coop-t-hr-el {
-  display: block; 
+  display: block;
   border-style: solid;
   border-color: var(--color-grey-mid);
   border-width: 0 0 1px;
@@ -201,16 +209,16 @@ hr,
   margin-bottom: var(--spacing-64);
 
   @media (--mq-medium) {
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: var(--spacing-64);
-  } 
+  }
 }
 
 .font-example-regular {
   font-size: 2em;
   font-weight: normal;
 }
- 
+
 .font-example-medium {
   font-size: 2em;
   font-weight: 500;
@@ -220,7 +228,7 @@ hr,
   font-size: 2em;
   font-weight: bold;
 }
- 
+
 .white-text {
   color: var(--color-white);
 }
@@ -231,7 +239,7 @@ hr,
   outline-offset: 3px;
 }
 
-.medium-weight-text{
+.medium-weight-text {
   font-weight: 500;
 }
 
@@ -240,9 +248,7 @@ hr,
   margin-bottom: var(--spacing-4);
   padding-top: var(--spacing-16);
 }
- 
 
 .word-list__p {
   margin-bottom: var(--spacing-8);
-  
 }
