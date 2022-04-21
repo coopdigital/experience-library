@@ -42,6 +42,8 @@ in-page-nav:
 
 # Changelog
 changelog:
+  - date: 21 April 2022
+    notes: Error colours added to user interface colours
   - date: 14 April 2021
     notes: First version of page published
 
@@ -230,7 +232,7 @@ back-to-top: true
               purple would not meet colour contrast standards.
             </p>
             <p>
-              <a href="/elements/links.html"
+              <a href="{{ '/elements/links.html' | prepend: site.baseurl }}"
                 >Go to the design guidelines on links.</a
               >
             </p>
@@ -832,8 +834,16 @@ back-to-top: true
             </div>
           </div>
         </div>
+        <div class="coop-l-grid__item coop-l-grid__item--large-8">
+          <p>
+            For an example
+            <a
+              href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}"
+              >go to the form validation pattern</a
+            >.
+          </p>
+        </div>
       </div>
-
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-8">
