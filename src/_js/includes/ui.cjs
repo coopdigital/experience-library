@@ -27,7 +27,7 @@ const handleDebouncedWindowResize = () => {
   window.addEventListener('resize', debounce(() => { handleResize() } , 250))
 }
 
-const observeDocumentScroll =() => {
+const handleDocumentScroll = () => {
   const intersectionObserverOptions = {
     root: null,
     rootMargin: '0px',
@@ -73,17 +73,22 @@ const handleSidebarPanels = () => {
         link.setAttribute('aria-expanded', false)
       }
     })
-
   })
 }
 
+const handleInteractions = () => {
 
-
-const handleSearchInput = () => {
   const searchSmallInput = document.querySelector('#search-small-input')
   const searchResultsOverlay = document.querySelector('.el-c-search__results-bg')
   const searchResults = document.querySelector('.coop-search-results')
   const searchResultsContainer = document.querySelector('.results-bg')
+
+  const menuToggle = document.querySelector('#js-menu-toggle')
+  const sidebar = document.querySelector('.coop-u-flex__sidebar')
+  const sidebarLinks = sidebar.querySelectorAll('a')
+  const searchInput = document.querySelector('.el-c-search__input')
+  const navScroll = document.querySelector('.coop-nav-scroll')
+  const menuBg = document.querySelector('.menu-bg')
 
   const applySearchFocus = () => {
     searchResultsOverlay.classList.add('is-open')
@@ -104,12 +109,57 @@ const handleSearchInput = () => {
     }
   }
 
+  const openMenu = () => {
+    menuToggle.classList.add('is-open')
+    menuToggle.textContent = 'Close'
+    menuToggle.setAttribute('aria-expanded', true)
+    sidebar.classList.add('coop-u-flex__sidebar--is-open')
+    sidebar.setAttribute('aria-hidden', false)
+    sidebarLinks.forEach((link) => link.setAttribute('tabindex', 0))
+    searchInput.setAttribute('tabindex', 0)
+    navScroll.classList.add('coop-nav-scroll--is-open')
+    document.body.classList.add('menu--is-open')
+    menuBg.style.display="block"
+  }
+
+  const closeMenu=() => {
+    menuToggle.classList.remove('is-open')
+    menuToggle.textContent = 'Menu'
+    menuToggle.setAttribute('aria-expanded', false)
+    sidebar.classList.remove('coop-u-flex__sidebar--is-open')
+    sidebar.setAttribute('aria-hidden', true)
+    sidebarLinks.forEach((link) => link.setAttribute('tabindex', -1))
+    searchInput.setAttribute('tabindex', -1)
+    navScroll.classList.remove('coop-nav-scroll--is-open')
+    document.body.classList.remove('menu--is-open')
+    menuBg.style.display="none"
+  }
+
   searchSmallInput.addEventListener('click', applySearchFocus)
   searchSmallInput.addEventListener('focus', applySearchFocus)
   searchSmallInput.addEventListener('blur', () => {
     if(searchResults.childElementCount === 0) destroySearchFocus()
   })
   searchResultsOverlay.addEventListener('click', destroySearchFocus)
+
+  menuToggle.addEventListener('click', (e) => {
+    e.preventDefault()
+    if(!menuToggle.classList.contains('is-open')) {
+      openMenu()
+    } else {
+      closeMenu()
+    }
+  })
+
+  menuBg.addEventListener('click', () => {
+    closeMenu()
+  })
+
+  document.addEventListener('keyup', (e) => {
+    if(e.key==='Escape') {
+      destroySearchFocus()
+    }
+  })
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -117,53 +167,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Run this once before anything else
   // Subsequent resizes are handled by the debounced fn
   handleResize()
-
-  observeDocumentScroll()
+  handleDocumentScroll()
   handleSidebarPanels()
-  handleSearchInput()
   handleDebouncedWindowResize()
-})
+  handleInteractions()
 
-$(function () {
-  
-    $('#js-menu-toggle').click(function (e) {
-      e.preventDefault();
-      if (!$(this).hasClass('is-open')) {
-        $(this).addClass('is-open').text('Close').attr('aria-expanded', 'true');
-        $('.coop-u-flex__sidebar').addClass('coop-u-flex__sidebar--is-open').attr('aria-hidden', 'false');
-        $('.coop-u-flex__sidebar a').attr('tabindex', '0');
-        $('.el-c-search__input').attr('tabindex', '0');
-        $('.coop-nav-scroll').addClass('coop-nav-scroll--is-open');
-        $('body').addClass('menu--is-open');
-        $('.menu-bg').show();
-      } else {
-        $(this).removeClass('is-open').text('Menu').attr('aria-expanded', 'false');
-        $('body').removeClass('menu--is-open');
-        $('.coop-u-flex__sidebar').removeClass('coop-u-flex__sidebar--is-open').attr('aria-hidden', 'true');
-        $('.coop-u-flex__sidebar a').attr('tabindex', '-1');
-        $('.el-c-search__input').attr('tabindex', '-1');
-        $('.coop-nav-scroll').removeClass('coop-nav-scroll--is-open');
-        $('.menu-bg').hide();
-      }
-    });
-    $('.menu-bg').click(function (e) {
-      if ($('.coop-u-flex__sidebar').hasClass('coop-u-flex__sidebar--is-open')) {
-        $('#js-menu-toggle').removeClass('is-open').text('Menu').attr('aria-expanded', 'false');
-        $('body').removeClass('menu--is-open');
-        $('.coop-u-flex__sidebar').removeClass('coop-u-flex__sidebar--is-open').attr('aria-hidden', 'true');
-        $('.coop-u-flex__sidebar a').attr('tabindex', '-1');
-        $('.el-c-search__input').attr('tabindex', '-1');
-        $('.coop-nav-scroll').removeClass('coop-nav-scroll--is-open');
-        $('.menu-bg').hide();
-      }
-    });
-  });
-  $(document).keyup(function (e) {
-    if (e.which == 27 && $('.coop-search-results').hasClass('is-open')) {
-      $('.el-c-search__results-bg').hide();
-      $('.coop-search-results').removeClass('is-open').attr('aria-hidden', 'true');
-      $('.coop-search-results a').attr('tabindex', '-1');
-      $('body').removeClass('modal-open');
-      $('.coop-search-results').empty();
-    }
-});
+})
