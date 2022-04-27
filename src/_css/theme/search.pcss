@@ -51,10 +51,6 @@
   left: 0;
   display: none;
   pointer-events:none;
-  &.is-open {
-    display:block;
-    pointer-events:all;
-  }
 }
 
 .el-c-search__form {
@@ -75,34 +71,7 @@
   width: 100%;
 }
 
-.coop-search-results.is-open {
-  position: absolute;
-  z-index: 10;
-  top: 40px; 
-  left: 0;
-  min-height: 76px;
-  max-height: 400px;
-  width: 300px;
-  margin: var(--spacing-16) 0 0;
-  padding: var(--spacing-8);
-  background: var(--color-white);
-  border-bottom-left-radius: var(--ui-border-radius);
-  border-bottom-right-radius: var(--ui-border-radius);
-  padding-bottom: 0;
-  overflow-y: auto;
-  display:block;
-}
-
-@media (--mq-medium) {
-  .coop-search-results.is-open {
-    width: 600px;
-  }
-  .el-c-search .coop-form__input:focus {
-    width:584px;
-  }
-}
-
-.results-bg.is-open {
+.results-bg {
   position: absolute;
   min-height: 61px;
   max-height: 400px;
@@ -114,25 +83,15 @@
   box-shadow: var(--ui-shadow);
   border-top-left-radius: var(--ui-border-radius);
   border-top-right-radius: var(--ui-border-radius);
-
+  display: none;
 }
+
 .results-bg span.results-placeholder {
   display:none;
   font-size:1rem;
   padding:1rem;
 }
-.results-bg.is-open #results-container:empty + span.results-placeholder {
-    position:absolute;
-    top:3rem;
-    display:block;
-    z-index:898;
-}
 
-@media (--mq-medium) {
-  .results-bg.is-open {
-    width: 600px;
-  }
-}
 
 .results-wrapper {
   width: 100vw;
@@ -179,6 +138,49 @@
   font-size: 1rem;
 }
 
-.modal-open {
+body.search-open {
   overflow: hidden;
+
+  & .el-c-search__results-bg {
+    display:block;
+    pointer-events:all;
+  }
+
+  & .coop-search-results {
+    position: absolute;
+    z-index: 10;
+    top: 40px; 
+    left: 0;
+    min-height: 76px;
+    max-height: 400px;
+    width: 300px;
+    margin: var(--spacing-16) 0 0;
+    padding: var(--spacing-8);
+    background: var(--color-white);
+    border-bottom-left-radius: var(--ui-border-radius);
+    border-bottom-right-radius: var(--ui-border-radius);
+    padding-bottom: 0;
+    overflow-y: auto;
+    display:block;
+  }
+  & .results-bg {
+    display: block;
+  }
+  & .results-bg #results-container:empty + span.results-placeholder {
+    position:absolute;
+    top:3rem;
+    display:block;
+    z-index:898;
+  }
+  
+  @media (--mq-medium) {
+    & .coop-search-results,
+    & .results-bg {
+      width: 600px;
+    }
+    & .el-c-search .coop-form__input:focus {
+      width:584px;
+    }
+  }
+
 }
