@@ -104,6 +104,7 @@ const handleInteractions = () => {
       searchResults.classList.remove('is-open')
       searchResultsContainer.classList.remove('is-open')
       searchResults.setAttribute('aria-hidden', true)
+      searchSmallInput.blur()
       //searchResults.innerHTML = ''
       document.body.classList.remove('modal-open')
     }
@@ -157,7 +158,8 @@ const handleInteractions = () => {
 
   document.addEventListener('keyup', (e) => {
     if(e.key==='Escape') {
-      destroySearchFocus()
+      if(document.activeElement === searchSmallInput) { destroySearchFocus(); return }
+      if(menuToggle.classList.contains('is-open')) { closeMenu(); return }
     }
   })
 }
