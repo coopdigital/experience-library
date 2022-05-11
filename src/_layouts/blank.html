@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,7 +9,9 @@
     <link rel="shortcut icon" type="image/jpg" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% assign versionDateCSS = site.time | date: '%s' %}
-    <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"><!--<![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}">
+    <!--<![endif]-->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url  }}">
     {% if jekyll.environment == "production" %}
     {% remote_include https://static.coop.co.uk/cookie-consent-banner/coop/production.html %}
@@ -17,7 +20,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-204246589-1', { cookie_flags: 'SameSite=None;Secure' });
     </script>
@@ -26,11 +29,12 @@
             background: url('{{ "/images/search.svg" | prepend: site.baseurl }}');
         }
     </style>
-    </head>
+</head>
+
 <body>
     {% include header.html %}
     {% include skip-nav.html %}
-    <div class="coop-u-flex coop-l-content">
+    <div class="coop-l-content">
         {{ content }}
         <div class="menu-bg"></div>
     </div>
@@ -52,4 +56,5 @@
     {% assign versionDateJS = site.time | date: '%s' %}
     <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
 </body>
+
 </html>
