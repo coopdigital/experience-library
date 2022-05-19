@@ -3,8 +3,9 @@ layout: coop-experience
 id: index
 item-url: /elements/searchable-dropdown.html
 section: Elements
-meta-title:	Searchable dropdown - Co-op Experience Library
+meta-title: Searchable dropdown - Co-op Experience Library
 meta-description: Find out how to use a searchable dropdown when designing digital products and services for Co-op.
+excluded-from-search: true
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -12,10 +13,10 @@ col-width: 7
 section-title: Elements
 title: Searchable dropdown
 last-reviewed: Last reviewed&#58; 15 Feb 2022
-intro-text-lead: 
+intro-text-lead:
   - A searchable dropdown allows people to type in the field to filter a pre-populated list of options.
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/searchable-dropdown-hero.svg
+decorative-image-url: /images/decorative/searchable-dropdown-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: False
@@ -29,129 +30,225 @@ changelog:
   - date: 15 Feb 2022
     notes: First version of page published
 ---
+
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
-            
-            {% include hero.html %}
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2>Guidelines</h2>
+            <p>Use a searchable dropdown if:</p>
+            <ul>
+              <li>
+                there's a pre-populated list of options someone can choose from
+              </li>
+              <li>
+                it’s likely that someone knows how they want to answer before
+                seeing the list
+              </li>
+            </ul>
+            <p>
+              Long lists of options can be hard for some people to use. Consider
+              whether people may be able to answer the question more easily if
+              you:
+            </p>
+            <ul>
+              <li>
+                reword the question so that it has fewer options, and then use
+                radio buttons
+              </li>
+              <li>
+                use a text input, for example for data which is very familiar to
+                people like their date of birth
+              </li>
+            </ul>
+            <p>Go to the guidelines on:</p>
+            <ul>
+              <li>
+                <a
+                  href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}"
+                  >radio buttons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ '/elements/text-inputs.html' | prepend: site.baseurl }}"
+                  >text inputs</a
+                >
+              </li>
+            </ul>
+            <p>
+              Order the options so that it reduces effort for people. For
+              example, you could order alphabetically or by the most common
+              options.
+            </p>
+            <p>
+              For consistency across Co-op products and services, do not change
+              the styling of a searchable dropdown.
+            </p>
+            <h3>Size</h3>
+            <p>
+              Set the width of the dropdown so that it is appropriate for the
+              amount of information someone needs to enter. Do not make it too
+              wide or too narrow. Too wide and it might intimidate or confuse,
+              too narrow and it might frustrate.
+            </p>
+            <h3>Label</h3>
+            <p>
+              A searchable dropdown must have a label that tells people what
+              information to enter. Space form fields evenly and close to their
+              associated label.
+            </p>
+            <p>The label should:</p>
+            <ul>
+              <li>be short</li>
+              <li>make it clear what information you’re asking for</li>
+              <li>be above the field</li>
+            </ul>
+            <h3>Hint text</h3>
+            <p>
+              You can add optional hint text to help people understand the
+              information they need to select.
+            </p>
+            <h3>Error messages</h3>
+            <p>Give error messages after the user submits the form.</p>
+            <p>
+              Error messages should appear above the searchable dropdown. This
+              means they are read out by assistive technology in an order that
+              makes sense.
+            </p>
+            <p>
+              <a
+                href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}"
+                >Go to the guidelines on form validation</a
+              >.
+            </p>
+            <h3>Focus ring</h3>
+            <p>
+              The focus ring appears as a purple outline around any object,
+              including searchable dropdowns, when someone selects it.
+            </p>
+            <p>
+              Do not remove the focus ring. Some people who use assistive
+              technology need it to navigate our products and services.
+            </p>
+          </div>
         </div>
-        <section class="coop-l-page">
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Guidelines</h2>
-                        <p>Use a searchable dropdown if:</p>
-                        <ul>
-                            <li>there's a pre-populated list of options someone can choose from</li>
-                            <li>it’s likely that someone knows how they want to answer before seeing the list </li>
-                        </ul>
-                        <p>Long lists of options can be hard for some people to use. Consider whether people may be able to answer the question more easily if you:</p>
-                        <ul>
-                            <li>reword the question so that it has fewer options, and then use radio buttons</li>
-                            <li>use a text input, for example for data which is very familiar to people like their date of birth</li>
-                        </ul>
-                        <p>Go to the guidelines on:</p>
-                        <ul>
-                            <li><a href="{{ '/elements/radio-buttons.html' | prepend: site.baseurl }}">radio buttons</a></li>
-                            <li><a href="{{ '/elements/text-inputs.html' | prepend: site.baseurl }}">text inputs</a></li>
-                        </ul>
-                        <p>Order the options so that it reduces effort for people. For example, you could order alphabetically or by the most common options.</p>
-                        <p>For consistency across Co-op products and services, do not change the styling of a searchable dropdown.</p>
-                        <h3>Size</h3>
-                        <p>Set the width of the dropdown so that it is appropriate for the amount of information someone needs to enter. Do not make it too wide or too narrow. Too wide and it might intimidate or confuse, too narrow and it might frustrate.</p>
-                        <h3>Label</h3>
-                        <p>A searchable dropdown must have a label that tells people what information to enter. Space form fields evenly and close to their associated label.</p>
-                        <p>The label should:</p>
-                        <ul>
-                            <li>be short</li>
-                            <li>make it clear what information you’re asking for</li>
-                            <li>be above the field</li>
-                        </ul>
-                        <h3>Hint text</h3>
-                        <p>You can add optional hint text to help people understand the information they need to select.</p>
-                        <h3>Error messages</h3>
-                        <p>Give error messages after the user submits the form.</p>
-                        <p>Error messages should appear above the searchable dropdown. This means they are read out by assistive technology in an order that makes sense.</p>
-                        <p><a href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}">Go to the guidelines on form validation</a>.</p>
-                        <h3>Focus ring</h3>
-                        <p>The focus ring appears as a purple outline around any object, including searchable dropdowns, when someone selects it.</p>
-                        <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section">
-                <div class="el-c-pullout">
-                    <div class="el-c-pullout-header">
-                        <h3>Examples</h3> 
-                    </div>
-                    <div class="el-c-pullout-content">
-                        <div class="coop-l-grid">
-                            <div class="coop-l-grid__item coop-l-grid__item--large-6">
-                                <form id="selects" class="coop-form" novalidate>
-                                    <div class="coop-form__row">
-                                        <label class="coop-form__label" for="sort-by-1">Sort by:</label>       
-                                        <p id="sort-by-1-error" class="coop-form__error" hidden></p>
-                                        <select id="sort-by-1" class="coop-form__field coop-form__select">
-                                            <option value="">Select option</option>
-                                            <option value="relevancy" selected>Relevancy</option>
-                                            <option value="price-asc">Price: Low to high</option>
-                                            <option value="price-desc">Price: High to low</option>
-                                        </select>
-                                    </div>
-                                </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Select dropdown.</p>
-                                <form id="selects-hint" class="coop-form" novalidate>
-                                    <div class="coop-form__row">
-                                        <label class="coop-form__label" for="sort-by-2">Sort by:</label>
-                                        <p id="sort-by-2-hint" class="coop-form__hint">This is an example hint</p>
-                                        <p id="sort-by-2-error" class="coop-form__error" hidden></p>
-                                        <select id="sort-by-2" class="coop-form__field coop-form__select" aria-describedby="sort-by-2-hint">
-                                            <option value="">Select option</option>
-                                            <option value="relevancy" selected>Relevancy</option>
-                                            <option value="price-asc">Price: Low to high</option>
-                                            <option value="price-desc">Price: High to low</option>
-                                        </select>
-                                    </div>
-                                </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Select dropdown with hint text.</p>
-                                <form id="selects-error" class="coop-form" novalidate>
-                                    <div class="coop-form__row">
-                                        <label class="coop-form__label" for="sort-by-3">Sort by:</label>
-                                        <p id="sort-by-3-error" class="coop-form__error">Select a sort by option</p>
-                                        <select id="sort-by-3" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-3-error">
-                                            <option value="">Select option</option>
-                                            <option value="relevancy">Relevancy</option>
-                                            <option value="price-asc">Price: Low to high</option>
-                                            <option value="price-desc">Price: High to low</option>
-                                        </select>
-                                    </div>
-                                </form>
-                                <p class="coop-t-caption coop-u-margin-resp-b-64-32">Select dropdown with error message.</p>
-                                <form id="selects-hint-error" class="coop-form" novalidate>
-                                    <div class="coop-form__row">
-                                        <label class="coop-form__label" for="sort-by-4">Sort by:</label>
-                                        <p id="sort-by-4-hint" class="coop-form__hint">This is an example hint</p>
-                                        <p id="sort-by-4-error" class="coop-form__error">Select a sort by option</p>
-                                        <select id="sort-by-4" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-4-hint sort-by-4-error">
-                                            <option value="">Select option</option>
-                                            <option value="relevancy">Relevancy</option>
-                                            <option value="price-asc">Price: Low to high</option>
-                                            <option value="price-desc">Price: High to low</option>
-                                    </select>
-                                    </div>
-                                </form>
-                                <p class="coop-t-caption">Select dropdown with hint text and error message.</p>
-                            </div>
-                        </div>
-                    </div>  
-                </div> 
-            </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="el-c-pullout">
+          <div class="el-c-pullout-header">
+            <h3>Examples</h3>
+          </div>
+          <div class="el-c-pullout-content">
             <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
+              <div class="coop-l-grid__item coop-l-grid__item--large-6">
+                <form id="selects" class="coop-form" novalidate>
+                  <div class="coop-form__row">
+                    <label class="coop-form__label" for="sort-by-1"
+                      >Sort by:</label
+                    >
+                    <p id="sort-by-1-error" class="coop-form__error" hidden></p>
+                    <select
+                      id="sort-by-1"
+                      class="coop-form__field coop-form__select"
+                    >
+                      <option value="">Select option</option>
+                      <option value="relevancy" selected>Relevancy</option>
+                      <option value="price-asc">Price: Low to high</option>
+                      <option value="price-desc">Price: High to low</option>
+                    </select>
+                  </div>
+                </form>
+                <p class="coop-t-caption coop-u-margin-resp-b-64-32">
+                  Select dropdown.
+                </p>
+                <form id="selects-hint" class="coop-form" novalidate>
+                  <div class="coop-form__row">
+                    <label class="coop-form__label" for="sort-by-2"
+                      >Sort by:</label
+                    >
+                    <p id="sort-by-2-hint" class="coop-form__hint">
+                      This is an example hint
+                    </p>
+                    <p id="sort-by-2-error" class="coop-form__error" hidden></p>
+                    <select
+                      id="sort-by-2"
+                      class="coop-form__field coop-form__select"
+                      aria-describedby="sort-by-2-hint"
+                    >
+                      <option value="">Select option</option>
+                      <option value="relevancy" selected>Relevancy</option>
+                      <option value="price-asc">Price: Low to high</option>
+                      <option value="price-desc">Price: High to low</option>
+                    </select>
+                  </div>
+                </form>
+                <p class="coop-t-caption coop-u-margin-resp-b-64-32">
+                  Select dropdown with hint text.
+                </p>
+                <form id="selects-error" class="coop-form" novalidate>
+                  <div class="coop-form__row">
+                    <label class="coop-form__label" for="sort-by-3"
+                      >Sort by:</label
+                    >
+                    <p id="sort-by-3-error" class="coop-form__error">
+                      Select a sort by option
+                    </p>
+                    <select
+                      id="sort-by-3"
+                      class="coop-form__field coop-form__select coop-form__invalid"
+                      aria-describedby="sort-by-3-error"
+                    >
+                      <option value="">Select option</option>
+                      <option value="relevancy">Relevancy</option>
+                      <option value="price-asc">Price: Low to high</option>
+                      <option value="price-desc">Price: High to low</option>
+                    </select>
+                  </div>
+                </form>
+                <p class="coop-t-caption coop-u-margin-resp-b-64-32">
+                  Select dropdown with error message.
+                </p>
+                <form id="selects-hint-error" class="coop-form" novalidate>
+                  <div class="coop-form__row">
+                    <label class="coop-form__label" for="sort-by-4"
+                      >Sort by:</label
+                    >
+                    <p id="sort-by-4-hint" class="coop-form__hint">
+                      This is an example hint
+                    </p>
+                    <p id="sort-by-4-error" class="coop-form__error">
+                      Select a sort by option
+                    </p>
+                    <select
+                      id="sort-by-4"
+                      class="coop-form__field coop-form__select coop-form__invalid"
+                      aria-describedby="sort-by-4-hint sort-by-4-error"
+                    >
+                      <option value="">Select option</option>
+                      <option value="relevancy">Relevancy</option>
+                      <option value="price-asc">Price: Low to high</option>
+                      <option value="price-desc">Price: High to low</option>
+                    </select>
+                  </div>
+                </form>
+                <p class="coop-t-caption">
+                  Select dropdown with hint text and error message.
+                </p>
+              </div>
             </div>
-        </section>
-    </main>
-    {% include footer.html %}
+          </div>
+        </div>
+      </div>
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+          {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
 </div>

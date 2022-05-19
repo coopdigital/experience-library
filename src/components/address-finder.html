@@ -3,8 +3,9 @@ layout: coop-experience
 id: index
 section: Components
 item-url: /components/address-finder.html
-meta-title:	Address finder
+meta-title: Address finder
 meta-description: Find out how to use an address finder when designing digital products and services for Co-op.
+excluded-from-search: true
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -12,10 +13,10 @@ col-width: 7
 section-title: Components
 title: Address finder
 last-reviewed: Last reviewed&#58; 31 March 2022
-intro-text-lead: 
-  - An address finder allows people to enter part of a UK address into a field to filter relevant suggestions.  
+intro-text-lead:
+  - An address finder allows people to enter part of a UK address into a field to filter relevant suggestions.
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/address-finder-hero.svg
+decorative-image-url: /images/decorative/address-finder-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: false
@@ -26,8 +27,8 @@ link-box-link-dev: /examples/components/search.html
 
 # Example (add path to html include or path to image)
 example-html: foundations/foundations-tables/tables.html
-example-image: 
-example-image-alt: 
+example-image:
+example-image-alt:
 
 # Changelog
 changelog:
@@ -36,133 +37,202 @@ changelog:
 ---
 
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
-            
-            {% include hero.html %}
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <h2>Guidelines</h2>
+            <p>
+              If you use an address finder, make it clear that it will only find
+              UK addresses.
+            </p>
+            <p>
+              Address finders can help people to find an address by entering
+              information they choose. This could be any part of an address,
+              including a postcode.
+            </p>
+            <p>
+              As people enter information, suggested results will be displayed
+              in a list. The more information someone enters, the more the
+              results will be narrowed down. People can then select an address
+              from the list.
+            </p>
+            <p>
+              For consistency across Co-op products and services, do not change
+              the styling of the address finder.
+            </p>
+            <h3>Manual address entry</h3>
+            <p>
+              People can also choose to enter their address manually. This helps
+              people who have:
+            </p>
+            <ul>
+              <li>a non-UK address</li>
+              <li>an address that’s not listed in the finder</li>
+              <li>an address that is not listed in the way the person wants</li>
+            </ul>
+            <p>
+              If the user selects the option to enter their address manually,
+              then the address finder will be replaced by text input fields.
+            </p>
+            <p>
+              They can use these inputs to enter their address or they can
+              select a link to return to the address finder.
+            </p>
+          </div>
         </div>
-        <section class="coop-l-page">
-            <div class="el-c-primary-section"> 
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h3>Label</h3>
+            <p>
+              The address finder and manual address entry must have labels that
+              tell people what information to enter.
+            </p>
+            <p>
+              The labels must be short and make it clear what information you’re
+              asking for, for example ‘Your address’.
+            </p>
+            <h3>Hint text</h3>
+            <p>
+              You can add optional hint text to help people understand the
+              information they need to enter.
+            </p>
+            <p>
+              For example, ‘This will be the address that we’ll send your
+              Membership card to.’
+            </p>
+            <h3>Placeholder text</h3>
+            <p>
+              Placeholder text is text inside an input that disappears when
+              someone selects that input.
+            </p>
+            <p>
+              Do not use placeholder text. It can be hard for people to remember
+              what it said.
+            </p>
+            <h3>Error messages</h3>
+            <p>Give error messages after the user submits the form.</p>
+            <p>
+              Error messages should appear above the address finder or manual
+              address entry. This means they are read out by assistive
+              technology in an order that makes sense.
+            </p>
+            <p>
+              <a href="/patterns/form-validation.html"
+                >Go to our guidelines on form validation</a
+              >.
+            </p>
+            <h3>Focus ring</h3>
+            <p>
+              The focus ring appears as a purple outline around any object,
+              including an address finder and manual address entry when someone
+              selects them.
+            </p>
+            <p>
+              Do not remove the focus ring. Some people who use assistive
+              technology need it to navigate our products and services.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header">
+                <h2>Example</h2>
+              </div>
+              <div class="el-c-pullout-content">
                 <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
-                        <h2>Guidelines</h2>
-                        <p>If you use an address finder, make it clear that it will only find UK addresses.</p>
-                        <p>Address finders can help people to find an address by entering information they choose. This could be any part of an address, including a postcode.</p>
-                        <p>As people enter information, suggested results will be displayed in a list. The more information someone enters, the more the results will be narrowed down. People can then select an address from the list.</p>
-                        <p>For consistency across Co-op products and services, do not change the styling of the address finder.</p>                        
-                        <h3>Manual address entry</h3>
-                        <p>People can also choose to enter their address manually. This helps people who have:</p>
-                        <ul>
-                            <li>a non-UK address</li>
-                            <li>an address that’s not listed in the finder</li>
-                            <li>an address that is not listed in the way the person wants</li>
-                        </ul>
-                        <p>If the user selects the option to enter their address manually, then the address finder will be replaced by text input fields.</p>
-                        <p>They can use these inputs to enter their address or they can select a link to return to the address finder.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section"> 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h3>Label</h3>
-                        <p>The address finder and manual address entry must have labels that tell people what information to enter.</p>
-                        <p>The labels must be short and make it clear what information you’re asking for, for example ‘Your address’.</p>
-                        <h3>Hint text</h3>
-                        <p>You can add optional hint text to help people understand the information they need to enter.</p>
-                        <p>For example, ‘This will be the address that we’ll send your Membership card to.’</p>
-                        <h3>Placeholder text</h3>
-                        <p>Placeholder text is text inside an input that disappears when someone selects that input.</p>
-                        <p>Do not use placeholder text. It can be hard for people to remember what it said.</p>
-                        <h3>Error messages</h3>
-                        <p>Give error messages after the user submits the form.</p>
-                        <p>Error messages should appear above the address finder or manual address entry. This means they are read out by assistive technology in an order that makes sense.</p>
-                        <p><a href="/patterns/form-validation.html">Go to our guidelines on form validation</a>.</p>
-                        <h3>Focus ring</h3>
-                        <p>The focus ring appears as a purple outline around any object, including an address finder and manual address entry when someone selects them.</p>
-                        <p>Do not remove the focus ring. Some people who use assistive technology need it to navigate our products and services.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section"> 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <div class="el-c-pullout">
-                            <div class="el-c-pullout-header">
-                                <h2>Example</h2>
-                            </div>
-                            <div class="el-c-pullout-content">
-                                <div class="coop-l-grid">
-                                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                                        <form id="date-inputs" class="coop-form" novalidate>                                          
-                                            <div class="coop-form__row">
-                                              <fieldset id="dob-1" aria-describedby="dob-1-hint">
-                                                <legend class="coop-form__label">What is your date of birth?</legend>
-                                          
-                                                <p id="dob-1-hint" class="coop-form__hint">For example 21 8 1990</p>
-                                                <p id="dob-1-error" class="coop-form__error" hidden></p>
-                                          
-                                                <div class="coop-form__columns">
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-1-day">Day</label>
-                                                    <input
-                                                      id="dob-1-day"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-day"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-1-month">Month</label>
-                                                    <input
-                                                      id="dob-1-month"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="2"
-                                                      minlength="2"
-                                                      autocomplete="bday-month"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-2"
-                                                    >
-                                                  </div>
-                                          
-                                                  <div class="coop-form__column">
-                                                    <label class="coop-form__label" for="dob-1-year">Year</label>
-                                                    <input
-                                                      id="dob-1-year"
-                                                      type="text"
-                                                      pattern="[0-9]*"
-                                                      inputmode="numeric"
-                                                      maxlength="4"
-                                                      minlength="4"
-                                                      autocomplete="bday-year"
-                                                      class="coop-form__field coop-form__input coop-form__input--width-4"
-                                                    >
-                                                  </div>
-                                                </div>
-                                              </fieldset>
-                                            </div>
-                                        </form>
-                                        <p class="coop-t-caption">Date input with legend, hint text and 3 input labels.</p>
-                                    </div>                                
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
-            </div>
-        </section>
-    </main>
-{% include footer.html %}
-</div>
+                  <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <form id="date-inputs" class="coop-form" novalidate>
+                      <div class="coop-form__row">
+                        <fieldset id="dob-1" aria-describedby="dob-1-hint">
+                          <legend class="coop-form__label">
+                            What is your date of birth?
+                          </legend>
 
+                          <p id="dob-1-hint" class="coop-form__hint">
+                            For example 21 8 1990
+                          </p>
+                          <p
+                            id="dob-1-error"
+                            class="coop-form__error"
+                            hidden
+                          ></p>
+
+                          <div class="coop-form__columns">
+                            <div class="coop-form__column">
+                              <label class="coop-form__label" for="dob-1-day"
+                                >Day</label
+                              >
+                              <input
+                                id="dob-1-day"
+                                type="text"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                maxlength="2"
+                                minlength="2"
+                                autocomplete="bday-day"
+                                class="coop-form__field coop-form__input coop-form__input--width-2"
+                              />
+                            </div>
+
+                            <div class="coop-form__column">
+                              <label class="coop-form__label" for="dob-1-month"
+                                >Month</label
+                              >
+                              <input
+                                id="dob-1-month"
+                                type="text"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                maxlength="2"
+                                minlength="2"
+                                autocomplete="bday-month"
+                                class="coop-form__field coop-form__input coop-form__input--width-2"
+                              />
+                            </div>
+
+                            <div class="coop-form__column">
+                              <label class="coop-form__label" for="dob-1-year"
+                                >Year</label
+                              >
+                              <input
+                                id="dob-1-year"
+                                type="text"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                maxlength="4"
+                                minlength="4"
+                                autocomplete="bday-year"
+                                class="coop-form__field coop-form__input coop-form__input--width-4"
+                              />
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </form>
+                    <p class="coop-t-caption">
+                      Date input with legend, hint text and 3 input labels.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+          {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
+</div>
