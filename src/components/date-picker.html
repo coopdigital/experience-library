@@ -102,7 +102,8 @@ changelog:
               has an error, for example ‘enter your year of birth’.
             </p>
             <p>
-              <a href="/patterns/form-validation.html"
+              <a
+                href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}"
                 >Go to our guidelines on form validation</a
               >.
             </p>
@@ -157,7 +158,6 @@ changelog:
                           <legend class="coop-form__label">
                             What is your date of birth?
                           </legend>
-
                           <p id="dob-1-hint" class="coop-form__hint">
                             For example 21 8 1990
                           </p>
