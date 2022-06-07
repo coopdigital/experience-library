@@ -1,0 +1,186 @@
+---
+layout: coop-experience
+id: index
+section: Components
+item-url: /components/price-input.html
+meta-title: Price input
+meta-description: Find out how to use price inputs when designing digital products and services for Co-op.
+excluded-from-search: true
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Components
+title: Price input
+last-reviewed: Last reviewed&#58; 7 June 2022
+intro-text-lead:
+  - Price inputs are fields that allow people to enter a cost.
+# Image at the top of the hero
+decorative-image-url: /images/decorative/date-picker-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View search in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=3992%3A1370
+link-box-text-dev: View code snippet
+link-box-link-dev: /examples/components/search.html
+
+# Example (add path to html include or path to image)
+example-html:
+example-image:
+example-image-alt:
+
+# Changelog
+changelog:
+  - date: 7 June 2022
+    notes: First version of page published
+---
+
+<div class="coop-u-flex__main">
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <h2>Guidelines</h2>
+            <h3>Behaviour</h3>
+            <p>
+              The price input behaves like a
+              <a
+                href="{{ '/elements/text-inputs.html' | prepend: site.baseurl }}"
+                >text input</a
+              >, but only accepts a number. We have designed a price input with
+              a “&pound;” prefix to tell the user that the information being
+              requested by the field is an amount in pounds.
+            </p>
+            <h3>Field width</h3>
+            <p>
+              Use a price input that is appropriate for the amount of
+              information someone needs to enter. Do not make it too wide or too
+              narrow. Too wide and it might intimidate or confuse, too narrow
+              and it might frustrate.
+            </p>
+            <h3>Mobile numeric keypad</h3>
+            <p>
+              On touch devices, the price input should trigger the numeric
+              keypad with a decimal point.
+            </p>
+            <h3>Formatting the price</h3>
+            <p>When formatting the price you should:</p>
+            <ul>
+              <li>
+                format with commas to more clearly represent a pounds as the
+                user types
+              </li>
+              <li>allow the user to enter a decimal value</li>
+              <li>
+                not show an error if the user doesn't enter a decimal value but
+                one is required, instead when the form is submitted add a value
+                of “.00”
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2>Required elements</h2>
+            <h3>Label</h3>
+            <p>
+              Price inputs must have a label that tells people what information
+              to enter. Space form fields evenly and close to their associated
+              label.
+            </p>
+            <p>
+              The label must be short and make it clear what you're asking for.
+            </p>
+            <h3>Prefix</h3>
+            <p>
+              The prefix on the number input helps the user understand what kind
+              of information is required.
+            </p>
+            <p>
+              Make sure you use a clear label as well as the prefix. For
+              example, if you're asking someone to enter the value of their car,
+              your form label should say, “Car value, in pounds”.
+            </p>
+            <h3>Error messages</h3>
+            <p>
+              Use error messages with the
+              <a
+                href="{{ '/patterns/form-validation.html' | prepend: site.baseurl }}"
+                >form validation pattern</a
+              >
+            </p>
+            <p>
+              Give error messages after the user submits the form. Do not give
+              them as someone is entering information into each text input. This
+              can cause stress and frustration.
+            </p>
+            <p>
+              Error messages should appear above the relevant text input. This
+              means they are read out by assistive technology in an order that
+              makes sense.
+            </p>
+            <p>Go to the guidelines on form designing a form</p>
+            <h3>Focus ring</h3>
+            <p>
+              The focus ring appears as a purple outline around any interactive
+              object, including inputs, when someone selects it.
+            </p>
+            <p>
+              Do not remove the focus ring. Some people who use assistive
+              technology need it to navigate our products and services.
+            </p>
+            <h2>Optional elements</h2>
+            <h3>Hint text</h3>
+            <p>
+              You can add optional hint text to help people understand the
+              information they need to enter.
+            </p>
+            <p>
+              For example, a number field might have the hint text 'For example,
+              enter 2000'.
+            </p>
+            <h3>Placeholder text</h3>
+            <p>
+              Placeholder text is text inside an input that disappears when
+              someone selects that input.
+            </p>
+            <p>
+              Do not use placeholder text. It can be hard for people to remember
+              what it said.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header">
+                <h2>Example</h2>
+              </div>
+              <div class="el-c-pullout-content">
+                <div class="coop-l-grid">
+                  <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    <p>Price input examples goes here</p>
+                    <p class="coop-t-caption">Caption text.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+          {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
+</div>
