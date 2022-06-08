@@ -4,6 +4,7 @@ id: index
 description: 
 section: Components
 item-url: /components/list-of-links.html
+excluded-from-search: true
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -34,122 +35,208 @@ changelog:
   - date: 14 April 2021
     notes: First version of page published
 ---
+
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
-            
-            {% include hero.html %}
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header">
+                <h2>Example</h2>
+              </div>
+              <div class="el-c-pullout-content">
+                <div class="coop-l-grid">
+                  <div class="coop-l-grid__item coop-l-grid__item--large-3">
+                    <div class="coop-c-list-container">
+                      <h3 class="coop-c-list-container__title coop-t-h3">
+                        World flavours
+                      </h3>
+                      <ul class="coop-c-list-container__list">
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            American
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Asian
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            British
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Chinese
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Indian
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Italian
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Mexican
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Mediterranean
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Middle Eastern
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Scottish
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="coop-c-list-container__list-link"
+                            href="#"
+                            data-contenttype="Link list"
+                            data-contentparent=""
+                            data-linktext=""
+                          >
+                            Spanish
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p class="coop-t-caption">
+                  A list of links that highlights recipe categories.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <section class="coop-l-page">
-            <div class="el-c-primary-section"> 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <div class="el-c-pullout">
-                            <div class="el-c-pullout-header">
-                                <h2>Example</h2>
-                            </div>
-                            <div class="el-c-pullout-content">
-                                <div class="coop-l-grid">
-                                    <div class="coop-l-grid__item coop-l-grid__item--large-3">
-                                        <div class="coop-c-list-container">
-                                            <h3 class="coop-c-list-container__title coop-t-h3">World flavours</h3>
-                                                <ul class="coop-c-list-container__list">
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        American
-                                                    </a>
-                                                </li>	
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Asian
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        British
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Chinese
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Indian
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Italian
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Mexican
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Mediterranean
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Middle Eastern
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Scottish
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="coop-c-list-container__list-link" href="#" data-contenttype="Link list" data-contentparent="" data-linktext="">
-                                                        Spanish
-                                                    </a>
-                                                </li>
-                                                </ul>
-                                        </div>   
-                                    </div>
-                                </div>
-                                <p class="coop-t-caption"> A list of links that highlights recipe categories.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section"> 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Required elements</h2>
-                        <h3>Title</h3>
-                        <p>Links within the skip navigation component should take the user directly to the main areas of the page. These are usually the:</p>
-                        <ul>
-                            <li>navigation</li>
-                            <li>main content</li>
-                            <li>footer</li> 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section"> 
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
-                        <h2>Using skip navigation on a page</h2>
-                        <p>The skip navigation function should be the first thing that appears on a page when it has loaded and a user presses the tab key.</p>
-                        <p>Pressing the tab key again should then cycle through ‘skip to content’, ‘skip to navigation’ and ‘skip to footer’ links.</p>
-                        <p>Pressing enter will take the user to the correct part of the page and apply the focus ring to the first interactive element in that section.</p>
-                        <p>If the user tabs through the skip navigation without selecting an option the Co-op logo should be the next element that has the focus ring applied.</p>       
-                    </div>
-                </div>
-            </div>
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
-            </div>
-        </section>
-    </main>
-{% include footer.html %}
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2>Required elements</h2>
+            <h3>Title</h3>
+            <p>
+              Links within the skip navigation component should take the user
+              directly to the main areas of the page. These are usually the:
+            </p>
+            <ul>
+              <li>navigation</li>
+              <li>main content</li>
+              <li>footer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-8">
+            <h2>Using skip navigation on a page</h2>
+            <p>
+              The skip navigation function should be the first thing that
+              appears on a page when it has loaded and a user presses the tab
+              key.
+            </p>
+            <p>
+              Pressing the tab key again should then cycle through ‘skip to
+              content’, ‘skip to navigation’ and ‘skip to footer’ links.
+            </p>
+            <p>
+              Pressing enter will take the user to the correct part of the page
+              and apply the focus ring to the first interactive element in that
+              section.
+            </p>
+            <p>
+              If the user tabs through the skip navigation without selecting an
+              option the Co-op logo should be the next element that has the
+              focus ring applied.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+          {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
 </div>
