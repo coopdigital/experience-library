@@ -2,8 +2,8 @@
 layout: coop-experience
 id: index
 section: Forms
-item-url: /forms/form-design-guidelines.html
-meta-title: Form design guidelines
+item-url: /forms/form-design.html
+meta-title: Form design
 meta-description: Find out how to design forms for digital products and services for Co-op.
 excluded-from-search: true
 
@@ -11,8 +11,8 @@ excluded-from-search: true
 # Set width of content (options 6 [50% width] - 12 [100% width] )
 col-width: 8
 section-title: Forms
-title: Form design guidelines
-last-reviewed: Last reviewed&#58; 9 June 2022
+title: Form design
+last-reviewed: Last reviewed&#58; 14 June 2022
 intro-text-lead:
   - Consistent and best practice form design makes our products intuitive. This means people can focus on their task without learning how a Co-op product works every time they use one.
 # Image at the top of the hero
@@ -27,16 +27,16 @@ link-box-link-dev:
 
 # In page nav
 in-page-nav:
-  - link-id: anchor-form-anatomy
-    link-text: Form anatomy
-  - link-id: anchor-form-layout-and-hierarchy
-    link-text: Form layout and hierarchy
-  - link-id: anchor-labels-input-fields-and-buttons
-    link-text: Labels, input fields and buttons
-  - link-id: anchor-which-buttons-to-use-where
-    link-text: Which buttons to use where
-  - link-id: anchor-form-spacing
-    link-text: Form spacing
+  - link-id: anchor-elements-of-a-form
+    link-text: Elements of a form
+  - link-id: anchor-layout-and-hierarchy
+    link-text: Layout and hierarchy
+  - link-id: anchor-grouping-structure-and-flow
+    link-text: Grouping, structure and flow
+  - link-id: anchor-labels-and-input-fields
+    link-text: Labels and input fields
+  - link-id: anchor-buttons
+    link-text: Buttons
 
 # Example (add path to html include or path to image)
 example-html:
@@ -56,8 +56,8 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2 id="anchor-form-anatomy">Form anatomy</h2>
-            <p>An example of how to structure a form.</p>
+            <h2 id="anchor-elements-of-a-form">Elements of a form</h2>
+            <p>Forms can be made up of a range of elements.</p>
           </div>
           <div class="coop-l-grid__item coop-l-grid__item--large-12">
             <div class="el-c-pullout">
@@ -107,24 +107,18 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2 id="anchor-form-layout-and-hierarchy">
-              Form layout and hierarchy
+            <h2 id="anchor-layout-and-hierarchy">
+              Layout and hierarchy
             </h2>
-            <h3>One column and multiple columns</h3>
+            <h3>Use a single column layout for forms</h3>
             <p>
-              When form fields are in multiple columns, users have to scan
-              across the page to understand the content. If they use a screen
-              magnifier to zoom into the page they might not see some of the
-              fields.
+              This allows the user to focus on one field at a time, making it easier for them to complete their task.
             </p>
             <p>
-              When each row of the form contains multiple elements it is harder
-              to know what to fill in first, and the path to completion not
-              obvious.
+              When form fields are in multiple columns, users have to scan across the page to  understand the content. If they use a screen magnifier to zoom into the page they might not see some of the fields.
             </p>
             <p>
-              When a form is in a single column, the user only scans and moves
-              top to bottom as they try to complete the form.
+              When each row of the form contains multiple elements it is harder to know what to fill in first, and the way to complete the form becomes unclear.
             </p>
           </div>
           <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
@@ -164,40 +158,40 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2>Information architecture</h2>
+            <h2 id="anchor-grouping-structure-and-flow">Grouping, structure and flow</h2>
             <h3>Group related information</h3>
             <p>
-              The flow from one set of questions to the next should resemble a
-              conversation, with natural progression from one topic to another.
-              Grouping related fields helps with this and allow users to make
-              sense of the information they need to fill in.
+              The flow from one set of questions to the next should have a natural progression from one topic to another. Grouping related fields helps with this and allows users to make sense of the information they need to fill in.
             </p>
             <h3>Sequence information logically</h3>
             <p>
-              Display form fields in a logical sequence to reduce cognitive
-              effort.
+              Display form fields in a logical sequence to reduce cognitive effort.
             </p>
             <p>
-              Sequence fields based on patterns that are natural for users or
-              that reflect real things such as a credit card.
+              Sequence fields based on patterns that are natural for users or that reflect real things such as a credit card.
             </p>
             <p>
-              For example, for a credit card form, you should always start with
-              the card number and end with the security code.
+              For example, for a credit card form, you should always start with the card number and end with the security code. This because it follows the layout on the real card and because whenever people enter credit card information this is the order they do it in.
             </p>
-            <h3>Don't use long forms</h3>
-            <p>
-              Lengthy forms can cause many usability issues, including
-              overwhelming users. Yet, there are design patterns which can help
-              longer forms feel less overwhelming.
-            </p>
-            <h3>Progressive disclosure</h3>
-            <p>
-              Progressive disclosure is a pattern through which content is
-              revealed gradually to the user. Content is usually revealed as the
-              user fills in specific parts of the form. This can help forms feel
-              shorter, with more fields only appearing when relevant.
-            </p>
+            <h3>Default spacing</h3>
+            <p>Our form elements and components come with default padding. This example shows how these defaults apply to different form elements.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-flex coop-u-margin-b-32">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header coop-u-flex">
+                <h4>Example</h4>
+              </div>
+              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
+                <img src="{{ '/images/examples/forms/default-spacing.png' | prepend: site.baseurl }}" alt="Diagram showing the default spacing applied above and below a select dropdown and a text input" class="coop-u-margin-b-32" width="600"
+                />
+              </div>
+            </div>
+          </div> 
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+          <h3>Do not use long forms</h3>
+          <p>Lengthy forms can cause many usability issues, including overwhelming users. When you need to use a long form,  there are design patterns which can help them feel less overwhelming.</p>
+          <h4>Progressive disclosure</h4>
+          <p>Progressive disclosure is a pattern through which content is revealed gradually to the user. Content is usually revealed as the user fills in specific parts of the form. This can help forms feel shorter, with more fields only appearing when relevant.</p>
           </div>
           <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
             <div class="el-c-pullout">
@@ -235,54 +229,25 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2>Multistep forms</h2>
-            <p>
-              Multistep forms are made up of multiple screens, with fields
-              spread across screens. A multistep form can include a progress
-              indicator to help users understand the different steps within a
-              form.
-            </p>
-            <p>
-              When dividing a form into multiple screens, make sure that the
-              content on each screen is grouped. If 'Personal details' is the
-              first step on a form, that screen should contain all the questions
-              relating to personal details.
-            </p>
+            <h4>Multistep forms</h4>
+            <p>Multistep forms are made up of multiple screens, with fields spread across screens. A multistep form can include a progress indicator to help users understand the different steps within a form. </p>
+            <p>When dividing a form into multiple screens, make sure that the content on each screen is grouped. If 'Personal details' is the first step on a form, that screen should contain all the questions relating to personal details.</p>
           </div>
         </div>
       </div>
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2 id="anchor-labels-input-fields-and-buttons">
-              Labels, input fields and buttons
+            <h2 id="anchor-labels-and-input-fields">
+              Labels and input fields
             </h2>
             <h3>Labels</h3>
-            <h4>Positioning labels</h4>
-            <p>
-              Align labels to the top of the field. Top aligned labels help
-              create a clear relationship between the label and input field.
-              They also make the form easier to scan, which helps improve
-              comprehension.
-            </p>
-            <p>
-              Give labels their own row. This allows the length to vary, without
-              impacting the position of the field.
-            </p>
+            <p>Always put the label above the field. This helps create a clear relationship between the label and input field. They also make the form easier to scan, which helps improve understanding.</p>
+            <p>Give labels their own row. This allows the length to vary, without impacting the position of the field.</p>
             <h3>Input fields</h3>
             <h4>Input width</h4>
-            <p>
-              Use a text input that is appropriate for the amount of information
-              someone needs to enter. While it may be tempting to make all text
-              input fields the same width for a more uniform interface, it can
-              lead to usability issues. Too wide and it might intimidate or
-              confuse, too narrow and it might frustrate.
-            </p>
-            <p>
-              The width of the text input can act as a guide to the user for how
-              much information is expected. This can help improve completion
-              rate of a form.
-            </p>
+            <p>Use a text input that is appropriate for the amount of information someone needs to enter. While it may be tempting to make all text input fields the same width for a more uniform interface, it can lead to usability issues. Too wide and it might intimidate or confuse, too narrow and it might frustrate.</p>
+            <p>The width of the text input can act as a guide to the user for how much information is expected. This can help improve completion rate of a form.</p>
           </div>
           <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
             <div class="el-c-pullout">
@@ -323,253 +288,11 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h3>Optional and required fields</h3>
+            <h4>Optional and required fields</h4>
+            <p>Only highlight optional fields on a form, not the mandatory or required fields. Optional fields also should not have any validation rules applied to them.</p>
             <p>
-              Only highlight optional fields on a form - not the mandatory or
-              required fields. Optional fields also shouldn't have any
-              validation rules applied to them.
+              To see how to style an optional field, <a href="#anchor-elements-of-a-form">go to the form elements</a>
             </p>
-            <p>
-              Go to the <a href="#anchor-form-anatomy">form anatomy</a> to see
-              how to style an optional field.
-            </p>
-            <h3>Buttons</h3>
-            <h4>Alignment</h4>
-            <p>
-              Buttons that perform the main action on a form (such as submit)
-              should always be left aligned to the edge of the input fields.
-            </p>
-            <p>
-              Left aligning buttons and inputs makes the path to completion
-              clearer. Aligning buttons to the right, or using a mix of right
-              and left alignment can lead to usability issues. People might not
-              see the buttons to the right, particularly if they use a screen
-              magnifier to zoom the screen.
-            </p>
-            <p>Supporting research on attention flow by Luke Wroblewski</p>
-          </div>
-          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-            <div class="el-c-pullout">
-              <div class="el-c-pullout-header coop-u-flex">
-                <p>Left aligned buttons make the path to completion clear.</p>
-              </div>
-              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
-                <img
-                  src="{{ '/images/examples/forms/left-aligned-buttons.png' | prepend: site.baseurl }}"
-                  alt="Diagram showing a form with left aligned buttons"
-                  class="coop-u-margin-b-32"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-            <div class="el-c-pullout">
-              <div class="el-c-pullout-header coop-u-flex">
-                <p>
-                  Right aligned buttons make the user shift focus from left to
-                  right and might be missed.
-                </p>
-              </div>
-              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
-                <img
-                  src="{{ '/images/examples/forms/right-aligned-buttons.png' | prepend: site.baseurl }}"
-                  alt="Diagram showing a form with right aligned buttons"
-                  class="coop-u-margin-b-32"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">
-          <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h4>Positioning the primary button</h4>
-            <p>
-              The primary action button should always remain in the same
-              position, to the very left of the form. If you need more buttons,
-              place them next to the primary action button, aligned left.
-            </p>
-            <p>
-              Consistent positioning of the primary action button makes it
-              easier for users to always find the most important button on a
-              form.
-            </p>
-            <p>
-              For keyboard users, the tabbing sequence will select the primary
-              action button before selecting any other button.
-            </p>
-            <p>
-              For screen magnifier users, the primary button can be found
-              without having to pan to the right of the screen. This ensures the
-              product or service is accessible.
-            </p>
-          </div>
-          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-            <div class="el-c-pullout">
-              <div class="el-c-pullout-header coop-u-flex">
-                <p>
-                  The button is still visible even when the user is zoomed into
-                  the screen.
-                </p>
-              </div>
-              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
-                <img
-                  src="{{ '/images/examples/forms/zoom-left-aligned.png' | prepend: site.baseurl }}"
-                  alt="Diagram showing a zoomed in form with the primary button aligned to the left inline with the input field"
-                  class="coop-u-margin-b-32"
-                  width="400"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-            <div class="el-c-pullout">
-              <div class="el-c-pullout-header coop-u-flex">
-                <p>
-                  The button is not visible when the user is zoomed into the
-                  screen.
-                </p>
-              </div>
-              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
-                <img
-                  src="{{ '/images/examples/forms/zoom-right-aligned.png' | prepend: site.baseurl }}"
-                  alt="Diagram showing a zoomed in form with the primary button aligned to the right and the primary button cannot be seen"
-                  class="coop-u-margin-b-32"
-                  width="400"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">
-          <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h4>Visual hierarchy</h4>
-            <p>
-              Place buttons in a logical order. A clear visual hierarchy between
-              buttons on the same screen is important as it can help users
-              identify the primary action easily.
-            </p>
-            <p>
-              Avoid having buttons of the same prominence next to each other. It
-              can create confusion and force the user to question which action
-              is the primary one.
-            </p>
-            <h4>Button width</h4>
-            <p>
-              The width of the button should be determined by the content inside
-              it. Avoid making buttons full width (especially on larger screens)
-              as they stop looking like buttons and can confuse users.
-            </p>
-            <p>
-              This is important for screen magnifier users, as the primary
-              button content can be found without having to pan to the right.
-              This ensures the product or service is accessible.
-            </p>
-            <h4>Disabled buttons</h4>
-            <p>
-              Don’t use disabled buttons on forms. Allow the user full access to
-              all actions, even if that means the user fails and has to take an
-              action to remedy the problem.
-            </p>
-            <h4>Navigation buttons</h4>
-            <p>
-              Placing these buttons at the bottom of a form takes prominence
-              away from more important buttons, and creates confusion for screen
-              reader and keyboard users.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">
-          <div class="coop-l-grid__item coop-l-grid__item--large-12">
-            <h2 id="anchor-which-buttons-to-use-where">
-              Which buttons to use where
-            </h2>
-            <table class="coop-table">
-              <thead>
-                <tr>
-                  <th scope="col" width="20%">Form button type</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Examples</th>
-                  <th scope="col">Styling</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td role="cell" scope="row">Primary</td>
-                  <td role="cell">
-                    Submits the form and takes the user to the next part of the
-                    journey
-                  </td>
-                  <td role="cell">
-                    Confirm, Submit form, Place order, Next page
-                  </td>
-                  <td role="cell">Primary Button Green</td>
-                </tr>
-                <tr>
-                  <td role="cell" scope="row">Secondary</td>
-                  <td role="cell">Make a change within a form</td>
-                  <td role="cell">
-                    Apply offer code, save and exit, Add another guardian
-                  </td>
-                  <td role="cell">TBC</td>
-                </tr>
-                <tr>
-                  <td role="cell" scope="row">Related</td>
-                  <td role="cell">
-                    Starts a journey related to the form being completed
-                  </td>
-                  <td role="cell">Forgotten password, Privacy policy</td>
-                  <td role="cell">Text link</td>
-                </tr>
-                <tr>
-                  <td role="cell" scope="row">Cancel</td>
-                  <td role="cell">Cancels the progress made with the a form</td>
-                  <td role="cell">Cancel, Delete, Remove</td>
-                  <td role="cell">Text link</td>
-                </tr>
-                <tr>
-                  <td role="cell" scope="row">Navigation</td>
-                  <td role="cell">Navigates the user away from the form</td>
-                  <td role="cell">Back, Previous</td>
-                  <td role="cell">TBC</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">
-          <div class="coop-l-grid__item coop-l-grid__item--large-7">
-            <h2 id="anchor-form-spacing">Form spacing</h2>
-            <h3>Default spacing</h3>
-            <p>
-              Our form elements and components come with default padding and
-              vertical margins. This example shows how these defaults apply to
-              different form elements.
-            </p>
-          </div>
-          <div
-            class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-flex"
-          >
-            <div class="el-c-pullout">
-              <div class="el-c-pullout-header coop-u-flex">
-                <h4>Example</h4>
-              </div>
-              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
-                <img
-                  src="{{ '/images/examples/forms/default-spacing.png' | prepend: site.baseurl }}"
-                  alt="Diagram showing the default spacing applied above and below a select dropdown and a text input"
-                  class="coop-u-margin-b-32"
-                  width="600"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -643,12 +366,97 @@ changelog:
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <h2 id="anchor-buttons">Buttons</h2>
+            <h3>Alignment</h3>
+            <p>Buttons that perform the main action on a form (such as submit) should always be left aligned to the edge of the input fields.</p>
+            <p>Left aligning buttons and inputs makes the path to completion clearer. Aligning buttons to the right, or using a mix of right and left alignment can lead to usability issues. People might not see the buttons to the right, particularly if they use a screen magnifier to zoom the screen.</p>
+            <p>Supporting research on attention flow by Luke Wroblewski</p>
+            <p>If you need more buttons, place them next to the primary action button, aligned left. For keyboard users, this means that the tabbing sequence will always select the primary action button before selecting any others.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header coop-u-flex">
+                <p>Left aligned buttons make the path to completion clear.</p>
+              </div>
+              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
+                <img
+                  src="{{ '/images/examples/forms/left-aligned-buttons.png' | prepend: site.baseurl }}"
+                  alt="Diagram showing a form with left aligned buttons"
+                  class="coop-u-margin-b-32"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header coop-u-flex">
+                <p>
+                  Right aligned buttons make the user shift focus from left to
+                  right and might be missed.
+                </p>
+              </div>
+              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
+                <img
+                  src="{{ '/images/examples/forms/right-aligned-buttons.png' | prepend: site.baseurl }}"
+                  alt="Diagram showing a form with right aligned buttons"
+                  class="coop-u-margin-b-32"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header coop-u-flex">
+                <p>
+                  The button is still visible even when the user is zoomed into
+                  the screen.
+                </p>
+              </div>
+              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
+                <img
+                  src="{{ '/images/examples/forms/zoom-left-aligned.png' | prepend: site.baseurl }}"
+                  alt="Diagram showing a zoomed in form with the primary button aligned to the left inline with the input field"
+                  class="coop-u-margin-b-32"
+                  width="400"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+            <div class="el-c-pullout">
+              <div class="el-c-pullout-header coop-u-flex">
+                <p>
+                  The button is not visible when the user is zoomed into the
+                  screen.
+                </p>
+              </div>
+              <div class="el-c-pullout-content coop-u-flex coop-u-flex-center">
+                <img
+                  src="{{ '/images/examples/forms/zoom-right-aligned.png' | prepend: site.baseurl }}"
+                  alt="Diagram showing a zoomed in form with the primary button aligned to the right and the primary button cannot be seen"
+                  class="coop-u-margin-b-32"
+                  width="400"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <h3>Visual hierarchy</h3>
+            <p>Place buttons in a logical order. A clear visual hierarchy between buttons on the same screen is important as it can help users identify the primary action easily.</p>
+            <p>Avoid having buttons of the same prominence next to each other. It can create confusion and force the user to question which action is the primary one.</p>
+            <h3>Button width</h3>
+            <p>The width of the button should be determined by the content inside it. Avoid making buttons full width (especially on larger screens) as they stop looking like buttons and can confuse users.</p>
+            <p>This is important for screen magnifier users, as the primary button content can be found without having to pan to the right. This ensures the product or service is accessible.</p>
+            <h3>Deactivated buttons</h3>
+            <p>Do not use deactivated buttons on forms. Allow the user full access to all actions, even if that means the user fails and has to take an action to remedy the problem.</p>
+            <h3>Navigation buttons</h3>
+            <p>Placing these buttons at the bottom of a form takes prominence away from more important buttons, and creates confusion for screen reader and keyboard users.</p>
             <h3>Button spacing</h3>
-            <p>
-              It's important to use space around the primary button to help give
-              it prominence on the screen. Use larger vertical spacing between
-              the last field set and primary button.
-            </p>
+            <p>It’s important to use space around the primary button to help give it prominence on the screen. Use larger vertical spacing between the last field set and primary button.</p>
           </div>
           <div
             class="coop-l-grid__item coop-l-grid__item--large-12 coop-u-flex"
@@ -665,6 +473,64 @@ changelog:
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <h3>Which button styles to use</h3>
+            <table class="coop-table">
+              <thead>
+                <tr>
+                  <th scope="col" width="20%">Form button type</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Examples</th>
+                  <th scope="col">Styling</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td role="cell" scope="row">Primary</td>
+                  <td role="cell">
+                    Submits the form and takes the user to the next part of the
+                    journey
+                  </td>
+                  <td role="cell">
+                    Confirm, Submit form, Place order, Next page
+                  </td>
+                  <td role="cell">Primary Button Green</td>
+                </tr>
+                <tr>
+                  <td role="cell" scope="row">Secondary</td>
+                  <td role="cell">Make a change within a form</td>
+                  <td role="cell">
+                    Apply offer code, save and exit, Add another guardian
+                  </td>
+                  <td role="cell">TBC</td>
+                </tr>
+                <tr>
+                  <td role="cell" scope="row">Related</td>
+                  <td role="cell">
+                    Starts a journey related to the form being completed
+                  </td>
+                  <td role="cell">Forgotten password, Privacy policy</td>
+                  <td role="cell">Text link</td>
+                </tr>
+                <tr>
+                  <td role="cell" scope="row">Cancel</td>
+                  <td role="cell">Cancels the progress made with the a form</td>
+                  <td role="cell">Cancel, Delete, Remove</td>
+                  <td role="cell">Text link</td>
+                </tr>
+                <tr>
+                  <td role="cell" scope="row">Navigation</td>
+                  <td role="cell">Navigates the user away from the form</td>
+                  <td role="cell">Back, Previous</td>
+                  <td role="cell">TBC</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
