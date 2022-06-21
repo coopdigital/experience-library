@@ -12,7 +12,7 @@ excluded-from-search: true
 col-width: 7
 section-title: Components
 title: Pound value input
-last-reviewed: Last reviewed&#58; 7 June 2022
+last-reviewed: Last reviewed&#58; 21 June 2022
 intro-text-lead:
   - Pound value inputs are fields that allow people to enter a value in pounds. For example, a price or donation amount.
 # Image at the top of the hero
@@ -63,22 +63,13 @@ changelog:
             </p>
             <h3>Mobile numeric keypad</h3>
             <p>
-              On touch devices, the price input should trigger the numeric
-              keypad with a decimal point.
+              On touch devices, the pound value input will trigger the numeric keypad with a decimal point.
             </p>
             <h3>Formatting the price</h3>
-            <p>When formatting the price you should:</p>
+            <p>When formatting the price, the component will:</p>
             <ul>
-              <li>
-                format with commas to more clearly represent a pounds as the
-                user types
-              </li>
+              <li>use commas for amounts over £999 to make them easier to read</li>
               <li>allow the user to enter a decimal value</li>
-              <li>
-                not show an error if the user doesn't enter a decimal value but
-                one is required, instead when the form is submitted add a value
-                of “.00”
-              </li>
             </ul>
           </div>
         </div>
@@ -102,9 +93,7 @@ changelog:
               of information is required.
             </p>
             <p>
-              Make sure you use a clear label as well as the prefix. For
-              example, if you're asking someone to enter the value of their car,
-              your form label should say, “Car value, in pounds”.
+              Make sure you use a clear label as well as the prefix. For example, if you’re asking someone to enter the value of their car, your form label should say, “Car value, in pounds”. 
             </p>
             <h3>Error messages</h3>
             <p>
