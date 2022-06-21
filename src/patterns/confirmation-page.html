@@ -1,0 +1,85 @@
+---
+layout: coop-experience
+id: index
+item-url: /patterns/confirmation-page.html
+section: Patterns
+meta-title:	Confirmation page
+meta-description: Find out how to use confirmation pages when designing digital products and services for Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Patterns
+title: Confirmation page
+last-reviewed: Last reviewed&#58; 21 Jun 2022
+intro-text-lead: 
+  - Confirmation pages tell people when they have successfully completed a task and what the next steps are, if any.  
+intro-text-list:
+
+
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/form-validation-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View form validation in Figma
+link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/Co-op-Experience-Library?node-id=4319%3A229
+link-box-text-dev: 
+link-box-link-dev:
+
+# Changelog
+changelog:
+  - date: 21 Jun 2022
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2 id="anchor-guidelines">Guidelines</h2>
+                        <p>Use confirmation pages to tell a user they have completed a task or transaction and what will happen next.</p>
+                        <p>For example, if someone submits a form direct them to a page that clearly confirms the submission. This is to reassure people that we have received the information they sent and let them know what we are going to do.</p>
+                        <p>A confirmation page should include:</p>
+                        <ul>
+                            <li>a clear confirmation of what has been submitted or completed</li>
+                            <li>a reference number if there is one</li>
+                            <li>what will happen next and when</li>
+                        </ul>
+                        <p>If possible give people a way to record the completion of the task. This could be by downloading a copy of the confirmation, helping them bookmark the page (if it will remain accessible) or sending an email with the relevant details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="el-c-primary-section"> 
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                        <div class="el-c-pullout">
+                            <div class="el-c-pullout-header">
+                                <h2 id="anchor-example">Example</h2> 
+                            </div>
+                            <div class="el-c-pullout-content">
+                                <div class="coop-l-grid__item coop-l-grid__item--large-8 coop-l-grid__item--collapse coop-u-margin-b-64">
+                                    <h1>Holiday approved</h1>
+                                    <p class="coop-t-lead-p">You must give [First name] a record of your decision.</p>
+                                    <p>Print or forward the confirmation email that has been sent to your store.</p>
+                                    <a href="#">Return to Holiday requests</a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
