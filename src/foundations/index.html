@@ -4,7 +4,7 @@ id: index
 item-url: /foundations/
 section: Foundations
 description: Our foundations are the design basics that we build our products on.
-meta-title:	Foundations
+meta-title: Foundations
 meta-description: Our foundations are the design basics that we build our products on.
 
 # Hero content
@@ -17,20 +17,20 @@ intro-text: We use foundations to help create our <a href="/experience-library/e
 # Info card
 info-card: true
 info-card-title: Design tokens for front-end development
-info-card-p: 
+info-card-p:
   - We have not created design tokens for our foundations yet.
-  - When we have, we will add Storybook links to each of the pages in this section
-info-card-image: /images/decorative/design-tokens.svg 
+  - When we have, we will add links to each of the pages in this section
+info-card-image: /images/decorative/design-tokens.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: true
 link-box-text-design: View our foundations in Figma
 link-box-link-design: https://www.figma.com/file/fxMzW1FsGlMluRHmawIr9r/?node-id=3664%3A3136
-link-box-text-dev: 
-link-box-link-dev: 
+link-box-text-dev:
+link-box-link-dev:
 
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/foundations.svg
+decorative-image-url: /images/decorative/foundations.svg
 
 # Signposts
 signpost:
@@ -59,21 +59,19 @@ signpost:
     text: Spacing
     image: /images/decorative/spacing.svg
 ---
+
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
-            
-            {% include hero.html %} 
-        </div>
-        <section class="coop-l-page">
-            <ul class="coop-l-grid coop-u-list-bare">
-                {% for signpost in page.signpost %}
-                <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
-                    {% include signpost.html %}
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </main>
-    {% include footer.html %}
+  <main id="main">
+    <div class="coop-l-full">{% include hero.html %}</div>
+    <section class="coop-l-page">
+      <ul class="coop-l-grid coop-u-list-bare">
+        {% for signpost in page.signpost %}
+        <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
+          {% include signpost.html %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+  {% include footer.html %}
 </div>
