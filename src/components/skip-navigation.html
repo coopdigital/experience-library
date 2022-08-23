@@ -1,11 +1,13 @@
 ---
 layout: coop-experience
 id: index
-description: Skip navigation allows screen reader and keyboard users to go directly to the main content. Get more information on skip navigation.
+description: Skip navigation allows screen reader and keyboard users to go directly to the main content. Get more
+information on skip navigation.
 section: Components
 item-url: /components/skip-navigation.html
-meta-title:	Skip navigation
+meta-title: Skip navigation
 meta-description: Skip navigation allows screen reader and keyboard users to go directly to the main content.
+tags: accessibility, a11y, skip nav, keyboard navigation,
 
 # Hero content
 # Set width of content (options 6 [50% width] - 12 [100% width] )
@@ -13,36 +15,36 @@ col-width: 7
 section-title: Components
 title: Skip navigation
 last-reviewed: Last reviewed&#58; 14 April 2021
-intro-text-lead: 
-  - Skip navigation allows screen reader and keyboard users to go directly to the main content.
+intro-text-lead:
+- Skip navigation allows screen reader and keyboard users to go directly to the main content.
 # Image at the top of the hero
-decorative-image-url:  /images/decorative/skip-navigation-hero.svg
+decorative-image-url: /images/decorative/skip-navigation-hero.svg
 
 # Hero link box - set to false or remove the code below to remove
 link-box: true
-link-box-text-design: 
-link-box-link-design: 
+link-box-text-design:
+link-box-link-design:
 link-box-text-dev: View code snippet
 link-box-link-dev: /examples/components/skip-navigation.html
 
 # Example (add path to html include or path to image)
 example-html: foundations/foundations-tables/tables.html
-example-image: 
-example-image-alt: 
+example-image:
+example-image-alt:
 
 # Changelog
 changelog:
-  - date: 14 April 2021
-    notes: First version of page published
+- date: 14 April 2021
+notes: First version of page published
 ---
 <div class="coop-u-flex__main">
     <main id="main">
         <div class="coop-l-full">
-            
+
             {% include hero.html %}
         </div>
         <section class="coop-l-page">
-            <div class="el-c-primary-section"> 
+            <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-12">
                         <div class="el-c-pullout">
@@ -52,37 +54,44 @@ changelog:
                             <div class="el-c-pullout-content">
                                 <div class="coop-l-grid">
                                     <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                                        <img src="{{ '/images/decorative/skip-navigation-example.png' | prepend: site.baseurl }}" alt="Skip navigation in use on a Co-op website" class="coop-u-margin-b-32">
+                                        <img src="{{ '/images/decorative/skip-navigation-example.png' | prepend: site.baseurl }}"
+                                            alt="Skip navigation in use on a Co-op website" class="coop-u-margin-b-32">
                                     </div>
                                 </div>
-                                <p class="coop-t-caption">Skip to content link focused after the tab key has been pressed.</p>
+                                <p class="coop-t-caption">Skip to content link focused after the tab key has been
+                                    pressed.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="el-c-primary-section"> 
+            <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Required elements</h2>
                         <h3>Links</h3>
-                        <p>Links within the skip navigation component should take the user directly to the main areas of the page. These are usually the:</p>
+                        <p>Links within the skip navigation component should take the user directly to the main areas of
+                            the page. These are usually the:</p>
                         <ul>
                             <li>navigation</li>
                             <li>main content</li>
-                            <li>footer</li> 
+                            <li>footer</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="el-c-primary-section"> 
+            <div class="el-c-primary-section">
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Using skip navigation on a page</h2>
-                        <p>The skip navigation function should be the first thing that appears on a page when it has loaded and a user presses the tab key.</p>
-                        <p>Pressing the tab key again should then cycle through ‘skip to content’, ‘skip to navigation’ and ‘skip to footer’ links.</p>
-                        <p>Pressing enter will take the user to the correct part of the page and apply the focus ring to the first interactive element in that section.</p>
-                        <p>If the user tabs through the skip navigation without selecting an option the Co&#8209;op logo should be the next element that has the focus ring applied.</p>       
+                        <p>The skip navigation function should be the first thing that appears on a page when it has
+                            loaded and a user presses the tab key.</p>
+                        <p>Pressing the tab key again should then cycle through ‘skip to content’, ‘skip to navigation’
+                            and ‘skip to footer’ links.</p>
+                        <p>Pressing enter will take the user to the correct part of the page and apply the focus ring to
+                            the first interactive element in that section.</p>
+                        <p>If the user tabs through the skip navigation without selecting an option the Co&#8209;op logo
+                            should be the next element that has the focus ring applied.</p>
                     </div>
                 </div>
             </div>
@@ -93,5 +102,5 @@ changelog:
             </div>
         </section>
     </main>
-{% include footer.html %}
+    {% include footer.html %}
 </div>

@@ -1,120 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      {% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title |
-      escape }}{% else %}{{ site.title | escape }}{% endif %}
-    </title>
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="{{ '/images/favicon.ico' | prepend: site.baseurl }}"
-    />
-    <meta
-      name="description"
-      content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-    />
-    {% assign versionDateCSS = site.time | date: '%s' %}
-    <!--[if gt IE 8]><!-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}"
-    />
-    <!--<![endif]-->
-    <link
-      rel="canonical"
-      href="https://coop.co.uk/experience-library{{ page.url | replace:'index.html','' }}"
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:title"
-      content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"
-    />
-    <meta
-      property="og:description"
-      content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-    />
-    <meta
-      property="og:image"
-      content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-OG-meta-tag-generic-image.png"
-    />
-    <meta
-      property="og:url"
-      content="https://coop.co.uk/experience-library{{ page.url | replace:'index.html','' }}"
-    />
-    <meta property="og:site_name" content="Co-op Experience Library" />
-    <meta
-      name="twitter:title"
-      content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"
-    />
-    <meta
-      name="twitter:description"
-      content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-    />
-    <meta
-      name="twitter:image"
-      content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-twitter-meta-tag-generic-image.png"
-    />
-    <meta name="twitter:site" content="@CoopDigital" />
-    <meta name="twitter:creator" content="@CoopDigital" />
-    {% if jekyll.environment == "production" %} {% remote_include
-    https://static.coop.co.uk/cookie-consent-banner/coop/production.html %} {%
-    endif %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-204246589-1", {
-        cookie_flags: "SameSite=None;Secure",
-      });
-    </script>
-    <style>
-      .el-c-search .coop-form__wrapper::before {
-        background: url('{{ "/images/search.svg" | prepend: site.baseurl }}');
-      }
-    </style>
-  </head>
-  <body id="top">
-    {% include skip-nav.html %} {% include mobile-header.html %}
-    <div class="coop-u-flex coop-l-content">
-      {% include side-bar.html %} {{ content }} {% if page.back-to-top %} {%
-      include back-to-top.html %} {% endif %}
-      <div class="menu-bg"></div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | prepend: site.baseurl }}"><\/script>'
-        );
-    </script>
-    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-    <script>
-      window.simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById("search-small-input"),
-        resultsContainer: document.getElementById("results-container"),
-        json: '{{ "/search.json" | prepend: site.baseurl }}',
-        searchResultTemplate:
-          '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
-        noResultsText:
-          '<li class="result-list-item"><span class="title">No results found</span></li>   ',
-        limit: 10,
-        fuzzy: false,
-        exclude: ["Welcome"],
-      });
-    </script>
-    {% assign versionDateJS = site.time | date: '%s' %}
-    <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    {% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title |
+    escape }}{% else %}{{ site.title | escape }}{% endif %}
+  </title>
+  <link rel="shortcut icon" type="image/jpg" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" />
+  <meta name="description"
+    content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  {% assign versionDateCSS = site.time | date: '%s' %}
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" type="text/css"
+    href="{{ '/assets/css/main.css?v=' | append: versionDateCSS | prepend: site.baseurl  }}" />
+  <!--<![endif]-->
+  <link rel="canonical" href="https://coop.co.uk/experience-library{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title"
+    content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:description"
+    content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image"
+    content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-OG-meta-tag-generic-image.png" />
+  <meta property="og:url" content="https://coop.co.uk/experience-library{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:site_name" content="Co-op Experience Library" />
+  <meta name="twitter:title"
+    content="{% if page.meta-title %}{{ page.meta-title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta name="twitter:description"
+    content="{% if page.meta-description %}{{ page.meta-description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:image"
+    content="https://coop.co.uk/experience-library/images/decorative/social/exp-lib-twitter-meta-tag-generic-image.png" />
+  <meta name="twitter:site" content="@CoopDigital" />
+  <meta name="twitter:creator" content="@CoopDigital" />
+  {% if jekyll.environment == "production" %} {% remote_include
+  https://static.coop.co.uk/cookie-consent-banner/coop/production.html %} {%
+  endif %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204246589-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-204246589-1", {
+      cookie_flags: "SameSite=None;Secure",
+    });
+  </script>
+  <style>
+    .el-c-search .coop-form__wrapper::before {
+      background: url('{{ "/images/search.svg" | prepend: site.baseurl }}');
+    }
+  </style>
+</head>
+
+<body id="top">
+  {% include skip-nav.html %} {% include mobile-header.html %}
+  <div class="coop-u-flex coop-l-content">
+    {% include side-bar.html %} {{ content }} {% if page.back-to-top %} {%
+    include back-to-top.html %} {% endif %}
+    <div class="menu-bg"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="{{ "/assets/js/vendor/jquery-3.5.1.min.js" | prepend: site.baseurl }}"><\/script>'
+      );
+  </script>
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+      searchInput: document.getElementById("search-small-input"),
+      resultsContainer: document.getElementById("results-container"),
+      json: '{{ "/search.json" | prepend: site.baseurl }}',
+      searchResultTemplate:
+        '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
+      noResultsText:
+        '<li class="result-list-item"><span class="title">No results found</span></li>   ',
+      limit: 10,
+      fuzzy: true,
+      exclude: ["Welcome"],
+    });
+  </script>
+  {% assign versionDateJS = site.time | date: '%s' %}
+  <script src="{{ '/assets/js/main.js?v=' | append: versionDateJS | prepend: site.baseurl }}"></script>
+</body>
+
 </html>
