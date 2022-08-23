@@ -78,7 +78,7 @@
       resultsContainer: document.getElementById("results-container"),
       json: '{{ "/search.json" | prepend: site.baseurl }}',
       searchResultTemplate:
-        '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
+        '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="category">{category}</span><span class="meta">{description}</span></a></li>',
       noResultsText:
         '<li class="result-list-item"><span class="title">No results found</span></li>   ',
       limit: 10,
