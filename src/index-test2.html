@@ -65,7 +65,7 @@
       window.simpleJekyllSearch = new SimpleJekyllSearch({
         searchInput: document.getElementById("search-small-input"),
         resultsContainer: document.getElementById("results-container"),
-        json: '{{ "/search.json" | prepend: site.baseurl }}',
+        json: '/experience-library/search.json',
         searchResultTemplate:
           '<li class="result-list-item"><a href="{url}" class="result-text"><span class="title">{title}</span><span class="meta">{description}</span></a></li>',
         noResultsText:
