@@ -61,7 +61,18 @@
     />
     <meta name="twitter:site" content="@CoopDigital" />
     <meta name="twitter:creator" content="@CoopDigital" />
-
+    {% if jekyll.environment == "production" %}  
+      <!-- Begin Coop app consent snippet -->
+      <style>.coopssn-c-cookienotice { display:none !important }</style>
+      <script type="text/javascript" src="https://static.coop.co.uk/cookie-consent-banner/app-consent/appConsent.js"></script>
+      <!-- End Coop app consent snippet -->
+      <!-- OneTrust Cookies Consent Notice start for coop.co.uk -->
+      <script type="text/javascript" src="https://cdn-ukwest.onetrust.com/consent/96ff0d5a-e3f5-4424-87f5-6fd7bd24f87c/OtAutoBlock.js" ></script>
+      <script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="96ff0d5a-e3f5-4424-87f5-6fd7bd24f87c" ></script>
+      <script type="text/javascript">
+      function OptanonWrapper() { }
+      </script>
+    {% endif %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
