@@ -21,7 +21,7 @@ jobs:
     - name: Set up Ruby 2.6
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.3
+        ruby-version: 2.6.10
 
     - name: Replace baseurl and url in Config (Only required while heroku still in use)
       uses: microsoft/variable-substitution@v1 
