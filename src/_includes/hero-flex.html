@@ -15,35 +15,38 @@
     <div class="el-c-hero-home-flex__content">
         <div class="coop-l-grid  el-c-hero-home-flex__centered">
             <div class="coop-l-grid__item coop-l-grid__item--large-{{ page.col-width }}">
-                {% if page.last-reviewed %}
-                <p class="el-c-hero-home-flex__meta">{{ page.last-reviewed }}</p> 
-                {% endif %}
-                {% if page.section-title %}
-                <p class="el-c-hero-home-flex__section">{{ page.section-title }}</p>
-                {% endif %}
-                <h1 class="el-c-hero-home-flex__title">{{ page.title }}</h1>   
-                {% if page.home-lead %}
-                <p class="coop-t-h2">{{ page.home-lead }}</p>
-                {% endif %}
-                {% for item in page.intro-text-lead %}
-                <p class="coop-t-lead-p">{{ item }}</p>
-                {% endfor %}
-                {% for item in page.intro-text %}
-                <p>{{ item }}</p>
-                {% endfor %}
-                {% if page.intro-text-list %}
-                <ul class="el-c-hero-home-flex__list">
-                    {% for item in page.intro-text-list %}
-                    <li>{{ item }}</li>
+                <div class="el-c-hero-home-flex__text-wrap">
+                    {% if page.last-reviewed %}
+                    <p class="el-c-hero-home-flex__meta">{{ page.last-reviewed }}</p> 
+                    {% endif %}
+                    {% if page.section-title %}
+                    <p class="el-c-hero-home-flex__section">{{ page.section-title }}</p>
+                    {% endif %}
+                    <h1 class="el-c-hero-home-flex__title coop-t-headline-upper">{{ page.title }}</h1>   
+                    {% if page.home-lead %}
+                    <p class="coop-t-h2">{{ page.home-lead }}</p>
+                    {% endif %}
+                    {% for item in page.intro-text-lead %}
+                    <p class="el-c-hero-home-flex__lead coop-t-lead-p">{{ item }}</p>
                     {% endfor %}
-                </ul>
-                {% endif %}
-                {% if page.intro-text-link %}
-                <a href="{{ page.intro-text-link-url | prepend: site.baseurl }}">{{ page.intro-text-link }}</a>
-                {% endif %}
-                {% if page.wow-activity-meta %}
-                    {% include wow-activity-meta.html %}
-                {% endif %}
+                    <a href="" class="coop-btn coop-btn--primary">Get started</a>
+                    {% for item in page.intro-text %}
+                    <p>{{ item }}</p>
+                    {% endfor %}
+                    {% if page.intro-text-list %}
+                    <ul class="el-c-hero-home-flex__list">
+                        {% for item in page.intro-text-list %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if page.intro-text-link %}
+                    <a href="{{ page.intro-text-link-url | prepend: site.baseurl }}">{{ page.intro-text-link }}</a>
+                    {% endif %}
+                    {% if page.wow-activity-meta %}
+                        {% include wow-activity-meta.html %}
+                    {% endif %}
+                </div>
             </div>
             {% if page.link-box %}
                 {% include link-box.html %}  

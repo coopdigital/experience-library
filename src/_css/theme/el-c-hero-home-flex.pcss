@@ -107,12 +107,12 @@
 .el-c-hero--home-flex {
   padding: 0 0 var(--spacing-32) var(--spacing-32);
   /* background: var(--color-grey-neutral-warm); */
+  
 }
 
 @media (--mq-medium) {
   .el-c-hero-home-flex {
     padding: 0;
-    /* background: var(--color-grey-neutral-warm); */
   }
 }
 
@@ -137,44 +137,57 @@
 .el-c-hero-home-flex__content {
   position: relative;
   z-index: 2;
-  padding: var(--spacing-16) var(--spacing-16) var(--spacing-32)
+  padding: 140px var(--spacing-16) 140px
     var(--spacing-16);
-  /* background-color: var(--color-grey-neutral-warm); */
+    background: url('/images/decorative/ric-bg.png');
+    background-size: cover;                      
+    background-repeat: no-repeat;
 }
 
 @media (--mq-medium) {
   .el-c-hero-home-flex__content {
     background-color: transparent;
-    padding: var(--spacing-64) var(--spacing-32) var(--spacing-32)
-      var(--spacing-64);
+    padding: 140px var(--spacing-32) var(--spacing-64) var(--spacing-64);
   }
+}
+
+.el-c-hero-home-flex__text-wrap {
+  background-color: white;
+  padding: var(--spacing-16) var(--spacing-32) var(--spacing-32) var(--spacing-32);
+  border-radius: 10px;
 }
 
 .el-c-hero-home-flex__title {
   font-size: 3.5rem;
-  line-height: 1.4;
+  line-height: 100%;
   margin-top: var(--spacing-16);
+  color: var(--color-brand-coop);
 }
 
 @media (--mq-xxsmall) {
   .el-c-hero-home-flex__title {
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 100%;
   }
 }
 
 @media (--mq-small) {
   .el-c-hero-home-flex__title {
     font-size: 3rem;
-    line-height: 1.2;
+    line-height: 100%;
   }
 }
 
 @media (--mq-medium) {
   .el-c-hero-home-flex__title {
-    font-size: 4.75rem;
-    line-height: 1.2;
+    font-size: 5.4rem;
+    line-height: 100%;
   }
+}
+
+.el-c-hero-home-flex__lead {
+  font-weight: 500;
+  margin-bottom: var(--spacing-32);
 }
 
 .el-c-hero-home-flex__section {
