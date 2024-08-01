@@ -1,10 +1,11 @@
 
 .el-c-search {
+
   position: relative;
   z-index: 11;
   display: inline-block;
-  width: 100%;  
-  margin: 0 auto var(--spacing-24) auto;
+  min-width: 600px;  
+
   padding: 0;
 }
 
@@ -71,12 +72,12 @@
 .coop-search-results.is-open {
   position: absolute;
   z-index: 10;
-  top: 40px; 
+  top: 0px; 
   left: 0;
   min-height: 76px;
   max-height: 400px;
   width: 300px;
-  margin: var(--spacing-16) 0 0;
+  margin: var(--spacing-8) 0 0;
   padding: var(--spacing-8);
   background: var(--color-white);
   border-bottom-left-radius: var(--ui-border-radius);
@@ -97,8 +98,8 @@
   max-height: 400px;
   width: 300px;
   background: var(--color-white);
-  top: 110px;
-  left: 8px;
+  top: 68px;
+  left: 350px;
   z-index: 10;
   box-shadow: var(--ui-shadow);
   border-top-left-radius: var(--ui-border-radius);
