@@ -1,11 +1,9 @@
 
 .el-c-search {
-
   position: relative;
   z-index: 11;
   display: inline-block;
-  min-width: 600px;  
-
+  min-width: 670px;   
   padding: 0;
 }
 
@@ -84,31 +82,32 @@
   border-bottom-right-radius: var(--ui-border-radius);
   padding-bottom: 0;
   overflow-y: auto;
+  border: 2px solid var(--color-black);
 }
 
 @media (--mq-medium) {
   .coop-search-results.is-open {
-    width: 600px;
+    width: 670px;
   }
 }
 
 .results-bg.is--open {
   position: absolute;
-  min-height: 61px;
+  /* // min-height: 61px; */
   max-height: 400px;
   width: 300px;
   background: var(--color-white);
-  top: 68px;
-  left: 350px;
+  top: 50px;
+  left: 346px;
   z-index: 10;
   box-shadow: var(--ui-shadow);
-  border-top-left-radius: var(--ui-border-radius);
-  border-top-right-radius: var(--ui-border-radius);
+  /* border-top-left-radius: var(--ui-border-radius);
+  border-top-right-radius: var(--ui-border-radius); */
 }
 
 @media (--mq-medium) {
   .results-bg.is--open {
-    width: 600px;
+    width: 670px;
   }
 }
 
