@@ -27,7 +27,7 @@ link-box-link-dev: /about-this-prototype/
 # Signposts
 signpost:
   - link: /accessibility/getting-started.html
-    text: 6 steps to getting started with accessibility at Co-op
+    text: 6 steps to getting started with accessibility at '<span class="coop-t-nowrap">Co-op</span>
     image:
 
 signpost2:
@@ -120,17 +120,13 @@ changelog:
           <div class="coop-l-grid__item coop-l-grid__item--large-12">
             <ul class="coop-l-grid coop-u-list-bare">
               {% for signpost in page.signpost %}
-              <li class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-flex">
+              <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
                   {% include signpost.html %}
               </li>
               {% endfor %}
             </ul>
           </div>
-        </div>
-      </div>
 
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
               <h2>Making things accessible</h2>
               <p>If you're involved in creating websites, apps and digital communications, here's some guidance to help you make them accessible.</p>
@@ -138,17 +134,13 @@ changelog:
           <div class="coop-l-grid__item coop-l-grid__item--large-12">
             <ul class="coop-l-grid coop-u-list-bare">
               {% for signpost in page.signpost2 %}
-              <li class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-flex">
+              <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
                   {% include signpost.html %}
               </li>
               {% endfor %}
             </ul>
           </div>
-        </div>
-      </div>
 
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid">  
           <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
             <h2>Testing accessibility</h2>
             <p>Testing helps you understand and improve the usability of your product or service for everyone, especially people with disabilities.</p>
@@ -162,11 +154,7 @@ changelog:
               {% endfor %}
             </ul>
           </div>
-        </div>
-      </div>    
 
-      <div class="el-c-primary-section">
-        <div class="coop-l-grid"> 
           <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
               <h2>Training and support</h2>
               <p>Improve your knowledge of accessibility and learn how to access guidance and face to face support.</p>
