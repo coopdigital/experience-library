@@ -252,3 +252,12 @@ hr,
 .word-list__p {
   margin-bottom: var(--spacing-8);
 }
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.table-fixed__col1 {
+  font-weight: bold;
+  width: 32%;
+}
