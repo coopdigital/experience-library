@@ -11,7 +11,7 @@ meta-description: Guidance, tools and resources on digital accessibility. Get st
 col-width: 8
 section-title:
 title: Accessibility
-last-reviewed: Last reviewed&#58; 1 December 2022
+last-reviewed: Last reviewed&#58; 6 August 2024
 intro-text-lead:
   - Make it work for everybody.
 # Image at the top of the hero
@@ -26,103 +26,169 @@ link-box-link-dev: /about-this-prototype/
 
 # Signposts
 signpost:
-  - link: /accessibility/digital-accessibility-policy.html
-    text: Digital accessibility policy
-    image:
-  - link: /accessibility/digital-accessibility-standards.html
-    text: Digital accessibility standards
-    image:
-  - link: /accessibility/business-case-for-accessibility.html
-    text: Business case for accessibility
-    image:
-  - link: /accessibility/digital-accessibility-awareness-training.html
-    text: Digital accessibility awareness training
-    image:
-  - link: /accessibility/communities.html
-    text: Communities
+  - link: /accessibility/getting-started.html
+    text: 6 steps to getting started with accessibility at Co-op
     image:
 
 signpost2:
-  - link: /accessibility/build-accessible-websites.html
-    text: Build accessible websites
+  - link: /accessibility/digital-accessibility-standards.html
+    text: Digital accessibility guidelines
     image:
-  - link: /accessibility/write-accessible-content.html
-    text: Write accessible content
+
+signpost-testing:
+  - link: /accessibility/how-to-test-for-accessibility.html
+    text: How to test for accessibility
     image:
-  - link: /accessibility/find-out-if-something-is-accessible.html
-    text: Find out if something is accessible
+  - link: /accessibility/testing-with-disabled-people.html
+    text: How to test your work with disabled people
     image:
-  - link: /accessibility/research-with-people-with-access-needs.html
-    text: Research with people with access needs
+  - link: /accessibility/how-to-use-a-screen-reader.html
+    text: How to use a screen reader
     image:
   - link: /accessibility/tools-and-resources.html
     text: Tools and resources
     image:
 
+signpost-training:
+  - link: /accessibility/digital-accessibility-awareness-training.html
+    text: Digital Accessibility Awareness training
+    image:
+  - link: /accessibility/where-to-go-for-help.html
+    text: Where to go for help
+    image:
+
 # Changelog
 changelog:
-    - date: 1 December 2022
-      notes: Updated name of accountable lead
-
+  - date: 6 August 2024
+    notes: New structure and content overhaul
+  - date: 1 December 2022
+    notes: Updated name of accountable lead
 ---
 <div class="coop-u-flex__main">
-    <main id="main">
-        <div class="coop-l-full">
+  <main id="main">
+    <div class="coop-l-full">
 
-            {% include hero.html %}
+      {% include hero.html %}
+    </div>
+    <section class="coop-l-page">
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <blockquote>
+              <p>Having accessible services should not be a question for Co-op, it's what we should and must do.</p>
+                <cite>Lucy Tallon, Head of Customer Products, Co-op</cite>
+            </blockquote>
+          </div>
         </div>
-        <section class="coop-l-page">
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7">
-                        <blockquote>
-                            <p>Having accessible services should not be a question for Co-op, it’s what we should and must do.</p>
-                            <cite>Lucy Tallon, Head of Customer Products, Co-op</cite>
-                        </blockquote>
-                        <p>If we create products, services or communications that people cannot use or understand, we stop them choosing Co-op.</p>
-                        <p>This can not only cause stress, anxiety and frustration for people, but it can alienate them.</p>
-                        <p>Accessibility means removing these barriers, or not creating barriers in the first place.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="el-c-primary-section">
-                <div class="coop-l-grid coop-u-margin-resp-b-32-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-resp-b-32-16">
-                        <h2>Get started with accessibility</h2>
-                        <p>There’s a lot of information available about accessibility and it can be hard to know where to start. These resources give some context on accessibility and Co-op's approach.</p>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <ul class="coop-l-grid coop-u-list-bare">
-                            {% for signpost in page.signpost %}
-                            <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
-                                {% include signpost.html %}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                <div class="coop-l-grid coop-u-margin-resp-b-32-16">
-                    <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-resp-b-32-16">
-                        <h2>Doing accessibility</h2>
-                        <p>Practical guidance about how you can build, write and test to create accessible products and services.</p>
-                    </div>
-                    <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                        <ul class="coop-l-grid coop-u-list-bare">
-                            {% for signpost in page.signpost2 %}
-                            <li class="coop-l-grid__item coop-l-grid__item--large-4 coop-u-flex">
-                                {% include signpost.html %}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="coop-l-grid">
-                <div class="coop-l-grid__item coop-l-grid__item--large-12">
-                    {% include changelog.html %}
-                </div>
-            </div>
-        </section>
-    </main>
-    {% include footer.html %}
+      </div>
+    
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7">
+            <h2>What is accessibility?</h2>
+            <p>Accessibility means everyone can use or access something and nobody is excluded.
+            </p>
+            <p>It's about making sure there are no barriers that stop people:</p>
+            <ul>
+                <li>using things</li>
+                <li>taking part</li>
+                <li>completing the task they set out to do</li>
+            </ul>
+
+            <h3>Why digital accessibility is important</h3>
+            <p>There are 16 million disabled people in the UK with visual, hearing, cognitive and physical impairments. As we age we're all likely to experience some kind of impairment.</p>
+            <p>Temporary and situational impairments like illness or injury also mean people can face barriers when using our services.</p>
+            <p>If we create products, services or communications that people cannot use or understand, we stop them choosing Co-op.</p>
+            <p>This can cause stress, anxiety and frustration for people, and can make them feel excluded.</p>
+            <p>Accessibility is about creating services without barriers, and removing barriers that already exist.</p>
+
+            <h3>Why accessibility is more than a checklist</h3>
+            <p>Accessibility guidelines can be useful when creating accessible products, services and communications, but they must be more than just a checklist.</p>
+            <p>'Checklists' are often limiting and over simplified. They're usually used long after product decisions have been made. We should think about accessibility right at the start to prevent any issues.</p>
+            <p>We can complete all requirements on a checklist but it does not mean it's accessible. You only find that out by testing with real people.</p>
+            <p>Each person has different needs so what's accessible to one person, might not be accessible to another. It's important to keep testing so that your product or service can be used by as many people as possible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid coop-u-margin-resp-b-32-16">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
+            <h2>Getting involved with accessibility at Co-op</h2>
+            <p>There's a lot of information available about accessibility and it can be hard to know where to start. Here are some steps to getting started at Co-op.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <ul class="coop-l-grid coop-u-list-bare">
+              {% for signpost in page.signpost %}
+              <li class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-flex">
+                  {% include signpost.html %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
+              <h2>Making things accessible</h2>
+              <p>If you're involved in creating websites, apps and digital communications, here's some guidance to help you make them accessible.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <ul class="coop-l-grid coop-u-list-bare">
+              {% for signpost in page.signpost2 %}
+              <li class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-flex">
+                  {% include signpost.html %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid">  
+          <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
+            <h2>Testing accessibility</h2>
+            <p>Testing helps you understand and improve the usability of your product or service for everyone, especially people with disabilities.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <ul class="coop-l-grid coop-u-list-bare">
+              {% for signpost in page.signpost-testing %}
+              <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                  {% include signpost.html %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>    
+
+      <div class="el-c-primary-section">
+        <div class="coop-l-grid"> 
+          <div class="coop-l-grid__item coop-l-grid__item--large-7 coop-u-margin-b-16">
+              <h2>Training and support</h2>
+              <p>Improve your knowledge of accessibility and learn how to access guidance and face to face support.</p>
+          </div>
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <ul class="coop-l-grid coop-u-list-bare">
+              {% for signpost in page.signpost-training %}
+              <li class="coop-l-grid__item coop-l-grid__item--large-6 coop-u-flex">
+                  {% include signpost.html %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            {% include changelog.html %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
 </div>
