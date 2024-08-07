@@ -1,0 +1,127 @@
+---
+layout: coop-experience
+id: accessibility
+item-url: /accessibility/how-to-test-for-accessibility.html
+section: Testing
+meta-title:	6 steps to getting started with accessibility at Co-op
+meta-description: Practical tips to help you start your accessibility journey at Co-op.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Accessibility
+title: 6 steps to getting started with accessibility at Co-op
+last-reviewed: Last reviewed&#58; 6 August 2024
+intro-text-lead: 
+  - Practical tips to help you start your accessibility journey at Co-op.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/accessibility-index-hero.jpg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the alert notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-link-dev: #
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 6 August 2024
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-7">
+                    <h2>Prototyping for discovery stages</h2>
+                    <p>Testing for accessibility at the start of any new product or service increases the positive impact it will have on a broader range of people. Accessibility features that are ‘added on’ once it’s been built are less beneficial for users, and could prove costly.</p>
+                    <p>Putting high-fidelity prototypes in front of users who have a disability will provide insight into any accessibility issues and barriers in your design.</p>
+                    <p>Using an existing service or even a competitor's journey can also provide insight into how you might approach design for these users.</p>
+                    <p>Interviewing disabled users about how they navigate tasks or how they may approach the problem presented will give you an understanding of what you need to consider.</p>
+                    <p>If you prefer to run your interviews in person, you can recruit participants through companies such as ‘People for Research’. You can ask that they find participants with specific disabilities.</p>
+                    <p>We always recommend recruiting a mixture of users with various disabilities who use different assisted technologies.</p>
+                    <p>Examples of assisted technologies:</p>
+                    <ul>
+                        <li>Screen readers</li>
+                        <li>Zoom magnification</li>
+                        <li>Alternative keyboards</li>
+                    </ul>
+                    
+                    <p>Examples of disabilities:</p>
+                    <ul>
+                        <li>Visual impairment such as loss of peripheral vision</li>
+                        <li>Audio impairment such as deafness</li>
+                        <li>Physical impairment such as spinal cord injury</li>
+                        <li>Cognitive impairment such as memory loss, <a href="https://www.bdadyslexia.org.uk/dyslexia/about-dyslexia/what-is-dyslexia?">dyslexia</a> or <a href="https://www.bdadyslexia.org.uk/dyscalculia">dyscalculia</a></li>
+                    </ul>
+
+                    <h2>Testing with tools and software - automated testing</h2>
+                    <p>There are several free tools available that you can use to help you identify accessibility issues in your product or service.</p>
+                    <p>Automated tools will check for 30% of the accessibility issues.</p>
+
+                    <h3>Wave</h3>
+                    <p>Wave will show you where there are problems in the code and the colour contrast.</p>
+                    <p>Wave is a great tool to use when assessing an existing service or product in the earlier stages of building.</p>
+                    <p>Use <a href="https://wave.webaim.org/">Wave's website</a></p>
+                    <p><a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh">Add Wave as a Chrome extension</a></p>
+
+                    <h3>Silktide</h3>
+                    <p>Silktide simulates disabilities, presenting what a user may see.</p>
+                    <p><a href="https://chromewebstore.google.com/detail/silktide-accessibility-ch/mpobacholfblmnpnfbiomjkecoojakah">Add Silktide as a Chrome extension</a></p>
+                    <p>You can find a list of automated tools and their uses in the <a href="/tools-and-resources.html">Tools and resources</a> section.</p>
+
+                    <h2>Testing carried out by people - manual testing</h2>
+                    <p>Your product or service may appear accessible when using automated tools, but might not be when you put it in front of people.</p>
+                    <p>Manual testing is carried out by people, whereas automated testing uses tools or software.</p>
+                    <p>It involves:</p>
+                    <ul>
+                        <li>turning off sound</li>
+                        <li>not using a mouse or trackpad</li>
+                        <li>using assistive technologies such as screen readers and screen magnification</li>
+                    </ul>
+                    <p>Manual testing can be time-consuming and requires expertise, but it's more thorough than automated testing.</p>
+                    <p>It covers 70% of the Web Content Accessibility Guidelines (WCAG) guidelines whereas automated testing covers only 30%.</p>
+
+                    <h3>Fable</h3>
+                    <p>	Co-op works with Fable, a provider of user research and accessibility testing. Fable has a community of disabled people who use various types of assistive technology. You can arrange research interviews and other tests with people from this community within a few days of sending a request.</p>
+                    <p>Learn more about <a href="/accessibility/how-to-test-your-work-with-disabled-people.html">how to test your work with disabled people.</a></p>
+
+                    <h3>Keyboard navigation</h3>
+                    <p>Navigate through your service using only a keyboard. Keyboard navigation is how most assistive technologies operate and will help expose where a user would hit problems.</p>
+                    <p>We recommend you do this before testing a service in front of a user. If you cannot navigate the service this way, your test will not be useful.</p>
+                    <p>When testing, make sure you can navigate in the order you expect. You can open, close, and navigate through items in drop downs, radio buttons, and hidden accordions.</p>
+                    <p>Everything that is tappable and clickable with a mouse needs to be accessible with a keyboard. Think about things that only work on mouse hover, do they also work with the tab and enter keys?</p>
+                    <p>Make sure there's a clear, visible focus ring that follows you when using the tab key.</p>
+
+                    <h3>Screen magnification</h3>
+                    <p>Screen magnification acts like an electronic magnifying glass for your computer, tablet, or smartphone. Some users will use specific tools to support this.</p>
+                    <p>You can enlarge text through your browser. This only enlarges text, and not images. This helps users keep the context of the page.</p>
+                    <p>Developers should code in a way that does not interfere with the browser’s default ways of enlarging content.</p>
+                    <p>You can also test magnification by zooming into your website using the zoom function on your browser.</p>
+                    <p>You can access the zoom function on your browser through the View menu option. You can also use the following keyboard shortcuts:</p>
+                    <ul>
+                        <li>Windows device - windows key and +</li>
+                        <li>Apple device - command key and +</li>
+                    </ul>
+                    <p>We advise setting your browser to 400%.</p>
+
+                    <h3>Screen readers</h3>
+                    <p>It's best to test your services on various screen readers with people familiar with the tools.</p>
+                    <p>Running tests with users via Fable, a provider of user research and accessibility testing, is so valuable as they can provide insight you cannot replicate as a sighted user.</p>
+                    <p>Testing your service with a screen reader before putting it in front of these users will help you get the most out of the testing. It will make sure the tester can access the essential journeys you want them to test.</p>
+                    <p>Learn more about <a href="/accessibility/how-to-use-a-screen-reader.html">how to use a screen reader</a>.</p>
+                </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>

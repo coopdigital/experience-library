@@ -1,0 +1,337 @@
+---
+layout: coop-experience
+id: accessibility
+item-url: /accessibility/how-to-use-a-screen-reader.html
+section: Accessibility
+meta-title:	How to use a screen reader
+meta-description: Information and practical advice on how to test with assistive technology used by people with visual impairments
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 8
+section-title: Accessibility
+title: How to use a screen reader
+last-reviewed: Last reviewed&#58; 6 August 2024
+intro-text-lead: 
+  - Information and practical advice on how to test with assistive technology used by people with visual impairments
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/accessibility-index-hero.jpg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: View the alert notification in Figma
+link-box-link-design: #
+link-box-text-dev: Go to Storybook to learn more about and install the alert notification
+link-box-link-dev: #
+
+# In page nav
+in-page-nav:
+  - link-id: what
+    link-text: What is a screen reader
+  - link-id: common-frustrations
+    link-text: Common frustations for screen reader users
+  - link-id: most-popular
+    link-text: Most popular screen readers
+  - link-id: how-to-test
+    link-text: How to test with a screen reader
+  - link-id: using-voiceover
+    link-text: Using VoiceOver (on a Mac)
+
+# Example (add path to html include or path to image)
+example-html: foundations/foundations-tables/tables.html
+example-image: 
+example-image-alt: 
+
+# Changelog
+changelog:
+  - date: 6 August 2024
+    notes: First version of page published
+---
+<div class="coop-u-flex__main">
+  <main id="main">
+    <div class="coop-l-full">
+        {% include hero.html %}
+    </div>
+
+    <section class="coop-l-page">
+        <div class="coop-l-grid">
+        <div class="coop-l-grid__item coop-l-grid__item--large-7">
+          <h2 id="what">What is a screen reader?</h2>
+          <p>In the UK there are almost 2 million people living with sight loss.</p>
+          <p>A screen reader is a type of assistive technology used by people with blindness and low vision. It works by providing text and images as speech or braille.</p>
+          <p>A screen reader is often used with other assistive technologies such as screen magnification or a braille display.</p>
+          <p>In a <a href="https://webaim.org/projects/screenreadersurvey10/">WebAIM survey in January 2024</a>, of the users who described themselves as disabled, 76.6% of screen reader users said they were blind. 19.9% have a visual impairment. 16.7% reported having multiple disabilities.</p>
+          <p>It's always good to remember that not all screen reader users are blind users (and 'blind users' are not a comparable group).</p>
+          
+          <h2 id="common-frustrations">Common frustrations for screen reader users</h2>
+          <ol>
+            <li>CAPTCHA</li>
+            <li>Interactive elements like menus, tabs, and dialogs do not behave as expected</li>
+            <li>Links or buttons that do not make sense</li>
+            <li>Screens or parts of screens that change unexpectedly</li>
+            <li>Lack of keyboard accessibility</li>
+            <li>Images with missing or unsuitable descriptions (alt text)</li>
+            <li>Complex or difficult forms</li>
+            <li>Missing or non-descriptive headings</li>
+            <li>Too many links or navigation items</li>
+            <li>Complex data tables</li>
+          </ol>
+          
+          <h2 id="most-popular">Most popular screen readers</h2>
+            <p><a href="https://webaim.org/projects/screenreadersurvey10/">WebAIM survey in January 2024.</a></p>
+            <p>71.6% of respondents use more than one desktop or laptop screen reader</p>
+          
+          <h3>Top desktop and laptop screen readers</h3>
+            <ul>
+            <li>NVDA &ndash; Windows only, free, 65.6% of respondents</li>
+            <li>JAWS &ndash; Windows only, 60.5% of respondents</li>
+            <li>VoiceOver &ndash; Mac OS, free, 43.9% of respondents</li>
+            <li>Narrator &ndash; Windows only, free, 37.3% of respondents</li>
+            <li>ZoomText &ndash; combined screen reader and magnification, 7.5% of respondents</li>
+          </ul>
+          
+          <h3>Top mobile screen readers</h3>
+          <ul>
+            <li>VoiceOver &ndash; Android, 70.6% of respondents</li>
+            <li>TalkBack &ndash; Android, 34.7% of respondents</li>
+          </ul>
+          <p>When running any Fable tests with screen reader users, include JAWS and NVDA at a minimum and cover Voiceover on iOS too.</p>
+          
+          <h2 id="how-to-test">How to test with a screen reader</h2>
+          <ol>
+            <li>Turn on the screen reader</li>
+            <li>Adjust the settings, for example, screen reader speed and shortcuts</li>
+            <li>Navigate through all interactive content using the tab key:
+              <ul>
+                <li>Can you use the tab key to access everything that is clickable with a mouse?</li>
+                <li>Does it tab in a logical and sequential order?</li>
+              </ul>
+            </li>
+            <li>Navigate through all content (for example text, images)
+              <ul>
+                <li>Can you access all content?</li>
+                <li>Is information read out correctly with no repeats? (for example, a link and image alt text the same)</li>
+              </ul>
+            </li>
+            <li>Navigate through headings
+              <ul>
+                <li>Is everything that is a heading coded as a heading?</li>
+                <li>Are the headings descriptive?</li>
+                <li>Are heading levels in a logical and sequential order?</li>
+              </ul>
+            </li>
+            <li>Navigate through links
+              <ul>
+                <li>Are the links descriptive? For example, no ‘click here’ or ‘learn more’. Hidden text can be used to assist screen readers</li>
+              </ul>
+            </li>
+            <li>Navigate through buttons</li>
+              <ul>
+                <li>Are the buttons descriptive? For example no ‘click here’ or ‘learn more’. Hidden text can be used to assist screen readers</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2 id="using-voiceover">Using VoiceOver (on a Mac)</h2>
+          <h3>Turning on and off</h3>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="table-fixed__col1">Cmd + F5</td>
+              <td>Turn Voiceover on and off</td>
+            </tr>
+            <tr>
+              <td class="table-fixed__col1">&larr; + &rarr;</td>
+              <td>Turn Quick Nav on</td>
+            </tr>
+            <tr>
+              <td class="table-fixed__col1">Control + Option + Q</td>
+              <td>Turn Single Key on</td>
+            </tr>
+          </table>
+
+          <h3>Navigation</h3>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1">Tab</td>
+                <td>Navigate through all interactive elements</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">&rarr;</td>
+                <td>Navigate through all content (text, images, links)</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">H</td>
+                <td>Navigate through headings</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">L</td>
+                <td>Navigate through links</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">B</td>
+                <td>Navigate through buttons</td>
+              </tr>
+            </tbody>      
+          </table>     
+
+          <h3>Browsing by all links and headings</h3>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1">Ctrl + Option + U</td>
+                <td>Open up element view</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">&rarr;</td>
+                <td>View all links<br>Press &rarr; arrow key until you reach Links</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1">&rarr;</td>
+                <td>View all headings<br>Press &rarr; arrow key until you reach Headings</td>
+              </tr>
+            </tbody>      
+          </table>    
+          
+          <h3>Using forms</h3>
+          <h4>Going between fields</h4>
+          <ul>
+            <li>Does it read out if the field is required or optional?</li>
+            <li>Does it correctly read out the form label?</li>
+          </ul>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1"><strong>Tab</strong></td>
+                <td>Press Tab to go between the different form fields</td>
+              </tr>
+            </tbody>      
+          </table>
+
+          <h4>Radio buttons</h4>
+          <ul>
+            <li>Does it read out how many options there are?</li>
+            <li>Does it read out which option is selected?</li>
+          </ul>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1"><strong>&uarr; and ↓</strong></td>
+                <td>Press &uarr; and ↓ arrow keys to go between the options, it will automatically select the one in focus</td>
+              </tr>
+            </tbody>      
+          </table>
+
+          <h4>Check boxes</h4>
+          <ul>
+            <li>Does it read out which options are selected and deselected?</li>
+          </ul>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1"><strong>Tab</strong></td>
+                <td>Press Tab go to the first check box and between the options</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1"><strong>Space bar</strong></td>
+                <td>Press Space to select or deselect an option</td>
+              </tr>
+            </tbody>                    
+          </table>
+
+          <h4>Checkboxes</h4>
+          <ul>
+            <li>Does it read out which options are selected and deselected?</li>
+          </ul>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1"><strong>Tab</strong></td>
+                <td>Press Tab go to the first check box and between the options</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1"><strong>Space bar</strong></td>
+                <td>Press Space to select or deselect an option</td>
+              </tr>
+            </tbody>                  
+          </table>
+          
+          <h4>Checkboxes</h4>
+          <ul>
+            <li>Does it read out which options are selected and deselected?</li>
+          </ul>
+          <table class="table-fixed coop-u-margin-b-32">
+            <thead>
+              <tr>
+                <th class="table-fixed__col1">Keyboard keys</th>
+                <th><strong>Instruction</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-fixed__col1"><strong>&uarr; and ↓</strong></td>
+                <td>Press &uarr; and ↓ arrow keys to go between the options, it will automatically select the one in focus</td>
+              </tr>
+              <tr>
+                <td class="table-fixed__col1"><strong>Enter</strong></td>
+                <td>Press Enter to select or deselect an option</td>
+              </tr>  
+            </tbody>      
+          </table>       
+          
+          <h4>Errors</h4>
+          <ul>
+            <li>Errors should be alerted automatically</li>
+            <li>Navigate through the form to correct errors</li>
+            <li>Does it alert the user when there are errors?</li>
+            <li>Are the errors descriptive and unique?</li>
+          </ul>
+
+        </div>
+    </section>
+  </main>
+{% include footer.html %}
+</div>
