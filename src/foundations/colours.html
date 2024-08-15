@@ -12,7 +12,7 @@ meta-description: We’ve designed our colour palette so that the colours in it 
 col-width: 7
 section-title: Foundations
 title: Colours
-last-reviewed: Last reviewed&#58; 20 April 2021
+last-reviewed: Last reviewed&#58; 15 Aug 2024
 intro-text-lead:
   - We’ve designed our colour palette so that the colours in it work together in different combinations.
 # Image at the top of the hero
@@ -42,6 +42,8 @@ in-page-nav:
 
 # Changelog
 changelog:
+  - date: 15 Aug 2024
+    notes: Co-op brand blue updated
   - date: 21 April 2022
     notes: Error colours added to user interface colours
   - date: 14 April 2021
@@ -59,10 +61,10 @@ back-to-top: true
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-8">
             <h2 id="anchor-accessibility">Accessibility</h2>
-            <p>
+            <!-- <p>
               All colours and colour combinations must pass a colour contrast
               ratio of 4.5:1.
-            </p>
+            </p> -->
             <p>
               All colours in our palette have been tested for accessibility.
               Each colour on this page has a link to the contrast test for that
@@ -76,21 +78,14 @@ back-to-top: true
           <div class="coop-l-grid__item coop-l-grid__item--large-8">
             <h2 id="anchor-brand-colours">Brand colours</h2>
             <h3>Co-op blue</h3>
-            <p>
-              Only use Co-op blue with the brand logo. Co-op blue does not meet
-              <a
-                href="https://www.coop.co.uk/accessibility/standards#form-contrast"
-                >colour contrast standards</a
-              >
-              for text, graphical objects or user interactions. For example, you
-              should not use it as an underline to highlight the page a user is
-              currently on.
-            </p>
-            <p>
-              Co-op blue can be used as a background colour for the Co-op logo
-              when the logo you’re using is white, for example, on our app
-              icons.
-            </p>
+            <p>Only use Co-op blue for the:</p>
+            <ul>
+              <li>brand logo</li>
+              <li>Co-op headline font</li>
+              <li>backgrounds with the Co-op headline font in white</li>
+              <li>background of app icons</li>
+            </ul>
+            <p>Co-op blue passes the colour contrast guidelines at AA large text (over 19 pixels). We have set guidelines to only use the Co-op headline font at larger sizes than 19px.</p>
           </div>
         </div>
         <div class="coop-l-grid">
@@ -101,12 +96,12 @@ back-to-top: true
               <div class="el-c-colour__swatch coop-u-brand-bg"></div>
               <div class="el-c-colour__content">
                 <h4 class="el-c-colour__content-heading">Co-op blue</h4>
-                <span>#00B1E7</span>
+                <span>#00A1CC</span>
                 <span>var(--color-brand)</span>
                 <span
                   ><a
-                    href="https://webaim.org/resources/contrastchecker/?fcolor=00B1E7&bcolor=FFFFFF"
-                    >Fails WCAG AA</a
+                    href="https://webaim.org/resources/contrastchecker/?fcolor=00A1CC&bcolor=FFFFFF"
+                    >WCAG AA (large text)</a
                   ></span
                 >
               </div>
@@ -120,13 +115,12 @@ back-to-top: true
           <div class="el-c-pullout-content">
             <figure class="el-c-pullout__figure">
               <img
-                src="{{ '/images/examples/foundations/colours/logo-in-header.png' | prepend: site.baseurl }}"
-                width="500"
-                alt="The Co-op logo in the top corner of the coop.co.uk website"
+                src="{{ '/images/examples/foundations/colours/headline-example.jpg' | prepend: site.baseurl }}"
+                width="600"
+                alt="The Co-op logo in the top corner of the coop.co.uk website and the Co-op headline font in Co-op blue as the main page heading"
               />
               <figcaption class="coop-t-caption">
-                The Co-op logo in Co-op blue at the top left corner of a page on
-                the main Co-op website.
+                The Co-op logo in Co-op blue at the top left corner of a page on the main Co-op website and the Co-op headline in Co-op blue as the main page heading.
               </figcaption>
             </figure>
             <figure class="el-c-pullout__figure">
