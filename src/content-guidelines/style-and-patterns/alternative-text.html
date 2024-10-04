@@ -11,9 +11,9 @@ meta-description: Find out how to use alternative text when designing digital pr
 col-width: 7
 section-title: Content guidelines
 title: Alternative text
-last-reviewed: Last reviewed&#58; 23 Sept 2021
+last-reviewed: Last reviewed&#58; 4 Oct 2024
 intro-text-lead: 
-  - Alternative text describes the appearance and function of an image for assistive technology users.
+  - Alt text describes an image and its purpose for people who cannot see an image, such as screen reader users and those with a slow internet connection.
 # Image at the top of the hero
 decorative-image-url:  /images/decorative/design-principles-hero.svg
 
@@ -26,8 +26,11 @@ link-box-link-dev:
 
 # Changelog
 changelog:
+  - date: 4 Oct 2024
+    notes: New version of content bringing exisiting guidance together
   - date: 23 Sept 2021
     notes: First version of page published
+
 ---
 <div class="coop-u-flex__main">
     <main id="main">
@@ -39,10 +42,52 @@ changelog:
                 <div class="coop-l-grid">
                     <div class="coop-l-grid__item coop-l-grid__item--large-8">
                         <h2>Guidelines</h2>
-                        <p>You should provide alternative text when using images that add meaning to the content. If an image is only decorative, you do not need to provide alternative text.</p>
-                        <p><a href="{{ '/accessibility/write-accessible-content.html' | prepend: site.baseurl }}">Go to the guidance on writing accessible content</a>.</p>
-                        <p><a href="{{ '/search-engine-optimisation/seo-for-images-and-pdfs.html' | prepend: site.baseurl }}">Go to the SEO guidance on images, including alternative text</a>.</p>
-
+                        <p>Provide alt text if you’re using images that add meaning and context to the content. These images could be:</p> 
+                        <ul>
+                            <li>from a marketing campaign</li> 
+                            <li>stock imagery that provides more meaning to advice articles</li>
+                            <li>of products on an online shop</li>
+                        </ul>
+                        <p>Alt text is shown when an image cannot be displayed. It makes your webpage, email or social media post more accessible for people using screen readers. It also helps search engines understand what an image is.</p>  
+                        <p>When writing alt text:</p>
+                        <ul>
+                            <li>use keywords in a natural-sounding way</li>
+                            <li>keep it short and precise – it should be less than 125 characters long</li>
+                            <li>describe relevant elements of the image – for example, only include colours if they add meaning or useful context</li> 
+                            <li>do not include the words “picture of” or “image of” – screen reader users hear this anyway when alt text is read out</li> 
+                        </ul>
+                        <p>You do not need to provide alt text if:</p> 
+                        <ul>
+                            <li>an image is only decorative, such as page dividers or shape graphics</li>
+                            <li>the content of the image is written in surrounding content</li> 
+                            <li>an image has been used already on that page (to avoid repeating content)</li> 
+                        </ul>  
+                        <p>Add alt text when you’re uploading an image into the content management system (CMS) or social media platform. There will be a field to add it in.</p>  
+                        <p class="coop-u-margin-b-32">If you don’t need to add alt text, leave the field blank in the CMS.</p>   
+                        <div class="el-c-pullout">
+                        <div class="el-c-pullout-header">
+                            <h3>Examples</h3>
+                        </div>
+                        <div class="el-c-pullout-content">
+                            <img
+                                src="{{ '/images/examples/content/shopping-list.png' | prepend: site.baseurl }}"
+                                alt="A paper shopping list of bread, eggs, milk and broccoli, attached to a fridge with a Co-op member prices magnet."
+                                class="coop-u-margin-b-32"
+                            />
+                            <h4>Good alt text</h4>
+                            <p>A paper shopping list of bread, eggs, milk and broccoli, attached to a fridge with a Co-op member prices magnet.</p> 
+                            <h4>Bad alt text</h4>
+                            <p>Shopping list picture for member prices home page card.</p>
+                            <img
+                                src="{{ '/images/examples/content/cls-example.png' | prepend: site.baseurl }}"
+                                alt="Two people walking in a forest during autumn."
+                                class="coop-u-margin-b-32 coop-u-margin-t-64"
+                            />
+                            <h4>Good alt text</h4> 
+                            <p>Two people walking in a forest during autumn.</p>
+                            <h4>Bad alt text</h4> 
+                            <p>Image_2.jpeg</p> 
+                        </div>
                     </div>
                 </div>
             </div>
