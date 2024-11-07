@@ -29,14 +29,14 @@ link-box-link-dev: /examples/foundations/colours.html
 in-page-nav:
   - link-id: anchor-accessibility
     link-text: Accessibility
-  - link-id: anchor-brand-colours
-    link-text: Brand colours
+  - link-id: anchor-primary-colours
+    link-text: Primary colours
+  - link-id: anchor-secondary-colours
+    link-text: Secondary colours
+  - link-id: anchor-tertiary-colours
+    link-text: Tertiary colours
   - link-id: anchor-user-interface-colours
     link-text: User interface colours
-  - link-id: anchor-text-colours
-    link-text: Text colours
-  - link-id: anchor-colour-palette
-    link-text: Colour palette
   - link-id: anchor-changelog
     link-text: Changelog
 
@@ -75,9 +75,38 @@ back-to-top: true
       </div>
       <div class="el-c-primary-section">
         <div class="coop-l-grid">
+          <div class="coop-l-grid__item coop-l-grid__item--large-12">
+            <h2 id="anchor-brand-colours">Primary colours</h2>
+            <div class="coop-l-grid">
+              <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
+                <div class="el-c-colour">
+                  <div class="el-c-colour__swatch coop-u-brand-bg"></div>
+                  <div class="el-c-colour__content">
+                    <h4 class="el-c-colour__content-heading">Co-op blue</h4>
+                    <span>#00A1CC</span>
+                    <span>var(--color-brand)</span>
+                    <span
+                      ><a
+                        href="https://webaim.org/resources/contrastchecker/?fcolor=00A1CC&bcolor=FFFFFF"
+                        >WCAG AA (large text)</a
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex">
+                <div class="el-c-colour">
+                  <div class="el-c-colour__swatch"></div>
+                  <div class="el-c-colour__content">
+                    <h4 class="el-c-colour__content-heading">White</h4>
+                    <span>#FFFFFF</span>
+                    <span>var(--color-white)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="coop-l-grid__item coop-l-grid__item--large-8">
-            <h2 id="anchor-brand-colours">Brand colours</h2>
-            <h3>Co-op blue</h3>
             <p>Only use Co-op blue for the:</p>
             <ul>
               <li>brand logo</li>
@@ -88,27 +117,10 @@ back-to-top: true
             <p>Co-op blue passes the colour contrast guidelines at AA large text (over 19 pixels). We have set guidelines to only use the Co-op headline font at larger sizes than 19px.</p>
           </div>
         </div>
-        <div class="coop-l-grid">
-          <div
-            class="coop-l-grid__item coop-l-grid__item--xsmall-6 coop-l-grid__item--small-6 coop-l-grid__item--medium-5 coop-l-grid__item--large-5 coop-l-grid__item--xlarge-3 coop-u-flex"
-          >
-            <div class="el-c-colour">
-              <div class="el-c-colour__swatch coop-u-brand-bg"></div>
-              <div class="el-c-colour__content">
-                <h4 class="el-c-colour__content-heading">Co-op blue</h4>
-                <span>#00A1CC</span>
-                <span>var(--color-brand)</span>
-                <span
-                  ><a
-                    href="https://webaim.org/resources/contrastchecker/?fcolor=00A1CC&bcolor=FFFFFF"
-                    >WCAG AA (large text)</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="el-c-pullout el-c-pullout--nested">
+        
+
+        
+        <!-- <div class="el-c-pullout el-c-pullout--nested">
           <div class="el-c-pullout-header">
             <h3>Examples</h3>
           </div>
@@ -134,7 +146,7 @@ back-to-top: true
               </figcaption>
             </figure>
           </div>
-        </div>
+        </div> -->
         <div class="coop-l-grid">
           <div class="coop-l-grid__item coop-l-grid__item--large-8">
             <h3>Deal red</h3>
