@@ -1,0 +1,119 @@
+---
+layout: coop-experience
+id: content
+item-url: /content-guidelines/style-and-patterns/headings-paragraphs-and-lists.html
+section: style-and-patterns
+meta-title:	Headings, paragraphs and lists
+meta-description: Find out how to use headings give your content structure and help to make it more readable.
+
+# Hero content
+# Set width of content (options 6 [50% width] - 12 [100% width] )
+col-width: 7
+section-title: Content guidelines
+title: Headings, paragraphs and lists
+last-reviewed: Last reviewed&#58; 11 Dec 2024
+intro-text-lead: 
+  - Headings give your content structure and help to make it more readable.
+# Image at the top of the hero
+decorative-image-url:  /images/decorative/design-principles-hero.svg
+
+# Hero link box - set to false or remove the code below to remove
+link-box: false
+link-box-text-design: 
+link-box-link-design: 
+link-box-text-dev: 
+link-box-link-dev:
+
+# In page nav
+in-page-nav:
+  - link-id: anchor-headings
+    link-text: Headings
+  - link-id: anchor-sentences-and-paragraphs
+    link-text: Sentences and paragraphs
+  - link-id: anchor-lists
+    link-text: Lists
+  - link-id: anchor-changelog
+    link-text: Changelog
+
+# Changelog
+changelog:
+  - date: 11 Dec 2024
+    notes: Content removed from elements section of experience library and added to this page. Content has been updated with new guidance and examples.
+---
+<div class="coop-u-flex__main">
+    <main id="main">
+        <div class="coop-l-full">
+            {% include hero.html %}
+        </div>
+        <section class="coop-l-page">
+            <div class="el-c-primary-section">
+                <div class="coop-l-grid">
+                    <div class="coop-l-grid__item coop-l-grid__item--large-8">
+                        <h2 id="anchor-headings">Headings</h2>
+                        <p>Use headings and subheadings to break content up. This makes your content: </p>
+                        <ul>
+                            <li>easier for people to read</li>
+                            <li>more accessible for people who are using assistive technology, like screen readers</li>
+                        </ul>
+                        <p>Sentence case means using a capital for the first letter of a sentence, then lower case for the rest of the sentence. Proper nouns (nouns that name a specific person, place or thing) are always capitalised in a sentence case heading. Using sentence case in headings makes it easier to read and understand.</p>   
+                        <p>Put the most important information at the start of the heading. Avoid questions and use statements instead.</p>  
+                        <p class="medium-weight-text coop-u-margin-t-32">Good example:</p>
+                        <p>£5 Freezer Fillers</p>
+                        <p class="medium-weight-text coop-u-margin-t-32">Bad example:</p>
+                        <p>Looking to stock up on brands you love? Browse our £5 Freezer Filler</p>
+                        <h2 id="anchor-sentences-and-paragraphs">Sentences and paragraphs</h2>
+                        <p>Generally, sentences that are longer than 25 words are more difficult to understand.</p>  
+                        <p>As a rough guide, aim for:</p>
+                        <ul>
+                            <li>15 words per sentence</li>
+                            <li>5 sentences per paragraph</li>
+                        </ul>
+                        <h2 id="anchor-lists">Lists</h2> 
+                        <h3>Bullet lists (unordered lists)</h3>
+                        <p>Use bullet points to break up a list of items. It makes your content easier to read and understand.</p>
+                        <p>Bullets must:</p>
+                        <ul>
+                            <li>have a lead-in line (a line of content before the bullet list) ending with a colon</li>
+                            <li>make sense following the lead-in line</li> 
+                            <li>use lower case at the start of the bullet</li> 
+                            <li>have only one sentence per bullet point though you can use commas, dashes (or brackets) to expand on points</li>
+                        </ul>
+                        <p>Bullets must not:</p>
+                        <ul>
+                            <li>be paragraphs using the list format for visual effect</li> 
+                            <li>include 'or' or an 'and' after the bullets</li> 
+                        </ul>
+                        <p class="medium-weight-text coop-u-margin-t-32">Example &mdash; swimming pool rules</p>
+
+                        <p>When using this swimming pool:</p>
+                        <ul>
+                            <li>be respectful of other people</li> 
+                            <li>shower before entering</li> 
+                            <li>do not bring food or drink</li>
+                            <li>pay attention to the lifeguards</li>
+                        </ul>
+                        <h3>Numbered lists (ordered lists)</h3>
+                        <p>Use a numbered list for a logical sequence of things, like a series of tasks that must be done in a certain order.</p> 
+                        <p>Unlike bullet lists, they do not need a lead-in line and should be complete sentences that start with a capital letter and end with a full stop. </p>
+
+                        <p class="medium-weight-text coop-u-margin-t-32">Example &mdash; starting a car</p>
+                        <ol>
+                            <li>Place your key in the ignition.</li> 
+                            <li>Turn the key or press your push-button ignition, turn it all the way to start the engine.</li> 
+                            <li>Put the clutch to the floor, use your left foot to push the pedal all the way down. </li> 
+                            <li>Put your car into first gear, with the clutch down and move the gear stick into first, which is the top left slot.</li> 
+                        </ol>
+                        <p>To see the the design guidelines for headings, paragraphs and lists.</p>
+                        <p><a href="{{ '/elements/headings-paragraphs-and-lists.html' | prepend: site.baseurl }}">Go to the design guidelines on headings, paragraphs and lists</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--large-12">
+                    {% include changelog.html %}
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
